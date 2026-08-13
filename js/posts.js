@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "tongpung-avoid-5foods",
+    title: "통풍에 안 좋은 음식 5가지",
+    summary:
+      "요산 수치를 올리는 통풍에 안 좋은 음식 5가지(술·등푸른생선·내장·액상과당·붉은 고기)와 대체 식단을 정리했습니다.",
+    category: "info",
+    date: "2026-08-13",
+    url: "/posts/tongpung-avoid-5foods.html",
+    image: "/img/tongpung-hero.svg",
+  },
+  {
     id: "hyeolgwan-cleansing-3foods",
     title: "혈관 기름때 싹 비워내는 기적의 음식 3가지",
     summary:

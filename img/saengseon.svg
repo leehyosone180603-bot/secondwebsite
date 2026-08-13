@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="등푸른생선과 조개류">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef5fb"/><stop offset="1" stop-color="#e0edf7"/></linearGradient>
+    <linearGradient id="fish" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a86c5"/><stop offset="1" stop-color="#2f5f92"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#fbg)"/>
+  <rect x="0" y="70" width="360" height="66" fill="#c0392b"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="38" font-weight="800" fill="#fff">등푸른생선·조개</text>
+  <!-- 생선 -->
+  <g transform="translate(520 360)">
+    <path d="M-230 0 C -140 -110, 130 -110, 210 0 C 130 110, -140 110, -230 0 Z" fill="url(#fish)"/>
+    <path d="M-230 0 C -300 -70, -320 70, -230 0 Z" fill="#2f5f92"/>
+    <path d="M-140 -70 C -120 -110, -60 -110, -40 -80 C -90 -80, -110 -60, -140 -70 Z" fill="#3a6fa6"/>
+    <!-- 배(밝은색) -->
+    <path d="M-200 30 C -100 90, 120 90, 190 30 C 120 70, -100 70, -200 30 Z" fill="#cfe0ef"/>
+    <circle cx="150" cy="-18" r="14" fill="#fff"/><circle cx="153" cy="-18" r="7" fill="#26374a"/>
+    <!-- 무늬 -->
+    <g stroke="#274c74" stroke-width="6" opacity="0.5" fill="none"><path d="M-120 -40 q 40 40 0 80"/><path d="M-60 -50 q 45 50 0 100"/><path d="M0 -50 q 45 50 0 100"/></g>
+  </g>
+  <!-- 조개 -->
+  <g transform="translate(870 470)">
+    <path d="M0 40 C -110 40, -100 -70, 0 -70 C 100 -70, 110 40, 0 40 Z" fill="#e8c39a"/>
+    <g stroke="#c99a68" stroke-width="6" fill="none"><path d="M0 -60 L -70 35"/><path d="M0 -60 L -35 38"/><path d="M0 -60 L 0 40"/><path d="M0 -60 L 35 38"/><path d="M0 -60 L 70 35"/></g>
+    <ellipse cx="0" cy="-62" rx="24" ry="12" fill="#d9ad78"/>
+  </g>
+  <!-- 금지 배지 -->
+  <g transform="translate(1050 150)">
+    <circle r="62" fill="none" stroke="#e03131" stroke-width="14"/>
+    <line x1="-44" y1="-44" x2="44" y2="44" stroke="#e03131" stroke-width="14"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="소고기 돼지고기 등 붉은 살코기">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbf1ef"/><stop offset="1" stop-color="#f6e0dd"/></linearGradient>
+    <linearGradient id="meat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d05b5b"/><stop offset="1" stop-color="#a83b3b"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#mbg)"/>
+  <rect x="0" y="70" width="270" height="66" fill="#c0392b"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="40" font-weight="800" fill="#fff">붉은 고기</text>
+  <!-- 고기 -->
+  <g transform="translate(590 370)">
+    <path d="M-210 -60 C -180 -150, 130 -160, 210 -80 C 250 -20, 220 130, 120 150 C -20 180, -230 130, -230 20 C -230 -20, -220 -40, -210 -60 Z" fill="url(#meat)"/>
+    <!-- 지방(마블링) -->
+    <g stroke="#f3ddd0" stroke-width="10" fill="none" opacity="0.85" stroke-linecap="round">
+      <path d="M-150 -70 q 60 30 130 10"/>
+      <path d="M-160 0 q 80 40 190 10"/>
+      <path d="M-120 70 q 70 30 150 5"/>
+    </g>
+    <!-- 뼈 -->
+    <g transform="translate(-230 20)"><circle r="34" fill="#f4ece0"/><circle r="34" fill="none" stroke="#e0d3c0" stroke-width="4"/><circle r="12" fill="#e7d9c6"/></g>
+    <!-- 하이라이트 -->
+    <path d="M-160 -110 C -80 -140, 40 -140, 120 -110 C 40 -120, -80 -120, -160 -110 Z" fill="#fff" opacity="0.25"/>
+  </g>
+  <!-- 금지 배지 -->
+  <g transform="translate(1050 150)">
+    <circle r="62" fill="none" stroke="#e03131" stroke-width="14"/>
+    <line x1="-44" y1="-44" x2="44" y2="44" stroke="#e03131" stroke-width="14"/>
+  </g>
+</svg>

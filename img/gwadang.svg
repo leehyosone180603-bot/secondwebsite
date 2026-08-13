@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="탄산음료와 시판 과일 주스 속 액상과당">
+  <defs>
+    <linearGradient id="dbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fdf1f0"/><stop offset="1" stop-color="#f8e0e0"/></linearGradient>
+    <linearGradient id="cola" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a4a2b"/><stop offset="1" stop-color="#4a2a14"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#dbg)"/>
+  <rect x="0" y="70" width="300" height="66" fill="#c0392b"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="38" font-weight="800" fill="#fff">액상과당·음료</text>
+  <!-- 컵 -->
+  <g transform="translate(560 380)">
+    <path d="M-100 -130 L 100 -130 L 82 210 Q 80 232 58 232 L -58 232 Q -80 232 -82 210 Z" fill="#eef3f6" opacity="0.6"/>
+    <path d="M-92 -80 L 92 -80 L 78 205 Q 76 226 56 226 L -56 226 Q -76 226 -78 205 Z" fill="url(#cola)"/>
+    <path d="M-100 -130 L 100 -130 L 82 210 Q 80 232 58 232 L -58 232 Q -80 232 -82 210 Z" fill="none" stroke="#cdd8de" stroke-width="5"/>
+    <!-- 뚜껑 -->
+    <rect x="-108" y="-142" width="216" height="20" rx="6" fill="#e0505b"/>
+    <!-- 빨대 -->
+    <rect x="30" y="-230" width="20" height="200" rx="8" fill="#e0505b" transform="rotate(12 40 -130)"/>
+    <!-- 탄산 방울 -->
+    <g fill="#fff" opacity="0.5"><circle cx="-40" cy="0" r="8"/><circle cx="20" cy="50" r="6"/><circle cx="-10" cy="110" r="7"/><circle cx="45" cy="150" r="5"/><circle cx="-45" cy="70" r="5"/></g>
+  </g>
+  <!-- 금지 배지 -->
+  <g transform="translate(1050 150)">
+    <circle r="62" fill="none" stroke="#e03131" stroke-width="14"/>
+    <line x1="-44" y1="-44" x2="44" y2="44" stroke="#e03131" stroke-width="14"/>
+  </g>
+</svg>
