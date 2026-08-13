@@ -17,6 +17,14 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://healthfortune.co.kr/about.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/contact.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://healthfortune.co.kr/posts/hyeolgwan-cleansing-3foods.html</loc>
     <lastmod>2026-08-13</lastmod>
     <priority>0.7</priority>
