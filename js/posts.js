@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "gyeran-good-pairings-3foods",
+    title: "계란과 같이 먹으면 몸에 ‘약’ 되는 음식 3가지",
+    summary:
+      "계란의 약점을 보완하고 영양 흡수를 높이는 환상의 짝꿍 음식 3가지(토마토·치즈·부추)와 조리법을 정리했습니다.",
+    category: "food",
+    date: "2026-08-13",
+    url: "/posts/gyeran-good-pairings-3foods.html",
+    image: "/img/gyeran-hero.svg",
+  },
+  {
     id: "tongpung-avoid-5foods",
     title: "통풍에 안 좋은 음식 5가지",
     summary:
