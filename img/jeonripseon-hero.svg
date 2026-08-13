@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="전립선·남성 건강을 지키는 음식 이미지">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef6f4"/><stop offset="1" stop-color="#e3eef2"/></linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3aa6a0"/><stop offset="1" stop-color="#2a7f86"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#pbg)"/>
+  <!-- 방패 -->
+  <g transform="translate(600 340)">
+    <path d="M0 -170 C 90 -120, 150 -120, 150 -120 C 150 40, 90 150, 0 195 C -90 150, -150 40, -150 -120 C -150 -120, -90 -120, 0 -170 Z" fill="url(#shield)"/>
+    <path d="M0 -150 C 78 -108, 128 -108, 128 -108 C 128 30, 78 128, 0 168 C -78 128, -128 30, -128 -108 C -128 -108, -78 -108, 0 -150 Z" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.35"/>
+    <!-- 남성 심볼 ♂ -->
+    <g transform="translate(-14 22)" stroke="#ffffff" stroke-width="16" fill="none" stroke-linecap="round">
+      <circle cx="0" cy="18" r="42"/>
+      <line x1="30" y1="-12" x2="72" y2="-54"/>
+      <path d="M48 -54 L 72 -54 L 72 -30"/>
+    </g>
+  </g>
+  <!-- 반짝임 -->
+  <g fill="#3aa6a0">
+    <path d="M860 200 l 9 24 l 24 9 l -24 9 l -9 24 l -9 -24 l -24 -9 l 24 -9 z"/>
+    <path d="M320 230 l 7 18 l 18 7 l -18 7 l -7 18 l -7 -18 l -18 -7 l 18 -7 z"/>
+  </g>
+  <!-- 토마토 -->
+  <g transform="translate(880 430)"><circle r="52" fill="#e2503f"/><path d="M-6 -52 q 10 -14 24 -8 q -6 14 -24 8z" fill="#4aa564"/></g>
+  <!-- 브로콜리 힌트 -->
+  <g transform="translate(320 440)"><circle cx="-18" cy="-10" r="20" fill="#4a9c5a"/><circle cx="14" cy="-16" r="22" fill="#3f8d50"/><circle cx="0" cy="8" r="20" fill="#57ab67"/><rect x="-8" y="10" width="16" height="34" rx="6" fill="#bcd9a0"/></g>
+  <!-- 씨앗 -->
+  <g transform="translate(760 470)" fill="#8ea653"><ellipse cx="0" cy="0" rx="14" ry="20"/><ellipse cx="26" cy="8" rx="12" ry="18" transform="rotate(20 26 8)"/></g>
+</svg>

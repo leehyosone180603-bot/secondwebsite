@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="쏘팔메토 열매와 추출물">
+  <defs>
+    <linearGradient id="swbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6f4ee"/><stop offset="1" stop-color="#efeadf"/></linearGradient>
+    <radialGradient id="berry" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="#4a2e22"/><stop offset="1" stop-color="#2a1811"/></radialGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f0a83e"/><stop offset="0.5" stop-color="#f0a83e"/><stop offset="0.5" stop-color="#e59020"/><stop offset="1" stop-color="#e59020"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#swbg)"/>
+  <rect x="0" y="70" width="240" height="66" fill="#2f9e6f"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="36" font-weight="800" fill="#fff">쏘팔메토</text>
+  <!-- 잎 -->
+  <g transform="translate(430 300)" stroke="#4a9c5a" stroke-width="10" stroke-linecap="round">
+    <line x1="0" y1="0" x2="0" y2="-120"/><line x1="0" y1="-10" x2="-70" y2="-100"/><line x1="0" y1="-10" x2="70" y2="-100"/><line x1="0" y1="-10" x2="-120" y2="-60"/><line x1="0" y1="-10" x2="120" y2="-60"/>
+  </g>
+  <!-- 열매 무더기 -->
+  <g transform="translate(430 400)">
+    <ellipse cx="-70" cy="30" rx="52" ry="66" fill="url(#berry)"/>
+    <ellipse cx="10" cy="40" rx="54" ry="70" fill="url(#berry)"/>
+    <ellipse cx="88" cy="26" rx="48" ry="62" fill="url(#berry)"/>
+    <g fill="#fff" opacity="0.18"><ellipse cx="-84" cy="4" rx="14" ry="22"/><ellipse cx="-4" cy="12" rx="14" ry="24"/><ellipse cx="74" cy="0" rx="12" ry="20"/></g>
+  </g>
+  <!-- 캡슐(추출물) -->
+  <g transform="translate(830 430) rotate(-24)">
+    <rect x="-90" y="-32" width="180" height="64" rx="32" fill="#e8e0cf"/>
+    <rect x="-90" y="-32" width="92" height="64" rx="32" fill="url(#cap)"/>
+    <ellipse cx="-60" cy="-12" rx="14" ry="8" fill="#fff" opacity="0.4"/>
+  </g>
+</svg>

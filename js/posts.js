@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "jeonripseon-good-5foods",
+    title: "전립선 건강에 좋은 음식 5가지",
+    summary:
+      "전립선 비대증·배뇨 불편감 예방에 도움을 주는 음식 5가지(토마토·호박씨·브로콜리·쏘팔메토·연어)를 정리했습니다.",
+    category: "info",
+    date: "2026-08-13",
+    url: "/posts/jeonripseon-good-5foods.html",
+    image: "/img/jeonripseon-hero.svg",
+  },
+  {
     id: "jangyeom-good-5foods",
     title: "장염에 좋은 음식 5가지",
     summary:

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="토마토">
+  <defs>
+    <linearGradient id="tsbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f9f2ee"/><stop offset="1" stop-color="#f5e9e2"/></linearGradient>
+    <radialGradient id="tsom" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="#f0604c"/><stop offset="1" stop-color="#c9331f"/></radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#tsbg)"/>
+  <rect x="0" y="70" width="200" height="66" fill="#2f9e6f"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="40" font-weight="800" fill="#fff">토마토</text>
+  <g transform="translate(560 390)">
+    <circle r="175" fill="url(#tsom)"/>
+    <g fill="#4aa564"><path d="M0 -175 q -20 -40 -62 -34 q 16 30 62 34z"/><path d="M0 -175 q 20 -40 62 -34 q -16 30 -62 34z"/><path d="M0 -175 q -10 -34 0 -58 q 10 24 0 58z"/><path d="M0 -175 q -34 -20 -58 -8 q 24 20 58 8z"/><path d="M0 -175 q 34 -20 58 -8 q -24 20 -58 8z"/></g>
+    <ellipse cx="-56" cy="-60" rx="46" ry="30" fill="#fff" opacity="0.28"/>
+  </g>
+  <!-- 방울토마토 -->
+  <g transform="translate(830 470)"><circle r="70" fill="url(#tsom)"/><path d="M-6 -70 q 10 -16 26 -10 q -6 16 -26 10z" fill="#4aa564"/><ellipse cx="-22" cy="-24" rx="18" ry="12" fill="#fff" opacity="0.3"/></g>
+</svg>
