@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="몸속 수분과 부기를 빼주는 음식 이미지">
+  <defs>
+    <linearGradient id="bjbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef7f7"/><stop offset="1" stop-color="#e3f0ef"/></linearGradient>
+    <linearGradient id="drop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fc7d6"/><stop offset="1" stop-color="#4fa6bb"/></linearGradient>
+    <linearGradient id="arrow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#54b47a"/><stop offset="1" stop-color="#38945e"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bjbg)"/>
+  <!-- 아래로 향하는 배출 화살표 -->
+  <g transform="translate(600 330)">
+    <rect x="-40" y="-160" width="80" height="200" rx="24" fill="url(#arrow)"/>
+    <path d="M-100 20 L 100 20 L 0 150 Z" fill="url(#arrow)"/>
+    <rect x="-40" y="-160" width="30" height="200" rx="15" fill="#fff" opacity="0.18"/>
+  </g>
+  <!-- 물방울들 -->
+  <g fill="url(#drop)">
+    <path d="M300 250 c 0 -40 -46 -60 -46 -104 c 0 -26 20 -46 46 -46 c 26 0 46 20 46 46 c 0 44 -46 64 -46 104 z" transform="translate(-20 -20) scale(0.9)"/>
+    <path d="M900 240 c 0 -34 -40 -52 -40 -90 c 0 -22 18 -40 40 -40 c 22 0 40 18 40 40 c 0 38 -40 56 -40 90 z"/>
+    <path d="M840 430 c 0 -26 -30 -40 -30 -68 c 0 -17 13 -30 30 -30 c 17 0 30 13 30 30 c 0 28 -30 42 -30 68 z"/>
+  </g>
+  <!-- 반짝임/잎 -->
+  <g transform="translate(340 430)" fill="#54b47a"><path d="M0 0 C 40 -28, 88 -18, 106 20 C 68 30, 20 28, 0 0 Z"/></g>
+  <g fill="#54b47a"><path d="M980 360 l 7 18 l 18 7 l -18 7 l -7 18 l -7 -18 l -18 -7 l 18 -7 z"/></g>
+</svg>

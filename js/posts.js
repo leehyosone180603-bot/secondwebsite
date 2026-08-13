@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "bujong-good-5foods",
+    title: "부종에 좋은 음식 5가지",
+    summary:
+      "몸속 나트륨과 수분을 배출해 부기를 빼주는 부종에 좋은 음식 5가지(바나나·팥·오이·아보카도·늙은 호박)를 정리했습니다.",
+    category: "food",
+    date: "2026-08-13",
+    url: "/posts/bujong-good-5foods.html",
+    image: "/img/bujong-hero.svg",
+  },
+  {
     id: "jeonripseon-good-5foods",
     title: "전립선 건강에 좋은 음식 5가지",
     summary:

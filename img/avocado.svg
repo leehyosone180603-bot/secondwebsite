@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="아보카도">
+  <defs>
+    <linearGradient id="avbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3f7ea"/><stop offset="1" stop-color="#e9f1db"/></linearGradient>
+    <radialGradient id="flesh" cx="0.5" cy="0.45" r="0.6"><stop offset="0" stop-color="#eae35a"/><stop offset="0.55" stop-color="#bcd34a"/><stop offset="1" stop-color="#8fb63e"/></radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#avbg)"/>
+  <rect x="0" y="70" width="230" height="66" fill="#2f9e6f"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="38" font-weight="800" fill="#fff">아보카도</text>
+  <!-- 반쪽 아보카도(왼쪽, 씨 있음) -->
+  <g transform="translate(470 390)">
+    <path d="M0 -170 C 95 -170, 140 -70, 130 30 C 122 120, 70 190, 0 190 C -70 190, -122 120, -130 30 C -140 -70, -95 -170, 0 -170 Z" fill="#2f5d33"/>
+    <path d="M0 -150 C 82 -150, 122 -60, 113 30 C 106 108, 60 170, 0 170 C -60 170, -106 108, -113 30 C -122 -60, -82 -150, 0 -150 Z" fill="#9fc255"/>
+    <path d="M0 -134 C 72 -134, 108 -52, 100 30 C 94 100, 54 154, 0 154 C -54 154, -94 100, -100 30 C -108 -52, -72 -134, 0 -134 Z" fill="url(#flesh)"/>
+    <circle cx="0" cy="34" r="58" fill="#7a4b28"/>
+    <circle cx="-16" cy="18" r="16" fill="#a06a3c" opacity="0.6"/>
+  </g>
+  <!-- 반쪽(오른쪽, 씨 없음) -->
+  <g transform="translate(800 430)">
+    <path d="M0 -150 C 82 -150, 122 -60, 113 30 C 106 108, 60 170, 0 170 C -60 170, -106 108, -113 30 C -122 -60, -82 -150, 0 -150 Z" fill="#2f5d33"/>
+    <path d="M0 -134 C 72 -134, 108 -52, 100 30 C 94 100, 54 154, 0 154 C -54 154, -94 100, -100 30 C -108 -52, -72 -134, 0 -134 Z" fill="url(#flesh)"/>
+    <ellipse cx="0" cy="20" rx="60" ry="80" fill="#c7de77" opacity="0.55"/>
+  </g>
+</svg>

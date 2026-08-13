@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="늙은 호박">
+  <defs>
+    <linearGradient id="hbbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbf5ea"/><stop offset="1" stop-color="#f6ecd8"/></linearGradient>
+    <radialGradient id="pump" cx="0.42" cy="0.4" r="0.72"><stop offset="0" stop-color="#f0a83a"/><stop offset="1" stop-color="#d07d1f"/></radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#hbbg)"/>
+  <rect x="0" y="70" width="240" height="66" fill="#2f9e6f"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="38" font-weight="800" fill="#fff">늙은 호박</text>
+  <!-- 호박 -->
+  <g transform="translate(600 400)">
+    <ellipse cx="0" cy="0" rx="240" ry="180" fill="url(#pump)"/>
+    <!-- 골 -->
+    <g fill="none" stroke="#b96c17" stroke-width="6" opacity="0.75">
+      <path d="M0 -178 C -60 -120, -60 120, 0 178"/>
+      <path d="M0 -178 C 60 -120, 60 120, 0 178"/>
+      <path d="M0 -178 C -140 -110, -140 110, 0 178"/>
+      <path d="M0 -178 C 140 -110, 140 110, 0 178"/>
+    </g>
+    <!-- 밝은 결 -->
+    <g fill="#f6be5c" opacity="0.55">
+      <path d="M0 -176 C -30 -120, -30 120, 0 176 C 26 120, 26 -120, 0 -176 Z"/>
+    </g>
+    <!-- 꼭지 -->
+    <rect x="-20" y="-210" width="40" height="52" rx="10" fill="#7a8a3a"/>
+    <ellipse cx="-80" cy="-70" rx="60" ry="34" fill="#fff" opacity="0.18"/>
+  </g>
+</svg>
