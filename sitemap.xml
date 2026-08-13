@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 새 글을 추가하면 아래에 <url> 항목을 추가하면 검색 노출에 도움이 됩니다. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://healthfortune.co.kr/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/category.html?cat=food</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/category.html?cat=info</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/posts/sample-food-1.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/posts/sample-info-1.html</loc>
+    <priority>0.6</priority>
+  </url>
+</urlset>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카테고리 · 건강흐름</title>
+  <meta name="description" content="건강흐름 카테고리별 글 모음">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- ★ 구글 애드센스 로더 ★ (승인 후 ca-pub-... 교체) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0000000000000000"
+          crossorigin="anonymous"></script>
+</head>
+<body data-cat="">
+  <header id="site-header"></header>
+
+  <main class="wrap">
+    <div class="page-head"><h2 id="cat-title">카테고리</h2></div>
+    <div class="content">
+      <section class="main-list" id="cat-list"></section>
+      <aside class="sidebar" id="sidebar"></aside>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="/js/posts.js"></script>
+  <script src="/js/site.js"></script>
+  <script src="/js/category.js"></script>
+  <script>
+    // 카테고리 페이지 사이드바(간단 버전)
+    document.addEventListener("DOMContentLoaded", function () {
+      var side = document.getElementById("sidebar");
+      if (!side) return;
+      var recent = (window.POSTS || []).slice()
+        .sort(function (a, b) { return (b.date || "").localeCompare(a.date || ""); })
+        .slice(0, 5);
+      var items = recent.map(function (p) {
+        return '<a class="tagitem" href="' + p.url + '">' +
+          '<span class="tag" style="--c:' + catColor(p.category) + '">' + catName(p.category) + '</span>' +
+          '<span class="tagitem__title">' + p.title + '</span></a>';
+      }).join("");
+      side.innerHTML =
+        adUnit("sidebar", "사이드") +
+        '<div class="panel"><div class="panel__head">최신 글</div><div class="taglist">' + items + '</div></div>';
+      activateAds();
+    });
+  </script>
+</body>
+</html>
