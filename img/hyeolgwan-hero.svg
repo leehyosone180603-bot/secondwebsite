@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="맑고 깨끗한 혈관과 건강한 심장 이미지">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eaf7f0"/>
+      <stop offset="1" stop-color="#d7ecfb"/>
+    </linearGradient>
+    <linearGradient id="tube" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff8a8a"/>
+      <stop offset="0.5" stop-color="#ff6b6b"/>
+      <stop offset="1" stop-color="#e14b4b"/>
+    </linearGradient>
+    <linearGradient id="heart" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff6b6b"/>
+      <stop offset="1" stop-color="#d63d3d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <!-- 혈관(튜브) -->
+  <path d="M40 470 C 300 380, 380 560, 640 470 S 980 360, 1170 460" fill="none" stroke="#f6c6c6" stroke-width="86" stroke-linecap="round" opacity="0.55"/>
+  <path d="M40 470 C 300 380, 380 560, 640 470 S 980 360, 1170 460" fill="none" stroke="url(#tube)" stroke-width="60" stroke-linecap="round"/>
+  <!-- 혈관 내부 하이라이트(맑음) -->
+  <path d="M40 470 C 300 380, 380 560, 640 470 S 980 360, 1170 460" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" opacity="0.5"/>
+  <!-- 왼쪽 기름때(플라크) -->
+  <circle cx="180" cy="455" r="15" fill="#f4d35e"/>
+  <circle cx="215" cy="475" r="11" fill="#f4d35e"/>
+  <circle cx="250" cy="452" r="9" fill="#f4d35e"/>
+  <!-- 심장 -->
+  <g transform="translate(600 235)">
+    <path d="M0 60 C -60 -20, -170 20, -110 110 C -80 155, 0 205, 0 205 C 0 205, 80 155, 110 110 C 170 20, 60 -20, 0 60 Z" fill="url(#heart)"/>
+    <path d="M-45 80 l 30 0 l 12 -30 l 20 60 l 14 -30 l 24 0" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- 청소 반짝임 -->
+  <g fill="#2f9e6f">
+    <path d="M900 250 l 8 22 l 22 8 l -22 8 l -8 22 l -8 -22 l -22 -8 l 22 -8 z"/>
+    <path d="M1010 350 l 6 16 l 16 6 l -16 6 l -6 16 l -6 -16 l -16 -6 l 16 -6 z"/>
+    <path d="M840 360 l 5 13 l 13 5 l -13 5 l -5 13 l -5 -13 l -13 -5 l 13 -5 z"/>
+  </g>
+  <!-- 잎(천연) -->
+  <g transform="translate(250 250)" fill="#3aa76d">
+    <path d="M0 0 C 40 -30, 90 -20, 110 20 C 70 30, 20 30, 0 0 Z"/>
+    <path d="M0 0 C 40 30, 90 20, 110 -20 C 70 -30, 20 -30, 0 0 Z" opacity="0.85"/>
+  </g>
+</svg>
