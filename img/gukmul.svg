@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="동물 내장 요리와 진한 고기 국물">
+  <defs>
+    <linearGradient id="ubg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbf4ee"/><stop offset="1" stop-color="#f4e7dc"/></linearGradient>
+    <linearGradient id="soup" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0e2cf"/><stop offset="1" stop-color="#dcc6a6"/></linearGradient>
+    <linearGradient id="bowl2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e7ddd2"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#ubg)"/>
+  <rect x="0" y="70" width="340" height="66" fill="#c0392b"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="38" font-weight="800" fill="#fff">내장·진한 국물</text>
+  <!-- 김 -->
+  <g transform="translate(600 210)" stroke="#d9b48a" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.7">
+    <path d="M-90 40 q -26 -34 0 -70 q 26 -36 0 -72"/>
+    <path d="M0 30 q -26 -34 0 -70 q 26 -36 0 -72"/>
+    <path d="M90 40 q -26 -34 0 -70 q 26 -36 0 -72"/>
+  </g>
+  <!-- 그릇 -->
+  <g transform="translate(600 400)">
+    <ellipse cx="0" cy="0" rx="250" ry="70" fill="url(#soup)"/>
+    <ellipse cx="0" cy="0" rx="250" ry="70" fill="none" stroke="#cbb38f" stroke-width="4"/>
+    <!-- 건더기 -->
+    <g fill="#c98a5a"><ellipse cx="-90" cy="-6" rx="34" ry="16"/><ellipse cx="30" cy="8" rx="40" ry="18"/><ellipse cx="110" cy="-8" rx="28" ry="13"/></g>
+    <g stroke="#5aa469" stroke-width="7" stroke-linecap="round"><line x1="-30" y1="-18" x2="10" y2="-24"/><line x1="60" y1="-16" x2="100" y2="-22"/></g>
+    <path d="M-262 4 Q -230 210 0 220 Q 230 210 262 4 Z" fill="url(#bowl2)"/>
+    <path d="M-262 4 Q -230 210 0 220 Q 230 210 262 4 Z" fill="none" stroke="#d8c9ba" stroke-width="5"/>
+  </g>
+  <!-- 금지 배지 -->
+  <g transform="translate(1050 150)">
+    <circle r="62" fill="none" stroke="#e03131" stroke-width="14"/>
+    <line x1="-44" y1="-44" x2="44" y2="44" stroke="#e03131" stroke-width="14"/>
+  </g>
+</svg>
