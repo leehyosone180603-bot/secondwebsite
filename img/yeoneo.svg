@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="연어">
+  <defs>
+    <linearGradient id="ynbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fdf3ee"/><stop offset="1" stop-color="#f7e6de"/></linearGradient>
+    <linearGradient id="salmon" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9a6b"/><stop offset="1" stop-color="#f07a45"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#ynbg)"/>
+  <rect x="0" y="70" width="170" height="66" fill="#2f9e6f"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="40" font-weight="800" fill="#fff">연어</text>
+  <!-- 연어 스테이크 -->
+  <g transform="translate(600 390)">
+    <path d="M-240 -60 C -120 -120, 120 -120, 240 -40 C 200 30, 120 90, 0 90 C -120 90, -220 20, -240 -60 Z" fill="url(#salmon)"/>
+    <!-- 살결 무늬 -->
+    <g stroke="#ffd9c2" stroke-width="12" fill="none" opacity="0.9" stroke-linecap="round">
+      <path d="M-180 -50 C -80 -80, 100 -80, 190 -30"/>
+      <path d="M-190 -14 C -80 -40, 120 -40, 205 4"/>
+      <path d="M-170 26 C -70 4, 110 6, 175 44"/>
+    </g>
+    <!-- 껍질 -->
+    <path d="M-240 -60 C -260 -30, -260 10, -240 40 C -250 -10, -250 -30, -240 -60 Z" fill="#5b6b74"/>
+    <path d="M240 -40 C 270 -20, 270 20, 240 44 L 240 -40 Z" fill="#5b6b74"/>
+  </g>
+  <!-- 레몬 -->
+  <g transform="translate(880 500)"><circle r="56" fill="#f4d84a"/><circle r="42" fill="#fbee8f"/><g stroke="#e8c93a" stroke-width="4"><line x1="0" y1="-42" x2="0" y2="42"/><line x1="-42" y1="0" x2="42" y2="0"/><line x1="-30" y1="-30" x2="30" y2="30"/><line x1="-30" y1="30" x2="30" y2="-30"/></g></g>
+</svg>
