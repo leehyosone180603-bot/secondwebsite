@@ -26,6 +26,9 @@ const SITE = {
  *   - 각 광고 자리의 slot 번호도 실제 값으로 교체
  *  값이 기본(placeholder) 상태이면 회색 "광고 영역" 박스가 표시됩니다.
  * ──────────────────────────────────────────────────────────── */
+// ★ 광고 노출 스위치 ★ (지금은 광고 미노출. 나중에 반영할 때 true 로 바꾸세요)
+const ADS_SHOW = false;
+
 const ADSENSE = {
   client: "ca-pub-0000000000000000", // ← 발급받은 게시자 ID로 교체
   slots: {
@@ -85,6 +88,10 @@ function thumbHtml(post, extraClass) {
  *  광고 유닛 렌더링
  * ──────────────────────────────────────────────────────────── */
 function adUnit(slotKey, label) {
+  // ★ 광고 임시 비활성화 ★
+  // 나중에 애드센스를 반영할 때 아래 한 줄(return "";)을 지우면 광고가 다시 나옵니다.
+  if (!ADS_SHOW) return "";
+
   if (!adsenseEnabled()) {
     return `<div class="ad ad--placeholder"><span>광고 영역${label ? " · " + label : ""}</span></div>`;
   }
