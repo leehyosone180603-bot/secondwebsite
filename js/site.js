@@ -211,12 +211,13 @@ function renderFooter() {
   if (!host) return;
 
   const links = [
-    "매체소개", "기사제보", "광고문의", "이용약관",
-    "개인정보처리방침", "청소년보호정책", "저작권보호정책", "이메일무단수집거부",
+    { t: "사이트 소개", href: "/about.html" },
+    { t: "문의하기", href: "/contact.html" },
+    { t: "개인정보처리방침", href: "/privacy.html", strong: true },
   ]
-    .map(function (t) {
-      const strong = t === "개인정보처리방침" ? " footer__link--strong" : "";
-      return `<a class="footer__link${strong}" href="#">${t}</a>`;
+    .map(function (l) {
+      const strong = l.strong ? " footer__link--strong" : "";
+      return `<a class="footer__link${strong}" href="${l.href}">${l.t}</a>`;
     })
     .join("");
 
