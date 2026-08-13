@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="계란과 잘 어울리는 건강한 음식 조합 이미지">
+  <defs>
+    <linearGradient id="ebg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3faf1"/><stop offset="1" stop-color="#e6f3ec"/></linearGradient>
+    <radialGradient id="yolk" cx="0.4" cy="0.35" r="0.7"><stop offset="0" stop-color="#ffd35a"/><stop offset="1" stop-color="#f2a825"/></radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#ebg)"/>
+  <!-- 프라이 계란 -->
+  <g transform="translate(560 350)">
+    <path d="M-190 -40 C -230 -130, -110 -190, -20 -160 C 40 -200, 170 -170, 190 -80 C 250 -40, 220 90, 130 110 C 120 180, -20 190, -80 140 C -190 160, -250 40, -190 -40 Z" fill="#ffffff"/>
+    <path d="M-190 -40 C -230 -130, -110 -190, -20 -160 C 40 -200, 170 -170, 190 -80 C 250 -40, 220 90, 130 110 C 120 180, -20 190, -80 140 C -190 160, -250 40, -190 -40 Z" fill="none" stroke="#f0ece1" stroke-width="4"/>
+    <circle cx="0" cy="-10" r="80" fill="url(#yolk)"/>
+    <ellipse cx="-26" cy="-36" rx="24" ry="16" fill="#fff" opacity="0.5"/>
+  </g>
+  <!-- 초록 반짝임 -->
+  <g fill="#2f9e6f">
+    <path d="M860 200 l 9 24 l 24 9 l -24 9 l -9 24 l -9 -24 l -24 -9 l 24 -9 z"/>
+    <path d="M960 330 l 6 16 l 16 6 l -16 6 l -6 16 l -6 -16 l -16 -6 l 16 -6 z"/>
+    <path d="M820 420 l 6 15 l 15 6 l -15 6 l -6 15 l -6 -15 l -15 -6 l 15 -6 z"/>
+  </g>
+  <!-- 파트너 아이콘 (토마토/치즈/부추) -->
+  <g transform="translate(950 470)">
+    <circle cx="0" cy="0" r="46" fill="#e2503f"/><path d="M-6 -46 q 10 -14 22 -6 q -6 12 -22 6z" fill="#4aa564"/>
+  </g>
+  <g transform="translate(1060 380)">
+    <path d="M-44 26 L 44 -20 L 44 26 Z" fill="#f4c430"/><circle cx="10" cy="12" r="6" fill="#e0ad1f"/><circle cx="28" cy="4" r="5" fill="#e0ad1f"/>
+  </g>
+  <!-- + 배지 -->
+  <g transform="translate(760 200)">
+    <circle r="46" fill="#2f9e6f"/>
+    <rect x="-22" y="-7" width="44" height="14" rx="7" fill="#fff"/>
+    <rect x="-7" y="-22" width="14" height="44" rx="7" fill="#fff"/>
+  </g>
+</svg>
