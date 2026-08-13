@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="따뜻한 매실차 한 잔">
+  <defs>
+    <linearGradient id="mbg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4f9ee"/><stop offset="1" stop-color="#edf4e2"/></linearGradient>
+    <linearGradient id="tea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8b24a"/><stop offset="1" stop-color="#bd8f2e"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#mbg2)"/>
+  <rect x="0" y="70" width="200" height="66" fill="#2f9e6f"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="40" font-weight="800" fill="#fff">매실차</text>
+  <!-- 김 -->
+  <g transform="translate(560 220)" stroke="#c9dcc4" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.7">
+    <path d="M-40 40 q -22 -30 0 -60 q 22 -30 0 -60"/>
+    <path d="M40 40 q -22 -30 0 -60 q 22 -30 0 -60"/>
+  </g>
+  <!-- 찻잔 -->
+  <g transform="translate(560 400)">
+    <path d="M-130 -60 L 130 -60 L 112 90 Q 108 118 78 118 L -78 118 Q -108 118 -112 90 Z" fill="#fff"/>
+    <path d="M-116 -46 L 116 -46 L 100 78 Q 97 100 74 100 L -74 100 Q -97 100 -100 78 Z" fill="url(#tea)"/>
+    <ellipse cx="0" cy="-46" rx="116" ry="22" fill="#c79f38"/>
+    <path d="M130 -46 q 70 0 70 66 q 0 66 -70 66" fill="none" stroke="#dfe4dd" stroke-width="16"/>
+    <path d="M-130 -60 L 130 -60 L 112 90 Q 108 118 78 118 L -78 118 Q -108 118 -112 90 Z" fill="none" stroke="#e2e6df" stroke-width="5"/>
+    <ellipse cx="0" cy="150" rx="150" ry="24" fill="#e5ebe1"/>
+  </g>
+  <!-- 매실 -->
+  <g transform="translate(880 470)">
+    <circle r="60" fill="#8fbf4a"/><path d="M0 -60 q 8 -18 26 -14 q -6 16 -26 14z" fill="#5b8a2e"/>
+    <ellipse cx="-20" cy="-20" rx="16" ry="10" fill="#fff" opacity="0.4"/>
+    <path d="M0 -58 q -10 40 0 78" stroke="#7aa83e" stroke-width="4" fill="none" opacity="0.6"/>
+  </g>
+</svg>

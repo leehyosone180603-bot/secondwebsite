@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="따뜻한 보리차 한 잔과 주전자">
+  <defs>
+    <linearGradient id="bcbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6f3ec"/><stop offset="1" stop-color="#efe8db"/></linearGradient>
+    <linearGradient id="bctea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9743c"/><stop offset="1" stop-color="#8a5a28"/></linearGradient>
+    <linearGradient id="kettle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5aa06e"/><stop offset="1" stop-color="#3d7c50"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bcbg)"/>
+  <rect x="0" y="70" width="200" height="66" fill="#2f9e6f"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="40" font-weight="800" fill="#fff">보리차</text>
+  <!-- 주전자 -->
+  <g transform="translate(400 400)">
+    <rect x="-130" y="-70" width="260" height="180" rx="40" fill="url(#kettle)"/>
+    <path d="M130 -30 q 80 -10 90 40 l -22 6 q -10 -30 -68 -24 z" fill="url(#kettle)"/>
+    <rect x="-70" y="-110" width="140" height="30" rx="15" fill="#3d7c50"/>
+    <path d="M-90 -70 q -60 -20 -60 -80" fill="none" stroke="#3d7c50" stroke-width="18"/>
+    <rect x="-130" y="-72" width="70" height="182" rx="30" fill="#fff" opacity="0.12"/>
+  </g>
+  <!-- 김 -->
+  <g transform="translate(820 220)" stroke="#d8c3a0" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.7">
+    <path d="M-30 40 q -22 -30 0 -60 q 22 -30 0 -60"/>
+    <path d="M40 40 q -22 -30 0 -60 q 22 -30 0 -60"/>
+  </g>
+  <!-- 찻잔 -->
+  <g transform="translate(820 420)">
+    <path d="M-110 -50 L 110 -50 L 94 80 Q 90 104 64 104 L -64 104 Q -90 104 -94 80 Z" fill="#fff"/>
+    <path d="M-96 -36 L 96 -36 L 82 68 Q 79 88 58 88 L -58 88 Q -79 88 -82 68 Z" fill="url(#bctea)"/>
+    <ellipse cx="0" cy="-36" rx="96" ry="18" fill="#9c672f"/>
+    <path d="M110 -36 q 60 0 60 56 q 0 56 -60 56" fill="none" stroke="#dfe4dd" stroke-width="15"/>
+    <path d="M-110 -50 L 110 -50 L 94 80 Q 90 104 64 104 L -64 104 Q -90 104 -94 80 Z" fill="none" stroke="#e2e6df" stroke-width="5"/>
+    <ellipse cx="0" cy="130" rx="128" ry="22" fill="#e6ded0"/>
+  </g>
+</svg>
