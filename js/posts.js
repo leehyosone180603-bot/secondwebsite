@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "jangyeom-good-5foods",
+    title: "장염에 좋은 음식 5가지",
+    summary:
+      "장 점막을 달래고 회복을 돕는 장염에 좋은 음식 5가지(흰죽·바나나·매실차·감자·보리차)와 섭취법을 정리했습니다.",
+    category: "info",
+    date: "2026-08-13",
+    url: "/posts/jangyeom-good-5foods.html",
+    image: "/img/jangyeom-hero.svg",
+  },
+  {
     id: "gyeran-good-pairings-3foods",
     title: "계란과 같이 먹으면 몸에 ‘약’ 되는 음식 3가지",
     summary:

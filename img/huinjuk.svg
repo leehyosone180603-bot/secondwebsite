@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="흰죽 한 그릇">
+  <defs>
+    <linearGradient id="hjbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7f9f5"/><stop offset="1" stop-color="#eef3ea"/></linearGradient>
+    <linearGradient id="bowlh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e7ede8"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#hjbg)"/>
+  <rect x="0" y="70" width="170" height="66" fill="#2f9e6f"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="40" font-weight="800" fill="#fff">흰죽</text>
+  <!-- 김 -->
+  <g transform="translate(600 240)" stroke="#cfe0d3" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.75">
+    <path d="M-70 40 q -22 -30 0 -60 q 22 -30 0 -60"/>
+    <path d="M0 30 q -22 -30 0 -60 q 22 -30 0 -60"/>
+    <path d="M70 40 q -22 -30 0 -60 q 22 -30 0 -60"/>
+  </g>
+  <!-- 죽 그릇 -->
+  <g transform="translate(600 410)">
+    <ellipse cx="0" cy="-8" rx="200" ry="54" fill="#f3efe4"/>
+    <ellipse cx="0" cy="-14" rx="200" ry="48" fill="#fbf8ef"/>
+    <!-- 죽 표면 결 -->
+    <g stroke="#efe8d6" stroke-width="5" fill="none" opacity="0.9"><path d="M-120 -18 q 40 14 120 0"/><path d="M-90 4 q 60 16 150 -2"/></g>
+    <!-- 숟가락 -->
+    <g transform="rotate(24 150 -30)"><ellipse cx="150" cy="-40" rx="42" ry="26" fill="#dfe4de"/><rect x="176" y="-52" width="120" height="14" rx="7" fill="#dfe4de"/></g>
+    <path d="M-215 -8 Q -190 150 0 158 Q 190 150 215 -8 Z" fill="url(#bowlh)"/>
+    <path d="M-215 -8 Q -190 150 0 158 Q 190 150 215 -8 Z" fill="none" stroke="#d5ddd6" stroke-width="5"/>
+  </g>
+</svg>

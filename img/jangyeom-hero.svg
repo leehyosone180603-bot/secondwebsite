@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="장염 회복에 좋은 순한 음식 모음 이미지">
+  <defs>
+    <linearGradient id="jbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2f9f4"/><stop offset="1" stop-color="#eaf4ef"/></linearGradient>
+    <linearGradient id="bowlj" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8ede9"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#jbg)"/>
+  <!-- 부드러운 초록 하트 -->
+  <g transform="translate(600 150)" fill="#8fd3ab" opacity="0.9">
+    <path d="M0 30 C -26 -6, -74 8, -50 46 C -34 70, 0 92, 0 92 C 0 92, 34 70, 50 46 C 74 8, 26 -6, 0 30 Z"/>
+  </g>
+  <!-- 죽 그릇 (중앙) -->
+  <g transform="translate(600 410)">
+    <g stroke="#cfe0d3" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.75">
+      <path d="M-40 -120 q -22 -28 0 -56 q 22 -28 0 -56"/>
+      <path d="M40 -120 q 22 -28 0 -56 q -22 -28 0 -56"/>
+    </g>
+    <ellipse cx="0" cy="-8" rx="150" ry="42" fill="#f3efe4"/>
+    <ellipse cx="0" cy="-12" rx="150" ry="38" fill="#fbf8ef"/>
+    <path d="M-160 -6 Q -140 130 0 138 Q 140 130 160 -6 Z" fill="url(#bowlj)"/>
+    <path d="M-160 -6 Q -140 130 0 138 Q 140 130 160 -6 Z" fill="none" stroke="#d5ddd6" stroke-width="5"/>
+  </g>
+  <!-- 찻잔 (오른쪽) -->
+  <g transform="translate(880 430)">
+    <path d="M-70 -50 L 70 -50 L 60 40 Q 58 60 38 60 L -38 60 Q -58 60 -60 40 Z" fill="#fff"/>
+    <path d="M-58 -38 L 58 -38 L 50 30 Q 48 46 32 46 L -32 46 Q -48 46 -50 30 Z" fill="#cdaa72"/>
+    <path d="M70 -40 q 46 0 46 40 q 0 40 -46 40" fill="none" stroke="#d8dcd6" stroke-width="12"/>
+    <ellipse cx="0" cy="72" rx="76" ry="14" fill="#e7ece7"/>
+  </g>
+  <!-- 바나나 (왼쪽) -->
+  <g transform="translate(300 450)">
+    <path d="M-90 -30 C -70 40, 40 70, 100 20 C 70 40, -10 20, -50 -40 C -60 -55, -80 -50, -90 -30 Z" fill="#f5cf3f"/>
+    <path d="M-90 -30 C -70 40, 40 70, 100 20" fill="none" stroke="#e0b52b" stroke-width="4"/>
+    <path d="M96 18 l 16 -8 l -6 16 z" fill="#8a6d2c"/>
+  </g>
+</svg>
