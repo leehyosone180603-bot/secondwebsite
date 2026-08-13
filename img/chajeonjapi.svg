@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="물에 불린 차전자피 한 잔">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f8f1"/>
+      <stop offset="1" stop-color="#e6f2e9"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe3d2"/>
+      <stop offset="1" stop-color="#8fc9ac"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#cbg)"/>
+  <!-- 라벨 리본 -->
+  <rect x="0" y="70" width="360" height="66" rx="0" fill="#2f9e6f"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="40" font-weight="800" fill="#fff">차전자피</text>
+  <!-- 유리컵 -->
+  <g transform="translate(600 350)">
+    <path d="M-140 -170 L 140 -170 L 118 210 Q 115 240 85 240 L -85 240 Q -115 240 -118 210 Z" fill="#ffffff" opacity="0.5"/>
+    <path d="M-140 -170 L 140 -170 L 118 210 Q 115 240 85 240 L -85 240 Q -115 240 -118 210 Z" fill="none" stroke="#cfe3d8" stroke-width="6"/>
+    <!-- 물 -->
+    <path d="M-128 -40 L 128 -40 L 112 205 Q 110 232 84 232 L -84 232 Q -110 232 -112 205 Z" fill="url(#water)"/>
+    <!-- 젤 층 -->
+    <path d="M-128 -40 L 128 -40 L 122 30 L -122 30 Z" fill="#d9efe2" opacity="0.85"/>
+    <!-- 씨앗 -->
+    <g fill="#7a5a3a">
+      <ellipse cx="-40" cy="70" rx="9" ry="5" transform="rotate(20 -40 70)"/>
+      <ellipse cx="30" cy="110" rx="9" ry="5" transform="rotate(-15 30 110)"/>
+      <ellipse cx="-10" cy="150" rx="9" ry="5" transform="rotate(35 -10 150)"/>
+      <ellipse cx="60" cy="60" rx="8" ry="5" transform="rotate(10 60 60)"/>
+      <ellipse cx="-70" cy="130" rx="8" ry="5" transform="rotate(-25 -70 130)"/>
+    </g>
+    <!-- 하이라이트 -->
+    <path d="M-100 -150 L -80 -150 L -70 200 L -92 200 Z" fill="#ffffff" opacity="0.45"/>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="싱싱한 양파">
+  <defs>
+    <linearGradient id="ybg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f2fb"/>
+      <stop offset="1" stop-color="#efe7f7"/>
+    </linearGradient>
+    <radialGradient id="onion" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#f3e8f5"/>
+      <stop offset="0.6" stop-color="#e5cdec"/>
+      <stop offset="1" stop-color="#b784c9"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#ybg)"/>
+  <!-- 라벨 리본 -->
+  <rect x="0" y="70" width="270" height="66" fill="#8e44ad"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="40" font-weight="800" fill="#fff">양파</text>
+  <!-- 양파 -->
+  <g transform="translate(600 380)">
+    <!-- 뿌리 -->
+    <g stroke="#c9a15a" stroke-width="5" stroke-linecap="round">
+      <line x1="0" y1="150" x2="0" y2="200"/>
+      <line x1="-20" y1="150" x2="-30" y2="195"/>
+      <line x1="20" y1="150" x2="30" y2="195"/>
+    </g>
+    <!-- 몸통 -->
+    <path d="M0 -170 C 150 -170, 190 -30, 175 60 C 160 150, 90 175, 0 175 C -90 175, -160 150, -175 60 C -190 -30, -150 -170, 0 -170 Z" fill="url(#onion)"/>
+    <!-- 결 -->
+    <g fill="none" stroke="#a86fbf" stroke-width="4" opacity="0.55">
+      <path d="M0 -160 C 90 -140, 120 -20, 110 60 C 100 130, 60 160, 0 165"/>
+      <path d="M0 -160 C -90 -140, -120 -20, -110 60 C -100 130, -60 160, 0 165"/>
+      <path d="M0 -150 C 45 -120, 60 -10, 55 60 C 50 120, 30 150, 0 158"/>
+      <path d="M0 -150 C -45 -120, -60 -10, -55 60 C -50 120, -30 150, 0 158"/>
+    </g>
+    <!-- 순(새싹) -->
+    <g transform="translate(0 -170)" fill="#5aa469">
+      <path d="M0 0 C -10 -50, -40 -60, -30 -95 C -6 -75, 4 -35, 0 0 Z"/>
+      <path d="M0 0 C 10 -45, 34 -55, 26 -88 C 6 -68, -2 -32, 0 0 Z" opacity="0.9"/>
+    </g>
+    <!-- 하이라이트 -->
+    <ellipse cx="-60" cy="-40" rx="34" ry="70" fill="#ffffff" opacity="0.35" transform="rotate(-15 -60 -40)"/>
+  </g>
+</svg>

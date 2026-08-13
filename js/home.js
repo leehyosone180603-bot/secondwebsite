@@ -93,12 +93,19 @@
 
     const heroEl = document.getElementById("hero");
     if (heroEl) {
-      heroEl.innerHTML = `
-        <div class="hero__main">${featuredCard(featured)}</div>
-        <div class="hero__side">
-          <div class="hero__smalls">${heroRight.map(heroSmall).join("")}</div>
-          <div class="hero__headlines">${heroHeadlines.map(headlineItem).join("")}</div>
-        </div>`;
+      const smalls = heroRight.length
+        ? `<div class="hero__smalls">${heroRight.map(heroSmall).join("")}</div>` : "";
+      const heads = heroHeadlines.length
+        ? `<div class="hero__headlines">${heroHeadlines.map(headlineItem).join("")}</div>` : "";
+      if (smalls || heads) {
+        heroEl.innerHTML = `
+          <div class="hero__main">${featuredCard(featured)}</div>
+          <div class="hero__side">${smalls}${heads}</div>`;
+      } else {
+        // 글이 적을 때: 대표기사를 넓게 표시
+        heroEl.classList.add("hero--single");
+        heroEl.innerHTML = `<div class="hero__main">${featuredCard(featured)}</div>`;
+      }
     }
 
     /* ── 본문 좌측: 광고 + 기사목록 ── */
@@ -112,23 +119,30 @@
     const sideEl = document.getElementById("sidebar");
     if (sideEl) {
       const tl = all.slice(0, 5).map(timelineItem).join("");
-      const grid = foods.slice(0, 4).map(gridCard).join("");
-      const tags = infos.slice(0, 4).map(tagItem).join("");
-      sideEl.innerHTML = `
+      const foodGrid = foods.slice(0, 4).map(gridCard).join("");
+      const infoTags = infos.slice(0, 4).map(tagItem).join("");
+
+      const timelinePanel = all.length ? `
         <div class="panel">
           <div class="panel__head">📋 건강 타임라인 <span class="badge">건강</span></div>
           <div class="timeline">${tl}</div>
-          <a class="panel__more" href="/category.html?cat=info">전체기사 보기 ›</a>
-        </div>
-        ${adUnit("sidebar", "사이드")}
+          <a class="panel__more" href="/category.html?cat=food">전체기사 보기 ›</a>
+        </div>` : "";
+
+      const foodPanel = foods.length ? `
         <div class="panel">
           <div class="panel__head">건강음식</div>
-          <div class="gridcards">${grid}</div>
-        </div>
+          <div class="gridcards">${foodGrid}</div>
+        </div>` : "";
+
+      const infoPanel = infos.length ? `
         <div class="panel">
           <div class="panel__head">건강정보</div>
-          <div class="taglist">${tags}</div>
-        </div>`;
+          <div class="taglist">${infoTags}</div>
+        </div>` : "";
+
+      sideEl.innerHTML =
+        timelinePanel + adUnit("sidebar", "사이드") + foodPanel + infoPanel;
     }
 
     activateAds();
