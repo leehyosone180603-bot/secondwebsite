@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "mechurial-benefits-intake",
+    title: "메추리알 효능과 하루 권장 섭취량",
+    summary:
+      "작은 알 속 메추리알 효능 5가지(단백질·비타민/미네랄·성장기 영양·면역·눈 건강)와 하루 권장 섭취량, 콜레스테롤 주의점을 정리했습니다.",
+    category: "food",
+    date: "2026-08-14",
+    url: "/posts/mechurial-benefits-intake.html",
+    image: "/img/mechuri-hero.jpg",
+  },
+  {
     id: "sontop-hangnail-care",
     title: "손톱 거스러미(가시래기) 생기는 원인과 예방·관리 방법",
     summary:
