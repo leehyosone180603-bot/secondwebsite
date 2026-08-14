@@ -232,6 +232,12 @@ img { max-width: 100%; display: block; }
 
 .article__title small { font-size: 15px; font-weight: 600; color: #9aa2ab; }
 
+/* 본문 비교표 */
+.cmp { width: 100%; border-collapse: collapse; margin: 18px 0 24px; font-size: 15px; }
+.cmp th, .cmp td { border: 1px solid var(--line); padding: 10px 12px; text-align: center; }
+.cmp thead th { background: var(--bg-soft); font-weight: 800; }
+.cmp td:first-child { background: #fafbfc; font-weight: 700; }
+
 /* ============================================================
    푸터 (이미지3)
    ============================================================ */
