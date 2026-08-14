@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "gangbakjeung-symptoms-treatment",
+    title: "강박증과 강박사고 차이, 증상과 치료·약 (확인·저장강박증)",
+    summary:
+      "강박증과 강박사고의 차이, 확인강박증·저장강박증 같은 대표 증상과 인지행동치료·약물치료 등 강박증 치료 방법을 정리했습니다.",
+    category: "info",
+    date: "2026-08-14",
+    url: "/posts/gangbakjeung-symptoms-treatment.html",
+    image: "/img/gangbak-hero.jpg",
+  },
+  {
     id: "pasangpung-symptoms-vaccine",
     title: "파상풍 증상과 초기증상, 예방접종·주사",
     summary:
