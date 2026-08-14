@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "biripjong-eye-causes-removal",
+    title: "눈 비립종 원인과 제거·예방 생활습관 (눈꺼풀·눈밑 비립종)",
+    summary:
+      "눈가에 생기는 하얀 좁쌀, 비립종의 원인과 눈꺼풀·눈밑 비립종 관리법, 피부과 제거 경험과 예방 생활습관을 정리했습니다.",
+    category: "info",
+    date: "2026-08-14",
+    url: "/posts/biripjong-eye-causes-removal.html",
+    image: "/img/birip-hero.jpg",
+  },
+  {
     id: "ipdeot-timing-symptoms",
     title: "입덧 시작 시기와 끝나는 시기 (임신 초기 입덧 증상)",
     summary:
