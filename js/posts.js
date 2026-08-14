@@ -67,7 +67,7 @@ const POSTS = [
     category: "info",
     date: "2026-08-13",
     url: "/posts/jangyeom-good-5foods.html",
-    image: "/img/jangyeom-hero.svg",
+    image: "/img/jangyeom-hero.jpg",
   },
   {
     id: "gyeran-good-pairings-3foods",
