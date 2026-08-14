@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="안구 건조와 피부 건조">
+  <defs><linearGradient id="o4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef5fb"/><stop offset="1" stop-color="#e0edf7"/></linearGradient></defs>
+  <rect width="1200" height="675" fill="url(#o4)"/>
+  <rect x="0" y="70" width="330" height="66" fill="#2b6cb0"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="36" font-weight="800" fill="#fff">안구·피부 건조</text>
+  <!-- 눈 -->
+  <g transform="translate(560 360)">
+    <path d="M-190 0 Q 0 -130 190 0 Q 0 130 -190 0 Z" fill="#fff" stroke="#c7d5e0" stroke-width="6"/>
+    <circle cx="0" cy="0" r="70" fill="#8bb7cf"/>
+    <circle cx="0" cy="0" r="34" fill="#37556a"/>
+    <circle cx="-14" cy="-14" r="12" fill="#fff" opacity="0.8"/>
+    <!-- 충혈/건조선 -->
+    <g stroke="#e08a7c" stroke-width="4" stroke-linecap="round" opacity="0.8"><path d="M-150 6 q 40 8 70 2"/><path d="M150 6 q -40 8 -70 2"/></g>
+  </g>
+  <!-- 물방울 + 금지(건조) -->
+  <g transform="translate(870 460)">
+    <path d="M0 -50 c 0 30 34 44 34 74 a 34 34 0 0 1 -68 0 c 0 -30 34 -44 34 -74 z" fill="#bcd7e6"/>
+    <line x1="-46" y1="-46" x2="46" y2="70" stroke="#e14b4b" stroke-width="9" stroke-linecap="round"/>
+  </g>
+</svg>

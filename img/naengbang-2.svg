@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="두통과 어지럼증">
+  <defs><linearGradient id="o2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef5fb"/><stop offset="1" stop-color="#e0edf7"/></linearGradient></defs>
+  <rect width="1200" height="675" fill="url(#o2)"/>
+  <rect x="0" y="70" width="270" height="66" fill="#2b6cb0"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="38" font-weight="800" fill="#fff">두통·어지럼증</text>
+  <!-- 얼굴 옆모습 -->
+  <g transform="translate(560 380)">
+    <path d="M40 -150 C 150 -150, 170 -20, 120 60 C 100 95, 110 120, 90 150 L -40 150 C -40 100, -70 90, -80 20 C -95 -80, -50 -150, 40 -150 Z" fill="#f0c9a8"/>
+    <circle cx="70" cy="-10" r="9" fill="#5a4632"/>
+    <path d="M30 40 q 20 12 40 0" fill="none" stroke="#c98f6a" stroke-width="5"/>
+  </g>
+  <!-- 두통 통증선 -->
+  <g stroke="#e14b4b" stroke-width="8" stroke-linecap="round" fill="none">
+    <path d="M470 150 l -30 -40 M540 130 l -14 -50 M610 135 l 6 -52 M680 155 l 30 -44"/>
+  </g>
+  <!-- 어지럼 소용돌이 -->
+  <g transform="translate(820 320)" fill="none" stroke="#2b6cb0" stroke-width="8" stroke-linecap="round">
+    <path d="M0 0 C 40 -6, 40 -50, 0 -50 C -50 -50, -50 20, 10 20 C 70 20, 66 -70, -10 -70"/>
+  </g>
+</svg>
