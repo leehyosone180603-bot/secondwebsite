@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "pasangpung-symptoms-vaccine",
+    title: "파상풍 증상과 초기증상, 예방접종·주사",
+    summary:
+      "파상풍의 원인과 대표 증상·초기증상, 파상풍 주사(예방접종)가 필요한 경우와 상처가 생겼을 때 대처법을 정리했습니다.",
+    category: "info",
+    date: "2026-08-14",
+    url: "/posts/pasangpung-symptoms-vaccine.html",
+    image: "/img/pasang-hero.jpg",
+  },
+  {
     id: "sonjeorim-numbness-causes",
     title: "손저림·손발저림 원인과 관리 (팔·손가락·손바닥 저림)",
     summary:
