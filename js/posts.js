@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "ipdeot-timing-symptoms",
+    title: "입덧 시작 시기와 끝나는 시기 (임신 초기 입덧 증상)",
+    summary:
+      "임신 초기 입덧 시작 시기와 끝나는 시기, 대표적인 입덧 증상과 견디는 데 도움이 되는 팁을 경험담과 함께 정리했습니다.",
+    category: "info",
+    date: "2026-08-14",
+    url: "/posts/ipdeot-timing-symptoms.html",
+    image: "/img/ipdeot-hero.jpg",
+  },
+  {
     id: "choeak-breakfast-4foods",
     title: "최악의 아침 식사 4가지",
     summary:
