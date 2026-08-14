@@ -87,7 +87,7 @@ const POSTS = [
     category: "info",
     date: "2026-08-13",
     url: "/posts/tongpung-avoid-5foods.html",
-    image: "/img/tongpung-hero.svg",
+    image: "/img/tongpung-hero.jpg",
   },
   {
     id: "hyeolgwan-cleansing-3foods",
