@@ -213,6 +213,7 @@ function renderFooter() {
   const links = [
     { t: "사이트 소개", href: "/about.html" },
     { t: "문의하기", href: "/contact.html" },
+    { t: "이용약관", href: "/terms.html" },
     { t: "개인정보처리방침", href: "/privacy.html", strong: true },
   ]
     .map(function (l) {
