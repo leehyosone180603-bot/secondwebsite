@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "abocado-ripening-benefits",
+    title: "아보카도 후숙 방법과 효능·칼로리·먹는법",
+    summary:
+      "실패하지 않는 아보카도 후숙 방법과 효능·칼로리, 잘 익은/덜 익은 아보카도 구별, 샌드위치·샐러드 등 먹는법을 정리했습니다.",
+    category: "food",
+    date: "2026-08-14",
+    url: "/posts/abocado-ripening-benefits.html",
+    image: "/img/abo-hero.jpg",
+  },
+  {
     id: "gohyeolap-causes-symptoms-lowering",
     title: "고혈압 원인과 증상, 낮추는 방법",
     summary:
