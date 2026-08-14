@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "jwijeot-causes-removal",
+    title: "쥐젖 생기는 이유·원인과 목·사타구니 쥐젖 제거·예방 관리",
+    summary:
+      "쥐젖(연성섬유종)이 생기는 원인과 목·사타구니 쥐젖 제거 방법, 제거 후 관리와 예방을 위한 생활습관을 정리했습니다.",
+    category: "info",
+    date: "2026-08-14",
+    url: "/posts/jwijeot-causes-removal.html",
+    image: "/img/jwijeot-hero.jpg",
+  },
+  {
     id: "biripjong-eye-causes-removal",
     title: "눈 비립종 원인과 제거·예방 생활습관 (눈꺼풀·눈밑 비립종)",
     summary:
