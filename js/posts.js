@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "sontop-hangnail-care",
+    title: "손톱 거스러미(가시래기) 생기는 원인과 예방·관리 방법",
+    summary:
+      "손톱 가시래기·거스러미가 생기는 이유(피부 건조·물·물어뜯기 등)와 올바른 관리법, 병원에 가야 하는 경우, 예방 생활습관을 정리했습니다.",
+    category: "info",
+    date: "2026-08-14",
+    url: "/posts/sontop-hangnail-care.html",
+    image: "/img/sontop-hero.jpg",
+  },
+  {
     id: "jwijeot-causes-removal",
     title: "쥐젖 생기는 이유·원인과 목·사타구니 쥐젖 제거·예방 관리",
     summary:
