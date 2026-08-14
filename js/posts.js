@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "naengbangbyeong-early-4symptoms",
+    title: "냉방병 초기증상 4가지",
+    summary:
+      "콧물·기침보다 먼저 오는 냉방병 초기증상 4가지(오한·근육통, 두통, 위장장애, 건조 증상)와 여름철 예방법을 정리했습니다.",
+    category: "info",
+    date: "2026-08-14",
+    url: "/posts/naengbangbyeong-early-4symptoms.html",
+    image: "/img/naengbang-hero.svg",
+  },
+  {
     id: "bujong-good-5foods",
     title: "부종에 좋은 음식 5가지",
     summary:

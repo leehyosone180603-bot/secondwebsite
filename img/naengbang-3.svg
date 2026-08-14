@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="위장 장애와 복통">
+  <defs><linearGradient id="o3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef5fb"/><stop offset="1" stop-color="#e0edf7"/></linearGradient></defs>
+  <rect width="1200" height="675" fill="url(#o3)"/>
+  <rect x="0" y="70" width="270" height="66" fill="#2b6cb0"/>
+  <text x="30" y="114" font-family="'Noto Sans KR',sans-serif" font-size="38" font-weight="800" fill="#fff">위장·복부 냉증</text>
+  <!-- 위 모양 -->
+  <g transform="translate(560 370)">
+    <path d="M-40 -150 C -40 -120, -80 -110, -90 -60 C -105 20, -60 120, 40 120 C 130 120, 150 30, 120 -30 C 100 -70, 60 -60, 50 -110 C 44 -150, 0 -160, -40 -150 Z" fill="#f2b8a8" stroke="#e08e7c" stroke-width="6"/>
+    <path d="M-40 -150 q 30 -14 90 40" fill="none" stroke="#e08e7c" stroke-width="14" stroke-linecap="round"/>
+    <!-- 불편 소용돌이 -->
+    <path d="M-10 0 c 30 -6 30 -40 0 -40 c -36 0 -36 50 6 50" fill="none" stroke="#c96a58" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <!-- 냉기(눈송이) -->
+  <g stroke="#5aa6c4" stroke-width="6" stroke-linecap="round">
+    <g transform="translate(800 320)"><line x1="-20" y1="0" x2="20" y2="0"/><line x1="0" y1="-20" x2="0" y2="20"/><line x1="-14" y1="-14" x2="14" y2="14"/><line x1="-14" y1="14" x2="14" y2="-14"/></g>
+    <g transform="translate(880 440) scale(0.7)"><line x1="-20" y1="0" x2="20" y2="0"/><line x1="0" y1="-20" x2="0" y2="20"/><line x1="-14" y1="-14" x2="14" y2="14"/><line x1="-14" y1="14" x2="14" y2="-14"/></g>
+  </g>
+</svg>
