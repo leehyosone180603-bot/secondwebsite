@@ -30,7 +30,7 @@ const SITE = {
 const ADS_SHOW = false;
 
 const ADSENSE = {
-  client: "ca-pub-0000000000000000", // ← 발급받은 게시자 ID로 교체
+  client: "ca-pub-7143828779500885", // ← 발급받은 게시자 ID
   slots: {
     header: "0000000000",   // 상단 배너
     inList: "0000000000",   // 기사 목록 상단
