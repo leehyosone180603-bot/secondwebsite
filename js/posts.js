@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "choeak-breakfast-4foods",
+    title: "최악의 아침 식사 4가지",
+    summary:
+      "뇌 건강을 해치는 최악의 아침 식사 4가지(설탕 시리얼·가공육 빵·시판 과일주스·식빵과 잼)와 뇌를 깨우는 대체 식단을 정리했습니다.",
+    category: "info",
+    date: "2026-08-14",
+    url: "/posts/choeak-breakfast-4foods.html",
+    image: "/img/choeak-hero.jpg",
+  },
+  {
     id: "naengbangbyeong-early-4symptoms",
     title: "냉방병 초기증상 4가지",
     summary:
