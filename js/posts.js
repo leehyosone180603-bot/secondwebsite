@@ -47,7 +47,7 @@ const POSTS = [
     category: "food",
     date: "2026-08-13",
     url: "/posts/bujong-good-5foods.html",
-    image: "/img/bujong-hero.svg",
+    image: "/img/bujong-hero.jpg",
   },
   {
     id: "jeonripseon-good-5foods",
