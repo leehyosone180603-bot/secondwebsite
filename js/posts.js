@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "geonmangjeung-chimae-difference",
+    title: "건망증과 치매 증상 차이점, 건망증 치료와 치매 예방법",
+    summary:
+      "건망증과 치매 증상의 차이점, 집에서 해보는 치매 자가진단, 원인별 건망증 치료와 생활습관으로 실천하는 치매 예방법을 정리했습니다.",
+    category: "info",
+    date: "2026-08-14",
+    url: "/posts/geonmangjeung-chimae-difference.html",
+    image: "/img/geonmang-hero.jpg",
+  },
+  {
     id: "meong-bruise-causes-remedy",
     title: "멍드는 이유와 피멍 빨리 빼는법 (멍연고)",
     summary:
