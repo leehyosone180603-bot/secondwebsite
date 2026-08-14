@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "meong-bruise-causes-remedy",
+    title: "멍드는 이유와 피멍 빨리 빼는법 (멍연고)",
+    summary:
+      "멍드는 이유와 처음 48시간이 중요한 피멍 빼는법(냉·온찜질), 멍연고 사용법과 멍 빨리 빼는 생활습관, 병원 방문이 필요한 경우를 정리했습니다.",
+    category: "info",
+    date: "2026-08-14",
+    url: "/posts/meong-bruise-causes-remedy.html",
+    image: "/img/meong-hero.jpg",
+  },
+  {
     id: "abocado-ripening-benefits",
     title: "아보카도 후숙 방법과 효능·칼로리·먹는법",
     summary:
