@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "gohyeolap-causes-symptoms-lowering",
+    title: "고혈압 원인과 증상, 낮추는 방법",
+    summary:
+      "침묵의 살인자 고혈압의 원인(나트륨·운동부족·스트레스·가족력 등)과 증상, 혈압을 낮추는 생활습관을 정리했습니다.",
+    category: "info",
+    date: "2026-08-14",
+    url: "/posts/gohyeolap-causes-symptoms-lowering.html",
+    image: "/img/gohyeol-hero.jpg",
+  },
+  {
     id: "gangbakjeung-symptoms-treatment",
     title: "강박증과 강박사고 차이, 증상과 치료·약 (확인·저장강박증)",
     summary:
