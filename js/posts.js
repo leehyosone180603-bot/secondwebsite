@@ -97,7 +97,7 @@ const POSTS = [
     category: "food",
     date: "2026-08-13",
     url: "/posts/hyeolgwan-cleansing-3foods.html",
-    image: "/img/hyeolgwan-hero.svg",
+    image: "/img/hyeolgwan-hero.jpg",
   },
 ];
 
