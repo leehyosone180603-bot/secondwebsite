@@ -77,7 +77,7 @@ const POSTS = [
     category: "food",
     date: "2026-08-13",
     url: "/posts/gyeran-good-pairings-3foods.html",
-    image: "/img/gyeran-hero.svg",
+    image: "/img/gyeran-hero.jpg",
   },
   {
     id: "tongpung-avoid-5foods",
