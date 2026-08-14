@@ -40,6 +40,16 @@ const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
  */
 const POSTS = [
   {
+    id: "sonjeorim-numbness-causes",
+    title: "손저림·손발저림 원인과 관리 (팔·손가락·손바닥 저림)",
+    summary:
+      "손저림과 함께 팔·손가락·손바닥·손발 저림이 나타나는 원인과 완화 생활습관, 병원 방문이 필요한 경우를 정리했습니다.",
+    category: "info",
+    date: "2026-08-14",
+    url: "/posts/sonjeorim-numbness-causes.html",
+    image: "/img/sonjeorim-hero.jpg",
+  },
+  {
     id: "mechurial-benefits-intake",
     title: "메추리알 효능과 하루 권장 섭취량",
     summary:
