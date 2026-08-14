@@ -47,7 +47,7 @@ const POSTS = [
     category: "info",
     date: "2026-08-14",
     url: "/posts/naengbangbyeong-early-4symptoms.html",
-    image: "/img/naengbang-hero.svg",
+    image: "/img/naengbang-hero.jpg",
   },
   {
     id: "bujong-good-5foods",
