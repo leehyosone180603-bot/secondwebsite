@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+tools/dist/
+tools/build/
+tools/.buildenv/
+tools/*.spec
+tools/.setup_done
