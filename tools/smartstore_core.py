@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import os
 import re
+import sys
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -56,6 +57,37 @@ class CrawlOptions:
     # 크롬 실행 파일을 직접 지정하고 싶을 때(사내망 등으로 playwright install 이
     # 막힌 환경). 비워 두면 Playwright가 설치한 Chromium을 쓴다.
     executable_path: str = ""
+
+
+def _default_browser_cache() -> "Path | None":
+    """Playwright 가 크롬을 기본으로 받아두는 사용자 폴더."""
+    if sys.platform.startswith("win"):
+        base = os.environ.get("LOCALAPPDATA")
+        return Path(base) / "ms-playwright" if base else None
+    if sys.platform == "darwin":
+        return Path.home() / "Library" / "Caches" / "ms-playwright"
+    return Path.home() / ".cache" / "ms-playwright"
+
+
+def _prepare_browser_path() -> None:
+    """실행 파일(exe)로 묶여 돌 때 크롬을 어디서 찾을지 정리한다.
+
+    Playwright 는 frozen 실행 파일에서 PLAYWRIGHT_BROWSERS_PATH 를 "0" 으로 잡아
+    번들 안(.local-browsers)만 뒤진다. 빌드할 때 크롬을 번들에 넣지 않았다면
+    거기엔 아무것도 없으므로, 사용자 폴더에 이미 받아둔 크롬으로 되돌려 준다.
+    """
+    if not getattr(sys, "frozen", False):
+        return
+    if os.environ.get("PLAYWRIGHT_BROWSERS_PATH"):
+        return  # 사용자가 직접 지정했으면 존중한다
+
+    bundled = Path(getattr(sys, "_MEIPASS", "")) / "playwright" / "driver" / "package" / ".local-browsers"
+    if bundled.is_dir() and any(bundled.iterdir()):
+        return  # 번들 안에 크롬이 들어 있다
+
+    fallback = _default_browser_cache()
+    if fallback and fallback.is_dir():
+        os.environ["PLAYWRIGHT_BROWSERS_PATH"] = str(fallback)
 
 
 def _launch_kwargs(options: CrawlOptions) -> dict:
@@ -170,6 +202,8 @@ def crawl(
 
     names: list[str] = []
     seen_ids: set[str] = set()
+
+    _prepare_browser_path()
 
     with sync_playwright() as driver:
         try:

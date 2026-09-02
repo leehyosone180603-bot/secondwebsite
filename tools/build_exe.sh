@@ -9,6 +9,11 @@ cd "$(dirname "$0")"
 PY="${PYTHON:-python3}"
 VENV=.buildenv
 
+# "0" 은 크롬을 사용자 폴더가 아니라 playwright 패키지 안(.local-browsers)에
+# 설치하게 한다. 그래야 PyInstaller 가 함께 묶고, 묶인 실행 파일이 크롬을
+# 찾을 수 있다 (frozen 상태에서는 번들 안만 뒤진다).
+export PLAYWRIGHT_BROWSERS_PATH=0
+
 echo "[1/4] 빌드용 가상환경을 준비합니다..."
 [ -d "$VENV" ] || "$PY" -m venv "$VENV"
 VPY="$VENV/bin/python"
@@ -17,7 +22,7 @@ echo "[2/4] 필요한 패키지를 설치합니다..."
 "$VPY" -m pip install --quiet --upgrade pip
 "$VPY" -m pip install --quiet -r requirements.txt pyinstaller
 
-echo "[3/4] 크롬(Chromium)을 내려받습니다..."
+echo "[3/4] 크롬(Chromium)을 패키지 안에 내려받습니다..."
 "$VPY" -m playwright install chromium
 
 echo "[4/4] 실행 파일을 만듭니다. 몇 분 걸립니다..."

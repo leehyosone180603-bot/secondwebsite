@@ -71,16 +71,19 @@ python smartstore_gui.py
 있어야 실행되므로 옮길 때는 통째로 옮기세요. 만들어진 실행 파일 이름은 원하는
 대로 바꿔도 됩니다.
 
-**빌드한 PC에서는** 파이썬 없이도 바로 실행됩니다.
+빌드 스크립트는 `PLAYWRIGHT_BROWSERS_PATH=0` 을 걸어 크롬을 사용자 폴더가 아니라
+playwright 패키지 안(`.local-browsers`)에 받습니다. 그래야 PyInstaller가 크롬까지
+함께 묶어서, **파이썬도 크롬도 없는 PC에서 폴더만 복사해도** 실행됩니다.
 
-**다른 PC로 옮길 때는 크롬(Chromium)이 따라가지 않습니다.** Playwright는 크롬을
-실행 파일 안이 아니라 사용자 폴더
-(`%USERPROFILE%\AppData\Local\ms-playwright`)에 두기 때문입니다. 파이썬이 없는
-PC에서는 `playwright install` 을 실행할 수도 없으므로, 그 폴더를 함께 복사한 뒤
-환경변수 `PLAYWRIGHT_BROWSERS_PATH` 를 복사한 위치로 지정해야 합니다.
+이건 선택이 아니라 필수입니다. 묶인 실행 파일에서 Playwright는
+`PLAYWRIGHT_BROWSERS_PATH` 를 `0` 으로 고정해 **번들 안만** 찾기 때문에, 크롬을
+사용자 폴더에 받아두면 exe가 못 찾습니다.
 
-크롬 경로를 직접 지정하고 싶다면 환경변수 `SMARTSTORE_CHROME` 에 크롬 실행 파일
-경로를 넣어도 됩니다.
+이미 그렇게 만들어진 exe를 위해 `smartstore_core.py` 에 폴백이 있습니다 — 번들
+안이 비어 있으면 사용자 폴더(`ms-playwright`)의 크롬을 자동으로 씁니다.
+
+크롬 경로를 직접 지정하려면 환경변수 `SMARTSTORE_CHROME` 에 크롬 실행 파일
+경로를 넣으면 됩니다.
 
 ### 명령줄
 

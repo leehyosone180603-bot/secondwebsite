@@ -4,6 +4,12 @@ cd /d "%~dp0"
 
 rem  ASCII-only on purpose: see the note at the top of RUN.bat.
 
+rem  "0" makes "playwright install" put Chromium inside the playwright
+rem  package (.local-browsers) instead of the user profile, so PyInstaller
+rem  bundles it. A frozen app looks there and nowhere else, and this also
+rem  makes the finished folder runnable on a PC that has no Python.
+set "PLAYWRIGHT_BROWSERS_PATH=0"
+
 set "PY="
 where py >nul 2>&1 && set "PY=py"
 if not defined PY where python >nul 2>&1 && set "PY=python"
@@ -22,7 +28,7 @@ echo [1/3] Installing packages ...
 if errorlevel 1 goto FAILED
 
 echo.
-echo [2/3] Downloading Chromium ...
+echo [2/3] Downloading Chromium into the package ...
 "%PY%" -m playwright install chromium
 if errorlevel 1 goto FAILED
 
@@ -42,6 +48,7 @@ echo   Done:  dist\SmartstoreCollector\SmartstoreCollector.exe
 echo.
 echo   Copy the whole dist\SmartstoreCollector folder to move it.
 echo   All files in that folder are needed to run.
+echo   Chromium is bundled inside, so it also runs on a PC without Python.
 echo ============================================================
 pause
 exit /b 0
