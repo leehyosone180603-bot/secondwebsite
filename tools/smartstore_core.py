@@ -69,6 +69,13 @@ class CrawlOptions:
     # 카테고리 주소로 곧장 뛰어들지 않고 스토어 첫 화면을 먼저 들른다.
     # 사람이 실제로 들어가는 순서라 쿠키와 referer 가 갖춰진다.
     warm_up: bool = True
+    # 스토어 첫 화면에서 클릭해 들어갈 메뉴 이름 (예: "국내도서").
+    # 카테고리 딥링크는 로그인 세션이 없으면 열리지 않으므로 이 방식을 쓴다.
+    category_name: str = ""
+    # 19 표시(성인 상품)가 붙은 상품만 모은다.
+    adult_only: bool = False
+    # 첫 쪽 상품 카드의 HTML 을 저장할 파일. 화면 구조를 확인할 때 쓴다.
+    debug_dump: str = ""
 
 
 def _default_browser_cache() -> "Path | None":
@@ -279,6 +286,77 @@ def _handle_login_wall(page, target_url: str, options: CrawlOptions, say, stop) 
     raise CrawlError("5분 동안 로그인 화면에서 넘어가지 못해 수집을 멈췄습니다.")
 
 
+# 상품 카드 하나하나에서 판단에 필요한 것만 뽑아 온다.
+# 카드 전체 HTML 을 다 가져오면 너무 무거워서, 이미지 정보와 잎노드 텍스트만 본다.
+_CARD_SCRIPT = """
+() => {
+  const out = [];
+  const done = new Set();
+  for (const a of document.querySelectorAll('a[href*="/products/"]')) {
+    const m = (a.getAttribute('href') || '').match(/\\/products\\/(\\d+)/);
+    if (!m) continue;
+    const id = m[1];
+    let entry = out.find(o => o.id === id);
+    if (!entry) { entry = {id: id, titles: [], marks: [], imgs: []}; out.push(entry); }
+
+    // 상품명 후보: 링크 자체의 글자와 title 속성만 본다.
+    const t = (a.innerText || '').trim();
+    if (t) entry.titles.push(t);
+    const attr = a.getAttribute('title');
+    if (attr) entry.titles.push(attr.trim());
+
+    // 배지 판단용: 카드 안의 짧은 글자와 이미지 설명. 상품명 후보와 절대 섞지 않는다.
+    if (done.has(id)) continue;
+    done.add(id);
+    const card = a.closest('li') || a.closest('[class*=item]') || a.parentElement || a;
+    for (const img of card.querySelectorAll('img')) {
+      entry.imgs.push(((img.getAttribute('src') || '') + ' | ' +
+                       (img.getAttribute('alt') || '')).slice(0, 300));
+    }
+    for (const el of card.querySelectorAll('*')) {
+      if (el.children.length === 0) {
+        const s = (el.textContent || '').trim();
+        if (s && s.length <= 20) entry.marks.push(s);
+      }
+      const label = el.getAttribute && (el.getAttribute('aria-label') || el.getAttribute('alt'));
+      if (label) entry.marks.push(String(label).slice(0, 60));
+    }
+  }
+  return out;
+}
+"""
+
+# 19 표시(성인 상품)를 알아보는 단서들. 네이버가 이걸 이미지로 그릴 수도,
+# 글자로 넣을 수도 있어 여러 갈래를 함께 본다.
+_ADULT_TEXT = re.compile(r"^(19|19\s*세|19금|성인)$")
+_ADULT_PHRASE = re.compile(r"(19세\s*이상|성인\s*인증|청소년\s*유해|adult)", re.IGNORECASE)
+_ADULT_IMAGE = re.compile(r"(adult|19_?over|age_?19|19age)", re.IGNORECASE)
+
+
+def looks_adult(card: dict) -> bool:
+    """카드의 배지·이미지에 19 표시로 볼 만한 단서가 있는지.
+
+    상품명(titles)은 보지 않는다. 제목에 '19'가 들어간 책까지 딸려오면 안 된다.
+    """
+    for raw in card.get("marks", []):
+        text = " ".join(str(raw).split())
+        if _ADULT_TEXT.match(text) or _ADULT_PHRASE.search(text):
+            return True
+    for raw in card.get("imgs", []):
+        if _ADULT_IMAGE.search(str(raw)):
+            return True
+    return False
+
+
+def card_name(card: dict) -> str:
+    """카드에서 상품명을 고른다. 배지 텍스트는 후보에 들어 있지 않다."""
+    for raw in card.get("titles", []):
+        name = pick_name(str(raw))
+        if name and len(name) >= 2:
+            return name
+    return ""
+
+
 def _scroll_to_bottom(page, pause: float = 0.4, rounds: int = 15) -> None:
     """지연 로딩된 상품 카드까지 모두 그려지도록 끝까지 스크롤한다."""
     last_height = -1
@@ -292,27 +370,68 @@ def _scroll_to_bottom(page, pause: float = 0.4, rounds: int = 15) -> None:
     page.evaluate("window.scrollTo(0, 0)")
 
 
-def _collect_page(page) -> "dict[str, str]":
-    """현재 화면에서 {상품ID: 상품명} 을 뽑는다.
+def _collect_page(page, adult_only: bool) -> "tuple[dict[str, str], list[str]]":
+    """현재 화면에서 (모은 {상품ID: 상품명}, 화면에 있던 전체 상품ID) 를 돌려준다.
 
-    상품 하나에 이미지 링크와 제목 링크가 따로 걸려 있는 경우가 있어
-    상품 ID로 묶고, 이름이 먼저 확인된 앵커의 값을 채택한다.
+    끝 페이지 판정은 '모은 것'이 아니라 '화면에 있던 전체'로 해야 한다.
+    19 표시만 모으는 경우, 해당 상품이 없는 쪽이 이어져도 목록은 계속되기 때문.
     """
+    cards = page.evaluate(_CARD_SCRIPT) or []
     found: dict[str, str] = {}
-    for anchor in page.query_selector_all('a[href*="/products/"]'):
-        href = anchor.get_attribute("href") or ""
-        match = PRODUCT_HREF.search(href)
-        if not match:
+    for card in cards:
+        if adult_only and not looks_adult(card):
             continue
-        product_id = match.group(1)
-        if found.get(product_id):
-            continue
-        name = pick_name(anchor.inner_text())
-        if not name:
-            name = (anchor.get_attribute("title") or "").strip()
+        name = card_name(card)
         if name:
-            found[product_id] = name
-    return found
+            found[card["id"]] = name
+    return found, [card["id"] for card in cards]
+
+
+def _dump_cards(page, path: str, say) -> None:
+    """상품 카드 몇 개의 HTML 을 파일로 남긴다 (화면 구조 확인용)."""
+    try:
+        html = page.evaluate("""
+        () => {
+          const seen = new Set(); const parts = [];
+          for (const a of document.querySelectorAll('a[href*="/products/"]')) {
+            const m = (a.getAttribute('href')||'').match(/\\/products\\/(\\d+)/);
+            if (!m || seen.has(m[1])) continue;
+            seen.add(m[1]);
+            const card = a.closest('li') || a.parentElement || a;
+            parts.push(card.outerHTML);
+            if (parts.length >= 5) break;
+          }
+          return parts.join('\\n\\n<!-- ================ -->\\n\\n');
+        }
+        """)
+        Path(path).write_text(html or "(상품 카드를 찾지 못함)", encoding="utf-8")
+        say(f"진단용 HTML을 저장했습니다: {path}")
+    except Exception as exc:
+        say(f"진단용 HTML 저장 실패: {exc}")
+
+
+def _enter_category(page, options: CrawlOptions, say, stop) -> str:
+    """스토어 첫 화면에서 메뉴를 눌러 카테고리로 들어가고, 그 주소를 돌려준다."""
+    name = options.category_name.strip()
+    say(f"'{name}' 메뉴를 찾는 중…")
+    try:
+        page.get_by_role("link", name=name, exact=True).first.click(timeout=15_000)
+    except Exception:
+        try:
+            page.click(f'a:has-text("{name}")', timeout=15_000)
+        except Exception as exc:
+            raise CrawlError(
+                f"스토어 첫 화면에서 '{name}' 메뉴를 찾지 못했습니다.\n\n"
+                "메뉴 이름을 화면에 보이는 그대로 적어 주세요.\n"
+                f"원본 오류: {exc}"
+            ) from exc
+
+    page.wait_for_load_state("domcontentloaded", timeout=60_000)
+    time.sleep(2)
+    if is_login_page(page.url):
+        _handle_login_wall(page, page.url, options, say, stop)
+    say(f"카테고리로 들어왔습니다: {page.url}")
+    return page.url
 
 
 def crawl(
@@ -342,7 +461,8 @@ def crawl(
         ) from exc
 
     names: list[str] = []
-    seen_ids: set[str] = set()
+    seen_ids: set[str] = set()     # 이미 담은 상품
+    seen_cards: set[str] = set()   # 화면에서 본 모든 상품 (끝 판정용)
 
     _prepare_browser_path()
 
@@ -361,29 +481,32 @@ def crawl(
 
         page = context.pages[0] if context.pages else context.new_page()
 
+        base_url = options.url
+
         try:
-            if options.warm_up:
+            if options.warm_up or options.category_name:
                 root = store_root_url(options.url)
                 say(f"스토어 첫 화면을 먼저 엽니다: {root}")
-                try:
-                    page.goto(root, wait_until="domcontentloaded", timeout=60_000)
-                    if is_login_page(page.url):
-                        _handle_login_wall(page, root, options, say, stop)
-                    time.sleep(2)
-                except CrawlError:
-                    raise
-                except Exception as exc:
-                    say(f"첫 화면을 열지 못했습니다({exc}). 그대로 진행합니다.")
+                page.goto(root, wait_until="domcontentloaded", timeout=60_000)
+                if is_login_page(page.url):
+                    _handle_login_wall(page, root, options, say, stop)
+                time.sleep(2)
+
+            if options.category_name:
+                # 카테고리 딥링크는 로그인 세션이 없으면 열리지 않는다.
+                # 첫 화면에서 메뉴를 눌러 들어가면 세션이 갖춰진 채로 이동한다.
+                base_url = _enter_category(page, options, say, stop)
 
             for page_no in range(1, options.max_pages + 1):
                 if stop():
                     raise CrawlCancelled(names)
-                url = build_page_url(options.url, page_no)
-                say(f"[{page_no}쪽] 여는 중…")
-                page.goto(url, wait_until="domcontentloaded", timeout=60_000)
-
-                if is_login_page(page.url):
-                    _handle_login_wall(page, url, options, say, stop)
+                url = build_page_url(base_url, page_no)
+                # 카테고리를 눌러 들어온 직후라면 이미 1쪽이 떠 있다.
+                if not (page_no == 1 and options.category_name):
+                    say(f"[{page_no}쪽] 여는 중…")
+                    page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+                    if is_login_page(page.url):
+                        _handle_login_wall(page, url, options, say, stop)
 
                 try:
                     page.wait_for_selector('a[href*="/products/"]', timeout=15_000)
@@ -395,15 +518,28 @@ def crawl(
                 if stop():
                     raise CrawlCancelled(names)
 
-                page_items = _collect_page(page)
-                new_items = {pid: name for pid, name in page_items.items() if pid not in seen_ids}
-                if not new_items:
+                if page_no == 1 and options.debug_dump:
+                    _dump_cards(page, options.debug_dump, say)
+
+                page_items, card_ids = _collect_page(page, options.adult_only)
+
+                # 끝 판정: 이 쪽에 처음 보는 상품이 하나도 없으면 목록이 끝난 것.
+                fresh_cards = [cid for cid in card_ids if cid not in seen_cards]
+                if not fresh_cards:
                     say(f"[{page_no}쪽] 새로운 상품이 없습니다. 수집을 끝냅니다.")
                     break
+                seen_cards.update(card_ids)
 
-                seen_ids.update(new_items)
-                names.extend(new_items.values())
-                say(f"[{page_no}쪽] {len(new_items)}개 수집 (누적 {len(names)}개)")
+                new_items = {pid: name for pid, name in page_items.items() if pid not in seen_ids}
+                if new_items:
+                    seen_ids.update(new_items)
+                    names.extend(new_items.values())
+                    say(f"[{page_no}쪽] 상품 {len(card_ids)}개 중 {len(new_items)}개 수집 "
+                        f"(누적 {len(names)}개)")
+                elif options.adult_only:
+                    say(f"[{page_no}쪽] 상품 {len(card_ids)}개, 19 표시 없음")
+                else:
+                    say(f"[{page_no}쪽] 상품 {len(card_ids)}개, 새로 담을 것 없음")
                 tick(page_no, len(names))
 
                 if options.wait > 0:

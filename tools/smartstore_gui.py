@@ -59,21 +59,28 @@ class App(tk.Tk):
         root.pack(fill="both", expand=True)
         root.columnconfigure(1, weight=1)
 
-        ttk.Label(root, text="카테고리 주소").grid(row=0, column=0, sticky="w", pady=(0, 4))
+        ttk.Label(root, text="스토어 주소").grid(row=0, column=0, sticky="w", pady=(0, 4))
         self.url_var = tk.StringVar(value=core.DEFAULT_URL)
         ttk.Entry(root, textvariable=self.url_var).grid(
             row=0, column=1, columnspan=2, sticky="ew", padx=(PAD, 0), pady=(0, 4)
         )
 
-        ttk.Label(root, text="저장할 파일").grid(row=1, column=0, sticky="w", pady=4)
+        ttk.Label(root, text="카테고리 메뉴").grid(row=1, column=0, sticky="w", pady=4)
+        self.category_var = tk.StringVar(value="국내도서")
+        ttk.Entry(root, textvariable=self.category_var).grid(
+            row=1, column=1, sticky="ew", padx=(PAD, 0), pady=4
+        )
+        ttk.Label(root, text="(비우면 주소 그대로)").grid(row=1, column=2, sticky="w", padx=(4, 0))
+
+        ttk.Label(root, text="저장할 파일").grid(row=2, column=0, sticky="w", pady=4)
         self.out_var = tk.StringVar(value=str(Path.cwd() / core.DEFAULT_OUTPUT))
-        ttk.Entry(root, textvariable=self.out_var).grid(row=1, column=1, sticky="ew", padx=(PAD, 0), pady=4)
+        ttk.Entry(root, textvariable=self.out_var).grid(row=2, column=1, sticky="ew", padx=(PAD, 0), pady=4)
         ttk.Button(root, text="찾아보기…", command=self._choose_output).grid(
-            row=1, column=2, sticky="ew", padx=(4, 0), pady=4
+            row=2, column=2, sticky="ew", padx=(4, 0), pady=4
         )
 
         options = ttk.LabelFrame(root, text="옵션", padding=PAD)
-        options.grid(row=2, column=0, columnspan=3, sticky="ew", pady=(PAD, 0))
+        options.grid(row=3, column=0, columnspan=3, sticky="ew", pady=(PAD, 0))
 
         ttk.Label(options, text="최대 페이지").grid(row=0, column=0, sticky="w")
         self.max_pages_var = tk.IntVar(value=100)
@@ -104,8 +111,18 @@ class App(tk.Tk):
             options, text="설치된 크롬 사용", variable=self.system_chrome_var
         ).grid(row=1, column=2, columnspan=3, sticky="w", pady=(6, 0))
 
+        self.adult_only_var = tk.BooleanVar(value=True)
+        ttk.Checkbutton(
+            options, text="19 표시 상품만 모으기", variable=self.adult_only_var
+        ).grid(row=2, column=0, columnspan=2, sticky="w", pady=(6, 0))
+
+        self.dump_var = tk.BooleanVar(value=True)
+        ttk.Checkbutton(
+            options, text="진단용 HTML 저장", variable=self.dump_var
+        ).grid(row=2, column=2, columnspan=3, sticky="w", pady=(6, 0))
+
         buttons = ttk.Frame(root)
-        buttons.grid(row=3, column=0, columnspan=3, sticky="ew", pady=(PAD, 0))
+        buttons.grid(row=4, column=0, columnspan=3, sticky="ew", pady=(PAD, 0))
         self.start_button = ttk.Button(buttons, text="수집 시작", command=self._start)
         self.start_button.pack(side="left")
         self.stop_button = ttk.Button(buttons, text="중지", command=self._stop, state="disabled")
@@ -116,13 +133,13 @@ class App(tk.Tk):
         self.open_button.pack(side="left", padx=(4, 0))
 
         self.progress = ttk.Progressbar(root, mode="indeterminate")
-        self.progress.grid(row=4, column=0, columnspan=3, sticky="ew", pady=(PAD, 0))
+        self.progress.grid(row=5, column=0, columnspan=3, sticky="ew", pady=(PAD, 0))
 
         log_frame = ttk.LabelFrame(root, text="진행 상황", padding=4)
-        log_frame.grid(row=5, column=0, columnspan=3, sticky="nsew", pady=(PAD, 0))
+        log_frame.grid(row=6, column=0, columnspan=3, sticky="nsew", pady=(PAD, 0))
         log_frame.rowconfigure(0, weight=1)
         log_frame.columnconfigure(0, weight=1)
-        root.rowconfigure(5, weight=1)
+        root.rowconfigure(6, weight=1)
 
         self.log_text = tk.Text(log_frame, wrap="word", height=12, state="disabled")
         self.log_text.grid(row=0, column=0, sticky="nsew")
@@ -132,7 +149,7 @@ class App(tk.Tk):
 
         self.status_var = tk.StringVar(value="대기 중")
         ttk.Label(root, textvariable=self.status_var, anchor="w").grid(
-            row=6, column=0, columnspan=3, sticky="ew", pady=(4, 0)
+            row=7, column=0, columnspan=3, sticky="ew", pady=(4, 0)
         )
 
     # --------------------------------------------------------------- 이벤트
@@ -166,6 +183,9 @@ class App(tk.Tk):
             headless=not self.show_browser_var.get(),
             profile_dir=str(core.default_profile_dir()) if self.keep_profile_var.get() else "",
             use_system_chrome=self.system_chrome_var.get(),
+            category_name=self.category_var.get().strip(),
+            adult_only=self.adult_only_var.get(),
+            debug_dump=str(Path(out_path).with_name("진단용_화면구조.html")) if self.dump_var.get() else "",
         )
 
         self._clear_log()

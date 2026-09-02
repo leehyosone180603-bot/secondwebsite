@@ -30,6 +30,12 @@ def main() -> int:
                         help="방문 기록을 남기지 않는다 (기본은 유지)")
     parser.add_argument("--bundled-chrome", action="store_true",
                         help="설치된 크롬 대신 Playwright 의 Chromium 을 쓴다")
+    parser.add_argument("--category", default="",
+                        help="스토어 첫 화면에서 눌러 들어갈 메뉴 이름 (예: 국내도서)")
+    parser.add_argument("--adult-only", action="store_true",
+                        help="19 표시가 있는 상품만 모은다")
+    parser.add_argument("--dump", default="",
+                        help="첫 쪽 상품 카드 HTML 을 저장할 파일")
     args = parser.parse_args()
 
     options = core.CrawlOptions(
@@ -39,6 +45,9 @@ def main() -> int:
         headless=not args.show,
         profile_dir="" if args.no_profile else str(core.default_profile_dir()),
         use_system_chrome=not args.bundled_chrome,
+        category_name=args.category,
+        adult_only=args.adult_only,
+        debug_dump=args.dump,
     )
 
     def say(message: str) -> None:
