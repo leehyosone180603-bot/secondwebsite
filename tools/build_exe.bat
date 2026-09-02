@@ -26,7 +26,7 @@ if errorlevel 1 (echo 크롬 내려받기 실패 & pause & exit /b 1)
 echo.
 echo [3/3] 실행 파일을 만듭니다. 몇 분 걸립니다...
 %PY% -m PyInstaller --noconfirm --clean --windowed ^
-    --name "스마트스토어_수집기" ^
+    --name "SmartstoreCollector" ^
     --collect-all playwright ^
     --hidden-import smartstore_core ^
     --paths . ^
@@ -35,9 +35,9 @@ if errorlevel 1 (echo 빌드 실패 & pause & exit /b 1)
 
 echo.
 echo ============================================================
-echo  완성!  dist\스마트스토어_수집기\스마트스토어_수집기.exe
+echo  완성!  dist\SmartstoreCollector\SmartstoreCollector.exe
 echo.
-echo  dist\스마트스토어_수집기 폴더를 통째로 옮겨서 쓰시면 됩니다.
+echo  dist\SmartstoreCollector 폴더를 통째로 옮겨서 쓰시면 됩니다.
 echo  (폴더 안의 파일들이 함께 있어야 실행됩니다)
 echo ============================================================
 pause

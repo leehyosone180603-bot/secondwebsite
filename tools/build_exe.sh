@@ -22,12 +22,12 @@ echo "[3/4] 크롬(Chromium)을 내려받습니다..."
 
 echo "[4/4] 실행 파일을 만듭니다. 몇 분 걸립니다..."
 "$VPY" -m PyInstaller --noconfirm --clean --windowed \
-    --name "스마트스토어_수집기" \
+    --name "SmartstoreCollector" \
     --collect-all playwright \
     --hidden-import smartstore_core \
     --paths . \
     smartstore_gui.py
 
 echo
-echo "완성: dist/스마트스토어_수집기/스마트스토어_수집기"
-echo "dist/스마트스토어_수집기 폴더를 통째로 옮겨서 쓰세요."
+echo "완성: dist/SmartstoreCollector/SmartstoreCollector"
+echo "dist/SmartstoreCollector 폴더를 통째로 옮겨서 쓰세요."

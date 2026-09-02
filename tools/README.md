@@ -19,7 +19,9 @@
 | `smartstore_gui.py` | **GUI 프로그램** (창을 띄워 마우스로 조작) |
 | `smartstore_cli.py` | 명령줄 버전 (자동화용) |
 | `smartstore_core.py` | 수집 로직 (위 두 개가 공통으로 사용) |
-| `스마트스토어_수집기.bat` | 윈도우에서 더블클릭으로 GUI 실행 |
+| `RUN.bat` | 윈도우에서 더블클릭으로 GUI 실행 (첫 실행 때 준비물 자동 설치) |
+| `build_exe.bat` | 윈도우에서 단독 실행 파일(.exe) 만들기 |
+| `build_exe.sh` | 리눅스·맥에서 단독 실행 파일 만들기 |
 | `requirements.txt` | 필요한 패키지 |
 
 ## 설치 (처음 한 번만)
@@ -39,7 +41,7 @@ playwright install chromium
 
 ### GUI (권장)
 
-윈도우에서는 `스마트스토어_수집기.bat` 을 더블클릭하고, 그 외에는:
+윈도우에서는 `RUN.bat` 을 더블클릭하고, 그 외에는:
 
 ```bash
 python smartstore_gui.py
@@ -60,6 +62,14 @@ python smartstore_gui.py
 | 최대 페이지 | 안전장치. 이 페이지 수를 넘으면 멈춥니다 (기본 100) |
 | 페이지 간 대기 | 서버에 부담을 주지 않도록 쉬는 시간 (기본 1초) |
 | 브라우저 창 보기 | 실제 크롬 창을 띄워 무엇을 읽고 있는지 눈으로 확인 |
+
+### 단독 실행 파일(.exe)로 만들기
+
+`build_exe.bat`(윈도우) 또는 `build_exe.sh`(리눅스·맥)를 실행하면 PyInstaller로
+묶어 `dist/SmartstoreCollector/` 폴더가 만들어집니다. 이 폴더를 통째로 복사하면
+**파이썬이 설치되지 않은 PC에서도** 실행됩니다. (크롬만 처음 한 번 내려받으면 됨)
+
+만들어진 실행 파일 이름은 원하는 대로 바꿔도 됩니다.
 
 ### 명령줄
 
