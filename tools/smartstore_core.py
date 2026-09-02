@@ -21,6 +21,9 @@ DEFAULT_OUTPUT = "상품명.txt"
 
 PRODUCT_HREF = re.compile(r"/products/(\d+)")
 
+# 네이버가 자동화 브라우저를 골라내면 이 로그인 주소로 돌려보낸다.
+LOGIN_HOST = "nid.naver.com"
+
 # 상품 카드 안에는 상품명 말고도 가격·할인율·배지 텍스트가 섞여 있어 걸러낸다.
 JUNK_LINE = re.compile(
     r"""^(
@@ -57,6 +60,12 @@ class CrawlOptions:
     # 크롬 실행 파일을 직접 지정하고 싶을 때(사내망 등으로 playwright install 이
     # 막힌 환경). 비워 두면 Playwright가 설치한 Chromium을 쓴다.
     executable_path: str = ""
+    # 방문 기록(쿠키)을 남겨둘 폴더. 비우면 매번 완전히 새 브라우저로 시작해
+    # "처음 온 방문자"로 보이며, 네이버가 자동화로 의심할 확률이 올라간다.
+    profile_dir: str = ""
+    # PC에 설치된 진짜 크롬을 쓴다. Playwright 전용 Chromium 보다 일반 사용자와
+    # 구별되는 지점이 적다.
+    use_system_chrome: bool = False
 
 
 def _default_browser_cache() -> "Path | None":
@@ -96,10 +105,26 @@ def _launch_kwargs(options: CrawlOptions) -> dict:
     executable = options.executable_path or os.environ.get("SMARTSTORE_CHROME", "")
     if executable:
         kwargs["executable_path"] = executable
+    args = [
+        # 이게 없으면 navigator.webdriver 가 true 로 남아 일반 브라우저와
+        # 다르게 보이고, 네이버가 로그인 화면으로 돌려보낸다.
+        "--disable-blink-features=AutomationControlled",
+    ]
     if hasattr(os, "geteuid") and os.geteuid() == 0:
         # 루트로 도는 컨테이너에서는 크롬 샌드박스를 쓸 수 없다.
-        kwargs["args"] = ["--no-sandbox"]
+        args.append("--no-sandbox")
+    kwargs["args"] = args
     return kwargs
+
+
+def default_profile_dir() -> Path:
+    """로그인 상태를 남겨둘 기본 폴더."""
+    return Path.home() / ".smartstore-collector" / "profile"
+
+
+def is_login_page(url: str) -> bool:
+    """네이버 로그인 화면으로 튕겼는지."""
+    return LOGIN_HOST in (url or "")
 
 
 # ---------------------------------------------------------------- 순수 함수
@@ -136,6 +161,99 @@ def save_names(names: Iterable[str], path: str | Path) -> Path:
 
 
 # ------------------------------------------------------------ 브라우저 조작
+
+
+def _user_agent(version: str) -> str:
+    """헤드리스 표시가 없는, 현재 OS에 맞는 User-Agent 문자열."""
+    major = (version or "").split(".")[0] or "122"
+    if sys.platform.startswith("win"):
+        platform = "Windows NT 10.0; Win64; x64"
+    elif sys.platform == "darwin":
+        platform = "Macintosh; Intel Mac OS X 10_15_7"
+    else:
+        platform = "X11; Linux x86_64"
+    return (
+        f"Mozilla/5.0 ({platform}) AppleWebKit/537.36 (KHTML, like Gecko) "
+        f"Chrome/{major}.0.0.0 Safari/537.36"
+    )
+
+
+_CONTEXT_ARGS = {
+    "locale": "ko-KR",
+    "timezone_id": "Asia/Seoul",
+    "viewport": {"width": 1440, "height": 900},
+    "extra_http_headers": {"Accept-Language": "ko-KR,ko;q=0.9"},
+}
+
+
+def _open_browser(driver, options: CrawlOptions):
+    """(browser, context) 를 연다.
+
+    profile_dir 이 있으면 쿠키가 남는 프로필로 열어 "다시 찾아온 방문자"처럼
+    보이게 한다. 이때는 browser 가 없으므로 None 을 돌려준다.
+    """
+    kwargs = _launch_kwargs(options)
+    want_chrome = options.use_system_chrome and not kwargs.get("executable_path")
+    if want_chrome:
+        kwargs["channel"] = "chrome"
+
+    def _launch(launch_kwargs: dict):
+        """크롬이 안 깔려 있으면 번들 Chromium 으로 물러선다."""
+        try:
+            if options.profile_dir:
+                Path(options.profile_dir).mkdir(parents=True, exist_ok=True)
+                return driver.chromium.launch_persistent_context(
+                    options.profile_dir, **launch_kwargs, **_CONTEXT_ARGS
+                )
+            return driver.chromium.launch(**launch_kwargs)
+        except Exception:
+            if "channel" not in launch_kwargs:
+                raise
+            fallback = {k: v for k, v in launch_kwargs.items() if k != "channel"}
+            return _launch(fallback)
+
+    if options.profile_dir:
+        return None, _launch(kwargs)
+
+    browser = _launch(kwargs)
+    context_args = dict(_CONTEXT_ARGS)
+    if options.headless:
+        # 헤드리스 크롬은 User-Agent 에 "HeadlessChrome" 이 박혀 바로 들킨다.
+        context_args["user_agent"] = _user_agent(browser.version)
+    return browser, browser.new_context(**context_args)
+
+
+def _handle_login_wall(page, target_url: str, options: CrawlOptions, say, stop) -> None:
+    """네이버가 로그인 화면으로 돌려보냈을 때.
+
+    로그인하면 19세 상품의 표시가 달라지므로 로그인을 강요하지 않는다.
+    창이 떠 있으면 사용자가 직접 처리할 시간을 주고, 원래 주소로 돌아온 뒤
+    수집을 이어간다.
+    """
+    if options.headless:
+        raise CrawlError(
+            "네이버가 자동화 브라우저로 판단해 로그인 화면으로 돌려보냈습니다.\n\n"
+            "아래를 켜고 다시 실행해 보세요.\n"
+            "  · [브라우저 창 보기]\n"
+            "  · [방문 기록 유지]\n"
+            "  · [설치된 크롬 사용]\n\n"
+            "그래도 막히면 페이지를 직접 열어 확인해 주세요."
+        )
+
+    say("네이버가 로그인 화면으로 돌려보냈습니다.")
+    say("열린 창에서 원래 페이지로 돌아가 주세요. 최대 5분 기다립니다.")
+    deadline = time.time() + 300
+    while time.time() < deadline:
+        if stop():
+            raise CrawlCancelled([])
+        time.sleep(2)
+        if not is_login_page(page.url):
+            say("화면이 넘어갔습니다. 수집을 이어갑니다.")
+            page.goto(target_url, wait_until="domcontentloaded", timeout=60_000)
+            if is_login_page(page.url):
+                continue
+            return
+    raise CrawlError("5분 동안 로그인 화면에서 넘어가지 못해 수집을 멈췄습니다.")
 
 
 def _scroll_to_bottom(page, pause: float = 0.4, rounds: int = 15) -> None:
@@ -207,7 +325,9 @@ def crawl(
 
     with sync_playwright() as driver:
         try:
-            browser = driver.chromium.launch(**_launch_kwargs(options))
+            browser, context = _open_browser(driver, options)
+        except CrawlError:
+            raise
         except Exception as exc:  # pragma: no cover - 설치 안내용
             raise CrawlError(
                 "Chromium 브라우저를 실행하지 못했습니다.\n\n"
@@ -216,14 +336,7 @@ def crawl(
                 f"원본 오류: {exc}"
             ) from exc
 
-        context = browser.new_context(
-            locale="ko-KR",
-            user_agent=(
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                "(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-            ),
-        )
-        page = context.new_page()
+        page = context.pages[0] if context.pages else context.new_page()
 
         try:
             for page_no in range(1, options.max_pages + 1):
@@ -232,6 +345,10 @@ def crawl(
                 url = build_page_url(options.url, page_no)
                 say(f"[{page_no}쪽] 여는 중…")
                 page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+
+                if is_login_page(page.url):
+                    _handle_login_wall(page, url, options, say, stop)
+
                 try:
                     page.wait_for_selector('a[href*="/products/"]', timeout=15_000)
                 except Exception:
@@ -257,6 +374,7 @@ def crawl(
                     time.sleep(options.wait)
         finally:
             context.close()
-            browser.close()
+            if browser is not None:
+                browser.close()
 
     return names

@@ -87,10 +87,22 @@ class App(tk.Tk):
             options, from_=0.0, to=10.0, increment=0.5, width=6, textvariable=self.wait_var
         ).grid(row=0, column=3, sticky="w", padx=(4, PAD * 2))
 
-        self.show_browser_var = tk.BooleanVar(value=False)
+        self.show_browser_var = tk.BooleanVar(value=True)
         ttk.Checkbutton(options, text="브라우저 창 보기", variable=self.show_browser_var).grid(
             row=0, column=4, sticky="w"
         )
+
+        # 네이버가 자동화 브라우저를 걸러내므로 기본값을 "일반 브라우저에
+        # 가깝게" 쪽으로 둔다.
+        self.keep_profile_var = tk.BooleanVar(value=True)
+        ttk.Checkbutton(
+            options, text="방문 기록 유지", variable=self.keep_profile_var
+        ).grid(row=1, column=0, columnspan=2, sticky="w", pady=(6, 0))
+
+        self.system_chrome_var = tk.BooleanVar(value=True)
+        ttk.Checkbutton(
+            options, text="설치된 크롬 사용", variable=self.system_chrome_var
+        ).grid(row=1, column=2, columnspan=3, sticky="w", pady=(6, 0))
 
         buttons = ttk.Frame(root)
         buttons.grid(row=3, column=0, columnspan=3, sticky="ew", pady=(PAD, 0))
@@ -152,6 +164,8 @@ class App(tk.Tk):
             max_pages=max(1, int(self.max_pages_var.get())),
             wait=max(0.0, float(self.wait_var.get())),
             headless=not self.show_browser_var.get(),
+            profile_dir=str(core.default_profile_dir()) if self.keep_profile_var.get() else "",
+            use_system_chrome=self.system_chrome_var.get(),
         )
 
         self._clear_log()

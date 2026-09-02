@@ -26,6 +26,10 @@ def main() -> int:
     parser.add_argument("--max-pages", type=int, default=100, help="최대 페이지 수 (기본: 100)")
     parser.add_argument("--wait", type=float, default=1.0, help="페이지 간 대기 초 (기본: 1.0)")
     parser.add_argument("--show", action="store_true", help="브라우저 창을 띄워 진행 상황을 본다")
+    parser.add_argument("--no-profile", action="store_true",
+                        help="방문 기록을 남기지 않는다 (기본은 유지)")
+    parser.add_argument("--bundled-chrome", action="store_true",
+                        help="설치된 크롬 대신 Playwright 의 Chromium 을 쓴다")
     args = parser.parse_args()
 
     options = core.CrawlOptions(
@@ -33,6 +37,8 @@ def main() -> int:
         max_pages=args.max_pages,
         wait=args.wait,
         headless=not args.show,
+        profile_dir="" if args.no_profile else str(core.default_profile_dir()),
+        use_system_chrome=not args.bundled_chrome,
     )
 
     def say(message: str) -> None:
