@@ -19,7 +19,8 @@
 | `smartstore_gui.py` | **GUI 프로그램** (창을 띄워 마우스로 조작) |
 | `smartstore_cli.py` | 명령줄 버전 (자동화용) |
 | `smartstore_core.py` | 수집 로직 (위 두 개가 공통으로 사용) |
-| `RUN.bat` | 윈도우에서 더블클릭으로 GUI 실행 (첫 실행 때 준비물 자동 설치) |
+| `RUN.bat` | 윈도우에서 더블클릭으로 GUI 실행 |
+| `launcher.py` | RUN.bat 이 부르는 준비·실행 스크립트 (첫 실행 때 준비물 자동 설치) |
 | `build_exe.bat` | 윈도우에서 단독 실행 파일(.exe) 만들기 |
 | `build_exe.sh` | 리눅스·맥에서 단독 실행 파일 만들기 |
 | `requirements.txt` | 필요한 패키지 |
