@@ -66,6 +66,9 @@ class CrawlOptions:
     # PC에 설치된 진짜 크롬을 쓴다. Playwright 전용 Chromium 보다 일반 사용자와
     # 구별되는 지점이 적다.
     use_system_chrome: bool = False
+    # 카테고리 주소로 곧장 뛰어들지 않고 스토어 첫 화면을 먼저 들른다.
+    # 사람이 실제로 들어가는 순서라 쿠키와 referer 가 갖춰진다.
+    warm_up: bool = True
 
 
 def _default_browser_cache() -> "Path | None":
@@ -110,9 +113,16 @@ def _launch_kwargs(options: CrawlOptions) -> dict:
         # 다르게 보이고, 네이버가 로그인 화면으로 돌려보낸다.
         "--disable-blink-features=AutomationControlled",
     ]
+
+    # Playwright 는 기본으로 크롬 샌드박스를 꺼서 --no-sandbox 를 넘긴다.
+    # 그러면 크롬 상단에 "지원되지 않는 명령줄 플래그" 경고 띠가 뜨고,
+    # 보안도 낮아지며, 일반 브라우저와 구별되는 표시가 하나 더 생긴다.
     if hasattr(os, "geteuid") and os.geteuid() == 0:
-        # 루트로 도는 컨테이너에서는 크롬 샌드박스를 쓸 수 없다.
+        # 루트로 도는 컨테이너에서는 샌드박스를 쓸 수 없어 어쩔 수 없다.
         args.append("--no-sandbox")
+    else:
+        kwargs["chromium_sandbox"] = True
+
     kwargs["args"] = args
     return kwargs
 
@@ -136,6 +146,19 @@ def build_page_url(base_url: str, page: int) -> str:
     query = [(k, v) for k, v in parse_qsl(parts.query) if k != "cp"]
     query.append(("cp", str(page)))
     return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), ""))
+
+
+def store_root_url(category_url: str) -> str:
+    """카테고리 주소에서 스토어 첫 화면 주소를 뽑는다.
+
+    https://smartstore.naver.com/yes24book/category/abc?cp=1
+        -> https://smartstore.naver.com/yes24book
+    """
+    parts = urlsplit(category_url.strip())
+    segments = [seg for seg in parts.path.split("/") if seg]
+    if not segments:
+        return urlunsplit((parts.scheme, parts.netloc, "/", "", ""))
+    return urlunsplit((parts.scheme, parts.netloc, "/" + segments[0], "", ""))
 
 
 def pick_name(raw_text: str) -> str:
@@ -339,6 +362,19 @@ def crawl(
         page = context.pages[0] if context.pages else context.new_page()
 
         try:
+            if options.warm_up:
+                root = store_root_url(options.url)
+                say(f"스토어 첫 화면을 먼저 엽니다: {root}")
+                try:
+                    page.goto(root, wait_until="domcontentloaded", timeout=60_000)
+                    if is_login_page(page.url):
+                        _handle_login_wall(page, root, options, say, stop)
+                    time.sleep(2)
+                except CrawlError:
+                    raise
+                except Exception as exc:
+                    say(f"첫 화면을 열지 못했습니다({exc}). 그대로 진행합니다.")
+
             for page_no in range(1, options.max_pages + 1):
                 if stop():
                     raise CrawlCancelled(names)
