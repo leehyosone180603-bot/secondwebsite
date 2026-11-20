@@ -25,6 +25,7 @@
 const CATEGORIES = {
   food:     { slug: "food",     name: "건강음식", ready: true  },
   info:     { slug: "info",     name: "건강정보", ready: true  },
+  calc:     { slug: "calc",     name: "나이·날짜 계산기", ready: true  },
   exercise: { slug: "exercise", name: "건강운동", ready: false },
   diet:     { slug: "diet",     name: "다이어트", ready: false },
   disease:  { slug: "disease",  name: "질환·병",  ready: false },
@@ -32,13 +33,141 @@ const CATEGORIES = {
 };
 
 /* 상단 네비게이션에 노출할 순서 */
-const NAV_ORDER = ["food", "info", "exercise", "diet", "disease", "life"];
+const NAV_ORDER = ["food", "info", "calc", "exercise", "diet", "disease", "life"];
 
 /*
  * 실제 발행 글 목록 (최신 글이 위로).
  * 새 글을 추가할 때 이 배열 맨 위에 객체를 추가하세요.
  */
 const POSTS = [
+  // ── 나이·날짜 계산기 관련 글 (calcbox.kr 이전분) ──
+  {
+    id: "zodiac-year-age",
+    title: "십이지 띠로 나이·출생연도 찾기 — 내 띠, N띠는 몇년생·몇 살?",
+    summary: "내 띠는 몇년생일까요? 십이지 열두 띠로 나이와 출생연도를 빠르게 찾는 법과 띠별 조견표를 정리했습니다.",
+    category: "calc",
+    date: "2026-08-13",
+    url: "/posts/zodiac-year-age.html",
+    image: "/img/zodiac-year-age.jpg",
+  },
+  {
+    id: "elementary-school-age",
+    title: "초등학교 입학 나이 — 몇년생이 몇 년에 입학? (2026년 기준 표)",
+    summary: "몇년생이 몇 년에 초등학교에 입학할까요? 2026년 기준 출생연도별 입학 연도표를 정리했습니다.",
+    category: "calc",
+    date: "2026-08-13",
+    url: "/posts/elementary-school-age.html",
+    image: "/img/elementary-school-age.jpg",
+  },
+  {
+    id: "age-table-2026",
+    title: "2026년 나이표 총정리 — 출생연도별 올해 만 나이·띠 한눈에",
+    summary: "출생연도만 알면 끝. 2026년 기준 출생연도별 만 나이와 띠를 한눈에 볼 수 있는 나이표입니다.",
+    category: "calc",
+    date: "2026-07-27",
+    url: "/posts/age-table-2026.html",
+    image: "/img/age-table-2026.jpg",
+  },
+  {
+    id: "rrn-age-decode",
+    title: "주민등록번호로 나이·출생연도·성별 알아내는 법",
+    summary: "주민등록번호 앞·뒷자리로 나이, 출생연도, 성별을 읽어내는 방법을 알기 쉽게 정리했습니다.",
+    category: "calc",
+    date: "2026-07-26",
+    url: "/posts/rrn-age-decode.html",
+    image: "/img/rrn-age-decode.jpg",
+  },
+  {
+    id: "milestone-ages",
+    title: "환갑·진갑·칠순·팔순·구순은 몇 살? 나이별 기념 명칭 총정리",
+    summary: "환갑·진갑·칠순·팔순·구순은 각각 몇 살일까요? 나이별 기념 명칭과 유래를 한 번에 정리했습니다.",
+    category: "calc",
+    date: "2026-07-25",
+    url: "/posts/milestone-ages.html",
+    image: "/img/milestone-ages.jpg",
+  },
+  {
+    id: "senior-benefits-age",
+    title: "지하철 무임승차·경로우대 나이 총정리 (만 65세 혜택)",
+    summary: "지하철 무임승차·경로우대는 몇 살부터일까요? 만 65세 어르신 혜택과 신청 방법을 정리했습니다.",
+    category: "calc",
+    date: "2026-07-24",
+    url: "/posts/senior-benefits-age.html",
+    image: "/img/senior-benefits-age.jpg",
+  },
+  {
+    id: "pension-start-age",
+    title: "국민연금 수급 개시 나이 — 출생연도별 노령연금 받는 나이 (2026)",
+    summary: "국민연금은 몇 살부터 받을까요? 출생연도별 노령연금 수급 개시 나이를 2026년 기준으로 정리했습니다.",
+    category: "calc",
+    date: "2026-07-23",
+    url: "/posts/pension-start-age.html",
+    image: "/img/pension-start-age.jpg",
+  },
+  {
+    id: "birthyear-to-hakbeon",
+    title: "몇년생 몇 학번? 출생연도–학번 환산표 (재수·빠른년생 포함)",
+    summary: "몇년생이 몇 학번일까요? 재수·빠른년생까지 반영한 출생연도–학번 환산표를 정리했습니다.",
+    category: "calc",
+    date: "2026-07-22",
+    url: "/posts/birthyear-to-hakbeon.html",
+    image: "/img/birthyear-to-hakbeon.jpg",
+  },
+  {
+    id: "fast-year-birth",
+    title: "빠른 년생이란? 빠른 05·06년생 학년·나이 완전정리",
+    summary: "빠른 년생이 정확히 무엇일까요? 빠른 05·06년생의 학년·나이 기준을 헷갈리지 않게 정리했습니다.",
+    category: "calc",
+    date: "2026-07-21",
+    url: "/posts/fast-year-birth.html",
+    image: "/img/fast-year-birth.jpg",
+  },
+  {
+    id: "age-types-korean",
+    title: "만 나이 vs 세는 나이 vs 연 나이 차이 (2023 개정 후 완전정리)",
+    summary: "만 나이·세는 나이·연 나이는 어떻게 다를까요? 2023년 개정 이후 기준을 완전 정리했습니다.",
+    category: "calc",
+    date: "2026-07-20",
+    url: "/posts/age-types-korean.html",
+    image: "/img/age-types-korean.jpg",
+  },
+  {
+    id: "birth-year-guide",
+    title: "몇년생 계산기 — 나이로 출생연도·띠 찾기 (나이 조견표)",
+    summary: "55세는 몇년생일까요? 나이로 출생연도·띠를 찾는 법과 나이 조견표를 정리했습니다.",
+    category: "calc",
+    date: "2026-07-06",
+    url: "/posts/birth-year-guide.html",
+    image: "/img/birth-year-guide.jpg",
+  },
+  {
+    id: "business-days-guide",
+    title: "영업일 계산기 사용법 — 주말·공휴일 제외 영업일 수 구하는 법",
+    summary: "주말·공휴일을 뺀 영업일 수는 어떻게 셀까요? 영업일 계산기 사용법과 실제 예시를 정리했습니다.",
+    category: "calc",
+    date: "2026-07-04",
+    url: "/posts/business-days-guide.html",
+    image: "/img/business-days-guide.jpg",
+  },
+  {
+    id: "military-discharge",
+    title: "전역일 계산기 사용법 — 입대일로 전역일·전역 D-day 구하는 법",
+    summary: "입대일만 알면 전역일과 전역 D-day가 나옵니다. 전역일 계산기 사용법을 정리했습니다.",
+    category: "calc",
+    date: "2026-07-03",
+    url: "/posts/military-discharge.html",
+    image: "/img/military-discharge.jpg",
+  },
+  {
+    id: "age-calculator",
+    title: "만 나이 계산기 사용법 — 만 나이·세는 나이 차이 한눈에",
+    summary: "만 나이 계산기 사용법과 만 나이·세는 나이의 차이를 한눈에 정리했습니다.",
+    category: "calc",
+    date: "2026-06-29",
+    url: "/posts/age-calculator.html",
+    image: "/img/age-calculator.jpg",
+  },
+  // ── 건강 콘텐츠 ──
   {
     id: "geonmangjeung-chimae-difference",
     title: "건망증과 치매 증상 차이점, 건망증 치료와 치매 예방법",
