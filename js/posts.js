@@ -47,7 +47,7 @@ const POSTS = [
     category: "life",
     date: "2026-11-21",
     url: "/posts/jeonse-loan-guide.html",
-    image: "",
+    image: "/img/jeonse-loan-guide-1.jpg",
   },
   {
     id: "stress-dsr-guide",
@@ -56,7 +56,7 @@ const POSTS = [
     category: "life",
     date: "2026-11-21",
     url: "/posts/stress-dsr-guide.html",
-    image: "",
+    image: "/img/stress-dsr-guide-1.jpg",
   },
   {
     id: "youth-rent-support",
@@ -65,7 +65,7 @@ const POSTS = [
     category: "life",
     date: "2026-11-21",
     url: "/posts/youth-rent-support.html",
-    image: "",
+    image: "/img/youth-rent-support-1.jpg",
   },
   {
     id: "energy-voucher-heating",
@@ -74,7 +74,7 @@ const POSTS = [
     category: "life",
     date: "2026-11-21",
     url: "/posts/energy-voucher-heating.html",
-    image: "",
+    image: "/img/energy-voucher-heating-1.jpg",
   },
   {
     id: "hidden-gov-subsidy",
@@ -83,7 +83,7 @@ const POSTS = [
     category: "life",
     date: "2026-11-21",
     url: "/posts/hidden-gov-subsidy.html",
-    image: "",
+    image: "/img/hidden-gov-subsidy-1.jpg",
   },
   {
     id: "minsaeng-support",
@@ -92,7 +92,7 @@ const POSTS = [
     category: "life",
     date: "2026-11-21",
     url: "/posts/minsaeng-support.html",
-    image: "",
+    image: "/img/minsaeng-support-1.jpg",
   },
   {
     id: "raw-oyster-norovirus-symptoms",
