@@ -224,24 +224,71 @@ function regenFeeds() {
   fs.writeFileSync(path.join(ROOT, "sitemap.xml"), sm);
 }
 
-/* 티스토리 붙여넣기용 요약 HTML (목차 + 원본 요약 + 원문 링크).
-   duplicate-content 방지를 위해 본문이 아니라 a.tistorySummary(원본 요약)를 쓴다. */
+/* 티스토리 붙여넣기용 요약 HTML — 인라인 스타일(티스토리는 외부 CSS 제거).
+   색상 목차 박스 + 색상 강조 + 섹션 미리보기(길게, 상위노출용) + 눈에 띄는 버튼형 유입 링크.
+   duplicate-content 방지: 본문 전체가 아니라 요약·각 섹션 첫 문장만 사용. */
+const TST = {
+  lead: "margin:14px 0;font-size:1.03em;line-height:1.85;color:#222",
+  toc: "border:1px solid #e5e9f0;border-left:5px solid #2f6df6;background:#f6f9ff;border-radius:12px;padding:16px 20px;margin:22px 0",
+  tocH: "margin:0 0 10px;font-weight:800;font-size:1.1em;color:#1a4fd0",
+  tocUl: "margin:0;padding-left:22px;line-height:2.05;color:#2b3344",
+  secH: "margin:18px 0 2px;font-weight:800;color:#1a4fd0;font-size:1.06em",
+  btnWrap: "text-align:center;margin:26px 0",
+  btn: "display:inline-block;background:#2f6df6;color:#ffffff !important;font-weight:800;font-size:1.06em;text-decoration:none;padding:15px 30px;border-radius:12px;box-shadow:0 3px 10px rgba(47,109,246,.35)",
+  btn2: "display:inline-block;background:#fff;color:#1a4fd0 !important;font-weight:800;font-size:1.02em;text-decoration:none;padding:13px 26px;border-radius:12px;border:2px solid #2f6df6",
+  strong: "color:#1a4fd0;font-weight:700",
+  alink: "color:#1a4fd0;font-weight:700;text-decoration:underline"
+};
+/* 본문 inline(<strong>/<a>)에 색상 입히기 */
+function styInline(html) {
+  return String(html)
+    .replace(/<strong>/g, `<strong style="${TST.strong}">`)
+    .replace(/<a /g, `<a style="${TST.alink}" `);
+}
+function firstSentence(t) {
+  const s = String(t || "").trim();
+  const m = s.match(/^[\s\S]*?(?:다\.|요\.|\.|!|\?|。)/);
+  return (m ? m[0] : s.slice(0, 110)).trim();
+}
 function buildTistoryHtml(a, url) {
-  const h2s = parseBlocks(a.bodyMd).filter(b => b.t === "h2").map(b => b.text);
-  const toc = h2s.map(h => `  <li>${inlineMd(h)}</li>`).join("\n");
-  const summary = String(a.tistorySummary || a.description || "")
-    .split(/\n{2,}|\n/).filter(s => s.trim())
-    .map(p => `<p>${inlineMd(p.trim())}</p>`).join("\n");
-  return `<!-- 건강흐름 요약 · 티스토리 붙여넣기용 (HTML 모드로 붙여넣기) -->
-${summary}
+  const blocks = parseBlocks(a.bodyMd);
+  // 섹션(H2 + 그 아래 첫 문단)
+  const sections = []; let cur = null;
+  for (const b of blocks) {
+    if (b.t === "h2") { cur = { h: b.text, p: "" }; sections.push(cur); }
+    else if (cur && !cur.p && b.t === "p") { cur.p = b.text; }
+  }
+  const toc = sections.map(s => `    <li>${inlineMd(s.h)}</li>`).join("\n");
+  // 리드(요약): tistorySummary 우선, 없으면 본문 첫 문단
+  let leadSrc = String(a.tistorySummary || "").trim();
+  if (!leadSrc) { const fp = blocks.find(b => b.t === "p"); leadSrc = fp ? fp.text : (a.description || ""); }
+  const lead = leadSrc.split(/\n{2,}|\n/).filter(s => s.trim())
+    .map(p => `<p style="${TST.lead}">${styInline(inlineMd(p.trim()))}</p>`).join("\n");
+  // 섹션 미리보기(앞 4개, 첫 문장) — 글을 길게 + 궁금증 유도
+  const teasers = sections.slice(0, 4).filter(s => s.p).map(s =>
+    `<p style="${TST.secH}">${inlineMd(s.h)}</p>\n<p style="${TST.lead};margin-top:2px">${styInline(inlineMd(firstSentence(s.p)))} <span style="color:#6b7280">…(이어서)</span></p>`
+  ).join("\n");
+  const anchor = inlineMd(a.title);
+  return `<!-- 건강흐름 요약 · 티스토리 HTML 모드로 붙여넣기 -->
+${lead}
 
-<h2>이 글에서 다루는 내용</h2>
-<ul>
+<div style="${TST.toc}">
+  <p style="${TST.tocH}">📑 이 글에서 다루는 내용</p>
+  <ul style="${TST.tocUl}">
 ${toc}
-</ul>
+  </ul>
+</div>
 
-<p>증상·대처법·안전 기준 등 <strong>자세한 내용 전체</strong>는 아래 원문에서 확인하세요 👇</p>
-<p><a href="${url}" target="_blank" rel="noopener"><strong>▶ ${inlineMd(a.title)} — 건강흐름 바로가기</strong></a></p>
+${teasers}
+
+<div style="${TST.btnWrap}">
+  <a href="${url}" target="_blank" rel="noopener" style="${TST.btn}">▶ ${anchor} — 전체 보기</a>
+</div>
+
+<p style="${TST.lead}">위 내용의 <strong style="${TST.strong}">자세한 설명·표·사례</strong>와 자주 묻는 질문까지, 아래 원문에 한눈에 정리돼 있습니다.</p>
+<div style="${TST.btnWrap}">
+  <a href="${url}" target="_blank" rel="noopener" style="${TST.btn2}">👉 건강흐름에서 원문 확인하기</a>
+</div>
 `;
 }
 
