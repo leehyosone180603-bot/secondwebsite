@@ -41,6 +41,24 @@ const NAV_ORDER = ["food", "info", "calc", "exercise", "diet", "disease", "life"
  */
 const POSTS = [
   {
+    id: "jeonse-loan-guide",
+    title: "전세자금대출 조건·한도·금리 총정리 — 얼마까지 받을까",
+    summary: "전세자금대출은 얼마까지, 어떤 조건으로 받을 수 있을까요? 한도·금리·정책상품(버팀목)과 신청 흐름을 정리하고, 내 한도는 계산기로 모의계산합니다.",
+    category: "life",
+    date: "2026-11-21",
+    url: "/posts/jeonse-loan-guide.html",
+    image: "",
+  },
+  {
+    id: "stress-dsr-guide",
+    title: "스트레스 DSR 3단계 완전정리 — 내 대출한도 얼마나 줄었나",
+    summary: "스트레스 DSR이 뭔지, 가산금리로 대출한도가 얼마나 줄어드는지 쉽게 정리했습니다. 내 한도는 DSR 계산기로 바로 모의계산해 보세요.",
+    category: "life",
+    date: "2026-11-21",
+    url: "/posts/stress-dsr-guide.html",
+    image: "",
+  },
+  {
     id: "youth-rent-support",
     title: "청년월세 특별지원 조건·신청방법 — 무주택 청년 월세 지원",
     summary: "무주택 청년이라면 월세 일부를 지원받을 수 있습니다. 청년월세 지원의 나이·소득·주거 조건과 신청 방법, 확인 사이트를 정리했습니다.",
