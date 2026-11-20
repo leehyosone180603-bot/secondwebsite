@@ -218,6 +218,27 @@ function regenFeeds() {
   fs.writeFileSync(path.join(ROOT, "sitemap.xml"), sm);
 }
 
+/* 티스토리 붙여넣기용 요약 HTML (목차 + 원본 요약 + 원문 링크).
+   duplicate-content 방지를 위해 본문이 아니라 a.tistorySummary(원본 요약)를 쓴다. */
+function buildTistoryHtml(a, url) {
+  const h2s = parseBlocks(a.bodyMd).filter(b => b.t === "h2").map(b => b.text);
+  const toc = h2s.map(h => `  <li>${inlineMd(h)}</li>`).join("\n");
+  const summary = String(a.tistorySummary || a.description || "")
+    .split(/\n{2,}|\n/).filter(s => s.trim())
+    .map(p => `<p>${inlineMd(p.trim())}</p>`).join("\n");
+  return `<!-- 건강흐름 요약 · 티스토리 붙여넣기용 (HTML 모드로 붙여넣기) -->
+${summary}
+
+<h2>이 글에서 다루는 내용</h2>
+<ul>
+${toc}
+</ul>
+
+<p>증상·대처법·안전 기준 등 <strong>자세한 내용 전체</strong>는 아래 원문에서 확인하세요 👇</p>
+<p><a href="${url}" target="_blank" rel="noopener"><strong>▶ ${inlineMd(a.title)} — 건강흐름 바로가기</strong></a></p>
+`;
+}
+
 function main() {
   const jsonPath = process.argv[2];
   if (!jsonPath) { console.error("사용: node scripts/factory-publish.js <article.json>"); process.exit(1); }
@@ -226,12 +247,17 @@ function main() {
   a.date = a.date || new Date().toISOString().slice(0, 10);
   a.category = a.category || "info";
   const photos = (a.photos || []).filter(p => p && p.file);
+  const url = BASE + "/posts/" + a.slug + ".html";
   // 글 HTML
   fs.writeFileSync(path.join(ROOT, "posts", a.slug + ".html"), pageHtml(a, photos));
   // posts.js + feeds
   updatePostsJs(a, photos[0] ? photos[0].file : "");
   regenFeeds();
+  // 티스토리 요약 HTML 사이드카 파일 (저장소에는 커밋하지 않음)
+  const tHtml = buildTistoryHtml(a, url);
+  fs.writeFileSync(jsonPath + ".tistory.html", tHtml);
   console.log("발행 생성: posts/" + a.slug + ".html  (" + a.category + ", 사진 " + photos.length + "장)");
-  console.log("URL: " + BASE + "/posts/" + a.slug + ".html");
+  console.log("URL: " + url);
+  console.log("티스토리 요약: " + jsonPath + ".tistory.html");
 }
 main();
