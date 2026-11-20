@@ -206,7 +206,7 @@ function regenFeeds() {
   rss += `</channel>\n</rss>\n`;
   fs.writeFileSync(path.join(ROOT, "rss.xml"), rss);
   // SITEMAP
-  const CALCS = ["age", "birth-year", "business-days", "military", "scientific", "salary", "severance", "vat", "freelancer", "lotto", "lotto-prize"];
+  const CALCS = ["age", "birth-year", "business-days", "military", "scientific", "salary", "severance", "vat", "freelancer", "lotto", "lotto-prize", "dsr", "jeonse-loan", "support-check"];
   let urls = [{ loc: `${BASE}/`, changefreq: "daily", priority: "1.0" }, { loc: `${BASE}/calculators.html`, changefreq: "weekly", priority: "0.9" }];
   for (const slug of NAV) if ((CATEGORIES[slug] || {}).ready) urls.push({ loc: `${BASE}/category.html?cat=${slug}`, changefreq: "daily", priority: "0.8" });
   for (const c of CALCS) urls.push({ loc: `${BASE}/${c}/`, changefreq: "monthly", priority: "0.8" });

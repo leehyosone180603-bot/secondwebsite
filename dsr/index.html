@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSR 계산기 — 스트레스 DSR 대출한도 모의계산 · 건강흐름</title>
+  <meta name="description" content="연소득과 기존 대출 상환액을 넣으면 DSR과 받을 수 있는 대출 한도를 모의계산합니다. 스트레스 가산금리까지 반영하는 무료 DSR 계산기.">
+  <meta name="keywords" content="DSR 계산기, 스트레스 DSR, DSR 계산, 대출한도 계산, DSR 40 50, 총부채원리금상환비율">
+  <link rel="canonical" href="https://healthfortune.co.kr/dsr/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DSR 계산기 — 스트레스 DSR 대출한도 모의계산">
+  <meta property="og:description" content="연소득·기존 상환액으로 DSR과 대출 가능 한도를 모의계산. 스트레스 가산금리 반영.">
+  <meta property="og:url" content="https://healthfortune.co.kr/dsr/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"DSR 계산기","url":"https://healthfortune.co.kr/dsr/","applicationCategory":"FinanceApplication","operatingSystem":"Any","inLanguage":"ko","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"}}
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885" crossorigin="anonymous"></script>
+  <style>
+    .calc-wrap{max-width:720px;margin:0 auto;padding:24px 16px 48px}
+    .crumbs{font-size:.82rem;color:#6b7280;margin-bottom:10px}.crumbs a{color:inherit;text-decoration:none}
+    .calc-wrap h1{font-size:1.5rem;margin:4px 0 6px;color:#1f2430}
+    .calc-wrap .lead{color:#55607a;font-size:.95rem;margin:0 0 18px;line-height:1.6}
+    .calc{background:#fff;border:1px solid #e6e8eb;border-radius:14px;box-shadow:0 2px 10px rgba(30,40,70,.07);padding:20px}
+    .fld{display:flex;flex-direction:column;gap:5px;margin:0 0 13px}
+    .fld label{font-size:.85rem;font-weight:700;color:#333}
+    .fld .hint{font-size:.74rem;color:#8a90a0;font-weight:400}
+    .ipwrap{display:flex;align-items:center;gap:6px}
+    .ipwrap input,.ipwrap select{flex:1;min-width:0;font-size:1rem;font-family:inherit;padding:10px 12px;border:1px solid #d7dbe3;border-radius:9px;background:#fbfcfe}
+    .ipwrap .unit{font-size:.85rem;color:#6b7280;white-space:nowrap}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .btn-calc{width:100%;margin-top:6px;padding:14px;font-size:1.05rem;font-weight:800;color:#fff;background:#1e73be;border:none;border-radius:11px;cursor:pointer}
+    .btn-calc:hover{background:#155a94}
+    .result{margin-top:18px;border:1px solid #cfe0f3;background:#f2f7fd;border-radius:12px;padding:18px;display:none}
+    .result.show{display:block}
+    .result .big{font-size:1.9rem;font-weight:900;color:#1a4fd0}
+    .result .big small{font-size:1rem;font-weight:700;color:#55607a}
+    .rtable{width:100%;border-collapse:collapse;margin-top:12px;font-size:.9rem}
+    .rtable th,.rtable td{border:1px solid #dce3ee;padding:8px 10px;text-align:left}
+    .rtable th{background:#eaf1fb;white-space:nowrap;width:52%}
+    .warn-dsr{font-weight:800}
+    .ok-dsr{color:#1f9d57}.bad-dsr{color:#d64545}
+    .guide{background:#fff;border:1px solid #e6e8eb;border-radius:14px;padding:20px;margin-top:16px;font-size:.92rem;line-height:1.75}
+    .guide h2{font-size:1.15rem;margin:18px 0 8px}.guide h2:first-child{margin-top:0}
+    .guide ul{padding-left:20px}
+    .callout{background:#fff8e6;border:1px solid #ffe08a;border-radius:10px;padding:12px 14px;margin:14px 0;font-size:.9rem}
+    .disc{font-size:.82rem;color:#6b7280;margin-top:14px}
+    .cta-row{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}
+    .cta-row a{display:inline-block;background:#e7efff;color:#1a4fd0;font-weight:700;font-size:.86rem;padding:9px 14px;border-radius:10px;text-decoration:none}
+    @media(max-width:560px){.two{grid-template-columns:1fr}}
+  </style>
+</head>
+<body data-cat="">
+  <header id="site-header"></header>
+  <main class="wrap">
+    <div class="calc-wrap">
+      <nav class="crumbs"><a href="/">홈</a> · <a href="/calculators.html">계산기</a> · DSR 계산기</nav>
+      <h1>🏦 DSR 계산기 (스트레스 DSR 대출한도)</h1>
+      <p class="lead">연소득과 기존 대출 상환액을 넣으면 <strong>DSR</strong>과 받을 수 있는 <strong>대출 한도</strong>를 모의계산합니다. 스트레스 가산금리까지 반영합니다.</p>
+
+      <section class="calc">
+        <div class="fld"><label>연소득 <span class="hint">(세전, 만원)</span></label>
+          <div class="ipwrap"><input type="number" id="income" inputmode="numeric" placeholder="예: 5000"><span class="unit">만원</span></div></div>
+
+        <div class="fld"><label>기존 대출 연간 원리금 상환액 <span class="hint">(없으면 0)</span></label>
+          <div class="ipwrap"><input type="number" id="existing" inputmode="numeric" placeholder="예: 300" value="0"><span class="unit">만원/년</span></div></div>
+
+        <div class="two">
+          <div class="fld"><label>신규 대출 금리</label>
+            <div class="ipwrap"><input type="number" id="rate" inputmode="decimal" step="0.1" placeholder="예: 4.0" value="4.0"><span class="unit">%</span></div></div>
+          <div class="fld"><label>스트레스 가산금리 <span class="hint">(기본 1.5)</span></label>
+            <div class="ipwrap"><input type="number" id="stress" inputmode="decimal" step="0.1" placeholder="1.5" value="1.5"><span class="unit">%p</span></div></div>
+        </div>
+
+        <div class="two">
+          <div class="fld"><label>대출 만기</label>
+            <div class="ipwrap"><select id="term"><option value="10">10년</option><option value="20">20년</option><option value="30" selected>30년</option><option value="40">40년</option></select></div></div>
+          <div class="fld"><label>DSR 상한</label>
+            <div class="ipwrap"><select id="cap"><option value="40" selected>40% (규제지역·은행)</option><option value="50">50% (비규제·2금융 등)</option></select></div></div>
+        </div>
+
+        <button class="btn-calc" id="go">대출 한도 계산하기</button>
+
+        <div class="result" id="res">
+          <div>최대 대출 가능액 (모의)</div>
+          <div class="big"><span id="maxLoan">0</span> <small>만원</small></div>
+          <table class="rtable"><tbody>
+            <tr><th>스트레스 적용 심사금리</th><td id="rStress"></td></tr>
+            <tr><th>신규 대출 월 상환액 <span class="hint">(실제금리 기준)</span></th><td id="rMonthly"></td></tr>
+            <tr><th>신규 포함 예상 DSR</th><td id="rDsr" class="warn-dsr"></td></tr>
+            <tr><th>연간 상환 여력 <span class="hint">(연소득×상한−기존)</span></th><td id="rRoom"></td></tr>
+          </tbody></table>
+          <p class="disc" id="note"></p>
+        </div>
+      </section>
+
+      <div class="callout">⚠️ 스트레스 가산금리와 지방 유예 시점은 시기·지역·대출유형에 따라 다릅니다(수도권 주담대 등은 더 높을 수 있음). <strong>정확한 기준은 <a href="https://www.fsc.go.kr" target="_blank" rel="noopener">금융위원회</a> 발표와 은행 상담으로 확인</strong>하세요. 이 계산기는 참고용 모의계산입니다.</div>
+
+      <section class="guide">
+        <h2>DSR이란?</h2>
+        <p><strong>DSR(총부채원리금상환비율)</strong>은 내 연소득에서 모든 대출의 <strong>연간 원리금 상환액</strong>이 차지하는 비율입니다. <code>DSR(%) = 모든 대출 연간 원리금 ÷ 연소득 × 100</code>. 은행권 주택담보대출은 보통 <strong>DSR 40%</strong>를 넘지 못하게 제한됩니다.</p>
+        <h2>스트레스 DSR은 뭐가 다른가요?</h2>
+        <p>미래에 금리가 오를 것에 대비해, 심사할 때 <strong>실제 금리에 '가산금리(스트레스)'를 더한 금리</strong>로 상환액을 계산합니다. 그만큼 한도가 줄어듭니다. 변동금리일수록 가산폭이 크고, 순수 고정금리는 적게 반영됩니다.</p>
+        <h2>한도를 늘리려면</h2>
+        <ul>
+          <li>만기를 길게 (상환액 분산) — 단, 총이자는 늘어남</li>
+          <li>기존 대출(특히 신용대출) 상환액 줄이기</li>
+          <li>고정금리 상품 선택 시 스트레스 반영이 작아질 수 있음</li>
+        </ul>
+        <p class="disc">※ 본 계산기는 일반적인 공식에 따른 참고용 모의계산이며, 실제 승인 한도·금리는 소득 증빙, 신용도, 담보, 규제지역, 상품별 예외(정책모기지 등)에 따라 달라집니다. 대출 실행 전 반드시 금융기관과 상담하세요.</p>
+        <div class="cta-row">
+          <a href="/calculators.html">🧮 다른 계산기 보기</a>
+          <a href="/jeonse-loan/">전세자금대출 계산기 →</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="/js/posts.js"></script>
+  <script src="/js/site.js"></script>
+  <script>
+    (function(){
+      var $=function(id){return document.getElementById(id);};
+      var won=function(n){return Math.round(n).toLocaleString("ko-KR");};
+      function pv(id){var v=parseFloat($(id).value);return isNaN(v)?0:v;}
+      function calc(){
+        var income=pv("income"), existing=pv("existing");
+        var rate=pv("rate"), stress=pv("stress");
+        var term=parseInt($("term").value,10), cap=parseInt($("cap").value,10);
+        if(income<=0){ alert("연소득을 입력해 주세요."); return; }
+        var sRate=rate+stress;                 // 심사(스트레스) 금리 %
+        var rm=sRate/100/12, n=term*12;        // 월 스트레스 금리, 개월
+        var roomAnnual=income*cap/100 - existing;   // 연간 상환 여력(만원)
+        if(roomAnnual<0) roomAnnual=0;
+        var roomMonthly=roomAnnual/12;
+        // 원리금균등: P = M * (1-(1+r)^-n)/r
+        var maxP = rm>0 ? roomMonthly*(1-Math.pow(1+rm,-n))/rm : roomMonthly*n;
+        if(maxP<0) maxP=0;
+        // 실제금리 기준 월 상환액
+        var r2=rate/100/12;
+        var mPay = r2>0 ? maxP*r2/(1-Math.pow(1+r2,-n)) : maxP/n;
+        var newAnnual = mPay*12;
+        var dsr = income>0 ? (existing+newAnnual)/income*100 : 0;
+        $("maxLoan").textContent=won(maxP);
+        $("rStress").textContent=sRate.toFixed(2)+"% (실제 "+rate.toFixed(1)+"% + 가산 "+stress.toFixed(1)+"%p)";
+        $("rMonthly").textContent=won(mPay)+" 만원/월";
+        var dsrEl=$("rDsr");
+        dsrEl.textContent=dsr.toFixed(1)+"% (상한 "+cap+"%)";
+        dsrEl.className="warn-dsr "+(dsr<=cap+0.5?"ok-dsr":"bad-dsr");
+        $("rRoom").textContent=won(roomAnnual)+" 만원/년";
+        $("note").textContent = roomAnnual<=0 ? "기존 상환액이 이미 상한을 넘어, 추가 대출 여력이 없습니다." : "스트레스 금리로 한도를 산출하고, 월 상환액은 실제 금리로 계산했습니다.";
+        $("res").classList.add("show");
+        $("res").scrollIntoView({behavior:"smooth",block:"nearest"});
+      }
+      $("go").addEventListener("click",calc);
+    })();
+  </script>
+</body>
+</html>
