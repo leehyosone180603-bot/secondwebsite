@@ -32,6 +32,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://healthfortune.co.kr/category.html?cat=ent</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://healthfortune.co.kr/age/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -100,6 +105,30 @@
     <loc>https://healthfortune.co.kr/support-check/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/posts/kim-yoojung-profile.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/posts/drama-love-is-coming-cast.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/posts/drama-doctorx-cast.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/posts/drama-100days-cast.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://healthfortune.co.kr/posts/jeonse-loan-guide.html</loc>

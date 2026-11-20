@@ -110,7 +110,7 @@ function buildBody(blocks, photos) {
 }
 
 function pageHtml(a, photos) {
-  const CATNAMES = { food: "건강음식", info: "건강정보", calc: "나이·날짜 계산기", life: "생활·정책", exercise: "건강운동", diet: "다이어트", disease: "질환·병" };
+  const CATNAMES = { food: "건강음식", info: "건강정보", calc: "나이·날짜 계산기", life: "생활·정책", ent: "연예·인물", exercise: "건강운동", diet: "다이어트", disease: "질환·병" };
   const catName = CATNAMES[a.category] || "건강정보";
   const seoTitle = a.seoTitle || a.title;
   const hero = photos[0];
