@@ -27,6 +27,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://healthfortune.co.kr/category.html?cat=life</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://healthfortune.co.kr/age/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -95,6 +100,30 @@
     <loc>https://healthfortune.co.kr/support-check/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/posts/youth-rent-support.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/posts/energy-voucher-heating.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/posts/hidden-gov-subsidy.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/posts/minsaeng-support.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://healthfortune.co.kr/posts/raw-oyster-norovirus-symptoms.html</loc>

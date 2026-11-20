@@ -28,7 +28,12 @@ const ROOT = path.join(__dirname, "..");
 const BASE = "https://healthfortune.co.kr";
 
 const esc = s => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-const inlineMd = t => esc(t).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+const inlineMd = t => {
+  let s = esc(t).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  s = s.replace(/\[([^\]]+)\]\((\/[^\s)]+)\)/g, '<a href="$2">$1</a>');
+  return s;
+};
 
 /* 마크다운(제한 문법) → 블록 배열 */
 function parseBlocks(md) {
@@ -105,7 +110,8 @@ function buildBody(blocks, photos) {
 }
 
 function pageHtml(a, photos) {
-  const catName = a.category === "food" ? "건강음식" : "건강정보";
+  const CATNAMES = { food: "건강음식", info: "건강정보", calc: "나이·날짜 계산기", life: "생활·정책", exercise: "건강운동", diet: "다이어트", disease: "질환·병" };
+  const catName = CATNAMES[a.category] || "건강정보";
   const seoTitle = a.seoTitle || a.title;
   const hero = photos[0];
   const ogImage = hero ? BASE + hero.file : "";

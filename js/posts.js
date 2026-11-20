@@ -29,7 +29,7 @@ const CATEGORIES = {
   exercise: { slug: "exercise", name: "건강운동", ready: false },
   diet:     { slug: "diet",     name: "다이어트", ready: false },
   disease:  { slug: "disease",  name: "질환·병",  ready: false },
-  life:     { slug: "life",     name: "생활정보", ready: false },
+  life:     { slug: "life",     name: "생활·정책", ready: true  },
 };
 
 /* 상단 네비게이션에 노출할 순서 */
@@ -40,6 +40,42 @@ const NAV_ORDER = ["food", "info", "calc", "exercise", "diet", "disease", "life"
  * 새 글을 추가할 때 이 배열 맨 위에 객체를 추가하세요.
  */
 const POSTS = [
+  {
+    id: "youth-rent-support",
+    title: "청년월세 특별지원 조건·신청방법 — 무주택 청년 월세 지원",
+    summary: "무주택 청년이라면 월세 일부를 지원받을 수 있습니다. 청년월세 지원의 나이·소득·주거 조건과 신청 방법, 확인 사이트를 정리했습니다.",
+    category: "life",
+    date: "2026-11-21",
+    url: "/posts/youth-rent-support.html",
+    image: "",
+  },
+  {
+    id: "energy-voucher-heating",
+    title: "에너지바우처 신청 대상·방법 — 겨울 난방비 지원 총정리",
+    summary: "겨울 난방비가 부담된다면 에너지바우처를 확인하세요. 지원 대상, 신청 방법, 사용처와 함께 난방비 지원을 받는 법을 정리했습니다.",
+    category: "life",
+    date: "2026-11-21",
+    url: "/posts/energy-voucher-heating.html",
+    image: "",
+  },
+  {
+    id: "hidden-gov-subsidy",
+    title: "숨은 정부지원금 찾는 법 — 보조금24·복지로 100% 활용",
+    summary: "받을 수 있는데 몰라서 못 받는 정부지원금, 보조금24와 복지로로 한 번에 찾는 법을 단계별로 정리했습니다. 숨은 환급금 확인 팁까지.",
+    category: "life",
+    date: "2026-11-21",
+    url: "/posts/hidden-gov-subsidy.html",
+    image: "",
+  },
+  {
+    id: "minsaeng-support",
+    title: "민생지원금 신청방법·대상 — 정부24로 내가 받는지 확인하는 법",
+    summary: "민생지원금은 누가, 얼마나 받을까요? 지급 구조와 신청 방법, 그리고 내가 대상인지 정부24·보조금24에서 바로 확인하는 법을 정리했습니다.",
+    category: "life",
+    date: "2026-11-21",
+    url: "/posts/minsaeng-support.html",
+    image: "",
+  },
   {
     id: "raw-oyster-norovirus-symptoms",
     title: "생굴 노로바이러스 증상과 잠복기, 안전하게 먹는 법",
