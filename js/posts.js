@@ -40,6 +40,15 @@ const NAV_ORDER = ["food", "info", "calc", "exercise", "diet", "disease", "life"
  * 새 글을 추가할 때 이 배열 맨 위에 객체를 추가하세요.
  */
 const POSTS = [
+  {
+    id: "raw-oyster-norovirus-symptoms",
+    title: "생굴 노로바이러스 증상과 잠복기, 안전하게 먹는 법",
+    summary: "생굴 먹고 12~48시간 뒤 구토·설사가 나면 노로바이러스일 수 있어요. 증상, 대처법, 85℃ 1분 가열 기준을 정리했습니다.",
+    category: "info",
+    date: "2026-11-20",
+    url: "/posts/raw-oyster-norovirus-symptoms.html",
+    image: "/img/raw-oyster-norovirus-symptoms-1.jpg",
+  },
   // ── 나이·날짜 계산기 관련 글 (calcbox.kr 이전분) ──
   {
     id: "zodiac-year-age",
