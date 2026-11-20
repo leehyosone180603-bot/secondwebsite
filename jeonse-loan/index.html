@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전세자금대출 계산기 — 한도·월 이자 모의계산 · 건강흐름</title>
+  <meta name="description" content="전세보증금과 금리를 넣으면 전세자금대출 가능 한도와 월 이자, 실제 필요한 내 자금을 모의계산합니다. 무료 전세대출 계산기.">
+  <meta name="keywords" content="전세자금대출 계산기, 전세대출 한도, 전세대출 이자, 전세보증금 대출, 전세대출 금리">
+  <link rel="canonical" href="https://healthfortune.co.kr/jeonse-loan/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="전세자금대출 계산기 — 한도·월 이자 모의계산">
+  <meta property="og:description" content="전세보증금·금리로 전세대출 한도와 월 이자, 내 필요자금을 모의계산.">
+  <meta property="og:url" content="https://healthfortune.co.kr/jeonse-loan/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"전세자금대출 계산기","url":"https://healthfortune.co.kr/jeonse-loan/","applicationCategory":"FinanceApplication","operatingSystem":"Any","inLanguage":"ko","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"}}
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885" crossorigin="anonymous"></script>
+  <style>
+    .calc-wrap{max-width:720px;margin:0 auto;padding:24px 16px 48px}
+    .crumbs{font-size:.82rem;color:#6b7280;margin-bottom:10px}.crumbs a{color:inherit;text-decoration:none}
+    .calc-wrap h1{font-size:1.5rem;margin:4px 0 6px;color:#1f2430}
+    .calc-wrap .lead{color:#55607a;font-size:.95rem;margin:0 0 18px;line-height:1.6}
+    .calc{background:#fff;border:1px solid #e6e8eb;border-radius:14px;box-shadow:0 2px 10px rgba(30,40,70,.07);padding:20px}
+    .fld{display:flex;flex-direction:column;gap:5px;margin:0 0 13px}
+    .fld label{font-size:.85rem;font-weight:700;color:#333}
+    .fld .hint{font-size:.74rem;color:#8a90a0;font-weight:400}
+    .ipwrap{display:flex;align-items:center;gap:6px}
+    .ipwrap input,.ipwrap select{flex:1;min-width:0;font-size:1rem;font-family:inherit;padding:10px 12px;border:1px solid #d7dbe3;border-radius:9px;background:#fbfcfe}
+    .ipwrap .unit{font-size:.85rem;color:#6b7280;white-space:nowrap}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .btn-calc{width:100%;margin-top:6px;padding:14px;font-size:1.05rem;font-weight:800;color:#fff;background:#1e73be;border:none;border-radius:11px;cursor:pointer}
+    .btn-calc:hover{background:#155a94}
+    .result{margin-top:18px;border:1px solid #cfe0f3;background:#f2f7fd;border-radius:12px;padding:18px;display:none}
+    .result.show{display:block}
+    .result .big{font-size:1.9rem;font-weight:900;color:#1a4fd0}
+    .result .big small{font-size:1rem;font-weight:700;color:#55607a}
+    .rtable{width:100%;border-collapse:collapse;margin-top:12px;font-size:.9rem}
+    .rtable th,.rtable td{border:1px solid #dce3ee;padding:8px 10px;text-align:left}
+    .rtable th{background:#eaf1fb;white-space:nowrap;width:52%}
+    .guide{background:#fff;border:1px solid #e6e8eb;border-radius:14px;padding:20px;margin-top:16px;font-size:.92rem;line-height:1.75}
+    .guide h2{font-size:1.15rem;margin:18px 0 8px}.guide h2:first-child{margin-top:0}
+    .guide ul{padding-left:20px}
+    .callout{background:#fff8e6;border:1px solid #ffe08a;border-radius:10px;padding:12px 14px;margin:14px 0;font-size:.9rem}
+    .disc{font-size:.82rem;color:#6b7280;margin-top:14px}
+    .cta-row{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}
+    .cta-row a{display:inline-block;background:#e7efff;color:#1a4fd0;font-weight:700;font-size:.86rem;padding:9px 14px;border-radius:10px;text-decoration:none}
+    @media(max-width:560px){.two{grid-template-columns:1fr}}
+  </style>
+</head>
+<body data-cat="">
+  <header id="site-header"></header>
+  <main class="wrap">
+    <div class="calc-wrap">
+      <nav class="crumbs"><a href="/">홈</a> · <a href="/calculators.html">계산기</a> · 전세자금대출 계산기</nav>
+      <h1>🔑 전세자금대출 계산기</h1>
+      <p class="lead">전세보증금과 금리를 넣으면 <strong>대출 가능 한도</strong>, <strong>월 이자</strong>, 실제로 필요한 <strong>내 자금</strong>을 모의계산합니다.</p>
+
+      <section class="calc">
+        <div class="fld"><label>전세보증금</label>
+          <div class="ipwrap"><input type="number" id="deposit" inputmode="numeric" placeholder="예: 20000"><span class="unit">만원</span></div></div>
+
+        <div class="two">
+          <div class="fld"><label>대출 한도 비율 <span class="hint">(보증금 대비)</span></label>
+            <div class="ipwrap"><select id="ratio"><option value="80" selected>80% (일반)</option><option value="90">90%</option><option value="70">70%</option><option value="100">100%(최대 가정)</option></select></div></div>
+          <div class="fld"><label>한도 상한 <span class="hint">(0=제한없음)</span></label>
+            <div class="ipwrap"><input type="number" id="ceiling" inputmode="numeric" placeholder="예: 22200" value="0"><span class="unit">만원</span></div></div>
+        </div>
+
+        <div class="fld"><label>대출 금리</label>
+          <div class="ipwrap"><input type="number" id="rate" inputmode="decimal" step="0.1" placeholder="예: 3.8" value="3.8"><span class="unit">%</span></div></div>
+
+        <button class="btn-calc" id="go">전세대출 계산하기</button>
+
+        <div class="result" id="res">
+          <div>대출 가능액 (모의)</div>
+          <div class="big"><span id="loan">0</span> <small>만원</small></div>
+          <table class="rtable"><tbody>
+            <tr><th>월 이자 <span class="hint">(이자만 납부 가정)</span></th><td id="rMonthly"></td></tr>
+            <tr><th>연 이자</th><td id="rYear"></td></tr>
+            <tr><th>실제 필요한 내 자금 <span class="hint">(보증금−대출)</span></th><td id="rOwn"></td></tr>
+          </tbody></table>
+          <p class="disc" id="note"></p>
+        </div>
+      </section>
+
+      <div class="callout">⚠️ 실제 한도는 <strong>보증기관(HUG·HF·SGI)·소득·신용·주택 유형</strong>에 따라 달라지고, 버팀목 등 <strong>정책 전세자금대출</strong>은 소득·보증금 요건과 별도 한도가 있습니다. 정확한 한도·금리는 은행·<a href="https://www.hf.go.kr" target="_blank" rel="noopener">주택금융공사</a> 등에서 확인하세요.</div>
+
+      <section class="guide">
+        <h2>전세대출 한도는 어떻게 정해지나요?</h2>
+        <p>보통 <strong>전세보증금의 70~80%</strong> 안에서, 보증기관의 보증 한도와 소득·신용을 함께 봐서 정해집니다. 청년·신혼부부 대상 <strong>버팀목 전세자금대출</strong> 같은 정책 상품은 금리가 낮은 대신 소득·보증금 상한 요건이 있습니다.</p>
+        <h2>이자는 어떻게 내나요?</h2>
+        <p>전세대출은 보통 <strong>만기까지 이자만 내고(이자 거치)</strong> 만기에 보증금을 돌려받아 원금을 상환하는 구조가 많습니다. 그래서 위 계산은 <strong>월 이자 = 대출액 × 금리 ÷ 12</strong>로 보여줍니다.</p>
+        <h2>자금 계획 팁</h2>
+        <ul>
+          <li>대출을 많이 받을수록 월 이자 부담이 커지니, 가능한 자기자금 비율을 함께 보세요.</li>
+          <li>정책 상품(버팀목 등) 자격이 되면 금리를 크게 낮출 수 있습니다.</li>
+          <li>전세보증보험 가입으로 보증금 미반환 위험을 줄이는 것도 함께 고려하세요.</li>
+        </ul>
+        <p class="disc">※ 참고용 모의계산입니다. 실제 승인 한도·금리·상환 방식은 금융기관·보증기관 기준에 따라 달라집니다.</p>
+        <div class="cta-row">
+          <a href="/calculators.html">🧮 다른 계산기 보기</a>
+          <a href="/dsr/">DSR 계산기 →</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="/js/posts.js"></script>
+  <script src="/js/site.js"></script>
+  <script>
+    (function(){
+      var $=function(id){return document.getElementById(id);};
+      var won=function(n){return Math.round(n).toLocaleString("ko-KR");};
+      function pv(id){var v=parseFloat($(id).value);return isNaN(v)?0:v;}
+      function calc(){
+        var dep=pv("deposit"), ratio=parseFloat($("ratio").value), ceil=pv("ceiling"), rate=pv("rate");
+        if(dep<=0){ alert("전세보증금을 입력해 주세요."); return; }
+        var loan=dep*ratio/100;
+        if(ceil>0 && loan>ceil) loan=ceil;
+        var yr=loan*rate/100, mo=yr/12, own=dep-loan;
+        $("loan").textContent=won(loan);
+        $("rMonthly").textContent=won(mo)+" 만원/월";
+        $("rYear").textContent=won(yr)+" 만원/년";
+        $("rOwn").textContent=won(own)+" 만원";
+        $("note").textContent = (ceil>0 && dep*ratio/100>ceil) ? "한도 상한("+won(ceil)+"만원)이 적용됐습니다." : "보증금의 "+ratio+"% 기준으로 계산했습니다.";
+        $("res").classList.add("show");
+        $("res").scrollIntoView({behavior:"smooth",block:"nearest"});
+      }
+      $("go").addEventListener("click",calc);
+    })();
+  </script>
+</body>
+</html>
