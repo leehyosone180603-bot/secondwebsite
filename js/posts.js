@@ -30,16 +30,53 @@ const CATEGORIES = {
   diet:     { slug: "diet",     name: "다이어트", ready: false },
   disease:  { slug: "disease",  name: "질환·병",  ready: false },
   life:     { slug: "life",     name: "생활·정책", ready: true  },
+  ent:      { slug: "ent",      name: "연예·인물", ready: true  },
 };
 
 /* 상단 네비게이션에 노출할 순서 */
-const NAV_ORDER = ["food", "info", "calc", "exercise", "diet", "disease", "life"];
+const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "disease"];
 
 /*
  * 실제 발행 글 목록 (최신 글이 위로).
  * 새 글을 추가할 때 이 배열 맨 위에 객체를 추가하세요.
  */
 const POSTS = [
+  {
+    id: "kim-yoojung-profile",
+    title: "김유정 프로필·나이·출연작 — 1999년생, 100일의 거짓말 이가경",
+    summary: "배우 김유정 프로필과 나이, 출연작을 정리했습니다. 1999년생, 국민 아역에서 주연 배우로. 100일의 거짓말 이가경 역까지.",
+    category: "ent",
+    date: "2026-11-21",
+    url: "/posts/kim-yoojung-profile.html",
+    image: "",
+  },
+  {
+    id: "drama-love-is-coming-cast",
+    title: "사랑이 온다 출연진·정보 — 하석진·안희연 주말드라마",
+    summary: "KBS2 주말드라마 사랑이 온다 출연진과 배역, 줄거리와 방영 정보를 정리했습니다. 하석진·안희연 주연의 가족 로맨스.",
+    category: "ent",
+    date: "2026-11-21",
+    url: "/posts/drama-love-is-coming-cast.html",
+    image: "",
+  },
+  {
+    id: "drama-doctorx-cast",
+    title: "닥터X 하얀 마피아의 시대 출연진·정보 — 김지원·이정은·손현주",
+    summary: "화제의 의학 스릴러 닥터X 하얀 마피아의 시대 출연진과 배역, 줄거리와 방영 정보를 정리했습니다. 김지원·이정은·손현주·김우석 라인업.",
+    category: "ent",
+    date: "2026-11-21",
+    url: "/posts/drama-doctorx-cast.html",
+    image: "",
+  },
+  {
+    id: "drama-100days-cast",
+    title: "100일의 거짓말 출연진·인물관계 — 김유정·박진영·김현주·이무생·진선규",
+    summary: "tvN 100일의 거짓말 출연진과 배역, 인물관계를 정리했습니다. 김유정·박진영·김현주·이무생·진선규 라인업과 드라마 정보까지 한눈에.",
+    category: "ent",
+    date: "2026-11-21",
+    url: "/posts/drama-100days-cast.html",
+    image: "",
+  },
   {
     id: "jeonse-loan-guide",
     title: "전세자금대출 조건·한도·금리 총정리 — 얼마까지 받을까",
