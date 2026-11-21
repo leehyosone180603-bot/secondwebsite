@@ -133,5 +133,19 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("거치 3개월: 처음 3회 이자만", () => { const s = L.schedule(10000000, 6, 12, "equalPayment", 3); assert.strictEqual(s.rows[0].principal, 0); assert.strictEqual(s.rows[2].principal, 0); assert.strictEqual(s.rows[0].interest, 50000); });
 })();
 
+/* ── holidays / business-days ── */
+(function () {
+  const H = require(path.join(ROOT, "data", "holidays.js"));
+  const B = require(path.join(ROOT, "tools-src", "business-days.client.js"));
+  console.log("business-days");
+  const O = { isHoliday: H.isHoliday, saturdayWork: false, customOff: {} };
+  test("공휴일 조회: 2026 노동절·제헌절 true, 평일 false", () => { assert.ok(H.isHoliday("2026-05-01")); assert.ok(H.isHoliday("2026-07-17")); assert.ok(!H.isHoliday("2026-06-15")); });
+  test("어린이날(2026-05-05)은 영업일 아님", () => assert.strictEqual(B.isBusinessDay(new Date(2026, 4, 5), O), false));
+  test("5/4~5/8 영업일 4일(어린이날 제외, 시작포함)", () => assert.strictEqual(B.countBusinessDays(new Date(2026, 4, 4), new Date(2026, 4, 8), O, true), 4));
+  test("5/4 +1영업일 → 5/6(어린이날 건너뜀)", () => assert.strictEqual(B.fmtD(B.addBusinessDays(new Date(2026, 4, 4), 1, O)), "2026-05-06"));
+  test("노동절(5/1 금) +1영업일 → 5/4(월)", () => assert.strictEqual(B.fmtD(B.addBusinessDays(new Date(2026, 4, 1), 1, O)), "2026-05-04"));
+  test("토요일 근무 옵션: 토요일이 영업일", () => assert.strictEqual(B.isBusinessDay(new Date(2026, 4, 2), { isHoliday: H.isHoliday, saturdayWork: true, customOff: {} }), true));
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);
