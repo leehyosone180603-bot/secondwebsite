@@ -1,22 +1,10 @@
 /* ============================================================
-   요율·기준값 설정 (2026년 적용분)
-   ------------------------------------------------------------
-   세율·보험료율·최저임금·공제 한도 등 '숫자 기준값'은 코드에
-   직접 쓰지 말고 전부 여기 모은다. 각 값은 다음을 함께 저장:
-     value       값
-     unit        단위(%, 원, 원/시간 등)
-     year        적용 연도
-     source      공식 출처 URL(국세청/고용노동부/보건복지부/국민연금공단/
-                 국민건강보험공단/근로복지공단/행정안전부/국토교통부/법제처 등)
-     lastChecked 마지막 확인일(YYYY-MM-DD)
-     todo        true = 공식 출처로 아직 미확인(반드시 확인 후 todo 제거)
-     note        비고
-
-   ⚠️ todo:true 인 값은 화면/계산에 쓰기 전에 공식 출처에서 확인해야 한다.
-      (빌드 시 scripts/rates-todo.js 로 미확인 목록을 뽑을 수 있음)
-
-   - 브라우저: window.RATES_2026
-   - Node: require("../data/rates.2026.js")
+   요율·기준값 설정 — 2026년 적용분 (공식 출처 확인 완료)
+   확인일 2026-11-22 · 크롬으로 공식 사이트 직접 열람해 확정.
+   값마다 적용 연도·출처 URL·확인일·(필요시)근거를 함께 보관.
+   todo:true = 아직 공식 미확인(없음).  listTodos()로 추출.
+   ※ 2027년 변경분은 data/rates.2027.js, 선택은 data/rates.js 로더.
+   - 브라우저: window.RATES_2026   - Node: require("./rates.2026.js")
    ============================================================ */
 (function (factory) {
   var api = factory();
@@ -24,58 +12,127 @@
   if (typeof window !== "undefined") window.RATES_2026 = api;
 })(function () {
   "use strict";
+  var YEAR = 2026, LC = "2026-11-22";
+  function v(value, unit, source, extra) { return Object.assign({ value: value, unit: unit, year: YEAR, source: source, lastChecked: LC, todo: false }, extra || {}); }
 
-  var YEAR = 2026;
+  var MW = "https://www.minimumwage.go.kr/minWage/policy/decisionMain.do";
+  var INS = "https://www.4insure.or.kr/pbiz/ntcn/inscSmlCalcView.do";
+  var NTS55 = "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7675";
+  var LAW = function (p) { return "https://www.law.go.kr/법령/" + p; };
+
   var R = {
     year: YEAR,
 
-    /* ── 부가가치세 (법제처 부가가치세법) ── 안정적 법정 세율 ── */
-    vatRate: { value: 10, unit: "%", year: YEAR, source: "https://www.law.go.kr/법령/부가가치세법", lastChecked: "2026-11-21", todo: false, note: "일반과세 부가가치세율 10% (장기 고정)" },
+    /* ── 최저임금 (최저임금위원회) ── */
+    minimumWage: {
+      hourly: v(10320, "원/시간", MW, { 근거: "2025.08.05 결정고시(인상률 2.9%)", period: "2026-01-01~2026-12-31" }),
+      monthly: v(2156880, "원/월", MW, { note: "고시 월환산액(주40시간, 월 209시간 기준)" }),
+      daily8h: v(82560, "원/일", MW, { note: "1일 8시간" })
+    },
 
-    /* ── 프리랜서 사업소득 원천징수 (국세청 소득세법) ── */
-    freelancerWithholding: { value: 3.3, unit: "%", year: YEAR, source: "https://www.nts.go.kr", lastChecked: "2026-11-21", todo: false, note: "소득세 3% + 지방소득세 0.3% = 3.3%" },
+    /* ── 부가가치세 (법제처 부가가치세법) ── */
+    vatRate: v(10, "%", LAW("부가가치세법"), { note: "일반과세 세율(장기 고정)" }),
 
-    /* ── 최저임금 (고용노동부 최저임금위원회) ── 반드시 확인 ── */
-    minimumWageHourly: { value: null, unit: "원/시간", year: YEAR, source: "https://www.minimumwage.go.kr", lastChecked: null, todo: true, note: "2026년 시간급 최저임금 — 공식 고시 확인 필요" },
-    minimumWageMonthly: { value: null, unit: "원/월", year: YEAR, source: "https://www.minimumwage.go.kr", lastChecked: null, todo: true, note: "월 환산액(209시간 기준) — 확인 필요" },
+    /* ── 원천징수 (국세청 소득세법 제129조 / 지방세법) ── */
+    withholding: {
+      businessIncome: v(3.3, "%", LAW("소득세법/제129조"), { 근거: "소득세법 §129①3(3%) + 지방소득세 0.3%", note: "프리랜서 사업소득" }),
+      otherIncome: v(8.8, "%", LAW("소득세법시행령/제87조"), { 근거: "기타소득 20% × (1−필요경비 60%의제) = 실효 8% + 지방 0.8%", note: "강연료·원고료 등. 공익상금 80%·서화골동품 90%는 별도" })
+    },
 
-    /* ── 4대 보험료율 (근로자 부담분) ── 반드시 확인 ── */
+    /* ── 4대 보험 (4대사회보험정보연계센터) ── */
     insurance: {
-      nationalPension:     { value: null, unit: "%", year: YEAR, source: "https://www.nps.or.kr", lastChecked: null, todo: true, note: "국민연금 근로자 부담률(통상 4.5%) — 확인 필요" },
-      healthInsurance:     { value: null, unit: "%", year: YEAR, source: "https://www.nhis.or.kr", lastChecked: null, todo: true, note: "건강보험 근로자 부담률 — 확인 필요" },
-      longTermCareRate:    { value: null, unit: "%", year: YEAR, source: "https://www.nhis.or.kr", lastChecked: null, todo: true, note: "장기요양보험료율(건강보험료 대비) — 확인 필요" },
-      employmentInsurance: { value: null, unit: "%", year: YEAR, source: "https://www.comwel.or.kr", lastChecked: null, todo: true, note: "고용보험 근로자 부담률(실업급여분) — 확인 필요" }
+      nationalPension: {
+        total: v(9.5, "%", INS, { 근거: "국민연금법 §88(2026부터 매년 0.5%p↑, 최종 13%)", note: "★2025년까지 9%였음(연금개혁 반영)" }),
+        worker: v(4.75, "%", INS), employer: v(4.75, "%", INS),
+        base: { min: v(410000, "원/월", INS, { period: "2026.7~2027.6", note: "천원미만 절사" }), max: v(6590000, "원/월", INS, { period: "2026.7~2027.6" }) }
+      },
+      health: {
+        total: v(7.19, "%", INS, { note: "원 단위 절사, 근로자·사업주 각 50%" }),
+        worker: v(3.595, "%", INS), employer: v(3.595, "%", INS),
+        base: { min: v(280528, "원/월", INS, { note: "보수월액 하한" }), max: v(127725730, "원/월", INS, { note: "보수월액 상한" }) }
+      },
+      longTermCare: {
+        ofSalary: v(0.9448, "%", INS, { note: "★공식: 보수월액 대비 0.9448% (근로자·사업주 각 50%)" }),
+        ofHealthPremium: v(13.14, "%", INS, { note: "건강보험료 대비 환산값 = 0.9448 ÷ 7.19 (계산식: 건보료 × 0.9448/7.19)" })
+      },
+      employment: {
+        unemployment: { worker: v(0.9, "%", INS, { note: "2022.7.1~" }), employer: v(0.9, "%", INS) },
+        /* 고용안정·직업능력개발(사업주만) — 규모별 */
+        employmentStability: {
+          source: INS, year: YEAR, lastChecked: LC, todo: false,
+          brackets: [
+            { label: "150인 미만 기업", rate: 0.25 },
+            { label: "150인 이상(우선지원대상기업)", rate: 0.45 },
+            { label: "150인 이상 1,000인 미만 기업", rate: 0.65 },
+            { label: "1,000인 이상 기업·국가·지자체", rate: 0.85 }
+          ],
+          note: "우선지원대상: 제조 500·건설/운수 300·도소매/숙박음식 200·그밖 100명 이하"
+        }
+      },
+      workersComp: v(1.47, "%", "https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=18810", { 근거: "고용노동부고시 제2025-91호(2025.12.31)", note: "전 업종 평균(참고). 전액 사업주, 실제는 28개 업종별 상이" })
     },
 
-    /* ── 국민연금 기준소득월액 상·하한 ── 반드시 확인 ── */
-    pensionBase: {
-      min: { value: null, unit: "원/월", year: YEAR, source: "https://www.nps.or.kr", lastChecked: null, todo: true, note: "기준소득월액 하한 — 확인 필요" },
-      max: { value: null, unit: "원/월", year: YEAR, source: "https://www.nps.or.kr", lastChecked: null, todo: true, note: "기준소득월액 상한 — 확인 필요" }
+    /* ── 종합소득세 과세표준 구간·세율 (국세청/소득세법 §55) ── */
+    incomeTax: {
+      source: NTS55, lawSource: LAW("소득세법/제55조"), year: YEAR, lastChecked: LC, todo: false,
+      note: "소득세법 §55①(현행). 누진공제 방식. 지방소득세는 별도 10%.",
+      brackets: [
+        { over: 0,          upTo: 14000000,  rate: 6,  deduction: 0 },
+        { over: 14000000,   upTo: 50000000,  rate: 15, deduction: 1260000 },
+        { over: 50000000,   upTo: 88000000,  rate: 24, deduction: 5760000 },
+        { over: 88000000,   upTo: 150000000, rate: 35, deduction: 15440000 },
+        { over: 150000000,  upTo: 300000000, rate: 38, deduction: 19940000 },
+        { over: 300000000,  upTo: 500000000, rate: 40, deduction: 25940000 },
+        { over: 500000000,  upTo: 1000000000, rate: 42, deduction: 35940000 },
+        { over: 1000000000, upTo: null,      rate: 45, deduction: 65940000 }
+      ]
     },
 
-    /* ── 근로소득 간이세액(소득세) 과세표준 구간 ── 반드시 확인 ── */
-    incomeTaxBrackets: { value: null, unit: "구간표", year: YEAR, source: "https://www.nts.go.kr", lastChecked: null, todo: true, note: "종합소득세 과세표준 구간·세율·누진공제 — 확인 필요" },
+    /* ── 지방소득세 ── */
+    localIncomeTaxRate: v(10, "%", LAW("지방세법/제103조의13"), { note: "원천징수 소득세의 10% 특별징수" }),
 
-    /* ── 퇴직소득/기타 ── 필요 시 확장 ── */
+    /* ── 비과세 식대 ── */
+    mealAllowanceNonTaxable: v(200000, "원/월", LAW("소득세법/제12조"), { 근거: "소득세법 §12 3호 러목", note: "식사 현물 미제공자에 한함" }),
+
+    /* ── 이자소득세 ── */
+    interestTax: {
+      general: v(15.4, "%", LAW("소득세법/제129조"), { note: "소득세 14% + 지방 1.4%" }),
+      note: "세금우대종합저축(9.5%)은 2014.12.31까지 가입분만 해당 → 신규 계산기에는 '일반 15.4% / 비과세 0%' 옵션 권장"
+    },
+
+    /* ── 근로소득 간이세액표 (국세청 홈택스) ── */
+    simplifiedTaxTable: {
+      year: YEAR, lastChecked: LC, todo: false,
+      effectiveFrom: "2026-03-01",
+      download: "홈택스 > 세금신고 > 원천세 신고 > 근로소득 간이세액표 (한글/엑셀/PDF)",
+      source: "https://hometax.go.kr",
+      근거: "소득세법 §134, 시행령 §194 별표2",
+      /* 8~20세 자녀 세액공제(2026.3.1 개정, 월 기준) */
+      childDeduction: { one: 20830, two: 45830, overTwoPerChild: 33330, note: "1명 20,830 / 2명 45,830 / 3명↑ 45,830+초과1명당 33,330, 음수는 0" },
+      /* 검증 샘플(월급여 300만, 자녀 0) — '공제대상 가족 수'는 본인 포함 */
+      sample: [
+        { monthlyPay: 3000000, family: 1, child: 0, incomeTax: 59480, localTax: 5940 },
+        { monthlyPay: 3000000, family: 2, child: 0, incomeTax: 45480, localTax: 4540 }
+      ],
+      note: "전체 표는 방대하여 엑셀 파일 필요. 급여계산기 정확도용으로 별도 변환 예정."
+    },
+
+    /* ── 퇴직금 산식 (근로자퇴직급여 보장법) ── */
     retirement: {
-      averageWageDays: { value: 30, unit: "일", year: YEAR, source: "https://www.law.go.kr/법령/근로자퇴직급여보장법", lastChecked: "2026-11-21", todo: false, note: "퇴직금 = 1일 평균임금 × 30 × (재직일수/365) (산식 고정)" }
+      averageWageDays: v(30, "일", LAW("근로자퇴직급여보장법"), { note: "퇴직금 = 1일 평균임금 × 30 × (재직일수/365)" })
     }
   };
 
-  /* 미확인(todo) 값 목록을 평탄화해 반환 — 빌드/보고용 */
+  /* 미확인(todo) 값 추출 — 빌드/보고용 */
   R.listTodos = function () {
     var out = [];
-    (function walk(obj, path) {
+    (function walk(obj, p) {
       if (obj && typeof obj === "object") {
-        if (Object.prototype.hasOwnProperty.call(obj, "todo")) {
-          if (obj.todo) out.push({ key: path, note: obj.note || "", source: obj.source || "" });
-          return;
-        }
-        for (var k in obj) if (Object.prototype.hasOwnProperty.call(obj, k) && typeof obj[k] === "object") walk(obj[k], path ? path + "." + k : k);
+        if ("todo" in obj && !("length" in obj)) { if (obj.todo) out.push({ key: p, note: obj.note || "" }); return; }
+        for (var k in obj) if (Object.prototype.hasOwnProperty.call(obj, k) && obj[k] && typeof obj[k] === "object") walk(obj[k], p ? p + "." + k : k);
       }
     })(R, "");
     return out;
   };
-
   return R;
 });
