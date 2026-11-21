@@ -41,6 +41,9 @@ img { max-width: 100%; display: block; }
 
 /* ── 광고 영역 ── */
 .ad { margin: 0 0 18px; text-align: center; }
+.ad__label { font-size: 11px; color: #adb5bd; letter-spacing: .04em; margin-bottom: 4px; text-transform: uppercase; }
+.ad--inarticle { margin: 26px auto; }
+.ad--bottom { margin: 28px 0 8px; }
 .ad--placeholder {
   display: flex; align-items: center; justify-content: center;
   min-height: 100px;

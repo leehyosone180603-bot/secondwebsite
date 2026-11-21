@@ -26,16 +26,25 @@ const SITE = {
  *   - 각 광고 자리의 slot 번호도 실제 값으로 교체
  *  값이 기본(placeholder) 상태이면 회색 "광고 영역" 박스가 표시됩니다.
  * ──────────────────────────────────────────────────────────── */
-// ★ 광고 노출 스위치 ★ (지금은 광고 미노출. 나중에 반영할 때 true 로 바꾸세요)
-const ADS_SHOW = false;
+// ★ 광고 노출 스위치 ★ (true = 광고 노출)
+const ADS_SHOW = true;
 
+/* 애드센스 광고 구성
+ *  - 좌우 레일 배너 / 하단 앵커 / 전면(비네트) 광고는 '자동광고(Auto ads)'가 담당합니다.
+ *    → 애드센스 대시보드 > 광고 > 사이트 에서 '자동 광고'를 켜면 슬롯 ID 없이 자동 노출됩니다.
+ *  - 아래 slots 는 '정확한 위치 고정' 수동 유닛용입니다. 애드센스에서 광고 유닛을 만들어
+ *    발급된 슬롯 번호(숫자 10자리)로 교체하면 해당 자리에 광고가 켜집니다.
+ *    placeholder(0000000000) 상태면 그 자리는 깨진 빈칸 없이 그냥 생략됩니다.
+ */
 const ADSENSE = {
-  client: "ca-pub-7143828779500885", // ← 발급받은 게시자 ID
+  client: "ca-pub-7143828779500885", // 게시자 ID
   slots: {
-    header: "0000000000",   // 상단 배너
-    inList: "0000000000",   // 기사 목록 상단
-    sidebar: "0000000000",  // 우측 사이드바
-    inArticle: "0000000000",// 글 본문 중간
+    header: "0000000000",        // 상단 배너
+    inList: "0000000000",        // 기사 목록 상단
+    sidebar: "0000000000",       // 우측 사이드바
+    inArticle: "0000000000",     // 글 본문 중간
+    articleBottom: "0000000000", // ★ 글 하단 정사각형(글마다 1개)
+    bottomBanner: "0000000000",  // ★ 콘텐츠 맨 아래 가로 배너
   },
 };
 
@@ -87,24 +96,46 @@ function thumbHtml(post, extraClass) {
 /* ────────────────────────────────────────────────────────────
  *  광고 유닛 렌더링
  * ──────────────────────────────────────────────────────────── */
-function adUnit(slotKey, label) {
-  // ★ 광고 임시 비활성화 ★
-  // 나중에 애드센스를 반영할 때 아래 한 줄(return "";)을 지우면 광고가 다시 나옵니다.
+function adUnit(slotKey, label, opts) {
   if (!ADS_SHOW) return "";
-
+  opts = opts || {};
   if (!adsenseEnabled()) {
     return `<div class="ad ad--placeholder"><span>광고 영역${label ? " · " + label : ""}</span></div>`;
   }
   const slot = (ADSENSE.slots && ADSENSE.slots[slotKey]) || "";
+  // 실제 슬롯 ID가 없으면(placeholder) 깨진 빈 광고 대신 생략
+  if (!slot || /^0+$/.test(slot)) return "";
+  const fmt = opts.format || "auto";
+  const style = opts.maxWidth
+    ? `display:block;margin:0 auto;max-width:${opts.maxWidth}px`
+    : "display:block";
   return `
-    <div class="ad">
+    <div class="ad${opts.cls ? " " + opts.cls : ""}">
+      <div class="ad__label">광고</div>
       <ins class="adsbygoogle"
-           style="display:block"
+           style="${style}"
            data-ad-client="${ADSENSE.client}"
            data-ad-slot="${slot}"
-           data-ad-format="auto"
+           data-ad-format="${fmt}"
            data-full-width-responsive="true"></ins>
     </div>`;
+}
+
+/* 글(article) 페이지에 수동 광고 자리 삽입: 글 하단 정사각형 + 콘텐츠 맨 아래 배너.
+   정적 HTML 글에도 적용되도록 JS 로 삽입한다. */
+function injectArticleAds() {
+  const article = document.querySelector(".article");
+  if (!article) return;
+  const body = article.querySelector(".article__body");
+  if (body) {
+    const html = adUnit("articleBottom", "글 하단", { format: "rectangle", maxWidth: 360, cls: "ad--inarticle" });
+    if (html) body.insertAdjacentHTML("afterend", html);
+  }
+  const main = document.querySelector("main.wrap") || article.parentElement;
+  if (main) {
+    const html = adUnit("bottomBanner", "하단", { cls: "ad--bottom" });
+    if (html) main.insertAdjacentHTML("beforeend", html);
+  }
 }
 
 /* 페이지에 삽입된 애드센스 유닛을 활성화 */
@@ -255,6 +286,7 @@ function renderFooter() {
 function initSite() {
   renderHeader();
   renderFooter();
+  injectArticleAds();
   activateAds();
 }
 document.addEventListener("DOMContentLoaded", initSite);
