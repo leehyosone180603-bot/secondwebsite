@@ -121,5 +121,17 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("deposit 종합: 세후수령 10,253,800", () => { const r = I.deposit("deposit", "simple", 10000000, 3, 12, "general"); assert.strictEqual(r.total, 10253800); });
 })();
 
+/* ── lib/loan ── */
+(function () {
+  const L = require(path.join(ROOT, "js", "lib", "loan.js"));
+  console.log("loan");
+  test("원금균등 1,200만·연12%·12개월 → 총이자 780,000", () => { const s = L.schedule(12000000, 12, 12, "equalPrincipal", 0); assert.strictEqual(s.totalInterest, 780000); });
+  test("만기일시 1,000만·연6%·12개월 → 총이자 600,000", () => { const s = L.schedule(10000000, 6, 12, "bullet", 0); assert.strictEqual(s.totalInterest, 600000); assert.strictEqual(s.totalPayment, 10600000); });
+  test("원리금균등: 마지막 잔액 0, 12회차", () => { const s = L.schedule(10000000, 6, 12, "equalPayment", 0); assert.strictEqual(s.rows.length, 12); assert.strictEqual(s.rows[11].balance, 0); });
+  test("원금 합계 = 대출금", () => { const s = L.schedule(10000000, 6, 12, "equalPayment", 0); const sum = s.rows.reduce((a, b) => a + b.principal, 0); assert.ok(Math.abs(sum - 10000000) <= 2); });
+  test("총이자: 원금균등 ≤ 원리금균등 ≤ 만기일시", () => { const c = L.compare(100000000, 4.5, 120, 0); assert.ok(c.equalPrincipal <= c.equalPayment && c.equalPayment <= c.bullet); });
+  test("거치 3개월: 처음 3회 이자만", () => { const s = L.schedule(10000000, 6, 12, "equalPayment", 3); assert.strictEqual(s.rows[0].principal, 0); assert.strictEqual(s.rows[2].principal, 0); assert.strictEqual(s.rows[0].interest, 50000); });
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

@@ -117,9 +117,48 @@
       note: "전체 표는 방대하여 엑셀 파일 필요. 급여계산기 정확도용으로 별도 변환 예정."
     },
 
-    /* ── 퇴직금 산식 (근로자퇴직급여 보장법) ── */
+    /* ── 퇴직금·퇴직소득세 ── */
     retirement: {
-      averageWageDays: v(30, "일", LAW("근로자퇴직급여보장법"), { note: "퇴직금 = 1일 평균임금 × 30 × (재직일수/365)" })
+      averageWageDays: v(30, "일", LAW("근로자퇴직급여보장법"), { note: "퇴직금 = 1일 평균임금 × 30 × (재직일수/365)" }),
+      // 근속연수공제 (§48①1): 공제 = base + perYear × (근속연수 − over)
+      serviceYearDeduction: {
+        source: LAW("소득세법/제48조"), year: YEAR, lastChecked: LC, todo: false,
+        note: "근속연수 1년 미만은 1년으로. 1개월 미만도 1개월로 셈",
+        brackets: [
+          { upToYears: 5,    base: 0,         perYear: 1000000, over: 0 },
+          { upToYears: 10,   base: 5000000,   perYear: 2000000, over: 5 },
+          { upToYears: 20,   base: 15000000,  perYear: 2500000, over: 10 },
+          { upToYears: null, base: 40000000,  perYear: 3000000, over: 20 }
+        ]
+      },
+      // 환산급여별공제 (§48①2): 공제 = base + (환산급여 − over) × rate/100
+      convertedIncomeDeduction: {
+        source: LAW("소득세법/제48조"), year: YEAR, lastChecked: LC, todo: false,
+        brackets: [
+          { upTo: 8000000,   base: 0,         rate: 100, over: 0 },
+          { upTo: 70000000,  base: 8000000,   rate: 60,  over: 8000000 },
+          { upTo: 100000000, base: 45200000,  rate: 55,  over: 70000000 },
+          { upTo: 300000000, base: 61700000,  rate: 45,  over: 100000000 },
+          { upTo: null,      base: 151700000, rate: 35,  over: 300000000 }
+        ]
+      },
+      taxMethod: "환산급여=(퇴직소득−근속연수공제)÷근속연수×12 → 과세표준=환산급여−환산급여공제 → 환산산출세액=과세표준×기본세율 → 퇴직소득세=환산산출세액×근속연수÷12 (§55②)",
+      samples: [
+        { severance: 30000000, years: 5, incomeTax: 775000, localTax: 77500 },
+        { severance: 100000000, years: 10, incomeTax: 3875000, localTax: 387500 }
+      ]
+    },
+
+    /* ── 복권 당첨금 세금 (소득세법 §84·§129) ── */
+    lottoTax: {
+      source: LAW("소득세법/제129조"), year: YEAR, lastChecked: LC, todo: false,
+      nonTaxableThreshold: 2000000, // 건별 200만원 이하 비과세(§84 2호)
+      brackets: [ // 소득금액 구간 (지방소득세 = 소득세의 10%)
+        { upTo: 300000000, incomeRate: 20, localRate: 2 },
+        { upTo: null,      incomeRate: 30, localRate: 3 }
+      ],
+      deductPurchase: false,
+      note: "200만원 초과 시 당첨금 전체 과세. 3억 초과분만 30%. 분리과세 종결. 구입금액 경비차감은 소득세법 미명시 → 차감 안 함(보수적)"
     }
   };
 
