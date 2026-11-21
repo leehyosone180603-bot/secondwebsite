@@ -87,6 +87,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://healthfortune.co.kr/year-end-tax/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://healthfortune.co.kr/age/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -345,5 +345,21 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("서울→도쿄 시차 0", () => assert.strictEqual(T.diffHours("Asia/Seoul", "Asia/Tokyo", new Date("2026-06-15T00:00:00Z")), 0));
 })();
 
+/* ── year-end-tax (연말정산) ── */
+(function () {
+  const Y = require(path.join(ROOT, "tools-src", "year-end-tax.client.js"));
+  const R = require(path.join(ROOT, "data", "rates.2026.js"));
+  console.log("year-end-tax");
+  test("근로소득공제(5천만) = 1,225만", () => assert.strictEqual(Y.bracketDeduct(50000000, R.earnedIncomeDeduction.brackets), 12250000));
+  test("산출세액(과표 31,391,250) = 3,448,688", () => assert.strictEqual(Y.progressiveTax(31391250, R.incomeTax.brackets), 3448688));
+  test("근로소득세액공제 한도(5천만) = 66만", () => assert.strictEqual(Y.earnedCredit(3448688, 50000000, R), 660000));
+  test("자녀세액공제 2명 55만·3명 95만", () => { assert.strictEqual(Y.childCredit(2, R), 550000); assert.strictEqual(Y.childCredit(3, R), 950000); });
+  test("신용카드공제(5천만·신용2천만) = 112.5만", () => assert.strictEqual(Y.cardDeduction(50000000, 20000000, 0, 0, R), 1125000));
+  test("최저사용(총급여25%) 미만이면 카드공제 0", () => assert.strictEqual(Y.cardDeduction(50000000, 10000000, 0, 0, R), 0));
+  test("총급여 5천만 단독 → 결정세액 2,658,695", () => assert.strictEqual(Y.yearEndTax({ salary: 50000000 }, R).decided, 2658695));
+  test("연금900만+체크2천만+기납부300만 → 환급 2,028,805", () => { const r = Y.yearEndTax({ salary: 50000000, pension: 9000000, cardCheck: 20000000, prepaid: 3000000 }, R); assert.strictEqual(r.decided, 971195); assert.strictEqual(r.refund, 2028805); });
+  test("연금계좌 15%(5500만 이하): 900만 → 135만 공제", () => { const r = Y.yearEndTax({ salary: 50000000, pension: 9000000 }, R); assert.strictEqual(r.pensionAcct, 1350000); });
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

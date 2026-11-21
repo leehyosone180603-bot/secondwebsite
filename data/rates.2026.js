@@ -276,6 +276,24 @@
     note: "일괄공제=max(기초2억+인적, 5억). 배우자 단독상속 시 일괄공제 불가. 가업·영농상속공제는 별도 미반영"
   };
 
+  /* ── 연말정산 세액공제·소득공제 — 소득세법 §59의3·4, 조특법 (확인일 2026-11-22, 2026 귀속) ── */
+  R.yearEnd = {
+    source: LAW("소득세법/제59조의4"), year: YEAR, lastChecked: LC, todo: false,
+    pensionAccount: { limitPension: 6000000, limitTotal: 9000000, rateLow: 15, rateHigh: 12, threshold: 55000000 }, // §59의3
+    insuranceCredit: { limit: 1000000, rate: 12, disabledRate: 15 }, // 보장성보험료 §59의4①
+    medical: { thresholdRate: 3, rate: 15, generalLimit: 7000000, pretermRate: 20, infertilityRate: 30 }, // §59의4②
+    education: { rate: 15, collegeLimit: 9000000, schoolLimit: 3000000 }, // §59의4③
+    donation: { rateLow: 15, rateHigh: 30, highThreshold: 10000000 }, // §59의4④
+    standardCredit: 130000, // 표준세액공제(특별공제 미신청 근로자) §59의4⑨
+    rent: { rate: 15, rateLow: 17, threshold: 55000000, limit: 10000000, salaryCap: 80000000 }, // 월세 조특법 §95의2
+    card: { // 신용카드 등 조특법 §126의2
+      minRate: 25, creditRate: 15, checkRate: 30, marketTransitRate: 40, cultureRate: 30,
+      salaryThreshold: 70000000, baseLimitLow: 3000000, baseLimitHigh: 2500000,
+      extraLimitLow: 3000000, extraLimitHigh: 2000000
+    },
+    note: "2026 귀속(2027초 연말정산) 기준. 2025 귀속은 종전 신용카드 한도 구조. 교육비 예체능학원·월세 주택요건 등 시행령 위임분 미반영"
+  };
+
   /* 미확인(todo) 값 추출 — 빌드/보고용 */
   R.listTodos = function () {
     var out = [];

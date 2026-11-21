@@ -70,6 +70,8 @@
       desc: "증여재산·관계별 공제로 증여세 과세표준·산출세액·신고세액공제 후 납부액을 계산합니다.", related: ["inheritance-tax", "severance"], public: true, isNew: true },
     { id: "inheritance-tax", slug: "inheritance-tax", name: "상속세 계산기", category: "tax", kind: "calculator", emoji: "🏛️",
       desc: "상속재산·배우자·자녀·금융재산 공제로 상속세 과세표준과 납부세액을 추정합니다.", related: ["gift-tax", "severance"], public: true, isNew: true },
+    { id: "year-end-tax", slug: "year-end-tax", name: "연말정산 환급 계산기", category: "tax", kind: "calculator", emoji: "🧮",
+      desc: "총급여·부양가족·신용카드·연금·보험·의료·교육·기부·월세 공제로 결정세액과 예상 환급액을 추정합니다.", related: ["salary", "4insure", "unemployment"], public: true, isNew: true },
 
     /* ── 날짜·기간 ── */
     { id: "age", slug: "age", name: "만 나이 계산기", category: "date", kind: "calculator", emoji: "🎂",
