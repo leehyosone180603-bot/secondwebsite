@@ -100,9 +100,15 @@
     { id: "lotto", slug: "lotto", name: "로또 번호 추출기", category: "toolbox", kind: "tool", emoji: "🎱",
       desc: "1~45 중 중복 없이 번호를 무작위로 추첨합니다.", related: [], public: false },
 
+    /* ── 건강 ── */
+    { id: "bmi", slug: "bmi", name: "BMI 계산기", category: "health", kind: "calculator", emoji: "⚖️",
+      desc: "키·몸무게로 체질량지수(BMI)와 대한비만학회 비만 단계를 확인합니다.", related: ["percent"], public: true, isNew: true },
+
     /* ── 생성·변환 ── */
     { id: "percent", slug: "percent", name: "퍼센트 계산기", category: "convert", kind: "calculator", emoji: "➗",
       desc: "X의 Y%, 전체 중 비율, 증감률을 바로 계산합니다.", related: ["vat", "salary"], public: true, isNew: true },
+    { id: "pyeong", slug: "pyeong", name: "평↔제곱미터 변환기", category: "convert", kind: "calculator", emoji: "📐",
+      desc: "평과 제곱미터(㎡)를 양방향으로 변환하고 평수별 ㎡를 표로 보여줍니다.", related: ["percent"], public: true, isNew: true },
 
     /* ── 정부 정책 ── */
     { id: "support-check", slug: "support-check", name: "민생지원금 대상 조회", category: "policy", kind: "tool", emoji: "📋",

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI 계산기 - 체질량지수·비만도·정상체중(대한비만학회) | 건강흐름</title>
+  <meta name="description" content="키와 몸무게로 체질량지수(BMI)를 계산하고 대한비만학회 아시아-태평양 기준으로 저체중·정상·비만 단계를 판정합니다. 내 정상 체중 범위도 함께 제공.">
+  <meta name="keywords" content="BMI 계산기, 체질량지수, 비만도 계산, 정상 체중, 비만 단계, 대한비만학회 기준">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="BMI 계산기">
+  <meta property="og:description" content="키와 몸무게로 체질량지수(BMI)를 계산하고 대한비만학회 아시아-태평양 기준으로 저체중·정상·비만 단계를 판정합니다. 내 정상 체중 범위도 함께 제공.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://healthfortune.co.kr/bmi/">
+  <meta property="og:site_name" content="건강흐름">
+  <link rel="canonical" href="https://healthfortune.co.kr/bmi/">
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "BMI 계산기",
+    "url": "https://healthfortune.co.kr/bmi/",
+    "description": "키와 몸무게로 체질량지수(BMI)를 계산하고 대한비만학회 아시아-태평양 기준으로 저체중·정상·비만 단계를 판정합니다. 내 정상 체중 범위도 함께 제공.",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "ko",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
+    }
+  }</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"BMI는 어떻게 계산하나요?","acceptedAnswer":{"@type":"Answer","text":"몸무게(kg)를 키(m)의 제곱으로 나눕니다. 키가 170cm면 1.7×1.7=2.89로 나눕니다. 예: 65kg ÷ 2.89 = BMI 22.5입니다."}},{"@type":"Question","name":"BMI 몇부터 비만인가요?","acceptedAnswer":{"@type":"Answer","text":"대한비만학회 기준으로 25 이상이 비만입니다. 23~24.9는 비만 전단계(과체중), 18.5~22.9가 정상, 18.5 미만은 저체중입니다."}},{"@type":"Question","name":"WHO 기준과 왜 다른가요?","acceptedAnswer":{"@type":"Answer","text":"WHO 국제 기준은 비만을 30 이상으로 봅니다. 하지만 아시아인은 더 낮은 BMI에서도 당뇨·고혈압 위험이 높아, 한국은 25 이상을 비만으로 적용합니다."}},{"@type":"Question","name":"BMI가 정상이면 건강한가요?","acceptedAnswer":{"@type":"Answer","text":"참고 지표일 뿐입니다. 근육·체지방·허리둘레·혈압·혈당 등을 함께 봐야 합니다. 정상 BMI여도 복부비만이나 대사이상이 있을 수 있습니다."}},{"@type":"Question","name":"어린이·노인도 같은 기준인가요?","acceptedAnswer":{"@type":"Answer","text":"아닙니다. 소아·청소년은 성장 상태를 반영한 성장도표 백분위수를 사용하고, 고령자는 다소 높은 BMI가 보호적일 수 있어 기준이 다릅니다. 이 계산기는 성인 기준입니다."}}]}</script>
+
+  <!-- Google AdSense 게시자 ID: ca-pub-7143828779500885 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885"
+     crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/style.css?v=14">
+  <link rel="stylesheet" href="/tool-kit.css?v=1">
+</head>
+<body data-tool="bmi">
+  <nav class="back-nav"><a href="/tools.html">← <span data-i18n="tools">생활 도구</span></a></nav>
+
+  <header class="site-header">
+    <h1>⚖️ BMI 계산기</h1>
+    <p class="subtitle">키·몸무게로 체질량지수와 비만 단계 확인</p>
+    <div class="lang-switch" id="tk-langswitch" aria-label="언어 선택"></div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb" id="tk-breadcrumb" aria-label="위치"></nav>
+  </div>
+
+  <div class="ad-container" aria-label="광고">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <main class="container">
+    <div class="tool-layout">
+      <div class="tool-main">
+        <section class="card controls">
+          <div class="intro"><p>BMI(체질량지수) = <strong>몸무게(kg) ÷ 키(m)²</strong>. 한국은 대한비만학회 기준(아시아-태평양)으로 BMI 25 이상을 비만으로 봅니다.</p></div>
+          <div class="field"><label for="height">키</label><div class="input-unit"><input type="text" id="height" data-share inputmode="decimal" placeholder="예: 170"><span class="unit">cm</span></div></div><div class="field"><label for="weight">몸무게</label><div class="input-unit"><input type="text" id="weight" data-share inputmode="decimal" placeholder="예: 65"><span class="unit">kg</span></div></div>
+          <p class="error" id="errorMsg" role="alert"></p>
+          <button id="calcBtn" class="btn-primary" type="button" data-i18n="calc">계산하기</button>
+        </section>
+
+        <section class="card results" id="tk-result-card" hidden>
+          <div id="tk-result"><div id="bmiResult"></div></div>
+          <div class="result-actions">
+            <button class="btn-sm" data-tk="copy" data-copy-target="#tk-result"><span data-i18n="copy">결과 복사</span></button>
+            <button class="btn-sm" data-tk="share"><span data-i18n="shareLink">공유 링크</span></button>
+            <button class="btn-sm" data-tk="reset"><span data-i18n="reset">초기화</span></button>
+          </div>
+          <p class="footer-notice" style="margin:10px 0 0" data-i18n="disclaimer">참고용 추정치이며 실제 금액과 다를 수 있습니다.</p>
+        </section>
+
+        <div class="share-bar" id="tk-sharebar"></div>
+        <div class="rating" id="tk-rating"></div>
+
+    <section class="card info">
+      <h2 data-i18n="method">계산 방법</h2>
+      <p>BMI는 키 대비 몸무게로 비만 정도를 가늠하는 지표입니다.</p><ul><li><strong>BMI = 몸무게(kg) ÷ (키(m) × 키(m))</strong></li><li>예: 키 170cm·65kg → 65 ÷ (1.7×1.7) = 22.5 (정상)</li></ul><p>세계보건기구(WHO) 국제 기준은 비만을 BMI 30 이상으로 보지만, 아시아인은 더 낮은 BMI에서도 대사질환 위험이 커져 대한비만학회는 <strong>25 이상을 비만</strong>으로 봅니다. 이 계산기는 대한비만학회 기준을 따릅니다.</p>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="learnMore">더 알아보기</h2>
+      <div class="learn-cards"><div class="learn-card"><h4>정상 체중 범위란</h4><p>BMI 18.5~22.9에 해당하는 몸무게 구간입니다. 키에 이 BMI 범위를 적용해 ‘정상 체중 범위(kg)’를 계산해 보여줍니다.</p></div><div class="learn-card"><h4>BMI의 한계</h4><p>BMI는 체지방과 근육을 구분하지 못합니다. 근육이 많은 사람은 BMI가 높게 나올 수 있고, 반대로 마른 비만은 정상으로 보일 수 있습니다. 허리둘레도 함께 보는 것이 좋습니다.</p></div><div class="learn-card"><h4>허리둘레 기준</h4><p>복부비만은 남성 허리둘레 90cm 이상, 여성 85cm 이상일 때로 봅니다(대한비만학회). BMI가 정상이어도 복부비만이면 주의가 필요합니다.</p></div></div>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="faq">자주 묻는 질문</h2>
+      <h3>Q. BMI는 어떻게 계산하나요?</h3>
+      <p>몸무게(kg)를 키(m)의 제곱으로 나눕니다. 키가 170cm면 1.7×1.7=2.89로 나눕니다. 예: 65kg ÷ 2.89 = BMI 22.5입니다.</p>
+      <h3>Q. BMI 몇부터 비만인가요?</h3>
+      <p>대한비만학회 기준으로 25 이상이 비만입니다. 23~24.9는 비만 전단계(과체중), 18.5~22.9가 정상, 18.5 미만은 저체중입니다.</p>
+      <h3>Q. WHO 기준과 왜 다른가요?</h3>
+      <p>WHO 국제 기준은 비만을 30 이상으로 봅니다. 하지만 아시아인은 더 낮은 BMI에서도 당뇨·고혈압 위험이 높아, 한국은 25 이상을 비만으로 적용합니다.</p>
+      <h3>Q. BMI가 정상이면 건강한가요?</h3>
+      <p>참고 지표일 뿐입니다. 근육·체지방·허리둘레·혈압·혈당 등을 함께 봐야 합니다. 정상 BMI여도 복부비만이나 대사이상이 있을 수 있습니다.</p>
+      <h3>Q. 어린이·노인도 같은 기준인가요?</h3>
+      <p>아닙니다. 소아·청소년은 성장 상태를 반영한 성장도표 백분위수를 사용하고, 고령자는 다소 높은 BMI가 보호적일 수 있어 기준이 다릅니다. 이 계산기는 성인 기준입니다.</p>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="sources">자료 출처</h2>
+      <ul class="sources-list"><li><a href="https://www.kosso.or.kr" target="_blank" rel="noopener">대한비만학회 — 비만 진료지침(BMI 분류) ↗</a></li><li><a href="https://health.kdca.go.kr" target="_blank" rel="noopener">질병관리청 국가건강정보포털 — 비만 ↗</a></li></ul>
+    </section>
+        <section class="card info">
+          <h2 data-i18n="related">관련 도구</h2>
+          <div id="tk-related"></div>
+        </section>
+      </div>
+
+      <aside class="tool-side">
+        <div class="widget"><h3>🔥 <span data-i18n="popular">인기 페이지</span></h3><ul id="tk-popular"></ul></div>
+        <div class="widget"><h3>🆕 <span data-i18n="newTools">신규 출시</span></h3><ul id="tk-new"></ul></div>
+        <div class="widget"><h3>🕘 <span data-i18n="recent">최근 본 페이지</span></h3><ul id="tk-recent"></ul></div>
+        <div class="widget deal"><h3>🏷️ <span data-i18n="deal">할인 정보</span></h3><ul id="tk-deal"><li class="empty" data-i18n="none">아직 없습니다.</li></ul><p class="aff-note" data-i18n="dealNote">※ 일부 링크는 제휴(광고) 링크일 수 있습니다.</p></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="footer-logo">⚖️</span><span class="footer-brandname">건강흐름</span></div>
+    <nav class="footer-links"><a href="/">홈</a> · <a href="/tools.html">생활 도구</a> · <a href="/about.html">운영자 소개</a> · <a href="/contact.html">문의하기</a> · <a href="/privacy.html">개인정보처리방침</a> · <a href="/terms.html">이용약관</a> · <a href="mailto:leelin12@naver.com">이메일</a></nav>
+    <div class="footer-biz">상호명 굿윌스토어 · 사업자등록번호 631-03-03874 · 대표 이효선 · 주소 부산 사하구 오작로 34<br>연락처 010-2934-1351 · 제휴문의 <a href="mailto:leelin12@naver.com">leelin12@naver.com</a></div>
+    <p class="footer-notice">건강흐름의 모든 콘텐츠는 저작권법의 보호를 받으며, 무단 전재·복사·배포를 금합니다.</p>
+    <p class="footer-copy">© <span id="year"></span> 건강흐름 (healthfortune.co.kr)</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/tools.js"></script>
+  <script src="/data/rates.2026.js"></script>
+  <script src="/data/rates.2027.js"></script>
+  <script src="/data/rates.js"></script>
+  <script src="/js/tool-kit.js"></script>
+  <script src="/bmi/bmi.js?v=1"></script>
+</body>
+</html>

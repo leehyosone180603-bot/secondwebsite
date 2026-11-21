@@ -185,5 +185,28 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("무이자(0%) → 수수료 0·결제 원금과 동일", () => { const z = L.schedule(1200000, 0, 12, "equalPrincipal", 0); assert.strictEqual(z.totalInterest, 0); assert.strictEqual(z.totalPayment, 1200000); });
 })();
 
+/* ── pyeong (평↔㎡) ── */
+(function () {
+  const P = require(path.join(ROOT, "tools-src", "pyeong.client.js"));
+  console.log("pyeong");
+  test("24평 → 79.34㎡", () => assert.strictEqual(Math.round(P.pyeongToM2(24) * 100) / 100, 79.34));
+  test("1평 = 400/121㎡(≈3.3058)", () => assert.ok(Math.abs(P.pyeongToM2(1) - 3.30578512) < 1e-6));
+  test("100㎡ → 30.25평", () => assert.strictEqual(Math.round(P.m2ToPyeong(100) * 100) / 100, 30.25));
+  test("왕복 변환 일치(33평)", () => assert.ok(Math.abs(P.m2ToPyeong(P.pyeongToM2(33)) - 33) < 1e-9));
+})();
+
+/* ── bmi (대한비만학회 분류) ── */
+(function () {
+  const M = require(path.join(ROOT, "tools-src", "bmi.client.js"));
+  console.log("bmi");
+  test("170cm·65kg → BMI 22.5·정상", () => { const b = M.bmi(65, 170); assert.strictEqual(Math.round(b * 10) / 10, 22.5); assert.strictEqual(M.bmiCategory(b).label, "정상"); });
+  test("170cm·50kg → 저체중", () => assert.strictEqual(M.bmiCategory(M.bmi(50, 170)).label, "저체중"));
+  test("170cm·75kg → 1단계 비만", () => assert.strictEqual(M.bmiCategory(M.bmi(75, 170)).label, "1단계 비만"));
+  test("170cm·90kg → 2단계 비만", () => assert.strictEqual(M.bmiCategory(M.bmi(90, 170)).label, "2단계 비만"));
+  test("경계: BMI 23 → 비만 전단계", () => assert.strictEqual(M.bmiCategory(23).label, "비만 전단계"));
+  test("경계: BMI 25 → 1단계 비만", () => assert.strictEqual(M.bmiCategory(25).label, "1단계 비만"));
+  test("170cm 정상체중 범위 ≈ 53.5~66.2kg", () => { const r = M.healthyRange(170); assert.strictEqual(Math.round(r.min * 10) / 10, 53.5); assert.strictEqual(Math.round(r.max * 10) / 10, 66.2); });
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);
