@@ -43,6 +43,12 @@
   /* 산재보험료율 2027: 미고시 */
   R.insurance.workersComp.todo = true; R.insurance.workersComp.note = "2027년 사업종류별 산재보험료율 고시 대기(보통 12월 말). 확정 전 2026년 값 참고.";
 
+  /* 실업급여 2027: 최저시급 10,700원 반영 → 하한 68,480원. 2027 상한액 개정 미확인(todo) */
+  R.unemployment.minHourly = 10700;
+  R.unemployment.dailyMin = Math.round(10700 * 0.8 * 8); // 68,480
+  R.unemployment.todo = true;
+  R.unemployment.note = "2027 하한액 68,480원(최저시급 10,700×80%×8). 2027 상한액 개정 미확인 → 상한은 2026년 68,100원으로 임시 표기(확인 필요). 하한>상한 역전 상태라 공식 고시 확인 전 참고용.";
+
   /* listTodos 재부착(복제로 사라짐) */
   R.listTodos = function () {
     var out = [];

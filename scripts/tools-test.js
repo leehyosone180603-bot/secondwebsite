@@ -233,5 +233,22 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("성별 차이 = 166(= +5 vs −161)", () => assert.strictEqual(B.bmr("male", 65, 170, 30) - B.bmr("female", 65, 170, 30), 166));
 })();
 
+/* ── unemployment (실업급여, 고용보험법 별표1) ── */
+(function () {
+  const U = require(path.join(ROOT, "tools-src", "unemployment.client.js"));
+  const R = require(path.join(ROOT, "data", "rates.2026.js"));
+  console.log("unemployment");
+  test("하한액(8시간) = 66,048원", () => assert.strictEqual(U.minDaily(R, 8), 66048));
+  test("하한액(4시간) = 33,024원", () => assert.strictEqual(U.minDaily(R, 4), 33024));
+  test("저임금 10만×60%=6만 → 하한 66,048 적용", () => { const d = U.dailyBenefit(100000, 8, R); assert.strictEqual(d.daily, 66048); assert.strictEqual(d.applied, "floor"); });
+  test("고임금 20만×60%=12만 → 상한 68,100 적용", () => { const d = U.dailyBenefit(200000, 8, R); assert.strictEqual(d.daily, 68100); assert.strictEqual(d.applied, "cap"); });
+  test("중간 11.2만×60%=67,200 → 그대로", () => { const d = U.dailyBenefit(112000, 8, R); assert.strictEqual(d.daily, 67200); assert.strictEqual(d.applied, "rate"); });
+  test("소정급여일수: 35세·2년 = 150일", () => assert.strictEqual(U.benefitDays(35, 2, false, R), 150));
+  test("소정급여일수: 55세·12년 = 270일", () => assert.strictEqual(U.benefitDays(55, 12, false, R), 270));
+  test("소정급여일수: 장애인 40세·0.5년 = 120일(50세↑ 적용)", () => assert.strictEqual(U.benefitDays(40, 0.5, true, R), 120));
+  test("소정급여일수: 49세·7년 = 210일", () => assert.strictEqual(U.benefitDays(49, 7, false, R), 210));
+  test("총 예상: 67,200×150 = 10,080,000", () => { const e = U.estimate(112000, 8, 35, 2, false, R); assert.strictEqual(e.total, 10080000); assert.strictEqual(e.monthly, 2016000); });
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

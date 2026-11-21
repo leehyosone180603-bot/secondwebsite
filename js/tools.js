@@ -64,6 +64,8 @@
       desc: "시급·근무시간으로 주휴수당 포함 주급·월급·실수령액을 계산합니다.", related: ["salary", "4insure", "freelancer"], public: true, isNew: true },
     { id: "4insure", slug: "4insure", name: "4대보험 계산기", category: "tax", kind: "calculator", emoji: "🛡️",
       desc: "월 보수로 국민연금·건강·장기요양·고용·산재 보험료를 계산합니다.", related: ["salary", "parttime", "freelancer"], public: true, isNew: true },
+    { id: "unemployment", slug: "unemployment", name: "실업급여 계산기", category: "tax", kind: "calculator", emoji: "🧳",
+      desc: "평균임금·나이·고용보험 가입기간으로 구직급여 일액·소정급여일수·총 예상 수령액을 계산합니다.", related: ["severance", "4insure", "salary"], public: true, isNew: true },
 
     /* ── 날짜·기간 ── */
     { id: "age", slug: "age", name: "만 나이 계산기", category: "date", kind: "calculator", emoji: "🎂",
