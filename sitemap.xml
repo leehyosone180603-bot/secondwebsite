@@ -147,6 +147,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://healthfortune.co.kr/body-fat/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://healthfortune.co.kr/percent/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

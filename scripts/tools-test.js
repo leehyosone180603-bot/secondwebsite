@@ -272,5 +272,19 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("0 → 영", () => assert.strictEqual(W.numToKorean(0), "영"));
 })();
 
+/* ── body-fat (체지방률·표준체중) ── */
+(function () {
+  const F = require(path.join(ROOT, "tools-src", "body-fat.client.js"));
+  console.log("body-fat");
+  const near = (a, b) => assert.ok(Math.abs(a - b) < 1e-6, a + " ≉ " + b);
+  test("표준체중(175cm, BMI22) = 67.375kg", () => near(F.standardWeight(175), 67.375));
+  test("체지방 남 BMI25·30세 = 20.7%", () => near(F.bodyFat(25, 30, "male"), 20.7));
+  test("체지방 여 BMI25·30세 = 31.5%", () => near(F.bodyFat(25, 30, "female"), 31.5));
+  test("남녀 차이 = 10.8(성별항)", () => near(F.bodyFat(25, 30, "male") - F.bodyFat(25, 30, "female"), -10.8));
+  test("남 20.7% → 주의(경계)", () => assert.strictEqual(F.bfCategory(20.7, "male").label, "주의(경계)"));
+  test("남 15% → 정상", () => assert.strictEqual(F.bfCategory(15, "male").label, "정상"));
+  test("여 31.5% → 비만", () => assert.strictEqual(F.bfCategory(31.5, "female").label, "비만"));
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

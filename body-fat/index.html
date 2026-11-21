@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>체지방률 계산기 - 체지방률 추정·표준체중·적정체중 | 건강흐름</title>
+  <meta name="description" content="키·몸무게·나이·성별로 체지방률(Deurenberg 공식 추정)과 표준체중(BMI 22), 적정체중 범위, 체지방량·제지방량을 계산합니다. 남 25%·여 30% 비만 기준.">
+  <meta name="keywords" content="체지방률 계산기, 표준체중 계산, 적정체중, 체지방량, 제지방량, 비만도 계산">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="체지방률·표준체중 계산기">
+  <meta property="og:description" content="키·몸무게·나이·성별로 체지방률(Deurenberg 공식 추정)과 표준체중(BMI 22), 적정체중 범위, 체지방량·제지방량을 계산합니다. 남 25%·여 30% 비만 기준.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://healthfortune.co.kr/body-fat/">
+  <meta property="og:site_name" content="건강흐름">
+  <link rel="canonical" href="https://healthfortune.co.kr/body-fat/">
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "체지방률·표준체중 계산기",
+    "url": "https://healthfortune.co.kr/body-fat/",
+    "description": "키·몸무게·나이·성별로 체지방률(Deurenberg 공식 추정)과 표준체중(BMI 22), 적정체중 범위, 체지방량·제지방량을 계산합니다. 남 25%·여 30% 비만 기준.",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "ko",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
+    }
+  }</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"체지방률은 어떻게 계산하나요?","acceptedAnswer":{"@type":"Answer","text":"이 계산기는 Deurenberg 공식으로 BMI·나이·성별을 넣어 추정합니다. 정확한 값은 인바디 같은 체성분 측정이 필요합니다."}},{"@type":"Question","name":"표준체중은 어떻게 구하나요?","acceptedAnswer":{"@type":"Answer","text":"키(m)의 제곱에 22를 곱합니다. 키 170cm면 1.7×1.7×22≈63.6kg입니다. BMI 22가 가장 건강한 체중으로 알려져 있습니다."}},{"@type":"Question","name":"체지방률 몇부터 비만인가요?","acceptedAnswer":{"@type":"Answer","text":"일반적으로 남성 25% 이상, 여성 30% 이상을 비만으로 봅니다. 남성 정상은 약 10~20%, 여성은 18~28% 범위입니다."}},{"@type":"Question","name":"BMI는 정상인데 체지방률이 높아요","acceptedAnswer":{"@type":"Answer","text":"‘마른 비만’일 수 있습니다. 체중은 정상이어도 근육이 적고 지방이 많은 경우로, 근력운동으로 제지방량을 늘리는 것이 좋습니다."}},{"@type":"Question","name":"제지방량이 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"몸무게에서 지방을 뺀 무게로, 근육·뼈·수분 등을 포함합니다. 다이어트 시 제지방량(특히 근육)을 지키며 체지방을 줄이는 것이 건강합니다."}}]}</script>
+
+  <!-- Google AdSense 게시자 ID: ca-pub-7143828779500885 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885"
+     crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/style.css?v=14">
+  <link rel="stylesheet" href="/tool-kit.css?v=1">
+</head>
+<body data-tool="body-fat">
+  <nav class="back-nav"><a href="/tools.html">← <span data-i18n="tools">생활 도구</span></a></nav>
+
+  <header class="site-header">
+    <h1>💪 체지방률·표준체중 계산기</h1>
+    <p class="subtitle">체지방률 추정과 표준·적정체중 한 번에</p>
+    <div class="lang-switch" id="tk-langswitch" aria-label="언어 선택"></div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb" id="tk-breadcrumb" aria-label="위치"></nav>
+  </div>
+
+  <div class="ad-container" aria-label="광고">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <main class="container">
+    <div class="tool-layout">
+      <div class="tool-main">
+        <section class="card controls">
+          <div class="intro"><p>키·몸무게·나이·성별로 <strong>체지방률(추정)</strong>과 <strong>표준체중</strong>을 계산합니다. 체지방률은 Deurenberg 공식으로 BMI·나이·성별을 반영해 추정합니다.</p></div>
+          <div class="field"><label>성별</label><div class="result-actions" style="margin-top:0"><button type="button" class="btn-sm" data-sex="male" aria-pressed="true">남성</button><button type="button" class="btn-sm" data-sex="female">여성</button></div></div><div class="field"><label for="height">키</label><div class="input-unit"><input type="text" id="height" data-share inputmode="decimal" placeholder="예: 170"><span class="unit">cm</span></div></div><div class="field"><label for="weight">몸무게</label><div class="input-unit"><input type="text" id="weight" data-share inputmode="decimal" placeholder="예: 65"><span class="unit">kg</span></div></div><div class="field"><label for="age">나이</label><div class="input-unit"><input type="text" id="age" data-share inputmode="numeric" placeholder="예: 30"><span class="unit">세</span></div></div>
+          <p class="error" id="errorMsg" role="alert"></p>
+          <button id="calcBtn" class="btn-primary" type="button" data-i18n="calc">계산하기</button>
+        </section>
+
+        <section class="card results" id="tk-result-card" hidden>
+          <div id="tk-result"><div id="bfResult"></div></div>
+          <div class="result-actions">
+            <button class="btn-sm" data-tk="copy" data-copy-target="#tk-result"><span data-i18n="copy">결과 복사</span></button>
+            <button class="btn-sm" data-tk="share"><span data-i18n="shareLink">공유 링크</span></button>
+            <button class="btn-sm" data-tk="reset"><span data-i18n="reset">초기화</span></button>
+          </div>
+          <p class="footer-notice" style="margin:10px 0 0" data-i18n="disclaimer">참고용 추정치이며 실제 금액과 다를 수 있습니다.</p>
+        </section>
+
+        <div class="share-bar" id="tk-sharebar"></div>
+        <div class="rating" id="tk-rating"></div>
+
+    <section class="card info">
+      <h2 data-i18n="method">계산 방법</h2>
+      <p>체지방률은 Deurenberg(1991) 공식으로 추정합니다.</p><ul><li>체지방률(%) = 1.2×BMI + 0.23×나이 − 10.8×성별(남1, 여0) − 5.4</li><li>표준체중 = 키(m)² × 22 (BMI 22 기준)</li><li>적정체중 범위 = 키(m)² × 18.5 ~ 22.9</li><li>체지방량 = 몸무게 × 체지방률, 제지방량 = 몸무게 − 체지방량</li></ul><p>비만 기준 체지방률은 남성 25% 이상, 여성 30% 이상입니다. BMI만으로는 근육·지방을 구분할 수 없어, 체지방률을 함께 보면 체형을 더 잘 이해할 수 있습니다.</p>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="learnMore">더 알아보기</h2>
+      <div class="learn-cards"><div class="learn-card"><h4>표준체중 vs 적정체중</h4><p>표준체중은 BMI 22에 해당하는 한 점이고, 적정체중은 BMI 18.5~22.9 범위입니다. 이 범위 안이면 건강 체중으로 봅니다.</p></div><div class="learn-card"><h4>체지방률 추정의 한계</h4><p>Deurenberg 공식은 BMI 기반이라 근육량을 반영하지 못합니다. 근육이 많은 사람은 실제보다 높게, 마른 비만은 낮게 나올 수 있어 참고용입니다.</p></div><div class="learn-card"><h4>정확한 측정 방법</h4><p>체성분분석(인바디 등 생체전기저항), 캘리퍼(피부두겹법), DEXA 등이 더 정확합니다. 추세를 볼 때는 같은 방법·같은 조건으로 재는 것이 중요합니다.</p></div></div>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="faq">자주 묻는 질문</h2>
+      <h3>Q. 체지방률은 어떻게 계산하나요?</h3>
+      <p>이 계산기는 Deurenberg 공식으로 BMI·나이·성별을 넣어 추정합니다. 정확한 값은 인바디 같은 체성분 측정이 필요합니다.</p>
+      <h3>Q. 표준체중은 어떻게 구하나요?</h3>
+      <p>키(m)의 제곱에 22를 곱합니다. 키 170cm면 1.7×1.7×22≈63.6kg입니다. BMI 22가 가장 건강한 체중으로 알려져 있습니다.</p>
+      <h3>Q. 체지방률 몇부터 비만인가요?</h3>
+      <p>일반적으로 남성 25% 이상, 여성 30% 이상을 비만으로 봅니다. 남성 정상은 약 10~20%, 여성은 18~28% 범위입니다.</p>
+      <h3>Q. BMI는 정상인데 체지방률이 높아요</h3>
+      <p>‘마른 비만’일 수 있습니다. 체중은 정상이어도 근육이 적고 지방이 많은 경우로, 근력운동으로 제지방량을 늘리는 것이 좋습니다.</p>
+      <h3>Q. 제지방량이 무엇인가요?</h3>
+      <p>몸무게에서 지방을 뺀 무게로, 근육·뼈·수분 등을 포함합니다. 다이어트 시 제지방량(특히 근육)을 지키며 체지방을 줄이는 것이 건강합니다.</p>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="sources">자료 출처</h2>
+      <ul class="sources-list"><li><a href="https://health.kdca.go.kr" target="_blank" rel="noopener">질병관리청 국가건강정보포털 — 비만·체성분 ↗</a></li><li><a href="https://pubmed.ncbi.nlm.nih.gov/2043597/" target="_blank" rel="noopener">Deurenberg P et al. (1991), Br J Nutr — 체지방률 추정식 ↗</a></li></ul>
+    </section>
+        <section class="card info">
+          <h2 data-i18n="related">관련 도구</h2>
+          <div id="tk-related"></div>
+        </section>
+      </div>
+
+      <aside class="tool-side">
+        <div class="widget"><h3>🔥 <span data-i18n="popular">인기 페이지</span></h3><ul id="tk-popular"></ul></div>
+        <div class="widget"><h3>🆕 <span data-i18n="newTools">신규 출시</span></h3><ul id="tk-new"></ul></div>
+        <div class="widget"><h3>🕘 <span data-i18n="recent">최근 본 페이지</span></h3><ul id="tk-recent"></ul></div>
+        <div class="widget deal"><h3>🏷️ <span data-i18n="deal">할인 정보</span></h3><ul id="tk-deal"><li class="empty" data-i18n="none">아직 없습니다.</li></ul><p class="aff-note" data-i18n="dealNote">※ 일부 링크는 제휴(광고) 링크일 수 있습니다.</p></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="footer-logo">💪</span><span class="footer-brandname">건강흐름</span></div>
+    <nav class="footer-links"><a href="/">홈</a> · <a href="/tools.html">생활 도구</a> · <a href="/about.html">운영자 소개</a> · <a href="/contact.html">문의하기</a> · <a href="/privacy.html">개인정보처리방침</a> · <a href="/terms.html">이용약관</a> · <a href="mailto:leelin12@naver.com">이메일</a></nav>
+    <div class="footer-biz">상호명 굿윌스토어 · 사업자등록번호 631-03-03874 · 대표 이효선 · 주소 부산 사하구 오작로 34<br>연락처 010-2934-1351 · 제휴문의 <a href="mailto:leelin12@naver.com">leelin12@naver.com</a></div>
+    <p class="footer-notice">건강흐름의 모든 콘텐츠는 저작권법의 보호를 받으며, 무단 전재·복사·배포를 금합니다.</p>
+    <p class="footer-copy">© <span id="year"></span> 건강흐름 (healthfortune.co.kr)</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/tools.js"></script>
+  <script src="/data/rates.2026.js"></script>
+  <script src="/data/rates.2027.js"></script>
+  <script src="/data/rates.js"></script>
+  <script src="/js/tool-kit.js"></script>
+  <script src="/body-fat/body-fat.js?v=1"></script>
+</body>
+</html>
