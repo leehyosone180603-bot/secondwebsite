@@ -114,5 +114,5 @@
     document.getElementById("payLabel").textContent = payType.value === "month" ? "월급(세전)" : "연봉(세전)";
   });
   document.getElementById("calcBtn").addEventListener("click", calc);
-  if (location.search) setTimeout(calc, 0);
+  if (location.search) window.ToolKit.ready(calc);
 })();

@@ -99,5 +99,5 @@
   var todayStr = new Date().toISOString().slice(0, 10);
   ["btStart", "asBase", "avStart"].forEach(function (id) { var e = document.getElementById(id); if (e && !e.value) e.value = todayStr; });
   setTab("dday");
-  if (location.search) setTimeout(calc, 0);
+  if (location.search) window.ToolKit.ready(calc);
 })();

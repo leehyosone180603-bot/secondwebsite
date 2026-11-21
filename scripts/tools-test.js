@@ -147,5 +147,31 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("토요일 근무 옵션: 토요일이 영업일", () => assert.strictEqual(B.isBusinessDay(new Date(2026, 4, 2), { isHoliday: H.isHoliday, saturdayWork: true, customOff: {} }), true));
 })();
 
+/* ── severance (퇴직소득세, 공식 샘플 검증) ── */
+(function () {
+  const S = require(path.join(ROOT, "tools-src", "severance.client.js"));
+  const R = require(path.join(ROOT, "data", "rates.2026.js"));
+  console.log("severance");
+  test("공식샘플①: 퇴직 3천만·5년 → 퇴직소득세 775,000/지방 77,500", () => { const t = S.retirementTax(30000000, 5, R); assert.strictEqual(t.incomeTax, 775000); assert.strictEqual(t.localTax, 77500); });
+  test("공식샘플①: 환산급여 6천만·공제 3,920만·과표 2,080만", () => { const t = S.retirementTax(30000000, 5, R); assert.strictEqual(t.converted, 60000000); assert.strictEqual(t.convertedDeduction, 39200000); assert.strictEqual(t.taxBase, 20800000); });
+  test("공식샘플②: 퇴직 1억·10년 → 퇴직소득세 3,875,000/지방 387,500", () => { const t = S.retirementTax(100000000, 10, R); assert.strictEqual(t.incomeTax, 3875000); assert.strictEqual(t.localTax, 387500); });
+  test("근속연수: 2020-12-01~2025-11-30 = 5년", () => assert.strictEqual(S.serviceYears(new Date(2020, 11, 1), new Date(2025, 10, 30)), 5));
+  test("근속월수 올림: 1994-04-15~1998-04-15 = 49개월(5년)", () => { assert.strictEqual(S.serviceMonths(new Date(1994, 3, 15), new Date(1998, 3, 15)), 49); assert.strictEqual(S.serviceYears(new Date(1994, 3, 15), new Date(1998, 3, 15)), 5); });
+  test("퇴직금: 1일10만·365일 = 300만", () => assert.strictEqual(S.severancePay(100000, 365), 3000000));
+})();
+
+/* ── lotto-prize (복권 당첨금 세금) ── */
+(function () {
+  const L = require(path.join(ROOT, "tools-src", "lotto-prize.client.js"));
+  const R = require(path.join(ROOT, "data", "rates.2026.js"));
+  console.log("lotto-prize");
+  test("200만원 이하 비과세: 세금 0, 전액 수령", () => { const r = L.lottoTax(2000000, R); assert.strictEqual(r.taxable, false); assert.strictEqual(r.totalTax, 0); assert.strictEqual(r.net, 2000000); });
+  test("1억 당첨 → 소득세 2,000만·지방 200만·실수령 7,800만", () => { const r = L.lottoTax(100000000, R); assert.strictEqual(r.incomeTax, 20000000); assert.strictEqual(r.localTax, 2000000); assert.strictEqual(r.net, 78000000); });
+  test("3억 당첨 → 22%, 실수령 2.34억", () => { const r = L.lottoTax(300000000, R); assert.strictEqual(r.incomeTax, 60000000); assert.strictEqual(r.localTax, 6000000); assert.strictEqual(r.net, 234000000); });
+  test("10억 당첨 → 세금 2.97억, 실수령 7.03억", () => { const r = L.lottoTax(1000000000, R); assert.strictEqual(r.incomeTax, 270000000); assert.strictEqual(r.localTax, 27000000); assert.strictEqual(r.net, 703000000); });
+  test("20억 당첨 → 3억초과분 33% 적용, 실수령 13.73억", () => { const r = L.lottoTax(2000000000, R); assert.strictEqual(r.incomeTax, 570000000); assert.strictEqual(r.net, 1373000000); });
+  test("200만원 초과 2,000,001 → 과세 전환", () => { const r = L.lottoTax(2000001, R); assert.strictEqual(r.taxable, true); });
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

@@ -110,5 +110,5 @@
     document.getElementById("ciExpAmtWrap").hidden = expMode.value !== "amount";
   });
   setMode("wh");
-  if (location.search) setTimeout(calc, 0);
+  if (location.search) window.ToolKit.ready(calc);
 })();

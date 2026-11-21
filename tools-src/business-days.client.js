@@ -81,5 +81,5 @@
   var today = new Date().toISOString().slice(0, 10);
   ["bStart", "aBase"].forEach(function (id) { var e = document.getElementById(id); if (e && !e.value) e.value = today; });
   setTab("count");
-  if (location.search) setTimeout(calc, 0);
+  if (location.search) window.ToolKit.ready(calc);
 })();

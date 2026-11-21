@@ -215,6 +215,10 @@
     if (rc) rc.innerHTML = widgetListHtml(getRecent(tool ? tool.id : null).slice(0, 5));
   }
 
+  /* ── 초기화 준비 콜백 (공유 링크 자동계산 등: init 이후 실행 보장) ── */
+  var _readyCbs = [], _ready = false;
+  function ready(cb) { if (_ready) { try { cb(); } catch (e) {} } else _readyCbs.push(cb); }
+
   /* ── 초기화 ── */
   function init() {
     try { document.documentElement.setAttribute("lang", I18N.lang); } catch (e) {}
@@ -238,11 +242,15 @@
     }
     fillSide(tool);
     window.addEventListener("tk:langchange", function () { I18N.apply(document); fillSide(tool); if (tool) { var rel = document.getElementById("tk-related"); if (rel) rel.innerHTML = '<div class="related-grid">' + relatedOf(tool, 8).map(relatedItemHtml).join("") + "</div>"; } });
+
+    _ready = true;
+    _readyCbs.forEach(function (c) { try { c(); } catch (e) {} });
+    _readyCbs = [];
   }
 
   /* 공개 API */
   window.ToolKit = {
-    init: init,
+    init: init, ready: ready,
     fmt: fmt, parse: parse,
     num: function (id) { var el = document.getElementById(id); return el ? parse(el.value) : NaN; },
     val: function (id) { var el = document.getElementById(id); return el ? el.value : ""; },

@@ -61,5 +61,5 @@
   }
 
   document.getElementById("calcBtn").addEventListener("click", calc);
-  if (location.search) setTimeout(calc, 0);
+  if (location.search) window.ToolKit.ready(calc);
 })();

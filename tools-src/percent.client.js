@@ -35,5 +35,5 @@
     var el = document.getElementById(id);
     if (el) el.addEventListener("keydown", function (e) { if (e.key === "Enter") render(); });
   });
-  if (location.search) setTimeout(render, 0); // 공유 링크로 들어오면 자동 계산
+  if (location.search) window.ToolKit.ready(render);
 })();

@@ -63,5 +63,5 @@
 
   document.getElementById("calcBtn").addEventListener("click", calc);
   var bd = document.getElementById("baseDate"); if (bd && !bd.value) bd.value = new Date().toISOString().slice(0, 10);
-  if (location.search) setTimeout(calc, 0);
+  if (location.search) window.ToolKit.ready(calc);
 })();

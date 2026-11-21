@@ -52,5 +52,5 @@
   document.querySelectorAll("[data-kind]").forEach(function (b) { b.addEventListener("click", function () { setKind(b.getAttribute("data-kind")); }); });
   document.getElementById("calcBtn").addEventListener("click", calc);
   setKind("deposit");
-  if (location.search) setTimeout(calc, 0);
+  if (location.search) window.ToolKit.ready(calc);
 })();
