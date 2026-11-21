@@ -230,6 +230,52 @@
     note: "2028.1.1부터 기초일액 산정이 평균임금→보수일액으로 변경(2027말까지 이직자는 현행). 상한·하한 차이 2,052원으로 8시간 근무자 일액은 좁은 범위에서 결정"
   };
 
+  /* ── 상속·증여세 세율(공통) + 신고세액공제 — 상증세법 §26·§56·§69 (확인일 2026-11-22) ── */
+  R.inheritGiftTax = {
+    source: LAW("상속세및증여세법/제26조"), year: YEAR, lastChecked: LC, todo: false,
+    filingCredit: 3, // 신고세액공제 % (§69, 기한 내 신고)
+    brackets: [      // 과세표준 구간 — 누진공제 방식(법령 누적세액식과 동치)
+      { upTo: 100000000,  rate: 10, deduction: 0 },
+      { upTo: 500000000,  rate: 20, deduction: 10000000 },
+      { upTo: 1000000000, rate: 30, deduction: 60000000 },
+      { upTo: 3000000000, rate: 40, deduction: 160000000 },
+      { upTo: null,       rate: 50, deduction: 460000000 }
+    ],
+    note: "상속(§26)·증여(§56) 공통 세율. 세대생략 상속(§27)·직계비속 증여(§57) 할증은 별도 미반영"
+  };
+
+  /* ── 증여재산공제 — 상증세법 §53·§53의2 (수증자 기준, 10년 합산) ── */
+  R.giftDeduction = {
+    source: LAW("상속세및증여세법/제53조"), year: YEAR, lastChecked: LC, todo: false,
+    spouse: 600000000,               // 배우자
+    linealDescendantAdult: 50000000, // 직계존속→성년 직계비속
+    linealDescendantMinor: 20000000, // 직계존속→미성년 직계비속
+    linealAscendant: 50000000,       // 직계비속→직계존속
+    otherRelative: 10000000,         // 기타 친족(4촌 이내 혈족·3촌 이내 인척)
+    marriageBirth: 100000000,        // 혼인·출산(합산 평생 1억, §53의2, 2024.1.1~)
+    period: "10년 합산",
+    note: "증여 전 10년 이내 같은 구분 증여공제와 합산(혼인·출산분 제외). 기타친족 범위 4촌혈족·3촌인척으로 축소(2025.3.14)"
+  };
+
+  /* ── 상속공제 — 상증세법 §18~§23의2 ── */
+  R.inheritDeduction = {
+    source: LAW("상속세및증여세법/제18조"), year: YEAR, lastChecked: LC, todo: false,
+    basic: 200000000,         // 기초공제(§18)
+    lumpSum: 500000000,       // 일괄공제(§21): max(기초+인적, 5억)
+    spouseMin: 500000000,     // 배우자 상속공제 최소(§19)
+    spouseMax: 3000000000,    // 배우자 상속공제 최대
+    financialRate: 20,        // 금융재산공제율 %(§22)
+    financialFullUnder: 20000000, // 순금융재산 2천만 이하 전액
+    financialFloor: 20000000, // 2천만 vs 20% 중 큰 값
+    financialMax: 200000000,  // 금융재산공제 한도
+    homeRate: 100, homeMax: 600000000, // 동거주택(§23의2) 100%, 한도 6억
+    child: 50000000,          // 자녀공제 1인(§20)
+    minorPerYear: 10000000,   // 미성년 1천만 × (19−나이)
+    elderly: 50000000,        // 65세↑ 1인
+    disabledPerYear: 10000000,// 장애인 1천만 × 기대여명
+    note: "일괄공제=max(기초2억+인적, 5억). 배우자 단독상속 시 일괄공제 불가. 가업·영농상속공제는 별도 미반영"
+  };
+
   /* 미확인(todo) 값 추출 — 빌드/보고용 */
   R.listTodos = function () {
     var out = [];

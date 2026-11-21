@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>증여세 계산기 - 증여재산공제·세율·신고세액공제 | 건강흐름</title>
+  <meta name="description" content="증여재산과 관계별 공제(배우자 6억·성년자녀 5천만 등)로 증여세 과세표준, 산출세액, 신고세액공제(3%) 후 납부세액을 계산합니다. 혼인·출산 공제 반영.">
+  <meta name="keywords" content="증여세 계산기, 증여재산공제, 증여세율, 자녀 증여, 부부 증여, 혼인 증여공제">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="증여세 계산기">
+  <meta property="og:description" content="증여재산과 관계별 공제(배우자 6억·성년자녀 5천만 등)로 증여세 과세표준, 산출세액, 신고세액공제(3%) 후 납부세액을 계산합니다. 혼인·출산 공제 반영.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://healthfortune.co.kr/gift-tax/">
+  <meta property="og:site_name" content="건강흐름">
+  <link rel="canonical" href="https://healthfortune.co.kr/gift-tax/">
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "증여세 계산기",
+    "url": "https://healthfortune.co.kr/gift-tax/",
+    "description": "증여재산과 관계별 공제(배우자 6억·성년자녀 5천만 등)로 증여세 과세표준, 산출세액, 신고세액공제(3%) 후 납부세액을 계산합니다. 혼인·출산 공제 반영.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "ko",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
+    }
+  }</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"증여세는 누가 내나요?","acceptedAnswer":{"@type":"Answer","text":"재산을 받은 사람(수증자)이 냅니다. 증여일이 속한 달의 말일부터 3개월 안에 신고·납부하면 신고세액공제 3%를 받습니다."}},{"@type":"Question","name":"부모가 자녀에게 얼마까지 세금 없이 주나요?","acceptedAnswer":{"@type":"Answer","text":"성년 자녀는 10년간 5천만 원, 미성년 자녀는 2천만 원까지 공제됩니다. 혼인·출산 공제를 더하면 성년 자녀는 최대 1억 5천만 원까지 비과세가 가능합니다."}},{"@type":"Question","name":"부부끼리 증여는 세금이 없나요?","acceptedAnswer":{"@type":"Answer","text":"배우자 공제가 10년간 6억 원이라, 6억 원까지는 증여세가 없습니다. 초과분에만 세율이 적용됩니다."}},{"@type":"Question","name":"증여세율은 얼마인가요?","acceptedAnswer":{"@type":"Answer","text":"과세표준 1억 이하 10%부터 30억 초과 50%까지 5단계 누진세율입니다. 상속세와 세율이 같습니다."}},{"@type":"Question","name":"10년 안에 또 증여받으면요?","acceptedAnswer":{"@type":"Answer","text":"같은 증여자에게서 10년 내 받은 증여는 합산해 누진세율을 적용합니다. 나눠 주더라도 10년 합산되므로 절세 효과가 제한적입니다."}}]}</script>
+
+  <!-- Google AdSense 게시자 ID: ca-pub-7143828779500885 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885"
+     crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/style.css?v=14">
+  <link rel="stylesheet" href="/tool-kit.css?v=1">
+</head>
+<body data-tool="gift-tax">
+  <nav class="back-nav"><a href="/tools.html">← <span data-i18n="tools">생활 도구</span></a></nav>
+
+  <header class="site-header">
+    <h1>🎁 증여세 계산기</h1>
+    <p class="subtitle">관계별 공제와 누진세율로 증여세 계산</p>
+    <div class="lang-switch" id="tk-langswitch" aria-label="언어 선택"></div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb" id="tk-breadcrumb" aria-label="위치"></nav>
+  </div>
+
+  <div class="ad-container" aria-label="광고">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <main class="container">
+    <div class="tool-layout">
+      <div class="tool-main">
+        <section class="card controls">
+          <div class="intro"><p>증여재산에서 <strong>관계별 공제</strong>(10년 합산)를 빼 과세표준을 구하고, 10~50% 누진세율과 신고세액공제(3%)를 적용해 납부세액을 계산합니다.</p></div>
+          <div class="field"><label for="gift">증여재산 가액 <span class="hint">(증여받는 재산의 평가액)</span></label><div class="input-unit"><input type="text" id="gift" data-num data-share inputmode="numeric" placeholder="예: 500,000,000"><span class="unit">원</span></div></div><div class="field"><label for="relation">증여자와의 관계 <span class="hint">(수증자 기준)</span></label><select id="relation" data-share><option value="adult">성년 자녀가 부모에게서 (5천만)</option><option value="minor">미성년 자녀가 부모에게서 (2천만)</option><option value="spouse">배우자에게서 (6억)</option><option value="ascendant">부모가 자녀에게서 (5천만)</option><option value="other">기타 친족에게서 (1천만)</option></select></div><div class="field" id="mbRow"><label><input type="checkbox" id="useMB" data-share> 혼인·출산 증여공제 적용 (최대 1억 추가)</label><div id="mbAmtWrap" style="display:none;margin-top:6px"><div class="input-unit"><input type="text" id="mbAmt" data-num data-share inputmode="numeric" placeholder="예: 100,000,000"><span class="unit">원</span></div></div></div>
+          <p class="error" id="errorMsg" role="alert"></p>
+          <button id="calcBtn" class="btn-primary" type="button" data-i18n="calc">계산하기</button>
+        </section>
+
+        <section class="card results" id="tk-result-card" hidden>
+          <div id="tk-result"><div id="gtResult"></div></div>
+          <div class="result-actions">
+            <button class="btn-sm" data-tk="copy" data-copy-target="#tk-result"><span data-i18n="copy">결과 복사</span></button>
+            <button class="btn-sm" data-tk="share"><span data-i18n="shareLink">공유 링크</span></button>
+            <button class="btn-sm" data-tk="reset"><span data-i18n="reset">초기화</span></button>
+          </div>
+          <p class="footer-notice" style="margin:10px 0 0" data-i18n="disclaimer">참고용 추정치이며 실제 금액과 다를 수 있습니다.</p>
+        </section>
+
+        <div class="share-bar" id="tk-sharebar"></div>
+        <div class="rating" id="tk-rating"></div>
+
+    <section class="card info">
+      <h2 data-i18n="method">계산 방법</h2>
+      <p>증여세는 다음 순서로 계산합니다.</p><ul><li><strong>과세표준</strong> = 증여재산 − 증여재산공제 − 혼인·출산공제</li><li><strong>산출세액</strong> = 과세표준 × 세율 − 누진공제</li><li><strong>납부세액</strong> = 산출세액 − 신고세액공제(산출세액 × 3%)</li></ul><p>증여재산공제(10년 합산): 배우자 6억, 성년 자녀 5천만, 미성년 자녀 2천만, 자녀→부모 5천만, 기타 친족 1천만 원입니다. 혼인·출산 공제는 직계존속 증여 시 평생 1억 한도로 별도 적용됩니다.</p><table class="calc-table"><thead><tr><th>과세표준</th><th>세율</th><th>누진공제</th></tr></thead><tbody><tr><td>1억 이하</td><td>10%</td><td>-</td></tr><tr><td>5억 이하</td><td>20%</td><td>1,000만</td></tr><tr><td>10억 이하</td><td>30%</td><td>6,000만</td></tr><tr><td>30억 이하</td><td>40%</td><td>1억 6,000만</td></tr><tr><td>30억 초과</td><td>50%</td><td>4억 6,000만</td></tr></tbody></table>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="learnMore">더 알아보기</h2>
+      <div class="learn-cards"><div class="learn-card"><h4>10년 합산에 주의</h4><p>같은 사람에게서 10년 이내에 받은 증여는 합산해 과세합니다. 이 계산기는 이번 1건만 계산하므로, 과거 증여가 있으면 합산해서 다시 계산해야 합니다.</p></div><div class="learn-card"><h4>혼인·출산 증여공제</h4><p>2024년부터 직계존속(부모 등)에게서 혼인신고 전후 2년, 또는 출생·입양일부터 2년 이내 증여받으면 평생 1억 원까지 추가 공제됩니다. 기본 공제 5천만 원과 별개입니다.</p></div><div class="learn-card"><h4>미성년자 할증</h4><p>직계비속에게 증여하면서 자녀가 아닌 손자녀 등에게 세대를 건너뛰어 증여하면 30%(미성년이면서 20억 초과 시 40%) 할증됩니다. 이 계산기는 할증을 반영하지 않습니다.</p></div></div>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="faq">자주 묻는 질문</h2>
+      <h3>Q. 증여세는 누가 내나요?</h3>
+      <p>재산을 받은 사람(수증자)이 냅니다. 증여일이 속한 달의 말일부터 3개월 안에 신고·납부하면 신고세액공제 3%를 받습니다.</p>
+      <h3>Q. 부모가 자녀에게 얼마까지 세금 없이 주나요?</h3>
+      <p>성년 자녀는 10년간 5천만 원, 미성년 자녀는 2천만 원까지 공제됩니다. 혼인·출산 공제를 더하면 성년 자녀는 최대 1억 5천만 원까지 비과세가 가능합니다.</p>
+      <h3>Q. 부부끼리 증여는 세금이 없나요?</h3>
+      <p>배우자 공제가 10년간 6억 원이라, 6억 원까지는 증여세가 없습니다. 초과분에만 세율이 적용됩니다.</p>
+      <h3>Q. 증여세율은 얼마인가요?</h3>
+      <p>과세표준 1억 이하 10%부터 30억 초과 50%까지 5단계 누진세율입니다. 상속세와 세율이 같습니다.</p>
+      <h3>Q. 10년 안에 또 증여받으면요?</h3>
+      <p>같은 증여자에게서 10년 내 받은 증여는 합산해 누진세율을 적용합니다. 나눠 주더라도 10년 합산되므로 절세 효과가 제한적입니다.</p>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="sources">자료 출처</h2>
+      <ul class="sources-list"><li><a href="https://www.law.go.kr/법령/상속세및증여세법" target="_blank" rel="noopener">국가법령정보센터 — 상속세 및 증여세법 제26조·제53조·제69조 ↗</a></li><li><a href="https://www.nts.go.kr" target="_blank" rel="noopener">국세청 — 증여세 안내 ↗</a></li></ul>
+    </section>
+        <section class="card info">
+          <h2 data-i18n="related">관련 도구</h2>
+          <div id="tk-related"></div>
+        </section>
+      </div>
+
+      <aside class="tool-side">
+        <div class="widget"><h3>🔥 <span data-i18n="popular">인기 페이지</span></h3><ul id="tk-popular"></ul></div>
+        <div class="widget"><h3>🆕 <span data-i18n="newTools">신규 출시</span></h3><ul id="tk-new"></ul></div>
+        <div class="widget"><h3>🕘 <span data-i18n="recent">최근 본 페이지</span></h3><ul id="tk-recent"></ul></div>
+        <div class="widget deal"><h3>🏷️ <span data-i18n="deal">할인 정보</span></h3><ul id="tk-deal"><li class="empty" data-i18n="none">아직 없습니다.</li></ul><p class="aff-note" data-i18n="dealNote">※ 일부 링크는 제휴(광고) 링크일 수 있습니다.</p></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="footer-logo">🎁</span><span class="footer-brandname">건강흐름</span></div>
+    <nav class="footer-links"><a href="/">홈</a> · <a href="/tools.html">생활 도구</a> · <a href="/about.html">운영자 소개</a> · <a href="/contact.html">문의하기</a> · <a href="/privacy.html">개인정보처리방침</a> · <a href="/terms.html">이용약관</a> · <a href="mailto:leelin12@naver.com">이메일</a></nav>
+    <div class="footer-biz">상호명 굿윌스토어 · 사업자등록번호 631-03-03874 · 대표 이효선 · 주소 부산 사하구 오작로 34<br>연락처 010-2934-1351 · 제휴문의 <a href="mailto:leelin12@naver.com">leelin12@naver.com</a></div>
+    <p class="footer-notice">건강흐름의 모든 콘텐츠는 저작권법의 보호를 받으며, 무단 전재·복사·배포를 금합니다.</p>
+    <p class="footer-copy">© <span id="year"></span> 건강흐름 (healthfortune.co.kr)</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/tools.js"></script>
+  <script src="/data/rates.2026.js"></script>
+  <script src="/data/rates.2027.js"></script>
+  <script src="/data/rates.js"></script>
+  <script src="/js/tool-kit.js"></script>
+  <script src="/gift-tax/gift-tax.js?v=1"></script>
+</body>
+</html>

@@ -286,5 +286,30 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("여 31.5% → 비만", () => assert.strictEqual(F.bfCategory(31.5, "female").label, "비만"));
 })();
 
+/* ── gift-tax (증여세) ── */
+(function () {
+  const G = require(path.join(ROOT, "tools-src", "gift-tax.client.js"));
+  const R = require(path.join(ROOT, "data", "rates.2026.js"));
+  console.log("gift-tax");
+  test("과세표준 4.5억 → 산출 8,000만", () => assert.strictEqual(G.progressiveTax(450000000, R), 80000000));
+  test("성년자녀 5억 증여 → 과표4.5억·납부7,760만", () => { const r = G.giftTax(500000000, "adult", 0, R); assert.strictEqual(r.base, 450000000); assert.strictEqual(r.calcTax, 80000000); assert.strictEqual(r.payable, 77600000); });
+  test("성년자녀 1억 증여 → 납부 485만", () => { const r = G.giftTax(100000000, "adult", 0, R); assert.strictEqual(r.payable, 4850000); });
+  test("배우자 6억 증여 → 세금 0", () => assert.strictEqual(G.giftTax(600000000, "spouse", 0, R).payable, 0));
+  test("혼인·출산 1억 공제 → 2억 증여 과표 5천만", () => { const r = G.giftTax(200000000, "adult", 100000000, R); assert.strictEqual(r.base, 50000000); assert.strictEqual(r.calcTax, 5000000); });
+})();
+
+/* ── inheritance-tax (상속세) ── */
+(function () {
+  const I = require(path.join(ROOT, "tools-src", "inheritance-tax.client.js"));
+  const R = require(path.join(ROOT, "data", "rates.2026.js"));
+  console.log("inheritance-tax");
+  test("10억·배우자+자녀2 → 세금 0(공제 10억)", () => assert.strictEqual(I.inheritanceTax(1000000000, true, 2, 0, R).payable, 0));
+  test("15억·배우자+자녀2 → 과표5억·납부8,730만", () => { const r = I.inheritanceTax(1500000000, true, 2, 0, R); assert.strictEqual(r.base, 500000000); assert.strictEqual(r.payable, 87300000); });
+  test("10억·배우자無·자녀2 → 과표5억·납부8,730만", () => { const r = I.inheritanceTax(1000000000, false, 2, 0, R); assert.strictEqual(r.base, 500000000); assert.strictEqual(r.payable, 87300000); });
+  test("금융재산공제: 3억 → 6,000만", () => assert.strictEqual(I.financialDeduction(300000000, R), 60000000));
+  test("금융재산공제: 1천만(2천만이하) → 전액", () => assert.strictEqual(I.financialDeduction(10000000, R), 10000000));
+  test("20억·배우자 단독상속 → 일괄공제 불가(기초2억)·과표13억", () => { const r = I.inheritanceTax(2000000000, true, 0, 0, R); assert.strictEqual(r.general, 200000000); assert.strictEqual(r.base, 1300000000); assert.strictEqual(r.payable, 349200000); });
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

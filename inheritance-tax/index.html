@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상속세 계산기 - 일괄공제·배우자공제 반영 납부세액 추정 | 건강흐름</title>
+  <meta name="description" content="상속재산과 배우자·자녀·금융재산 공제로 상속세 과세표준과 납부세액을 추정합니다. 일괄공제 5억, 배우자공제 최소 5억, 10~50% 누진세율, 신고세액공제 3% 반영.">
+  <meta name="keywords" content="상속세 계산기, 일괄공제, 배우자 상속공제, 상속세율, 금융재산 상속공제, 상속세 면제 한도">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="상속세 계산기">
+  <meta property="og:description" content="상속재산과 배우자·자녀·금융재산 공제로 상속세 과세표준과 납부세액을 추정합니다. 일괄공제 5억, 배우자공제 최소 5억, 10~50% 누진세율, 신고세액공제 3% 반영.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://healthfortune.co.kr/inheritance-tax/">
+  <meta property="og:site_name" content="건강흐름">
+  <link rel="canonical" href="https://healthfortune.co.kr/inheritance-tax/">
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "상속세 계산기",
+    "url": "https://healthfortune.co.kr/inheritance-tax/",
+    "description": "상속재산과 배우자·자녀·금융재산 공제로 상속세 과세표준과 납부세액을 추정합니다. 일괄공제 5억, 배우자공제 최소 5억, 10~50% 누진세율, 신고세액공제 3% 반영.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "ko",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
+    }
+  }</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"상속세는 얼마까지 공제되나요?","acceptedAnswer":{"@type":"Answer","text":"일괄공제 5억이 기본이고, 배우자가 있으면 최소 5억이 더해져 최소 10억이 공제됩니다. 금융재산·동거주택 공제까지 더하면 공제액은 더 커집니다."}},{"@type":"Question","name":"상속재산 10억이면 세금이 없나요?","acceptedAnswer":{"@type":"Answer","text":"배우자와 자녀가 있으면 공제가 최소 10억이라 세금이 없는 경우가 많습니다. 다만 배우자가 없으면 일괄공제 5억만 적용돼 세금이 생길 수 있습니다."}},{"@type":"Question","name":"상속세율은 얼마인가요?","acceptedAnswer":{"@type":"Answer","text":"과세표준 1억 이하 10%부터 30억 초과 50%까지 5단계 누진세율입니다. 증여세와 세율이 같습니다."}},{"@type":"Question","name":"언제까지 신고하나요?","acceptedAnswer":{"@type":"Answer","text":"상속개시일(사망일)이 속한 달의 말일부터 6개월 안에 신고·납부하면 산출세액의 3%를 신고세액공제로 받습니다."}},{"@type":"Question","name":"이 계산기 결과가 정확한가요?","acceptedAnswer":{"@type":"Answer","text":"주요 공제만 반영한 간이 추정입니다. 배우자공제 최대 30억, 동거주택·인적공제, 사전증여 합산, 가업상속공제 등은 빠져 있어 실제와 차이가 날 수 있습니다."}}]}</script>
+
+  <!-- Google AdSense 게시자 ID: ca-pub-7143828779500885 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885"
+     crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/style.css?v=14">
+  <link rel="stylesheet" href="/tool-kit.css?v=1">
+</head>
+<body data-tool="inheritance-tax">
+  <nav class="back-nav"><a href="/tools.html">← <span data-i18n="tools">생활 도구</span></a></nav>
+
+  <header class="site-header">
+    <h1>🏛️ 상속세 계산기</h1>
+    <p class="subtitle">공제 반영 상속세 납부액 간이 추정</p>
+    <div class="lang-switch" id="tk-langswitch" aria-label="언어 선택"></div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb" id="tk-breadcrumb" aria-label="위치"></nav>
+  </div>
+
+  <div class="ad-container" aria-label="광고">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <main class="container">
+    <div class="tool-layout">
+      <div class="tool-main">
+        <section class="card controls">
+          <div class="intro"><p>상속재산에서 <strong>일괄공제(5억)</strong>·배우자공제·금융재산공제를 빼 과세표준을 구하고, 10~50% 누진세율과 신고세액공제(3%)로 납부세액을 추정합니다.</p></div>
+          <div class="field"><label for="estate">상속재산 가액 <span class="hint">(부동산·예금 등 합계 평가액)</span></label><div class="input-unit"><input type="text" id="estate" data-num data-share inputmode="numeric" placeholder="예: 1,500,000,000"><span class="unit">원</span></div></div><div class="field"><label><input type="checkbox" id="spouseAlive" data-share checked> 배우자 생존 (배우자 상속공제 적용)</label></div><div class="field"><label for="children">자녀 수</label><div class="input-unit"><input type="text" id="children" data-share inputmode="numeric" value="0" placeholder="0"><span class="unit">명</span></div></div><div class="field"><label for="financial">순금융재산 <span class="hint">(예금·주식 등 − 금융채무, 없으면 0)</span></label><div class="input-unit"><input type="text" id="financial" data-num data-share inputmode="numeric" value="0" placeholder="0"><span class="unit">원</span></div></div>
+          <p class="error" id="errorMsg" role="alert"></p>
+          <button id="calcBtn" class="btn-primary" type="button" data-i18n="calc">계산하기</button>
+        </section>
+
+        <section class="card results" id="tk-result-card" hidden>
+          <div id="tk-result"><div id="itResult"></div></div>
+          <div class="result-actions">
+            <button class="btn-sm" data-tk="copy" data-copy-target="#tk-result"><span data-i18n="copy">결과 복사</span></button>
+            <button class="btn-sm" data-tk="share"><span data-i18n="shareLink">공유 링크</span></button>
+            <button class="btn-sm" data-tk="reset"><span data-i18n="reset">초기화</span></button>
+          </div>
+          <p class="footer-notice" style="margin:10px 0 0" data-i18n="disclaimer">참고용 추정치이며 실제 금액과 다를 수 있습니다.</p>
+        </section>
+
+        <div class="share-bar" id="tk-sharebar"></div>
+        <div class="rating" id="tk-rating"></div>
+
+    <section class="card info">
+      <h2 data-i18n="method">계산 방법</h2>
+      <p>상속세는 다음 순서로 계산합니다.</p><ul><li><strong>공제</strong> = 일괄공제 5억(또는 기초 2억 + 자녀공제 등 중 큰 값) + 배우자공제 + 금융재산공제</li><li><strong>과세표준</strong> = 상속재산 − 공제 합계</li><li><strong>산출세액</strong> = 과세표준 × 세율 − 누진공제, <strong>납부세액</strong> = 산출세액 × (1 − 3%)</li></ul><p>배우자가 있고 자녀가 있으면 일괄공제 5억 + 배우자공제 최소 5억 = 최소 10억이 공제됩니다. 그래서 상속재산이 10억 이하이면 상속세가 없는 경우가 많습니다. 세율은 증여세와 동일한 10~50% 누진구조입니다.</p><table class="calc-table"><thead><tr><th>과세표준</th><th>세율</th><th>누진공제</th></tr></thead><tbody><tr><td>1억 이하</td><td>10%</td><td>-</td></tr><tr><td>5억 이하</td><td>20%</td><td>1,000만</td></tr><tr><td>10억 이하</td><td>30%</td><td>6,000만</td></tr><tr><td>30억 이하</td><td>40%</td><td>1억 6,000만</td></tr><tr><td>30억 초과</td><td>50%</td><td>4억 6,000만</td></tr></tbody></table>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="learnMore">더 알아보기</h2>
+      <div class="learn-cards"><div class="learn-card"><h4>왜 10억까지 세금이 없을까</h4><p>배우자와 자녀가 모두 있으면 일괄공제 5억과 배우자공제 최소 5억을 합쳐 최소 10억이 공제됩니다. 그래서 상속재산 10억 이하는 상속세가 없는 경우가 많습니다.</p></div><div class="learn-card"><h4>배우자공제는 더 받을 수 있어요</h4><p>배우자가 실제로 상속받으면 법정상속분 한도로 최대 30억까지 공제됩니다. 이 계산기는 안전하게 최소 5억만 반영하므로, 실제 세액은 더 낮을 수 있습니다.</p></div><div class="learn-card"><h4>금융재산 상속공제</h4><p>순금융재산(예금·주식 − 금융채무)의 20%를 최대 2억까지 공제합니다(2천만 원 이하는 전액). 부동산보다 금융재산 비중이 크면 유리합니다.</p></div></div>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="faq">자주 묻는 질문</h2>
+      <h3>Q. 상속세는 얼마까지 공제되나요?</h3>
+      <p>일괄공제 5억이 기본이고, 배우자가 있으면 최소 5억이 더해져 최소 10억이 공제됩니다. 금융재산·동거주택 공제까지 더하면 공제액은 더 커집니다.</p>
+      <h3>Q. 상속재산 10억이면 세금이 없나요?</h3>
+      <p>배우자와 자녀가 있으면 공제가 최소 10억이라 세금이 없는 경우가 많습니다. 다만 배우자가 없으면 일괄공제 5억만 적용돼 세금이 생길 수 있습니다.</p>
+      <h3>Q. 상속세율은 얼마인가요?</h3>
+      <p>과세표준 1억 이하 10%부터 30억 초과 50%까지 5단계 누진세율입니다. 증여세와 세율이 같습니다.</p>
+      <h3>Q. 언제까지 신고하나요?</h3>
+      <p>상속개시일(사망일)이 속한 달의 말일부터 6개월 안에 신고·납부하면 산출세액의 3%를 신고세액공제로 받습니다.</p>
+      <h3>Q. 이 계산기 결과가 정확한가요?</h3>
+      <p>주요 공제만 반영한 간이 추정입니다. 배우자공제 최대 30억, 동거주택·인적공제, 사전증여 합산, 가업상속공제 등은 빠져 있어 실제와 차이가 날 수 있습니다.</p>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="sources">자료 출처</h2>
+      <ul class="sources-list"><li><a href="https://www.law.go.kr/법령/상속세및증여세법" target="_blank" rel="noopener">국가법령정보센터 — 상속세 및 증여세법 제18조~제26조 ↗</a></li><li><a href="https://www.nts.go.kr" target="_blank" rel="noopener">국세청 — 상속세 안내 ↗</a></li></ul>
+    </section>
+        <section class="card info">
+          <h2 data-i18n="related">관련 도구</h2>
+          <div id="tk-related"></div>
+        </section>
+      </div>
+
+      <aside class="tool-side">
+        <div class="widget"><h3>🔥 <span data-i18n="popular">인기 페이지</span></h3><ul id="tk-popular"></ul></div>
+        <div class="widget"><h3>🆕 <span data-i18n="newTools">신규 출시</span></h3><ul id="tk-new"></ul></div>
+        <div class="widget"><h3>🕘 <span data-i18n="recent">최근 본 페이지</span></h3><ul id="tk-recent"></ul></div>
+        <div class="widget deal"><h3>🏷️ <span data-i18n="deal">할인 정보</span></h3><ul id="tk-deal"><li class="empty" data-i18n="none">아직 없습니다.</li></ul><p class="aff-note" data-i18n="dealNote">※ 일부 링크는 제휴(광고) 링크일 수 있습니다.</p></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="footer-logo">🏛️</span><span class="footer-brandname">건강흐름</span></div>
+    <nav class="footer-links"><a href="/">홈</a> · <a href="/tools.html">생활 도구</a> · <a href="/about.html">운영자 소개</a> · <a href="/contact.html">문의하기</a> · <a href="/privacy.html">개인정보처리방침</a> · <a href="/terms.html">이용약관</a> · <a href="mailto:leelin12@naver.com">이메일</a></nav>
+    <div class="footer-biz">상호명 굿윌스토어 · 사업자등록번호 631-03-03874 · 대표 이효선 · 주소 부산 사하구 오작로 34<br>연락처 010-2934-1351 · 제휴문의 <a href="mailto:leelin12@naver.com">leelin12@naver.com</a></div>
+    <p class="footer-notice">건강흐름의 모든 콘텐츠는 저작권법의 보호를 받으며, 무단 전재·복사·배포를 금합니다.</p>
+    <p class="footer-copy">© <span id="year"></span> 건강흐름 (healthfortune.co.kr)</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/tools.js"></script>
+  <script src="/data/rates.2026.js"></script>
+  <script src="/data/rates.2027.js"></script>
+  <script src="/data/rates.js"></script>
+  <script src="/js/tool-kit.js"></script>
+  <script src="/inheritance-tax/inheritance-tax.js?v=1"></script>
+</body>
+</html>

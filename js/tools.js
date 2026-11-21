@@ -66,6 +66,10 @@
       desc: "월 보수로 국민연금·건강·장기요양·고용·산재 보험료를 계산합니다.", related: ["salary", "parttime", "freelancer"], public: true, isNew: true },
     { id: "unemployment", slug: "unemployment", name: "실업급여 계산기", category: "tax", kind: "calculator", emoji: "🧳",
       desc: "평균임금·나이·고용보험 가입기간으로 구직급여 일액·소정급여일수·총 예상 수령액을 계산합니다.", related: ["severance", "4insure", "salary"], public: true, isNew: true },
+    { id: "gift-tax", slug: "gift-tax", name: "증여세 계산기", category: "tax", kind: "calculator", emoji: "🎁",
+      desc: "증여재산·관계별 공제로 증여세 과세표준·산출세액·신고세액공제 후 납부액을 계산합니다.", related: ["inheritance-tax", "severance"], public: true, isNew: true },
+    { id: "inheritance-tax", slug: "inheritance-tax", name: "상속세 계산기", category: "tax", kind: "calculator", emoji: "🏛️",
+      desc: "상속재산·배우자·자녀·금융재산 공제로 상속세 과세표준과 납부세액을 추정합니다.", related: ["gift-tax", "severance"], public: true, isNew: true },
 
     /* ── 날짜·기간 ── */
     { id: "age", slug: "age", name: "만 나이 계산기", category: "date", kind: "calculator", emoji: "🎂",
