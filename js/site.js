@@ -43,8 +43,8 @@ const ADSENSE = {
     inList: "0000000000",        // 기사 목록 상단
     sidebar: "0000000000",       // 우측 사이드바
     inArticle: "0000000000",     // 글 본문 중간
-    articleBottom: "0000000000", // ★ 글 하단 정사각형(글마다 1개)
-    bottomBanner: "0000000000",  // ★ 콘텐츠 맨 아래 가로 배너
+    articleBottom: "3265568294", // ★ 글 하단 정사각형(글마다 1개)
+    bottomBanner: "1082258087",  // ★ 콘텐츠 맨 아래 가로 배너
   },
 };
 
@@ -133,7 +133,7 @@ function injectArticleAds() {
   }
   const main = document.querySelector("main.wrap") || article.parentElement;
   if (main) {
-    const html = adUnit("bottomBanner", "하단", { cls: "ad--bottom" });
+    const html = adUnit("bottomBanner", "하단", { format: "horizontal", cls: "ad--bottom" });
     if (html) main.insertAdjacentHTML("beforeend", html);
   }
 }
