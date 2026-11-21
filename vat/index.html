@@ -4,103 +4,141 @@
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>부가세 계산기 - 부가가치세 10% 공급가액·합계금액 계산 | 건강흐름</title>
-  <meta name="description" content="금액을 입력하면 부가가치세(10%)를 자동 계산해 드립니다. 공급가액 기준·합계금액(부가세 포함) 기준 모두 지원하여 공급가액, 부가세, 합계를 한 번에 확인하세요.">
-  <meta name="keywords" content="부가세계산기, 부가가치세, VAT, 공급가액, 합계금액, 세금계산서, 부가세10%">
+  <title>부가세 계산기 - 공급가·부가세·합계 분리, 10% 자동 계산 | 건강흐름</title>
+  <meta name="description" content="공급가액에서 부가세·합계를, 합계금액에서 공급가·부가세를 바로 분리합니다. 부가세만 역산, 여러 품목 합계, 원 단위 반올림/절사까지. 세율 10% 자동 적용.">
+  <meta name="keywords" content="부가세 계산기, 부가가치세, 공급가액, 합계 분리, 부가세 역산, 세금계산서">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="부가세 계산기 - 부가가치세 10% 계산">
-  <meta property="og:description" content="공급가액·합계금액 기준으로 부가가치세 10%를 자동 계산.">
+  <meta property="og:title" content="부가세 계산기">
+  <meta property="og:description" content="공급가액에서 부가세·합계를, 합계금액에서 공급가·부가세를 바로 분리합니다. 부가세만 역산, 여러 품목 합계, 원 단위 반올림/절사까지. 세율 10% 자동 적용.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://healthfortune.co.kr/vat/">
   <meta property="og:site_name" content="건강흐름">
   <link rel="canonical" href="https://healthfortune.co.kr/vat/">
-
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"부가세는 어떻게 계산하나요?","acceptedAnswer":{"@type":"Answer","text":"공급가액에 10%를 곱하면 부가세입니다. 부가세가 포함된 합계금액에서 공급가액을 구하려면 합계를 1.1로 나누면 됩니다."}},{"@type":"Question","name":"11만원의 부가세는 얼마인가요?","acceptedAnswer":{"@type":"Answer","text":"11만원이 부가세 포함 합계금액이라면 공급가액은 10만원, 부가세는 1만원입니다."}},{"@type":"Question","name":"공급가액과 합계금액은 어떻게 다른가요?","acceptedAnswer":{"@type":"Answer","text":"공급가액은 부가세가 별도인 금액이고, 합계금액은 부가세가 포함된 금액입니다."}},{"@type":"Question","name":"간이과세자도 부가세가 10%인가요?","acceptedAnswer":{"@type":"Answer","text":"일반과세자의 부가가치세율은 10%입니다. 간이과세자는 업종별 부가가치율이 적용되어 계산 방식이 다릅니다."}}]}
-  </script>
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "부가세 계산기",
+    "url": "https://healthfortune.co.kr/vat/",
+    "description": "공급가액에서 부가세·합계를, 합계금액에서 공급가·부가세를 바로 분리합니다. 부가세만 역산, 여러 품목 합계, 원 단위 반올림/절사까지. 세율 10% 자동 적용.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "ko",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
+    }
+  }</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"부가세율은 몇 %인가요?","acceptedAnswer":{"@type":"Answer","text":"일반과세 기준 10%입니다. 수출 등 영세율은 0%, 면세 품목은 부가세가 붙지 않습니다."}},{"@type":"Question","name":"간이과세자와 일반과세자는 뭐가 다른가요?","acceptedAnswer":{"@type":"Answer","text":"일반과세자는 세율 10%에 매입세액을 전액 공제받습니다. 간이과세자는 업종별 낮은 부가가치율을 적용해 세 부담이 작은 대신 매입세액 공제가 제한되고, 일정 매출 미만에서는 납부의무가 면제될 수 있습니다."}},{"@type":"Question","name":"면세 품목에는 어떤 것이 있나요?","acceptedAnswer":{"@type":"Answer","text":"기초 생활필수품과 국민후생 관련 재화·용역이 면세입니다. 미가공 식료품, 수돗물, 연탄, 도서·신문, 의료·교육용역, 금융·보험용역 등이 해당합니다."}},{"@type":"Question","name":"부가세 신고·납부는 언제 하나요?","acceptedAnswer":{"@type":"Answer","text":"법인은 1년에 4번(분기), 개인 일반과세자는 2번(1월·7월) 확정신고합니다. 개인은 4월·10월에 예정고지로 미리 낼 수 있고, 간이과세자는 다음 해 1월에 1번 신고합니다."}},{"@type":"Question","name":"매입세액 공제가 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"사업을 위해 물건·서비스를 사며 낸 부가세(매입세액)를 매출세액에서 빼 주는 것입니다. 세금계산서·현금영수증·사업용 카드 등 적격증빙이 있어야 공제됩니다."}},{"@type":"Question","name":"합계금액만 아는데 공급가와 부가세를 나눌 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"네. ‘합계 → 분리’ 모드에 합계를 넣으면 공급가(합계 ÷ 1.1)와 부가세를 자동으로 나눠 줍니다."}},{"@type":"Question","name":"세금계산서에는 어떤 금액을 적나요?","acceptedAnswer":{"@type":"Answer","text":"공급가액과 세액(부가세)을 각각 구분해 적고, 합계가 공급대가가 됩니다. 이 계산기의 분리 결과를 그대로 활용할 수 있습니다."}},{"@type":"Question","name":"원 단위에서 반올림과 절사 중 무엇이 맞나요?","acceptedAnswer":{"@type":"Answer","text":"법에 단일 규정은 없고 거래 관행·전산에 따라 다릅니다. 보통 원 단위 절사 또는 반올림을 쓰며, 세금계산서는 거래처와 맞추는 것이 좋습니다. 이 계산기는 세 방식을 모두 제공합니다."}}]}</script>
 
   <!-- Google AdSense 게시자 ID: ca-pub-7143828779500885 -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885"
      crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="../style.css?v=4">
+  <link rel="stylesheet" href="/style.css?v=14">
+  <link rel="stylesheet" href="/tool-kit.css?v=1">
 </head>
-<body>
-  <nav class="back-nav"><a href="/calculators.html">← 전체 계산기</a></nav>
+<body data-tool="vat">
+  <nav class="back-nav"><a href="/tools.html">← <span data-i18n="tools">생활 도구</span></a></nav>
 
   <header class="site-header">
-    <h1>🧾 부가세 계산기</h1>
-    <p class="subtitle">부가가치세 10%를 빠르게 계산</p>
+    <h1>🧮 부가세 계산기</h1>
+    <p class="subtitle">공급가↔합계↔부가세, 어느 쪽이든 10% 자동 분리</p>
+    <div class="lang-switch" id="tk-langswitch" aria-label="언어 선택"></div>
   </header>
 
+  <div class="container">
+    <nav class="breadcrumb" id="tk-breadcrumb" aria-label="위치"></nav>
+  </div>
+
   <div class="ad-container" aria-label="광고">
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885"
-         data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
   </div>
 
   <main class="container">
-    <section class="card controls">
-      <div class="control-row">
-        <label>계산 기준</label>
-        <div class="segment">
-          <label><input type="radio" name="mode" value="supply" checked><span>공급가액 기준</span></label>
-          <label><input type="radio" name="mode" value="total"><span>합계금액 기준</span></label>
-        </div>
-      </div>
+    <div class="tool-layout">
+      <div class="tool-main">
+        <section class="card controls">
+          <div class="intro"><p>세율은 <strong>부가가치세법상 10%</strong>가 자동 적용됩니다(간이과세·면세는 아래 FAQ 참고).</p></div>
+          <div class="field"><label>계산 모드</label><div class="result-actions" style="margin-top:0"><button type="button" class="btn-sm" data-mode="s2t" aria-pressed="true">공급가 → 합계</button><button type="button" class="btn-sm" data-mode="t2s">합계 → 분리</button><button type="button" class="btn-sm" data-mode="vat">부가세 → 역산</button></div></div><div class="vat-panel" data-panel="s2t"><div class="field"><label for="supplyInput">공급가액 <span class="hint">(부가세 전)</span></label><div class="input-unit"><input type="text" id="supplyInput" data-num data-share inputmode="numeric" placeholder="예: 100,000"><span class="unit">원</span></div></div><div id="itemRows"></div><button type="button" class="btn-sm" id="addItem">➕ 품목 추가(여러 건 합산)</button></div><div class="vat-panel" data-panel="t2s" hidden><div class="field"><label for="totalInput">합계금액 <span class="hint">(부가세 포함)</span></label><div class="input-unit"><input type="text" id="totalInput" data-num data-share inputmode="numeric" placeholder="예: 110,000"><span class="unit">원</span></div></div></div><div class="vat-panel" data-panel="vat" hidden><div class="field"><label for="vatInput">부가세액</label><div class="input-unit"><input type="text" id="vatInput" data-num data-share inputmode="numeric" placeholder="예: 10,000"><span class="unit">원</span></div></div></div><div class="field"><label for="roundMode">원 단위 처리</label><select id="roundMode" data-share><option value="round">반올림</option><option value="floor">절사(버림)</option><option value="ceil">올림</option></select></div>
+          <p class="error" id="errorMsg" role="alert"></p>
+          <button id="calcBtn" class="btn-primary" type="button" data-i18n="calc">계산하기</button>
+        </section>
 
-      <div class="control-row">
-        <label for="amountInput">금액 (원)</label>
-        <input type="text" id="amountInput" placeholder="예: 1,000,000" inputmode="numeric" autocomplete="off">
-      </div>
+        <section class="card results" id="tk-result-card" hidden>
+          <div id="tk-result"><div class="result-hero"><div class="big"><span id="rTotal">0</span><small>원</small></div><p class="result-sub">합계금액 (공급가 + 부가세)</p></div><table class="calc-table"><tbody><tr><th>공급가액</th><td><span id="rSupply"></span> 원</td></tr><tr><th>부가세 (<span id="rRate">10</span>%)</th><td><span id="rVat"></span> 원</td></tr></tbody></table></div>
+          <div class="result-actions">
+            <button class="btn-sm" data-tk="copy" data-copy-target="#tk-result"><span data-i18n="copy">결과 복사</span></button>
+            <button class="btn-sm" data-tk="share"><span data-i18n="shareLink">공유 링크</span></button>
+            <button class="btn-sm" data-tk="reset"><span data-i18n="reset">초기화</span></button>
+          </div>
+          <p class="footer-notice" style="margin:10px 0 0" data-i18n="disclaimer">참고용 추정치이며 실제 금액과 다를 수 있습니다.</p>
+        </section>
 
-      <p class="error" id="errorMsg" role="alert"></p>
-      <button id="calcBtn" class="btn-primary" type="button">부가세 계산하기</button>
-    </section>
-
-    <section class="card results" id="resultsCard" hidden>
-      <table class="calc-table">
-        <tbody>
-          <tr><th>공급가액</th><td id="rSupply"></td></tr>
-          <tr><th>부가세 (10%)</th><td id="rVat"></td></tr>
-          <tr class="total"><th>합계금액</th><td id="rTotal"></td></tr>
-        </tbody>
-      </table>
-    </section>
+        <div class="share-bar" id="tk-sharebar"></div>
+        <div class="rating" id="tk-rating"></div>
 
     <section class="card info">
-      <h2>이용 안내</h2>
-      <ul>
-        <li><strong>공급가액 기준</strong>: 입력 금액에 10%를 더해 부가세와 합계를 계산합니다. (부가세 = 공급가액 × 10%)</li>
-        <li><strong>합계금액 기준</strong>: 부가세가 포함된 금액에서 공급가액과 부가세를 분리합니다. (공급가액 = 합계 ÷ 1.1)</li>
-        <li>일반과세자의 부가가치세율은 10%입니다.</li>
-      </ul>
+      <h2 data-i18n="method">계산 방법</h2>
+      <p>부가가치세는 공급가액의 10%입니다. 모드별 계산식은 다음과 같습니다.</p><ul><li><strong>공급가 → 합계</strong>: 부가세 = 공급가 × 10%, 합계 = 공급가 + 부가세</li><li><strong>합계 → 분리</strong>: 공급가 = 합계 ÷ 1.1, 부가세 = 합계 − 공급가</li><li><strong>부가세 → 역산</strong>: 공급가 = 부가세 ÷ 0.1, 합계 = 공급가 + 부가세</li></ul><p>예) 공급가 100,000원 → 부가세 10,000원, 합계 <strong>110,000원</strong>. 반대로 합계 110,000원 → 공급가 100,000원 + 부가세 10,000원.</p>
     </section>
-    <section class="card info faq-section">
-      <h2>자주 묻는 질문</h2>
-      <h3>Q. 부가세는 어떻게 계산하나요?</h3>
-      <p>공급가액에 10%를 곱하면 부가세입니다. 부가세가 포함된 합계금액에서 공급가액을 구하려면 합계를 1.1로 나누면 됩니다.</p>
-      <h3>Q. 11만원의 부가세는 얼마인가요?</h3>
-      <p>11만원이 부가세 포함 합계금액이라면 공급가액은 10만원, 부가세는 1만원입니다.</p>
-      <h3>Q. 공급가액과 합계금액은 어떻게 다른가요?</h3>
-      <p>공급가액은 부가세가 별도인 금액이고, 합계금액은 부가세가 포함된 금액입니다.</p>
-      <h3>Q. 간이과세자도 부가세가 10%인가요?</h3>
-      <p>일반과세자의 부가가치세율은 10%입니다. 간이과세자는 업종별 부가가치율이 적용되어 계산 방식이 다릅니다.</p>
+    <section class="card info">
+      <h2 data-i18n="learnMore">더 알아보기</h2>
+      <div class="learn-cards"><div class="learn-card"><h4>부가가치세란?</h4><p>상품·서비스가 거래될 때 더해지는 간접세입니다. 사업자가 받은 부가세(매출세액)에서 낸 부가세(매입세액)를 빼서 신고·납부합니다.</p></div><div class="learn-card"><h4>공급가액 vs 공급대가</h4><p>공급가액은 부가세를 뺀 ‘순수 물건값’, 공급대가는 부가세까지 포함한 ‘총 받는 돈’(합계)입니다. 간이과세자는 공급대가 기준을 씁니다.</p></div><div class="learn-card"><h4>부가세는 누가 부담하나</h4><p>실제 부담자는 최종 소비자입니다. 사업자는 소비자에게 받은 부가세를 보관했다가 국가에 대신 납부하는 역할을 합니다.</p></div></div>
     </section>
-    <section class="card info guide-section">
-      <h2>부가가치세(부가세) 완벽 가이드</h2>
-      <h3>부가가치세란?</h3>
-      <p>부가가치세(VAT)는 상품이나 서비스가 거래될 때 발생하는 부가가치에 대해 부과되는 세금으로, 일반과세자의 세율은 <strong>10%</strong>입니다. 최종 소비자가 부담하지만 사업자가 대신 징수해 국가에 납부하는 구조입니다.</p>
-      <h3>공급가액·부가세·합계금액</h3>
-      <p><strong>공급가액</strong>은 부가세를 제외한 순수 물건·서비스 값이고, 여기에 10%의 <strong>부가세</strong>를 더한 것이 <strong>합계금액(공급대가)</strong>입니다. 공급가액이 100만원이면 부가세는 10만원, 합계는 110만원입니다. 반대로 부가세 포함 110만원에서 공급가액을 구하려면 110만원 ÷ 1.1 = 100만원으로 계산합니다.</p>
-      <h3>세금계산서와 실무</h3>
-      <p>사업자 간 거래에서는 세금계산서를 발행하며, 여기에 공급가액과 세액(부가세)을 구분해 적습니다. 매출 시 받은 부가세(매출세액)에서 매입 시 낸 부가세(매입세액)를 빼서 차액을 신고·납부합니다. 견적서·정산서 작성 시 '부가세 별도'인지 '부가세 포함'인지 명확히 구분하는 것이 중요합니다.</p>
-      <h3>일반과세자와 간이과세자</h3>
-      <p>연 매출이 일정 기준 미만인 소규모 사업자는 간이과세자로 분류되어, 업종별 부가가치율을 적용한 낮은 세부담이 적용됩니다. 반면 일반과세자는 10% 세율과 매입세액 공제가 그대로 적용됩니다. 본 계산기는 일반과세 10% 기준으로 공급가액·부가세·합계를 빠르게 계산해 줍니다.</p>
+    <section class="card info">
+      <h2 data-i18n="faq">자주 묻는 질문</h2>
+      <h3>Q. 부가세율은 몇 %인가요?</h3>
+      <p>일반과세 기준 10%입니다. 수출 등 영세율은 0%, 면세 품목은 부가세가 붙지 않습니다.</p>
+      <h3>Q. 간이과세자와 일반과세자는 뭐가 다른가요?</h3>
+      <p>일반과세자는 세율 10%에 매입세액을 전액 공제받습니다. 간이과세자는 업종별 낮은 부가가치율을 적용해 세 부담이 작은 대신 매입세액 공제가 제한되고, 일정 매출 미만에서는 납부의무가 면제될 수 있습니다.</p>
+      <h3>Q. 면세 품목에는 어떤 것이 있나요?</h3>
+      <p>기초 생활필수품과 국민후생 관련 재화·용역이 면세입니다. 미가공 식료품, 수돗물, 연탄, 도서·신문, 의료·교육용역, 금융·보험용역 등이 해당합니다.</p>
+      <h3>Q. 부가세 신고·납부는 언제 하나요?</h3>
+      <p>법인은 1년에 4번(분기), 개인 일반과세자는 2번(1월·7월) 확정신고합니다. 개인은 4월·10월에 예정고지로 미리 낼 수 있고, 간이과세자는 다음 해 1월에 1번 신고합니다.</p>
+      <h3>Q. 매입세액 공제가 무엇인가요?</h3>
+      <p>사업을 위해 물건·서비스를 사며 낸 부가세(매입세액)를 매출세액에서 빼 주는 것입니다. 세금계산서·현금영수증·사업용 카드 등 적격증빙이 있어야 공제됩니다.</p>
+      <h3>Q. 합계금액만 아는데 공급가와 부가세를 나눌 수 있나요?</h3>
+      <p>네. ‘합계 → 분리’ 모드에 합계를 넣으면 공급가(합계 ÷ 1.1)와 부가세를 자동으로 나눠 줍니다.</p>
+      <h3>Q. 세금계산서에는 어떤 금액을 적나요?</h3>
+      <p>공급가액과 세액(부가세)을 각각 구분해 적고, 합계가 공급대가가 됩니다. 이 계산기의 분리 결과를 그대로 활용할 수 있습니다.</p>
+      <h3>Q. 원 단위에서 반올림과 절사 중 무엇이 맞나요?</h3>
+      <p>법에 단일 규정은 없고 거래 관행·전산에 따라 다릅니다. 보통 원 단위 절사 또는 반올림을 쓰며, 세금계산서는 거래처와 맞추는 것이 좋습니다. 이 계산기는 세 방식을 모두 제공합니다.</p>
     </section>
+    <section class="card info">
+      <h2 data-i18n="sources">자료 출처</h2>
+      <ul class="sources-list"><li><a href="https://www.nts.go.kr" target="_blank" rel="noopener">국세청 — 부가가치세 안내 ↗</a></li><li><a href="https://www.law.go.kr/법령/부가가치세법" target="_blank" rel="noopener">국가법령정보센터 — 부가가치세법 ↗</a></li></ul>
+    </section>
+        <section class="card info">
+          <h2 data-i18n="related">관련 도구</h2>
+          <div id="tk-related"></div>
+        </section>
+      </div>
+
+      <aside class="tool-side">
+        <div class="widget"><h3>🔥 <span data-i18n="popular">인기 페이지</span></h3><ul id="tk-popular"></ul></div>
+        <div class="widget"><h3>🆕 <span data-i18n="newTools">신규 출시</span></h3><ul id="tk-new"></ul></div>
+        <div class="widget"><h3>🕘 <span data-i18n="recent">최근 본 페이지</span></h3><ul id="tk-recent"></ul></div>
+        <div class="widget deal"><h3>🏷️ <span data-i18n="deal">할인 정보</span></h3><ul id="tk-deal"><li class="empty" data-i18n="none">아직 없습니다.</li></ul><p class="aff-note" data-i18n="dealNote">※ 일부 링크는 제휴(광고) 링크일 수 있습니다.</p></div>
+      </aside>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <nav class="footer-links"><a href="/about/">소개·문의</a> · <a href="/privacy/">개인정보처리방침</a> · <a href="/terms/">이용약관</a></nav><p>© <span id="year"></span> 건강흐름 · 부가세 계산기</p></footer>
-  <script src="vat.js?v=1"></script>
+    <div class="footer-brand"><span class="footer-logo">🧮</span><span class="footer-brandname">건강흐름</span></div>
+    <nav class="footer-links"><a href="/">홈</a> · <a href="/tools.html">생활 도구</a> · <a href="/about.html">운영자 소개</a> · <a href="/contact.html">문의하기</a> · <a href="/privacy.html">개인정보처리방침</a> · <a href="/terms.html">이용약관</a> · <a href="mailto:leelin12@naver.com">이메일</a></nav>
+    <div class="footer-biz">상호명 굿윌스토어 · 사업자등록번호 631-03-03874 · 대표 이효선 · 주소 부산 사하구 오작로 34<br>연락처 010-2934-1351 · 제휴문의 <a href="mailto:leelin12@naver.com">leelin12@naver.com</a></div>
+    <p class="footer-notice">건강흐름의 모든 콘텐츠는 저작권법의 보호를 받으며, 무단 전재·복사·배포를 금합니다.</p>
+    <p class="footer-copy">© <span id="year"></span> 건강흐름 (healthfortune.co.kr)</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/tools.js"></script>
+  <script src="/data/rates.2026.js"></script>
+  <script src="/data/rates.2027.js"></script>
+  <script src="/data/rates.js"></script>
+  <script src="/js/tool-kit.js"></script>
+  <script src="/vat/vat.js?v=1"></script>
 </body>
 </html>
