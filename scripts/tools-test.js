@@ -71,5 +71,19 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("월환산 = 주급×4.345", () => assert.strictEqual(P.monthlyFromWeekly(495360), Math.round(495360 * 4.345)));
 })();
 
+/* ── salary ── */
+(function () {
+  const S = require(path.join(ROOT, "tools-src", "salary.client.js"));
+  const R = require(path.join(ROOT, "data", "rates.2026.js"));
+  console.log("salary");
+  test("근로소득공제 3,000만 → 975만", () => assert.strictEqual(S.earnedDeduction(30000000, R), 9750000));
+  test("근로소득공제 한도 2,000만", () => assert.ok(S.earnedDeduction(500000000, R) === 20000000));
+  test("산출세액 과표 1,445만 → 907,500", () => assert.strictEqual(S.outputTax(14450000, R), 907500));
+  test("근로세액공제 907,500/총급여3천만 → 499,125", () => assert.strictEqual(S.earnedTaxCredit(907500, 30000000, R), 499125));
+  test("자녀세액공제 3명 → 95만", () => assert.strictEqual(S.childTaxCredit(3, R), 950000));
+  test("4대보험 근로자(250만) 국민연금 118,750", () => assert.strictEqual(S.insuranceWorker(2500000, R).np, 118750));
+  test("연 소득세 양수·합리적(과세4천만 1인)", () => { const t = S.annualIncomeTax(40000000, 1, 0, R); assert.ok(t.incomeTax > 300000 && t.incomeTax < 3000000); });
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

@@ -123,6 +123,57 @@
     }
   };
 
+  /* ── 근로소득공제 (소득세법 §47) ── */
+  R.earnedIncomeDeduction = {
+    source: LAW("소득세법/제47조"), year: YEAR, lastChecked: LC, todo: false, limit: 20000000,
+    brackets: [
+      { upTo: 5000000,   base: 0,         rate: 70, over: 0 },
+      { upTo: 15000000,  base: 3500000,   rate: 40, over: 5000000 },
+      { upTo: 45000000,  base: 7500000,   rate: 15, over: 15000000 },
+      { upTo: 100000000, base: 12000000,  rate: 5,  over: 45000000 },
+      { upTo: null,      base: 14750000,  rate: 2,  over: 100000000 }
+    ]
+  };
+
+  /* ── 근로소득세액공제 (소득세법 §59) ── */
+  R.earnedIncomeTaxCredit = {
+    source: LAW("소득세법/제59조"), year: YEAR, lastChecked: LC, todo: false,
+    threshold: 1300000, lowRate: 55, lowCredit: 715000, highRate: 30,
+    limits: [ // 총급여(tg)별 한도: flat 또는 (base − (tg−from)×slope, 최소 min)
+      { upTo: 33000000,  flat: 740000 },
+      { upTo: 70000000,  from: 33000000, base: 740000, slope: 0.008, min: 660000 },
+      { upTo: 120000000, from: 70000000, base: 660000, slope: 0.5,   min: 500000 },
+      { upTo: null,      from: 120000000, base: 500000, slope: 0.5,   min: 200000 }
+    ]
+  };
+
+  /* ── 인적공제 (소득세법 §50~§51) ── */
+  R.personalDeduction = {
+    source: LAW("소득세법/제50조"), year: YEAR, lastChecked: LC, todo: false,
+    basic: 1500000, elderly70: 1000000, disabled: 2000000, woman: 500000, singleParent: 1000000
+  };
+
+  /* ── 자녀세액공제(연말정산, 소득세법 §59의2) ── */
+  R.childTaxCredit = {
+    source: LAW("소득세법/제59조의2"), year: YEAR, lastChecked: LC, todo: false,
+    one: 250000, two: 550000, overTwoPerChild: 400000,
+    ageBaseByYear: { 2026: 9, 2027: 10, 2028: 11, 2029: 12, 2030: 13 },
+    birth: { first: 300000, second: 500000, thirdPlus: 700000 },
+    note: "★연말정산용. 귀속연도별 연령 기준 상이(2026 귀속 9세↑). 월 간이세액표(8세↑)와 다름"
+  };
+
+  /* 간이세액표: 월 자녀공제·검증샘플 보강(전체 표는 홈택스 엑셀 필요) */
+  R.simplifiedTaxTable.childMonthly = { one: 20830, two: 45830, overTwoPerChild: 33330 };
+  R.simplifiedTaxTable.needsExcel = true;
+  R.simplifiedTaxTable.samples = [
+    { monthlyPay: 2500000, family: 1, child: 0, incomeTax: 28480, localTax: 2840 },
+    { monthlyPay: 3000000, family: 1, child: 0, incomeTax: 59480, localTax: 5940 },
+    { monthlyPay: 3000000, family: 2, child: 0, incomeTax: 45480, localTax: 4540 },
+    { monthlyPay: 4000000, family: 3, child: 1, incomeTax: 71000, localTax: 7100 },
+    { monthlyPay: 5000000, family: 4, child: 2, incomeTax: 138610, localTax: 13860 },
+    { monthlyPay: 7000000, family: 1, child: 0, incomeTax: 586160, localTax: 58610 }
+  ];
+
   /* 미확인(todo) 값 추출 — 빌드/보고용 */
   R.listTodos = function () {
     var out = [];

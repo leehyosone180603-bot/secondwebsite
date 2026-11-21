@@ -1,142 +1,118 @@
+/* 연봉 실수령액 계산기 — 로직 + 순수 함수.
+   4대보험(정확) + 소득세(연말정산 기준: §47 근로소득공제·인적공제·보험료공제
+   ·§55 세율·§59 근로소득세액공제·§59의2 자녀세액공제)로 계산.
+   ※ 매월 원천징수(간이세액표)와는 다소 차이가 있으며 연말정산에서 정산됨. */
 (function () {
   "use strict";
 
-  // 2025년 기준 요율 (매년 변동될 수 있음)
-  var PENSION_RATE = 0.045;          // 국민연금 (근로자)
-  var PENSION_MIN = 390000;          // 기준소득월액 하한
-  var PENSION_MAX = 6170000;         // 기준소득월액 상한
-  var HEALTH_RATE = 0.03545;         // 건강보험 (근로자)
-  var CARE_RATE = 0.1295;            // 장기요양 (건강보험료 대비)
-  var EMPLOY_RATE = 0.009;           // 고용보험 (근로자)
+  function clamp(x, lo, hi) { return Math.max(lo, Math.min(hi, x)); }
 
-  var salaryInput = document.getElementById("salaryInput");
-  var nontaxInput = document.getElementById("nontaxInput");
-  var familyInput = document.getElementById("familyInput");
-  var calcBtn = document.getElementById("calcBtn");
-  var errorMsg = document.getElementById("errorMsg");
-  var resultsCard = document.getElementById("resultsCard");
-
-  document.getElementById("year").textContent = new Date().getFullYear();
-
-  function fmt(n) {
-    return Math.round(n).toLocaleString("ko-KR");
+  // 근로소득공제 (연 총급여 tg)
+  function earnedDeduction(tg, R) {
+    var E = R.earnedIncomeDeduction, d = 0;
+    for (var i = 0; i < E.brackets.length; i++) {
+      var b = E.brackets[i];
+      if (b.upTo === null || tg <= b.upTo) { d = b.base + (tg - b.over) * b.rate / 100; break; }
+    }
+    return Math.min(Math.min(d, E.limit), tg);
   }
-
-  function parseWon(raw) {
-    if (!raw) return 0;
-    var digits = raw.replace(/[^0-9]/g, "");
-    return digits ? parseInt(digits, 10) : 0;
-  }
-
-  // 입력 중 천 단위 콤마 자동 표시
-  function attachComma(el) {
-    el.addEventListener("input", function () {
-      var v = parseWon(el.value);
-      el.value = v ? v.toLocaleString("ko-KR") : "";
-    });
-  }
-  attachComma(salaryInput);
-  attachComma(nontaxInput);
-
-  // 근로소득공제 (연)
-  function earnedIncomeDeduction(g) {
-    if (g <= 5000000) return g * 0.7;
-    if (g <= 15000000) return 3500000 + (g - 5000000) * 0.4;
-    if (g <= 45000000) return 7500000 + (g - 15000000) * 0.15;
-    if (g <= 100000000) return 12000000 + (g - 45000000) * 0.05;
-    return 14750000 + (g - 100000000) * 0.02;
-  }
-
-  // 종합소득세 산출세액 (2025 과세표준 구간)
-  function incomeTaxByBase(base) {
+  // 산출세액 (과세표준)
+  function outputTax(base, R) {
     if (base <= 0) return 0;
-    if (base <= 14000000) return base * 0.06;
-    if (base <= 50000000) return 840000 + (base - 14000000) * 0.15;
-    if (base <= 88000000) return 6240000 + (base - 50000000) * 0.24;
-    if (base <= 150000000) return 15360000 + (base - 88000000) * 0.35;
-    if (base <= 300000000) return 37060000 + (base - 150000000) * 0.38;
-    if (base <= 500000000) return 94060000 + (base - 300000000) * 0.40;
-    if (base <= 1000000000) return 174060000 + (base - 500000000) * 0.42;
-    return 384060000 + (base - 1000000000) * 0.45;
+    var br = R.incomeTax.brackets;
+    for (var i = 0; i < br.length; i++) { var b = br[i]; if (b.upTo === null || base <= b.upTo) return Math.max(0, base * b.rate / 100 - b.deduction); }
+    return 0;
   }
-
-  // 근로소득세액공제 (한도 적용)
-  function earnedTaxCredit(calculatedTax, grossYear) {
-    var credit = calculatedTax <= 1300000
-      ? calculatedTax * 0.55
-      : 715000 + (calculatedTax - 1300000) * 0.30;
-
-    var limit;
-    if (grossYear <= 33000000) {
-      limit = 740000;
-    } else if (grossYear <= 70000000) {
-      limit = Math.max(660000, 740000 - (grossYear - 33000000) * 0.008);
-    } else {
-      limit = Math.max(500000, 660000 - (grossYear - 70000000) * 0.5);
+  // 근로소득세액공제
+  function earnedTaxCredit(computed, tg, R) {
+    var C = R.earnedIncomeTaxCredit;
+    var credit = computed <= C.threshold ? computed * C.lowRate / 100 : C.lowCredit + (computed - C.threshold) * C.highRate / 100;
+    var limit = 0;
+    for (var i = 0; i < C.limits.length; i++) {
+      var L = C.limits[i];
+      if (L.upTo === null || tg <= L.upTo) { limit = (L.flat != null) ? L.flat : Math.max(L.min, L.base - (tg - L.from) * L.slope); break; }
     }
     return Math.min(credit, limit);
   }
-
-  function handleCalc() {
-    errorMsg.textContent = "";
-
-    var annual = parseWon(salaryInput.value);
-    if (!annual || annual <= 0) {
-      resultsCard.hidden = true;
-      errorMsg.textContent = "연봉을 입력해 주세요.";
-      return;
-    }
-
-    var nontaxMonthly = nontaxInput.value === "" ? 200000 : parseWon(nontaxInput.value);
-    var family = parseInt(familyInput.value, 10) || 1;
-
-    var grossMonthly = annual / 12;
-    var taxableMonthly = Math.max(0, grossMonthly - nontaxMonthly); // 보수월액
-
-    // 4대보험 (월)
-    var pensionBase = Math.min(Math.max(taxableMonthly, PENSION_MIN), PENSION_MAX);
-    var pension = Math.round(pensionBase * PENSION_RATE / 10) * 10;
-    var health = Math.round(taxableMonthly * HEALTH_RATE / 10) * 10;
-    var care = Math.round(health * CARE_RATE / 10) * 10;
-    var employ = Math.round(taxableMonthly * EMPLOY_RATE / 10) * 10;
-
-    // 소득세 (연 추정 → 월)
-    var grossYear = taxableMonthly * 12;
-    var eid = earnedIncomeDeduction(grossYear);
-    var earnedIncome = grossYear - eid;
-    var personalDeduction = 1500000 * family;
-    var pensionDeduction = pension * 12; // 국민연금 전액 소득공제
-    var taxBase = Math.max(0, earnedIncome - personalDeduction - pensionDeduction);
-    var calculatedTax = incomeTaxByBase(taxBase);
-    var credit = earnedTaxCredit(calculatedTax, grossYear);
-    var decidedTax = Math.max(0, calculatedTax - credit);
-
-    var incomeTax = Math.round(decidedTax / 12 / 10) * 10;
-    var localTax = Math.round(incomeTax * 0.1 / 10) * 10;
-
-    var totalDeduct = pension + health + care + employ + incomeTax + localTax;
-    var netMonthly = grossMonthly - totalDeduct;
-    var netYearly = netMonthly * 12;
-
-    document.getElementById("netMonthly").textContent = fmt(netMonthly);
-    document.getElementById("netYearly").textContent = "연 환산 약 " + fmt(netYearly) + "원";
-
-    document.getElementById("rGross").textContent = fmt(grossMonthly) + "원";
-    document.getElementById("rPension").textContent = "-" + fmt(pension) + "원";
-    document.getElementById("rHealth").textContent = "-" + fmt(health) + "원";
-    document.getElementById("rCare").textContent = "-" + fmt(care) + "원";
-    document.getElementById("rEmploy").textContent = "-" + fmt(employ) + "원";
-    document.getElementById("rIncomeTax").textContent = "-" + fmt(incomeTax) + "원";
-    document.getElementById("rLocalTax").textContent = "-" + fmt(localTax) + "원";
-    document.getElementById("rTotalDeduct").textContent = "-" + fmt(totalDeduct) + "원";
-    document.getElementById("rNet").textContent = fmt(netMonthly) + "원";
-
-    resultsCard.hidden = false;
+  // 자녀세액공제(연말정산)
+  function childTaxCredit(n, R) {
+    if (n <= 0) return 0;
+    var K = R.childTaxCredit;
+    return n === 1 ? K.one : (n === 2 ? K.two : K.two + (n - 2) * K.overTwoPerChild);
+  }
+  // 4대보험 근로자 월 부담
+  function insuranceWorker(monthly, R) {
+    var i = R.insurance;
+    var np = Math.floor(clamp(monthly, i.nationalPension.base.min.value, i.nationalPension.base.max.value) * i.nationalPension.worker.value / 100 / 10) * 10;
+    var hBase = clamp(monthly, i.health.base.min.value, i.health.base.max.value);
+    var health = Math.floor(hBase * i.health.worker.value / 100 / 10) * 10;
+    var ltc = Math.floor(hBase * i.longTermCare.ofSalary.value / 100 * 0.5 / 10) * 10;
+    var emp = Math.floor(monthly * i.employment.unemployment.worker.value / 100 / 10) * 10;
+    return { np: np, health: health, ltc: ltc, emp: emp, total: np + health + ltc + emp };
+  }
+  // 연말정산 기준 연간 소득세·지방소득세
+  function annualIncomeTax(annualTaxableGross, family, children, R) {
+    var tg = annualTaxableGross;
+    var earnedInc = tg - earnedDeduction(tg, R);
+    var monthly = tg / 12;
+    var ins = insuranceWorker(monthly, R);
+    var pensionY = ins.np * 12;                    // 연금보험료공제
+    var insY = (ins.health + ins.ltc + ins.emp) * 12; // 보험료 특별소득공제
+    var personal = R.personalDeduction.basic * family;
+    var base = Math.max(0, earnedInc - personal - pensionY - insY);
+    var computed = outputTax(base, R);
+    var decided = Math.max(0, computed - earnedTaxCredit(computed, tg, R) - childTaxCredit(children, R));
+    return { taxBase: Math.round(base), computed: Math.round(computed), incomeTax: Math.round(decided), localTax: Math.round(decided * 0.1) };
   }
 
-  calcBtn.addEventListener("click", handleCalc);
+  var LOGIC = { earnedDeduction: earnedDeduction, outputTax: outputTax, earnedTaxCredit: earnedTaxCredit, childTaxCredit: childTaxCredit, insuranceWorker: insuranceWorker, annualIncomeTax: annualIncomeTax };
+  if (typeof module !== "undefined" && module.exports) module.exports = LOGIC;
+  if (typeof document === "undefined") return;
 
-  try {
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
-  } catch (e) { /* 무시 */ }
+  var TK = window.ToolKit;
+  function f(n) { return TK.fmt(n); }
+
+  function calc() {
+    var err = document.getElementById("errorMsg"); err.textContent = "";
+    var R = window.RATES; if (!R) { err.textContent = "요율 데이터를 불러오지 못했습니다."; return; }
+    var isMonthly = document.getElementById("payType").value === "month";
+    var input = TK.num("payAmount");
+    if (isNaN(input)) { err.textContent = (isMonthly ? "월급을" : "연봉을") + " 입력하세요."; return; }
+    var annualGross = isMonthly ? input * 12 : input;
+    var nonTaxMonthly = TK.num("nonTax"); if (isNaN(nonTaxMonthly)) nonTaxMonthly = 0;
+    var family = TK.num("family"); if (isNaN(family) || family < 1) family = 1;
+    var children = TK.num("children"); if (isNaN(children)) children = 0;
+
+    var taxableAnnual = Math.max(0, annualGross - nonTaxMonthly * 12);
+    var taxableMonthly = taxableAnnual / 12;
+    var ins = insuranceWorker(taxableMonthly, R);
+    var tax = annualIncomeTax(taxableAnnual, family, children, R);
+    var monthlyGross = Math.round(annualGross / 12);
+    var incomeTaxM = Math.round(tax.incomeTax / 12), localTaxM = Math.round(tax.localTax / 12);
+    var deductM = ins.total + incomeTaxM + localTaxM;
+    var netM = monthlyGross - deductM;
+
+    document.getElementById("salResult").innerHTML =
+      '<div class="result-hero"><div class="big"><span>' + f(netM) + '</span><small>원</small></div><p class="result-sub">월 실수령액 (연 ' + f(netM * 12) + '원, ' + R.year + '년 기준)</p></div>' +
+      '<table class="calc-table"><tbody>' +
+      '<tr><th>월 세전 급여</th><td>' + f(monthlyGross) + ' 원</td></tr>' +
+      '<tr><th>국민연금</th><td>-' + f(ins.np) + ' 원</td></tr>' +
+      '<tr><th>건강보험</th><td>-' + f(ins.health) + ' 원</td></tr>' +
+      '<tr><th>장기요양</th><td>-' + f(ins.ltc) + ' 원</td></tr>' +
+      '<tr><th>고용보험</th><td>-' + f(ins.emp) + ' 원</td></tr>' +
+      '<tr><th>소득세</th><td>-' + f(incomeTaxM) + ' 원</td></tr>' +
+      '<tr><th>지방소득세</th><td>-' + f(localTaxM) + ' 원</td></tr>' +
+      '<tr><th>공제 합계</th><td>-' + f(deductM) + ' 원</td></tr>' +
+      '<tr><th>월 실수령액</th><td><strong>' + f(netM) + ' 원</strong></td></tr>' +
+      '</tbody></table>' +
+      '<p class="footer-notice" style="margin:8px 0 0">※ 소득세는 <strong>연말정산 기준(1년 실제 세금)</strong> 추정입니다. 매월 급여명세서의 원천징수(간이세액표)와는 차이가 있으며 연말정산에서 정산됩니다. 부양가족·자녀 외 다른 공제는 반영하지 않았습니다.</p>';
+    TK.showResult();
+  }
+
+  var payType = document.getElementById("payType");
+  if (payType) payType.addEventListener("change", function () {
+    document.getElementById("payLabel").textContent = payType.value === "month" ? "월급(세전)" : "연봉(세전)";
+  });
+  document.getElementById("calcBtn").addEventListener("click", calc);
+  if (location.search) setTimeout(calc, 0);
 })();
