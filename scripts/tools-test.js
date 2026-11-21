@@ -250,5 +250,27 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("총 예상: 67,200×150 = 10,080,000", () => { const e = U.estimate(112000, 8, 35, 2, false, R); assert.strictEqual(e.total, 10080000); assert.strictEqual(e.monthly, 2016000); });
 })();
 
+/* ── discount (할인가) ── */
+(function () {
+  const D = require(path.join(ROOT, "tools-src", "discount.client.js"));
+  console.log("discount");
+  test("5만원 30% 할인 → 35,000", () => assert.strictEqual(D.salePrice(50000, 30), 35000));
+  test("5만원 30% 할인액 → 15,000", () => assert.strictEqual(D.discountAmount(50000, 30), 15000));
+  test("중복 30%+10% → 31,500(37% 실질)", () => { assert.strictEqual(D.chained(50000, 30, 10), 31500); assert.strictEqual(D.rateFromPrices(50000, 31500), 37); });
+  test("5만→3.5만 역산 = 30%", () => assert.strictEqual(D.rateFromPrices(50000, 35000), 30));
+})();
+
+/* ── won-korean (금액 한글) ── */
+(function () {
+  const W = require(path.join(ROOT, "tools-src", "won-korean.client.js"));
+  console.log("won-korean");
+  test("35,000,000 → 삼천오백만", () => assert.strictEqual(W.numToKorean(35000000), "삼천오백만"));
+  test("1,234 → 일천이백삼십사", () => assert.strictEqual(W.numToKorean(1234), "일천이백삼십사"));
+  test("100,000,000 → 일억", () => assert.strictEqual(W.numToKorean(100000000), "일억"));
+  test("123,456,789 → 일억이천삼백사십오만육천칠백팔십구", () => assert.strictEqual(W.numToKorean(123456789), "일억이천삼백사십오만육천칠백팔십구"));
+  test("10,500 → 일만오백", () => assert.strictEqual(W.numToKorean(10500), "일만오백"));
+  test("0 → 영", () => assert.strictEqual(W.numToKorean(0), "영"));
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

@@ -115,6 +115,10 @@
       desc: "평과 제곱미터(㎡)를 양방향으로 변환하고 평수별 ㎡를 표로 보여줍니다.", related: ["unit-converter", "percent"], public: true, isNew: true },
     { id: "unit-converter", slug: "unit-converter", name: "단위 변환기", category: "convert", kind: "calculator", emoji: "🔁",
       desc: "길이·무게·넓이·부피·온도·속도 단위를 서로 변환합니다.", related: ["pyeong", "percent"], public: true, isNew: true },
+    { id: "discount", slug: "discount", name: "할인가 계산기", category: "convert", kind: "calculator", emoji: "🏷️",
+      desc: "정가·할인율로 할인가를 구하거나, 정가·판매가로 할인율을 역산합니다.", related: ["percent", "vat"], public: true, isNew: true },
+    { id: "won-korean", slug: "won-korean", name: "금액 한글 변환기", category: "convert", kind: "calculator", emoji: "🧾",
+      desc: "숫자 금액을 '일금 삼천오백만원정' 한글 표기로 바꿔 줍니다. 계약서·영수증용.", related: ["percent", "discount"], public: true, isNew: true },
 
     /* ── 정부 정책 ── */
     { id: "support-check", slug: "support-check", name: "민생지원금 대상 조회", category: "policy", kind: "tool", emoji: "📋",
