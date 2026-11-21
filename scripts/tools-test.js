@@ -208,5 +208,20 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("170cm 정상체중 범위 ≈ 53.5~66.2kg", () => { const r = M.healthyRange(170); assert.strictEqual(Math.round(r.min * 10) / 10, 53.5); assert.strictEqual(Math.round(r.max * 10) / 10, 66.2); });
 })();
 
+/* ── unit-converter (단위 변환) ── */
+(function () {
+  const U = require(path.join(ROOT, "tools-src", "unit-converter.client.js"));
+  console.log("unit-converter");
+  const near = (a, b) => assert.ok(Math.abs(a - b) < 1e-6, a + " ≉ " + b);
+  test("길이: 10inch = 25.4cm", () => near(U.convert("length", "inch(인치)", "cm", 10), 25.4));
+  test("무게: 10lb = 4.5359237kg", () => near(U.convert("weight", "lb(파운드)", "kg", 10), 4.5359237));
+  test("무게: 1.2kg = 2근(600g)", () => near(U.convert("weight", "kg", "근(600g)", 1.2), 2));
+  test("넓이: 24평 = 79.3388㎡", () => near(U.convert("area", "평", "㎡", 24), 24 * 400 / 121));
+  test("속도: 36km/h = 10m/s", () => near(U.convert("speed", "km/h", "m/s", 36), 10));
+  test("온도: 100℃ = 212℉", () => near(U.convertTemp("℃", "℉", 100), 212));
+  test("온도: 0℃ = 273.15K", () => near(U.convertTemp("℃", "K", 0), 273.15));
+  test("온도: 32℉ = 0℃", () => near(U.convertTemp("℉", "℃", 32), 0));
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

@@ -108,7 +108,9 @@
     { id: "percent", slug: "percent", name: "퍼센트 계산기", category: "convert", kind: "calculator", emoji: "➗",
       desc: "X의 Y%, 전체 중 비율, 증감률을 바로 계산합니다.", related: ["vat", "salary"], public: true, isNew: true },
     { id: "pyeong", slug: "pyeong", name: "평↔제곱미터 변환기", category: "convert", kind: "calculator", emoji: "📐",
-      desc: "평과 제곱미터(㎡)를 양방향으로 변환하고 평수별 ㎡를 표로 보여줍니다.", related: ["percent"], public: true, isNew: true },
+      desc: "평과 제곱미터(㎡)를 양방향으로 변환하고 평수별 ㎡를 표로 보여줍니다.", related: ["unit-converter", "percent"], public: true, isNew: true },
+    { id: "unit-converter", slug: "unit-converter", name: "단위 변환기", category: "convert", kind: "calculator", emoji: "🔁",
+      desc: "길이·무게·넓이·부피·온도·속도 단위를 서로 변환합니다.", related: ["pyeong", "percent"], public: true, isNew: true },
 
     /* ── 정부 정책 ── */
     { id: "support-check", slug: "support-check", name: "민생지원금 대상 조회", category: "policy", kind: "tool", emoji: "📋",
