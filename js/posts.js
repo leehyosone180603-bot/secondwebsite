@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "seoul-youth-newlywed-housing-12",
+    title: "서울시 청년·신혼부부 주거지원 12종 총정리 — 대상·혜택·신청 한눈에",
+    summary: "서울시 청년·신혼부부 주거지원 12종을 대상·핵심혜택·신청처로 한눈에 정리했습니다. 청년월세지원, 임차보증금 이자지원, 청년안심주택·행복주택·신혼희망타운까지 내게 맞는 지원을 찾아보세요.",
+    category: "life",
+    date: "2026-11-22",
+    url: "/posts/seoul-youth-newlywed-housing-12.html",
+    image: "/img/youth-rent-support-1.jpg",
+  },
+  {
     id: "winter-indoor-humidity-guide",
     title: "겨울 실내 적정 습도 몇 %? 가습기 없이 높이는 방법",
     summary: "겨울 실내 적정 습도는 40~60%, 온도는 18~20℃가 기준입니다. 가습기 없이 습도 높이는 법, 과습 신호와 환기 요령까지 정리했습니다.",
