@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카드 할부 수수료 계산기 - 매달 결제액·총수수료(체감식) | 건강흐름</title>
+  <meta name="description" content="할부원금·할부개월·수수료율(연%)로 매달 결제액과 총 할부수수료를 계산합니다. 무이자 할부 지원, 체감식(잔액 기준) 회차별 내역과 CSV 저장.">
+  <meta name="keywords" content="카드 할부 수수료 계산기, 할부 이자, 무이자 할부, 할부 수수료율, 카드 할부 계산, 체감식 할부">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="카드 할부 수수료 계산기">
+  <meta property="og:description" content="할부원금·할부개월·수수료율(연%)로 매달 결제액과 총 할부수수료를 계산합니다. 무이자 할부 지원, 체감식(잔액 기준) 회차별 내역과 CSV 저장.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://healthfortune.co.kr/card-installment/">
+  <meta property="og:site_name" content="건강흐름">
+  <link rel="canonical" href="https://healthfortune.co.kr/card-installment/">
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "카드 할부 수수료 계산기",
+    "url": "https://healthfortune.co.kr/card-installment/",
+    "description": "할부원금·할부개월·수수료율(연%)로 매달 결제액과 총 할부수수료를 계산합니다. 무이자 할부 지원, 체감식(잔액 기준) 회차별 내역과 CSV 저장.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "ko",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
+    }
+  }</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"카드 할부 수수료는 어떻게 계산하나요?","acceptedAnswer":{"@type":"Answer","text":"매달 남은 할부잔액에 ‘연 수수료율 ÷ 12’를 곱한 금액이 그 달 수수료입니다. 할부원금은 개월 수로 균등 분할되고, 수수료는 초반이 크고 점점 줄어듭니다."}},{"@type":"Question","name":"수수료율은 어디서 확인하나요?","acceptedAnswer":{"@type":"Answer","text":"카드사 앱·홈페이지의 수수료 안내, 카드 이용약관, 또는 결제 명세서에서 확인할 수 있습니다. 보통 연 7~19.9% 범위이며 카드·등급·개월에 따라 다릅니다."}},{"@type":"Question","name":"무이자 할부는 수수료가 정말 0인가요?","acceptedAnswer":{"@type":"Answer","text":"네. 무이자 할부는 회원이 수수료를 부담하지 않아 할부원금만 나눠서 냅니다. 이 계산기에서 ‘무이자 할부’를 체크하면 수수료 0으로 계산합니다."}},{"@type":"Question","name":"할부를 중간에 갚으면 수수료가 줄어드나요?","acceptedAnswer":{"@type":"Answer","text":"선결제(중도상환)하면 남은 잔액이 줄어 이후 수수료가 감소합니다. 체감식이라 남은 기간의 잔액 기준 수수료만큼 아낄 수 있습니다."}},{"@type":"Question","name":"첫 달이 가장 많이 나오는 이유는?","acceptedAnswer":{"@type":"Answer","text":"체감식은 잔액이 가장 큰 첫 달에 수수료가 가장 많습니다. 원금이 빠질수록 잔액이 줄어 수수료도 매달 조금씩 줄어듭니다."}},{"@type":"Question","name":"할부개월이 길수록 손해인가요?","acceptedAnswer":{"@type":"Answer","text":"개월이 길면 잔액이 오래 남아 총수수료가 커집니다. 다만 월 결제 부담은 줄어듭니다. 총수수료와 월 부담을 함께 보고 선택하세요."}}]}</script>
+
+  <!-- Google AdSense 게시자 ID: ca-pub-7143828779500885 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885"
+     crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/style.css?v=14">
+  <link rel="stylesheet" href="/tool-kit.css?v=1">
+</head>
+<body data-tool="card-installment">
+  <nav class="back-nav"><a href="/tools.html">← <span data-i18n="tools">생활 도구</span></a></nav>
+
+  <header class="site-header">
+    <h1>🧾 카드 할부 수수료 계산기</h1>
+    <p class="subtitle">할부원금·개월·수수료율로 매달 낼 돈과 총수수료</p>
+    <div class="lang-switch" id="tk-langswitch" aria-label="언어 선택"></div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb" id="tk-breadcrumb" aria-label="위치"></nav>
+  </div>
+
+  <div class="ad-container" aria-label="광고">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <main class="container">
+    <div class="tool-layout">
+      <div class="tool-main">
+        <section class="card controls">
+          <div class="intro"><p>카드 할부는 매달 <strong>남은 할부잔액</strong>에 수수료율(연%)을 매기는 체감식입니다. 할부원금은 개월 수로 균등 분할되고, 수수료는 초반이 크고 점점 줄어듭니다.</p></div>
+          <div class="field"><label for="amount">할부원금 <span class="hint">(결제 금액)</span></label><div class="input-unit"><input type="text" id="amount" data-num data-share inputmode="numeric" placeholder="예: 1,200,000"><span class="unit">원</span></div></div><div class="field"><label for="months">할부개월</label><div class="input-unit"><input type="text" id="months" data-share inputmode="numeric" placeholder="예: 12"><span class="unit">개월</span></div></div><div class="field"><label><input type="checkbox" id="freeInterest" data-share> 무이자 할부</label></div><div class="field" id="rateRow"><label for="rate">할부 수수료율 <span class="hint">(연 %, 카드 명세서·약관 참고)</span></label><div class="input-unit"><input type="text" id="rate" data-share inputmode="decimal" placeholder="예: 15.9"><span class="unit">%</span></div></div>
+          <p class="error" id="errorMsg" role="alert"></p>
+          <button id="calcBtn" class="btn-primary" type="button" data-i18n="calc">계산하기</button>
+        </section>
+
+        <section class="card results" id="tk-result-card" hidden>
+          <div id="tk-result"><div id="ciResult"></div></div>
+          <div class="result-actions">
+            <button class="btn-sm" data-tk="copy" data-copy-target="#tk-result"><span data-i18n="copy">결과 복사</span></button>
+            <button class="btn-sm" data-tk="share"><span data-i18n="shareLink">공유 링크</span></button>
+            <button class="btn-sm" data-tk="reset"><span data-i18n="reset">초기화</span></button>
+          </div>
+          <p class="footer-notice" style="margin:10px 0 0" data-i18n="disclaimer">참고용 추정치이며 실제 금액과 다를 수 있습니다.</p>
+        </section>
+
+        <div class="share-bar" id="tk-sharebar"></div>
+        <div class="rating" id="tk-rating"></div>
+
+    <section class="card info">
+      <h2 data-i18n="method">계산 방법</h2>
+      <p>국내 카드사의 할부수수료는 대부분 <strong>체감식(잔액 슬라이딩)</strong>으로 계산합니다.</p><ul><li><strong>월 할부원금</strong> = 할부원금 ÷ 할부개월 (균등 분할)</li><li><strong>회차별 수수료</strong> = 남은 할부잔액 × (연 수수료율 ÷ 12)</li><li><strong>회차별 결제액</strong> = 월 할부원금 + 그 달 수수료</li></ul><p>첫 회차는 잔액이 가장 많아 수수료가 가장 크고, 매달 원금이 빠지면서 수수료도 줄어듭니다. 무이자 할부는 수수료율 0%와 같아 결제액이 할부원금과 동일합니다.</p><p>실제 수수료율은 카드사·회원등급·할부개월에 따라 보통 연 7~19.9% 범위에서 다릅니다. 정확한 값은 본인 카드의 명세서나 약관에서 확인하세요.</p>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="learnMore">더 알아보기</h2>
+      <div class="learn-cards"><div class="learn-card"><h4>무이자 할부 vs 수수료 할부</h4><p>무이자 할부는 가맹점이 수수료를 부담해 회원은 할부원금만 냅니다. 수수료 할부는 회원이 잔액에 대한 수수료를 추가로 부담합니다. 큰 금액일수록 차이가 큽니다.</p></div><div class="learn-card"><h4>부분 무이자 할부</h4><p>‘2·3회차 무이자’처럼 일부 회차만 무이자인 상품도 있습니다. 이 계산기는 전체 무이자/유이자 기준이므로, 부분 무이자는 명세서로 확인하세요.</p></div><div class="learn-card"><h4>할부와 리볼빙은 다릅니다</h4><p>할부는 정해진 개월로 원금을 나눠 갚지만, 리볼빙(일부결제금액이월약정)은 매달 일정 비율만 갚고 나머지를 이월해 수수료가 훨씬 커질 수 있습니다.</p></div></div>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="faq">자주 묻는 질문</h2>
+      <h3>Q. 카드 할부 수수료는 어떻게 계산하나요?</h3>
+      <p>매달 남은 할부잔액에 ‘연 수수료율 ÷ 12’를 곱한 금액이 그 달 수수료입니다. 할부원금은 개월 수로 균등 분할되고, 수수료는 초반이 크고 점점 줄어듭니다.</p>
+      <h3>Q. 수수료율은 어디서 확인하나요?</h3>
+      <p>카드사 앱·홈페이지의 수수료 안내, 카드 이용약관, 또는 결제 명세서에서 확인할 수 있습니다. 보통 연 7~19.9% 범위이며 카드·등급·개월에 따라 다릅니다.</p>
+      <h3>Q. 무이자 할부는 수수료가 정말 0인가요?</h3>
+      <p>네. 무이자 할부는 회원이 수수료를 부담하지 않아 할부원금만 나눠서 냅니다. 이 계산기에서 ‘무이자 할부’를 체크하면 수수료 0으로 계산합니다.</p>
+      <h3>Q. 할부를 중간에 갚으면 수수료가 줄어드나요?</h3>
+      <p>선결제(중도상환)하면 남은 잔액이 줄어 이후 수수료가 감소합니다. 체감식이라 남은 기간의 잔액 기준 수수료만큼 아낄 수 있습니다.</p>
+      <h3>Q. 첫 달이 가장 많이 나오는 이유는?</h3>
+      <p>체감식은 잔액이 가장 큰 첫 달에 수수료가 가장 많습니다. 원금이 빠질수록 잔액이 줄어 수수료도 매달 조금씩 줄어듭니다.</p>
+      <h3>Q. 할부개월이 길수록 손해인가요?</h3>
+      <p>개월이 길면 잔액이 오래 남아 총수수료가 커집니다. 다만 월 결제 부담은 줄어듭니다. 총수수료와 월 부담을 함께 보고 선택하세요.</p>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="sources">자료 출처</h2>
+      <ul class="sources-list"><li><a href="https://www.crefia.or.kr" target="_blank" rel="noopener">여신금융협회 — 카드 수수료·약관 안내 ↗</a></li><li><a href="https://www.fss.or.kr" target="_blank" rel="noopener">금융감독원 — 신용카드 할부·리볼빙 소비자 안내 ↗</a></li></ul>
+    </section>
+        <section class="card info">
+          <h2 data-i18n="related">관련 도구</h2>
+          <div id="tk-related"></div>
+        </section>
+      </div>
+
+      <aside class="tool-side">
+        <div class="widget"><h3>🔥 <span data-i18n="popular">인기 페이지</span></h3><ul id="tk-popular"></ul></div>
+        <div class="widget"><h3>🆕 <span data-i18n="newTools">신규 출시</span></h3><ul id="tk-new"></ul></div>
+        <div class="widget"><h3>🕘 <span data-i18n="recent">최근 본 페이지</span></h3><ul id="tk-recent"></ul></div>
+        <div class="widget deal"><h3>🏷️ <span data-i18n="deal">할인 정보</span></h3><ul id="tk-deal"><li class="empty" data-i18n="none">아직 없습니다.</li></ul><p class="aff-note" data-i18n="dealNote">※ 일부 링크는 제휴(광고) 링크일 수 있습니다.</p></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="footer-logo">🧾</span><span class="footer-brandname">건강흐름</span></div>
+    <nav class="footer-links"><a href="/">홈</a> · <a href="/tools.html">생활 도구</a> · <a href="/about.html">운영자 소개</a> · <a href="/contact.html">문의하기</a> · <a href="/privacy.html">개인정보처리방침</a> · <a href="/terms.html">이용약관</a> · <a href="mailto:leelin12@naver.com">이메일</a></nav>
+    <div class="footer-biz">상호명 굿윌스토어 · 사업자등록번호 631-03-03874 · 대표 이효선 · 주소 부산 사하구 오작로 34<br>연락처 010-2934-1351 · 제휴문의 <a href="mailto:leelin12@naver.com">leelin12@naver.com</a></div>
+    <p class="footer-notice">건강흐름의 모든 콘텐츠는 저작권법의 보호를 받으며, 무단 전재·복사·배포를 금합니다.</p>
+    <p class="footer-copy">© <span id="year"></span> 건강흐름 (healthfortune.co.kr)</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/tools.js"></script>
+  <script src="/data/rates.2026.js"></script>
+  <script src="/data/rates.2027.js"></script>
+  <script src="/data/rates.js"></script>
+  <script src="/js/tool-kit.js"></script>
+  <script src="/js/lib/loan.js"></script>
+  <script src="/card-installment/card-installment.js?v=1"></script>
+</body>
+</html>

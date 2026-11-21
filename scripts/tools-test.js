@@ -173,5 +173,17 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("200만원 초과 2,000,001 → 과세 전환", () => { const r = L.lottoTax(2000001, R); assert.strictEqual(r.taxable, true); });
 })();
 
+/* ── card-installment (카드 할부, 체감식=원금균등) ── */
+(function () {
+  const L = require(path.join(ROOT, "js", "lib", "loan.js"));
+  console.log("card-installment");
+  const s = L.schedule(1200000, 15, 12, "equalPrincipal", 0);
+  test("120만·12개월·연15% → 총수수료 97,500", () => assert.strictEqual(s.totalInterest, 97500));
+  test("120만·12개월·연15% → 총결제 1,297,500", () => assert.strictEqual(s.totalPayment, 1297500));
+  test("첫 달 결제액 115,000(원금10만+수수료1.5만)", () => assert.strictEqual(s.rows[0].payment, 115000));
+  test("마지막 달 결제액 101,250", () => assert.strictEqual(s.rows[s.rows.length - 1].payment, 101250));
+  test("무이자(0%) → 수수료 0·결제 원금과 동일", () => { const z = L.schedule(1200000, 0, 12, "equalPrincipal", 0); assert.strictEqual(z.totalInterest, 0); assert.strictEqual(z.totalPayment, 1200000); });
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

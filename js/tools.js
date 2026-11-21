@@ -82,6 +82,8 @@
       desc: "예금·적금의 단리·복리 이자와 세후 수령액을 계산합니다.", related: ["loan", "salary", "lotto-prize"], public: true, isNew: true },
     { id: "loan", slug: "loan", name: "대출 이자 계산기", category: "finance", kind: "calculator", emoji: "💳",
       desc: "원리금균등·원금균등·만기일시 상환의 월 납입액과 총이자를 계산합니다.", related: ["savings", "dsr", "jeonse-loan"], public: true, isNew: true },
+    { id: "card-installment", slug: "card-installment", name: "카드 할부 수수료 계산기", category: "finance", kind: "calculator", emoji: "🧾",
+      desc: "할부원금·개월·수수료율로 매달 결제액과 총 할부수수료(체감식)를 계산합니다.", related: ["loan", "savings"], public: true, isNew: true },
     { id: "lotto-prize", slug: "lotto-prize", name: "로또 당첨금 실수령액", category: "finance", kind: "calculator", emoji: "💰",
       desc: "당첨금에서 제세금을 뺀 실수령액을 계산합니다.", related: ["savings", "salary"], public: true },
 
