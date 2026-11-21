@@ -96,5 +96,18 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("기념일 100일 = 시작+99일", () => { const s = new Date(2026, 0, 1); const a = D.anniversaries(s).find(x => x.label === "100일"); assert.strictEqual(D.days(s, a.date), 99); });
 })();
 
+/* ── age ── */
+(function () {
+  const A = require(path.join(ROOT, "tools-src", "age.client.js"));
+  console.log("age");
+  test("1990-05-15, 2026-06-01 → 만 36", () => assert.strictEqual(A.manAge(new Date(1990, 4, 15), new Date(2026, 5, 1)), 36));
+  test("1990-05-15, 2026-05-01(생일전) → 만 35", () => assert.strictEqual(A.manAge(new Date(1990, 4, 15), new Date(2026, 4, 1)), 35));
+  test("세는나이 1990→2026 = 37", () => assert.strictEqual(A.koreanAge(new Date(1990, 4, 15), new Date(2026, 5, 1)), 37));
+  test("띠 1990 = 말띠 / 간지 = 경오년", () => { assert.strictEqual(A.zodiac(1990), "말띠"); assert.strictEqual(A.ganji(1990), "경오년"); });
+  test("간지 2026 = 병오년", () => assert.strictEqual(A.ganji(2026), "병오년"));
+  test("별자리 5/15 = 황소자리, 1/1 = 염소자리", () => { assert.strictEqual(A.starSign(5, 15), "황소자리"); assert.strictEqual(A.starSign(1, 1), "염소자리"); });
+  test("다음 생일 2027-05-15", () => { const nb = A.nextBirthday(new Date(1990, 4, 15), new Date(2026, 5, 1)); assert.strictEqual(nb.getFullYear(), 2027); assert.strictEqual(nb.getMonth(), 4); assert.strictEqual(nb.getDate(), 15); });
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);
