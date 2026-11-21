@@ -80,6 +80,8 @@
       desc: "나이로 출생연도·띠를 찾고, 띠로 나이를 역산합니다.", related: ["age", "military"], public: true },
     { id: "business-days", slug: "business-days", name: "영업일 계산기", category: "date", kind: "calculator", emoji: "📆",
       desc: "주말·공휴일을 제외한 영업일수와 기준일을 계산합니다.", related: ["age", "military"], public: true },
+    { id: "world-time", slug: "world-time", name: "세계 시차 계산기", category: "date", kind: "calculator", emoji: "🌏",
+      desc: "주요 도시의 현재 시각과 시차를 확인하고, 특정 시각을 다른 도시 시각으로 변환합니다.", related: ["dday", "age"], public: true, isNew: true },
     { id: "military", slug: "military", name: "전역일 계산기", category: "date", kind: "calculator", emoji: "🎖️",
       desc: "입대일로 전역일과 복무 진행률(D-day)을 계산합니다.", related: ["business-days", "age"], public: true },
 
@@ -115,6 +117,8 @@
       desc: "키·몸무게·나이·성별로 체지방률(추정)과 표준체중·적정체중 범위를 계산합니다.", related: ["bmi", "bmr"], public: true, isNew: true },
     { id: "alcohol-sober", slug: "alcohol-sober", name: "음주 알코올 분해시간 계산기", category: "health", kind: "calculator", emoji: "🍺",
       desc: "음주량·체중·성별로 예상 혈중알코올농도와 운전 가능까지 걸리는 시간을 위드마크 공식으로 추정합니다.", related: ["bmi", "body-fat"], public: true, isNew: true },
+    { id: "water-intake", slug: "water-intake", name: "하루 물 섭취량 계산기", category: "health", kind: "calculator", emoji: "💧",
+      desc: "체중·활동량으로 하루 권장 물 섭취량(mL·잔 수)을 계산합니다.", related: ["bmr", "bmi"], public: true, isNew: true },
 
     /* ── 생성·변환 ── */
     { id: "percent", slug: "percent", name: "퍼센트 계산기", category: "convert", kind: "calculator", emoji: "➗",

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>세계 시차 계산기 - 도시별 현재 시각·시차 변환 | 건강흐름</title>
+  <meta name="description" content="서울·뉴욕·런던·도쿄 등 주요 도시의 현재 시각과 시차를 확인하고, 특정 시각을 다른 도시 시각으로 변환합니다. 서머타임(DST) 자동 반영.">
+  <meta name="keywords" content="세계 시차 계산기, 뉴욕 시간, 런던 시차, 시차 변환, 해외 시간, 서머타임 시간">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="세계 시차 계산기">
+  <meta property="og:description" content="서울·뉴욕·런던·도쿄 등 주요 도시의 현재 시각과 시차를 확인하고, 특정 시각을 다른 도시 시각으로 변환합니다. 서머타임(DST) 자동 반영.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://healthfortune.co.kr/world-time/">
+  <meta property="og:site_name" content="건강흐름">
+  <link rel="canonical" href="https://healthfortune.co.kr/world-time/">
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "세계 시차 계산기",
+    "url": "https://healthfortune.co.kr/world-time/",
+    "description": "서울·뉴욕·런던·도쿄 등 주요 도시의 현재 시각과 시차를 확인하고, 특정 시각을 다른 도시 시각으로 변환합니다. 서머타임(DST) 자동 반영.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "ko",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
+    }
+  }</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"한국과 뉴욕의 시차는 몇 시간인가요?","acceptedAnswer":{"@type":"Answer","text":"보통 14시간(겨울)이며, 미국 서머타임 기간(봄~가을)에는 13시간입니다. 날짜를 넣으면 그 시점의 정확한 시차를 보여줍니다."}},{"@type":"Question","name":"서머타임도 반영되나요?","acceptedAnswer":{"@type":"Answer","text":"네. 브라우저의 표준시 데이터를 사용해 입력한 날짜의 서머타임을 자동 반영합니다. 계절에 따라 달라지는 시차도 정확히 계산됩니다."}},{"@type":"Question","name":"특정 시각을 변환하려면?","acceptedAnswer":{"@type":"Answer","text":"‘기준 시각’에 날짜·시간을 입력하면 그 시각(기준 도시 기준)을 비교 도시의 시각으로 변환합니다. 비우면 현재 시각으로 계산합니다."}},{"@type":"Question","name":"한국과 일본은 시차가 있나요?","acceptedAnswer":{"@type":"Answer","text":"없습니다. 둘 다 UTC+9로 시각이 같습니다. 일본은 서머타임을 쓰지 않습니다."}}]}</script>
+
+  <!-- Google AdSense 게시자 ID: ca-pub-7143828779500885 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885"
+     crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/style.css?v=14">
+  <link rel="stylesheet" href="/tool-kit.css?v=1">
+</head>
+<body data-tool="world-time">
+  <nav class="back-nav"><a href="/tools.html">← <span data-i18n="tools">생활 도구</span></a></nav>
+
+  <header class="site-header">
+    <h1>🌏 세계 시차 계산기</h1>
+    <p class="subtitle">도시별 현재 시각과 시차, 시각 변환</p>
+    <div class="lang-switch" id="tk-langswitch" aria-label="언어 선택"></div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb" id="tk-breadcrumb" aria-label="위치"></nav>
+  </div>
+
+  <div class="ad-container" aria-label="광고">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <main class="container">
+    <div class="tool-layout">
+      <div class="tool-main">
+        <section class="card controls">
+          <div class="intro"><p>두 도시를 고르면 <strong>현재 시각과 시차</strong>를 바로 보여줍니다. 기준 시각을 입력하면 상대 도시의 시각으로 변환합니다. 서머타임은 자동 반영됩니다.</p></div>
+          <div class="field"><label for="fromCity">기준 도시</label><select id="fromCity" data-share></select></div><div class="field" style="text-align:center;margin:-2px 0"><button type="button" class="btn-sm" id="swapBtn">⇅ 도시 교환</button></div><div class="field"><label for="toCity">비교 도시</label><select id="toCity" data-share></select></div><div class="field"><label for="baseTime">기준 시각 <span class="hint">(비우면 현재 시각, 기준 도시 기준)</span></label><input type="datetime-local" id="baseTime" data-share></div>
+          <p class="error" id="errorMsg" role="alert"></p>
+          <button id="calcBtn" class="btn-primary" type="button" data-i18n="calc">계산하기</button>
+        </section>
+
+        <section class="card results" id="tk-result-card" hidden>
+          <div id="tk-result"><div id="wtResult"></div></div>
+          <div class="result-actions">
+            <button class="btn-sm" data-tk="copy" data-copy-target="#tk-result"><span data-i18n="copy">결과 복사</span></button>
+            <button class="btn-sm" data-tk="share"><span data-i18n="shareLink">공유 링크</span></button>
+            <button class="btn-sm" data-tk="reset"><span data-i18n="reset">초기화</span></button>
+          </div>
+          <p class="footer-notice" style="margin:10px 0 0" data-i18n="disclaimer">참고용 추정치이며 실제 금액과 다를 수 있습니다.</p>
+        </section>
+
+        <div class="share-bar" id="tk-sharebar"></div>
+        <div class="rating" id="tk-rating"></div>
+
+    <section class="card info">
+      <h2 data-i18n="method">계산 방법</h2>
+      <p>각 도시의 표준시(UTC 오프셋)를 비교해 시각과 시차를 계산합니다.</p><ul><li><strong>현재 시각 모드</strong>: 기준 시각을 비우면 두 도시의 지금 시각과 시차를 보여줍니다.</li><li><strong>변환 모드</strong>: 기준 시각을 입력하면 그 시각(기준 도시 기준)을 비교 도시 시각으로 바꿉니다.</li><li>서머타임(DST)을 쓰는 도시는 날짜에 따라 시차가 1시간 달라지며, 브라우저 표준시 데이터로 자동 반영됩니다.</li></ul><p>예로 한국은 서머타임이 없지만 미국·유럽은 봄~가을에 1시간 앞당겨, 같은 두 도시라도 계절에 따라 시차가 바뀝니다.</p>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="learnMore">더 알아보기</h2>
+      <div class="learn-cards"><div class="learn-card"><h4>서머타임(일광절약시간)</h4><p>미국·유럽·호주 등은 여름철에 시계를 1시간 앞당깁니다. 그래서 한국과의 시차가 겨울과 여름에 1시간 달라집니다. 이 계산기는 입력한 날짜의 서머타임을 반영합니다.</p></div><div class="learn-card"><h4>한국은 UTC+9</h4><p>한국 표준시는 UTC보다 9시간 빠르고 서머타임이 없습니다. 일본과는 시차가 없고, 중국과는 1시간 차이가 납니다.</p></div><div class="learn-card"><h4>회의·통화 시간 잡기</h4><p>해외와 약속을 잡을 때 ‘기준 시각’에 한국 시간을 넣으면 상대 도시의 시각을 바로 확인할 수 있어 편리합니다.</p></div></div>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="faq">자주 묻는 질문</h2>
+      <h3>Q. 한국과 뉴욕의 시차는 몇 시간인가요?</h3>
+      <p>보통 14시간(겨울)이며, 미국 서머타임 기간(봄~가을)에는 13시간입니다. 날짜를 넣으면 그 시점의 정확한 시차를 보여줍니다.</p>
+      <h3>Q. 서머타임도 반영되나요?</h3>
+      <p>네. 브라우저의 표준시 데이터를 사용해 입력한 날짜의 서머타임을 자동 반영합니다. 계절에 따라 달라지는 시차도 정확히 계산됩니다.</p>
+      <h3>Q. 특정 시각을 변환하려면?</h3>
+      <p>‘기준 시각’에 날짜·시간을 입력하면 그 시각(기준 도시 기준)을 비교 도시의 시각으로 변환합니다. 비우면 현재 시각으로 계산합니다.</p>
+      <h3>Q. 한국과 일본은 시차가 있나요?</h3>
+      <p>없습니다. 둘 다 UTC+9로 시각이 같습니다. 일본은 서머타임을 쓰지 않습니다.</p>
+    </section>
+        <section class="card info">
+          <h2 data-i18n="related">관련 도구</h2>
+          <div id="tk-related"></div>
+        </section>
+      </div>
+
+      <aside class="tool-side">
+        <div class="widget"><h3>🔥 <span data-i18n="popular">인기 페이지</span></h3><ul id="tk-popular"></ul></div>
+        <div class="widget"><h3>🆕 <span data-i18n="newTools">신규 출시</span></h3><ul id="tk-new"></ul></div>
+        <div class="widget"><h3>🕘 <span data-i18n="recent">최근 본 페이지</span></h3><ul id="tk-recent"></ul></div>
+        <div class="widget deal"><h3>🏷️ <span data-i18n="deal">할인 정보</span></h3><ul id="tk-deal"><li class="empty" data-i18n="none">아직 없습니다.</li></ul><p class="aff-note" data-i18n="dealNote">※ 일부 링크는 제휴(광고) 링크일 수 있습니다.</p></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="footer-logo">🌏</span><span class="footer-brandname">건강흐름</span></div>
+    <nav class="footer-links"><a href="/">홈</a> · <a href="/tools.html">생활 도구</a> · <a href="/about.html">운영자 소개</a> · <a href="/contact.html">문의하기</a> · <a href="/privacy.html">개인정보처리방침</a> · <a href="/terms.html">이용약관</a> · <a href="mailto:leelin12@naver.com">이메일</a></nav>
+    <div class="footer-biz">상호명 굿윌스토어 · 사업자등록번호 631-03-03874 · 대표 이효선 · 주소 부산 사하구 오작로 34<br>연락처 010-2934-1351 · 제휴문의 <a href="mailto:leelin12@naver.com">leelin12@naver.com</a></div>
+    <p class="footer-notice">건강흐름의 모든 콘텐츠는 저작권법의 보호를 받으며, 무단 전재·복사·배포를 금합니다.</p>
+    <p class="footer-copy">© <span id="year"></span> 건강흐름 (healthfortune.co.kr)</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/tools.js"></script>
+  <script src="/data/rates.2026.js"></script>
+  <script src="/data/rates.2027.js"></script>
+  <script src="/data/rates.js"></script>
+  <script src="/js/tool-kit.js"></script>
+  <script src="/world-time/world-time.js?v=1"></script>
+</body>
+</html>

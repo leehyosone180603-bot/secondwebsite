@@ -323,5 +323,27 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("BAC 0.03 미만이면 운전가능 시간 0", () => assert.strictEqual(A.hoursToTarget(0.02, 0.03), 0));
 })();
 
+/* ── water-intake (하루 물 섭취량) ── */
+(function () {
+  const W = require(path.join(ROOT, "tools-src", "water-intake.client.js"));
+  console.log("water-intake");
+  test("70kg·운동0 → 2,310mL", () => { const r = W.waterIntake(70, 0); assert.strictEqual(r.base, 2310); assert.strictEqual(r.total, 2310); });
+  test("70kg 범위 2,100~2,450", () => { const r = W.waterIntake(70, 0); assert.strictEqual(r.min, 2100); assert.strictEqual(r.max, 2450); });
+  test("60kg·운동60분 → 1,980+700=2,680", () => { const r = W.waterIntake(60, 60); assert.strictEqual(r.base, 1980); assert.strictEqual(r.exercise, 700); assert.strictEqual(r.total, 2680); });
+  test("운동 30분 → +350mL", () => assert.strictEqual(W.waterIntake(60, 30).exercise, 350));
+})();
+
+/* ── world-time (세계 시차, Intl tz) ── */
+(function () {
+  const T = require(path.join(ROOT, "tools-src", "world-time.client.js"));
+  console.log("world-time");
+  test("서울 = UTC+9 (540분)", () => assert.strictEqual(T.tzOffsetMinutes(new Date("2026-06-15T00:00:00Z"), "Asia/Seoul"), 540));
+  test("뉴욕 겨울 = EST(-300분)", () => assert.strictEqual(T.tzOffsetMinutes(new Date("2026-01-15T00:00:00Z"), "America/New_York"), -300));
+  test("뉴욕 여름 = EDT(-240분, 서머타임)", () => assert.strictEqual(T.tzOffsetMinutes(new Date("2026-06-15T00:00:00Z"), "America/New_York"), -240));
+  test("서울→뉴욕 겨울 시차 −14시간", () => assert.strictEqual(T.diffHours("Asia/Seoul", "America/New_York", new Date("2026-01-15T00:00:00Z")), -14));
+  test("서울→뉴욕 여름 시차 −13시간(DST)", () => assert.strictEqual(T.diffHours("Asia/Seoul", "America/New_York", new Date("2026-06-15T00:00:00Z")), -13));
+  test("서울→도쿄 시차 0", () => assert.strictEqual(T.diffHours("Asia/Seoul", "Asia/Tokyo", new Date("2026-06-15T00:00:00Z")), 0));
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);
