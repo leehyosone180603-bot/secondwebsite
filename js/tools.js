@@ -67,7 +67,9 @@
 
     /* ── 날짜·기간 ── */
     { id: "age", slug: "age", name: "만 나이 계산기", category: "date", kind: "calculator", emoji: "🎂",
-      desc: "생년월일로 만 나이·세는 나이·띠·다음 생일을 계산합니다.", related: ["birth-year", "business-days"], public: true },
+      desc: "생년월일로 만 나이·세는 나이·띠·다음 생일을 계산합니다.", related: ["dday", "birth-year", "business-days"], public: true },
+    { id: "dday", slug: "dday", name: "날짜 계산기 (D-Day)", category: "date", kind: "calculator", emoji: "📆",
+      desc: "D-Day, 두 날짜 사이 기간, 날짜 더하기·빼기, 기념일을 계산합니다.", related: ["age", "business-days"], public: true, isNew: true },
     { id: "birth-year", slug: "birth-year", name: "몇년생·나이 계산기", category: "date", kind: "calculator", emoji: "🔎",
       desc: "나이로 출생연도·띠를 찾고, 띠로 나이를 역산합니다.", related: ["age", "military"], public: true },
     { id: "business-days", slug: "business-days", name: "영업일 계산기", category: "date", kind: "calculator", emoji: "📆",

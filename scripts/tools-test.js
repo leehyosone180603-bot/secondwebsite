@@ -85,5 +85,16 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("연 소득세 양수·합리적(과세4천만 1인)", () => { const t = S.annualIncomeTax(40000000, 1, 0, R); assert.ok(t.incomeTax > 300000 && t.incomeTax < 3000000); });
 })();
 
+/* ── dday ── */
+(function () {
+  const D = require(path.join(ROOT, "tools-src", "dday.client.js"));
+  console.log("dday");
+  test("1/1~1/11 = 10일", () => assert.strictEqual(D.days(new Date(2026, 0, 1), new Date(2026, 0, 11)), 10));
+  test("1/31 +1개월 → 2/28(말일보정)", () => { const r = D.addPeriod(new Date(2026, 0, 31), 1, "month"); assert.strictEqual(r.getMonth(), 1); assert.strictEqual(r.getDate(), 28); });
+  test("윤년 2/29 +1년 → 2/28", () => { const r = D.addPeriod(new Date(2024, 1, 29), 1, "year"); assert.strictEqual(r.getMonth(), 1); assert.strictEqual(r.getDate(), 28); });
+  test("diffYMD 2020/1/15→2026/3/20 = 6년2개월5일", () => { const r = D.diffYMD(new Date(2020, 0, 15), new Date(2026, 2, 20)); assert.deepStrictEqual(r, { y: 6, m: 2, d: 5 }); });
+  test("기념일 100일 = 시작+99일", () => { const s = new Date(2026, 0, 1); const a = D.anniversaries(s).find(x => x.label === "100일"); assert.strictEqual(D.days(s, a.date), 99); });
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

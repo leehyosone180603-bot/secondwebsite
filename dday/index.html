@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>날짜 계산기 - D-Day·두 날짜 사이 기간·날짜 더하기·기념일 | 건강흐름</title>
+  <meta name="description" content="오늘부터 목표일까지 D-Day, 두 날짜 사이 일수·개월, 기준일에 N일·개월·년 더하기, 사귄 날 기준 100일·1주년 기념일을 계산합니다.">
+  <meta name="keywords" content="날짜 계산기, D-Day 계산기, 디데이, 날짜 더하기, 두 날짜 사이, 100일 계산, 기념일">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="날짜 계산기 (D-Day)">
+  <meta property="og:description" content="오늘부터 목표일까지 D-Day, 두 날짜 사이 일수·개월, 기준일에 N일·개월·년 더하기, 사귄 날 기준 100일·1주년 기념일을 계산합니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://healthfortune.co.kr/dday/">
+  <meta property="og:site_name" content="건강흐름">
+  <link rel="canonical" href="https://healthfortune.co.kr/dday/">
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "날짜 계산기 (D-Day)",
+    "url": "https://healthfortune.co.kr/dday/",
+    "description": "오늘부터 목표일까지 D-Day, 두 날짜 사이 일수·개월, 기준일에 N일·개월·년 더하기, 사귄 날 기준 100일·1주년 기념일을 계산합니다.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "ko",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
+    }
+  }</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"당일을 포함하나요, 제외하나요?","acceptedAnswer":{"@type":"Answer","text":"기본은 두 날짜의 차이(당일 제외)입니다. ‘당일 포함’을 체크하면 시작일을 1일째로 세어 하루를 더합니다. 100일 계산은 당일 포함 방식입니다."}},{"@type":"Question","name":"100일은 어떻게 계산되나요?","acceptedAnswer":{"@type":"Answer","text":"시작일을 1일째로 보아 시작일 + 99일이 100일입니다. ‘기념일’ 탭에서 자동으로 계산됩니다."}},{"@type":"Question","name":"D-0과 D+1은 무슨 뜻인가요?","acceptedAnswer":{"@type":"Answer","text":"D-0(D-DAY)은 바로 그 날, D+1은 그 날의 하루 뒤입니다. D-1은 하루 전입니다."}},{"@type":"Question","name":"1월 31일에 1개월을 더하면요?","acceptedAnswer":{"@type":"Answer","text":"2월에는 31일이 없으므로 그 달 말일(28일 또는 29일)로 보정합니다. 결과 아래에 보정되었다는 안내가 표시됩니다."}},{"@type":"Question","name":"계약 기간의 첫날도 포함하나요?","acceptedAnswer":{"@type":"Answer","text":"민법상 기간은 초일을 넣지 않는 것이 원칙(초일 불산입)이나, 오전 0시부터 시작하거나 나이 계산 등 예외가 있습니다. 중요한 계약은 조문을 확인하세요."}}]}</script>
+
+  <!-- Google AdSense 게시자 ID: ca-pub-7143828779500885 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885"
+     crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/style.css?v=14">
+  <link rel="stylesheet" href="/tool-kit.css?v=1">
+</head>
+<body data-tool="dday">
+  <nav class="back-nav"><a href="/tools.html">← <span data-i18n="tools">생활 도구</span></a></nav>
+
+  <header class="site-header">
+    <h1>📆 날짜 계산기 (D-Day)</h1>
+    <p class="subtitle">D-Day · 기간 · 날짜 더하기 · 기념일을 한 번에</p>
+    <div class="lang-switch" id="tk-langswitch" aria-label="언어 선택"></div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb" id="tk-breadcrumb" aria-label="위치"></nav>
+  </div>
+
+  <div class="ad-container" aria-label="광고">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <main class="container">
+    <div class="tool-layout">
+      <div class="tool-main">
+        <section class="card controls">
+          <div class="field"><label>무엇을 계산할까요?</label><div class="result-actions" style="margin-top:0"><button type="button" class="btn-sm" data-tab="dday" aria-pressed="true">D-Day</button><button type="button" class="btn-sm" data-tab="between">기간</button><button type="button" class="btn-sm" data-tab="addsub">날짜 ±</button><button type="button" class="btn-sm" data-tab="anniv">기념일</button></div></div><div class="dd-panel" data-panel="dday"><div class="field"><label for="ddayTarget">목표일</label><input type="date" id="ddayTarget" data-share></div><div class="field"><label><input type="checkbox" id="ddayIncl" data-share> 당일을 1일째로 세기</label></div></div><div class="dd-panel" data-panel="between" hidden><div class="field"><label for="btStart">시작일</label><input type="date" id="btStart" data-share></div><div class="field"><label for="btEnd">종료일</label><input type="date" id="btEnd" data-share></div><div class="field"><label><input type="checkbox" id="btIncl" data-share> 시작일 포함(당일 1일)</label></div></div><div class="dd-panel" data-panel="addsub" hidden><div class="field"><label for="asBase">기준일</label><input type="date" id="asBase" data-share></div><div class="field"><label for="asN">더하거나 뺄 수</label><div class="input-unit"><input type="text" id="asN" data-share inputmode="numeric" placeholder="예: 100"></div></div><div class="field"><label for="asUnit">단위 / 방향</label><div class="result-actions" style="margin-top:0"><select id="asUnit" data-share><option value="day">일</option><option value="week">주</option><option value="month">개월</option><option value="year">년</option></select><select id="asDir" data-share><option value="plus">후(+)</option><option value="minus">전(−)</option></select></div></div></div><div class="dd-panel" data-panel="anniv" hidden><div class="field"><label for="avStart">시작일 <span class="hint">(사귄 날·출생일 등)</span></label><input type="date" id="avStart" data-share></div></div>
+          <p class="error" id="errorMsg" role="alert"></p>
+          <button id="calcBtn" class="btn-primary" type="button" data-i18n="calc">계산하기</button>
+        </section>
+
+        <section class="card results" id="tk-result-card" hidden>
+          <div id="tk-result"><div id="ddResult"></div></div>
+          <div class="result-actions">
+            <button class="btn-sm" data-tk="copy" data-copy-target="#tk-result"><span data-i18n="copy">결과 복사</span></button>
+            <button class="btn-sm" data-tk="share"><span data-i18n="shareLink">공유 링크</span></button>
+            <button class="btn-sm" data-tk="reset"><span data-i18n="reset">초기화</span></button>
+          </div>
+          <p class="footer-notice" style="margin:10px 0 0" data-i18n="disclaimer">참고용 추정치이며 실제 금액과 다를 수 있습니다.</p>
+        </section>
+
+        <div class="share-bar" id="tk-sharebar"></div>
+        <div class="rating" id="tk-rating"></div>
+
+    <section class="card info">
+      <h2 data-i18n="method">계산 방법</h2>
+      <p>날짜 계산은 ‘당일을 세는지’에 따라 하루 차이가 납니다.</p><ul><li><strong>당일 제외</strong>: 종료일 − 시작일 (두 날짜의 차이). 일반적인 D-Day·기간 계산.</li><li><strong>당일 포함</strong>: 차이 + 1. ‘사귄 지 100일’처럼 시작일을 1일째로 셀 때.</li></ul><p>개월·년을 더할 때 그 달에 같은 날짜가 없으면(예: 1월 31일 + 1개월) 그 달 <strong>말일로 보정</strong>합니다. 민법상 기간 계산도 이 방식을 따릅니다(민법 제155~161조).</p>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="learnMore">더 알아보기</h2>
+      <div class="learn-cards"><div class="learn-card"><h4>D-Day의 뜻</h4><p>D-Day는 기준이 되는 ‘그 날’이고, D-3은 3일 전, D+3은 3일 후입니다. 군사 용어에서 유래했으며 시험·기념일 카운트다운에 널리 쓰입니다.</p></div><div class="learn-card"><h4>100일은 어떻게 세나요</h4><p>보통 사귄 첫날을 1일째로 봅니다. 따라서 100일은 시작일 + 99일입니다. 이 계산기의 ‘기념일’ 탭이 이 방식으로 100·200·1000일과 주년을 계산합니다.</p></div><div class="learn-card"><h4>초일 산입</h4><p>법에서는 기간의 첫날을 넣지 않는 것(초일 불산입)이 원칙이지만, 나이·기념일 등은 첫날을 넣어 셉니다. 계약·소멸시효 등은 민법 규정을 따릅니다.</p></div></div>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="faq">자주 묻는 질문</h2>
+      <h3>Q. 당일을 포함하나요, 제외하나요?</h3>
+      <p>기본은 두 날짜의 차이(당일 제외)입니다. ‘당일 포함’을 체크하면 시작일을 1일째로 세어 하루를 더합니다. 100일 계산은 당일 포함 방식입니다.</p>
+      <h3>Q. 100일은 어떻게 계산되나요?</h3>
+      <p>시작일을 1일째로 보아 시작일 + 99일이 100일입니다. ‘기념일’ 탭에서 자동으로 계산됩니다.</p>
+      <h3>Q. D-0과 D+1은 무슨 뜻인가요?</h3>
+      <p>D-0(D-DAY)은 바로 그 날, D+1은 그 날의 하루 뒤입니다. D-1은 하루 전입니다.</p>
+      <h3>Q. 1월 31일에 1개월을 더하면요?</h3>
+      <p>2월에는 31일이 없으므로 그 달 말일(28일 또는 29일)로 보정합니다. 결과 아래에 보정되었다는 안내가 표시됩니다.</p>
+      <h3>Q. 계약 기간의 첫날도 포함하나요?</h3>
+      <p>민법상 기간은 초일을 넣지 않는 것이 원칙(초일 불산입)이나, 오전 0시부터 시작하거나 나이 계산 등 예외가 있습니다. 중요한 계약은 조문을 확인하세요.</p>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="sources">자료 출처</h2>
+      <ul class="sources-list"><li><a href="https://www.law.go.kr/법령/민법/제155조" target="_blank" rel="noopener">국가법령정보센터 — 민법 제155~161조(기간) ↗</a></li></ul>
+    </section>
+        <section class="card info">
+          <h2 data-i18n="related">관련 도구</h2>
+          <div id="tk-related"></div>
+        </section>
+      </div>
+
+      <aside class="tool-side">
+        <div class="widget"><h3>🔥 <span data-i18n="popular">인기 페이지</span></h3><ul id="tk-popular"></ul></div>
+        <div class="widget"><h3>🆕 <span data-i18n="newTools">신규 출시</span></h3><ul id="tk-new"></ul></div>
+        <div class="widget"><h3>🕘 <span data-i18n="recent">최근 본 페이지</span></h3><ul id="tk-recent"></ul></div>
+        <div class="widget deal"><h3>🏷️ <span data-i18n="deal">할인 정보</span></h3><ul id="tk-deal"><li class="empty" data-i18n="none">아직 없습니다.</li></ul><p class="aff-note" data-i18n="dealNote">※ 일부 링크는 제휴(광고) 링크일 수 있습니다.</p></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="footer-logo">📆</span><span class="footer-brandname">건강흐름</span></div>
+    <nav class="footer-links"><a href="/">홈</a> · <a href="/tools.html">생활 도구</a> · <a href="/about.html">운영자 소개</a> · <a href="/contact.html">문의하기</a> · <a href="/privacy.html">개인정보처리방침</a> · <a href="/terms.html">이용약관</a> · <a href="mailto:leelin12@naver.com">이메일</a></nav>
+    <div class="footer-biz">상호명 굿윌스토어 · 사업자등록번호 631-03-03874 · 대표 이효선 · 주소 부산 사하구 오작로 34<br>연락처 010-2934-1351 · 제휴문의 <a href="mailto:leelin12@naver.com">leelin12@naver.com</a></div>
+    <p class="footer-notice">건강흐름의 모든 콘텐츠는 저작권법의 보호를 받으며, 무단 전재·복사·배포를 금합니다.</p>
+    <p class="footer-copy">© <span id="year"></span> 건강흐름 (healthfortune.co.kr)</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/tools.js"></script>
+  <script src="/data/rates.2026.js"></script>
+  <script src="/data/rates.2027.js"></script>
+  <script src="/data/rates.js"></script>
+  <script src="/js/tool-kit.js"></script>
+  <script src="/dday/dday.js?v=1"></script>
+</body>
+</html>
