@@ -153,7 +153,7 @@ ${method}${learn}${faq}${sources}
   <script src="/data/rates.2027.js"></script>
   <script src="/data/rates.js"></script>
   <script src="/js/tool-kit.js"></script>
-  <script src="/${slug}/${slug}.js?v=1"></script>
+${(spec.extraScripts || []).map(function (s) { return '  <script src="' + s + '"></script>'; }).join("\n")}${(spec.extraScripts || []).length ? "\n" : ""}  <script src="/${slug}/${slug}.js?v=1"></script>
 </body>
 </html>
 `;

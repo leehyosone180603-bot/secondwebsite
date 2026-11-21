@@ -109,5 +109,17 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("다음 생일 2027-05-15", () => { const nb = A.nextBirthday(new Date(1990, 4, 15), new Date(2026, 5, 1)); assert.strictEqual(nb.getFullYear(), 2027); assert.strictEqual(nb.getMonth(), 4); assert.strictEqual(nb.getDate(), 15); });
 })();
 
+/* ── lib/interest (savings) ── */
+(function () {
+  const I = require(path.join(ROOT, "js", "lib", "interest.js"));
+  console.log("interest/savings");
+  test("예금단리 1천만·3%·12개월 → 이자 30만", () => { const r = I.simple(10000000, 3, 12); assert.strictEqual(r.interest, 300000); assert.strictEqual(r.total, 10300000); });
+  test("예금월복리 1천만·3%·12개월 ≈ 이자 304,160", () => approx(I.monthlyCompound(10000000, 3, 12).interest, 304160, 50));
+  test("적금단리 월100만·3%·12개월 → 이자 195,000", () => { const r = I.recurringSimple(1000000, 3, 12); assert.strictEqual(r.principal, 12000000); assert.strictEqual(r.interest, 195000); });
+  test("이자과세 30만×15.4% = 46,200", () => { const t = I.applyTax(300000, "general"); assert.strictEqual(t.tax, 46200); assert.strictEqual(t.net, 253800); });
+  test("비과세 → 세금 0", () => assert.strictEqual(I.applyTax(300000, "none").tax, 0));
+  test("deposit 종합: 세후수령 10,253,800", () => { const r = I.deposit("deposit", "simple", 10000000, 3, 12, "general"); assert.strictEqual(r.total, 10253800); });
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

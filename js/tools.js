@@ -78,8 +78,10 @@
       desc: "입대일로 전역일과 복무 진행률(D-day)을 계산합니다.", related: ["business-days", "age"], public: true },
 
     /* ── 금융·저축 ── */
+    { id: "savings", slug: "savings", name: "예적금 이자 계산기", category: "finance", kind: "calculator", emoji: "🏦",
+      desc: "예금·적금의 단리·복리 이자와 세후 수령액을 계산합니다.", related: ["salary", "lotto-prize"], public: true, isNew: true },
     { id: "lotto-prize", slug: "lotto-prize", name: "로또 당첨금 실수령액", category: "finance", kind: "calculator", emoji: "💰",
-      desc: "당첨금에서 제세금을 뺀 실수령액을 계산합니다.", related: ["salary"], public: true },
+      desc: "당첨금에서 제세금을 뺀 실수령액을 계산합니다.", related: ["savings", "salary"], public: true },
 
     /* ── 부동산 ── */
     { id: "dsr", slug: "dsr", name: "DSR 계산기", category: "realestate", kind: "calculator", emoji: "🏦",
