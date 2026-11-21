@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "gimjang-back-wrist-pain",
+    title: "김장 후 허리 손목 통증, 찜질법과 병원 가야 할 신호",
+    summary: "김장 다음 날 허리·손목이 아프다면? 원인, 냉찜질·온찜질 구분법, 손목터널증후군 신호와 병원 가야 할 기준, 후유증 줄이는 요령까지 정리했습니다.",
+    category: "info",
+    date: "2026-11-21",
+    url: "/posts/gimjang-back-wrist-pain.html",
+    image: "/img/gimjang-back-wrist-pain-1.jpg",
+  },
+  {
     id: "bucheon-birth-support-2026",
     title: "부천시 출산지원금 2026 — 첫째 100만·셋째 200만·넷째 400만원",
     summary: "부천시가 2026년 출산지원금을 첫째부터 지급으로 확대했습니다. 첫째·둘째 100만원, 셋째 200만원, 넷째 이상 400만원. 대상 요건과 주거 지원, 신청 방법을 정리했습니다.",
