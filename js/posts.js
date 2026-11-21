@@ -42,6 +42,33 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "national-health-checkup-year-end-missed",
+    title: "국가건강검진 연말 미수검, 12월 못 받으면 추가등록하세요",
+    summary: "국가건강검진을 12월까지 못 받았다면? 대상 조회, 예약 요령, 직장인 과태료, 다음 해 1월 미수검자 추가등록까지 정리했습니다.",
+    category: "info",
+    date: "2026-11-21",
+    url: "/posts/national-health-checkup-year-end-missed.html",
+    image: "/img/national-health-checkup-year-end-missed-1.jpg",
+  },
+  {
+    id: "tangerine-daily-intake",
+    title: "귤 하루 적정량 몇 개? 효능과 많이 먹으면 생기는 일",
+    summary: "귤 하루 적정량은 중간 크기 2개 안팎. 칼로리, 손이 노래지는 이유, 당뇨·위장 주의점, 곰팡이 없는 귤 보관법까지 정리했습니다.",
+    category: "food",
+    date: "2026-11-21",
+    url: "/posts/tangerine-daily-intake.html",
+    image: "/img/tangerine-daily-intake-1.jpg",
+  },
+  {
+    id: "flu-vs-cold-symptoms",
+    title: "독감 감기 차이 증상 구별법, 병원은 48시간 안에",
+    summary: "갑작스러운 고열·근육통이면 독감일 수 있어요. 감기와 구별하는 증상, 48시간 진료 기준, 등교·출근 기준을 정리했습니다.",
+    category: "info",
+    date: "2026-11-21",
+    url: "/posts/flu-vs-cold-symptoms.html",
+    image: "/img/flu-vs-cold-symptoms-1.jpg",
+  },
+  {
     id: "kim-yoojung-profile",
     title: "김유정 프로필·나이·출연작 — 1999년생, 100일의 거짓말 이가경",
     summary: "배우 김유정 프로필과 나이, 출연작을 정리했습니다. 1999년생, 국민 아역에서 주연 배우로. 100일의 거짓말 이가경 역까지.",
