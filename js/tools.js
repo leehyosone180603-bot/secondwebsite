@@ -102,7 +102,9 @@
 
     /* ── 건강 ── */
     { id: "bmi", slug: "bmi", name: "BMI 계산기", category: "health", kind: "calculator", emoji: "⚖️",
-      desc: "키·몸무게로 체질량지수(BMI)와 대한비만학회 비만 단계를 확인합니다.", related: ["percent"], public: true, isNew: true },
+      desc: "키·몸무게로 체질량지수(BMI)와 대한비만학회 비만 단계를 확인합니다.", related: ["bmr", "percent"], public: true, isNew: true },
+    { id: "bmr", slug: "bmr", name: "기초대사량·칼로리 계산기", category: "health", kind: "calculator", emoji: "🔥",
+      desc: "키·몸무게·나이·성별로 기초대사량(BMR)과 활동별 하루 권장 칼로리(TDEE)를 계산합니다.", related: ["bmi", "percent"], public: true, isNew: true },
 
     /* ── 생성·변환 ── */
     { id: "percent", slug: "percent", name: "퍼센트 계산기", category: "convert", kind: "calculator", emoji: "➗",

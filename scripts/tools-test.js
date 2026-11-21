@@ -223,5 +223,15 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("온도: 32℉ = 0℃", () => near(U.convertTemp("℉", "℃", 32), 0));
 })();
 
+/* ── bmr (기초대사량 Mifflin-St Jeor) ── */
+(function () {
+  const B = require(path.join(ROOT, "tools-src", "bmr.client.js"));
+  console.log("bmr");
+  test("남 170/65/30 → BMR 1567.5", () => assert.strictEqual(B.bmr("male", 65, 170, 30), 1567.5));
+  test("여 160/55/30 → BMR 1239", () => assert.strictEqual(B.bmr("female", 55, 160, 30), 1239));
+  test("TDEE(보통 1.55) = BMR×1.55", () => assert.strictEqual(Math.round(B.tdee(1567.5, 1.55)), 2430));
+  test("성별 차이 = 166(= +5 vs −161)", () => assert.strictEqual(B.bmr("male", 65, 170, 30) - B.bmr("female", 65, 170, 30), 166));
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);
