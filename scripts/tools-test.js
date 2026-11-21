@@ -361,5 +361,42 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("연금계좌 15%(5500만 이하): 900만 → 135만 공제", () => { const r = Y.yearEndTax({ salary: 50000000, pension: 9000000 }, R); assert.strictEqual(r.pensionAcct, 1350000); });
 })();
 
+/* ── split-bill (N빵) ── */
+(function () {
+  const S = require(path.join(ROOT, "tools-src", "split-bill.client.js"));
+  console.log("split-bill");
+  test("10만/4명 균등 = 25,000", () => assert.strictEqual(S.splitEven(100000, 4), 25000));
+  test("10만/3명 1000원 올림 → 34,000·차액 2,000", () => { const r = S.splitRounded(100000, 3, 1000); assert.strictEqual(r.per, 34000); assert.strictEqual(r.collected, 102000); assert.strictEqual(r.surplus, 2000); });
+  test("차등: 10만/4명, 1명 +2만 → 일반2만·추가4만", () => { const w = S.splitWeighted(100000, 4, 1, 20000); assert.strictEqual(w.base, 20000); assert.strictEqual(w.heavy, 40000); });
+})();
+
+/* ── tip (팁) ── */
+(function () {
+  const T = require(path.join(ROOT, "tools-src", "tip.client.js"));
+  console.log("tip");
+  test("5만·15% → 팁 7,500·총 57,500", () => { const r = T.tipCalc(50000, 15, 1); assert.strictEqual(r.tip, 7500); assert.strictEqual(r.total, 57500); });
+  test("5만·10%·2명 → 1인당 27,500·1인팁 2,500", () => { const r = T.tipCalc(50000, 10, 2); assert.strictEqual(r.perPerson, 27500); assert.strictEqual(r.tipPerPerson, 2500); });
+})();
+
+/* ── aspect-ratio (화면 비율) ── */
+(function () {
+  const A = require(path.join(ROOT, "tools-src", "aspect-ratio.client.js"));
+  console.log("aspect-ratio");
+  test("16:9 가로1920 → 세로1080", () => assert.strictEqual(A.heightFor(16, 9, 1920), 1080));
+  test("16:9 세로1080 → 가로1920", () => assert.strictEqual(A.widthFor(16, 9, 1080), 1920));
+  test("1920×1080 약분 → 16:9", () => assert.deepStrictEqual(A.simplify(1920, 1080), [16, 9]));
+  test("gcd(1920,1080)=120", () => assert.strictEqual(A.gcd(1920, 1080), 120));
+})();
+
+/* ── radix (진법) ── */
+(function () {
+  const X = require(path.join(ROOT, "tools-src", "radix.client.js"));
+  console.log("radix");
+  test("10진수 255 → 2진1111_1111·8진377·16진FF·8비트", () => { const r = X.convertAll("255", 10); assert.strictEqual(r.bin, "11111111"); assert.strictEqual(r.oct, "377"); assert.strictEqual(r.hex, "FF"); assert.strictEqual(r.bits, 8); });
+  test("16진 FF → 10진 255", () => assert.strictEqual(X.convertAll("FF", 16).dec, 255));
+  test("2진 1010 → 10진 10", () => assert.strictEqual(X.convertAll("1010", 2).dec, 10));
+  test("유효성: 2진수에 2는 무효, GG(16진) 무효", () => { assert.strictEqual(X.isValid("12", 2), false); assert.strictEqual(X.convertAll("GG", 16), null); });
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

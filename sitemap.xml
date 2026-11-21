@@ -157,6 +157,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://healthfortune.co.kr/split-bill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://healthfortune.co.kr/bmi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -203,6 +208,21 @@
   </url>
   <url>
     <loc>https://healthfortune.co.kr/won-korean/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/tip/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/aspect-ratio/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/radix/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

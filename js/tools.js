@@ -106,6 +106,8 @@
     /* ── 도구 모음 ── */
     { id: "scientific", slug: "scientific", name: "공학용 계산기", category: "toolbox", kind: "tool", emoji: "🧮",
       desc: "삼각함수·로그·거듭제곱을 지원하는 공학용 계산기.", related: ["vat"], public: true },
+    { id: "split-bill", slug: "split-bill", name: "N빵(더치페이) 계산기", category: "toolbox", kind: "calculator", emoji: "🧮",
+      desc: "총액·인원으로 1인당 금액과 1000원 단위 올림 정산, 일부 추가부담까지 계산합니다.", related: ["tip", "percent"], public: true, isNew: true },
     /* 로또 번호 추출기: 스낵 게임류 제외 요청 → 메뉴·관련도구에서 숨김(기존 페이지는 유지) */
     { id: "lotto", slug: "lotto", name: "로또 번호 추출기", category: "toolbox", kind: "tool", emoji: "🎱",
       desc: "1~45 중 중복 없이 번호를 무작위로 추첨합니다.", related: [], public: false },
@@ -133,6 +135,12 @@
       desc: "정가·할인율로 할인가를 구하거나, 정가·판매가로 할인율을 역산합니다.", related: ["percent", "vat"], public: true, isNew: true },
     { id: "won-korean", slug: "won-korean", name: "금액 한글 변환기", category: "convert", kind: "calculator", emoji: "🧾",
       desc: "숫자 금액을 '일금 삼천오백만원정' 한글 표기로 바꿔 줍니다. 계약서·영수증용.", related: ["percent", "discount"], public: true, isNew: true },
+    { id: "tip", slug: "tip", name: "팁 계산기", category: "convert", kind: "calculator", emoji: "💸",
+      desc: "금액·팁 비율·인원으로 팁 금액과 총액, 1인당 부담을 계산합니다.", related: ["split-bill", "percent"], public: true, isNew: true },
+    { id: "aspect-ratio", slug: "aspect-ratio", name: "화면 비율 계산기", category: "convert", kind: "calculator", emoji: "🖥️",
+      desc: "가로세로 비율과 한 변 길이로 나머지 변을 계산합니다. 16:9 등 해상도 프리셋 제공.", related: ["unit-converter", "percent"], public: true, isNew: true },
+    { id: "radix", slug: "radix", name: "진법 변환기", category: "convert", kind: "calculator", emoji: "🔢",
+      desc: "2·8·10·16진수를 서로 변환합니다. 비트 수 정보도 함께 표시.", related: ["unit-converter", "percent"], public: true, isNew: true },
 
     /* ── 정부 정책 ── */
     { id: "support-check", slug: "support-check", name: "민생지원금 대상 조회", category: "policy", kind: "tool", emoji: "📋",

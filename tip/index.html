@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팁 계산기 - 팁 금액·총액·1인당 부담 계산 | 건강흐름</title>
+  <meta name="description" content="음식값과 팁 비율, 인원을 넣으면 팁 금액과 총액, 1인당 부담액을 계산합니다. 해외여행·레스토랑 팁 계산에 편리합니다.">
+  <meta name="keywords" content="팁 계산기, 팁 계산, 15% 팁, 해외 팁, 레스토랑 팁, 팁 1인당">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="팁 계산기">
+  <meta property="og:description" content="음식값과 팁 비율, 인원을 넣으면 팁 금액과 총액, 1인당 부담액을 계산합니다. 해외여행·레스토랑 팁 계산에 편리합니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://healthfortune.co.kr/tip/">
+  <meta property="og:site_name" content="건강흐름">
+  <link rel="canonical" href="https://healthfortune.co.kr/tip/">
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "팁 계산기",
+    "url": "https://healthfortune.co.kr/tip/",
+    "description": "음식값과 팁 비율, 인원을 넣으면 팁 금액과 총액, 1인당 부담액을 계산합니다. 해외여행·레스토랑 팁 계산에 편리합니다.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "ko",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
+    }
+  }</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"팁은 보통 몇 % 내나요?","acceptedAnswer":{"@type":"Answer","text":"미국 기준 점심 10~15%, 저녁 15~20%가 일반적입니다. 서비스가 특히 좋으면 20% 이상 내기도 합니다."}},{"@type":"Question","name":"팁을 여러 명이 나눠 내려면?","acceptedAnswer":{"@type":"Answer","text":"인원을 입력하면 총액(음식값+팁)을 인원수로 나눠 1인당 부담액을 보여줍니다. 1인당 팁도 따로 표시됩니다."}},{"@type":"Question","name":"한국에서도 팁을 내나요?","acceptedAnswer":{"@type":"Answer","text":"일반적으로 내지 않습니다. 대부분 봉사료가 가격에 포함돼 있습니다. 해외여행이나 외국계 고급 레스토랑에서 주로 필요합니다."}}]}</script>
+
+  <!-- Google AdSense 게시자 ID: ca-pub-7143828779500885 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885"
+     crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/style.css?v=14">
+  <link rel="stylesheet" href="/tool-kit.css?v=1">
+</head>
+<body data-tool="tip">
+  <nav class="back-nav"><a href="/tools.html">← <span data-i18n="tools">생활 도구</span></a></nav>
+
+  <header class="site-header">
+    <h1>💸 팁 계산기</h1>
+    <p class="subtitle">팁 금액·총액·1인당 부담 계산</p>
+    <div class="lang-switch" id="tk-langswitch" aria-label="언어 선택"></div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb" id="tk-breadcrumb" aria-label="위치"></nav>
+  </div>
+
+  <div class="ad-container" aria-label="광고">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <main class="container">
+    <div class="tool-layout">
+      <div class="tool-main">
+        <section class="card controls">
+          <div class="intro"><p>금액과 팁 비율을 넣으면 <strong>팁 금액</strong>과 <strong>총액</strong>을 계산합니다. 인원을 넣으면 1인당 부담까지 나눠 줍니다.</p></div>
+          <div class="field"><label for="amount">금액 <span class="hint">(음식값·서비스 금액)</span></label><div class="input-unit"><input type="text" id="amount" data-num data-share inputmode="numeric" placeholder="예: 50,000"><span class="unit">원</span></div></div><div class="field"><label for="pct">팁 비율</label><div class="input-unit"><input type="text" id="pct" data-share inputmode="decimal" value="15" placeholder="예: 15"><span class="unit">%</span></div></div><div class="field"><label for="people">인원 <span class="hint">(나눠 낼 때)</span></label><div class="input-unit"><input type="text" id="people" data-share inputmode="numeric" value="1" placeholder="1"><span class="unit">명</span></div></div>
+          <p class="error" id="errorMsg" role="alert"></p>
+          <button id="calcBtn" class="btn-primary" type="button" data-i18n="calc">계산하기</button>
+        </section>
+
+        <section class="card results" id="tk-result-card" hidden>
+          <div id="tk-result"><div id="tipResult"></div></div>
+          <div class="result-actions">
+            <button class="btn-sm" data-tk="copy" data-copy-target="#tk-result"><span data-i18n="copy">결과 복사</span></button>
+            <button class="btn-sm" data-tk="share"><span data-i18n="shareLink">공유 링크</span></button>
+            <button class="btn-sm" data-tk="reset"><span data-i18n="reset">초기화</span></button>
+          </div>
+          <p class="footer-notice" style="margin:10px 0 0" data-i18n="disclaimer">참고용 추정치이며 실제 금액과 다를 수 있습니다.</p>
+        </section>
+
+        <div class="share-bar" id="tk-sharebar"></div>
+        <div class="rating" id="tk-rating"></div>
+
+    <section class="card info">
+      <h2 data-i18n="method">계산 방법</h2>
+      <p>팁 계산은 간단합니다.</p><ul><li><strong>팁</strong> = 금액 × 팁 비율 ÷ 100</li><li><strong>총액</strong> = 금액 + 팁</li><li><strong>1인당</strong> = 총액 ÷ 인원</li></ul><p>미국 등에서는 보통 15~20%의 팁을 냅니다. 점심은 10~15%, 저녁·고급 레스토랑은 18~20%가 일반적입니다.</p>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="learnMore">더 알아보기</h2>
+      <div class="learn-cards"><div class="learn-card"><h4>나라별 팁 문화</h4><p>미국·캐나다는 15~20% 팁이 관례입니다. 유럽은 5~10% 또는 반올림, 일본·한국은 대개 팁이 없습니다. 여행 전 현지 관습을 확인하세요.</p></div><div class="learn-card"><h4>세전 vs 세후</h4><p>팁은 보통 세전 금액 기준으로 계산하지만, 편의상 세후(최종 결제액) 기준으로 내기도 합니다. 이 계산기는 입력한 금액 기준으로 계산합니다.</p></div><div class="learn-card"><h4>단체 자동 팁</h4><p>미국 레스토랑은 6인 이상 단체에 18% 안팎의 팁(gratuity)을 자동 부과하기도 합니다. 영수증에 이미 포함됐는지 확인하세요.</p></div></div>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="faq">자주 묻는 질문</h2>
+      <h3>Q. 팁은 보통 몇 % 내나요?</h3>
+      <p>미국 기준 점심 10~15%, 저녁 15~20%가 일반적입니다. 서비스가 특히 좋으면 20% 이상 내기도 합니다.</p>
+      <h3>Q. 팁을 여러 명이 나눠 내려면?</h3>
+      <p>인원을 입력하면 총액(음식값+팁)을 인원수로 나눠 1인당 부담액을 보여줍니다. 1인당 팁도 따로 표시됩니다.</p>
+      <h3>Q. 한국에서도 팁을 내나요?</h3>
+      <p>일반적으로 내지 않습니다. 대부분 봉사료가 가격에 포함돼 있습니다. 해외여행이나 외국계 고급 레스토랑에서 주로 필요합니다.</p>
+    </section>
+        <section class="card info">
+          <h2 data-i18n="related">관련 도구</h2>
+          <div id="tk-related"></div>
+        </section>
+      </div>
+
+      <aside class="tool-side">
+        <div class="widget"><h3>🔥 <span data-i18n="popular">인기 페이지</span></h3><ul id="tk-popular"></ul></div>
+        <div class="widget"><h3>🆕 <span data-i18n="newTools">신규 출시</span></h3><ul id="tk-new"></ul></div>
+        <div class="widget"><h3>🕘 <span data-i18n="recent">최근 본 페이지</span></h3><ul id="tk-recent"></ul></div>
+        <div class="widget deal"><h3>🏷️ <span data-i18n="deal">할인 정보</span></h3><ul id="tk-deal"><li class="empty" data-i18n="none">아직 없습니다.</li></ul><p class="aff-note" data-i18n="dealNote">※ 일부 링크는 제휴(광고) 링크일 수 있습니다.</p></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="footer-logo">💸</span><span class="footer-brandname">건강흐름</span></div>
+    <nav class="footer-links"><a href="/">홈</a> · <a href="/tools.html">생활 도구</a> · <a href="/about.html">운영자 소개</a> · <a href="/contact.html">문의하기</a> · <a href="/privacy.html">개인정보처리방침</a> · <a href="/terms.html">이용약관</a> · <a href="mailto:leelin12@naver.com">이메일</a></nav>
+    <div class="footer-biz">상호명 굿윌스토어 · 사업자등록번호 631-03-03874 · 대표 이효선 · 주소 부산 사하구 오작로 34<br>연락처 010-2934-1351 · 제휴문의 <a href="mailto:leelin12@naver.com">leelin12@naver.com</a></div>
+    <p class="footer-notice">건강흐름의 모든 콘텐츠는 저작권법의 보호를 받으며, 무단 전재·복사·배포를 금합니다.</p>
+    <p class="footer-copy">© <span id="year"></span> 건강흐름 (healthfortune.co.kr)</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/tools.js"></script>
+  <script src="/data/rates.2026.js"></script>
+  <script src="/data/rates.2027.js"></script>
+  <script src="/data/rates.js"></script>
+  <script src="/js/tool-kit.js"></script>
+  <script src="/tip/tip.js?v=1"></script>
+</body>
+</html>
