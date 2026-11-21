@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>퍼센트 계산기 - X의 Y%, 비율·증감률 바로 계산 | 건강흐름</title>
+  <meta name="description" content="기준값의 몇 %, 전체 중 비율, 증감률을 바로 계산합니다. 입력값을 공유 링크로 저장해 같은 결과를 다시 열 수 있습니다.">
+  <meta name="keywords" content="퍼센트 계산기, 비율 계산, 할인율, 증감률, 몇 퍼센트, 백분율">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="퍼센트 계산기">
+  <meta property="og:description" content="기준값의 몇 %, 전체 중 비율, 증감률을 바로 계산합니다. 입력값을 공유 링크로 저장해 같은 결과를 다시 열 수 있습니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://healthfortune.co.kr/percent/">
+  <meta property="og:site_name" content="건강흐름">
+  <link rel="canonical" href="https://healthfortune.co.kr/percent/">
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "퍼센트 계산기",
+    "url": "https://healthfortune.co.kr/percent/",
+    "description": "기준값의 몇 %, 전체 중 비율, 증감률을 바로 계산합니다. 입력값을 공유 링크로 저장해 같은 결과를 다시 열 수 있습니다.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "ko",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
+    }
+  }</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"‘X의 Y%’는 어떻게 계산하나요?","acceptedAnswer":{"@type":"Answer","text":"X × Y ÷ 100 입니다. 예를 들어 30,000의 15%는 30,000 × 15 ÷ 100 = 4,500입니다."}},{"@type":"Question","name":"10% 할인가는 어떻게 구하나요?","acceptedAnswer":{"@type":"Answer","text":"정가에서 ‘Y% 감소 후’ 값을 보면 됩니다. 정가 × (1 − 0.1) = 정가의 90%입니다."}},{"@type":"Question","name":"입력한 값을 저장할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"‘공유 링크’ 버튼을 누르면 입력값이 주소(URL)에 담깁니다. 그 링크를 열면 같은 결과가 다시 계산됩니다. 서버에 저장되지는 않습니다."}}]}</script>
+
+  <!-- Google AdSense 게시자 ID: ca-pub-7143828779500885 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885"
+     crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/style.css?v=14">
+  <link rel="stylesheet" href="/tool-kit.css?v=1">
+</head>
+<body data-tool="percent">
+  <nav class="back-nav"><a href="/tools.html">← <span data-i18n="tools">생활 도구</span></a></nav>
+
+  <header class="site-header">
+    <h1>➗ 퍼센트 계산기</h1>
+    <p class="subtitle">X의 Y%, 전체 중 비율, 증감률을 한 번에</p>
+    <div class="lang-switch" id="tk-langswitch" aria-label="언어 선택"></div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb" id="tk-breadcrumb" aria-label="위치"></nav>
+  </div>
+
+  <div class="ad-container" aria-label="광고">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <main class="container">
+    <div class="tool-layout">
+      <div class="tool-main">
+        <section class="card controls">
+          <div class="intro"><p>기준값 <strong>X</strong>와 비율 <strong>Y(%)</strong>를 넣으면 <b>X의 Y%</b>와 <b>Y% 증가·감소한 값</b>을 바로 계산합니다.</p></div>
+          <div class="field"><label for="base">기준값 X</label><div class="input-unit"><input type="text" id="base" data-num data-share inputmode="numeric" placeholder="예: 50,000"></div></div><div class="field"><label for="pct">비율 Y <span class="hint">(%)</span></label><div class="input-unit"><input type="text" id="pct" data-share inputmode="decimal" placeholder="예: 10"><span class="unit">%</span></div></div>
+          <p class="error" id="errorMsg" role="alert"></p>
+          <button id="calcBtn" class="btn-primary" type="button" data-i18n="calc">계산하기</button>
+        </section>
+
+        <section class="card results" id="tk-result-card" hidden>
+          <div id="tk-result"><div class="result-hero"><div class="big"><span id="rMain">0</span></div><p class="result-sub" id="rExpr"></p></div><table class="calc-table"><tbody><tr><th>Y% 증가 후 (X + X·Y%)</th><td><span id="rInc"></span></td></tr><tr><th>Y% 감소 후 (X − X·Y%)</th><td><span id="rDec"></span></td></tr></tbody></table></div>
+          <div class="result-actions">
+            <button class="btn-sm" data-tk="copy" data-copy-target="#tk-result"><span data-i18n="copy">결과 복사</span></button>
+            <button class="btn-sm" data-tk="share"><span data-i18n="shareLink">공유 링크</span></button>
+            <button class="btn-sm" data-tk="reset"><span data-i18n="reset">초기화</span></button>
+          </div>
+          <p class="footer-notice" style="margin:10px 0 0" data-i18n="disclaimer">참고용 추정치이며 실제 금액과 다를 수 있습니다.</p>
+        </section>
+
+        <div class="share-bar" id="tk-sharebar"></div>
+        <div class="rating" id="tk-rating"></div>
+
+    <section class="card info">
+      <h2 data-i18n="method">계산 방법</h2>
+      <p>백분율은 전체를 100으로 봤을 때의 비율입니다. 기본 공식은 다음과 같습니다.</p><ul><li><strong>X의 Y%</strong> = X × Y ÷ 100</li><li><strong>Y% 증가</strong> = X + (X × Y ÷ 100)</li><li><strong>Y% 감소</strong> = X − (X × Y ÷ 100)</li></ul><p>예) 50,000원의 10% = 50,000 × 10 ÷ 100 = <strong>5,000원</strong>. 10% 할인가는 45,000원입니다.</p>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="learnMore">더 알아보기</h2>
+      <div class="learn-cards"><div class="learn-card"><h4>퍼센트(%)란?</h4><p>백분율은 전체를 100으로 놓았을 때 차지하는 비율입니다. 10%는 100분의 10, 즉 0.1을 뜻합니다.</p></div><div class="learn-card"><h4>증감률 읽는 법</h4><p>값이 100에서 120으로 늘면 증감률은 +20%, 120에서 100으로 줄면 약 −16.7%입니다. 기준값이 분모라는 점이 핵심입니다.</p></div><div class="learn-card"><h4>할인율과 할인가</h4><p>정가 × (1 − 할인율)이 할인가입니다. 20% 할인이면 정가의 80%를 냅니다.</p></div></div>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="faq">자주 묻는 질문</h2>
+      <h3>Q. ‘X의 Y%’는 어떻게 계산하나요?</h3>
+      <p>X × Y ÷ 100 입니다. 예를 들어 30,000의 15%는 30,000 × 15 ÷ 100 = 4,500입니다.</p>
+      <h3>Q. 10% 할인가는 어떻게 구하나요?</h3>
+      <p>정가에서 ‘Y% 감소 후’ 값을 보면 됩니다. 정가 × (1 − 0.1) = 정가의 90%입니다.</p>
+      <h3>Q. 입력한 값을 저장할 수 있나요?</h3>
+      <p>‘공유 링크’ 버튼을 누르면 입력값이 주소(URL)에 담깁니다. 그 링크를 열면 같은 결과가 다시 계산됩니다. 서버에 저장되지는 않습니다.</p>
+    </section>
+        <section class="card info">
+          <h2 data-i18n="related">관련 도구</h2>
+          <div id="tk-related"></div>
+        </section>
+      </div>
+
+      <aside class="tool-side">
+        <div class="widget"><h3>🔥 <span data-i18n="popular">인기 페이지</span></h3><ul id="tk-popular"></ul></div>
+        <div class="widget"><h3>🆕 <span data-i18n="newTools">신규 출시</span></h3><ul id="tk-new"></ul></div>
+        <div class="widget"><h3>🕘 <span data-i18n="recent">최근 본 페이지</span></h3><ul id="tk-recent"></ul></div>
+        <div class="widget deal"><h3>🏷️ <span data-i18n="deal">할인 정보</span></h3><ul id="tk-deal"><li class="empty" data-i18n="none">아직 없습니다.</li></ul><p class="aff-note" data-i18n="dealNote">※ 일부 링크는 제휴(광고) 링크일 수 있습니다.</p></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="footer-logo">➗</span><span class="footer-brandname">건강흐름</span></div>
+    <nav class="footer-links"><a href="/">홈</a> · <a href="/tools.html">생활 도구</a> · <a href="/about.html">운영자 소개</a> · <a href="/contact.html">문의하기</a> · <a href="/privacy.html">개인정보처리방침</a> · <a href="/terms.html">이용약관</a> · <a href="mailto:leelin12@naver.com">이메일</a></nav>
+    <div class="footer-biz">상호명 굿윌스토어 · 사업자등록번호 631-03-03874 · 대표 이효선 · 주소 부산 사하구 오작로 34<br>연락처 010-2934-1351 · 제휴문의 <a href="mailto:leelin12@naver.com">leelin12@naver.com</a></div>
+    <p class="footer-notice">건강흐름의 모든 콘텐츠는 저작권법의 보호를 받으며, 무단 전재·복사·배포를 금합니다.</p>
+    <p class="footer-copy">© <span id="year"></span> 건강흐름 (healthfortune.co.kr)</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/tools.js"></script>
+  <script src="/js/tool-kit.js"></script>
+  <script src="/percent/percent.js?v=1"></script>
+</body>
+</html>

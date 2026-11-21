@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>생활 계산기·도구 모음 - 세금·급여, 날짜, 금융, 부동산, 건강 | 건강흐름</title>
+  <meta name="description" content="연봉 실수령액, 부가세, 퇴직금, 만 나이, DSR, 전세자금대출 등 생활에 필요한 계산기와 도구를 카테고리별로 모았습니다. 모두 무료, 브라우저에서 즉시 계산됩니다.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="생활 계산기·도구 모음">
+  <meta property="og:description" content="세금·급여, 날짜·기간, 금융, 부동산, 건강 계산기를 한곳에.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://healthfortune.co.kr/tools.html">
+  <meta property="og:site_name" content="건강흐름">
+  <link rel="canonical" href="https://healthfortune.co.kr/tools.html">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css?v=14">
+  <link rel="stylesheet" href="/tool-kit.css?v=1">
+  <style>
+    .hub-search { max-width: 520px; margin: 0 auto 8px; }
+    .hub-search input { width: 100%; padding: 13px 16px; border: 1px solid var(--border); border-radius: 12px; font-size: 1rem; }
+    .cat-nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 0 0 18px; }
+    .cat-nav a { font-size: .86rem; color: var(--muted); text-decoration: none; border: 1px solid var(--border); border-radius: 20px; padding: 6px 13px; background: #fff; }
+    .cat-nav a:hover { border-color: var(--primary); color: var(--primary); }
+    .cat-block { margin: 0 0 28px; }
+    .cat-block > h2 { display: flex; align-items: center; gap: 8px; font-size: 1.2rem; margin: 0 0 14px; padding-top: 8px; }
+    .cat-block .cnt { font-size: .8rem; color: var(--muted); font-weight: 400; }
+    .tool-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+    .tool-card { display: flex; gap: 12px; align-items: flex-start; border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; text-decoration: none; color: var(--text); background: var(--card); box-shadow: var(--shadow); }
+    .tool-card:hover { border-color: var(--primary); transform: translateY(-1px); }
+    .tool-card .ico { font-size: 1.6rem; line-height: 1; }
+    .tool-card .t { font-weight: 700; font-size: .96rem; display: flex; align-items: center; gap: 6px; }
+    .tool-card .d { font-size: .8rem; color: var(--muted); margin-top: 3px; line-height: 1.5; }
+    .tool-card .badge { font-size: .64rem; font-weight: 700; color: #fff; background: #2f9e6f; border-radius: 6px; padding: 1px 6px; }
+    .hub-empty { text-align: center; color: var(--muted); padding: 30px; }
+  </style>
+</head>
+<body>
+  <nav class="back-nav"><a href="/">← 홈</a></nav>
+  <header class="site-header">
+    <h1>🧰 생활 계산기·도구 모음</h1>
+    <p class="subtitle">세금·급여부터 부동산·건강까지, 필요한 계산을 한곳에서</p>
+  </header>
+
+  <div class="ad-container" aria-label="광고">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <main class="container">
+    <div class="hub-search"><input type="search" id="hubSearch" placeholder="🔍 도구 이름·설명으로 검색 (예: 연봉, 부가세, 나이)" aria-label="도구 검색"></div>
+    <nav class="cat-nav" id="catNav" aria-label="카테고리"></nav>
+    <div id="hubBody"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="footer-logo">🧰</span><span class="footer-brandname">건강흐름</span></div>
+    <nav class="footer-links"><a href="/">홈</a> · <a href="/tools.html">생활 도구</a> · <a href="/about.html">운영자 소개</a> · <a href="/contact.html">문의하기</a> · <a href="/privacy.html">개인정보처리방침</a> · <a href="/terms.html">이용약관</a></nav>
+    <p class="footer-copy">© <span id="year"></span> 건강흐름 (healthfortune.co.kr)</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <script src="/js/tools.js"></script>
+  <script>
+  (function () {
+    var TOOLS = (window.TOOLS || []).filter(function (t) { return t.public !== false; });
+    var CATS = window.TOOL_CATEGORIES || [];
+    function esc(s){ return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+    function card(t){
+      return '<a class="tool-card" href="/'+t.slug+'/"><span class="ico">'+(t.emoji||"🔧")+'</span>'+
+        '<span><span class="t">'+esc(t.name)+(t.isNew?' <span class="badge">NEW</span>':'')+'</span>'+
+        '<span class="d">'+esc(t.desc||"")+'</span></span></a>';
+    }
+    var nav = document.getElementById("catNav"), body = document.getElementById("hubBody");
+    function render(q){
+      q = (q||"").trim().toLowerCase();
+      var navHtml = "", bodyHtml = "", shown = 0;
+      CATS.forEach(function(c){
+        var list = TOOLS.filter(function(t){ return t.category===c.id; });
+        if (q) list = list.filter(function(t){ return (t.name+" "+(t.desc||"")).toLowerCase().indexOf(q)>=0; });
+        if (!list.length) return;
+        shown += list.length;
+        if (!q) navHtml += '<a href="#'+c.id+'">'+c.emoji+' '+esc(c.name)+'</a>';
+        bodyHtml += '<section class="cat-block" id="'+c.id+'"><h2>'+c.emoji+' '+esc(c.name)+
+          ' <span class="cnt">'+list.length+'개</span></h2><div class="tool-grid">'+
+          list.map(card).join("")+'</div></section>';
+      });
+      nav.innerHTML = q ? "" : navHtml;
+      body.innerHTML = shown ? bodyHtml : '<p class="hub-empty">검색 결과가 없습니다.</p>';
+    }
+    render("");
+    var si = document.getElementById("hubSearch");
+    si.addEventListener("input", function(){ render(si.value); });
+    if (location.hash) { var el = document.getElementById(location.hash.slice(1)); if (el) el.scrollIntoView(); }
+  })();
+  </script>
+</body>
+</html>

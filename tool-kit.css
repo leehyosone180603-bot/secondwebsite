@@ -1,0 +1,106 @@
+/* ============================================================
+   tool-kit.css — 생활 도구 공통 컴포넌트 스타일
+   style.css(루트) 를 먼저 불러온 뒤 이 파일을 불러온다.
+   색/그림자 토큰은 style.css :root 변수를 그대로 사용한다.
+   ============================================================ */
+
+/* 레이아웃: 본문 + 사이드 위젯 */
+.tool-layout { display: grid; grid-template-columns: minmax(0,1fr) 300px; gap: 24px; align-items: start; }
+.tool-main { min-width: 0; }
+.tool-side { display: flex; flex-direction: column; gap: 16px; position: sticky; top: 16px; }
+@media (max-width: 900px) { .tool-layout { grid-template-columns: 1fr; } .tool-side { position: static; } }
+
+/* 브레드크럼 */
+.breadcrumb { font-size: .82rem; color: var(--muted); margin: 0 0 10px; display: flex; flex-wrap: wrap; gap: 4px; }
+.breadcrumb a { color: var(--muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--primary); text-decoration: underline; }
+.breadcrumb .sep { opacity: .5; }
+
+/* 언어 선택 */
+.lang-switch { display: inline-flex; gap: 2px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.lang-switch button { border: 0; background: #fff; color: var(--muted); font-size: .76rem; padding: 4px 9px; cursor: pointer; }
+.lang-switch button[aria-pressed="true"] { background: var(--primary); color: #fff; }
+
+/* 입력: 단위 표시 래퍼 */
+.field { margin: 0 0 14px; }
+.field > label { display: block; font-weight: 600; margin: 0 0 6px; font-size: .92rem; color: var(--text); }
+.field .hint { font-weight: 400; color: var(--muted); font-size: .8rem; margin-left: 4px; }
+.input-unit { position: relative; display: flex; align-items: center; }
+.input-unit input { flex: 1; width: 100%; }
+.input-unit .unit { position: absolute; right: 12px; color: var(--muted); font-size: .9rem; pointer-events: none; }
+.input-unit input[data-unit] { padding-right: 44px; }
+
+/* 결과 액션 바(복사·초기화·공유) */
+.result-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.btn-sm { border: 1px solid var(--border); background: #fff; color: var(--text); font-size: .84rem; font-weight: 600;
+  padding: 8px 14px; border-radius: 10px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.btn-sm:hover { border-color: var(--primary); color: var(--primary); }
+.btn-sm.ok { border-color: #2f9e6f; color: #2f9e6f; }
+
+/* 단계형 마법사 */
+.wizard-steps { display: flex; gap: 6px; margin: 0 0 14px; }
+.wizard-steps .dot { flex: 1; height: 6px; border-radius: 4px; background: var(--border); }
+.wizard-steps .dot.done { background: var(--primary); }
+.wizard-nav { display: flex; justify-content: space-between; gap: 8px; margin-top: 14px; }
+
+/* 공유 바 */
+.share-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 18px 0 0; }
+.share-bar .share-label { font-size: .84rem; color: var(--muted); font-weight: 600; margin-right: 2px; }
+.share-btn { width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--border); background: #fff;
+  display: inline-flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1rem; }
+.share-btn:hover { border-color: var(--primary); }
+.share-btn.kakao { background: #fee500; border-color: #fee500; }
+.share-btn.x { background: #111; border-color: #111; color: #fff; }
+.share-btn.tg { background: #2aabee; border-color: #2aabee; color: #fff; }
+
+/* 평가하기 */
+.rating { display: flex; align-items: center; gap: 10px; margin: 18px 0 0; padding: 14px 16px; background: #fafbff; border: 1px solid var(--border); border-radius: 12px; }
+.rating .q { font-weight: 600; font-size: .9rem; }
+.rating .btns { display: flex; gap: 8px; }
+.rating button { border: 1px solid var(--border); background: #fff; border-radius: 20px; padding: 6px 14px; cursor: pointer; font-size: .86rem; }
+.rating button[aria-pressed="true"] { background: var(--primary); color: #fff; border-color: var(--primary); }
+.rating .thanks { color: #2f9e6f; font-weight: 600; font-size: .86rem; }
+
+/* 섹션: 더 알아보기 카드 */
+.learn-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.learn-card { border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; background: #fff; }
+.learn-card h4 { margin: 0 0 6px; font-size: .95rem; }
+.learn-card p { margin: 0; font-size: .86rem; color: var(--muted); line-height: 1.6; }
+
+/* 자료 출처 */
+.sources-list { list-style: none; padding: 0; margin: 0; }
+.sources-list li { padding: 6px 0; border-top: 1px solid var(--border); font-size: .88rem; }
+.sources-list li:first-child { border-top: 0; }
+.sources-list a { color: var(--primary); text-decoration: none; }
+.sources-list a:hover { text-decoration: underline; }
+
+/* 관련 도구 그리드 */
+.related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+.related-item { display: flex; gap: 10px; align-items: center; border: 1px solid var(--border); border-radius: 12px;
+  padding: 12px 14px; text-decoration: none; color: var(--text); background: #fff; }
+.related-item:hover { border-color: var(--primary); box-shadow: var(--shadow); }
+.related-item .ico { font-size: 1.3rem; }
+.related-item .t { font-weight: 600; font-size: .9rem; }
+.related-item .d { font-size: .76rem; color: var(--muted); margin-top: 2px; }
+
+/* 사이드 위젯 */
+.widget { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow); }
+.widget h3 { margin: 0 0 10px; font-size: .92rem; display: flex; align-items: center; gap: 6px; }
+.widget ul { list-style: none; padding: 0; margin: 0; }
+.widget li { padding: 7px 0; border-top: 1px solid var(--border); font-size: .86rem; }
+.widget li:first-child { border-top: 0; }
+.widget a { text-decoration: none; color: var(--text); display: flex; gap: 8px; align-items: center; }
+.widget a:hover { color: var(--primary); }
+.widget .badge { font-size: .66rem; font-weight: 700; color: #fff; background: #2f9e6f; border-radius: 6px; padding: 1px 6px; }
+.widget.deal .aff-note { font-size: .7rem; color: var(--muted); margin: 8px 0 0; }
+.widget .empty { color: var(--muted); font-size: .82rem; }
+
+/* 토스트(복사 완료 등) */
+.toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: #111; color: #fff;
+  font-size: .86rem; padding: 10px 16px; border-radius: 10px; opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 50; }
+.toast.show { opacity: .95; }
+
+@media (prefers-color-scheme: dark) {
+  .learn-card, .related-item, .btn-sm, .share-btn { background: #1a1f2b; }
+  .rating, .widget.deal .aff-note { background: #141821; }
+}

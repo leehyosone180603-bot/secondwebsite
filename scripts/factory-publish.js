@@ -212,8 +212,11 @@ function regenFeeds() {
   rss += `</channel>\n</rss>\n`;
   fs.writeFileSync(path.join(ROOT, "rss.xml"), rss);
   // SITEMAP
-  const CALCS = ["age", "birth-year", "business-days", "military", "scientific", "salary", "severance", "vat", "freelancer", "lotto", "lotto-prize", "dsr", "jeonse-loan", "support-check"];
-  let urls = [{ loc: `${BASE}/`, changefreq: "daily", priority: "1.0" }, { loc: `${BASE}/calculators.html`, changefreq: "weekly", priority: "0.9" }];
+  // 도구 URL 은 레지스트리(js/tools.js)에서 단일 소스로 생성
+  let CALCS;
+  try { CALCS = require(path.join(ROOT, "js", "tools.js")).publicTools().map(t => t.slug); }
+  catch (e) { CALCS = ["age", "birth-year", "business-days", "military", "scientific", "salary", "severance", "vat", "freelancer", "lotto", "lotto-prize", "dsr", "jeonse-loan", "support-check"]; }
+  let urls = [{ loc: `${BASE}/`, changefreq: "daily", priority: "1.0" }, { loc: `${BASE}/tools.html`, changefreq: "weekly", priority: "0.9" }, { loc: `${BASE}/calculators.html`, changefreq: "weekly", priority: "0.9" }];
   for (const slug of NAV) if ((CATEGORIES[slug] || {}).ready) urls.push({ loc: `${BASE}/category.html?cat=${slug}`, changefreq: "daily", priority: "0.8" });
   for (const c of CALCS) urls.push({ loc: `${BASE}/${c}/`, changefreq: "monthly", priority: "0.8" });
   for (const p of sorted) urls.push({ loc: `${BASE}${p.url}`, lastmod: p.date, changefreq: "monthly", priority: "0.7" });
@@ -313,4 +316,5 @@ function main() {
   console.log("URL: " + url);
   console.log("티스토리 요약: " + jsonPath + ".tistory.html");
 }
-main();
+if (require.main === module) main();
+module.exports = { regenFeeds: regenFeeds };
