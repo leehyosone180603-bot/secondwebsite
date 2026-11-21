@@ -39,12 +39,13 @@ const ADS_SHOW = true;
 const ADSENSE = {
   client: "ca-pub-7143828779500885", // 게시자 ID
   slots: {
-    header: "0000000000",        // 상단 배너
-    inList: "0000000000",        // 기사 목록 상단
-    sidebar: "0000000000",       // 우측 사이드바
-    inArticle: "0000000000",     // 글 본문 중간
-    articleBottom: "3265568294", // ★ 글 하단 정사각형(글마다 1개)
-    bottomBanner: "1082258087",  // ★ 콘텐츠 맨 아래 가로 배너
+    header: "0000000000",         // 상단 배너
+    inList: "0000000000",         // 기사 목록 상단
+    sidebar: "3265568294",        // ★ 우측 사이드바 (정사각형 유닛 재사용 — 전용 슬롯 생기면 교체)
+    inArticle: "0000000000",      // 글 본문 중간
+    articleBottom: "3265568294",  // ★ 글 하단 정사각형 1
+    articleBottom2: "3265568294", // ★ 글 하단 정사각형 2 (동일 유닛 재사용 — 전용 슬롯 생기면 교체)
+    bottomBanner: "1082258087",   // ★ 콘텐츠 맨 아래 가로 배너
   },
 };
 
@@ -128,8 +129,13 @@ function injectArticleAds() {
   if (!article) return;
   const body = article.querySelector(".article__body");
   if (body) {
-    const html = adUnit("articleBottom", "글 하단", { format: "rectangle", maxWidth: 360, cls: "ad--inarticle" });
-    if (html) body.insertAdjacentHTML("afterend", html);
+    // 글 하단 정사각형 광고 2개 (데스크톱은 나란히, 모바일은 세로)
+    const sq1 = adUnit("articleBottom", "글 하단1", { format: "rectangle", maxWidth: 336, cls: "ad--sq" });
+    const sq2 = adUnit("articleBottom2", "글 하단2", { format: "rectangle", maxWidth: 336, cls: "ad--sq" });
+    if (sq1 || sq2) {
+      const wrap = `<div class="ad-squares" style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;align-items:flex-start;margin:24px 0">${sq1}${sq2}</div>`;
+      body.insertAdjacentHTML("afterend", wrap);
+    }
   }
   const main = document.querySelector("main.wrap") || article.parentElement;
   if (main) {
