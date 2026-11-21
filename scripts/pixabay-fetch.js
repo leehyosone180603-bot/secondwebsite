@@ -24,7 +24,9 @@ const curl = (url, outFile) => {
 try {
   const api = `https://pixabay.com/api/?key=${KEY}&q=${encodeURIComponent(query)}&image_type=photo&orientation=horizontal&per_page=30&safesearch=true`;
   const data = JSON.parse(curl(api));
-  let hits = (data.hits || []).filter(h => h.imageWidth > h.imageHeight);
+  // 확실히 가로로 긴 사진만(가독성): 가로/세로 비율 1.3 이상. 없으면 1.15 이상으로 완화.
+  let hits = (data.hits || []).filter(h => h.imageWidth / h.imageHeight >= 1.3);
+  if (hits.length < count) hits = (data.hits || []).filter(h => h.imageWidth / h.imageHeight >= 1.15);
   hits.sort((a, b) => {
     const ra = a.imageWidth / a.imageHeight, rb = b.imageWidth / b.imageHeight;
     const score = r => (r >= 1.4 && r <= 2.2) ? 0 : Math.min(Math.abs(r - 1.4), Math.abs(r - 2.2));
