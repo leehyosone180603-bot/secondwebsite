@@ -53,13 +53,17 @@
   var TOOLS = [
     /* ── 세금·급여 ── */
     { id: "salary", slug: "salary", name: "연봉 실수령액 계산기", category: "tax", kind: "calculator", emoji: "💵",
-      desc: "연봉에서 4대보험·소득세를 뺀 월 실수령액을 계산합니다.", related: ["severance", "freelancer", "vat"], public: true },
+      desc: "연봉에서 4대보험·소득세를 뺀 월 실수령액을 계산합니다.", related: ["4insure", "severance", "parttime", "freelancer"], public: true },
     { id: "severance", slug: "severance", name: "퇴직금 계산기", category: "tax", kind: "calculator", emoji: "🧾",
       desc: "평균임금과 재직일수로 예상 퇴직금을 계산합니다.", related: ["salary", "freelancer"], public: true },
     { id: "vat", slug: "vat", name: "부가세 계산기", category: "tax", kind: "calculator", emoji: "🧮",
       desc: "공급가액·합계금액에서 부가가치세(10%)를 계산합니다.", related: ["freelancer", "salary"], public: true },
     { id: "freelancer", slug: "freelancer", name: "프리랜서 세금(3.3%) 계산기", category: "tax", kind: "calculator", emoji: "💼",
-      desc: "프리랜서 지급액의 원천징수 3.3%와 실수령액을 계산합니다.", related: ["salary", "vat"], public: true },
+      desc: "프리랜서 지급액의 원천징수 3.3%와 실수령액을 계산합니다.", related: ["salary", "vat", "4insure"], public: true },
+    { id: "parttime", slug: "parttime", name: "알바 급여 계산기", category: "tax", kind: "calculator", emoji: "🧑‍🍳",
+      desc: "시급·근무시간으로 주휴수당 포함 주급·월급·실수령액을 계산합니다.", related: ["salary", "4insure", "freelancer"], public: true, isNew: true },
+    { id: "4insure", slug: "4insure", name: "4대보험 계산기", category: "tax", kind: "calculator", emoji: "🛡️",
+      desc: "월 보수로 국민연금·건강·장기요양·고용·산재 보험료를 계산합니다.", related: ["salary", "parttime", "freelancer"], public: true, isNew: true },
 
     /* ── 날짜·기간 ── */
     { id: "age", slug: "age", name: "만 나이 계산기", category: "date", kind: "calculator", emoji: "🎂",
@@ -73,7 +77,7 @@
 
     /* ── 금융·저축 ── */
     { id: "lotto-prize", slug: "lotto-prize", name: "로또 당첨금 실수령액", category: "finance", kind: "calculator", emoji: "💰",
-      desc: "당첨금에서 제세금을 뺀 실수령액을 계산합니다.", related: ["lotto", "salary"], public: true },
+      desc: "당첨금에서 제세금을 뺀 실수령액을 계산합니다.", related: ["salary"], public: true },
 
     /* ── 부동산 ── */
     { id: "dsr", slug: "dsr", name: "DSR 계산기", category: "realestate", kind: "calculator", emoji: "🏦",
@@ -84,8 +88,9 @@
     /* ── 도구 모음 ── */
     { id: "scientific", slug: "scientific", name: "공학용 계산기", category: "toolbox", kind: "tool", emoji: "🧮",
       desc: "삼각함수·로그·거듭제곱을 지원하는 공학용 계산기.", related: ["vat"], public: true },
+    /* 로또 번호 추출기: 스낵 게임류 제외 요청 → 메뉴·관련도구에서 숨김(기존 페이지는 유지) */
     { id: "lotto", slug: "lotto", name: "로또 번호 추출기", category: "toolbox", kind: "tool", emoji: "🎱",
-      desc: "1~45 중 중복 없이 번호를 무작위로 추첨합니다.", related: ["lotto-prize"], public: true },
+      desc: "1~45 중 중복 없이 번호를 무작위로 추첨합니다.", related: [], public: false },
 
     /* ── 생성·변환 ── */
     { id: "percent", slug: "percent", name: "퍼센트 계산기", category: "convert", kind: "calculator", emoji: "➗",

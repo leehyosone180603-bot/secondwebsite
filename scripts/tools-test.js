@@ -35,5 +35,41 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("분리 합계=공급가+부가세 항등", () => { const r = V.totalToSupply(55000, 10, "round"); assert.strictEqual(r.supply + r.vat, 55000); });
 })();
 
+/* ── freelancer ── */
+(function () {
+  const F = require(path.join(ROOT, "tools-src", "freelancer.client.js"));
+  const R = require(path.join(ROOT, "data", "rates.2026.js"));
+  console.log("freelancer");
+  test("3.3% 100만 → 세금 33,000 / 실수령 967,000", () => { const r = F.withhold(1000000, 3.3); assert.strictEqual(r.tax, 33000); assert.strictEqual(r.net, 967000); });
+  test("실수령 967,000 → 세전 1,000,000", () => assert.strictEqual(F.grossFromNet(967000, 3.3), 1000000));
+  test("8.8% 100만 → 세금 88,000", () => assert.strictEqual(F.withhold(1000000, 8.8).tax, 88000));
+  test("누진세율: 과표 3,000만 → 324만", () => assert.strictEqual(F.applyBracket(30000000, R.incomeTax.brackets), 3240000));
+  test("종합소득세 추정 환급 부호", () => { const r = F.comprehensive(40000000, 25640000, 1500000, R.incomeTax.brackets, 3); assert.ok(r.settle > 0); });
+})();
+
+/* ── 4insure ── */
+(function () {
+  const I = require(path.join(ROOT, "tools-src", "4insure.client.js"));
+  const R = require(path.join(ROOT, "data", "rates.2026.js"));
+  console.log("4insure");
+  const r = I.calc4(3000000, R, 0.25, 1.47);
+  test("국민연금 근로자 142,500", () => assert.strictEqual(r.items[0].worker, 142500));
+  test("건강보험 근로자 107,850", () => assert.strictEqual(r.items[1].worker, 107850));
+  test("산재는 근로자 0", () => assert.strictEqual(r.items[4].worker, 0));
+  test("합계 = 근로자 + 사업주", () => assert.strictEqual(r.total, r.worker + r.employer));
+  test("상한 적용: 1억 보수도 연금은 상한 기준", () => { const r2 = I.calc4(100000000, R, 0.25, 1.47); assert.ok(r2.npBase <= R.insurance.nationalPension.base.max.value); });
+})();
+
+/* ── parttime ── */
+(function () {
+  const P = require(path.join(ROOT, "tools-src", "parttime.client.js"));
+  console.log("parttime");
+  test("주40h → 기본 412,800 / 주휴 82,560(8h) / 주급 495,360", () => { const w = P.weeklyPay(10320, 40, 0, 0, 0, true); assert.strictEqual(w.basic, 412800); assert.strictEqual(w.holidayPay, 82560); assert.strictEqual(w.gross, 495360); });
+  test("주 14h → 주휴 없음", () => { const w = P.weeklyPay(10000, 14, 0, 0, 0, true); assert.strictEqual(w.holidayPay, 0); });
+  test("연장 5h + 5인이상 → 1.5배", () => { const w = P.weeklyPay(10000, 20, 5, 0, 0, true); assert.strictEqual(w.extraPay, Math.round(5 * 10000 * 1.5)); });
+  test("5인 미만 → 가산 없음(1배)", () => { const w = P.weeklyPay(10000, 20, 5, 0, 0, false); assert.strictEqual(w.extraPay, 50000); });
+  test("월환산 = 주급×4.345", () => assert.strictEqual(P.monthlyFromWeekly(495360), Math.round(495360 * 4.345)));
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);
