@@ -141,8 +141,25 @@
           <div class="taglist">${infoTags}</div>
         </div>` : "";
 
+      const popularCalcs = [
+        { slug: "salary", emoji: "💵", name: "연봉 실수령액" },
+        { slug: "year-end-tax", emoji: "🧮", name: "연말정산 환급" },
+        { slug: "severance", emoji: "🧾", name: "퇴직금" },
+        { slug: "unemployment", emoji: "🧳", name: "실업급여" },
+        { slug: "bmi", emoji: "⚖️", name: "BMI" },
+        { slug: "age", emoji: "🎂", name: "만 나이" }
+      ];
+      const calcPanel = `
+        <div class="panel">
+          <div class="panel__head">🧮 인기 계산기 <span class="badge">무료</span></div>
+          <div class="taglist">
+            ${popularCalcs.map(c => `<a class="tag" href="/${c.slug}/">${c.emoji} ${c.name}</a>`).join("")}
+          </div>
+          <a class="panel__more" href="/calculators.html">계산기 전체 보기 ›</a>
+        </div>`;
+
       sideEl.innerHTML =
-        timelinePanel + adUnit("sidebar", "사이드") + foodPanel + infoPanel;
+        timelinePanel + calcPanel + adUnit("sidebar", "사이드") + foodPanel + infoPanel;
     }
 
     activateAds();

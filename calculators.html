@@ -48,24 +48,9 @@
   <main class="calc-hub">
     <nav class="crumbs"><a href="/">홈</a> · 계산기</nav>
     <h1>🧮 무료 계산기 모음</h1>
-    <p class="sub">만 나이·몇년생부터 연봉 실수령액·퇴직금·전역일·로또까지, 자주 쓰는 계산기를 한곳에 모았습니다. 설치 없이 바로 사용하세요.</p>
+    <p class="sub">세금·급여부터 금융·부동산·건강·단위 변환까지, 자주 쓰는 계산기를 카테고리별로 모았습니다. 설치 없이 바로 사용하세요.</p>
 
-    <div class="calc-grid">
-      <a class="calc-card" href="/age/"><span class="ic">🎂</span><span class="nm">만 나이 계산기</span><span class="ds">생년월일로 만 나이·세는 나이·띠·다음 생일 D-day</span></a>
-      <a class="calc-card" href="/birth-year/"><span class="ic">📅</span><span class="nm">몇년생 계산기</span><span class="ds">나이로 출생연도·띠 찾기, 2026년 나이표</span></a>
-      <a class="calc-card" href="/business-days/"><span class="ic">🗓️</span><span class="nm">영업일 계산기</span><span class="ds">주말·공휴일을 제외한 영업일 수 계산</span></a>
-      <a class="calc-card" href="/military/"><span class="ic">🎖️</span><span class="nm">전역일 계산기</span><span class="ds">입대일로 전역일·전역 D-day·진행률</span></a>
-      <a class="calc-card" href="/salary/"><span class="ic">💰</span><span class="nm">연봉 실수령액 계산기</span><span class="ds">4대보험·세금 공제 후 월 실수령액</span></a>
-      <a class="calc-card" href="/severance/"><span class="ic">🧾</span><span class="nm">퇴직금 계산기</span><span class="ds">평균임금 기준 예상 퇴직금 계산</span></a>
-      <a class="calc-card" href="/vat/"><span class="ic">🧮</span><span class="nm">부가세 계산기</span><span class="ds">공급가액·부가세·합계 금액 계산</span></a>
-      <a class="calc-card" href="/freelancer/"><span class="ic">💵</span><span class="nm">프리랜서 세금(3.3%) 계산기</span><span class="ds">원천징수 3.3% 공제 후 실수령액</span></a>
-      <a class="calc-card" href="/scientific/"><span class="ic">🔬</span><span class="nm">공학용 계산기</span><span class="ds">삼각함수·로그 등 공학 계산</span></a>
-      <a class="calc-card" href="/lotto/"><span class="ic">🎱</span><span class="nm">로또 번호 추출기</span><span class="ds">무작위 로또 번호 조합 생성</span></a>
-      <a class="calc-card" href="/lotto-prize/"><span class="ic">🏆</span><span class="nm">로또 당첨금 실수령액</span><span class="ds">당첨금에서 세금 공제 후 수령액</span></a>
-      <a class="calc-card" href="/dsr/"><span class="ic">🏦</span><span class="nm">DSR 계산기</span><span class="ds">스트레스 DSR·대출 가능 한도 모의계산</span></a>
-      <a class="calc-card" href="/jeonse-loan/"><span class="ic">🔑</span><span class="nm">전세자금대출 계산기</span><span class="ds">전세보증금으로 대출 한도·월 이자 계산</span></a>
-      <a class="calc-card" href="/support-check/"><span class="ic">💰</span><span class="nm">정부지원금 간편체크</span><span class="ds">나이·소득 조건으로 받을 지원금 확인</span></a>
-    </div>
+    <div id="calc-sections"></div>
 
     <h2 class="calc-sec-title">나이·날짜 관련 가이드</h2>
     <ul class="calc-guides">
@@ -89,6 +74,29 @@
 
   <footer id="site-footer"></footer>
 
+  <script src="/js/tools.js"></script>
+  <script>
+    (function () {
+      if (!window.TOOLS || !window.TOOL_CATEGORIES) return;
+      var pub = window.TOOLS.filter(function (t) { return t.public !== false && t.kind !== "game" && t.kind !== "test"; });
+      var host = document.getElementById("calc-sections");
+      if (!host) return;
+      var html = "";
+      window.TOOL_CATEGORIES.forEach(function (cat) {
+        if (cat.id === "game" || cat.id === "test" || cat.id === "event") return; // 제외 카테고리
+        var items = pub.filter(function (t) { return t.category === cat.id; });
+        if (!items.length) return;
+        html += '<h2 class="calc-sec-title">' + cat.emoji + ' ' + cat.name + '</h2><div class="calc-grid">';
+        items.forEach(function (t) {
+          html += '<a class="calc-card" href="/' + t.slug + '/"><span class="ic">' + (t.emoji || "🧮") + '</span>' +
+            '<span class="nm">' + t.name + (t.isNew ? ' <span style="color:#e8590c;font-size:.72rem;font-weight:700">NEW</span>' : '') + '</span>' +
+            '<span class="ds">' + (t.desc || "") + '</span></a>';
+        });
+        html += '</div>';
+      });
+      host.innerHTML = html;
+    })();
+  </script>
   <script src="/js/posts.js"></script>
   <script src="/js/site.js"></script>
 </body>
