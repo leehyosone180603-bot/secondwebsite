@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "winter-indoor-humidity-guide",
+    title: "겨울 실내 적정 습도 몇 %? 가습기 없이 높이는 방법",
+    summary: "겨울 실내 적정 습도는 40~60%, 온도는 18~20℃가 기준입니다. 가습기 없이 습도 높이는 법, 과습 신호와 환기 요령까지 정리했습니다.",
+    category: "info",
+    date: "2026-11-21",
+    url: "/posts/winter-indoor-humidity-guide.html",
+    image: "/img/winter-indoor-humidity-guide-1.jpg",
+  },
+  {
     id: "national-health-checkup-year-end-missed",
     title: "국가건강검진 연말 미수검, 12월 못 받으면 추가등록하세요",
     summary: "국가건강검진을 12월까지 못 받았다면? 대상 조회, 예약 요령, 직장인 과태료, 다음 해 1월 미수검자 추가등록까지 정리했습니다.",
