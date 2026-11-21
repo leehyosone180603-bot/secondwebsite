@@ -113,6 +113,8 @@
       desc: "키·몸무게·나이·성별로 기초대사량(BMR)과 활동별 하루 권장 칼로리(TDEE)를 계산합니다.", related: ["bmi", "body-fat"], public: true, isNew: true },
     { id: "body-fat", slug: "body-fat", name: "체지방률·표준체중 계산기", category: "health", kind: "calculator", emoji: "💪",
       desc: "키·몸무게·나이·성별로 체지방률(추정)과 표준체중·적정체중 범위를 계산합니다.", related: ["bmi", "bmr"], public: true, isNew: true },
+    { id: "alcohol-sober", slug: "alcohol-sober", name: "음주 알코올 분해시간 계산기", category: "health", kind: "calculator", emoji: "🍺",
+      desc: "음주량·체중·성별로 예상 혈중알코올농도와 운전 가능까지 걸리는 시간을 위드마크 공식으로 추정합니다.", related: ["bmi", "body-fat"], public: true, isNew: true },
 
     /* ── 생성·변환 ── */
     { id: "percent", slug: "percent", name: "퍼센트 계산기", category: "convert", kind: "calculator", emoji: "➗",

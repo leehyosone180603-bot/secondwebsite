@@ -311,5 +311,17 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("20억·배우자 단독상속 → 일괄공제 불가(기초2억)·과표13억", () => { const r = I.inheritanceTax(2000000000, true, 0, 0, R); assert.strictEqual(r.general, 200000000); assert.strictEqual(r.base, 1300000000); assert.strictEqual(r.payable, 349200000); });
 })();
 
+/* ── alcohol-sober (위드마크) ── */
+(function () {
+  const A = require(path.join(ROOT, "tools-src", "alcohol-sober.client.js"));
+  console.log("alcohol-sober");
+  const near = (a, b, t) => assert.ok(Math.abs(a - b) < (t || 1e-6), a + " ≉ " + b);
+  test("소주 360mL·17% 알코올 ≈ 48.31g", () => near(A.alcoholGrams(360, 17), 48.311, 0.01));
+  test("70kg 남 소주1병 → BAC ≈ 0.1015%", () => near(A.bac(360, 17, 70, "male"), 0.10149, 0.0005));
+  test("여성 계수(0.55)가 더 높게", () => assert.ok(A.bac(360, 17, 70, "female") > A.bac(360, 17, 70, "male")));
+  test("운전가능(0.03%)까지 시간 = (BAC−0.03)/0.015", () => { const c = A.bac(360, 17, 70, "male"); near(A.hoursToTarget(c, 0.03), (c - 0.03) / 0.015, 1e-9); });
+  test("BAC 0.03 미만이면 운전가능 시간 0", () => assert.strictEqual(A.hoursToTarget(0.02, 0.03), 0));
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

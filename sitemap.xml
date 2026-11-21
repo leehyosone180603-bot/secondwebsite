@@ -162,6 +162,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://healthfortune.co.kr/alcohol-sober/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://healthfortune.co.kr/percent/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
