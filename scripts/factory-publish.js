@@ -220,6 +220,12 @@ function regenFeeds() {
   let urls = [{ loc: `${BASE}/`, changefreq: "daily", priority: "1.0" }, { loc: `${BASE}/tools.html`, changefreq: "weekly", priority: "0.9" }, { loc: `${BASE}/calculators.html`, changefreq: "weekly", priority: "0.9" }];
   for (const slug of NAV) if ((CATEGORIES[slug] || {}).ready) urls.push({ loc: `${BASE}/category.html?cat=${slug}`, changefreq: "daily", priority: "0.8" });
   for (const c of CALCS) urls.push({ loc: `${BASE}/${c}/`, changefreq: "monthly", priority: "0.8" });
+  // MBTI 테스트·궁합 (유형 글 16개는 아래 posts 루프에 포함, 허브는 posts.js에 등록)
+  for (const u of ["/mbti-test/", "/mbti-match/"]) urls.push({ loc: `${BASE}${u}`, changefreq: "monthly", priority: "0.8" });
+  const MBTI_CODES = ["intj", "intp", "entj", "entp", "infj", "infp", "enfj", "enfp", "istj", "isfj", "estj", "esfj", "istp", "isfp", "estp", "esfp"];
+  for (const c of MBTI_CODES) urls.push({ loc: `${BASE}/posts/mbti-${c}.html`, changefreq: "monthly", priority: "0.7" });
+  // 셀러 도구(/tools/*)
+  for (const t of ["cashflow", "china-sourcing", "global-margin", "margin", "rocket-growth"]) urls.push({ loc: `${BASE}/tools/${t}/`, changefreq: "monthly", priority: "0.7" });
   for (const p of sorted) urls.push({ loc: `${BASE}${p.url}`, lastmod: p.date, changefreq: "monthly", priority: "0.7" });
   for (const st of [["about.html", "0.4"], ["contact.html", "0.4"], ["terms.html", "0.3"], ["privacy.html", "0.3"]]) urls.push({ loc: `${BASE}/${st[0]}`, priority: st[1] });
   let sm = `<?xml version="1.0" encoding="UTF-8"?>\n<!-- 자동 생성: js/posts.js 기준 -->\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;

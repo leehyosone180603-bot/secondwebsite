@@ -42,6 +42,14 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "mbti-16-types",
+    title: "MBTI 16가지 유형 총정리 — 성향·궁합·직업 한눈에",
+    summary: "MBTI 16유형을 네 그룹으로 정리했어요. 유형별 성향·연애·직업·궁합과 무료 48문항 테스트, 궁합 계산기까지 한 곳에서 확인하세요.",
+    category: "life",
+    date: "2026-11-22",
+    url: "/posts/mbti-16-types.html",
+  },
+  {
     id: "year-end-tax-preview-guide",
     title: "연말정산 미리보기 활용법, 11월에 확인하고 남은 한 달 절세하기",
     summary: "홈택스 연말정산 미리보기 경로와 결과 읽는 법, 총급여 25% 문턱 기준 신용·체크카드 사용 전략, 12월 31일 전 연금저축·월세·의료비 절세 체크리스트를 정리했습니다.",
