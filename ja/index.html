@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>健康フロー｜日本語 — 健康・暮らしの情報まとめ</title>
+  <meta name="description" content="韓国の健康情報サイト「健康フロー」の記事を日本語でお届けします。食べ物・症状・季節の健康ケアなど、暮らしに役立つ健康情報をまとめています。">
+  <meta name="keywords" content="健康情報, 健康食, 症状, 季節の健康, 日本語, 健康ブログ">
+  <link rel="canonical" href="https://healthfortune.co.kr/ja/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="健康フロー｜日本語 — 健康・暮らしの情報まとめ">
+  <meta property="og:description" content="食べ物・症状・季節の健康ケアなど、暮らしに役立つ健康情報を日本語でまとめています。">
+  <meta property="og:url" content="https://healthfortune.co.kr/ja/">
+  <meta property="og:locale" content="ja_JP">
+  <link rel="alternate" hreflang="ja" href="https://healthfortune.co.kr/ja/">
+  <link rel="alternate" hreflang="ko" href="https://healthfortune.co.kr/">
+  <link rel="alternate" hreflang="x-default" href="https://healthfortune.co.kr/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    body { font-family: "Noto Sans JP", system-ui, sans-serif; background:#f6f8fb; }
+    .ja-header { background:#fff; border-bottom:1px solid #e6e8eb; }
+    .ja-header .in { max-width:960px; margin:0 auto; padding:12px 16px; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    .ja-header a.brand { font-weight:800; color:#1e73be; text-decoration:none; font-size:1.05rem; }
+    .ja-header nav a { color:#444; text-decoration:none; font-size:.9rem; margin-left:14px; }
+    .ja-wrap { max-width:960px; margin:0 auto; padding:24px 16px 56px; }
+    .ja-hero h1 { font-size:1.5rem; margin:0 0 8px; color:#1f2430; }
+    .ja-hero p { color:#5a6372; line-height:1.7; margin:0 0 6px; font-size:.96rem; }
+    .ja-search { margin:18px 0 10px; }
+    .ja-search input { width:100%; box-sizing:border-box; padding:12px 14px; border:1px solid #d7dbe3; border-radius:12px; font-size:1rem; }
+    .ja-cats { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 20px; }
+    .ja-cats button { border:1px solid #d7dbe3; background:#fff; color:#555; border-radius:999px; padding:7px 14px; font-size:.86rem; cursor:pointer; font-family:inherit; }
+    .ja-cats button.on { background:#1e73be; color:#fff; border-color:#1e73be; }
+    .ja-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; }
+    .ja-card { display:flex; flex-direction:column; background:#fff; border:1px solid #e6e8eb; border-radius:14px; overflow:hidden; text-decoration:none; color:inherit; box-shadow:0 2px 10px rgba(30,40,70,.05); transition:transform .12s, box-shadow .12s; }
+    .ja-card:hover { transform:translateY(-2px); box-shadow:0 8px 20px rgba(30,40,70,.12); }
+    .ja-card .thumb { aspect-ratio:16/9; background:#eef1f6 center/cover no-repeat; }
+    .ja-card .body { padding:12px 14px 14px; }
+    .ja-card .cat { font-size:.72rem; color:#1e73be; font-weight:700; }
+    .ja-card .t { display:block; font-weight:700; font-size:1rem; margin:4px 0 6px; line-height:1.4; color:#1f2430; }
+    .ja-card .d { display:block; font-size:.84rem; color:#6b7280; line-height:1.55; }
+    .ja-empty { color:#888; padding:30px 0; text-align:center; }
+    .ja-footer { border-top:1px solid #e6e8eb; margin-top:30px; padding:24px 16px; text-align:center; color:#888; font-size:.85rem; }
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="ja-header">
+    <div class="in">
+      <a class="brand" href="/ja/">健康フロー｜日本語</a>
+      <nav><a href="/">한국어 홈</a></nav>
+    </div>
+  </header>
+
+  <main class="ja-wrap">
+    <div class="ja-hero">
+      <h1>🌿 健康フロー｜日本語</h1>
+      <p>韓国の健康情報サイト「健康フロー」の記事を日本語でお届けします。食べ物・症状・季節の健康ケアなど、暮らしに役立つ情報をまとめました。</p>
+    </div>
+
+    <div class="ad-container" aria-label="広告" style="text-align:center;margin:16px 0">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="3265568294" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+
+    <div class="ja-search"><input type="search" id="jaSearch" placeholder="🔍 キーワードで検索（例：みかん、乾燥、血圧）" aria-label="記事検索"></div>
+    <div class="ja-cats" id="jaCats"></div>
+    <div class="ja-grid" id="jaGrid"></div>
+    <p class="ja-empty" id="jaEmpty" hidden>該当する記事がありません。</p>
+  </main>
+
+  <footer class="ja-footer">
+    <p>健康フロー（けんこうフロー）· <a href="/">韓国語サイト</a></p>
+    <p>本サイトの記事は情報提供を目的とした参考情報であり、専門的な診断・治療に代わるものではありません。</p>
+  </footer>
+
+  <script src="/js/ja-posts.js"></script>
+  <script>
+  (function () {
+    var POSTS = (window.JA_POSTS || []).slice().sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); });
+    var CATNAMES = { food: "健康食", info: "健康情報", disease: "病気", diet: "ダイエット", exercise: "運動" };
+    function esc(s){ return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+    var grid = document.getElementById("jaGrid"), empty = document.getElementById("jaEmpty"), catsEl = document.getElementById("jaCats");
+    var curCat = "all", q = "";
+    var cats = ["all"].concat(Object.keys(CATNAMES).filter(function (c) { return POSTS.some(function (p) { return p.category === c; }); }));
+    catsEl.innerHTML = cats.map(function (c) {
+      return '<button data-c="' + c + '"' + (c === "all" ? ' class="on"' : '') + '>' + (c === "all" ? "すべて" : CATNAMES[c]) + '</button>';
+    }).join("");
+    function card(p) {
+      var style = p.image ? ' style="background-image:url(' + esc(p.image) + ')"' : '';
+      return '<a class="ja-card" href="' + esc(p.url) + '"><span class="thumb"' + style + '></span>' +
+        '<span class="body"><span class="cat">' + (CATNAMES[p.category] || "健康情報") + '</span>' +
+        '<span class="t">' + esc(p.title) + '</span><span class="d">' + esc(p.summary || "") + '</span></span></a>';
+    }
+    function render() {
+      var list = POSTS.filter(function (p) {
+        if (curCat !== "all" && p.category !== curCat) return false;
+        if (q && (p.title + " " + (p.summary || "")).toLowerCase().indexOf(q) < 0) return false;
+        return true;
+      });
+      grid.innerHTML = list.map(card).join("");
+      empty.hidden = list.length > 0;
+    }
+    catsEl.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-c]"); if (!b) return;
+      curCat = b.getAttribute("data-c");
+      Array.prototype.forEach.call(catsEl.children, function (x) { x.classList.toggle("on", x === b); });
+      render();
+    });
+    document.getElementById("jaSearch").addEventListener("input", function () { q = this.value.trim().toLowerCase(); render(); });
+    render();
+    try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
+  })();
+  </script>
+</body>
+</html>

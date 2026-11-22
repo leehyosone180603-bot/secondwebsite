@@ -227,6 +227,16 @@ function regenFeeds() {
   // 셀러 도구(/tools/*)
   for (const t of ["cashflow", "china-sourcing", "global-margin", "margin", "rocket-growth"]) urls.push({ loc: `${BASE}/tools/${t}/`, changefreq: "monthly", priority: "0.7" });
   for (const p of sorted) urls.push({ loc: `${BASE}${p.url}`, lastmod: p.date, changefreq: "monthly", priority: "0.7" });
+  // 일본어 건강 미러(/ja/)
+  try {
+    const jaPath = path.join(ROOT, "js", "ja-posts.js");
+    delete require.cache[require.resolve(jaPath)];
+    const JAP = require(jaPath).JA_POSTS || [];
+    if (JAP.length) {
+      urls.push({ loc: `${BASE}/ja/`, changefreq: "daily", priority: "0.7" });
+      for (const p of JAP) urls.push({ loc: `${BASE}${p.url}`, lastmod: p.date, changefreq: "monthly", priority: "0.6" });
+    }
+  } catch (e) { /* ja-posts.js 없으면 건너뜀 */ }
   for (const st of [["about.html", "0.4"], ["contact.html", "0.4"], ["terms.html", "0.3"], ["privacy.html", "0.3"]]) urls.push({ loc: `${BASE}/${st[0]}`, priority: st[1] });
   let sm = `<?xml version="1.0" encoding="UTF-8"?>\n<!-- 자동 생성: js/posts.js 기준 -->\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
   for (const u of urls) { sm += `  <url>\n    <loc>${esc(u.loc)}</loc>\n`; if (u.lastmod) sm += `    <lastmod>${u.lastmod}</lastmod>\n`; if (u.changefreq) sm += `    <changefreq>${u.changefreq}</changefreq>\n`; if (u.priority) sm += `    <priority>${u.priority}</priority>\n`; sm += `  </url>\n`; }
@@ -324,4 +334,4 @@ function main() {
   console.log("티스토리 요약: " + jsonPath + ".tistory.html");
 }
 if (require.main === module) main();
-module.exports = { regenFeeds: regenFeeds };
+module.exports = { regenFeeds: regenFeeds, parseBlocks: parseBlocks, buildBody: buildBody, esc: esc, BASE: BASE, ROOT: ROOT };

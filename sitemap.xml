@@ -899,6 +899,23 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://healthfortune.co.kr/ja/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://healthfortune.co.kr/about.html</loc>
     <priority>0.4</priority>
   </url>
