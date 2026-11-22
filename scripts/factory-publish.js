@@ -173,6 +173,7 @@ ${buildBody(parseBlocks(a.bodyMd), photos)}
 
   <script src="/js/posts.js"></script>
   <script src="/js/site.js"></script>
+  <script defer src="/js/analytics.js"></script>
 </body>
 </html>
 `;
