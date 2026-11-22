@@ -1,4 +1,6 @@
-/* MBTI 공용 스타일 (궁합·테스트·글 공유). 루트 /style.css 위에 로드 */
+/* MBTI 공용 스타일 (궁합·테스트·글 공유). 루트 /style.css 또는 /css/style.css 위에 로드 */
+/* 글(/posts, /css/style.css)에는 없는 변수 보강 — primary·bg·text는 각 페이지 테마를 따름 */
+:root { --border: #e3e7ef; --card: #ffffff; --muted: #6c757d; }
 .mbti-wrap { max-width: 760px; margin: 0 auto; padding: 0 16px 48px; }
 .mbti-tabs { display: flex; flex-wrap: wrap; gap: 8px; max-width: 760px; margin: 0 auto 16px; padding: 0 16px; }
 .mbti-tab { flex: 1 1 auto; text-align: center; padding: 10px 12px; border-radius: 10px; background: #fff; border: 1px solid var(--border); color: var(--muted); text-decoration: none; font-weight: 600; font-size: .92rem; }
@@ -100,6 +102,60 @@ table.matrix td.me { outline: 2px solid var(--primary); outline-offset: -2px; }
 .rt-box.up { background: #f1f8f4; border-color: #cfe8d9; }
 .rt-box.care { background: #fbf6ef; border-color: #ecdcc4; }
 
+/* ── 유형 글(/posts/mbti-*.html) ── */
+.mbti-article .mbti-tabs { padding: 0; margin: 14px 0 18px; }
+/* /css/style.css 에 없는 버튼·광고 보강 */
+.mbti-article .btn-primary, .mbti-article .btn-ghost { display: inline-block; text-decoration: none; text-align: center; font-weight: 700; border-radius: 10px; padding: 11px 18px; font-size: .95rem; cursor: pointer; border: 1px solid transparent; }
+.mbti-article .btn-primary { background: var(--primary); color: #fff; }
+.mbti-article .btn-ghost { background: var(--card); color: var(--primary); border-color: var(--primary); }
+.mbti-article .ad-container { margin: 18px 0; text-align: center; min-height: 1px; }
+.glance-box { background: #f6f8ff; border: 1px solid #dfe6ff; border-radius: 14px; padding: 16px 18px; margin: 4px 0 16px; }
+.glance-box .gb-h { font-size: 1rem; margin: 0 0 10px; color: var(--primary); }
+.gb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; margin: 0; }
+.gb-grid > div { margin: 0; }
+.gb-grid dt { font-size: .76rem; color: var(--muted); font-weight: 700; margin-bottom: 2px; }
+.gb-grid dd { margin: 0; font-size: .92rem; font-weight: 600; line-height: 1.4; }
+.toc-box { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px 16px 12px 18px; margin: 0 0 16px; }
+.toc-box > b { font-size: .9rem; }
+.toc-box ol { margin: 8px 0 0; padding-left: 20px; columns: 2; column-gap: 20px; }
+.toc-box li { font-size: .88rem; margin: 3px 0; } .toc-box a { color: var(--text); text-decoration: none; }
+.toc-box a:hover { color: var(--primary); text-decoration: underline; }
+.mini-tbl { width: 100%; border-collapse: collapse; margin: 10px 0 4px; font-size: .9rem; }
+.mini-tbl th, .mini-tbl td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+.mini-tbl thead th { background: var(--bg); font-size: .85rem; }
+.mini-tbl td:first-child { white-space: nowrap; font-weight: 600; }
+.job-tbl td:first-child { color: var(--primary); }
+.shadow-tag { font-size: .68rem; font-weight: 700; color: #c2680c; background: #fdeee0; border-radius: 999px; padding: 2px 8px; vertical-align: middle; }
+.sw-tbl { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: .9rem; }
+.sw-tbl th, .sw-tbl td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; width: 50%; }
+.sw-tbl thead th { background: var(--bg); } .sw-tbl .tip { display: block; color: var(--primary); font-size: .82rem; margin-top: 3px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 10px 0; }
+.two-col .tc { border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; }
+.two-col .tc b { display: block; margin-bottom: 6px; font-size: .92rem; }
+.two-col .tc ul { margin: 0; padding-left: 18px; } .two-col .tc li { font-size: .88rem; margin: 4px 0; }
+.two-col .tc.up { background: #f1f8f4; border-color: #cfe8d9; } .two-col .tc.care { background: #fbf6ef; border-color: #ecdcc4; }
+ul.recover { padding-left: 0; list-style: none; } ul.recover li { padding: 8px 0; border-top: 1px dashed var(--border); font-size: .92rem; line-height: 1.55; }
+ul.recover li:first-child { border-top: none; }
+ol.grow { padding-left: 22px; } ol.grow li { margin: 10px 0; line-height: 1.6; }
+.compat-grid .ci { align-items: center; } .compat-grid .ci-s { margin-left: auto; }
+.compat-grid .badge { font-size: .82rem; padding: 3px 10px; }
+.compat-grid .ci-why { font-size: .86rem; color: var(--muted); margin: 0 0 8px; line-height: 1.5; }
+.cta-box { background: linear-gradient(135deg,#eef3ff,#f7f0ff); border: 1px solid #dfe6ff; border-radius: 14px; padding: 18px; text-align: center; margin: 22px 0; }
+.cta-box > p { margin: 0 0 12px; font-size: 1.02rem; }
+.cta-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.sib-h { font-size: 1rem; margin: 20px 0 10px; }
+.sib-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.sib-card { display: flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px 6px; color: var(--text); }
+.sib-card b { color: var(--primary); font-size: 1rem; } .sib-card span { font-size: .74rem; color: var(--muted); text-align: center; }
+.sib-card:hover { border-color: var(--primary); } .sib-card.hub b { color: #a9800c; }
+.hub-group { margin: 14px 0; } .hub-group h3 { font-size: 1rem; margin: 0 0 8px; }
+.hub-types { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.hub-types a { display: flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px 6px; color: var(--text); }
+.hub-types a b { color: var(--primary); } .hub-types a span { font-size: .74rem; color: var(--muted); text-align: center; }
+.hub-types a:hover { border-color: var(--primary); }
+.mbti-article .faq-section h3 { font-size: .98rem; margin: 14px 0 4px; }
+.mbti-article .disclaimer-box { margin-top: 20px; }
+
 @media (max-width: 560px) {
   .score3 { grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
   .compat-grid { grid-template-columns: 1fr; }
@@ -109,4 +165,8 @@ table.matrix td.me { outline: 2px solid var(--primary); outline-offset: -2px; }
   .opt-s2 { width: 40px; height: 40px; } .opt-s1 { width: 33px; height: 33px; } .opt-s0 { width: 28px; height: 28px; }
   .opt-row .end { width: 28px; font-size: .64rem; }
   .rt-two { grid-template-columns: 1fr; }
+  .two-col { grid-template-columns: 1fr; }
+  .sib-grid, .hub-types { grid-template-columns: repeat(2, 1fr); }
+  .toc-box ol { columns: 1; }
+  .gb-grid { grid-template-columns: 1fr; }
 }

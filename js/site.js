@@ -127,6 +127,8 @@ function adUnit(slotKey, label, opts) {
 function injectArticleAds() {
   const article = document.querySelector(".article");
   if (!article) return;
+  // 글 안에 광고를 직접 배치한 페이지(MBTI 등)는 자동 삽입을 건너뛴다.
+  if (article.getAttribute("data-ads") === "manual") return;
   const body = article.querySelector(".article__body");
   if (body) {
     // 글 하단 정사각형 광고 2개 (데스크톱은 나란히, 모바일은 세로)
