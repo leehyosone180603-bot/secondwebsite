@@ -62,31 +62,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://healthfortune.co.kr/tools/margin/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://healthfortune.co.kr/tools/china-sourcing/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://healthfortune.co.kr/tools/global-margin/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://healthfortune.co.kr/tools/cashflow/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://healthfortune.co.kr/tools/rocket-growth/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://healthfortune.co.kr/parttime/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -255,6 +230,12 @@
     <loc>https://healthfortune.co.kr/support-check/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/posts/winter-dry-eye-artificial-tears.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://healthfortune.co.kr/posts/seoul-housing-birth-2026.html</loc>

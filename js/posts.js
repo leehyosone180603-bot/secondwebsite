@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "winter-dry-eye-artificial-tears",
+    title: "겨울 안구건조증 인공눈물 하루 몇 번? 일회용 제대로 쓰는 법",
+    summary: "난방철 안구건조증이 심해지는 이유, 인공눈물 하루 점안 횟수 기준, 일회용 첫 방울 버리기·렌즈 착용 시 주의점, 생활 관리법과 안과 갈 시점을 정리했습니다.",
+    category: "info",
+    date: "2026-11-22",
+    url: "/posts/winter-dry-eye-artificial-tears.html",
+    image: "/img/winter-dry-eye-artificial-tears-1.jpg",
+  },
+  {
     id: "seoul-housing-birth-2026",
     title: "서울시 2026 주거·출산 지원 — 산후조리경비 최대 150만·출산가구 주거비 720만원",
     summary: "서울시 2026 청년·신혼부부 주거 지원(청년월세·임차보증금 이자지원)과 서울형 산후조리경비(첫째 100만~셋째 150만), 임산부 교통비, 출산가구 주거비(최대 720만원)를 정리했습니다.",
