@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "cold-hands-feet-causes-raynaud",
+    title: "수족냉증 원인, 레이노 현상과 구분법과 병원 가야 할 신호",
+    summary: "겨울마다 손발이 차가운 수족냉증 원인과 레이노 현상 구분법, 몸통 보온·반신욕·핫팩 안전 요령, 병원에 가야 할 신호와 진료과를 정리했습니다.",
+    category: "info",
+    date: "2026-11-22",
+    url: "/posts/cold-hands-feet-causes-raynaud.html",
+    image: "/img/cold-hands-feet-causes-raynaud-1.jpg",
+  },
+  {
     id: "mbti-16-types",
     title: "MBTI 16가지 유형 총정리 — 성향·궁합·직업 한눈에",
     summary: "MBTI 16유형을 네 그룹으로 정리했어요. 유형별 성향·연애·직업·궁합과 무료 48문항 테스트, 궁합 계산기까지 한 곳에서 확인하세요.",
