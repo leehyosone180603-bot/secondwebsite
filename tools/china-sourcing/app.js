@@ -66,5 +66,4 @@
 
   restore();
   recalc();
-  U.pushAd();
 })();

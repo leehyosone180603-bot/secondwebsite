@@ -76,5 +76,4 @@
 
   restore();
   recalc();
-  U.pushAd();
 })();
