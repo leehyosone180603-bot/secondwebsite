@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마진율 계산기 — 스마트스토어·쿠팡 수수료 반영 순이익 계산 | 건강흐름</title>
+  <meta name="description" content="판매가·매입가·마켓 수수료·부가세를 입력하면 정산금액, 순이익, 마진율을 즉시 계산합니다. 스마트스토어·쿠팡·11번가 등 오픈마켓 판매자를 위한 무료 마진 계산기.">
+  <meta name="keywords" content="마진율 계산기, 순이익 계산, 오픈마켓 수수료, 스마트스토어 마진, 쿠팡 마진, 셀러 계산기">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://healthfortune.co.kr/tools/margin/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="마진율 계산기 — 오픈마켓 순이익·마진율 계산">
+  <meta property="og:description" content="판매가·매입가·수수료·부가세로 정산금·순이익·마진율을 즉시 계산.">
+  <meta property="og:url" content="https://healthfortune.co.kr/tools/margin/">
+  <meta property="og:site_name" content="건강흐름">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"마진율은 어떻게 계산하나요?","acceptedAnswer":{"@type":"Answer","text":"순이익을 매출합계(판매가+배송비)로 나눠 100을 곱합니다. 순이익은 정산금액에서 매입비용과 부가세를 뺀 값입니다."}},{"@type":"Question","name":"정산금액과 순이익은 어떻게 다른가요?","acceptedAnswer":{"@type":"Answer","text":"정산금액은 매출에서 마켓 수수료만 뺀 금액이고, 순이익은 거기서 매입비용과 부가세까지 뺀 실제로 남는 돈입니다."}},{"@type":"Question","name":"수수료율은 어디서 확인하나요?","acceptedAnswer":{"@type":"Answer","text":"수수료는 마켓 정책에 따라 바뀌므로 각 마켓 판매자센터의 수수료 안내에서 확인하세요. 계산기의 기본값은 참고용입니다."}},{"@type":"Question","name":"부가세는 어떻게 반영되나요?","acceptedAnswer":{"@type":"Answer","text":"일반과세자는 매출에서 매입(공급가액)을 뺀 부가가치의 10%를, 간이과세자는 매출에 업종별 부가율을 적용합니다. 면세는 0원입니다."}}]}
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css?v=4">
+  <link rel="stylesheet" href="/calc/seller/seller.css?v=1">
+</head>
+<body>
+  <nav class="back-nav"><a href="/calculators.html">← 전체 계산기</a></nav>
+  <header class="site-header">
+    <h1>📊 마진율 계산기</h1>
+    <p class="subtitle">오픈마켓 판매 시 정산금·순이익·마진율을 즉시 계산</p>
+  </header>
+  <nav class="seller-tabs" id="sellerTabs" aria-label="셀러 계산기"></nav>
+
+  <main class="seller-container">
+    <section class="seller-result" id="result" aria-live="polite">
+      <h2>계산 결과</h2>
+      <div class="r-main"><span class="r-label">순이익</span><span class="r-value" id="rProfit">—</span></div>
+      <div class="r-grid">
+        <div class="r-cell"><span class="k">마진율</span><span class="v" id="rMargin">—</span></div>
+        <div class="r-cell"><span class="k">정산금액</span><span class="v" id="rSettle">—</span></div>
+        <div class="r-cell"><span class="k">수수료 합계</span><span class="v" id="rFee">—</span></div>
+        <div class="r-cell"><span class="k">부가세</span><span class="v" id="rVat">—</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="seller-note">모든 금액은 <strong>VAT 포함 금액</strong> 기준으로 입력하세요. 입력하는 즉시 자동으로 다시 계산됩니다.</p>
+
+      <div class="seller-section">
+        <h3>매출</h3>
+        <div class="seller-grid2">
+          <div class="field"><label for="price">판매가격</label><div class="unit-input"><input type="text" id="price" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="shipFee">배송비 <small>(고객 부담)</small></label><div class="unit-input"><input type="text" id="shipFee" autocomplete="off"><span class="unit">원</span></div></div>
+        </div>
+      </div>
+
+      <div class="seller-section">
+        <h3>매입</h3>
+        <div class="seller-grid2">
+          <div class="field"><label for="buy">매입가격</label><div class="unit-input"><input type="text" id="buy" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="buyShip">매입운송비</label><div class="unit-input"><input type="text" id="buyShip" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="etc">기타 <small>(포장·사은품)</small></label><div class="unit-input"><input type="text" id="etc" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="freight">운임비 <small>(택배비)</small></label><div class="unit-input"><input type="text" id="freight" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="ad">광고비</label><div class="unit-input"><input type="text" id="ad" autocomplete="off"><span class="unit">원</span></div></div>
+        </div>
+      </div>
+
+      <div class="seller-section">
+        <h3>수수료</h3>
+        <div class="field" style="margin-bottom:12px"><label for="market">마켓 선택 <small>(선택 시 기본 수수료 자동 입력)</small></label>
+          <select id="market"></select></div>
+        <div class="seller-grid2">
+          <div class="field"><label for="catFee">카테고리 수수료</label><div class="unit-input"><input type="text" id="catFee" autocomplete="off"><span class="unit">%</span></div></div>
+          <div class="field"><label for="linkFee">연동 수수료 <small>(대량등록)</small></label><div class="unit-input"><input type="text" id="linkFee" autocomplete="off"><span class="unit">%</span></div></div>
+          <div class="field"><label for="shipFeeRate">배송비 수수료</label><div class="unit-input"><input type="text" id="shipFeeRate" autocomplete="off"><span class="unit">%</span></div></div>
+        </div>
+        <p class="fee-asof" id="feeAsof"></p>
+      </div>
+
+      <div class="seller-section">
+        <h3>부가세</h3>
+        <div class="segment" id="taxSeg" role="radiogroup" style="margin-bottom:10px">
+          <label><input type="radio" name="tax" value="normal" checked><span>일반 10%</span></label>
+          <label><input type="radio" name="tax" value="simple"><span>간이</span></label>
+          <label><input type="radio" name="tax" value="free"><span>면세</span></label>
+        </div>
+        <div class="field" id="simpleWrap" hidden><label for="simpleRate">간이 부가율</label><div class="unit-input"><input type="text" id="simpleRate" autocomplete="off" value="1.5"><span class="unit">%</span></div></div>
+      </div>
+
+      <div class="seller-actions">
+        <button type="button" class="btn-reset" id="resetBtn">초기화</button>
+        <button type="button" class="btn-copy" id="copyBtn">결과 복사</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3 style="margin-top:0">🎯 목표 마진율로 판매가 역산</h3>
+      <div class="seller-grid2">
+        <div class="field"><label for="targetPct">목표 마진율</label><div class="unit-input"><input type="text" id="targetPct" autocomplete="off" placeholder="예: 30"><span class="unit">%</span></div></div>
+        <div class="field"><label>필요한 판매가격</label><div class="unit-input"><input type="text" id="targetPrice" readonly style="background:#f8f9fc;font-weight:700"><span class="unit">원</span></div></div>
+      </div>
+      <p class="seller-note" style="margin-bottom:0">위 매입·수수료·부가세 조건에서 입력한 마진율이 나오는 판매가격을 역산합니다.</p>
+    </section>
+
+    <div class="ad-container" aria-label="광고">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+
+    <section class="card info">
+      <h2>이렇게 계산됩니다</h2>
+      <ul>
+        <li><strong>매출합계</strong> = 판매가격 + 배송비</li>
+        <li><strong>수수료합계</strong> = 판매가격 × (카테고리% + 연동%) + 배송비 × 배송비수수료%</li>
+        <li><strong>정산금액</strong> = 매출합계 − 수수료합계</li>
+        <li><strong>순이익</strong> = 정산금액 − (매입가+운송+기타+운임+광고) − 부가세</li>
+        <li><strong>마진율</strong> = 순이익 ÷ 매출합계 × 100</li>
+      </ul>
+      <p class="seller-note">수수료율은 마켓 정책에 따라 바뀌므로 반드시 각 <strong>판매자센터</strong>에서 확인하세요.</p>
+    </section>
+    <section class="card info faq-section">
+      <h2>자주 묻는 질문</h2>
+      <h3>Q. 마진율은 어떻게 계산하나요?</h3>
+      <p>순이익을 매출합계(판매가+배송비)로 나눠 100을 곱합니다. 순이익은 정산금액에서 매입비용과 부가세를 뺀 값입니다.</p>
+      <h3>Q. 정산금액과 순이익은 어떻게 다른가요?</h3>
+      <p>정산금액은 매출에서 마켓 수수료만 뺀 금액이고, 순이익은 거기서 매입비용과 부가세까지 뺀 실제로 남는 돈입니다.</p>
+      <h3>Q. 수수료율은 어디서 확인하나요?</h3>
+      <p>수수료는 마켓 정책에 따라 바뀌므로 각 마켓 판매자센터에서 확인하세요. 계산기 기본값은 참고용입니다.</p>
+      <h3>Q. 부가세는 어떻게 반영되나요?</h3>
+      <p>일반과세자는 부가가치(매출−매입공급가액)의 10%, 간이과세자는 매출에 업종별 부가율을 적용합니다. 면세는 0원입니다.</p>
+      <p class="disclaimer-box">※ 본 계산 결과는 참고용이며 세무·회계 자문이 아닙니다.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-links"><a href="/about/">소개·문의</a> · <a href="/privacy/">개인정보처리방침</a> · <a href="/terms/">이용약관</a></nav>
+    <p>© <span id="year"></span> 건강흐름 · 마진율 계산기</p>
+  </footer>
+
+  <script src="/calc/seller/seller-calc.js?v=1"></script>
+  <script src="/calc/seller/seller-fees.js?v=1"></script>
+  <script src="/calc/seller/seller-ui.js?v=1"></script>
+  <script src="./app.js?v=1"></script>
+</body>
+</html>

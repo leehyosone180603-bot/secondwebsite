@@ -1,0 +1,62 @@
+/* 셀러 계산기 전용 스타일 (루트 /style.css 위에 추가 로드) */
+.seller-container { max-width: 760px; margin: 0 auto; padding: 0 16px 48px; }
+
+/* 상단 탭 */
+.seller-tabs { display: flex; flex-wrap: wrap; gap: 8px; max-width: 760px; margin: 0 auto 18px; padding: 0 16px; }
+.seller-tab { flex: 1 1 auto; text-align: center; padding: 10px 12px; border-radius: 10px; background: #fff;
+  border: 1px solid var(--border); color: var(--muted); text-decoration: none; font-weight: 600; font-size: .92rem; white-space: nowrap; }
+.seller-tab:hover { border-color: var(--primary); color: var(--primary); }
+.seller-tab.is-active { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+/* 결과 박스(sticky) */
+.seller-result { position: sticky; top: 12px; z-index: 5; background: linear-gradient(135deg, #3b5bdb, #2f49b0);
+  color: #fff; border-radius: 16px; padding: 20px 22px; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(47,73,176,.3); }
+.seller-result h2 { margin: 0 0 12px; font-size: 1.05rem; font-weight: 700; opacity: .92; }
+.seller-result .r-main { display: flex; flex-direction: column; gap: 2px; margin-bottom: 14px; }
+.seller-result .r-main .r-label { font-size: .85rem; opacity: .85; }
+.seller-result .r-main .r-value { font-size: 2rem; font-weight: 800; letter-spacing: -.5px; font-variant-numeric: tabular-nums; }
+.seller-result .r-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
+.seller-result .r-cell { background: rgba(255,255,255,.14); border-radius: 10px; padding: 9px 12px; }
+.seller-result .r-cell .k { font-size: .78rem; opacity: .85; display: block; }
+.seller-result .r-cell .v { font-size: 1.1rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.seller-result .is-loss { color: #ffd0d0; }
+.seller-result .loss-tag { display: inline-block; margin-left: 6px; font-size: .72rem; background: #e03131; color: #fff;
+  padding: 1px 7px; border-radius: 999px; font-weight: 700; vertical-align: middle; }
+
+/* 입력 섹션 */
+.seller-section { margin-bottom: 18px; }
+.seller-section > h3 { font-size: .95rem; margin: 0 0 10px; color: var(--primary); font-weight: 700;
+  padding-bottom: 6px; border-bottom: 1px dashed var(--border); }
+.seller-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 14px; }
+.field { margin: 0; }
+.field label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: 5px; }
+.field label small { font-weight: 400; color: var(--muted); }
+.unit-input { position: relative; display: flex; align-items: center; }
+.unit-input input { padding-right: 46px; }
+.unit-input .unit { position: absolute; right: 12px; color: var(--muted); font-size: .9rem; pointer-events: none; }
+
+/* 버튼 줄 */
+.seller-actions { display: flex; gap: 10px; margin: 6px 0 4px; }
+.seller-actions button { flex: 1; padding: 12px; font-size: .98rem; font-weight: 700; border-radius: 10px; cursor: pointer; border: 1px solid var(--border); }
+.btn-reset { background: #fff; color: var(--muted); }
+.btn-reset:hover { border-color: var(--primary); color: var(--primary); }
+.btn-copy { background: var(--primary); color: #fff; border-color: var(--primary); }
+.btn-copy:hover { background: var(--primary-dark); }
+.btn-link { background: #eef2ff; color: var(--primary); border-color: #dfe6ff; }
+
+/* 현금흐름 막대 */
+.flow-bar { height: 22px; border-radius: 999px; background: #e9edf5; overflow: hidden; display: flex; margin: 10px 0 4px; }
+.flow-bar .fill { height: 100%; background: linear-gradient(90deg,#3b5bdb,#5b78f0); }
+.flow-bar .fill.over { background: linear-gradient(90deg,#e8590c,#e03131); }
+.flow-legend { font-size: .82rem; color: var(--muted); }
+
+.seller-note { font-size: .84rem; color: var(--muted); background: #f8f9fc; border: 1px solid var(--border);
+  border-radius: 10px; padding: 10px 12px; margin: 10px 0; }
+.fee-asof { font-size: .8rem; color: var(--muted); margin: 4px 0 0; }
+.disclaimer-box { font-size: .82rem; color: var(--muted); margin-top: 14px; }
+
+@media (max-width: 560px) {
+  .seller-grid2 { grid-template-columns: 1fr; }
+  .seller-result .r-value { font-size: 1.7rem; }
+  .seller-tab { flex-basis: calc(50% - 8px); }
+}

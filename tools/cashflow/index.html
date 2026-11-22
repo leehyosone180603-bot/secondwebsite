@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>현금 흐름 계산기 — 월 수입·고정비·변동비로 예상 잔액 | 건강흐름</title>
+  <meta name="description" content="월초 금액, 쇼핑몰 정산금, 인건비·임차료 등 고정비와 매입·광고 등 변동비를 입력하면 예상 잔액과 목표 대비 차액을 계산합니다. 온라인 셀러 자금 관리용 무료 계산기.">
+  <meta name="keywords" content="현금 흐름 계산기, 셀러 자금관리, 예상 잔액, 고정비 변동비, 월 현금흐름, 셀러 계산기">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://healthfortune.co.kr/tools/cashflow/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="현금 흐름 계산기 — 예상 잔액·목표 대비 차액">
+  <meta property="og:description" content="월 수입·고정비·변동비로 예상 잔액과 목표 대비 차액을 계산.">
+  <meta property="og:url" content="https://healthfortune.co.kr/tools/cashflow/">
+  <meta property="og:site_name" content="건강흐름">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"예상 잔액은 어떻게 계산하나요?","acceptedAnswer":{"@type":"Answer","text":"월초 시작 금액에 수입 합계를 더하고 고정비와 변동비 합계를 뺀 금액입니다."}},{"@type":"Question","name":"차액이 마이너스면 무슨 뜻인가요?","acceptedAnswer":{"@type":"Answer","text":"예상 잔액이 월말 목표 잔액보다 부족하다는 뜻입니다. 지출을 줄이거나 수입·자금을 더 확보해야 합니다."}},{"@type":"Question","name":"고정비와 변동비는 어떻게 나누나요?","acceptedAnswer":{"@type":"Answer","text":"매달 일정하게 나가는 인건비·임차료·보험료 등은 고정비, 판매량에 따라 달라지는 매입비·광고비·물류비 등은 변동비입니다."}},{"@type":"Question","name":"부가세 낼 돈도 넣어야 하나요?","acceptedAnswer":{"@type":"Answer","text":"분기·반기마다 내야 하는 세금은 별도 항목(기타 고정비 등)으로 미리 반영해 두면 자금 부족을 예방할 수 있습니다."}}]}
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css?v=4">
+  <link rel="stylesheet" href="/calc/seller/seller.css?v=1">
+</head>
+<body>
+  <nav class="back-nav"><a href="/calculators.html">← 전체 계산기</a></nav>
+  <header class="site-header">
+    <h1>💸 현금 흐름 계산기</h1>
+    <p class="subtitle">월 수입·고정비·변동비로 예상 잔액과 목표 대비 차액</p>
+  </header>
+  <nav class="seller-tabs" id="sellerTabs" aria-label="셀러 계산기"></nav>
+
+  <main class="seller-container">
+    <section class="seller-result" id="result" aria-live="polite">
+      <h2>계산 결과</h2>
+      <div class="r-main"><span class="r-label">예상 잔액</span><span class="r-value" id="rBalance">—</span></div>
+      <div class="flow-bar"><div class="fill" id="flowFill" style="width:0%"></div></div>
+      <p class="flow-legend" id="flowLegend" style="color:#eef;opacity:.9"></p>
+      <div class="r-grid" style="margin-top:12px">
+        <div class="r-cell"><span class="k">목표 대비 차액</span><span class="v" id="rDiff">—</span></div>
+        <div class="r-cell"><span class="k">수입 합계</span><span class="v" id="rIncome">—</span></div>
+        <div class="r-cell"><span class="k">고정비 합계</span><span class="v" id="rFixed">—</span></div>
+        <div class="r-cell"><span class="k">변동비 합계</span><span class="v" id="rVar">—</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="seller-section">
+        <h3>기준</h3>
+        <div class="seller-grid2">
+          <div class="field"><label for="startAmount">월초 시작 금액</label><div class="unit-input"><input type="text" id="startAmount" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="targetEnd">월말 목표 잔액</label><div class="unit-input"><input type="text" id="targetEnd" autocomplete="off"><span class="unit">원</span></div></div>
+        </div>
+      </div>
+      <div class="seller-section">
+        <h3>수입</h3>
+        <div class="seller-grid2">
+          <div class="field"><label for="incomeSettle">쇼핑몰 정산금</label><div class="unit-input"><input type="text" id="incomeSettle" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="incomeEtc">기타 수입</label><div class="unit-input"><input type="text" id="incomeEtc" autocomplete="off"><span class="unit">원</span></div></div>
+        </div>
+      </div>
+      <div class="seller-section">
+        <h3>고정비</h3>
+        <div class="seller-grid2">
+          <div class="field"><label for="f_labor">인건비</label><div class="unit-input"><input type="text" id="f_labor" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="f_rent">임차료</label><div class="unit-input"><input type="text" id="f_rent" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="f_insur">4대보험</label><div class="unit-input"><input type="text" id="f_insur" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="f_util">공과금</label><div class="unit-input"><input type="text" id="f_util" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="f_tel">통신비</label><div class="unit-input"><input type="text" id="f_tel" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="f_sol">솔루션 사용료</label><div class="unit-input"><input type="text" id="f_sol" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="f_etc">기타 고정비</label><div class="unit-input"><input type="text" id="f_etc" autocomplete="off"><span class="unit">원</span></div></div>
+        </div>
+      </div>
+      <div class="seller-section">
+        <h3>변동비</h3>
+        <div class="seller-grid2">
+          <div class="field"><label for="v_buy">상품 매입가</label><div class="unit-input"><input type="text" id="v_buy" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="v_mat">재료비</label><div class="unit-input"><input type="text" id="v_mat" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="v_ship">운송비</label><div class="unit-input"><input type="text" id="v_ship" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="v_ad">광고비</label><div class="unit-input"><input type="text" id="v_ad" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="v_log">물류비</label><div class="unit-input"><input type="text" id="v_log" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="v_etc">기타 변동비</label><div class="unit-input"><input type="text" id="v_etc" autocomplete="off"><span class="unit">원</span></div></div>
+        </div>
+      </div>
+      <div class="seller-actions">
+        <button type="button" class="btn-reset" id="resetBtn">초기화</button>
+        <button type="button" class="btn-copy" id="copyBtn">결과 복사</button>
+      </div>
+    </section>
+
+    <div class="ad-container" aria-label="광고">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+
+    <section class="card info">
+      <h2>이렇게 계산됩니다</h2>
+      <ul>
+        <li><strong>수입합계</strong> = 쇼핑몰 정산금 + 기타 수입</li>
+        <li><strong>예상잔액</strong> = 월초 시작 금액 + 수입합계 − (고정비 + 변동비)</li>
+        <li><strong>차액</strong> = 예상잔액 − 월말 목표 잔액 <small>(+면 여유, −면 부족)</small></li>
+        <li>막대는 수입 대비 지출 비율을 나타냅니다. 지출이 수입을 넘으면 빨간색으로 표시됩니다.</li>
+      </ul>
+      <p class="seller-note">분기·반기 부가세, 종합소득세 납부액은 미리 고정비에 반영해 두면 자금 부족을 예방할 수 있습니다.</p>
+    </section>
+    <section class="card info faq-section">
+      <h2>자주 묻는 질문</h2>
+      <h3>Q. 예상 잔액은 어떻게 계산하나요?</h3>
+      <p>월초 시작 금액에 수입 합계를 더하고 고정비와 변동비 합계를 뺀 금액입니다.</p>
+      <h3>Q. 차액이 마이너스면 무슨 뜻인가요?</h3>
+      <p>예상 잔액이 월말 목표 잔액보다 부족하다는 뜻입니다. 지출을 줄이거나 수입·자금을 더 확보해야 합니다.</p>
+      <h3>Q. 고정비와 변동비는 어떻게 나누나요?</h3>
+      <p>매달 일정한 인건비·임차료·보험료는 고정비, 판매량에 따라 달라지는 매입비·광고비·물류비는 변동비입니다.</p>
+      <h3>Q. 부가세 낼 돈도 넣어야 하나요?</h3>
+      <p>분기·반기마다 내는 세금은 별도 항목으로 미리 반영해 두면 자금 부족을 예방할 수 있습니다.</p>
+      <p class="disclaimer-box">※ 본 계산 결과는 참고용이며 세무·회계 자문이 아닙니다.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-links"><a href="/about/">소개·문의</a> · <a href="/privacy/">개인정보처리방침</a> · <a href="/terms/">이용약관</a></nav>
+    <p>© <span id="year"></span> 건강흐름 · 현금 흐름 계산기</p>
+  </footer>
+
+  <script src="/calc/seller/seller-calc.js?v=1"></script>
+  <script src="/calc/seller/seller-ui.js?v=1"></script>
+  <script src="./app.js?v=1"></script>
+</body>
+</html>

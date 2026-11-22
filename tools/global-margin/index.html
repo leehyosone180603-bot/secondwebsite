@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구매대행 마진율 계산기 — 환율·관세·배대지 반영 순이익 | 건강흐름</title>
+  <meta name="description" content="해외 구매대행 상품의 판매가·외화 매입가·환율·카드수수료·배대지비·관세·마켓수수료·부가세를 입력하면 정산금·순이익·마진율을 즉시 계산합니다. 구매대행 셀러용 무료 계산기.">
+  <meta name="keywords" content="구매대행 마진율 계산기, 해외구매대행 원가, 배대지 비용, 환율 마진, 구매대행 순이익, 셀러 계산기">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://healthfortune.co.kr/tools/global-margin/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="구매대행 마진율 계산기 — 순이익·마진율">
+  <meta property="og:description" content="환율·카드수수료·배대지비·관세·마켓수수료로 구매대행 마진율을 계산.">
+  <meta property="og:url" content="https://healthfortune.co.kr/tools/global-margin/">
+  <meta property="og:site_name" content="건강흐름">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"외화 매입가는 어떻게 원화로 바꾸나요?","acceptedAnswer":{"@type":"Answer","text":"매입가(외화)에 업체 고시환율을 곱합니다. 일본 엔은 보통 100엔당 환율을 쓰므로 통화를 '엔'으로 고르면 100으로 나눠 반영합니다."}},{"@type":"Question","name":"카드수수료는 어디에 적용되나요?","acceptedAnswer":{"@type":"Answer","text":"원화로 환산한 원가금액에 카드수수료율을 곱해 더합니다. 해외 결제 시 카드사 수수료를 원가에 반영하기 위함입니다."}},{"@type":"Question","name":"배대지 비용이 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"해외 물건을 한국으로 보내주는 배송대행지 이용료로, 매입비용에 포함해 계산합니다."}},{"@type":"Question","name":"마진율이 음수로 나오면요?","acceptedAnswer":{"@type":"Answer","text":"순이익이 적자라는 뜻입니다. 판매가를 올리거나 매입·수수료를 줄여야 합니다."}}]}
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css?v=4">
+  <link rel="stylesheet" href="/calc/seller/seller.css?v=1">
+</head>
+<body>
+  <nav class="back-nav"><a href="/calculators.html">← 전체 계산기</a></nav>
+  <header class="site-header">
+    <h1>🌎 구매대행 마진율 계산기</h1>
+    <p class="subtitle">환율·관세·배대지·마켓수수료 반영 순이익 계산</p>
+  </header>
+  <nav class="seller-tabs" id="sellerTabs" aria-label="셀러 계산기"></nav>
+
+  <main class="seller-container">
+    <section class="seller-result" id="result" aria-live="polite">
+      <h2>계산 결과</h2>
+      <div class="r-main"><span class="r-label">순이익</span><span class="r-value" id="rProfit">—</span></div>
+      <div class="r-grid">
+        <div class="r-cell"><span class="k">마진율</span><span class="v" id="rMargin">—</span></div>
+        <div class="r-cell"><span class="k">정산금액</span><span class="v" id="rSettle">—</span></div>
+        <div class="r-cell"><span class="k">원가(원)</span><span class="v" id="rCost">—</span></div>
+        <div class="r-cell"><span class="k">부가세</span><span class="v" id="rVat">—</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="seller-note">모든 금액은 <strong>VAT 포함</strong> 기준으로 입력하세요. 입력 즉시 자동 계산됩니다.</p>
+
+      <div class="seller-section">
+        <h3>매출</h3>
+        <div class="seller-grid2">
+          <div class="field"><label for="price">판매가격</label><div class="unit-input"><input type="text" id="price" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="shipFee">배송비 <small>(고객 부담)</small></label><div class="unit-input"><input type="text" id="shipFee" autocomplete="off"><span class="unit">원</span></div></div>
+        </div>
+      </div>
+
+      <div class="seller-section">
+        <h3>매입·대행</h3>
+        <div class="seller-grid2">
+          <div class="field"><label for="currency">통화</label><select id="currency">
+            <option value="cny">위안화 ¥</option><option value="usd">미국 달러 $</option>
+            <option value="jpy">일본 엔 (100엔 기준)</option><option value="eur">유로 €</option>
+            <option value="gbp">영국 파운드 £</option><option value="aud">호주 달러 A$</option></select></div>
+          <div class="field"><label for="bizFx">업체 고시환율</label><div class="unit-input"><input type="text" id="bizFx" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="buyForeign">매입가격 <small>(외화)</small></label><div class="unit-input"><input type="text" id="buyForeign" autocomplete="off"><span class="unit" id="curUnit">¥</span></div></div>
+          <div class="field"><label for="cardRate">카드수수료</label><div class="unit-input"><input type="text" id="cardRate" autocomplete="off"><span class="unit">%</span></div></div>
+          <div class="field"><label for="bungaeji">배대지 비용</label><div class="unit-input"><input type="text" id="bungaeji" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="customs">관세</label><div class="unit-input"><input type="text" id="customs" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="etc">기타</label><div class="unit-input"><input type="text" id="etc" autocomplete="off"><span class="unit">원</span></div></div>
+        </div>
+      </div>
+
+      <div class="seller-section">
+        <h3>수수료</h3>
+        <div class="field" style="margin-bottom:12px"><label for="market">마켓 선택 <small>(선택 시 기본 수수료 자동 입력)</small></label><select id="market"></select></div>
+        <div class="seller-grid2">
+          <div class="field"><label for="catFee">카테고리 수수료</label><div class="unit-input"><input type="text" id="catFee" autocomplete="off"><span class="unit">%</span></div></div>
+          <div class="field"><label for="linkFee">연동 수수료</label><div class="unit-input"><input type="text" id="linkFee" autocomplete="off"><span class="unit">%</span></div></div>
+          <div class="field"><label for="shipFeeRate">배송비 수수료</label><div class="unit-input"><input type="text" id="shipFeeRate" autocomplete="off"><span class="unit">%</span></div></div>
+        </div>
+        <p class="fee-asof" id="feeAsof"></p>
+      </div>
+
+      <div class="seller-section">
+        <h3>부가세</h3>
+        <div class="segment" role="radiogroup" style="margin-bottom:10px">
+          <label><input type="radio" name="tax" value="normal" checked><span>일반 10%</span></label>
+          <label><input type="radio" name="tax" value="simple"><span>간이</span></label>
+          <label><input type="radio" name="tax" value="free"><span>면세</span></label>
+        </div>
+        <div class="field" id="simpleWrap" hidden><label for="simpleRate">간이 부가율</label><div class="unit-input"><input type="text" id="simpleRate" autocomplete="off" value="1.5"><span class="unit">%</span></div></div>
+      </div>
+
+      <div class="seller-actions">
+        <button type="button" class="btn-reset" id="resetBtn">초기화</button>
+        <button type="button" class="btn-copy" id="copyBtn">결과 복사</button>
+      </div>
+    </section>
+
+    <div class="ad-container" aria-label="광고">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+
+    <section class="card info">
+      <h2>이렇게 계산됩니다</h2>
+      <ul>
+        <li><strong>원가금액(원)</strong> = 매입가격(외화) × 환율 <small>(엔화는 100엔 기준이면 ÷100)</small></li>
+        <li><strong>매입비합계</strong> = 원가금액 + 카드수수료 + 배대지비 + 관세 + 기타</li>
+        <li><strong>정산금</strong> = (판매가+배송비) − 마켓 수수료합계</li>
+        <li><strong>순이익</strong> = 정산금 − 매입비합계 − 부가세</li>
+        <li><strong>마진율</strong> = 순이익 ÷ 매출합계 × 100</li>
+      </ul>
+      <p class="seller-note">수수료율은 마켓 정책에 따라 바뀌므로 각 판매자센터에서 확인하세요.</p>
+    </section>
+    <section class="card info faq-section">
+      <h2>자주 묻는 질문</h2>
+      <h3>Q. 외화 매입가는 어떻게 원화로 바꾸나요?</h3>
+      <p>매입가(외화)에 업체 고시환율을 곱합니다. 일본 엔은 100엔당 환율을 쓰므로 통화를 '엔'으로 고르면 100으로 나눠 반영합니다.</p>
+      <h3>Q. 카드수수료는 어디에 적용되나요?</h3>
+      <p>원화로 환산한 원가금액에 카드수수료율을 곱해 더합니다. 해외 결제 카드사 수수료를 원가에 반영하기 위함입니다.</p>
+      <h3>Q. 배대지 비용이 무엇인가요?</h3>
+      <p>해외 물건을 한국으로 보내주는 배송대행지 이용료로, 매입비용에 포함해 계산합니다.</p>
+      <h3>Q. 마진율이 음수로 나오면요?</h3>
+      <p>순이익이 적자라는 뜻입니다. 판매가를 올리거나 매입·수수료를 줄여야 합니다.</p>
+      <p class="disclaimer-box">※ 본 계산 결과는 참고용이며 세무·회계 자문이 아닙니다.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-links"><a href="/about/">소개·문의</a> · <a href="/privacy/">개인정보처리방침</a> · <a href="/terms/">이용약관</a></nav>
+    <p>© <span id="year"></span> 건강흐름 · 구매대행 마진율 계산기</p>
+  </footer>
+
+  <script src="/calc/seller/seller-calc.js?v=1"></script>
+  <script src="/calc/seller/seller-fees.js?v=1"></script>
+  <script src="/calc/seller/seller-ui.js?v=1"></script>
+  <script src="./app.js?v=1"></script>
+</body>
+</html>
