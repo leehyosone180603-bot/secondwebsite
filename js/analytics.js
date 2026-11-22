@@ -5,7 +5,7 @@
 (function () {
   "use strict";
   // ▼▼▼ Apps Script 웹앱 /exec URL 을 여기에 붙여넣으세요 ▼▼▼
-  var ENDPOINT = "";
+  var ENDPOINT = "https://script.google.com/macros/s/AKfycbw3goGpclmOeJ4oB3_GcLvchQii2ZANaN2_s11AdRroAySjDlQRHQ8SpnPHEsBXtP8_/exec";
   // ▲▲▲ 예: https://script.google.com/macros/s/AKfyc.../exec ▲▲▲
   if (!ENDPOINT) return;
 
