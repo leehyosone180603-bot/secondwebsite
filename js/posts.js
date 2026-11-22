@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "roasted-sweet-potato-blood-sugar",
+    title: "군고구마 혈당 찐고구마보다 높을까? 당뇨 하루 적정량",
+    summary: "군고구마가 찐고구마보다 혈당을 더 올리는 이유, 당뇨 시 하루 적정량, 식혀 먹기 등 혈당 덜 올리는 고구마 먹는 법을 정리했습니다.",
+    category: "info",
+    date: "2026-11-22",
+    url: "/posts/roasted-sweet-potato-blood-sugar.html",
+    image: "/img/roasted-sweet-potato-blood-sugar-1.jpg",
+  },
+  {
     id: "gimjang-back-wrist-pain",
     title: "김장 후 허리 손목 통증, 찜질법과 병원 가야 할 신호",
     summary: "김장 다음 날 허리·손목이 아프다면? 원인, 냉찜질·온찜질 구분법, 손목터널증후군 신호와 병원 가야 할 기준, 후유증 줄이는 요령까지 정리했습니다.",
