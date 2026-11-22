@@ -130,7 +130,8 @@ function updateJaPostsJs(a, heroFile) {
       "  if (typeof module !== \"undefined\" && module.exports) module.exports = { JA_POSTS: JA_POSTS };\n" +
       "  else root.JA_POSTS = JA_POSTS;\n})(typeof window !== \"undefined\" ? window : this);\n";
   }
-  const reOld = new RegExp("\\n    \\{\\s*id: \"" + a.slug.replace(/[-]/g, "\\$&") + "\"[\\s\\S]*?\\n    \\},", "m");
+  // 기존 동일 slug 단일 라인 엔트리 제거(멱등)
+  const reOld = new RegExp("\\n    \\{ id: \"" + a.slug.replace(/[-]/g, "\\$&") + "\",[^\\n]*\\},", "g");
   s = s.replace(reOld, "");
   const entry = `    { id: ${JSON.stringify(a.slug)}, title: ${JSON.stringify(a.titleJa)}, summary: ${JSON.stringify(a.descriptionJa)}, category: ${JSON.stringify(a.category || "info")}, date: ${JSON.stringify(a.date)}, url: ${JSON.stringify("/ja/posts/" + a.slug + ".html")}, image: ${JSON.stringify(heroFile || "")} },`;
   s = s.replace(/var JA_POSTS = \[\n/, "var JA_POSTS = [\n" + entry + "\n");

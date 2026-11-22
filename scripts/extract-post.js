@@ -15,9 +15,10 @@ function stripTags(s) { return decode(String(s).replace(/<[^>]+>/g, "")); }
 // 인라인: <strong> → **, <a href> → [text](href)
 function inline(s) {
   s = String(s)
-    .replace(/<strong>(.*?)<\/strong>/g, "**$1**")
-    .replace(/<a[^>]*href="([^"]+)"[^>]*>(.*?)<\/a>/g, "[$2]($1)");
-  return decode(s.replace(/<[^>]+>/g, "")).trim();
+    .replace(/<strong>([\s\S]*?)<\/strong>/g, "**$1**")
+    .replace(/<b>([\s\S]*?)<\/b>/g, "**$1**")
+    .replace(/<a[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g, "[$2]($1)");
+  return decode(s.replace(/<[^>]+>/g, "")).replace(/\s+/g, " ").trim();
 }
 function attr(html, re) { const m = html.match(re); return m ? decode(m[1]) : ""; }
 
@@ -38,7 +39,8 @@ const figRe = /<img src="([^"]+)" alt="([^"]*)"/g; let fm;
 while ((fm = figRe.exec(html))) photos.push({ file: decode(fm[1]), alt: decode(fm[2]) });
 
 // 본문 → 마크다운
-const bodyHtml = (html.match(/<div class="article__body">([\s\S]*?)<\/div>\s*<div class="article__nav">/) || [,""])[1];
+// article__body 시작부터 article__nav 직전까지(중첩 div 박스 포함). nav 없으면 </article>까지.
+const bodyHtml = (html.match(/<div class="article__body">([\s\S]*?)(?:<div class="article__nav">|<\/article>)/) || [,""])[1];
 const lines = [];
 // 블록 단위 토큰화
 const blockRe = /<figure[\s\S]*?<\/figure>|<h2>([\s\S]*?)<\/h2>|<h3>([\s\S]*?)<\/h3>|<ul>([\s\S]*?)<\/ul>|<ol>([\s\S]*?)<\/ol>|<p[^>]*>([\s\S]*?)<\/p>/g;
