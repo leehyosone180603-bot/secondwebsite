@@ -96,13 +96,26 @@
     el.innerHTML = html;
   }
 
+  // 하단 '수수료 출처' 목록 렌더
+  function renderSources(containerId, sources) {
+    var el = document.getElementById(containerId);
+    if (!el || !sources) return;
+    var items = sources.map(function (s) {
+      var link = s.url ? '<a href="' + s.url + '" target="_blank" rel="noopener">공식표 ↗</a>'
+                       : (s.note || "판매자센터에서 확인");
+      return "<b>" + s.name + "</b> — " + link + " <span>(확인일 " + (s.checkedAt || "") + ")</span>";
+    });
+    el.innerHTML = "<b>수수료 출처</b><br>" + items.join("<br>");
+  }
+
   function year(id) { var e = document.getElementById(id || "year"); if (e) e.textContent = new Date().getFullYear(); }
   function pushAd() { try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {} }
 
   var api = {
     TABS: TABS, won: won, wonSigned: wonSigned, pct: pct, yuan: yuan,
     parseInt0: parseInt0, parseDec: parseDec, bindMoney: bindMoney, bindDecimal: bindDecimal,
-    store: store, load: load, copyText: copyText, renderTabs: renderTabs, year: year, pushAd: pushAd
+    store: store, load: load, copyText: copyText, renderTabs: renderTabs,
+    renderSources: renderSources, year: year, pushAd: pushAd
   };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.SellerUI = api;

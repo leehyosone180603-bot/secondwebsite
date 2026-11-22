@@ -64,11 +64,13 @@
       </div>
 
       <div class="seller-section">
-        <h3>수수료</h3>
-        <div class="field" style="margin-bottom:12px"><label for="market">마켓 선택 <small>(선택 시 기본 수수료 자동 입력)</small></label>
-          <select id="market"></select></div>
+        <h3>수수료 <a href="#" id="feeSource" target="_blank" rel="noopener" class="fee-link" hidden>공식 수수료표 보기 ↗</a></h3>
+        <div class="seller-grid2" style="margin-bottom:12px">
+          <div class="field"><label for="market">마켓 선택 <small>(기본 수수료 자동)</small></label><select id="market"></select></div>
+          <div class="field"><label for="category">대표 카테고리 <small>(선택 시 자동)</small></label><select id="category"></select></div>
+        </div>
         <div class="seller-grid2">
-          <div class="field"><label for="catFee">카테고리 수수료</label><div class="unit-input"><input type="text" id="catFee" autocomplete="off"><span class="unit">%</span></div></div>
+          <div class="field"><label for="catFee">카테고리 수수료 <small>(VAT 포함)</small></label><div class="unit-input"><input type="text" id="catFee" autocomplete="off"><span class="unit">%</span></div></div>
           <div class="field"><label for="linkFee">연동 수수료 <small>(대량등록)</small></label><div class="unit-input"><input type="text" id="linkFee" autocomplete="off"><span class="unit">%</span></div></div>
           <div class="field"><label for="shipFeeRate">배송비 수수료</label><div class="unit-input"><input type="text" id="shipFeeRate" autocomplete="off"><span class="unit">%</span></div></div>
         </div>
@@ -113,7 +115,8 @@
         <li><strong>순이익</strong> = 정산금액 − (매입가+운송+기타+운임+광고) − 부가세</li>
         <li><strong>마진율</strong> = 순이익 ÷ 매출합계 × 100</li>
       </ul>
-      <p class="seller-note">수수료율은 마켓 정책에 따라 바뀌므로 반드시 각 <strong>판매자센터</strong>에서 확인하세요.</p>
+      <p class="seller-note">수수료율은 마켓 정책에 따라 바뀌므로 반드시 각 <strong>판매자센터</strong>에서 확인하세요. 기본값은 공식 raw값에 VAT(×1.1)를 반영한 값입니다.</p>
+      <div id="feeSources" class="fee-sources"></div>
     </section>
     <section class="card info faq-section">
       <h2>자주 묻는 질문</h2>

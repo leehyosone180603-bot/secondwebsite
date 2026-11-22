@@ -12,15 +12,18 @@
   var currency = document.getElementById("currency"), curUnit = document.getElementById("curUnit");
   var category = document.getElementById("category"), size = document.getElementById("size");
   var feeAsof = document.getElementById("feeAsof"), simpleWrap = document.getElementById("simpleWrap");
+  var feeSource = document.getElementById("feeSource");
   var curSymbols = { krw: "₩", cny: "¥", usd: "$", jpy: "¥(100)" };
 
   // 카테고리/사이즈 셀렉트 채우기
   var cats = F.rocketCategory, sizes = F.rocketSize;
   var optCustom = function (label) { var o = document.createElement("option"); o.value = "__custom"; o.textContent = label; return o; };
-  Object.keys(cats).forEach(function (k) { var o = document.createElement("option"); o.value = k; o.textContent = cats[k].name; category.appendChild(o); });
+  Object.keys(cats).forEach(function (k) { var o = document.createElement("option"); o.value = k; o.textContent = cats[k].name + " (" + cats[k].fee + "%)"; category.appendChild(o); });
   category.appendChild(optCustom("직접 입력"));
   Object.keys(sizes).forEach(function (k) { var o = document.createElement("option"); o.value = k; o.textContent = sizes[k].name; size.appendChild(o); });
   size.appendChild(optCustom("직접 입력"));
+  U.renderSources("feeSources", F.sources);
+  if (feeSource && F.rocketSource && F.rocketSource.url) { feeSource.href = F.rocketSource.url; feeSource.hidden = false; }
 
   function taxType() { return (document.querySelector('input[name="tax"]:checked') || {}).value || "normal"; }
   function readInputs() {
@@ -61,8 +64,9 @@
     recalc();
   }
   function updateFeeNote() {
-    var note = (F.reference && F.reference.rocketNote) ? "참고(비공식): " + F.reference.rocketNote + " · " : "";
-    feeAsof.textContent = note + "기준일 " + F.updatedAt + ", 수수료·물류요금은 쿠팡 Wing에서 확인 후 직접 입력";
+    var rs = F.rocketSource || {};
+    var note = rs.note ? rs.note + " · " : "";
+    feeAsof.textContent = note + "확인일 " + (rs.checkedAt || F.updatedAt) + ", 실제 금액은 쿠팡 Wing에서 확인(수정 가능)";
   }
 
   function restore() {

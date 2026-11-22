@@ -10,13 +10,23 @@
   var el = {};
   moneyIds.concat(pctIds).forEach(function (id) { el[id] = document.getElementById(id); });
   var market = document.getElementById("market"), feeAsof = document.getElementById("feeAsof");
+  var category = document.getElementById("category"), feeSource = document.getElementById("feeSource");
   var simpleWrap = document.getElementById("simpleWrap");
 
   // 마켓 셀렉트 채우기
-  var om = F.openMarket, ref = (F.reference && F.reference.openMarket) || {};
+  var om = F.openMarket;
   Object.keys(om).forEach(function (k) {
     var o = document.createElement("option"); o.value = k; o.textContent = om[k].name; market.appendChild(o);
   });
+  U.renderSources("feeSources", F.sources);
+
+  function fillCategories(k) {
+    var m = om[k] || {}, cats = m.categories || [];
+    category.innerHTML = "";
+    var first = document.createElement("option"); first.value = "";
+    first.textContent = cats.length ? "카테고리 선택(직접 입력 가능)" : "직접 입력"; category.appendChild(first);
+    cats.forEach(function (c, idx) { var o = document.createElement("option"); o.value = String(idx); o.textContent = c.name + " (" + c.fee + "%)"; category.appendChild(o); });
+  }
 
   function taxType() { return (document.querySelector('input[name="tax"]:checked') || {}).value || "normal"; }
 
@@ -60,19 +70,33 @@
 
   function applyMarket() {
     var k = market.value, m = om[k] || {};
-    // 공식 미확인 → direct:true 이면 자동 0, 참고 범위만 안내
-    if (!m.direct) {
-      el.catFee.value = m.cat || ""; el.linkFee.value = m.link || ""; el.shipFeeRate.value = m.shipRate || "";
+    fillCategories(k);
+    el.linkFee.value = m.link ? m.link : "";
+    el.shipFeeRate.value = m.shipRate ? m.shipRate : "";
+    if (feeSource) {
+      if (m.sourceUrl) { feeSource.href = m.sourceUrl; feeSource.hidden = false; }
+      else { feeSource.hidden = true; }
     }
-    feeAsof.textContent = (ref[k] ? "참고(비공식): " + ref[k] + " · " : "") +
-      "수수료 기준일 " + F.updatedAt + ", 실제 수수료는 판매자센터에서 확인";
+    var parts = [];
+    if (m.pageBaseDate) parts.push("페이지기준 " + m.pageBaseDate);
+    if (m.vat) parts.push("VAT " + m.vat + "→×1.1 반영");
+    if (m.subNote) parts.push(m.subNote);
+    feeAsof.textContent = (parts.length ? parts.join(" · ") + " · " : "") +
+      "확인일 " + F.updatedAt + ", 판매자센터에서 확인(수정 가능)";
+    recalc();
+  }
+  function applyCategory() {
+    var k = market.value, m = om[k] || {}, idx = category.value;
+    if (idx !== "" && m.categories && m.categories[idx]) el.catFee.value = m.categories[idx].fee;
     recalc();
   }
 
-  function save(i) { U.store(KEY, { i: i, market: market.value, tax: taxType(), targetPct: document.getElementById("targetPct").value }); }
+  var savedCat = "";
+  function save(i) { U.store(KEY, { i: i, market: market.value, category: category.value, tax: taxType(), targetPct: document.getElementById("targetPct").value }); }
   function restore() {
     var s = U.load(KEY); if (!s) return;
     if (s.market) market.value = s.market;
+    savedCat = s.category || "";
     var i = s.i || {};
     moneyIds.forEach(function (id) { if (i[id]) el[id].value = Number(i[id]).toLocaleString("ko-KR"); });
     pctIds.forEach(function (id) { if (i[id] !== undefined && i[id] !== 0) el[id].value = i[id]; });
@@ -85,6 +109,7 @@
   pctIds.forEach(function (id) { U.bindDecimal(el[id], recalc); });
   U.bindDecimal(document.getElementById("targetPct"), recalc);
   market.addEventListener("change", applyMarket);
+  category.addEventListener("change", applyCategory);
   Array.prototype.forEach.call(document.querySelectorAll('input[name="tax"]'), function (r) {
     r.addEventListener("change", function () { simpleWrap.hidden = taxType() !== "simple"; recalc(); });
   });
@@ -95,7 +120,7 @@
     market.selectedIndex = 0;
     var n = document.querySelector('input[name="tax"][value="normal"]'); if (n) n.checked = true;
     simpleWrap.hidden = true; try { localStorage.removeItem(KEY); } catch (e) {}
-    recalc();
+    applyMarket();
   });
   document.getElementById("copyBtn").addEventListener("click", function () {
     var i = readInputs(), r = C.margin(i);
@@ -119,5 +144,6 @@
   } catch (e) {}
   simpleWrap.hidden = taxType() !== "simple";
   applyMarket();
+  if (savedCat) { category.value = savedCat; applyCategory(); }
   U.pushAd();
 })();

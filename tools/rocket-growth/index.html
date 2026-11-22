@@ -65,12 +65,12 @@
       </div>
 
       <div class="seller-section">
-        <h3>쇼핑몰 비용</h3>
+        <h3>쇼핑몰 비용 <a href="#" id="feeSource" target="_blank" rel="noopener" class="fee-link" hidden>공식 요금표 보기 ↗</a></h3>
         <div class="seller-grid2">
-          <div class="field"><label for="category">카테고리</label><select id="category"></select></div>
+          <div class="field"><label for="category">카테고리 <small>(VAT 포함)</small></label><select id="category"></select></div>
           <div class="field"><label for="catFee">수수료</label><div class="unit-input"><input type="text" id="catFee" autocomplete="off"><span class="unit">%</span></div></div>
           <div class="field"><label for="size">입출고 사이즈</label><select id="size"></select></div>
-          <div class="field"><label for="inoutFee">입출고·배송비</label><div class="unit-input"><input type="text" id="inoutFee" autocomplete="off"><span class="unit">원</span></div></div>
+          <div class="field"><label for="inoutFee">입출고·배송비 <small>(시작금액)</small></label><div class="unit-input"><input type="text" id="inoutFee" autocomplete="off"><span class="unit">원</span></div></div>
         </div>
         <p class="fee-asof" id="feeAsof"></p>
       </div>
@@ -104,7 +104,8 @@
         <li><strong>순이익</strong> = (판매가 − 쇼핑몰비용) − 매입비합계 − 부가세</li>
         <li><strong>최소 ROAS</strong> = 판매가격 ÷ 순이익 × 100 <small>(광고비가 순이익과 같아지는 손익분기)</small></li>
       </ul>
-      <p class="seller-note">카테고리 수수료·입출고 요금은 쿠팡 정책에 따라 바뀌므로 <strong>쿠팡 Wing</strong>에서 확인 후 입력하세요.</p>
+      <p class="seller-note">카테고리 수수료·입출고 요금은 쿠팡 정책에 따라 바뀌므로 <strong>쿠팡 Wing</strong>에서 확인 후 입력하세요. 기본값은 VAT 별도 공식값에 ×1.1을 반영한 '시작금액'입니다.</p>
+      <div id="feeSources" class="fee-sources"></div>
     </section>
     <section class="card info faq-section">
       <h2>자주 묻는 질문</h2>
