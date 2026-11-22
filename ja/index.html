@@ -79,7 +79,7 @@
   <script>
   (function () {
     var POSTS = (window.JA_POSTS || []).slice().sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); });
-    var CATNAMES = { food: "健康食", info: "健康情報", disease: "病気", diet: "ダイエット", exercise: "運動" };
+    var CATNAMES = { season: "季節の健康", check: "セルフチェック", food: "健康食", korea: "韓国の健康習慣", info: "健康情報", disease: "病気", diet: "ダイエット", exercise: "運動" };
     function esc(s){ return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
     var grid = document.getElementById("jaGrid"), empty = document.getElementById("jaEmpty"), catsEl = document.getElementById("jaCats");
     var curCat = "all", q = "";

@@ -38,15 +38,20 @@ const inlineMd = t => {
 /* 마크다운(제한 문법) → 블록 배열 */
 function parseBlocks(md) {
   const lines = String(md || "").split(/\r?\n/);
-  const blocks = []; let ul = null, ol = null;
-  const flush = () => { if (ul) { blocks.push({ t: "ul", items: ul }); ul = null; } if (ol) { blocks.push({ t: "ol", items: ol }); ol = null; } };
+  const blocks = []; let ul = null, ol = null, tbl = null;
+  const flush = () => {
+    if (ul) { blocks.push({ t: "ul", items: ul }); ul = null; }
+    if (ol) { blocks.push({ t: "ol", items: ol }); ol = null; }
+    if (tbl) { blocks.push({ t: "table", rows: tbl }); tbl = null; }
+  };
   for (const ln of lines) {
     const s = ln.trim();
     if (!s) { flush(); continue; }
     let m;
     if ((m = s.match(/^##\s+(.*)/))) { flush(); blocks.push({ t: "h2", text: m[1] }); }
     else if ((m = s.match(/^###\s+(.*)/))) { flush(); blocks.push({ t: "h3", text: m[1] }); }
-    else if ((m = s.match(/^[-*]\s+(.*)/))) { if (ol) flush(); if (!ul) ul = []; ul.push(m[1]); }
+    else if (/^\|.*\|\s*$/.test(s)) { if (ul || ol) flush(); if (!tbl) tbl = []; tbl.push(s); }
+    else if ((m = s.match(/^[-*]\s+(.*)/))) { if (ol || tbl) flush(); if (!ul) ul = []; ul.push(m[1]); }
     else if ((m = s.match(/^\d+[.)]\s+(.*)/))) { if (ul) flush(); if (!ol) ol = []; ol.push(m[1]); }
     else if (/^>\s?/.test(s)) { flush(); blocks.push({ t: "p", text: s.replace(/^>\s?/, "") }); }
     else { flush(); blocks.push({ t: "p", text: s }); }
@@ -92,6 +97,18 @@ function buildBody(blocks, photos) {
       out.push("        <ul>" + b.items.map(x => `<li>${inlineMd(x)}</li>`).join("") + "</ul>");
     } else if (b.t === "ol") {
       out.push("        <ol>" + b.items.map(x => `<li>${inlineMd(x)}</li>`).join("") + "</ol>");
+    } else if (b.t === "table") {
+      const cells = r => r.replace(/^\s*\|/, "").replace(/\|\s*$/, "").split("|").map(c => c.trim());
+      const rows = b.rows.filter(r => !/^\s*\|[\s:|-]+\|\s*$/.test(r)); // 구분선 제거
+      if (rows.length) {
+        const head = cells(rows[0]);
+        const body = rows.slice(1).map(cells);
+        let t = '<div class="table-scroll"><table class="md-table"><thead><tr>' +
+          head.map(c => `<th>${inlineMd(c)}</th>`).join("") + "</tr></thead><tbody>";
+        t += body.map(r => "<tr>" + r.map(c => `<td>${inlineMd(c)}</td>`).join("") + "</tr>").join("");
+        t += "</tbody></table></div>";
+        out.push("        " + t);
+      }
     } else { // p
       const hasDisc = /정보\s*제공\s*목적|전문의|의사의 진단|진단이나 처방/.test(b.text);
       const discIdx = b.text.search(/※|이 글은|본 글은|이 정보는/);

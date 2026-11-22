@@ -904,6 +904,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://healthfortune.co.kr/ja/posts/roasted-sweet-potato-blood-sugar.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -1056,12 +1062,6 @@
   <url>
     <loc>https://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html</loc>
     <lastmod>2026-11-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://healthfortune.co.kr/ja/posts/roasted-sweet-potato-blood-sugar.html</loc>
-    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
