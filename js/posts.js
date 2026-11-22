@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "year-end-tax-preview-guide",
+    title: "연말정산 미리보기 활용법, 11월에 확인하고 남은 한 달 절세하기",
+    summary: "홈택스 연말정산 미리보기 경로와 결과 읽는 법, 총급여 25% 문턱 기준 신용·체크카드 사용 전략, 12월 31일 전 연금저축·월세·의료비 절세 체크리스트를 정리했습니다.",
+    category: "info",
+    date: "2026-11-22",
+    url: "/posts/year-end-tax-preview-guide.html",
+    image: "/img/year-end-tax-preview-guide-1.jpg",
+  },
+  {
     id: "winter-dry-eye-artificial-tears",
     title: "겨울 안구건조증 인공눈물 하루 몇 번? 일회용 제대로 쓰는 법",
     summary: "난방철 안구건조증이 심해지는 이유, 인공눈물 하루 점안 횟수 기준, 일회용 첫 방울 버리기·렌즈 착용 시 주의점, 생활 관리법과 안과 갈 시점을 정리했습니다.",
