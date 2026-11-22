@@ -54,8 +54,17 @@
 
     // 오픈마켓 (마진율·구매대행 계산기)
     openMarket: {
-      smartstore: { name: "스마트스토어", direct: true, link: 0, shipRate: 0, shipDirect: true,
-        categories: [], sourceUrl: "", note: "공식 도움말 미도달 — 판매자센터에서 확인 후 직접 입력", vat: "" },
+      // 스마트스토어: 등급(매출규모)별 수수료. 등급값을 카테고리·배송비 수수료에 함께 적용.
+      // [민간 정리] esoop, 페이지기준 2026-10, VAT 포함(×1.1 미적용).
+      smartstore: { name: "스마트스토어", gradeMode: true, shipEqualsCat: true,
+        link: 3, linkMarketing: 1,
+        categories: [
+          { name: "영세", fee: 1.947 }, { name: "중소1", fee: 2.563 }, { name: "중소2", fee: 2.728 },
+          { name: "중소3", fee: 3.003 }, { name: "일반", fee: 3.630 }
+        ],
+        sourceUrl: "https://esoop.co.kr/faq/smartstore-fees",
+        checkedAt: CHK, pageBaseDate: "2026-10", vat: "포함", unofficial: true,
+        subNote: "네이버 공식표가 아닌 정리 자료 기준이며, 정확한 값은 스마트스토어센터에서 확인" },
       coupang: { name: "쿠팡", link: 0, linkNote: "연동 비용 없음(공식)", shipRate: 3.3, shipRaw: 3,
         categories: coupangCats, sourceUrl: "https://cloud.mkt.coupang.com/Fee-Table",
         checkedAt: CHK, pageBaseDate: "2019-11-25", vat: "표기없음",
@@ -115,7 +124,7 @@
       { name: "11번가", url: ST11_URL, checkedAt: CHK },
       { name: "G마켓/옥션(ESM)", url: ESM_URL, checkedAt: CHK },
       { name: "쿠팡 로켓그로스(Wing)", url: "https://wing.coupang.com/tenants/rfm/settlements/fee-information", checkedAt: CHK },
-      { name: "스마트스토어", url: "", checkedAt: CHK, note: "공식표 미도달 — 판매자센터에서 확인" }
+      { name: "스마트스토어([민간] esoop)", url: "https://esoop.co.kr/faq/smartstore-fees", checkedAt: CHK, note: "비공식 정리 — 스마트스토어센터에서 확인" }
     ]
   };
   if (typeof module !== "undefined" && module.exports) module.exports = fees;

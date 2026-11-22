@@ -19,7 +19,7 @@
   </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/style.css?v=4">
-  <link rel="stylesheet" href="/calc/seller/seller.css?v=2">
+  <link rel="stylesheet" href="/calc/seller/seller.css?v=4">
 </head>
 <body>
   <nav class="back-nav"><a href="/calculators.html">← 전체 계산기</a></nav>
@@ -72,13 +72,14 @@
         <h3>수수료 <a href="#" id="feeSource" target="_blank" rel="noopener" class="fee-link" hidden>공식 수수료표 보기 ↗</a></h3>
         <div class="seller-grid2" style="margin-bottom:12px">
           <div class="field"><label for="market">마켓 선택 <small>(기본 수수료 자동)</small></label><select id="market"></select></div>
-          <div class="field"><label for="category">대표 카테고리 <small>(선택 시 자동)</small></label><select id="category"></select></div>
+          <div class="field"><label for="category" id="catLabel">대표 카테고리 <small>(선택 시 자동)</small></label><select id="category"></select></div>
         </div>
         <div class="seller-grid2">
           <div class="field"><label for="catFee">카테고리 수수료 <small>(VAT 포함)</small></label><div class="unit-input"><input type="text" id="catFee" autocomplete="off"><span class="unit">%</span></div></div>
           <div class="field"><label for="linkFee">연동 수수료</label><div class="unit-input"><input type="text" id="linkFee" autocomplete="off"><span class="unit">%</span></div></div>
           <div class="field"><label for="shipFeeRate">배송비 수수료</label><div class="unit-input"><input type="text" id="shipFeeRate" autocomplete="off"><span class="unit">%</span></div></div>
         </div>
+        <label id="mktLinkWrap" class="mkt-check" hidden><input type="checkbox" id="mktLink"> 마케팅 링크 유입 시 연동 1% 적용</label>
         <p class="fee-asof" id="feeAsof"></p>
       </div>
 
@@ -133,9 +134,9 @@
     <p>© <span id="year"></span> 건강흐름 · 구매대행 마진율 계산기</p>
   </footer>
 
-  <script src="/calc/seller/seller-calc.js?v=2"></script>
-  <script src="/calc/seller/seller-fees.js?v=2"></script>
-  <script src="/calc/seller/seller-ui.js?v=2"></script>
-  <script src="./app.js?v=3"></script>
+  <script src="/calc/seller/seller-calc.js?v=4"></script>
+  <script src="/calc/seller/seller-fees.js?v=4"></script>
+  <script src="/calc/seller/seller-ui.js?v=4"></script>
+  <script src="./app.js?v=4"></script>
 </body>
 </html>

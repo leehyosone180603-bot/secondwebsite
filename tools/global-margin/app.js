@@ -11,6 +11,8 @@
   moneyIds.concat(decIds).forEach(function (id) { el[id] = document.getElementById(id); });
   var market = document.getElementById("market"), feeAsof = document.getElementById("feeAsof");
   var category = document.getElementById("category"), feeSource = document.getElementById("feeSource");
+  var catLabel = document.getElementById("catLabel");
+  var mktLinkWrap = document.getElementById("mktLinkWrap"), mktLink = document.getElementById("mktLink");
   var currency = document.getElementById("currency"), curUnit = document.getElementById("curUnit");
   var simpleWrap = document.getElementById("simpleWrap");
   var curSymbols = { cny: "¥", usd: "$", jpy: "¥(100)", eur: "€", gbp: "£", aud: "A$" };
@@ -24,14 +26,23 @@
   function fillCategories(k) {
     var m = om[k] || {}, cats = m.categories || [];
     category.innerHTML = "";
-    var first = document.createElement("option"); first.value = "";
-    first.textContent = cats.length ? "카테고리 선택(직접 입력 가능)" : "직접 입력"; category.appendChild(first);
+    if (!m.gradeMode) {
+      var first = document.createElement("option"); first.value = "";
+      first.textContent = cats.length ? "카테고리 선택(직접 입력 가능)" : "직접 입력"; category.appendChild(first);
+    }
     cats.forEach(function (c, idx) { var o = document.createElement("option"); o.value = String(idx); o.textContent = c.name + " (" + c.fee + "%)"; category.appendChild(o); });
   }
   function applyCategory() {
     var k = market.value, m = om[k] || {}, idx = category.value;
-    if (idx !== "" && m.categories && m.categories[idx]) el.catFee.value = m.categories[idx].fee;
+    if (idx !== "" && m.categories && m.categories[idx]) {
+      el.catFee.value = m.categories[idx].fee;
+      if (m.shipEqualsCat) el.shipFeeRate.value = m.categories[idx].fee;
+    }
     recalc();
+  }
+  function linkFeeOf(m) {
+    if (m.gradeMode) return (mktLink && mktLink.checked) ? m.linkMarketing : m.link;
+    return m.link ? m.link : "";
   }
 
   function taxType() { return (document.querySelector('input[name="tax"]:checked') || {}).value || "normal"; }
@@ -57,25 +68,28 @@
     document.getElementById("rSettle").textContent = U.won(r.settle);
     document.getElementById("rCost").textContent = U.won(r.costWon);
     document.getElementById("rVat").textContent = U.won(r.vat);
-    U.store(KEY, { i: i, market: market.value, category: category.value, currency: currency.value, tax: taxType() });
+    U.store(KEY, { i: i, market: market.value, category: category.value, link1: !!(mktLink && mktLink.checked), currency: currency.value, tax: taxType() });
   }
 
   function applyMarket() {
     var k = market.value, m = om[k] || {};
     fillCategories(k);
-    el.linkFee.value = m.link ? m.link : "";
-    el.shipFeeRate.value = m.shipRate ? m.shipRate : "";
+    if (catLabel) catLabel.textContent = m.gradeMode ? "판매자 등급" : "대표 카테고리";
+    if (mktLinkWrap) mktLinkWrap.hidden = !m.gradeMode;
+    el.linkFee.value = linkFeeOf(m);
+    if (!m.shipEqualsCat) el.shipFeeRate.value = m.shipRate ? m.shipRate : "";
     if (feeSource) {
-      if (m.sourceUrl) { feeSource.href = m.sourceUrl; feeSource.hidden = false; }
+      if (m.sourceUrl) { feeSource.href = m.sourceUrl; feeSource.hidden = false; feeSource.textContent = (m.unofficial ? "정리 자료 보기 ↗" : "공식 수수료표 보기 ↗"); }
       else { feeSource.hidden = true; }
     }
     var parts = [];
-    if (m.pageBaseDate) parts.push("페이지기준 " + m.pageBaseDate);
-    if (m.vat) parts.push("VAT " + m.vat + "→×1.1 반영");
+    if (m.unofficial) parts.push("⚠ 비공식 정리 자료");
+    if (m.pageBaseDate) parts.push("기준 " + m.pageBaseDate);
+    if (m.vat) parts.push(m.vat === "포함" ? "VAT 포함" : "VAT " + m.vat + "→×1.1 반영");
     if (m.subNote) parts.push(m.subNote);
     feeAsof.textContent = (parts.length ? parts.join(" · ") + " · " : "") +
       "확인일 " + F.updatedAt + ", 판매자센터에서 확인(수정 가능)";
-    recalc();
+    if (m.gradeMode) { category.value = "0"; applyCategory(); } else recalc();
   }
 
   var savedCat = "";
@@ -83,6 +97,7 @@
     var s = U.load(KEY); if (!s) return;
     if (s.market) market.value = s.market;
     if (s.currency) currency.value = s.currency;
+    if (mktLink && s.link1) mktLink.checked = true;
     savedCat = s.category || "";
     var i = s.i || {};
     moneyIds.forEach(function (id) { if (i[id]) el[id].value = Number(i[id]).toLocaleString("ko-KR"); });
@@ -95,6 +110,9 @@
   currency.addEventListener("change", function () { curUnit.textContent = curSymbols[currency.value] || ""; recalc(); });
   market.addEventListener("change", applyMarket);
   category.addEventListener("change", applyCategory);
+  if (mktLink) mktLink.addEventListener("change", function () {
+    var m = om[market.value] || {}; if (m.gradeMode) el.linkFee.value = linkFeeOf(m); recalc();
+  });
   Array.prototype.forEach.call(document.querySelectorAll('input[name="tax"]'), function (r) {
     r.addEventListener("change", function () { simpleWrap.hidden = taxType() !== "simple"; recalc(); });
   });
