@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "year-end-party-hangover-food",
+    title: "송년회 숙취 해소 음식, 콩나물국·꿀물 효과와 피해야 할 해장법",
+    summary: "송년회 다음 날 숙취 해소 음식으로 콩나물국·북엇국·물·죽이 도움 되는 이유와 꿀물·해장술·라면·진통제 주의점, 숙취해소제 표시 기준까지 정리했습니다.",
+    category: "info",
+    date: "2026-11-22",
+    url: "/posts/year-end-party-hangover-food.html",
+    image: "/img/year-end-party-hangover-food-1.jpg",
+  },
+  {
     id: "cold-hands-feet-causes-raynaud",
     title: "수족냉증 원인, 레이노 현상과 구분법과 병원 가야 할 신호",
     summary: "겨울마다 손발이 차가운 수족냉증 원인과 레이노 현상 구분법, 몸통 보온·반신욕·핫팩 안전 요령, 병원에 가야 할 신호와 진료과를 정리했습니다.",
