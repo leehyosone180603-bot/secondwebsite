@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "seoul-housing-birth-2026",
+    title: "서울시 2026 주거·출산 지원 — 산후조리경비 최대 150만·출산가구 주거비 720만원",
+    summary: "서울시 2026 청년·신혼부부 주거 지원(청년월세·임차보증금 이자지원)과 서울형 산후조리경비(첫째 100만~셋째 150만), 임산부 교통비, 출산가구 주거비(최대 720만원)를 정리했습니다.",
+    category: "life",
+    date: "2026-11-22",
+    url: "/posts/seoul-housing-birth-2026.html",
+    image: "/img/minsaeng-support-3.jpg",
+  },
+  {
     id: "uiwang-housing-birth-2026",
     title: "의왕시 2026 주거·출산 지원 — 신혼 전세이자 연 130만·출산장려금 최대 500만원",
     summary: "의왕시 신혼부부 전세이자 지원(연 최대 130만·보증금 5억까지)과 출산장려금(첫째 100만~넷째 이상 500만원), 시 자체 산후조리비 50만원을 2026년 기준으로 정리했습니다.",
