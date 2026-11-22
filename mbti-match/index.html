@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBTI 궁합 계산기 — 연애·친구·직장 궁합 점수 | 건강흐름</title>
+  <meta name="description" content="내 MBTI와 상대 MBTI를 고르면 연애·친구·직장 궁합 점수와 등급, 축별 해설, 관계 팁을 보여 줍니다. 16×16 궁합표까지 한눈에. 가입 없이 바로 확인하세요.">
+  <meta name="keywords" content="MBTI 궁합, MBTI 궁합 계산기, 연애 궁합, MBTI 궁합표, 성격유형 궁합">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://healthfortune.co.kr/mbti-match/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MBTI 궁합 계산기 — 연애·친구·직장 궁합 점수">
+  <meta property="og:description" content="두 유형을 고르면 연애·친구·직장 궁합 점수와 등급, 관계 팁을 보여 줍니다. 16×16 궁합표 포함.">
+  <meta property="og:url" content="https://healthfortune.co.kr/mbti-match/">
+  <meta property="og:site_name" content="건강흐름">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"MBTI 궁합 계산기","url":"https://healthfortune.co.kr/mbti-match/","applicationCategory":"LifestyleApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"publisher":{"@type":"Organization","name":"건강흐름"}}
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css?v=4">
+  <link rel="stylesheet" href="/mbti/mbti.css?v=1">
+</head>
+<body>
+  <nav class="back-nav"><a href="/calculators.html">← 전체 계산기</a></nav>
+  <header class="site-header">
+    <h1>💞 MBTI 궁합 계산기</h1>
+    <p class="subtitle">두 유형의 연애·친구·직장 궁합을 한 번에</p>
+  </header>
+  <nav class="mbti-tabs">
+    <a class="mbti-tab" href="/mbti-test/">🧭 MBTI 테스트</a>
+    <a class="mbti-tab is-active" href="/mbti-match/">💞 궁합 계산기</a>
+    <a class="mbti-tab" href="/posts/mbti-16-types.html">📚 16유형 총정리</a>
+  </nav>
+
+  <main class="mbti-wrap">
+    <div class="ad-container" aria-label="광고">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="3265568294" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+
+    <section class="card">
+      <div class="pick-row">
+        <div class="field"><label for="selA">나</label><select id="selA"></select></div>
+        <span class="vs">＋</span>
+        <div class="field"><label for="selB">상대</label><select id="selB"></select></div>
+      </div>
+      <button class="btn-primary" id="calcBtn" type="button" style="margin-top:14px">궁합 보기</button>
+    </section>
+
+    <section class="card" id="resultCard" hidden>
+      <div class="score-hero">
+        <div class="num"><span id="rScore">0</span><small>/100</small></div>
+        <span class="badge" id="rBadge"></span>
+        <p class="muted" id="rPair" style="margin:10px 0 0;font-size:.9rem"></p>
+      </div>
+      <div class="score3">
+        <div class="s"><span class="k">💗 연애</span><span class="v" id="rLove">0</span><div class="bar"><div id="rLoveBar"></div></div></div>
+        <div class="s"><span class="k">🤝 친구</span><span class="v" id="rFriend">0</span><div class="bar"><div id="rFriendBar"></div></div></div>
+        <div class="s"><span class="k">💼 직장</span><span class="v" id="rWork">0</span><div class="bar"><div id="rWorkBar"></div></div></div>
+      </div>
+      <h3 style="font-size:1rem;margin:16px 0 4px">네 글자로 보는 궁합</h3>
+      <ul class="axis-list" id="rAxis"></ul>
+      <div class="tip-box"><strong>💡 서로에게 이렇게 해 주세요</strong><div id="rTips"></div></div>
+      <div class="type-links" id="rLinks"></div>
+      <div style="display:flex;gap:10px;margin-top:12px">
+        <button class="btn-ghost" id="copyBtn" type="button" style="flex:1">🔗 결과 링크 복사</button>
+        <button class="btn-ghost" id="swapBtn" type="button" style="flex:1">🔄 나↔상대 바꾸기</button>
+      </div>
+    </section>
+
+    <div class="ad-container" aria-label="광고">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="1082258087" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+
+    <section class="card">
+      <h2 style="font-size:1.1rem;margin:0 0 8px">16 × 16 궁합표</h2>
+      <p class="muted" style="font-size:.84rem;margin:0 0 8px">세로 = 나, 가로 = 상대. 칸을 누르면 그 조합 결과가 열립니다. (연애 점수 기준 색상)</p>
+      <div class="legend">
+        <span><i style="background:#bfe9cf"></i>찰떡궁합</span><span><i style="background:#cfe0ff"></i>잘 맞아요</span>
+        <span><i style="background:#fbeeba"></i>노력하면</span><span><i style="background:#fad8bb"></i>다름을 배움</span>
+      </div>
+      <div class="matrix-scroll"><table class="matrix" id="matrix"></table></div>
+    </section>
+
+    <section class="card info">
+      <h2>궁합은 이렇게 계산해요</h2>
+      <ul>
+        <li><strong>연애</strong>는 대화 방식(S/N)이 통하는지를 가장 크게 봅니다. 여기에 에너지(E/I)·결정 방식(T/F)은 서로 다르면 보완점으로, 생활 리듬(J/P)은 비슷할수록 가점이 됩니다.</li>
+        <li><strong>친구</strong>는 비슷함(취향·대화 결)이 잘 맞을수록, <strong>직장</strong>은 역할이 서로 채워질 때(T/F·E/I가 다를 때) 점수가 높게 나오도록 설계했습니다.</li>
+        <li>궁합은 <strong>절대적인 운명이 아니라 ‘무엇을 맞춰 가면 좋은지’의 힌트</strong>입니다. 같은 조합이라도 사람마다 다릅니다.</li>
+      </ul>
+    </section>
+    <section class="card info faq-section">
+      <h2>자주 묻는 질문</h2>
+      <h3>Q. 궁합 점수가 낮으면 안 맞는 건가요?</h3>
+      <p>아니에요. 점수가 낮을수록 ‘서로 다른 점이 많다’는 뜻이고, 그만큼 배우고 채워 줄 여지가 크다는 의미이기도 합니다. 팁을 참고해 맞춰 가면 됩니다.</p>
+      <h3>Q. 나와 상대를 바꾸면 점수가 달라지나요?</h3>
+      <p>달라지지 않습니다. 궁합 점수는 두 유형의 관계라서 순서를 바꿔도 같은 값이 나옵니다.</p>
+      <h3>Q. 연애·친구·직장 점수가 왜 다른가요?</h3>
+      <p>관계마다 중요한 요소가 다르기 때문이에요. 연애는 대화 결, 친구는 비슷함, 직장은 역할 보완을 더 크게 봅니다.</p>
+      <h3>Q. 내 유형을 모르면요?</h3>
+      <p><a href="/mbti-test/">MBTI 테스트</a>에서 48문항으로 먼저 확인한 뒤 궁합을 보시면 됩니다.</p>
+      <h3>Q. 같은 유형끼리도 궁합이 좋나요?</h3>
+      <p>대체로 대화가 잘 통해 편하지만, 둘 다 약한 부분이 겹칠 수 있어요. 표에서 같은 유형 칸을 직접 눌러 확인해 보세요.</p>
+      <p class="disclaimer-box">이 콘텐츠는 성격유형 이론을 바탕으로 한 참고·재미용 정보이며, 공식 MBTI® 검사나 전문 심리진단을 대신하지 않습니다. MBTI는 The Myers-Briggs Company의 등록상표입니다.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-links"><a href="/about/">소개·문의</a> · <a href="/privacy/">개인정보처리방침</a> · <a href="/terms/">이용약관</a></nav>
+    <p>© <span id="year"></span> 건강흐름 · MBTI 궁합 계산기</p>
+  </footer>
+
+  <script src="/mbti/mbti-data.js?v=2"></script>
+  <script src="./app.js?v=1"></script>
+  <script defer src="/js/analytics.js"></script>
+</body>
+</html>

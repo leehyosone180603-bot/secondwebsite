@@ -77,4 +77,9 @@
     send({ t: "dw", ts: Date.now(), v: visitorId, s: sessionId, p: basePayload.p, ms: Math.min(activeMs, 1800000) });
   }
   window.addEventListener("pagehide", flush);
+
+  // 간단 이벤트 트래커(선택): hfTrack('ev', '/path#tag')
+  window.hfTrack = function (type, path) {
+    send({ t: String(type || "ev"), ts: Date.now(), v: visitorId, s: sessionId, p: path || basePayload.p, src: basePayload.src });
+  };
 })();

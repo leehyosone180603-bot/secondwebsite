@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBTI 테스트 — 48문항 무료 성격유형 검사 | 건강흐름</title>
+  <meta name="description" content="48문항으로 보는 무료 MBTI 성격유형 테스트. 가입 없이 약 6~8분이면 내 유형과 강점·주의점, 궁합까지 확인할 수 있어요. 응답은 서버로 전송되지 않습니다.">
+  <meta name="keywords" content="MBTI 테스트, MBTI 검사, 무료 성격유형 테스트, 성격유형 검사, MBTI 48문항">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://healthfortune.co.kr/mbti-test/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MBTI 테스트 — 48문항 무료 성격유형 검사">
+  <meta property="og:description" content="가입 없이 약 6~8분. 내 유형과 강점·주의점, 궁합까지 한 번에. 응답은 서버로 전송되지 않습니다.">
+  <meta property="og:url" content="https://healthfortune.co.kr/mbti-test/">
+  <meta property="og:site_name" content="건강흐름">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"MBTI 테스트","url":"https://healthfortune.co.kr/mbti-test/","applicationCategory":"LifestyleApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"publisher":{"@type":"Organization","name":"건강흐름"}}
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css?v=4">
+  <link rel="stylesheet" href="/mbti/mbti.css?v=1">
+</head>
+<body>
+  <nav class="back-nav"><a href="/calculators.html">← 전체 계산기</a></nav>
+  <header class="site-header">
+    <h1>🧭 MBTI 테스트</h1>
+    <p class="subtitle">48문항으로 보는 무료 성격유형 검사</p>
+  </header>
+  <nav class="mbti-tabs">
+    <a class="mbti-tab is-active" href="/mbti-test/">🧭 MBTI 테스트</a>
+    <a class="mbti-tab" href="/mbti-match/">💞 궁합 계산기</a>
+    <a class="mbti-tab" href="/posts/mbti-16-types.html">📚 16유형 총정리</a>
+  </nav>
+
+  <main class="mbti-wrap">
+    <div class="ad-container" aria-label="광고">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="3265568294" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+
+    <!-- 시작 화면 -->
+    <section class="card" id="introView">
+      <h2 style="font-size:1.15rem;margin:0 0 8px">나의 성격유형, 48문항으로 확인해요</h2>
+      <p class="muted" style="font-size:.92rem;line-height:1.7">각 문장을 읽고 ‘얼마나 나에게 맞는지’를 5단계로 골라 주세요. 정답은 없으니 평소 모습 그대로 편하게 선택하면 됩니다.</p>
+      <ul class="intro-facts">
+        <li>⏱️ 약 6~8분</li><li>📝 48문항</li><li>🆓 가입 없음</li><li>🔒 응답은 서버로 전송되지 않음</li>
+      </ul>
+      <button class="btn-primary" id="startBtn" type="button" style="margin-top:14px">테스트 시작하기</button>
+      <p class="muted" id="resumeHint" hidden style="font-size:.85rem;margin-top:10px"></p>
+    </section>
+
+    <!-- 문항 화면 -->
+    <section class="card" id="quizView" hidden>
+      <div class="quiz-top">
+        <div class="pbar"><div id="pbarFill"></div></div>
+        <span class="pcount"><b id="pDone">0</b> / 48</span>
+      </div>
+      <form id="quizForm"></form>
+      <div class="quiz-nav">
+        <button class="btn-ghost" id="prevBtn" type="button">← 이전</button>
+        <button class="btn-primary" id="nextBtn" type="button" disabled>다음 →</button>
+      </div>
+      <p class="muted scale-legend">좌 = 전혀 아니다 · 우 = 매우 그렇다</p>
+    </section>
+
+    <!-- 결과 화면 -->
+    <section class="card" id="resultView" hidden>
+      <div class="score-hero">
+        <p class="muted" style="margin:0 0 2px;font-size:.85rem">나의 성격유형은</p>
+        <div class="rt-code" id="rtCode">----</div>
+        <div class="rt-nick" id="rtNick"></div>
+        <p id="rtSum" style="margin:8px 0 0;font-size:.95rem;line-height:1.6"></p>
+      </div>
+
+      <h3 class="rt-h">네 가지 성향</h3>
+      <ul class="axis-bars" id="rtAxes"></ul>
+
+      <div class="rt-two">
+        <div class="rt-box up"><h4>💪 강점</h4><ul id="rtUp"></ul></div>
+        <div class="rt-box care"><h4>🌱 이런 점은 살펴보세요</h4><ul id="rtCare"></ul></div>
+      </div>
+
+      <div class="type-links" id="rtLinks"></div>
+      <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap">
+        <button class="btn-ghost" id="copyBtn" type="button" style="flex:1;min-width:140px">🔗 결과 링크 복사</button>
+        <button class="btn-ghost" id="retryBtn" type="button" style="flex:1;min-width:140px">🔄 다시 하기</button>
+      </div>
+      <p class="muted" style="font-size:.84rem;margin-top:12px">이 결과는 참고·재미용이에요. 같은 사람도 상황·시기에 따라 조금씩 다르게 나올 수 있습니다.</p>
+    </section>
+
+    <section class="card info faq-section">
+      <h2>자주 묻는 질문</h2>
+      <h3>Q. 이 테스트는 공식 MBTI 검사인가요?</h3>
+      <p>아니에요. 성격유형 이론을 참고해 건강흐름이 자체 제작한 참고·재미용 테스트입니다. 공식 검사나 전문 진단을 대신하지 않습니다.</p>
+      <h3>Q. 결과가 매번 조금씩 달라요.</h3>
+      <p>경계에 가까운 성향은 그날의 기분·상황에 따라 바뀔 수 있어요. 각 성향 막대가 50%에 가까울수록 두 글자 성격을 함께 가졌다고 보면 됩니다.</p>
+      <h3>Q. 내 응답이 저장되나요?</h3>
+      <p>응답은 서버로 전송되지 않고, 진행 중 이어보기를 위해 이 브라우저에만 임시로 담깁니다. ‘다시 하기’를 누르면 지워져요.</p>
+      <h3>Q. 유형을 알고 난 다음엔요?</h3>
+      <p>결과에서 <b>유형 자세히</b>로 더 깊은 설명을, <b>궁합 보기</b>로 상대와의 <a href="/mbti-match/">궁합</a>을 확인해 보세요.</p>
+      <p class="disclaimer-box">이 콘텐츠는 성격유형 이론을 바탕으로 한 참고·재미용 정보이며, 공식 MBTI® 검사나 전문 심리진단을 대신하지 않습니다. MBTI는 The Myers-Briggs Company의 등록상표입니다.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-links"><a href="/about/">소개·문의</a> · <a href="/privacy/">개인정보처리방침</a> · <a href="/terms/">이용약관</a></nav>
+    <p>© <span id="year"></span> 건강흐름 · MBTI 테스트</p>
+  </footer>
+
+  <script src="/mbti/mbti-data.js?v=2"></script>
+  <script src="./questions.js?v=1"></script>
+  <script src="./app.js?v=1"></script>
+  <script defer src="/js/analytics.js"></script>
+</body>
+</html>
