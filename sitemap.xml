@@ -904,6 +904,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://healthfortune.co.kr/ja/posts/korea-health-guide.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>

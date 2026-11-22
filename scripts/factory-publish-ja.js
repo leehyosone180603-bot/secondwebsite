@@ -30,7 +30,8 @@ const { parseBlocks, buildBody, esc, BASE, ROOT } = F;
 
 const CATNAMES_JA = {
   food: "健康食", info: "健康情報", disease: "病気", diet: "ダイエット", exercise: "運動",
-  season: "季節の健康", check: "セルフチェック", korea: "韓国の健康習慣"
+  season: "季節の健康", check: "セルフチェック", korea: "韓国の健康習慣",
+  kbeauty: "Kビューティー・インナーケア", travel: "韓国旅行と健康"
 };
 const AD_TOP = "3265568294", AD_MID = "1082258087";
 
@@ -85,11 +86,14 @@ function relatedBox(slug, category) {
     .sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); });
   const same = others.filter(function (p) { return p.category === category; });
   const pick = same.concat(others.filter(function (p) { return p.category !== category; })).slice(0, 3);
-  if (!pick.length) return "";
-  return '<section class="related-box"><h2>関連記事</h2><div class="rel-grid">' +
-    pick.map(function (p) {
-      return '<a href="' + esc(p.url) + '"><b>' + esc(p.title) + "</b><span>" + (CATNAMES_JA[p.category] || "健康情報") + "</span></a>";
-    }).join("") + "</div></section>";
+  const kSeries = ["korea", "kbeauty", "travel"].indexOf(category) >= 0;
+  let cards = "";
+  if (kSeries) cards += '<a href="/ja/posts/korea-health-guide.html"><b>韓国の健康・美容・旅行ガイド</b><span>まとめ</span></a>';
+  cards += pick.map(function (p) {
+    return '<a href="' + esc(p.url) + '"><b>' + esc(p.title) + "</b><span>" + (CATNAMES_JA[p.category] || "健康情報") + "</span></a>";
+  }).join("");
+  if (!cards) return "";
+  return '<section class="related-box"><h2>関連記事</h2><div class="rel-grid">' + cards + "</div></section>";
 }
 function faqLd(faq) {
   if (!faq || !faq.length) return "";

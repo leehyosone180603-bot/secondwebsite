@@ -251,6 +251,7 @@ function regenFeeds() {
     const JAP = require(jaPath).JA_POSTS || [];
     if (JAP.length) {
       urls.push({ loc: `${BASE}/ja/`, changefreq: "daily", priority: "0.7" });
+      urls.push({ loc: `${BASE}/ja/posts/korea-health-guide.html`, changefreq: "weekly", priority: "0.6" });
       for (const p of JAP) urls.push({ loc: `${BASE}${p.url}`, lastmod: p.date, changefreq: "monthly", priority: "0.6" });
     }
   } catch (e) { /* ja-posts.js 없으면 건너뜀 */ }
