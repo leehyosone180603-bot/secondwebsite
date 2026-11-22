@@ -117,4 +117,5 @@
   simpleWrap.hidden = taxType() !== "simple";
   updateFeeNote();
   recalc();
+  U.pushAd();
 })();

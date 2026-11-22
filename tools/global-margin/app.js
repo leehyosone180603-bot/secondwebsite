@@ -121,4 +121,5 @@
   simpleWrap.hidden = taxType() !== "simple";
   applyMarket();
   if (savedCat) { category.value = savedCat; applyCategory(); }
+  U.pushAd();
 })();
