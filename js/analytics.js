@@ -33,6 +33,7 @@
       if (!r) return "direct";
       var h = new URL(r).hostname.replace(/^www\./, "");
       if (location.hostname && h === location.hostname) return "internal";
+      if (/(^|\.)t\.co$|(^|\.)x\.com$|(^|\.)twitter\.com$/.test(h)) return "x"; // X(트위터) 유입
       if (/daum\.net|kakao|tistory/.test(h)) return /tistory/.test(h) ? "tistory" : "daum";
       if (/naver\./.test(h)) return "naver";
       if (/yahoo\.co\.jp/.test(h)) return "yahoo_jp";   // 일본 야후(검색엔진은 구글)

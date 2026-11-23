@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { background:#fff; }
+  #card {
+    position:relative; overflow:hidden;
+    font-family:'Noto Sans JP','Noto Sans CJK JP','IPAGothic','IPAゴシック','Noto Sans KR', system-ui, sans-serif;
+    background:
+      radial-gradient(120% 70% at 50% -10%, var(--tint) 0%, rgba(255,255,255,0) 60%),
+      #ffffff;
+    display:flex; flex-direction:column;
+  }
+  #card::before {
+    content:""; position:absolute; left:0; right:0; top:0; height:16px; background:var(--accent);
+  }
+  .pad { padding:72px 72px 60px; display:flex; flex-direction:column; height:100%; }
+  .kicker { font-size:30px; font-weight:700; color:var(--accent); letter-spacing:.04em; margin-bottom:14px; display:flex; align-items:center; gap:12px; }
+  .kicker .dot { width:16px; height:16px; border-radius:50%; background:var(--accent); display:inline-block; }
+  .hook { font-weight:900; color:#1b2330; line-height:1.28; letter-spacing:-.01em; }
+  .checks { margin-top:auto; margin-bottom:auto; display:flex; flex-direction:column; gap:var(--gap); }
+  .chk { display:flex; align-items:flex-start; gap:22px; }
+  .chk .box {
+    flex:0 0 auto; width:var(--box); height:var(--box); border-radius:12px;
+    border:5px solid var(--accent); background:var(--tint2);
+  }
+  .chk .txt { font-weight:700; color:#273041; line-height:1.34; }
+  .foot { display:flex; align-items:center; justify-content:space-between; gap:16px; border-top:3px dashed #e5e9f0; padding-top:28px; }
+  .cta { font-weight:900; color:var(--accent); }
+  .brand { text-align:right; line-height:1.3; }
+  .brand .bn { font-weight:900; color:#1b2330; }
+  .brand .bu { color:#8a93a3; font-weight:700; }
+</style>
+</head>
+<body>
+<div id="card"></div>
+<script>
+  // 렌더러가 window.__CARD_DATA__ 를 주입한다. 없으면 기본값으로 미리보기.
+  var DATA = window.__CARD_DATA__ || {
+    "w":1080,"h":1350,"hook":"見出し","items":["項目1","項目2","項目3"],
+    "cta":"当てはまる数をチェック","brand":"健康フロー","url":"healthfortune.co.kr/ja",
+    "accent":"#1e73be","tint":"#e7f1fb","tint2":"#f2f8fe","vertical":true
+  };
+  (function(){
+    var vertical = DATA.vertical !== false;
+    var card = document.getElementById("card");
+    card.style.width = DATA.w + "px";
+    card.style.height = DATA.h + "px";
+    card.style.setProperty("--accent", DATA.accent || "#1e73be");
+    card.style.setProperty("--tint", DATA.tint || "#e7f1fb");
+    card.style.setProperty("--tint2", DATA.tint2 || "#f2f8fe");
+    // 크기별 스케일 (가로 OG 는 항목 수를 줄여 넘침 방지)
+    var list = (DATA.items || []).slice();
+    if (!vertical && list.length > 4) list = list.slice(0, 4);
+    var n = list.length;
+    var hookSize = vertical ? 74 : 54;
+    if ((DATA.hook || "").length > 16) hookSize -= vertical ? 10 : 8;
+    var txtSize = vertical ? 46 : 34;
+    if (vertical && n >= 6) txtSize -= 4;
+    var box = vertical ? 60 : 42;
+    var gap = vertical ? 30 : 16;
+    card.style.setProperty("--box", box + "px");
+    card.style.setProperty("--gap", gap + "px");
+    var items = list.map(function(t){
+      return '<div class="chk"><span class="box"></span><span class="txt" style="font-size:'+txtSize+'px">'+esc(t)+'</span></div>';
+    }).join("");
+    card.innerHTML =
+      '<div class="pad">' +
+        '<div class="kicker"><span class="dot"></span>セルフチェック</div>' +
+        '<div class="hook" style="font-size:'+hookSize+'px">'+esc(DATA.hook || "")+'</div>' +
+        '<div class="checks">'+items+'</div>' +
+        '<div class="foot"><div class="cta" style="font-size:'+(vertical?34:28)+'px">✅ '+esc(DATA.cta||"")+'</div>' +
+          '<div class="brand"><div class="bn" style="font-size:'+(vertical?34:28)+'px">'+esc(DATA.brand||"健康フロー")+'</div>' +
+          '<div class="bu" style="font-size:'+(vertical?22:19)+'px">'+esc(DATA.url||"")+'</div></div></div>' +
+      '</div>';
+    // 오버플로우 검사: 캔버스 밖으로 넘치는지
+    var pad = card.querySelector(".pad");
+    window.__OVERFLOW__ = (pad.scrollHeight > card.clientHeight + 2) || (pad.scrollWidth > card.clientWidth + 2);
+    window.__RENDERED__ = true;
+    function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+  })();
+</script>
+</body>
+</html>

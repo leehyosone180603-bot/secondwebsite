@@ -1,0 +1,73 @@
+{
+  "slug": "roasted-sweet-potato-blood-sugar",
+  "series": "season",
+  "title": "焼き芋は血糖値が上がる？1日の目安量と太りにくい食べ方",
+  "url": "/ja/posts/roasted-sweet-potato-blood-sugar.html",
+  "keyword": "焼き芋",
+  "hooks": [
+    "焼き芋、6つのチェック",
+    "焼き芋は血糖値が上がる？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#冬の健康"
+  ],
+  "posts": {
+    "a": {
+      "text": "焼き芋、6つのチェック\n\n✅ 焼き芋は蒸し芋よりも血糖値が上がりやすいとされています。\n✅ 間食なら1日およそ70〜100g\n✅ 冷ます・皮ごと・タンパク質と一緒にとると\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/roasted-sweet-potato-blood-sugar.html?utm_source=x&utm_medium=social&utm_campaign=roasted-sweet-potato-blood-sugar&utm_content=a\n\n#健康 #冬の健康",
+      "link": "https://healthfortune.co.kr/ja/posts/roasted-sweet-potato-blood-sugar.html?utm_source=x&utm_medium=social&utm_campaign=roasted-sweet-potato-blood-sugar&utm_content=a",
+      "weighted": 210,
+      "ok": true
+    },
+    "b": {
+      "text": "焼き芋は血糖値が上がる？\n\n✅ 焼き芋は蒸し芋よりも血糖値が上がりやすいとされています。\n✅ 間食なら1日およそ70〜100g\n✅ 冷ます・皮ごと・タンパク質と一緒にとると\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/roasted-sweet-potato-blood-sugar.html?utm_source=x&utm_medium=social&utm_campaign=roasted-sweet-potato-blood-sugar&utm_content=b\n\n#健康 #冬の健康",
+      "link": "https://healthfortune.co.kr/ja/posts/roasted-sweet-potato-blood-sugar.html?utm_source=x&utm_medium=social&utm_campaign=roasted-sweet-potato-blood-sugar&utm_content=b",
+      "weighted": 213,
+      "ok": true
+    }
+  },
+  "checklist": [
+    "焼き芋を温かいまま、単品で食べることが…",
+    "ご飯を普通に食べたうえで",
+    "1回に中くらいのさつまいもを1本",
+    "空腹のまま、まず焼き芋から食べ始める",
+    "皮はむいて中身だけ食べている",
+    "ねっとり甘い品種を選ぶことが多い"
+  ],
+  "points": [
+    "焼き芋は蒸し芋よりも血糖値が上がりやすいとされています。",
+    "間食なら1日およそ70〜100g（手のひら半分ほど）が目安です。",
+    "冷ます・皮ごと・タンパク質と一緒にとると、上がり方がゆるやかになります。"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：焼き芋を温かいまま、単品で食べることが…、ご飯を普通に食べたうえで、1回に中くらいのさつまいもを1本、空腹のまま、まず焼き芋から食べ始める、皮はむいて中身だけ食べている、ねっとり甘い品種を選ぶことが多い。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/roasted-sweet-potato-blood-sugar/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 403296,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/roasted-sweet-potato-blood-sugar/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 228270,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:22:01.780Z"
+}
