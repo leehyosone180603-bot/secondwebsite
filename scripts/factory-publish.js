@@ -133,6 +133,11 @@ function pageHtml(a, photos) {
   const hero = photos[0];
   const ogImage = hero ? BASE + hero.file : "";
   const kw = (a.keywords || []).join(", ");
+  // 나이·날짜 클러스터 글이면 통합 나이 계산기 위젯 + 허브 링크 자동 부착(category "calc" 또는 ageCluster:true)
+  const isAge = a.ageCluster === true || a.category === "calc";
+  const ageWidget = isAge ? `\n      <div class="age-widget"></div>\n` : "";
+  const ageHub = isAge ? `      <p class="article__agehub" style="margin:22px 0 4px"><a href="/age-guide.html" style="font-weight:700;color:#1a4fd0;text-decoration:none">🎂 나이·출생연도 완전정리 더 보기 ›</a></p>\n` : "";
+  const ageScript = isAge ? `  <script defer src="/js/age-widget.js"></script>\n` : "";
   const ld = {
     "@context": "https://schema.org", "@type": "Article",
     headline: a.title, description: a.description,
@@ -177,12 +182,12 @@ ${ogImage ? `  <meta property="og:image" content="${ogImage}">\n` : ""}
       <span class="article__cat">${catName}</span>
       <h1 class="article__title">${esc(a.title)}</h1>
       <div class="article__meta">건강흐름 · ${esc(a.date)}</div>
-
+${ageWidget}
       <div class="article__body">
 ${buildBody(parseBlocks(a.bodyMd), photos)}
       </div>
 
-      <div class="article__nav"><a class="btn" href="/category.html?cat=${esc(a.category || "info")}">‹ ${catName} 더 보기</a></div>
+${ageHub}      <div class="article__nav"><a class="btn" href="/category.html?cat=${esc(a.category || "info")}">‹ ${catName} 더 보기</a></div>
     </article>
   </main>
 
@@ -190,7 +195,7 @@ ${buildBody(parseBlocks(a.bodyMd), photos)}
 
   <script src="/js/posts.js"></script>
   <script src="/js/site.js"></script>
-  <script defer src="/js/analytics.js"></script>
+${ageScript}  <script defer src="/js/analytics.js"></script>
 </body>
 </html>
 `;
