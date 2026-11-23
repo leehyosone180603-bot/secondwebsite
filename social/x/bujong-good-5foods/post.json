@@ -6,7 +6,7 @@
   "keyword": "むくみによい食べ物",
   "hooks": [
     "むくみによい食べ物5つ？",
-    "むくみによい食べ物、3つのチェック"
+    "むくみによい食べ物5つ"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,32 @@
   ],
   "posts": {
     "a": {
-      "text": "むくみによい食べ物5つ？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=a\n\n#健康 #食事",
+      "text": "むくみによい食べ物5つ？\n\n✅ 朝はバナナ1本で軽く始める\n✅ 食事の途中にきゅうりを添える\n✅ コーヒー一杯を温かい小豆茶に替えてみる\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=a\n\n#健康 #食事",
       "link": "https://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=a",
-      "weighted": 79,
+      "weighted": 178,
       "ok": true
     },
     "b": {
-      "text": "むくみによい食べ物、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=b\n\n#健康 #食事",
+      "text": "むくみによい食べ物5つ\n\n✅ 朝はバナナ1本で軽く始める\n✅ 食事の途中にきゅうりを添える\n✅ コーヒー一杯を温かい小豆茶に替えてみる\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=b\n\n#健康 #食事",
       "link": "https://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=b",
-      "weighted": 89,
+      "weighted": 176,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "朝はバナナ1本で軽く始める",
+    "食事の途中にきゅうりを添える",
+    "コーヒー一杯を温かい小豆茶に替えてみる"
+  ],
+  "points": [
+    "朝はバナナ1本で軽く始める",
+    "食事の途中にきゅうりを添える",
+    "コーヒー一杯を温かい小豆茶に替えてみる"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：朝はバナナ1本で軽く始める、食事の途中にきゅうりを添える、コーヒー一杯を温かい小豆茶に替えてみる。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +48,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 338025,
+      "bytes": 389806,
       "over1mb": false
     },
     {
@@ -49,7 +57,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 191694,
+      "bytes": 233859,
       "over1mb": false
     }
   ],
@@ -58,5 +66,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:53.577Z"
+  "generatedAt": "2026-11-23T05:55:54.894Z"
 }

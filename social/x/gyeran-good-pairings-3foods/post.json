@@ -5,8 +5,8 @@
   "url": "/ja/posts/gyeran-good-pairings-3foods.html",
   "keyword": "卵と相性のよい食べ合わせ",
   "hooks": [
-    "卵と相性のよい食べ合わせ、3つのチェック",
-    "卵と相性のよい食べ合わせ、食べ方で変わる？"
+    "卵と相性のよい食べ合わせ、3つのポイント",
+    "実は知らない卵と相性のよい食べ合わせのコツ"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,32 @@
   ],
   "posts": {
     "a": {
-      "text": "卵と相性のよい食べ合わせ、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=a\n\n#健康 #食事",
+      "text": "卵と相性のよい食べ合わせ、3つのポイント\n\n✅ 朝は温かくトマトと卵の炒め物\n✅ 夕食のおかずにニラたっぷりの卵焼き\n✅ 骨が気になるときはチーズをのせた茶碗蒸し\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=a\n\n#健康 #食事",
       "link": "https://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=a",
-      "weighted": 95,
+      "weighted": 205,
       "ok": true
     },
     "b": {
-      "text": "卵と相性のよい食べ合わせ、食べ方で変わる？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=b\n\n#健康 #食事",
+      "text": "実は知らない卵と相性のよい食べ合わせのコツ\n\n✅ 朝は温かくトマトと卵の炒め物\n✅ 夕食のおかずにニラたっぷりの卵焼き\n✅ 骨が気になるときはチーズをのせた茶碗蒸し\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=b\n\n#健康 #食事",
       "link": "https://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=b",
-      "weighted": 98,
+      "weighted": 208,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "朝は温かくトマトと卵の炒め物",
+    "夕食のおかずにニラたっぷりの卵焼き",
+    "骨が気になるときはチーズをのせた茶碗蒸し"
+  ],
+  "points": [
+    "朝は温かくトマトと卵の炒め物",
+    "夕食のおかずにニラたっぷりの卵焼き",
+    "骨が気になるときはチーズをのせた茶碗蒸し"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：朝は温かくトマトと卵の炒め物、夕食のおかずにニラたっぷりの卵焼き、骨が気になるときはチーズをのせた茶碗蒸し。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +48,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 335004,
+      "bytes": 396965,
       "over1mb": false
     },
     {
@@ -49,7 +57,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 190993,
+      "bytes": 241067,
       "over1mb": false
     }
   ],
@@ -58,5 +66,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:35:29.175Z"
+  "generatedAt": "2026-11-23T05:55:53.616Z"
 }

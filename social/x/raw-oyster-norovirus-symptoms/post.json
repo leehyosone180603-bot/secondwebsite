@@ -5,8 +5,8 @@
   "url": "/ja/posts/raw-oyster-norovirus-symptoms.html",
   "keyword": "牡蠣",
   "hooks": [
-    "牡蠣、5つのチェック",
-    "生牡蠣でノロウイルス？"
+    "牡蠣、知っておきたい5つのチェック",
+    "牡蠣、5つのチェック"
   ],
   "hashtags": [
     "#健康",
@@ -14,15 +14,15 @@
   ],
   "posts": {
     "a": {
-      "text": "牡蠣、5つのチェック\n\n✅ ノロウイルスの潜伏期間はおよそ12〜48時間で\n✅ 牡蠣は中心部85〜90℃で90秒以上の加熱が安全の目安です。\n✅ 消毒は次亜塩素酸ナトリウム。アルコールや酢\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=a\n\n#健康 #冬の健康",
+      "text": "牡蠣、知っておきたい5つのチェック\n\n✅ ノロウイルスの潜伏期間はおよそ12〜48時間で\n✅ 牡蠣は中心部85〜90℃で90秒以上の加熱が安全の目安です。\n✅ 消毒は次亜塩素酸ナトリウム。アルコールや酢\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=a\n\n#健康 #冬の健康",
       "link": "https://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=a",
-      "weighted": 224,
+      "weighted": 238,
       "ok": true
     },
     "b": {
-      "text": "生牡蠣でノロウイルス？\n\n✅ ノロウイルスの潜伏期間はおよそ12〜48時間で\n✅ 牡蠣は中心部85〜90℃で90秒以上の加熱が安全の目安です。\n✅ 消毒は次亜塩素酸ナトリウム。アルコールや酢\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=b\n\n#健康 #冬の健康",
+      "text": "牡蠣、5つのチェック\n\n✅ ノロウイルスの潜伏期間はおよそ12〜48時間で\n✅ 牡蠣は中心部85〜90℃で90秒以上の加熱が安全の目安です。\n✅ 消毒は次亜塩素酸ナトリウム。アルコールや酢\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=b\n\n#健康 #冬の健康",
       "link": "https://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=b",
-      "weighted": 227,
+      "weighted": 224,
       "ok": true
     }
   },
@@ -34,9 +34,9 @@
     "食べてからおよそ12〜48時間で症状が…"
   ],
   "points": [
-    "ノロウイルスの潜伏期間はおよそ12〜48時間で、多くは1〜2日で軽快します。",
+    "ノロウイルスの潜伏期間はおよそ12〜48時間で",
     "牡蠣は中心部85〜90℃で90秒以上の加熱が安全の目安です。",
-    "消毒は次亜塩素酸ナトリウム。アルコールや酢・レモンは効きにくいとされます。"
+    "消毒は次亜塩素酸ナトリウム。アルコールや酢"
   ],
   "card": {
     "vertical": "card.png",
@@ -50,7 +50,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 406391,
+      "bytes": 415658,
       "over1mb": false
     },
     {
@@ -59,7 +59,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 234605,
+      "bytes": 241593,
       "over1mb": false
     }
   ],
@@ -68,5 +68,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:50.997Z"
+  "generatedAt": "2026-11-23T05:55:51.845Z"
 }

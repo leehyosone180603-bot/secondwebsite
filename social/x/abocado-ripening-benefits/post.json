@@ -5,8 +5,8 @@
   "url": "/ja/posts/abocado-ripening-benefits.html",
   "keyword": "アボカド",
   "hooks": [
-    "アボカド、3つのチェック",
-    "アボカドの追熟方法と効能・カロリー・食べ方？"
+    "アボカドの追熟方法と効能・カロリー・食べ方？",
+    "アボカド、知っておきたい3つのポイント"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,32 @@
   ],
   "posts": {
     "a": {
-      "text": "アボカド、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=a\n\n#健康 #食事",
+      "text": "アボカドの追熟方法と効能・カロリー・食べ方？\n\n✅ スーパーフード、アボカドの効能 & カ…\n✅ 失敗しないアボカドの追熟方法\n✅ いろいろ楽しむアボカドの食べ方\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=a\n\n#健康 #食事",
       "link": "https://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=a",
-      "weighted": 79,
+      "weighted": 202,
       "ok": true
     },
     "b": {
-      "text": "アボカドの追熟方法と効能・カロリー・食べ方？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=b\n\n#健康 #食事",
+      "text": "アボカド、知っておきたい3つのポイント\n\n✅ スーパーフード、アボカドの効能 & カ…\n✅ 失敗しないアボカドの追熟方法\n✅ いろいろ楽しむアボカドの食べ方\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=b\n\n#健康 #食事",
       "link": "https://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=b",
-      "weighted": 100,
+      "weighted": 195,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "スーパーフード、アボカドの効能 & カ…",
+    "失敗しないアボカドの追熟方法",
+    "いろいろ楽しむアボカドの食べ方"
+  ],
+  "points": [
+    "スーパーフード、アボカドの効能 & カ…",
+    "失敗しないアボカドの追熟方法",
+    "いろいろ楽しむアボカドの食べ方"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：スーパーフード、アボカドの効能 & カ…、失敗しないアボカドの追熟方法、いろいろ楽しむアボカドの食べ方。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +48,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 333031,
+      "bytes": 387759,
       "over1mb": false
     },
     {
@@ -49,7 +57,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 188053,
+      "bytes": 232470,
       "over1mb": false
     }
   ],
@@ -58,5 +66,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:58.304Z"
+  "generatedAt": "2026-11-23T05:56:00.021Z"
 }

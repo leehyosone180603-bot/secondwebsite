@@ -6,7 +6,7 @@
   "keyword": "二日酔い",
   "hooks": [
     "忘年会の二日酔いに良い食べ物？",
-    "二日酔い、食べ方で変わる？"
+    "二日酔い、知っておきたい5つのチェック"
   ],
   "hashtags": [
     "#健康",
@@ -20,9 +20,9 @@
       "ok": true
     },
     "b": {
-      "text": "二日酔い、食べ方で変わる？\n\n✅ 食べ物だけで二日酔いを消すのは難しく、水分\n✅ 澄んだスープ・常温の水・イオン飲料・おかゆなど\n✅ 迎え酒・脂っこいラーメン・濃いコーヒーの飲みすぎ\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=b\n\n#健康 #健康情報",
+      "text": "二日酔い、知っておきたい5つのチェック\n\n✅ 食べ物だけで二日酔いを消すのは難しく、水分\n✅ 澄んだスープ・常温の水・イオン飲料・おかゆなど\n✅ 迎え酒・脂っこいラーメン・濃いコーヒーの飲みすぎ\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=b\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=b",
-      "weighted": 230,
+      "weighted": 241,
       "ok": true
     }
   },
@@ -34,9 +34,9 @@
     "前夜のことをあまり覚えていない"
   ],
   "points": [
-    "食べ物だけで二日酔いを消すのは難しく、水分・電解質の補給と胃を休めることが現実的な目標です。",
-    "澄んだスープ・常温の水・イオン飲料・おかゆなど、消化にやさしいものが無難です。",
-    "迎え酒・脂っこいラーメン・濃いコーヒーの飲みすぎ・酒が残った状態での鎮痛剤は避けましょう。"
+    "食べ物だけで二日酔いを消すのは難しく、水分",
+    "澄んだスープ・常温の水・イオン飲料・おかゆなど",
+    "迎え酒・脂っこいラーメン・濃いコーヒーの飲みすぎ"
   ],
   "card": {
     "vertical": "card.png",
@@ -68,5 +68,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:49.392Z"
+  "generatedAt": "2026-11-23T05:55:50.066Z"
 }

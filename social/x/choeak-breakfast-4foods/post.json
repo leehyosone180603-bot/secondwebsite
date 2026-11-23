@@ -6,7 +6,7 @@
   "keyword": "最悪の朝食",
   "hooks": [
     "最悪の朝食4つ？",
-    "最悪の朝食、3つのチェック"
+    "最悪の朝食4つ"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,32 @@
   ],
   "posts": {
     "a": {
-      "text": "最悪の朝食4つ？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=a\n\n#健康 #健康情報",
+      "text": "最悪の朝食4つ？\n\n✅ 砂糖入りシリアルの代わりに温かい水一杯…\n✅ パンとジャムの代わりにレシチンが豊富な…\n✅ ジュースの代わりに生の果物を少しと無糖…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=a\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=a",
-      "weighted": 75,
+      "weighted": 200,
       "ok": true
     },
     "b": {
-      "text": "最悪の朝食、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=b\n\n#健康 #健康情報",
+      "text": "最悪の朝食4つ\n\n✅ 砂糖入りシリアルの代わりに温かい水一杯…\n✅ パンとジャムの代わりにレシチンが豊富な…\n✅ ジュースの代わりに生の果物を少しと無糖…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=b\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=b",
-      "weighted": 85,
+      "weighted": 198,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "砂糖入りシリアルの代わりに温かい水一杯…",
+    "パンとジャムの代わりにレシチンが豊富な…",
+    "ジュースの代わりに生の果物を少しと無糖…"
+  ],
+  "points": [
+    "砂糖入りシリアルの代わりに温かい水一杯…",
+    "パンとジャムの代わりにレシチンが豊富な…",
+    "ジュースの代わりに生の果物を少しと無糖…"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：砂糖入りシリアルの代わりに温かい水一杯…、パンとジャムの代わりにレシチンが豊富な…、ジュースの代わりに生の果物を少しと無糖…。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +48,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 314424,
+      "bytes": 376159,
       "over1mb": false
     },
     {
@@ -49,7 +57,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 177274,
+      "bytes": 226083,
       "over1mb": false
     }
   ],
@@ -58,5 +66,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:54.364Z"
+  "generatedAt": "2026-11-23T05:55:55.800Z"
 }

@@ -6,7 +6,7 @@
   "keyword": "国の健康診断",
   "hooks": [
     "国の健康診断を年末までに受け損ねたら？",
-    "国の健康診断、3つのチェック"
+    "国の健康診断、知っておきたい5つのポイント"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,34 @@
   ],
   "posts": {
     "a": {
-      "text": "国の健康診断を年末までに受け損ねたら？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/national-health-checkup-year-end-missed.html?utm_source=x&utm_medium=social&utm_campaign=national-health-checkup-year-end-missed&utm_content=a\n\n#健康 #健康情報",
+      "text": "国の健康診断を年末までに受け損ねたら？\n\n✅ 12月に予約が集中する理由と\n✅ 国の健康診断を年末までに受けられないと…\n✅ 受け損ねたら、翌年1月の「未受診者追加…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/national-health-checkup-year-end-missed.html?utm_source=x&utm_medium=social&utm_campaign=national-health-checkup-year-end-missed&utm_content=a\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/national-health-checkup-year-end-missed.html?utm_source=x&utm_medium=social&utm_campaign=national-health-checkup-year-end-missed&utm_content=a",
-      "weighted": 98,
+      "weighted": 209,
       "ok": true
     },
     "b": {
-      "text": "国の健康診断、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/national-health-checkup-year-end-missed.html?utm_source=x&utm_medium=social&utm_campaign=national-health-checkup-year-end-missed&utm_content=b\n\n#健康 #健康情報",
+      "text": "国の健康診断、知っておきたい5つのポイント\n\n✅ 12月に予約が集中する理由と\n✅ 国の健康診断を年末までに受けられないと…\n✅ 受け損ねたら、翌年1月の「未受診者追加…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/national-health-checkup-year-end-missed.html?utm_source=x&utm_medium=social&utm_campaign=national-health-checkup-year-end-missed&utm_content=b\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/national-health-checkup-year-end-missed.html?utm_source=x&utm_medium=social&utm_campaign=national-health-checkup-year-end-missed&utm_content=b",
-      "weighted": 87,
+      "weighted": 212,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "12月に予約が集中する理由と",
+    "国の健康診断を年末までに受けられないと…",
+    "受け損ねたら、翌年1月の「未受診者追加…",
+    "がん検診も繰り越せる?",
+    "検診前日の準備物と注意点"
+  ],
+  "points": [
+    "12月に予約が集中する理由と",
+    "国の健康診断を年末までに受けられないと…",
+    "受け損ねたら、翌年1月の「未受診者追加…"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：12月に予約が集中する理由と、国の健康診断を年末までに受けられないと…、受け損ねたら、翌年1月の「未受診者追加…、がん検診も繰り越せる?、検診前日の準備物と注意点。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +50,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 326842,
+      "bytes": 418303,
       "over1mb": false
     },
     {
@@ -49,7 +59,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 188823,
+      "bytes": 248446,
       "over1mb": false
     }
   ],
@@ -58,5 +68,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:59.867Z"
+  "generatedAt": "2026-11-23T05:56:01.786Z"
 }

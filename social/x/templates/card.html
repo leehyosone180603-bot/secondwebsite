@@ -72,7 +72,7 @@
     var sub = DATA.subhook || "あなたはいくつ当てはまる？";
     card.innerHTML =
       '<div class="pad">' +
-        '<div class="kicker"><span class="dot"></span>セルフチェック</div>' +
+        '<div class="kicker"><span class="dot"></span>'+esc(DATA.kicker||"セルフチェック")+'</div>' +
         '<div class="hook" style="font-size:'+hookSize+'px">'+esc(DATA.hook || "")+'</div>' +
         '<div class="subhook" style="font-size:'+(vertical?30:24)+'px">'+esc(sub)+'</div>' +
         '<div class="checks">'+items+'</div>' +

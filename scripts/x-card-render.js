@@ -51,6 +51,7 @@ async function renderCards(opts) {
   const col = colorFor(series);
   const base = {
     hook: hook || "",
+    kicker: opts.kicker || "セルフチェック",
     subhook: opts.subhook || "あなたはいくつ当てはまる？",
     items: (items || []).slice(0, 6),
     cta: opts.cta || "当てはまる数をチェック",

@@ -5,8 +5,8 @@
   "url": "/ja/posts/jwijeot-causes-removal.html",
   "keyword": "首いぼ",
   "hooks": [
-    "首いぼ、3つのチェック",
-    "首いぼ、食べ方で変わる？"
+    "首いぼ、知っておきたい6つのポイント",
+    "首いぼ、6つのポイント"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,35 @@
   ],
   "posts": {
     "a": {
-      "text": "首いぼ、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=a\n\n#健康 #健康情報",
+      "text": "首いぼ、知っておきたい6つのポイント\n\n✅ 皮膚の摩擦\n✅ 加齢\n✅ 遺伝的な影響\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=a\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=a",
-      "weighted": 81,
+      "weighted": 129,
       "ok": true
     },
     "b": {
-      "text": "首いぼ、食べ方で変わる？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=b\n\n#健康 #健康情報",
+      "text": "首いぼ、6つのポイント\n\n✅ 皮膚の摩擦\n✅ 加齢\n✅ 遺伝的な影響\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=b\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=b",
-      "weighted": 84,
+      "weighted": 115,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "皮膚の摩擦",
+    "加齢",
+    "遺伝的な影響",
+    "肥満",
+    "ホルモンの変化／妊娠",
+    "糖尿病"
+  ],
+  "points": [
+    "皮膚の摩擦",
+    "加齢",
+    "遺伝的な影響"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：皮膚の摩擦、加齢、遺伝的な影響、肥満、ホルモンの変化／妊娠、糖尿病。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +51,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 317846,
+      "bytes": 366424,
       "over1mb": false
     },
     {
@@ -49,7 +60,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 180185,
+      "bytes": 208784,
       "over1mb": false
     }
   ],
@@ -58,5 +69,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:55.567Z"
+  "generatedAt": "2026-11-23T05:55:57.046Z"
 }

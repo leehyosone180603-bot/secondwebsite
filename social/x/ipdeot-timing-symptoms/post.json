@@ -5,8 +5,8 @@
   "url": "/ja/posts/ipdeot-timing-symptoms.html",
   "keyword": "つわり",
   "hooks": [
-    "つわり、3つのチェック",
-    "つわり、食べ方で変わる？"
+    "つわり、知っておきたい6つのポイント",
+    "つわり、6つのポイント"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,35 @@
   ],
   "posts": {
     "a": {
-      "text": "つわり、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/ipdeot-timing-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=ipdeot-timing-symptoms&utm_content=a\n\n#健康 #健康情報",
+      "text": "つわり、知っておきたい6つのポイント\n\n✅ 胃がむかむかする\n✅ 食べ物のにおいに敏感になる\n✅ 特定の食べ物が嫌になる／好きだった食べ…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/ipdeot-timing-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=ipdeot-timing-symptoms&utm_content=a\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/ipdeot-timing-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=ipdeot-timing-symptoms&utm_content=a",
-      "weighted": 81,
+      "weighted": 184,
       "ok": true
     },
     "b": {
-      "text": "つわり、食べ方で変わる？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/ipdeot-timing-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=ipdeot-timing-symptoms&utm_content=b\n\n#健康 #健康情報",
+      "text": "つわり、6つのポイント\n\n✅ 胃がむかむかする\n✅ 食べ物のにおいに敏感になる\n✅ 特定の食べ物が嫌になる／好きだった食べ…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/ipdeot-timing-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=ipdeot-timing-symptoms&utm_content=b\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/ipdeot-timing-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=ipdeot-timing-symptoms&utm_content=b",
-      "weighted": 84,
+      "weighted": 170,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "胃がむかむかする",
+    "食べ物のにおいに敏感になる",
+    "特定の食べ物が嫌になる／好きだった食べ…",
+    "吐き気・嘔吐",
+    "食の好みの変化",
+    "空腹時の吐き気"
+  ],
+  "points": [
+    "胃がむかむかする",
+    "食べ物のにおいに敏感になる",
+    "特定の食べ物が嫌になる／好きだった食べ…"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：胃がむかむかする、食べ物のにおいに敏感になる、特定の食べ物が嫌になる／好きだった食べ…、吐き気・嘔吐、食の好みの変化、空腹時の吐き気。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +51,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 319098,
+      "bytes": 394151,
       "over1mb": false
     },
     {
@@ -49,7 +60,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 180305,
+      "bytes": 230615,
       "over1mb": false
     }
   ],
@@ -58,5 +69,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:54.742Z"
+  "generatedAt": "2026-11-23T05:55:56.216Z"
 }

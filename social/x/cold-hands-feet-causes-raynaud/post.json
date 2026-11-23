@@ -5,8 +5,8 @@
   "url": "/ja/posts/cold-hands-feet-causes-raynaud.html",
   "keyword": "手足",
   "hooks": [
-    "手足、6つのチェック",
-    "手足が冷たいのは冷え性？"
+    "手足、知っておきたい6つのチェック",
+    "手足、6つのチェック"
   ],
   "hashtags": [
     "#健康",
@@ -14,15 +14,15 @@
   ],
   "posts": {
     "a": {
-      "text": "手足、6つのチェック\n\n✅ 手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあり…\n✅ 指先が白→青→赤と色が変わる場合は\n✅ 色の変化を繰り返す、痛みや皮膚の硬さを伴うときは\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=a\n\n#健康 #冬の健康",
+      "text": "手足、知っておきたい6つのチェック\n\n✅ 手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあり…\n✅ 指先が白→青→赤と色が変わる場合は\n✅ 色の変化を繰り返す、痛みや皮膚の硬さを伴うときは\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=a\n\n#健康 #冬の健康",
       "link": "https://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=a",
-      "weighted": 226,
+      "weighted": 240,
       "ok": true
     },
     "b": {
-      "text": "手足が冷たいのは冷え性？\n\n✅ 手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあり…\n✅ 指先が白→青→赤と色が変わる場合は\n✅ 色の変化を繰り返す、痛みや皮膚の硬さを伴うときは\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=b\n\n#健康 #冬の健康",
+      "text": "手足、6つのチェック\n\n✅ 手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあり…\n✅ 指先が白→青→赤と色が変わる場合は\n✅ 色の変化を繰り返す、痛みや皮膚の硬さを伴うときは\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=b\n\n#健康 #冬の健康",
       "link": "https://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=b",
-      "weighted": 231,
+      "weighted": 226,
       "ok": true
     }
   },
@@ -35,9 +35,9 @@
     "緊張やストレスでも指先の色が変わる"
   ],
   "points": [
-    "手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあります。",
-    "指先が白→青→赤と色が変わる場合は、冷え性ではなくレイノー現象の可能性があります。",
-    "色の変化を繰り返す、痛みや皮膚の硬さを伴うときは、早めに受診しましょう。"
+    "手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあり…",
+    "指先が白→青→赤と色が変わる場合は",
+    "色の変化を繰り返す、痛みや皮膚の硬さを伴うときは"
   ],
   "card": {
     "vertical": "card.png",
@@ -51,7 +51,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 419306,
+      "bytes": 427697,
       "over1mb": false
     },
     {
@@ -60,7 +60,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 231372,
+      "bytes": 238611,
       "over1mb": false
     }
   ],
@@ -69,5 +69,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:49.004Z"
+  "generatedAt": "2026-11-23T05:55:49.617Z"
 }

@@ -5,8 +5,8 @@
   "url": "/ja/posts/gimjang-back-wrist-pain.html",
   "keyword": "キムジャン",
   "hooks": [
-    "キムジャン、3つのチェック",
-    "キムジャン後の腰・手首の痛み？"
+    "キムジャン後の腰・手首の痛み？",
+    "キムジャン、知っておきたい3つのポイント"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,32 @@
   ],
   "posts": {
     "a": {
-      "text": "キムジャン、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=a\n\n#健康 #健康情報",
+      "text": "キムジャン後の腰・手首の痛み？\n\n✅ 休んでも痛みが1週間以上続くとき\n✅ お尻や脚のほうへしびれや引きつる感じが…\n✅ ふだんからあった腰の痛みが目に見えてひ…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=a\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=a",
-      "weighted": 85,
+      "weighted": 207,
       "ok": true
     },
     "b": {
-      "text": "キムジャン後の腰・手首の痛み？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=b\n\n#健康 #健康情報",
+      "text": "キムジャン、知っておきたい3つのポイント\n\n✅ 休んでも痛みが1週間以上続くとき\n✅ お尻や脚のほうへしびれや引きつる感じが…\n✅ ふだんからあった腰の痛みが目に見えてひ…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=b\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=b",
-      "weighted": 90,
+      "weighted": 216,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "休んでも痛みが1週間以上続くとき",
+    "お尻や脚のほうへしびれや引きつる感じが…",
+    "ふだんからあった腰の痛みが目に見えてひ…"
+  ],
+  "points": [
+    "休んでも痛みが1週間以上続くとき",
+    "お尻や脚のほうへしびれや引きつる感じが…",
+    "ふだんからあった腰の痛みが目に見えてひ…"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：休んでも痛みが1週間以上続くとき、お尻や脚のほうへしびれや引きつる感じが…、ふだんからあった腰の痛みが目に見えてひ…。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +48,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 321540,
+      "bytes": 391885,
       "over1mb": false
     },
     {
@@ -49,7 +57,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 182826,
+      "bytes": 239083,
       "over1mb": false
     }
   ],
@@ -58,5 +66,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:35:00.256Z"
+  "generatedAt": "2026-11-23T05:56:02.241Z"
 }

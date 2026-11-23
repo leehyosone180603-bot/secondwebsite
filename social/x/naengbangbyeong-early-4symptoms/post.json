@@ -6,7 +6,7 @@
   "keyword": "冷房病",
   "hooks": [
     "冷房病の初期症状4つ？",
-    "冷房病、3つのチェック"
+    "冷房病の初期症状4つ"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,32 @@
   ],
   "posts": {
     "a": {
-      "text": "冷房病の初期症状4つ？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/naengbangbyeong-early-4symptoms.html?utm_source=x&utm_medium=social&utm_campaign=naengbangbyeong-early-4symptoms&utm_content=a\n\n#健康 #健康情報",
+      "text": "冷房病の初期症状4つ？\n\n✅ エアコンの風が体に直接当たらないよう\n✅ 最低2時間ごとに5分ずつ換気して酸素を…\n✅ 冷たい飲み物の代わりにぬるま湯や温かい…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/naengbangbyeong-early-4symptoms.html?utm_source=x&utm_medium=social&utm_campaign=naengbangbyeong-early-4symptoms&utm_content=a\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/naengbangbyeong-early-4symptoms.html?utm_source=x&utm_medium=social&utm_campaign=naengbangbyeong-early-4symptoms&utm_content=a",
-      "weighted": 81,
+      "weighted": 201,
       "ok": true
     },
     "b": {
-      "text": "冷房病、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/naengbangbyeong-early-4symptoms.html?utm_source=x&utm_medium=social&utm_campaign=naengbangbyeong-early-4symptoms&utm_content=b\n\n#健康 #健康情報",
+      "text": "冷房病の初期症状4つ\n\n✅ エアコンの風が体に直接当たらないよう\n✅ 最低2時間ごとに5分ずつ換気して酸素を…\n✅ 冷たい飲み物の代わりにぬるま湯や温かい…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/naengbangbyeong-early-4symptoms.html?utm_source=x&utm_medium=social&utm_campaign=naengbangbyeong-early-4symptoms&utm_content=b\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/naengbangbyeong-early-4symptoms.html?utm_source=x&utm_medium=social&utm_campaign=naengbangbyeong-early-4symptoms&utm_content=b",
-      "weighted": 81,
+      "weighted": 199,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "エアコンの風が体に直接当たらないよう",
+    "最低2時間ごとに5分ずつ換気して酸素を…",
+    "冷たい飲み物の代わりにぬるま湯や温かい…"
+  ],
+  "points": [
+    "エアコンの風が体に直接当たらないよう",
+    "最低2時間ごとに5分ずつ換気して酸素を…",
+    "冷たい飲み物の代わりにぬるま湯や温かい…"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：エアコンの風が体に直接当たらないよう、最低2時間ごとに5分ずつ換気して酸素を…、冷たい飲み物の代わりにぬるま湯や温かい…。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +48,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 320242,
+      "bytes": 387746,
       "over1mb": false
     },
     {
@@ -49,7 +57,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 182346,
+      "bytes": 236632,
       "over1mb": false
     }
   ],
@@ -58,5 +66,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:53.953Z"
+  "generatedAt": "2026-11-23T05:55:55.364Z"
 }

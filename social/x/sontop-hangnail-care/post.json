@@ -5,8 +5,8 @@
   "url": "/ja/posts/sontop-hangnail-care.html",
   "keyword": "爪",
   "hooks": [
-    "爪、3つのチェック",
-    "爪のささくれができる原因と予防・ケア方法？"
+    "爪のささくれができる原因と予防・ケア方法？",
+    "爪、知っておきたい4つのポイント"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,33 @@
   ],
   "posts": {
     "a": {
-      "text": "爪、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=a\n\n#健康 #健康情報",
+      "text": "爪のささくれができる原因と予防・ケア方法？\n\n✅ 手で引っ張らず 爪切りで皮膚の近くから…\n✅ 手を洗ったあとは ハンドクリーム で必…\n✅ 爪が長いと周りの皮膚を刺激するので 短…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=a\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=a",
-      "weighted": 77,
+      "weighted": 223,
       "ok": true
     },
     "b": {
-      "text": "爪のささくれができる原因と予防・ケア方法？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=b\n\n#健康 #健康情報",
+      "text": "爪、知っておきたい4つのポイント\n\n✅ 手で引っ張らず 爪切りで皮膚の近くから…\n✅ 手を洗ったあとは ハンドクリーム で必…\n✅ 爪が長いと周りの皮膚を刺激するので 短…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=b\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=b",
-      "weighted": 102,
+      "weighted": 212,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "手で引っ張らず 爪切りで皮膚の近くから…",
+    "手を洗ったあとは ハンドクリーム で必…",
+    "爪が長いと周りの皮膚を刺激するので 短…",
+    "寝る前に キューティクルオイル を時々…"
+  ],
+  "points": [
+    "手で引っ張らず 爪切りで皮膚の近くから…",
+    "手を洗ったあとは ハンドクリーム で必…",
+    "爪が長いと周りの皮膚を刺激するので 短…"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：手で引っ張らず 爪切りで皮膚の近くから…、手を洗ったあとは ハンドクリーム で必…、爪が長いと周りの皮膚を刺激するので 短…、寝る前に キューティクルオイル を時々…。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +49,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 315993,
+      "bytes": 406918,
       "over1mb": false
     },
     {
@@ -49,7 +58,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 177552,
+      "bytes": 249956,
       "over1mb": false
     }
   ],
@@ -58,5 +67,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:55.932Z"
+  "generatedAt": "2026-11-23T05:55:57.457Z"
 }

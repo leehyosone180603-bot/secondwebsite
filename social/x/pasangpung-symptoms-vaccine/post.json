@@ -5,8 +5,8 @@
   "url": "/ja/posts/pasangpung-symptoms-vaccine.html",
   "keyword": "破傷風",
   "hooks": [
-    "破傷風、3つのチェック",
-    "破傷風の症状と初期症状？"
+    "破傷風の症状と初期症状？",
+    "破傷風、知っておきたい6つのポイント"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,35 @@
   ],
   "posts": {
     "a": {
-      "text": "破傷風、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=a\n\n#健康 #健康情報",
+      "text": "破傷風の症状と初期症状？\n\n✅ あごと首の筋肉のこわばり\n✅ 飲み込みにくさ\n✅ 首と肩の痛み\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=a\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=a",
-      "weighted": 81,
+      "weighted": 142,
       "ok": true
     },
     "b": {
-      "text": "破傷風の症状と初期症状？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=b\n\n#健康 #健康情報",
+      "text": "破傷風、知っておきたい6つのポイント\n\n✅ あごと首の筋肉のこわばり\n✅ 飲み込みにくさ\n✅ 首と肩の痛み\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=b\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=b",
-      "weighted": 84,
+      "weighted": 153,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "あごと首の筋肉のこわばり",
+    "飲み込みにくさ",
+    "首と肩の痛み",
+    "全身の筋けいれん",
+    "腹部が硬くこわばる感じ",
+    "ひどい場合は呼吸困難"
+  ],
+  "points": [
+    "あごと首の筋肉のこわばり",
+    "飲み込みにくさ",
+    "首と肩の痛み"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：あごと首の筋肉のこわばり、飲み込みにくさ、首と肩の痛み、全身の筋けいれん、腹部が硬くこわばる感じ、ひどい場合は呼吸困難。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +51,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 319027,
+      "bytes": 388997,
       "over1mb": false
     },
     {
@@ -49,7 +60,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 181077,
+      "bytes": 220794,
       "over1mb": false
     }
   ],
@@ -58,5 +69,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:57.129Z"
+  "generatedAt": "2026-11-23T05:55:58.734Z"
 }

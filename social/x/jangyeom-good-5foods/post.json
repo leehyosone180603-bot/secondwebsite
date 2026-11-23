@@ -6,7 +6,7 @@
   "keyword": "腸炎によい食べ物",
   "hooks": [
     "腸炎によい食べ物5つ？",
-    "腸炎によい食べ物、3つのチェック"
+    "腸炎によい食べ物5つ"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,35 @@
   ],
   "posts": {
     "a": {
-      "text": "腸炎によい食べ物5つ？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jangyeom-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jangyeom-good-5foods&utm_content=a\n\n#健康 #健康情報",
+      "text": "腸炎によい食べ物5つ？\n\n✅ 初期から回復期まで、段階ごとに取り入れ…\n✅ ① 最初の一、二日は白がゆから始めまし…\n✅ ② お腹が少し落ち着いたらバナナを添え…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jangyeom-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jangyeom-good-5foods&utm_content=a\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/jangyeom-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jangyeom-good-5foods&utm_content=a",
-      "weighted": 81,
+      "weighted": 202,
       "ok": true
     },
     "b": {
-      "text": "腸炎によい食べ物、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jangyeom-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jangyeom-good-5foods&utm_content=b\n\n#健康 #健康情報",
+      "text": "腸炎によい食べ物5つ\n\n✅ 初期から回復期まで、段階ごとに取り入れ…\n✅ ① 最初の一、二日は白がゆから始めまし…\n✅ ② お腹が少し落ち着いたらバナナを添え…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jangyeom-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jangyeom-good-5foods&utm_content=b\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/jangyeom-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jangyeom-good-5foods&utm_content=b",
-      "weighted": 91,
+      "weighted": 200,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "初期から回復期まで、段階ごとに取り入れ…",
+    "① 最初の一、二日は白がゆから始めまし…",
+    "② お腹が少し落ち着いたらバナナを添え…",
+    "③ お腹がねじれるときは梅茶を薄めに",
+    "④ 回復期にはゆでじゃがいもでしっかりと",
+    "⑤ 何よりも、温かい麦茶で水分を補いま…"
+  ],
+  "points": [
+    "初期から回復期まで、段階ごとに取り入れ…",
+    "① 最初の一、二日は白がゆから始めまし…",
+    "② お腹が少し落ち着いたらバナナを添え…"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：初期から回復期まで、段階ごとに取り入れ…、① 最初の一、二日は白がゆから始めまし…、② お腹が少し落ち着いたらバナナを添え…、③ お腹がねじれるときは梅茶を薄めに、④ 回復期にはゆでじゃがいもでしっかりと、⑤ 何よりも、温かい麦茶で水分を補いま…。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +51,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 323781,
+      "bytes": 442755,
       "over1mb": false
     },
     {
@@ -49,7 +60,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 184216,
+      "bytes": 254352,
       "over1mb": false
     }
   ],
@@ -58,5 +69,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:52.837Z"
+  "generatedAt": "2026-11-23T05:55:54.020Z"
 }

@@ -5,8 +5,8 @@
   "url": "/ja/posts/gohyeolap-causes-symptoms-lowering.html",
   "keyword": "高血圧",
   "hooks": [
-    "高血圧、3つのチェック",
-    "高血圧の原因と症状？"
+    "高血圧の原因と症状？",
+    "高血圧、知っておきたい6つのポイント"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,35 @@
   ],
   "posts": {
     "a": {
-      "text": "高血圧、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=a\n\n#健康 #健康情報",
+      "text": "高血圧の原因と症状？\n\n✅ 首の後ろがこわばる感じ\n✅ ひどい朝の頭痛\n✅ めまい\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=a\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=a",
-      "weighted": 81,
+      "weighted": 130,
       "ok": true
     },
     "b": {
-      "text": "高血圧の原因と症状？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=b\n\n#健康 #健康情報",
+      "text": "高血圧、知っておきたい6つのポイント\n\n✅ 首の後ろがこわばる感じ\n✅ ひどい朝の頭痛\n✅ めまい\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=b\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=b",
-      "weighted": 80,
+      "weighted": 145,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "首の後ろがこわばる感じ",
+    "ひどい朝の頭痛",
+    "めまい",
+    "疲れやすさ",
+    "顔が赤くなる",
+    "動悸"
+  ],
+  "points": [
+    "首の後ろがこわばる感じ",
+    "ひどい朝の頭痛",
+    "めまい"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：首の後ろがこわばる感じ、ひどい朝の頭痛、めまい、疲れやすさ、顔が赤くなる、動悸。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +51,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 314568,
+      "bytes": 363670,
       "over1mb": false
     },
     {
@@ -49,7 +60,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 177919,
+      "bytes": 210729,
       "over1mb": false
     }
   ],
@@ -58,5 +69,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:57.918Z"
+  "generatedAt": "2026-11-23T05:55:59.596Z"
 }

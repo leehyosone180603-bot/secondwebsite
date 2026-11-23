@@ -6,7 +6,7 @@
   "keyword": "痛風によくない食べ物",
   "hooks": [
     "痛風によくない食べ物5つ？",
-    "痛風によくない食べ物、3つのチェック"
+    "痛風によくない食べ物5つ"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,32 @@
   ],
   "posts": {
     "a": {
-      "text": "痛風によくない食べ物5つ？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=a\n\n#健康 #健康情報",
+      "text": "痛風によくない食べ物5つ？\n\n✅ お酒・ホルモン・青魚\n✅ 水をこまめに飲んで（1日2L前後）尿酸…\n✅ 野菜と低脂肪の乳製品を添えて食事のバラ…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=a\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=a",
-      "weighted": 85,
+      "weighted": 188,
       "ok": true
     },
     "b": {
-      "text": "痛風によくない食べ物、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=b\n\n#健康 #健康情報",
+      "text": "痛風によくない食べ物5つ\n\n✅ お酒・ホルモン・青魚\n✅ 水をこまめに飲んで（1日2L前後）尿酸…\n✅ 野菜と低脂肪の乳製品を添えて食事のバラ…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=b\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=b",
-      "weighted": 95,
+      "weighted": 186,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "お酒・ホルモン・青魚",
+    "水をこまめに飲んで（1日2L前後）尿酸…",
+    "野菜と低脂肪の乳製品を添えて食事のバラ…"
+  ],
+  "points": [
+    "お酒・ホルモン・青魚",
+    "水をこまめに飲んで（1日2L前後）尿酸…",
+    "野菜と低脂肪の乳製品を添えて食事のバラ…"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：お酒・ホルモン・青魚、水をこまめに飲んで（1日2L前後）尿酸…、野菜と低脂肪の乳製品を添えて食事のバラ…。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +48,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 324103,
+      "bytes": 379069,
       "over1mb": false
     },
     {
@@ -49,7 +57,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 186286,
+      "bytes": 230181,
       "over1mb": false
     }
   ],
@@ -58,5 +66,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:52.100Z"
+  "generatedAt": "2026-11-23T05:55:53.141Z"
 }

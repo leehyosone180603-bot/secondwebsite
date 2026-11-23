@@ -5,8 +5,8 @@
   "url": "/ja/posts/sonjeorim-numbness-causes.html",
   "keyword": "手のしびれ",
   "hooks": [
-    "手のしびれ、3つのチェック",
-    "手のしびれ、食べ方で変わる？"
+    "手のしびれ、知っておきたい6つのポイント",
+    "手のしびれ、6つのポイント"
   ],
   "hashtags": [
     "#健康",
@@ -14,24 +14,35 @@
   ],
   "posts": {
     "a": {
-      "text": "手のしびれ、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=a\n\n#健康 #健康情報",
+      "text": "手のしびれ、知っておきたい6つのポイント\n\n✅ 手根管症候群\n✅ 頸椎椎間板ヘルニア\n✅ 血行障害\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=a\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=a",
-      "weighted": 85,
+      "weighted": 145,
       "ok": true
     },
     "b": {
-      "text": "手のしびれ、食べ方で変わる？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=b\n\n#健康 #健康情報",
+      "text": "手のしびれ、6つのポイント\n\n✅ 手根管症候群\n✅ 頸椎椎間板ヘルニア\n✅ 血行障害\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=b\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=b",
-      "weighted": 88,
+      "weighted": 131,
       "ok": true
     }
   },
-  "checklist": [],
-  "points": [],
+  "checklist": [
+    "手根管症候群",
+    "頸椎椎間板ヘルニア",
+    "血行障害",
+    "関節炎",
+    "糖尿病による末梢神経の損傷",
+    "ビタミンB群の不足"
+  ],
+  "points": [
+    "手根管症候群",
+    "頸椎椎間板ヘルニア",
+    "血行障害"
+  ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
-    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+    "alt": "この記事のポイント：手根管症候群、頸椎椎間板ヘルニア、血行障害、関節炎、糖尿病による末梢神経の損傷、ビタミンB群の不足。健康フロー。"
   },
   "cardResults": [
     {
@@ -40,7 +51,7 @@
       "w": 1080,
       "h": 1350,
       "overflow": false,
-      "bytes": 321117,
+      "bytes": 378104,
       "over1mb": false
     },
     {
@@ -49,7 +60,7 @@
       "w": 1200,
       "h": 675,
       "overflow": false,
-      "bytes": 182567,
+      "bytes": 210533,
       "over1mb": false
     }
   ],
@@ -58,5 +69,5 @@
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:34:56.669Z"
+  "generatedAt": "2026-11-23T05:55:58.333Z"
 }
