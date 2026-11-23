@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "boiler-away-mode-heating-cost",
+    title: "보일러 외출모드 난방비 아끼려면? 외출 시간별 설정법과 적정 온도",
+    summary: "보일러 외출모드는 동파 방지 기능에 가깝습니다. 출근·1~2일·장기 외출별 설정법, 1℃ 낮추면 약 7% 절약, 실내모드와 온돌모드 차이까지 정리했습니다.",
+    category: "life",
+    date: "2026-11-23",
+    url: "/posts/boiler-away-mode-heating-cost.html",
+    image: "/img/boiler-away-mode-heating-cost-1.jpg",
+  },
+  {
     id: "year-end-party-hangover-food",
     title: "송년회 숙취 해소 음식, 콩나물국·꿀물 효과와 피해야 할 해장법",
     summary: "송년회 다음 날 숙취 해소 음식으로 콩나물국·북엇국·물·죽이 도움 되는 이유와 꿀물·해장술·라면·진통제 주의점, 숙취해소제 표시 기준까지 정리했습니다.",
