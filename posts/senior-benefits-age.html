@@ -68,6 +68,23 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="/css/style.css">
+
+  <style>
+    .age-cluster-links{margin:34px 0 10px;padding:18px 18px 16px;border:1px solid var(--line,#e2e6ee);border-radius:14px;background:var(--panel,#f8fafc)}
+    .age-cluster-links h2{font-size:1.1rem;margin:0 0 6px}
+    .age-cluster-links .acl-sub{color:#667085;font-size:.9rem;margin:0 0 12px}
+    .age-cluster-links .acl-list{list-style:none;padding:0;margin:0 0 12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:6px 16px}
+    .age-cluster-links .acl-list li{position:relative;padding-left:14px;line-height:1.7}
+    .age-cluster-links .acl-list li::before{content:"›";position:absolute;left:0;color:#1e73be;font-weight:800}
+    .age-cluster-links .acl-list a{color:#1f2430;text-decoration:none;font-size:.94rem;font-weight:600}
+    .age-cluster-links .acl-list a:hover{color:#1e73be;text-decoration:underline}
+    .age-cluster-links .acl-calcs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+    .age-cluster-links .acl-calc{display:inline-block;background:#e9f2fd;color:#1a4fd0;font-weight:700;font-size:.86rem;padding:7px 13px;border-radius:999px;text-decoration:none}
+    .age-cluster-links .acl-hub{margin:4px 0 0}
+    .age-cluster-links .acl-hub a{color:#1a4fd0;text-decoration:none;font-size:.95rem}
+    .age-cluster-links .acl-fresh{color:#8a93a3;font-size:.78rem;margin:8px 0 0}
+    @media (prefers-color-scheme:dark){.age-cluster-links{background:#161b26;border-color:#263040}.age-cluster-links .acl-list a{color:#e7ebf3}.age-cluster-links .acl-calc{background:#1a2746;color:#a9c4ff}}
+  </style>
 </head>
 <body>
   <header id="site-header"></header>
@@ -197,6 +214,15 @@
       <div class="callout">
         ✅ <strong>함께 보면 좋은 글·도구</strong> — <a href="/birth-year/">몇년생 계산기</a> · <a href="/posts/pension-start-age.html">국민연금 수급 나이</a> · <a href="/posts/milestone-ages.html">환갑·칠순·팔순 나이</a>
       </div>
+
+      <section class="age-cluster-links" aria-label="나이·출생연도 관련 글">
+        <h2>🎂 나이·출생연도 글 전체 보기</h2>
+        <p class="acl-sub">헷갈리는 나이·학번·띠·혜택 기준을 주제별로 모았습니다. 위 계산기로 내 생년월일을 넣어보고, 더 궁금한 주제를 눌러보세요.</p>
+        <ul class="acl-list"><li><a href="/posts/age-table-2026.html">2026 나이표 — 출생연도별 만 나이·띠</a></li><li><a href="/posts/birth-year-guide.html">몇년생 계산기 — 나이로 출생연도·띠 찾기</a></li><li><a href="/posts/milestone-ages.html">환갑·진갑·칠순·팔순·구순은 몇 살?</a></li><li><a href="/posts/birthyear-to-hakbeon.html">몇년생 몇 학번? 출생연도–학번 환산표</a></li><li><a href="/posts/zodiac-year-age.html">십이지 띠로 나이·몇년생 찾기</a></li><li><a href="/posts/pension-start-age.html">국민연금 수급 개시 나이</a></li><li><a href="/posts/rrn-age-decode.html">주민등록번호로 나이·성별 알아내기</a></li><li><a href="/posts/elementary-school-age.html">초등학교 입학 나이 — 몇년생이 몇 년에?</a></li><li><a href="/posts/fast-year-birth.html">빠른 년생 학년·나이 완전정리</a></li></ul>
+        <div class="acl-calcs"><a class="acl-calc" href="/age/">🧮 만 나이 계산기</a><a class="acl-calc" href="/birth-year/">🧮 몇년생·띠 계산기</a><a class="acl-calc" href="/calculators.html">🧮 계산기 모음</a></div>
+        <p class="acl-hub"><a href="/age-guide.html"><b>📚 나이·출생연도 완전정리 허브 바로가기 ›</b></a></p>
+        <p class="acl-fresh">기준일 <span class="js-today">오늘</span> · <span class="js-year">올해</span>년 나이는 위 계산기로 항상 최신으로 확인하세요.</p>
+      </section>
     </article>
   </main>
 

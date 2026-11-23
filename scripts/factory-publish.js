@@ -234,7 +234,7 @@ function regenFeeds() {
   let CALCS;
   try { CALCS = require(path.join(ROOT, "js", "tools.js")).publicTools().map(t => t.slug); }
   catch (e) { CALCS = ["age", "birth-year", "business-days", "military", "scientific", "salary", "severance", "vat", "freelancer", "lotto", "lotto-prize", "dsr", "jeonse-loan", "support-check"]; }
-  let urls = [{ loc: `${BASE}/`, changefreq: "daily", priority: "1.0" }, { loc: `${BASE}/tools.html`, changefreq: "weekly", priority: "0.9" }, { loc: `${BASE}/calculators.html`, changefreq: "weekly", priority: "0.9" }];
+  let urls = [{ loc: `${BASE}/`, changefreq: "daily", priority: "1.0" }, { loc: `${BASE}/tools.html`, changefreq: "weekly", priority: "0.9" }, { loc: `${BASE}/calculators.html`, changefreq: "weekly", priority: "0.9" }, { loc: `${BASE}/age-guide.html`, changefreq: "weekly", priority: "0.9" }];
   for (const slug of NAV) if ((CATEGORIES[slug] || {}).ready) urls.push({ loc: `${BASE}/category.html?cat=${slug}`, changefreq: "daily", priority: "0.8" });
   for (const c of CALCS) urls.push({ loc: `${BASE}/${c}/`, changefreq: "monthly", priority: "0.8" });
   // MBTI 테스트·궁합 (유형 글 16개는 아래 posts 루프에 포함, 허브는 posts.js에 등록)

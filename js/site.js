@@ -198,7 +198,7 @@ function renderHeader() {
     <nav class="nav">
       <div class="wrap nav__inner">
         <button class="nav__menu" aria-label="메뉴">☰</button>
-        <div class="nav__links">${navLinks}<a class="nav__link nav__link--calc" href="/calculators.html">🧮 계산기</a><a class="nav__link nav__link--mbti" href="/posts/mbti-16-types.html">🧠 MBTI</a><a class="nav__link nav__link--ja" href="/ja/">🇯🇵 日本語</a></div>
+        <div class="nav__links">${navLinks}<a class="nav__link nav__link--age" href="/age-guide.html">🎂 나이계산</a><a class="nav__link nav__link--calc" href="/calculators.html">🧮 계산기</a><a class="nav__link nav__link--mbti" href="/posts/mbti-16-types.html">🧠 MBTI</a><a class="nav__link nav__link--ja" href="/ja/">🇯🇵 日本語</a></div>
         <div class="nav__meta">
           <span class="nav__date">발행일: ${dateStr}</span>
           <span class="nav__auth"><a href="${SITE.adminUrl}">로그인</a> | <a href="${SITE.adminUrl}">회원가입</a></span>

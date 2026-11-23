@@ -154,7 +154,18 @@
     input.addEventListener("keydown", function (e) { if (e.key === "Enter") run(); });
   }
 
+  // 연도 자동 최신화: .js-year(올해)·.js-today(오늘 날짜)를 현재 기준으로 채움 — 매년/매일 자동 갱신
+  function fillDates() {
+    var now = new Date(), y = now.getFullYear();
+    var ys = document.querySelectorAll(".js-year");
+    for (var i = 0; i < ys.length; i++) ys[i].textContent = y;
+    var td = now.getFullYear() + "년 " + (now.getMonth() + 1) + "월 " + now.getDate() + "일";
+    var ts = document.querySelectorAll(".js-today");
+    for (var j = 0; j < ts.length; j++) ts[j].textContent = td;
+  }
+
   function init() {
+    fillDates();
     var nodes = document.querySelectorAll(".age-widget");
     if (!nodes.length) return;
     injectStyleOnce();
