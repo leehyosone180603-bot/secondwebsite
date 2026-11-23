@@ -1,0 +1,62 @@
+{
+  "slug": "bujong-good-5foods",
+  "series": "food",
+  "title": "むくみによい食べ物5つ",
+  "url": "/ja/posts/bujong-good-5foods.html",
+  "keyword": "むくみによい食べ物",
+  "hooks": [
+    "むくみによい食べ物5つ？",
+    "むくみによい食べ物、3つのチェック"
+  ],
+  "hashtags": [
+    "#健康",
+    "#食事"
+  ],
+  "posts": {
+    "a": {
+      "text": "むくみによい食べ物5つ？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=a\n\n#健康 #食事",
+      "link": "https://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=a",
+      "weighted": 79,
+      "ok": true
+    },
+    "b": {
+      "text": "むくみによい食べ物、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=b\n\n#健康 #食事",
+      "link": "https://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=b",
+      "weighted": 89,
+      "ok": true
+    }
+  },
+  "checklist": [],
+  "points": [],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/bujong-good-5foods/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 338025,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/bujong-good-5foods/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 191694,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:53.577Z"
+}

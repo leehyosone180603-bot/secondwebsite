@@ -1,0 +1,62 @@
+{
+  "slug": "jeonripseon-good-5foods",
+  "series": "info",
+  "title": "前立腺の健康によい食べ物5つ",
+  "url": "/ja/posts/jeonripseon-good-5foods.html",
+  "keyword": "前立腺によい食べ物",
+  "hooks": [
+    "前立腺によい食べ物、3つのチェック",
+    "前立腺によい食べ物、食べ方で変わる？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "posts": {
+    "a": {
+      "text": "前立腺によい食べ物、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=a\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=a",
+      "weighted": 93,
+      "ok": true
+    },
+    "b": {
+      "text": "前立腺によい食べ物、食べ方で変わる？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=b\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=b",
+      "weighted": 96,
+      "ok": true
+    }
+  },
+  "checklist": [],
+  "points": [],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/jeonripseon-good-5foods/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 319126,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/jeonripseon-good-5foods/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 180557,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:53.204Z"
+}

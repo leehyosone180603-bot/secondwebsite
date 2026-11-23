@@ -1,0 +1,62 @@
+{
+  "slug": "pasangpung-symptoms-vaccine",
+  "series": "info",
+  "title": "破傷風の症状と初期症状、予防接種・注射",
+  "url": "/ja/posts/pasangpung-symptoms-vaccine.html",
+  "keyword": "破傷風",
+  "hooks": [
+    "破傷風、3つのチェック",
+    "破傷風の症状と初期症状？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "posts": {
+    "a": {
+      "text": "破傷風、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=a\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=a",
+      "weighted": 81,
+      "ok": true
+    },
+    "b": {
+      "text": "破傷風の症状と初期症状？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=b\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=b",
+      "weighted": 84,
+      "ok": true
+    }
+  },
+  "checklist": [],
+  "points": [],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/pasangpung-symptoms-vaccine/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 319027,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/pasangpung-symptoms-vaccine/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 181077,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:57.129Z"
+}

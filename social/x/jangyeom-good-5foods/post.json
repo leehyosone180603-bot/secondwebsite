@@ -1,0 +1,62 @@
+{
+  "slug": "jangyeom-good-5foods",
+  "series": "info",
+  "title": "腸炎によい食べ物5つ",
+  "url": "/ja/posts/jangyeom-good-5foods.html",
+  "keyword": "腸炎によい食べ物",
+  "hooks": [
+    "腸炎によい食べ物5つ？",
+    "腸炎によい食べ物、3つのチェック"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "posts": {
+    "a": {
+      "text": "腸炎によい食べ物5つ？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jangyeom-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jangyeom-good-5foods&utm_content=a\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/jangyeom-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jangyeom-good-5foods&utm_content=a",
+      "weighted": 81,
+      "ok": true
+    },
+    "b": {
+      "text": "腸炎によい食べ物、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jangyeom-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jangyeom-good-5foods&utm_content=b\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/jangyeom-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jangyeom-good-5foods&utm_content=b",
+      "weighted": 91,
+      "ok": true
+    }
+  },
+  "checklist": [],
+  "points": [],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/jangyeom-good-5foods/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 323781,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/jangyeom-good-5foods/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 184216,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:52.837Z"
+}

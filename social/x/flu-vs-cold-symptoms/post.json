@@ -1,0 +1,72 @@
+{
+  "slug": "flu-vs-cold-symptoms",
+  "series": "season",
+  "title": "インフルエンザと風邪の違い6つ｜熱・症状・受診の目安",
+  "url": "/ja/posts/flu-vs-cold-symptoms.html",
+  "keyword": "インフル",
+  "hooks": [
+    "インフルエンザと風邪の違い6つ",
+    "インフルエンザと風邪の違い6つ？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#冬の健康"
+  ],
+  "posts": {
+    "a": {
+      "text": "インフルエンザと風邪の違い6つ\n\n✅ 急な38℃以上の高熱と全身症状が強いときは\n✅ 抗インフルエンザ薬は、発症からおよそ48時間以内の開始が目…\n✅ 学校は「発症後5日かつ解熱後2日\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=a\n\n#健康 #冬の健康",
+      "link": "https://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=a",
+      "weighted": 223,
+      "ok": true
+    },
+    "b": {
+      "text": "インフルエンザと風邪の違い6つ？\n\n✅ 急な38℃以上の高熱と全身症状が強いときは\n✅ 抗インフルエンザ薬は、発症からおよそ48時間以内の開始が目…\n✅ 学校は「発症後5日かつ解熱後2日\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=b\n\n#健康 #冬の健康",
+      "link": "https://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=b",
+      "weighted": 225,
+      "ok": true
+    }
+  },
+  "checklist": [
+    "数時間のうちに38℃以上の熱が急に出た",
+    "全身の筋肉痛・関節痛・寒けがある",
+    "強いだるさで起き上がるのがつらい",
+    "周囲でインフルエンザが流行している",
+    "のどや鼻より先に、発熱と体の痛みが出た"
+  ],
+  "points": [
+    "急な38℃以上の高熱と全身症状が強いときは、インフルエンザを疑います。",
+    "抗インフルエンザ薬は、発症からおよそ48時間以内の開始が目安とされます。",
+    "学校は「発症後5日かつ解熱後2日（幼児3日）」を過ぎるまで出席停止です。"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：数時間のうちに38℃以上の熱が急に出た、全身の筋肉痛・関節痛・寒けがある、強いだるさで起き上がるのがつらい、周囲でインフルエンザが流行している、のどや鼻より先に、発熱と体の痛みが出た。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/flu-vs-cold-symptoms/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 418043,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/flu-vs-cold-symptoms/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 242328,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:50.604Z"
+}

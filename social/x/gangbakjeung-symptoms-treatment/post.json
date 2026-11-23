@@ -1,0 +1,62 @@
+{
+  "slug": "gangbakjeung-symptoms-treatment",
+  "series": "info",
+  "title": "強迫症と強迫観念の違い、症状と治療・薬(確認強迫・ためこみ症)",
+  "url": "/ja/posts/gangbakjeung-symptoms-treatment.html",
+  "keyword": "強迫症",
+  "hooks": [
+    "強迫症、3つのチェック",
+    "強迫症と強迫観念の違い？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "posts": {
+    "a": {
+      "text": "強迫症、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gangbakjeung-symptoms-treatment.html?utm_source=x&utm_medium=social&utm_campaign=gangbakjeung-symptoms-treatment&utm_content=a\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/gangbakjeung-symptoms-treatment.html?utm_source=x&utm_medium=social&utm_campaign=gangbakjeung-symptoms-treatment&utm_content=a",
+      "weighted": 81,
+      "ok": true
+    },
+    "b": {
+      "text": "強迫症と強迫観念の違い？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gangbakjeung-symptoms-treatment.html?utm_source=x&utm_medium=social&utm_campaign=gangbakjeung-symptoms-treatment&utm_content=b\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/gangbakjeung-symptoms-treatment.html?utm_source=x&utm_medium=social&utm_campaign=gangbakjeung-symptoms-treatment&utm_content=b",
+      "weighted": 84,
+      "ok": true
+    }
+  },
+  "checklist": [],
+  "points": [],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/gangbakjeung-symptoms-treatment/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 318015,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/gangbakjeung-symptoms-treatment/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 180269,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:57.488Z"
+}

@@ -1,0 +1,73 @@
+{
+  "slug": "winter-indoor-humidity-guide",
+  "series": "season",
+  "title": "冬の部屋の湿度は何％が正解？加湿器なしでできる5つの方法",
+  "url": "/ja/posts/winter-indoor-humidity-guide.html",
+  "keyword": "冬",
+  "hooks": [
+    "冬、6つのチェック",
+    "冬の部屋の湿度は何％が正解？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#冬の健康"
+  ],
+  "posts": {
+    "a": {
+      "text": "冬、6つのチェック\n\n✅ 冬の室内は、湿度40〜60％・室温20℃前後が目安とされて…\n✅ 洗濯物の部屋干しや濡れタオルなど\n✅ 60％を超える状態が続くと、カビやダニが増えやすくなります。\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=a\n\n#健康 #冬の健康",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=a",
+      "weighted": 227,
+      "ok": true
+    },
+    "b": {
+      "text": "冬の部屋の湿度は何％が正解？\n\n✅ 冬の室内は、湿度40〜60％・室温20℃前後が目安とされて…\n✅ 洗濯物の部屋干しや濡れタオルなど\n✅ 60％を超える状態が続くと、カビやダニが増えやすくなります。\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=b\n\n#健康 #冬の健康",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=b",
+      "weighted": 238,
+      "ok": true
+    }
+  },
+  "checklist": [
+    "朝起きると、のどや鼻が乾いて痛い",
+    "日中も目がしょぼしょぼする",
+    "肌がかゆい、粉をふく",
+    "唇がすぐ荒れる",
+    "静電気がよく起きる",
+    "湿度計がない、または40％を下回っている"
+  ],
+  "points": [
+    "冬の室内は、湿度40〜60％・室温20℃前後が目安とされています。",
+    "洗濯物の部屋干しや濡れタオルなど、加湿器がなくても湿度は上げられます。",
+    "60％を超える状態が続くと、カビやダニが増えやすくなります。"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：朝起きると、のどや鼻が乾いて痛い、日中も目がしょぼしょぼする、肌がかゆい、粉をふく、唇がすぐ荒れる、静電気がよく起きる、湿度計がない、または40％を下回っている。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/winter-indoor-humidity-guide/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 392908,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/winter-indoor-humidity-guide/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 216540,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:50.192Z"
+}

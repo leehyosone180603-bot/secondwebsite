@@ -1,0 +1,62 @@
+{
+  "slug": "sonjeorim-numbness-causes",
+  "series": "info",
+  "title": "手のしびれ・手足のしびれの原因と管理(腕・指・手のひらのしびれ)",
+  "url": "/ja/posts/sonjeorim-numbness-causes.html",
+  "keyword": "手のしびれ",
+  "hooks": [
+    "手のしびれ、3つのチェック",
+    "手のしびれ、食べ方で変わる？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "posts": {
+    "a": {
+      "text": "手のしびれ、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=a\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=a",
+      "weighted": 85,
+      "ok": true
+    },
+    "b": {
+      "text": "手のしびれ、食べ方で変わる？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=b\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=b",
+      "weighted": 88,
+      "ok": true
+    }
+  },
+  "checklist": [],
+  "points": [],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/sonjeorim-numbness-causes/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 321117,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/sonjeorim-numbness-causes/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 182567,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:56.669Z"
+}

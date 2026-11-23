@@ -1,0 +1,72 @@
+{
+  "slug": "year-end-party-hangover-food",
+  "series": "info",
+  "title": "忘年会の二日酔いに良い食べ物｜豆もやしスープ・はちみつ水の実際と避けたい習慣",
+  "url": "/ja/posts/year-end-party-hangover-food.html",
+  "keyword": "二日酔い",
+  "hooks": [
+    "忘年会の二日酔いに良い食べ物？",
+    "二日酔い、食べ方で変わる？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "posts": {
+    "a": {
+      "text": "忘年会の二日酔いに良い食べ物？\n\n✅ 食べ物だけで二日酔いを消すのは難しく、水分\n✅ 澄んだスープ・常温の水・イオン飲料・おかゆなど\n✅ 迎え酒・脂っこいラーメン・濃いコーヒーの飲みすぎ\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=a\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=a",
+      "weighted": 234,
+      "ok": true
+    },
+    "b": {
+      "text": "二日酔い、食べ方で変わる？\n\n✅ 食べ物だけで二日酔いを消すのは難しく、水分\n✅ 澄んだスープ・常温の水・イオン飲料・おかゆなど\n✅ 迎え酒・脂っこいラーメン・濃いコーヒーの飲みすぎ\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=b\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=b",
+      "weighted": 230,
+      "ok": true
+    }
+  },
+  "checklist": [
+    "頭が重い、ずきずきする",
+    "胃がむかむかして食欲がない",
+    "のどが渇く、体がだるい",
+    "顔がむくんでいる",
+    "前夜のことをあまり覚えていない"
+  ],
+  "points": [
+    "食べ物だけで二日酔いを消すのは難しく、水分・電解質の補給と胃を休めることが現実的な目標です。",
+    "澄んだスープ・常温の水・イオン飲料・おかゆなど、消化にやさしいものが無難です。",
+    "迎え酒・脂っこいラーメン・濃いコーヒーの飲みすぎ・酒が残った状態での鎮痛剤は避けましょう。"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：頭が重い、ずきずきする、胃がむかむかして食欲がない、のどが渇く、体がだるい、顔がむくんでいる、前夜のことをあまり覚えていない。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/year-end-party-hangover-food/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 393006,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/year-end-party-hangover-food/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 224568,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:49.392Z"
+}

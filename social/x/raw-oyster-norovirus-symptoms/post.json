@@ -1,0 +1,72 @@
+{
+  "slug": "raw-oyster-norovirus-symptoms",
+  "series": "season",
+  "title": "生牡蠣でノロウイルス？症状・潜伏期間と家族にうつさない対策",
+  "url": "/ja/posts/raw-oyster-norovirus-symptoms.html",
+  "keyword": "牡蠣",
+  "hooks": [
+    "牡蠣、5つのチェック",
+    "生牡蠣でノロウイルス？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#冬の健康"
+  ],
+  "posts": {
+    "a": {
+      "text": "牡蠣、5つのチェック\n\n✅ ノロウイルスの潜伏期間はおよそ12〜48時間で\n✅ 牡蠣は中心部85〜90℃で90秒以上の加熱が安全の目安です。\n✅ 消毒は次亜塩素酸ナトリウム。アルコールや酢\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=a\n\n#健康 #冬の健康",
+      "link": "https://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=a",
+      "weighted": 224,
+      "ok": true
+    },
+    "b": {
+      "text": "生牡蠣でノロウイルス？\n\n✅ ノロウイルスの潜伏期間はおよそ12〜48時間で\n✅ 牡蠣は中心部85〜90℃で90秒以上の加熱が安全の目安です。\n✅ 消毒は次亜塩素酸ナトリウム。アルコールや酢\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=b\n\n#健康 #冬の健康",
+      "link": "https://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=b",
+      "weighted": 227,
+      "ok": true
+    }
+  },
+  "checklist": [
+    "急な吐き気や、くり返す嘔吐がある",
+    "水のような下痢と腹痛がある",
+    "微熱・寒け・体のだるさをともなう",
+    "家族など同じものを食べた人も",
+    "食べてからおよそ12〜48時間で症状が…"
+  ],
+  "points": [
+    "ノロウイルスの潜伏期間はおよそ12〜48時間で、多くは1〜2日で軽快します。",
+    "牡蠣は中心部85〜90℃で90秒以上の加熱が安全の目安です。",
+    "消毒は次亜塩素酸ナトリウム。アルコールや酢・レモンは効きにくいとされます。"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：急な吐き気や、くり返す嘔吐がある、水のような下痢と腹痛がある、微熱・寒け・体のだるさをともなう、家族など同じものを食べた人も、食べてからおよそ12〜48時間で症状が…。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/raw-oyster-norovirus-symptoms/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 406391,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/raw-oyster-norovirus-symptoms/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 234605,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:50.997Z"
+}

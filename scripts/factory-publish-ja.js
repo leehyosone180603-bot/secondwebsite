@@ -252,6 +252,14 @@ function main() {
   F.regenFeeds();
   console.log("일본어 발행: ja/posts/" + a.slug + ".html  (" + a.category + ", 사진 " + photos.length + "장, " + koMsg + ")");
   console.log("URL: " + BASE + "/ja/posts/" + a.slug + ".html");
+  // C-4: 발행 직후 X 게시물 세트 자동 생성 (--no-x 로 끔)
+  if (!process.argv.includes("--no-x")) {
+    try {
+      require("child_process").execFileSync(process.execPath,
+        [path.join(__dirname, "x-post-gen.js"), a.slug],
+        { stdio: "inherit", cwd: ROOT });
+    } catch (e) { console.log("[x-post-gen 건너뜀] " + (e && e.message ? e.message : e)); }
+  }
 }
 if (require.main === module) main();
 module.exports = { pageHtml: pageHtml, updateJaPostsJs: updateJaPostsJs };

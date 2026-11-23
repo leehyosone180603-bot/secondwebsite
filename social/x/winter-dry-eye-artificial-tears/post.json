@@ -1,0 +1,73 @@
+{
+  "slug": "winter-dry-eye-artificial-tears",
+  "series": "season",
+  "title": "冬のドライアイ対策｜目薬の選び方とやってはいけない3つの習慣",
+  "url": "/ja/posts/winter-dry-eye-artificial-tears.html",
+  "keyword": "ドライアイ",
+  "hooks": [
+    "冬のドライアイ対策？",
+    "冬のドライアイ対策"
+  ],
+  "hashtags": [
+    "#健康",
+    "#冬の健康"
+  ],
+  "posts": {
+    "a": {
+      "text": "冬のドライアイ対策？\n\n✅ 冬は暖房・寒暖差・画面の見すぎで\n✅ 目薬は「防腐剤の有無」で選び、1回1滴で十分とされています。\n✅ 点眼してもよくならない、痛み・充血が続くときは眼科へ。\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=a\n\n#健康 #冬の健康",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=a",
+      "weighted": 232,
+      "ok": true
+    },
+    "b": {
+      "text": "冬のドライアイ対策\n\n✅ 冬は暖房・寒暖差・画面の見すぎで\n✅ 目薬は「防腐剤の有無」で選び、1回1滴で十分とされています。\n✅ 点眼してもよくならない、痛み・充血が続くときは眼科へ。\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=b\n\n#健康 #冬の健康",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=b",
+      "weighted": 230,
+      "ok": true
+    }
+  },
+  "checklist": [
+    "目がゴロゴロする、砂が入ったような違和…",
+    "夕方や夜になるほど、目の疲れや充血が強…",
+    "風に当たると、かえって涙が出る",
+    "画面を見続けると目が重い",
+    "目薬をさす回数が増えてきた",
+    "目がかすむ、見えづらいと感じることがある"
+  ],
+  "points": [
+    "冬は暖房・寒暖差・画面の見すぎで、涙の膜が乾きやすくなります。",
+    "目薬は「防腐剤の有無」で選び、1回1滴で十分とされています。",
+    "点眼してもよくならない、痛み・充血が続くときは眼科へ。"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：目がゴロゴロする、砂が入ったような違和…、夕方や夜になるほど、目の疲れや充血が強…、風に当たると、かえって涙が出る、画面を見続けると目が重い、目薬をさす回数が増えてきた、目がかすむ、見えづらいと感じることがある。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/winter-dry-eye-artificial-tears/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 414332,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/winter-dry-eye-artificial-tears/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 233741,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:49.792Z"
+}

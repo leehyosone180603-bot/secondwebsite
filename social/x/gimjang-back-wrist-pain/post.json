@@ -1,0 +1,62 @@
+{
+  "slug": "gimjang-back-wrist-pain",
+  "series": "info",
+  "title": "キムジャン後の腰・手首の痛み、温冷の使い分けと病院へ行くべきサイン",
+  "url": "/ja/posts/gimjang-back-wrist-pain.html",
+  "keyword": "キムジャン",
+  "hooks": [
+    "キムジャン、3つのチェック",
+    "キムジャン後の腰・手首の痛み？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "posts": {
+    "a": {
+      "text": "キムジャン、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=a\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=a",
+      "weighted": 85,
+      "ok": true
+    },
+    "b": {
+      "text": "キムジャン後の腰・手首の痛み？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=b\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=b",
+      "weighted": 90,
+      "ok": true
+    }
+  },
+  "checklist": [],
+  "points": [],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/gimjang-back-wrist-pain/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 321540,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/gimjang-back-wrist-pain/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 182826,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:35:00.256Z"
+}

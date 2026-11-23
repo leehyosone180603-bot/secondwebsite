@@ -1,0 +1,62 @@
+{
+  "slug": "abocado-ripening-benefits",
+  "series": "food",
+  "title": "アボカドの追熟方法と効能・カロリー・食べ方",
+  "url": "/ja/posts/abocado-ripening-benefits.html",
+  "keyword": "アボカド",
+  "hooks": [
+    "アボカド、3つのチェック",
+    "アボカドの追熟方法と効能・カロリー・食べ方？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#食事"
+  ],
+  "posts": {
+    "a": {
+      "text": "アボカド、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=a\n\n#健康 #食事",
+      "link": "https://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=a",
+      "weighted": 79,
+      "ok": true
+    },
+    "b": {
+      "text": "アボカドの追熟方法と効能・カロリー・食べ方？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=b\n\n#健康 #食事",
+      "link": "https://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=b",
+      "weighted": 100,
+      "ok": true
+    }
+  },
+  "checklist": [],
+  "points": [],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/abocado-ripening-benefits/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 333031,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/abocado-ripening-benefits/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 188053,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:58.304Z"
+}

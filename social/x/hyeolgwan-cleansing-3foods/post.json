@@ -1,0 +1,62 @@
+{
+  "slug": "hyeolgwan-cleansing-3foods",
+  "series": "food",
+  "title": "血管の脂・コレステロールが気になる人の食べ物3つと食習慣",
+  "url": "/ja/posts/hyeolgwan-cleansing-3foods.html",
+  "keyword": "血管によい食べ物",
+  "hooks": [
+    "血管によい食べ物、3つのチェック",
+    "血管によい食べ物、食べ方で変わる？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#食事"
+  ],
+  "posts": {
+    "a": {
+      "text": "血管によい食べ物、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=a\n\n#健康 #食事",
+      "link": "https://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=a",
+      "weighted": 87,
+      "ok": true
+    },
+    "b": {
+      "text": "血管によい食べ物、食べ方で変わる？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=b\n\n#健康 #食事",
+      "link": "https://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=b",
+      "weighted": 90,
+      "ok": true
+    }
+  },
+  "checklist": [],
+  "points": [],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/hyeolgwan-cleansing-3foods/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 338801,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/hyeolgwan-cleansing-3foods/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 192250,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:35:29.746Z"
+}

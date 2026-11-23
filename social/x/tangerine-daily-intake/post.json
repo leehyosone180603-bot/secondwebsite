@@ -1,0 +1,62 @@
+{
+  "slug": "tangerine-daily-intake",
+  "series": "food",
+  "title": "みかんの1日の適量は何個？効能と食べ過ぎで起こること",
+  "url": "/ja/posts/tangerine-daily-intake.html",
+  "keyword": "みかん",
+  "hooks": [
+    "みかんの1日の適量は何個？",
+    "みかん、3つのチェック"
+  ],
+  "hashtags": [
+    "#健康",
+    "#食事"
+  ],
+  "posts": {
+    "a": {
+      "text": "みかんの1日の適量は何個？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=a\n\n#健康 #食事",
+      "link": "https://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=a",
+      "weighted": 81,
+      "ok": true
+    },
+    "b": {
+      "text": "みかん、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=b\n\n#健康 #食事",
+      "link": "https://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=b",
+      "weighted": 77,
+      "ok": true
+    }
+  },
+  "checklist": [],
+  "points": [],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/tangerine-daily-intake/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 333674,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/tangerine-daily-intake/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 190669,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:59.452Z"
+}

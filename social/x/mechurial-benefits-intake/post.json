@@ -1,0 +1,62 @@
+{
+  "slug": "mechurial-benefits-intake",
+  "series": "food",
+  "title": "うずらの卵の効能と1日の推奨摂取量",
+  "url": "/ja/posts/mechurial-benefits-intake.html",
+  "keyword": "うずらの卵",
+  "hooks": [
+    "うずらの卵の効能と1日の推奨摂取量？",
+    "うずらの卵の効能と1日の推奨摂取量"
+  ],
+  "hashtags": [
+    "#健康",
+    "#食事"
+  ],
+  "posts": {
+    "a": {
+      "text": "うずらの卵の効能と1日の推奨摂取量？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=a\n\n#健康 #食事",
+      "link": "https://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=a",
+      "weighted": 91,
+      "ok": true
+    },
+    "b": {
+      "text": "うずらの卵の効能と1日の推奨摂取量\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=b\n\n#健康 #食事",
+      "link": "https://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=b",
+      "weighted": 89,
+      "ok": true
+    }
+  },
+  "checklist": [],
+  "points": [],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/mechurial-benefits-intake/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 344253,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/mechurial-benefits-intake/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 196757,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:56.289Z"
+}

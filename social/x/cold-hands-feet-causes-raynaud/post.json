@@ -1,0 +1,73 @@
+{
+  "slug": "cold-hands-feet-causes-raynaud",
+  "series": "season",
+  "title": "手足が冷たいのは冷え性？レイノー現象との違いとセルフチェック",
+  "url": "/ja/posts/cold-hands-feet-causes-raynaud.html",
+  "keyword": "手足",
+  "hooks": [
+    "手足、6つのチェック",
+    "手足が冷たいのは冷え性？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#冬の健康"
+  ],
+  "posts": {
+    "a": {
+      "text": "手足、6つのチェック\n\n✅ 手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあり…\n✅ 指先が白→青→赤と色が変わる場合は\n✅ 色の変化を繰り返す、痛みや皮膚の硬さを伴うときは\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=a\n\n#健康 #冬の健康",
+      "link": "https://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=a",
+      "weighted": 226,
+      "ok": true
+    },
+    "b": {
+      "text": "手足が冷たいのは冷え性？\n\n✅ 手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあり…\n✅ 指先が白→青→赤と色が変わる場合は\n✅ 色の変化を繰り返す、痛みや皮膚の硬さを伴うときは\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=b\n\n#健康 #冬の健康",
+      "link": "https://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=b",
+      "weighted": 231,
+      "ok": true
+    }
+  },
+  "checklist": [
+    "手足が全体的に冷たく",
+    "冷たい水や空気に触れると",
+    "色が変わった部分の境目が比較的はっきり…",
+    "白のあと、青紫→赤と色が移り変わる",
+    "色の変化とともに、しびれやうずきを感じる",
+    "緊張やストレスでも指先の色が変わる"
+  ],
+  "points": [
+    "手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあります。",
+    "指先が白→青→赤と色が変わる場合は、冷え性ではなくレイノー現象の可能性があります。",
+    "色の変化を繰り返す、痛みや皮膚の硬さを伴うときは、早めに受診しましょう。"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：手足が全体的に冷たく、冷たい水や空気に触れると、色が変わった部分の境目が比較的はっきり…、白のあと、青紫→赤と色が移り変わる、色の変化とともに、しびれやうずきを感じる、緊張やストレスでも指先の色が変わる。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/cold-hands-feet-causes-raynaud/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 419306,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/cold-hands-feet-causes-raynaud/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 231372,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:49.004Z"
+}

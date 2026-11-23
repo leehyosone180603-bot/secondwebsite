@@ -1,0 +1,62 @@
+{
+  "slug": "jwijeot-causes-removal",
+  "series": "info",
+  "title": "首いぼ（アクロコルドン）ができる原因と首・そけい部の除去・予防ケア",
+  "url": "/ja/posts/jwijeot-causes-removal.html",
+  "keyword": "首いぼ",
+  "hooks": [
+    "首いぼ、3つのチェック",
+    "首いぼ、食べ方で変わる？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "posts": {
+    "a": {
+      "text": "首いぼ、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=a\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=a",
+      "weighted": 81,
+      "ok": true
+    },
+    "b": {
+      "text": "首いぼ、食べ方で変わる？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=b\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=b",
+      "weighted": 84,
+      "ok": true
+    }
+  },
+  "checklist": [],
+  "points": [],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/jwijeot-causes-removal/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 317846,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/jwijeot-causes-removal/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 180185,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:55.567Z"
+}

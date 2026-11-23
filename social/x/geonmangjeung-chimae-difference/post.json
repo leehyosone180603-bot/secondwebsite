@@ -1,0 +1,71 @@
+{
+  "slug": "geonmangjeung-chimae-difference",
+  "series": "info",
+  "title": "物忘れと認知症の症状の違い、物忘れの対処と認知症の予防法",
+  "url": "/ja/posts/geonmangjeung-chimae-difference.html",
+  "keyword": "物忘れ",
+  "hooks": [
+    "物忘れ、4つのチェック",
+    "物忘れと認知症の症状の違い？"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "posts": {
+    "a": {
+      "text": "物忘れ、4つのチェック\n\n✅ 規則的な運動 — 1日30分歩くだけでも血液循環と脳の健康…\n✅ 頭を使う趣味 — 読書・パズル・楽器の演奏のように\n✅ 健康的な食習慣 — 野菜・果物・魚・ナッツ類を十分に\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/geonmangjeung-chimae-difference.html?utm_source=x&utm_medium=social&utm_campaign=geonmangjeung-chimae-difference&utm_content=a\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/geonmangjeung-chimae-difference.html?utm_source=x&utm_medium=social&utm_campaign=geonmangjeung-chimae-difference&utm_content=a",
+      "weighted": 238,
+      "ok": true
+    },
+    "b": {
+      "text": "物忘れと認知症の症状の違い？\n\n✅ 規則的な運動 — 1日30分歩くだけでも血液循環と脳の健康…\n✅ 頭を使う趣味 — 読書・パズル・楽器の演奏のように\n✅ 健康的な食習慣 — 野菜・果物・魚・ナッツ類を十分に\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/geonmangjeung-chimae-difference.html?utm_source=x&utm_medium=social&utm_campaign=geonmangjeung-chimae-difference&utm_content=b\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/geonmangjeung-chimae-difference.html?utm_source=x&utm_medium=social&utm_campaign=geonmangjeung-chimae-difference&utm_content=b",
+      "weighted": 245,
+      "ok": true
+    }
+  },
+  "checklist": [
+    "規則的な運動 — 1日30分歩くだけで…",
+    "頭を使う趣味 — 読書・パズル",
+    "健康的な食習慣 — 野菜・果物・魚",
+    "社会活動 — 人とよく会話し交流するこ…"
+  ],
+  "points": [
+    "規則的な運動 — 1日30分歩くだけでも血液循環と脳の健康に役立ちます。",
+    "頭を使う趣味 — 読書・パズル・楽器の演奏のように、新しいことを学びながら脳を刺激すること。",
+    "健康的な食習慣 — 野菜・果物・魚・ナッツ類を十分に、過度な飲酒・喫煙は減らすこと。"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：規則的な運動 — 1日30分歩くだけで…、頭を使う趣味 — 読書・パズル、健康的な食習慣 — 野菜・果物・魚、社会活動 — 人とよく会話し交流するこ…。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/geonmangjeung-chimae-difference/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 385880,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/geonmangjeung-chimae-difference/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 235209,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:59.076Z"
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "national-health-checkup-year-end-missed",
+  "series": "info",
+  "title": "国の健康診断を年末までに受け損ねたら、未受診者の追加登録を",
+  "url": "/ja/posts/national-health-checkup-year-end-missed.html",
+  "keyword": "国の健康診断",
+  "hooks": [
+    "国の健康診断を年末までに受け損ねたら？",
+    "国の健康診断、3つのチェック"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "posts": {
+    "a": {
+      "text": "国の健康診断を年末までに受け損ねたら？\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/national-health-checkup-year-end-missed.html?utm_source=x&utm_medium=social&utm_campaign=national-health-checkup-year-end-missed&utm_content=a\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/national-health-checkup-year-end-missed.html?utm_source=x&utm_medium=social&utm_campaign=national-health-checkup-year-end-missed&utm_content=a",
+      "weighted": 98,
+      "ok": true
+    },
+    "b": {
+      "text": "国の健康診断、3つのチェック\n\n\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/national-health-checkup-year-end-missed.html?utm_source=x&utm_medium=social&utm_campaign=national-health-checkup-year-end-missed&utm_content=b\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/national-health-checkup-year-end-missed.html?utm_source=x&utm_medium=social&utm_campaign=national-health-checkup-year-end-missed&utm_content=b",
+      "weighted": 87,
+      "ok": true
+    }
+  },
+  "checklist": [],
+  "points": [],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/national-health-checkup-year-end-missed/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 326842,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/national-health-checkup-year-end-missed/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 188823,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-23T05:34:59.867Z"
+}
