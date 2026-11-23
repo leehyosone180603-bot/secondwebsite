@@ -1,6 +1,8 @@
 /* 일본어 건강 미러 글 레지스트리 (factory-publish-ja.js 가 자동 갱신) */
 (function (root) {
   var JA_POSTS = [
+    { id: "heat-shock-winter-bath", title: "ヒートショックを防ぐ冬の入浴7つのルール｜60代以上は要注意", summary: "冬に増える入浴中の事故(ヒートショック)の仕組みと、脱衣所・浴室の温度差対策、湯温41度以下・10分の目安、60代以上が気をつけたい7つのルールをまとめました。", category: "season", date: "2026-11-23", url: "/ja/posts/heat-shock-winter-bath.html", image: "/img/heat-shock-winter-bath-1.jpg" },
+    { id: "cold-hands-feet-causes-raynaud", title: "手足が冷たいのは冷え性？レイノー現象との違いとセルフチェック", summary: "冬に手足が冷える原因と、冷え性とレイノー現象(白→青→赤)の見分け方、体幹から温めるコツ、受診の目安と診療科までまとめました。", category: "season", date: "2026-11-23", url: "/ja/posts/cold-hands-feet-causes-raynaud.html", image: "/img/cold-hands-feet-causes-raynaud-1.jpg" },
     { id: "year-end-party-hangover-food", title: "忘年会の二日酔いに良い食べ物｜豆もやしスープ・はちみつ水の実際と避けたい習慣", summary: "忘年会の翌朝の二日酔いに、豆もやしスープ・干しタラスープ・水・おかゆが役立つ理由と、はちみつ水・迎え酒・ラーメン・鎮痛剤の注意点、二日酔い対策食品の表示基準までまとめました。", category: "info", date: "2026-11-22", url: "/ja/posts/year-end-party-hangover-food.html", image: "/img/year-end-party-hangover-food-1.jpg" },
     { id: "winter-dry-eye-artificial-tears", title: "冬のドライアイ対策｜目薬の選び方とやってはいけない3つの習慣", summary: "冬にドライアイが悪化する理由と、目薬の選び方・点眼回数の目安、やってはいけない3つの習慣、画面作業や乾燥対策、眼科を受診する目安までまとめました。", category: "season", date: "2026-11-23", url: "/ja/posts/winter-dry-eye-artificial-tears.html", image: "/img/winter-dry-eye-artificial-tears-1.jpg" },
     { id: "winter-indoor-humidity-guide", title: "冬の部屋の湿度は何％が正解？加湿器なしでできる5つの方法", summary: "冬の室内の適切な湿度は40〜60％が目安。乾燥のサイン、加湿器なしで湿度を上げる5つの方法、加湿のしすぎの注意点や対象別のコツまでまとめました。", category: "season", date: "2026-11-23", url: "/ja/posts/winter-indoor-humidity-guide.html", image: "/img/winter-indoor-humidity-guide-1.jpg" },
@@ -31,7 +33,6 @@
     { id: "national-health-checkup-year-end-missed", title: "国の健康診断を年末までに受け損ねたら、未受診者の追加登録を", summary: "国の健康診断(韓国)を12月までに受けられなかったら? 対象の確認、予約のコツ、会社員の過料、翌年1月の未受診者追加登録までまとめました。", category: "info", date: "2026-11-21", url: "/ja/posts/national-health-checkup-year-end-missed.html", image: "/img/national-health-checkup-year-end-missed-1.jpg" },
     { id: "gimjang-back-wrist-pain", title: "キムジャン後の腰・手首の痛み、温冷の使い分けと病院へ行くべきサイン", summary: "キムジャン(越冬キムチの仕込み)の翌日に腰・手首が痛むなら？原因、冷やす・温める使い分け、手根管症候群のサインと病院へ行く目安、後遺症を減らすコツまでまとめました。", category: "info", date: "2026-11-21", url: "/ja/posts/gimjang-back-wrist-pain.html", image: "/img/gimjang-back-wrist-pain-1.jpg" },
     { id: "year-end-tax-preview-guide", title: "年末調整プレビューの活用法、11月に確認して残り1か月で節税する(韓国)", summary: "韓国ホームタックスの年末調整プレビューの経路と結果の読み方、総給与25%のしきい値を基準にしたクレジット・デビットカードの使い方、12月31日前の年金貯蓄・家賃・医療費の節税チェックリストをまとめました。", category: "info", date: "2026-11-22", url: "/ja/posts/year-end-tax-preview-guide.html", image: "/img/year-end-tax-preview-guide-1.jpg" },
-    { id: "cold-hands-feet-causes-raynaud", title: "手足の冷えの原因、レイノー現象との見分け方と病院へ行くべきサイン", summary: "冬になるたび手足が冷える「手足の冷え」の原因とレイノー現象の見分け方、体幹の保温・半身浴・カイロの安全な使い方、病院へ行くべきサインと受診科をまとめました。", category: "info", date: "2026-11-22", url: "/ja/posts/cold-hands-feet-causes-raynaud.html", image: "/img/cold-hands-feet-causes-raynaud-1.jpg" },
   ];
   if (typeof module !== "undefined" && module.exports) module.exports = { JA_POSTS: JA_POSTS };
   else root.JA_POSTS = JA_POSTS;

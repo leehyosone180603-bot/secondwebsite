@@ -915,6 +915,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://healthfortune.co.kr/ja/posts/heat-shock-winter-bath.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html</loc>
     <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -1090,12 +1102,6 @@
   </url>
   <url>
     <loc>https://healthfortune.co.kr/ja/posts/year-end-tax-preview-guide.html</loc>
-    <lastmod>2026-11-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html</loc>
     <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
