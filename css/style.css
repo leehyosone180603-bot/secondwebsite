@@ -41,6 +41,15 @@ img { max-width: 100%; display: block; }
 
 /* ── 광고 영역 ── */
 .ad { margin: 0 0 18px; text-align: center; }
+/* 쿠팡 파트너스 배너 (홈 히어로 아래) — 데스크톱 728×90 / 모바일 320×100 전환 */
+.coupang-ad { text-align: center; margin: 18px 0 6px; min-height: 90px; overflow: hidden; }
+.coupang-ad .cpq--mobile { display: none; }
+.coupang-ad iframe { max-width: 100%; }
+@media (max-width: 760px) {
+  .coupang-ad { min-height: 100px; }
+  .coupang-ad .cpq--desktop { display: none; }
+  .coupang-ad .cpq--mobile { display: block; }
+}
 .ad__label { font-size: 11px; color: #adb5bd; letter-spacing: .04em; margin-bottom: 4px; text-transform: uppercase; }
 .ad--inarticle { margin: 26px auto; }
 .ad--bottom { margin: 28px 0 8px; }
