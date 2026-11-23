@@ -120,23 +120,30 @@ async function gen(slug, opts) {
   const ex = extract(slug);
   const series = meta.category;
   const tags = (HASHTAGS[series] || HASHTAGS.default).slice(0, 2);
-  const items = checklistItems(ex);
-  const hooks = pickHooks(meta, ex, items.length);
-  const points3 = (ex.points.length ? ex.points : ex.checks).slice(0, 3);
-
-  const postA = buildPost(hooks[0], points3, slug, "a", tags);
-  const postB = buildPost(hooks[1], points3, slug, "b", tags);
-
   const outDir = path.join(SOCIAL, slug);
+  // 사람이 다듬은 override.json (hook·subhook·checklist·hooks·hashtags) 가 있으면 우선 적용
+  let ov = {};
+  try { const f = path.join(outDir, "override.json"); if (fs.existsSync(f)) ov = JSON.parse(fs.readFileSync(f, "utf8")); } catch (e) {}
+
+  const items = (ov.checklist && ov.checklist.length) ? ov.checklist.slice(0, 6) : checklistItems(ex);
+  const hooks = (ov.hooks && ov.hooks.length >= 2) ? ov.hooks.slice(0, 2) : pickHooks(meta, ex, items.length);
+  const tagsFinal = (ov.hashtags && ov.hashtags.length) ? ov.hashtags.slice(0, 2) : tags;
+  const points3 = (ov.points && ov.points.length) ? ov.points.slice(0, 3) : (ex.points.length ? ex.points : ex.checks).slice(0, 3);
+  const cardHook = ov.cardHook || clip(hooks[0], 16);
+  const subhook = ov.subhook || "あなたはいくつ当てはまる？";
+
+  const postA = buildPost(hooks[0], points3, slug, "a", tagsFinal);
+  const postB = buildPost(hooks[1], points3, slug, "b", tagsFinal);
+
   let cards = [];
   if (!opts.noX) {
-    cards = await renderCards({ slug, series, hook: clip(hooks[0], 16), items, outDir });
+    cards = await renderCards({ slug, series, hook: cardHook, subhook, items, outDir });
   }
   const altText = "セルフチェック：" + items.join("、") + "。当てはまる数を確認。健康フロー。";
   const post = {
     slug, series, title: meta.title, url: meta.url,
     keyword: ex.keyword,
-    hooks, hashtags: tags,
+    hooks, hashtags: tagsFinal,
     posts: {
       a: { text: postA.text, link: postA.link, weighted: postA.weighted, ok: postA.ok },
       b: { text: postB.text, link: postB.link, weighted: postB.weighted, ok: postB.ok },

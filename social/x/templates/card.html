@@ -19,8 +19,10 @@
   .pad { padding:72px 72px 60px; display:flex; flex-direction:column; height:100%; }
   .kicker { font-size:30px; font-weight:700; color:var(--accent); letter-spacing:.04em; margin-bottom:14px; display:flex; align-items:center; gap:12px; }
   .kicker .dot { width:16px; height:16px; border-radius:50%; background:var(--accent); display:inline-block; }
-  .hook { font-weight:900; color:#1b2330; line-height:1.28; letter-spacing:-.01em; }
-  .checks { margin-top:auto; margin-bottom:auto; display:flex; flex-direction:column; gap:var(--gap); }
+  .hook { font-weight:900; color:#1b2330; line-height:1.26; letter-spacing:-.01em; }
+  .subhook { margin-top:16px; font-weight:800; color:var(--accent); display:inline-flex; align-items:center; gap:10px; }
+  .subhook::before { content:""; width:34px; height:4px; border-radius:3px; background:var(--accent); display:inline-block; }
+  .checks { margin-top:var(--chkTop); margin-bottom:auto; display:flex; flex-direction:column; gap:var(--gap); }
   .chk { display:flex; align-items:flex-start; gap:22px; }
   .chk .box {
     flex:0 0 auto; width:var(--box); height:var(--box); border-radius:12px;
@@ -63,13 +65,16 @@
     var gap = vertical ? 30 : 16;
     card.style.setProperty("--box", box + "px");
     card.style.setProperty("--gap", gap + "px");
+    card.style.setProperty("--chkTop", (vertical ? 40 : 22) + "px");
     var items = list.map(function(t){
       return '<div class="chk"><span class="box"></span><span class="txt" style="font-size:'+txtSize+'px">'+esc(t)+'</span></div>';
     }).join("");
+    var sub = DATA.subhook || "あなたはいくつ当てはまる？";
     card.innerHTML =
       '<div class="pad">' +
         '<div class="kicker"><span class="dot"></span>セルフチェック</div>' +
         '<div class="hook" style="font-size:'+hookSize+'px">'+esc(DATA.hook || "")+'</div>' +
+        '<div class="subhook" style="font-size:'+(vertical?30:24)+'px">'+esc(sub)+'</div>' +
         '<div class="checks">'+items+'</div>' +
         '<div class="foot"><div class="cta" style="font-size:'+(vertical?34:28)+'px">✅ '+esc(DATA.cta||"")+'</div>' +
           '<div class="brand"><div class="bn" style="font-size:'+(vertical?34:28)+'px">'+esc(DATA.brand||"健康フロー")+'</div>' +
