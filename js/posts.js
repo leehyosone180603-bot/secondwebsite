@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "winter-vitamin-d-deficiency-symptoms",
+    title: "겨울 비타민D 부족 증상, 피곤함의 원인일까? 햇빛·음식·영양제로 채우는 법",
+    summary: "겨울철 피로·근력 저하가 비타민D 부족 때문일까? 부족 신호, 혈액 검사 기준, 점심 산책·음식·영양제 보충법과 상한섭취량 4,000IU, IU·㎍ 환산까지 정리했습니다.",
+    category: "info",
+    date: "2026-11-23",
+    url: "/posts/winter-vitamin-d-deficiency-symptoms.html",
+    image: "/img/winter-vitamin-d-deficiency-symptoms-1.jpg",
+  },
+  {
     id: "boiler-away-mode-heating-cost",
     title: "보일러 외출모드 난방비 아끼려면? 외출 시간별 설정법과 적정 온도",
     summary: "보일러 외출모드는 동파 방지 기능에 가깝습니다. 출근·1~2일·장기 외출별 설정법, 1℃ 낮추면 약 7% 절약, 실내모드와 온돌모드 차이까지 정리했습니다.",

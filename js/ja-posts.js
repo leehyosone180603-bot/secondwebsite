@@ -1,6 +1,7 @@
 /* 일본어 건강 미러 글 레지스트리 (factory-publish-ja.js 가 자동 갱신) */
 (function (root) {
   var JA_POSTS = [
+    { id: "winter-vitamin-d-deficiency-symptoms", title: "冬のビタミンD不足の症状、疲れの原因かも？日光・食事・サプリで補う方法", summary: "冬の疲れや筋力低下はビタミンD不足かも？不足のサイン、血液検査の目安、昼散歩・食事・サプリの補い方、上限量4,000IU、IU・㎍換算まで整理しました。", category: "info", date: "2026-11-23", url: "/ja/posts/winter-vitamin-d-deficiency-symptoms.html", image: "/img/winter-vitamin-d-deficiency-symptoms-1.jpg" },
     { id: "heat-shock-winter-bath", title: "ヒートショックを防ぐ冬の入浴7つのルール｜60代以上は要注意", summary: "冬に増える入浴中の事故(ヒートショック)の仕組みと、脱衣所・浴室の温度差対策、湯温41度以下・10分の目安、60代以上が気をつけたい7つのルールをまとめました。", category: "season", date: "2026-11-23", url: "/ja/posts/heat-shock-winter-bath.html", image: "/img/heat-shock-winter-bath-1.jpg" },
     { id: "cold-hands-feet-causes-raynaud", title: "手足が冷たいのは冷え性？レイノー現象との違いとセルフチェック", summary: "冬に手足が冷える原因と、冷え性とレイノー現象(白→青→赤)の見分け方、体幹から温めるコツ、受診の目安と診療科までまとめました。", category: "season", date: "2026-11-23", url: "/ja/posts/cold-hands-feet-causes-raynaud.html", image: "/img/cold-hands-feet-causes-raynaud-1.jpg" },
     { id: "year-end-party-hangover-food", title: "忘年会の二日酔いに良い食べ物｜豆もやしスープ・はちみつ水の実際と避けたい習慣", summary: "忘年会の翌朝の二日酔いに、豆もやしスープ・干しタラスープ・水・おかゆが役立つ理由と、はちみつ水・迎え酒・ラーメン・鎮痛剤の注意点、二日酔い対策食品の表示基準までまとめました。", category: "info", date: "2026-11-22", url: "/ja/posts/year-end-party-hangover-food.html", image: "/img/year-end-party-hangover-food-1.jpg" },
