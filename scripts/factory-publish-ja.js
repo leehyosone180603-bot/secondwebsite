@@ -151,7 +151,10 @@ ${hreflang}
   <meta property="og:description" content="${esc(a.descriptionJa)}">
   <meta property="og:url" content="${jaUrl}">
   <meta property="og:locale" content="ja_JP">
-${ogImage ? `  <meta property="og:image" content="${ogImage}">\n` : ""}
+${ogImage ? `  <meta property="og:image" content="${ogImage}">\n` : ""}  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${esc(a.titleJa)}">
+  <meta name="twitter:description" content="${esc(a.descriptionJa)}">
+  <meta name="twitter:image" content="${BASE}/social/x/${a.slug}/card_og.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
