@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "electric-blanket-low-temperature-burn-symptoms",
+    title: "전기장판 저온화상 증상과 응급처치, 자고 일어나 붉은 얼룩 생겼다면",
+    summary: "전기장판을 켜고 잔 뒤 피부가 붉게 얼룩졌다면 저온화상일 수 있습니다. 저온화상이 생기는 원리, 증상, 집에서 하는 응급처치, 병원 가야 할 신호와 잠들기 전 예방 체크리스트를 정리했습니다.",
+    category: "info",
+    date: "2026-11-24",
+    url: "/posts/electric-blanket-low-temperature-burn-symptoms.html",
+    image: "/img/electric-blanket-low-temperature-burn-symptoms-1.jpg",
+  },
+  {
     id: "humidifier-cleaning-guide",
     title: "가습기 세척 방법, 구연산 물때 제거와 매일·매주 청소 주기 정리",
     summary: "가습기 물통 미끈거림과 하얀 물때, 어떻게 닦을까? 매일·2~3일·주 1회 청소 루틴, 구연산·식초·베이킹소다 사용법, 락스·살균제 금지 등 주의사항을 정리했습니다.",

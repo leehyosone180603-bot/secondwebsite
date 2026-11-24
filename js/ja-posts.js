@@ -1,6 +1,7 @@
 /* 일본어 건강 미러 글 레지스트리 (factory-publish-ja.js 가 자동 갱신) */
 (function (root) {
   var JA_POSTS = [
+    { id: "electric-blanket-low-temperature-burn-symptoms", title: "電気毛布の低温やけど症状｜赤いまだら・水ぶくれの応急手当と受診の目安", summary: "電気毛布をつけて寝た翌朝に肌が赤くまだらになったら低温やけどかもしれません。起こる仕組み・症状・家庭での応急手当・受診の目安と、寝る前の予防チェックをまとめました。", category: "info", date: "2026-11-24", url: "/ja/posts/electric-blanket-low-temperature-burn-symptoms.html", image: "/img/electric-blanket-low-temperature-burn-symptoms-1.jpg" },
     { id: "winter-fatigue-autonomic", title: "冬のだるさ・やる気が出ない原因：日照・自律神経・睡眠", summary: "冬になるとだるい、やる気が出ない——その背景にある日照時間の減少・体内時計・自律神経・睡眠のつながりを整理し、朝の光や生活リズムの整え方、受診を考えたいサインを紹介します。", category: "season", date: "2026-11-24", url: "/ja/posts/winter-fatigue-autonomic.html", image: "/img/winter-fatigue-autonomic-1.jpg" },
     { id: "health-checkup-before-ng", title: "健康診断の前日・当日にやってはいけない7つのこと｜朝食・飲酒・運動の正解", summary: "健康診断の前日・当日の食事・飲酒・運動・喫煙・服薬で気をつけたい7つの注意点を、厚生労働省や学会の情報をもとに整理。検査項目で指示が違うため受診先の案内が最優先です。", category: "check", date: "2026-11-24", url: "/ja/posts/health-checkup-before-ng.html", image: "/img/health-checkup-before-ng-1.jpg" },
     { id: "colonoscopy-prep-guide", title: "大腸内視鏡の下剤2L、どう飲めば楽？前日・当日の食事と準備のコツ", summary: "大腸内視鏡検査の前日の食事、当日の腸管洗浄剤(下剤)を楽に飲むコツ、当日の流れと注意点を一般情報として整理。具体的な前処置は医療機関の指示が最優先です。", category: "check", date: "2026-11-24", url: "/ja/posts/colonoscopy-prep-guide.html", image: "/img/colonoscopy-prep-guide-1.jpg" },
