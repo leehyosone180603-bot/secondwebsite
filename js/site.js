@@ -125,7 +125,7 @@ function adUnit(slotKey, label, opts) {
 /* 글(article) 페이지에 수동 광고 자리 삽입: 글 하단 정사각형 + 콘텐츠 맨 아래 배너.
    정적 HTML 글에도 적용되도록 JS 로 삽입한다. */
 function injectArticleAds() {
-  const article = document.querySelector(".article");
+  const article = document.querySelector(".article, .post");
   if (!article) return;
   // 글 안에 광고를 직접 배치한 페이지(MBTI 등)는 자동 삽입을 건너뛴다.
   if (article.getAttribute("data-ads") === "manual") return;
@@ -139,7 +139,7 @@ function injectArticleAds() {
       body.insertAdjacentHTML("afterend", wrap);
     }
   }
-  const main = document.querySelector("main.wrap") || article.parentElement;
+  const main = document.querySelector("main.wrap, main.post-wrap") || article.parentElement;
   if (main) {
     const html = adUnit("bottomBanner", "하단", { format: "horizontal", cls: "ad--bottom" });
     if (html) main.insertAdjacentHTML("beforeend", html);
