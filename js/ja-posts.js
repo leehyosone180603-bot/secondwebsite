@@ -1,6 +1,7 @@
 /* 일본어 건강 미러 글 레지스트리 (factory-publish-ja.js 가 자동 갱신) */
 (function (root) {
   var JA_POSTS = [
+    { id: "humidifier-cleaning-guide", title: "加湿器のお手入れ方法｜クエン酸で水あか除去、掃除の周期としてはいけないこと", summary: "加湿器タンクのぬるつきや白い水あか、どう落とす？毎日・2〜3日・週1回のお手入れ、クエン酸・酢・重曹の使い方、塩素系・除菌剤を入れない注意点まで整理しました。", category: "info", date: "2026-11-24", url: "/ja/posts/humidifier-cleaning-guide.html", image: "/img/humidifier-cleaning-guide-1.jpg" },
     { id: "winter-itchy-dry-skin-causes", title: "冬の肌のかゆみの原因と減らし方、シャワー後3分の保湿がカギ", summary: "冬になるとすねが白く粉をふき、夜にかゆくて眠れない——その原因は？乾燥によるかゆみのサイン、ぬるめのシャワー・3分保湿・室内湿度の管理、受診の目安まで整理しました。", category: "info", date: "2026-11-24", url: "/ja/posts/winter-itchy-dry-skin-causes.html", image: "/img/winter-itchy-dry-skin-causes-1.jpg" },
     { id: "winter-vitamin-d-deficiency-symptoms", title: "冬のビタミンD不足の症状、疲れの原因かも？日光・食事・サプリで補う方法", summary: "冬の疲れや筋力低下はビタミンD不足かも？不足のサイン、血液検査の目安、昼散歩・食事・サプリの補い方、上限量4,000IU、IU・㎍換算まで整理しました。", category: "info", date: "2026-11-23", url: "/ja/posts/winter-vitamin-d-deficiency-symptoms.html", image: "/img/winter-vitamin-d-deficiency-symptoms-1.jpg" },
     { id: "heat-shock-winter-bath", title: "ヒートショックを防ぐ冬の入浴7つのルール｜60代以上は要注意", summary: "冬に増える入浴中の事故(ヒートショック)の仕組みと、脱衣所・浴室の温度差対策、湯温41度以下・10分の目安、60代以上が気をつけたい7つのルールをまとめました。", category: "season", date: "2026-11-23", url: "/ja/posts/heat-shock-winter-bath.html", image: "/img/heat-shock-winter-bath-1.jpg" },

@@ -1,0 +1,70 @@
+{
+  "slug": "humidifier-cleaning-guide",
+  "series": "info",
+  "title": "加湿器のお手入れ方法｜クエン酸で水あか除去、掃除の周期としてはいけないこと",
+  "url": "/ja/posts/humidifier-cleaning-guide.html",
+  "keyword": "加湿器",
+  "hooks": [
+    "加湿器のお手入れ方法？",
+    "加湿器、知っておきたい3つのポイント"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "posts": {
+    "a": {
+      "text": "加湿器のお手入れ方法？\n\n✅ たまった水: 暖かい室内で一日以上たっ…\n✅ 水あか・石灰: 水道水のミネラルが乾い…\n✅ フィルター・振動板: 濡れた状態が続き…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=a\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=a",
+      "weighted": 201,
+      "ok": true
+    },
+    "b": {
+      "text": "加湿器、知っておきたい3つのポイント\n\n✅ たまった水: 暖かい室内で一日以上たっ…\n✅ 水あか・石灰: 水道水のミネラルが乾い…\n✅ フィルター・振動板: 濡れた状態が続き…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=b\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=b",
+      "weighted": 214,
+      "ok": true
+    }
+  },
+  "checklist": [
+    "たまった水: 暖かい室内で一日以上たっ…",
+    "水あか・石灰: 水道水のミネラルが乾い…",
+    "フィルター・振動板: 濡れた状態が続き…"
+  ],
+  "points": [
+    "たまった水: 暖かい室内で一日以上たっ…",
+    "水あか・石灰: 水道水のミネラルが乾い…",
+    "フィルター・振動板: 濡れた状態が続き…"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "この記事のポイント：たまった水: 暖かい室内で一日以上たっ…、水あか・石灰: 水道水のミネラルが乾い…、フィルター・振動板: 濡れた状態が続き…。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/humidifier-cleaning-guide/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 376108,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/humidifier-cleaning-guide/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 226865,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-24T07:52:56.929Z"
+}

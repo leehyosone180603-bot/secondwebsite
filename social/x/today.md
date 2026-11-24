@@ -1,6 +1,6 @@
 # X 게시 예정 — 2026-11-24
 
-_대기 65건 · 이 파일은 `node scripts/x-post-gen.js <slug>` 또는 발행 시 자동 갱신됩니다._
+_대기 67건 · 이 파일은 `node scripts/x-post-gen.js <slug>` 또는 발행 시 자동 갱신됩니다._
 
 ## 12:10 JST · biripjong-eye-causes-removal (A)
 

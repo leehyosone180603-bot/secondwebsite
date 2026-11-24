@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "humidifier-cleaning-guide",
+    title: "가습기 세척 방법, 구연산 물때 제거와 매일·매주 청소 주기 정리",
+    summary: "가습기 물통 미끈거림과 하얀 물때, 어떻게 닦을까? 매일·2~3일·주 1회 청소 루틴, 구연산·식초·베이킹소다 사용법, 락스·살균제 금지 등 주의사항을 정리했습니다.",
+    category: "info",
+    date: "2026-11-24",
+    url: "/posts/humidifier-cleaning-guide.html",
+    image: "/img/humidifier-cleaning-guide-1.jpg",
+  },
+  {
     id: "winter-itchy-dry-skin-causes",
     title: "겨울 피부 가려움 원인과 줄이는 법, 샤워 후 3분 보습이 핵심",
     summary: "겨울만 되면 정강이가 하얗게 일고 밤에 가려운 이유는? 피부건조증 원인과 신호, 미지근한 샤워·3분 보습·실내 습도 관리법, 병원에 가야 할 증상까지 정리했습니다.",
