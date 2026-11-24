@@ -106,6 +106,19 @@ function adUnit(slotKey, label, opts) {
   const slot = (ADSENSE.slots && ADSENSE.slots[slotKey]) || "";
   // 실제 슬롯 ID가 없으면(placeholder) 깨진 빈 광고 대신 생략
   if (!slot || /^0+$/.test(slot)) return "";
+  // 고정 크기 광고(정사각형/직사각형): flex 컨테이너 안에서 반응형 유닛의 폭이
+  // 0으로 접혀 높이 0(21px)로 깨지는 문제를 피하려 명시적 width/height +
+  // display:inline-block 사용. 반응형 속성(data-ad-format/full-width-responsive) 제거.
+  if (opts.fixed) {
+    return `
+    <div class="ad${opts.cls ? " " + opts.cls : ""}">
+      <div class="ad__label">광고</div>
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:${opts.fixed.w}px;height:${opts.fixed.h}px"
+           data-ad-client="${ADSENSE.client}"
+           data-ad-slot="${slot}"></ins>
+    </div>`;
+  }
   const fmt = opts.format || "auto";
   const style = opts.maxWidth
     ? `display:block;margin:0 auto;max-width:${opts.maxWidth}px`
@@ -132,8 +145,8 @@ function injectArticleAds() {
   const body = article.querySelector(".article__body");
   if (body) {
     // 글 하단 정사각형 광고 2개 (데스크톱은 나란히, 모바일은 세로)
-    const sq1 = adUnit("articleBottom", "글 하단1", { format: "rectangle", maxWidth: 336, cls: "ad--sq" });
-    const sq2 = adUnit("articleBottom2", "글 하단2", { format: "rectangle", maxWidth: 336, cls: "ad--sq" });
+    const sq1 = adUnit("articleBottom", "글 하단1", { fixed: { w: 300, h: 250 }, cls: "ad--sq" });
+    const sq2 = adUnit("articleBottom2", "글 하단2", { fixed: { w: 300, h: 250 }, cls: "ad--sq" });
     if (sq1 || sq2) {
       const wrap = `<div class="ad-squares" style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;align-items:flex-start;margin:24px 0">${sq1}${sq2}</div>`;
       body.insertAdjacentHTML("afterend", wrap);

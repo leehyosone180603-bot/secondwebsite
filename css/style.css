@@ -55,6 +55,9 @@ img { max-width: 100%; display: block; }
 .ad__label { font-size: 11px; color: #adb5bd; letter-spacing: .04em; margin-bottom: 4px; text-transform: uppercase; }
 .ad--inarticle { margin: 26px auto; }
 .ad--bottom { margin: 28px 0 8px; }
+/* 글 하단 정사각형(고정 300×250): flex 자식이 0으로 접히지 않게 폭·높이 예약 */
+.ad--sq { width: 300px; min-height: 250px; margin: 0; }
+.ad-squares { max-width: 100%; }
 .ad--placeholder {
   display: flex; align-items: center; justify-content: center;
   min-height: 100px;
