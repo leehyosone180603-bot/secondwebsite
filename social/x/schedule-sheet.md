@@ -43,23 +43,23 @@
 - [ ] 12:13 JST · winter-fatigue-autonomic (A) 初回リプ
 - [ ] 15:33 JST · hidden-anemia-iron-women (A) 初回リプ
 - [ ] 18:33 JST · winter-indoor-humidity-guide (A) 初回リプ
-- [ ] 21:03 JST · ipdeot-timing-symptoms (A) 初回リプ
+- [ ] 21:03 JST · humidifier-cleaning-guide (A) 初回リプ
 
 ### 2026-11-30
 
-- [ ] 07:33 JST · jangyeom-good-5foods (A) 初回リプ
-- [ ] 12:13 JST · jeonripseon-good-5foods (A) 初回リプ
-- [ ] 15:33 JST · jwijeot-causes-removal (A) 初回リプ
-- [ ] 18:33 JST · meong-bruise-causes-remedy (A) 初回リプ
-- [ ] 21:03 JST · naengbangbyeong-early-4symptoms (A) 初回リプ
+- [ ] 07:33 JST · ipdeot-timing-symptoms (A) 初回リプ
+- [ ] 12:13 JST · jangyeom-good-5foods (A) 初回リプ
+- [ ] 15:33 JST · jeonripseon-good-5foods (A) 初回リプ
+- [ ] 18:33 JST · jwijeot-causes-removal (A) 初回リプ
+- [ ] 21:03 JST · meong-bruise-causes-remedy (A) 初回リプ
 
 ### 2026-12-01
 
-- [ ] 07:33 JST · national-health-checkup-year-end-missed (A) 初回リプ
-- [ ] 12:13 JST · pasangpung-symptoms-vaccine (A) 初回リプ
-- [ ] 15:33 JST · sonjeorim-numbness-causes (A) 初回リプ
-- [ ] 18:33 JST · sontop-hangnail-care (A) 初回リプ
-- [ ] 21:03 JST · tongpung-avoid-5foods (A) 初回リプ
+- [ ] 07:33 JST · naengbangbyeong-early-4symptoms (A) 初回リプ
+- [ ] 12:13 JST · national-health-checkup-year-end-missed (A) 初回リプ
+- [ ] 15:33 JST · pasangpung-symptoms-vaccine (A) 初回リプ
+- [ ] 18:33 JST · sonjeorim-numbness-causes (A) 初回リプ
+- [ ] 21:03 JST · sontop-hangnail-care (A) 初回リプ
 
 ## 📋 게시 상세
 
@@ -735,7 +735,35 @@ https://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_sourc
 
 ---
 
-### 2026-11-29 21:00 JST · ipdeot-timing-symptoms (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
+### 2026-11-29 21:00 JST · humidifier-cleaning-guide (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
+
+**본문:**
+
+```
+今すぐできる加湿器3つのポイント
+
+✅ たまった水: 暖かい室内で一日以上たっ…
+✅ 水あか・石灰: 水道水のミネラルが乾い…
+✅ フィルター・振動板: 濡れた状態が続き…
+
+今日からできるものを一つ選んでみてください。
+あなたはどれから試しますか？
+
+#健康 #健康情報
+```
+
+**이미지(첨부):** https://healthfortune.co.kr/social/x/humidifier-cleaning-guide/card.png
+
+**첫 답글(初回リプ):**
+
+```
+詳しい原因と対処法はこちら👇
+https://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=reply_a
+```
+
+---
+
+### 2026-11-30 07:30 JST · ipdeot-timing-symptoms (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
 
 **본문:**
 
@@ -763,7 +791,7 @@ https://healthfortune.co.kr/ja/posts/ipdeot-timing-symptoms.html?utm_source=x&ut
 
 ---
 
-### 2026-11-30 07:30 JST · jangyeom-good-5foods (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
+### 2026-11-30 12:10 JST · jangyeom-good-5foods (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
 
 **본문:**
 
@@ -791,7 +819,7 @@ https://healthfortune.co.kr/ja/posts/jangyeom-good-5foods.html?utm_source=x&utm_
 
 ---
 
-### 2026-11-30 12:10 JST · jeonripseon-good-5foods (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
+### 2026-11-30 15:30 JST · jeonripseon-good-5foods (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
 
 **본문:**
 
@@ -819,7 +847,7 @@ https://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&u
 
 ---
 
-### 2026-11-30 15:30 JST · jwijeot-causes-removal (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
+### 2026-11-30 18:30 JST · jwijeot-causes-removal (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
 
 **본문:**
 
@@ -847,7 +875,7 @@ https://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&ut
 
 ---
 
-### 2026-11-30 18:30 JST · meong-bruise-causes-remedy (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
+### 2026-11-30 21:00 JST · meong-bruise-causes-remedy (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
 
 **본문:**
 
@@ -875,7 +903,7 @@ https://healthfortune.co.kr/ja/posts/meong-bruise-causes-remedy.html?utm_source=
 
 ---
 
-### 2026-11-30 21:00 JST · naengbangbyeong-early-4symptoms (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
+### 2026-12-01 07:30 JST · naengbangbyeong-early-4symptoms (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
 
 **본문:**
 
@@ -903,7 +931,7 @@ https://healthfortune.co.kr/ja/posts/naengbangbyeong-early-4symptoms.html?utm_so
 
 ---
 
-### 2026-12-01 07:30 JST · national-health-checkup-year-end-missed (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
+### 2026-12-01 12:10 JST · national-health-checkup-year-end-missed (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
 
 **본문:**
 
@@ -931,7 +959,7 @@ https://healthfortune.co.kr/ja/posts/national-health-checkup-year-end-missed.htm
 
 ---
 
-### 2026-12-01 12:10 JST · pasangpung-symptoms-vaccine (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
+### 2026-12-01 15:30 JST · pasangpung-symptoms-vaccine (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
 
 **본문:**
 
@@ -959,7 +987,7 @@ https://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source
 
 ---
 
-### 2026-12-01 15:30 JST · sonjeorim-numbness-causes (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
+### 2026-12-01 18:30 JST · sonjeorim-numbness-causes (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
 
 **본문:**
 
@@ -987,7 +1015,7 @@ https://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x
 
 ---
 
-### 2026-12-01 18:30 JST · sontop-hangnail-care (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
+### 2026-12-01 21:00 JST · sontop-hangnail-care (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
 
 **본문:**
 
@@ -1011,34 +1039,6 @@ https://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x
 ```
 詳しい原因と対処法はこちら👇
 https://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=reply_a
-```
-
----
-
-### 2026-12-01 21:00 JST · tongpung-avoid-5foods (A)  ⏰ 게시 3분 후 初回リプ 직접 게시
-
-**본문:**
-
-```
-今すぐできる痛風によくない食べ物3つのポイント
-
-✅ お酒・ホルモン・青魚
-✅ 水をこまめに飲んで（1日2L前後）尿酸…
-✅ 野菜と低脂肪の乳製品を添えて食事のバラ…
-
-今日からできるものを一つ選んでみてください。
-あなたはどれから試しますか？
-
-#健康 #健康情報
-```
-
-**이미지(첨부):** https://healthfortune.co.kr/social/x/tongpung-avoid-5foods/card.png
-
-**첫 답글(初回リプ):**
-
-```
-詳しい原因と対処法はこちら👇
-https://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=reply_a
 ```
 
 ---
