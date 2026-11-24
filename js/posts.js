@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "winter-morning-blood-pressure-high-reasons",
+    title: "겨울 아침 혈압 높은 이유와 정확히 재는 법, 집에서 135/85 넘으면 주의",
+    summary: "겨울 아침 혈압이 유독 높게 나오는 이유와 대한고혈압학회가 안내하는 가정혈압 측정 시간·자세, 집에서 잰 혈압의 고혈압 기준 135/85mmHg, 겨울철 관리법을 정리했습니다.",
+    category: "info",
+    date: "2026-11-25",
+    url: "/posts/winter-morning-blood-pressure-high-reasons.html",
+    image: "/img/winter-morning-blood-pressure-high-reasons-1.jpg",
+  },
+  {
     id: "born-2008-alcohol-tobacco-purchase-age-2027",
     title: "2008년생 술 담배 구매 나이, 2027년 1월 1일부터 생일 상관없이 가능",
     summary: "2008년생은 2027년 1월 1일부터 생일과 관계없이 술·담배 구매가 가능합니다. 청소년보호법 연 나이 기준, 만 나이와 차이, 판매자 신분증 확인까지 정리했습니다.",
