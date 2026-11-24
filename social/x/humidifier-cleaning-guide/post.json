@@ -5,27 +5,58 @@
   "url": "/ja/posts/humidifier-cleaning-guide.html",
   "keyword": "加湿器",
   "hooks": [
-    "加湿器のお手入れ方法？",
-    "加湿器、知っておきたい3つのポイント"
+    "今すぐできる加湿器3つのポイント",
+    "実は逆効果かも？加湿器"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#健康情報"
   ],
+  "image": "social/x/humidifier-cleaning-guide/card.png",
   "posts": {
     "a": {
-      "text": "加湿器のお手入れ方法？\n\n✅ たまった水: 暖かい室内で一日以上たっ…\n✅ 水あか・石灰: 水道水のミネラルが乾い…\n✅ フィルター・振動板: 濡れた状態が続き…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=a\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=a",
-      "weighted": 201,
+      "body": "今すぐできる加湿器3つのポイント\n\n✅ たまった水: 暖かい室内で一日以上たっ…\n✅ 水あか・石灰: 水道水のミネラルが乾い…\n✅ フィルター・振動板: 濡れた状態が続き…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "今すぐできる加湿器3つのポイント\n\n✅ たまった水: 暖かい室内で一日以上たっ…\n✅ 水あか・石灰: 水道水のミネラルが乾い…\n✅ フィルター・振動板: 濡れた状態が続き…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=reply_a",
+      "weighted": 244,
+      "charCount": 136,
       "ok": true
     },
     "b": {
-      "text": "加湿器、知っておきたい3つのポイント\n\n✅ たまった水: 暖かい室内で一日以上たっ…\n✅ 水あか・石灰: 水道水のミネラルが乾い…\n✅ フィルター・振動板: 濡れた状態が続き…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=b\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=b",
-      "weighted": 214,
+      "body": "実は逆効果かも？加湿器\n\n✅ たまった水: 暖かい室内で一日以上たっ…\n✅ 水あか・石灰: 水道水のミネラルが乾い…\n✅ フィルター・振動板: 濡れた状態が続き…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？加湿器\n\n✅ たまった水: 暖かい室内で一日以上たっ…\n✅ 水あか・石灰: 水道水のミネラルが乾い…\n✅ フィルター・振動板: 濡れた状態が続き…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=reply_b",
+      "weighted": 265,
+      "charCount": 147,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる加湿器3つのポイント\n\n✅ たまった水: 暖かい室内で一日以上たっ…\n✅ 水あか・石灰: 水道水のミネラルが乾い…\n✅ フィルター・振動板: 濡れた状態が続き…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=reply_a",
+      "charCount": 136,
+      "image": "social/x/humidifier-cleaning-guide/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？加湿器\n\n✅ たまった水: 暖かい室内で一日以上たっ…\n✅ 水あか・石灰: 水道水のミネラルが乾い…\n✅ フィルター・振動板: 濡れた状態が続き…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=reply_b",
+      "charCount": 147,
+      "image": "social/x/humidifier-cleaning-guide/card.png"
+    }
+  ],
   "checklist": [
     "たまった水: 暖かい室内で一日以上たっ…",
     "水あか・石灰: 水道水のミネラルが乾い…",
@@ -41,30 +72,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：たまった水: 暖かい室内で一日以上たっ…、水あか・石灰: 水道水のミネラルが乾い…、フィルター・振動板: 濡れた状態が続き…。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/humidifier-cleaning-guide/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 376108,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/humidifier-cleaning-guide/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 226865,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-24T07:52:56.929Z"
+  "generatedAt": "2026-11-24T08:08:39.663Z"
 }

@@ -5,27 +5,58 @@
   "url": "/ja/posts/flu-vs-cold-symptoms.html",
   "keyword": "インフル",
   "hooks": [
-    "インフルエンザと風邪の違い6つ",
+    "今すぐできるインフル5つのチェック",
     "インフルエンザと風邪の違い6つ？"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#冬の健康"
   ],
+  "image": "social/x/flu-vs-cold-symptoms/card.png",
   "posts": {
     "a": {
-      "text": "インフルエンザと風邪の違い6つ\n\n✅ 急な38℃以上の高熱と全身症状が強いときは\n✅ 抗インフルエンザ薬は、発症からおよそ48時間以内の開始が目…\n✅ 学校は「発症後5日かつ解熱後2日\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=a\n\n#健康 #冬の健康",
-      "link": "https://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=a",
-      "weighted": 223,
+      "body": "今すぐできるインフル5つのチェック\n\n✅ 数時間のうちに38℃以上の熱が急に出た\n✅ 全身の筋肉痛・関節痛・寒けがある\n✅ 強いだるさで起き上がるのがつらい\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "text": "今すぐできるインフル5つのチェック\n\n✅ 数時間のうちに38℃以上の熱が急に出た\n✅ 全身の筋肉痛・関節痛・寒けがある\n✅ 強いだるさで起き上がるのがつらい\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=reply_a",
+      "weighted": 254,
+      "charCount": 138,
       "ok": true
     },
     "b": {
-      "text": "インフルエンザと風邪の違い6つ？\n\n✅ 急な38℃以上の高熱と全身症状が強いときは\n✅ 抗インフルエンザ薬は、発症からおよそ48時間以内の開始が目…\n✅ 学校は「発症後5日かつ解熱後2日\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=b\n\n#健康 #冬の健康",
-      "link": "https://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=b",
-      "weighted": 225,
+      "body": "インフルエンザと風邪の違い6つ？\n\n✅ 数時間のうちに38℃以上の熱が急…\n✅ 全身の筋肉痛・関節痛\n✅ 強いだるさで起き上がるのが…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "text": "インフルエンザと風邪の違い6つ？\n\n✅ 数時間のうちに38℃以上の熱が急…\n✅ 全身の筋肉痛・関節痛\n✅ 強いだるさで起き上がるのが…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=reply_b",
+      "weighted": 260,
+      "charCount": 143,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできるインフル5つのチェック\n\n✅ 数時間のうちに38℃以上の熱が急に出た\n✅ 全身の筋肉痛・関節痛・寒けがある\n✅ 強いだるさで起き上がるのがつらい\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=reply_a",
+      "charCount": 138,
+      "image": "social/x/flu-vs-cold-symptoms/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "インフルエンザと風邪の違い6つ？\n\n✅ 数時間のうちに38℃以上の熱が急…\n✅ 全身の筋肉痛・関節痛\n✅ 強いだるさで起き上がるのが…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=reply_b",
+      "charCount": 143,
+      "image": "social/x/flu-vs-cold-symptoms/card.png"
+    }
+  ],
   "checklist": [
     "数時間のうちに38℃以上の熱が急に出た",
     "全身の筋肉痛・関節痛・寒けがある",
@@ -34,39 +65,20 @@
     "のどや鼻より先に、発熱と体の痛みが出た"
   ],
   "points": [
-    "急な38℃以上の高熱と全身症状が強いときは",
-    "抗インフルエンザ薬は、発症からおよそ48時間以内の開始が目…",
-    "学校は「発症後5日かつ解熱後2日"
+    "数時間のうちに38℃以上の熱が急に出た",
+    "全身の筋肉痛・関節痛・寒けがある",
+    "強いだるさで起き上がるのがつらい"
   ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
     "alt": "セルフチェック：数時間のうちに38℃以上の熱が急に出た、全身の筋肉痛・関節痛・寒けがある、強いだるさで起き上がるのがつらい、周囲でインフルエンザが流行している、のどや鼻より先に、発熱と体の痛みが出た。当てはまる数を確認。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/flu-vs-cold-symptoms/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 418043,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/flu-vs-cold-symptoms/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 242328,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:51.429Z"
+  "generatedAt": "2026-11-24T08:08:39.680Z"
 }

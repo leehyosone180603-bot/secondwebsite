@@ -1,0 +1,84 @@
+{
+  "slug": "winter-vitamin-d-deficiency-symptoms",
+  "series": "info",
+  "title": "冬のビタミンD不足の症状、疲れの原因かも？日光・食事・サプリで補う方法",
+  "url": "/ja/posts/winter-vitamin-d-deficiency-symptoms.html",
+  "keyword": "ビタミンD不足",
+  "hooks": [
+    "冬のビタミンD不足の症状？",
+    "今すぐできるビタミンD不足5つのポイント"
+  ],
+  "hookTypes": [
+    "myth",
+    "number"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "image": "social/x/winter-vitamin-d-deficiency-symptoms/card.png",
+  "posts": {
+    "a": {
+      "body": "冬のビタミンD不足の症状？\n\n✅ 眠っても取れない疲労感とだるさ\n✅ 筋力の低下・筋肉痛、階段を上るときに脚…\n✅ 骨や腰が重だるい感じ\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "冬のビタミンD不足の症状？\n\n✅ 眠っても取れない疲労感とだるさ\n✅ 筋力の低下・筋肉痛、階段を上るときに脚…\n✅ 骨や腰が重だるい感じ\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-vitamin-d-deficiency-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=winter-vitamin-d-deficiency-symptoms&utm_content=reply_a",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-vitamin-d-deficiency-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=winter-vitamin-d-deficiency-symptoms&utm_content=reply_a",
+      "weighted": 216,
+      "charCount": 118,
+      "ok": true
+    },
+    "b": {
+      "body": "今すぐできるビタミンD不足5つのポイント\n\n✅ 眠っても取れない疲労感とだるさ\n✅ 筋力の低下・筋肉痛、階段を上るときに脚…\n✅ 骨や腰が重だるい感じ\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "今すぐできるビタミンD不足5つのポイント\n\n✅ 眠っても取れない疲労感とだるさ\n✅ 筋力の低下・筋肉痛、階段を上るときに脚…\n✅ 骨や腰が重だるい感じ\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-vitamin-d-deficiency-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=winter-vitamin-d-deficiency-symptoms&utm_content=reply_b",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-vitamin-d-deficiency-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=winter-vitamin-d-deficiency-symptoms&utm_content=reply_b",
+      "weighted": 259,
+      "charCount": 141,
+      "ok": true
+    }
+  },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "myth",
+      "body": "冬のビタミンD不足の症状？\n\n✅ 眠っても取れない疲労感とだるさ\n✅ 筋力の低下・筋肉痛、階段を上るときに脚…\n✅ 骨や腰が重だるい感じ\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-vitamin-d-deficiency-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=winter-vitamin-d-deficiency-symptoms&utm_content=reply_a",
+      "charCount": 118,
+      "image": "social/x/winter-vitamin-d-deficiency-symptoms/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "number",
+      "body": "今すぐできるビタミンD不足5つのポイント\n\n✅ 眠っても取れない疲労感とだるさ\n✅ 筋力の低下・筋肉痛、階段を上るときに脚…\n✅ 骨や腰が重だるい感じ\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-vitamin-d-deficiency-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=winter-vitamin-d-deficiency-symptoms&utm_content=reply_b",
+      "charCount": 141,
+      "image": "social/x/winter-vitamin-d-deficiency-symptoms/card.png"
+    }
+  ],
+  "checklist": [
+    "眠っても取れない疲労感とだるさ",
+    "筋力の低下・筋肉痛、階段を上るときに脚…",
+    "骨や腰が重だるい感じ",
+    "風邪をひきやすい感じ",
+    "冬の気分の落ち込み・憂うつ感"
+  ],
+  "points": [
+    "眠っても取れない疲労感とだるさ",
+    "筋力の低下・筋肉痛、階段を上るときに脚…",
+    "骨や腰が重だるい感じ"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "この記事のポイント：眠っても取れない疲労感とだるさ、筋力の低下・筋肉痛、階段を上るときに脚…、骨や腰が重だるい感じ、風邪をひきやすい感じ、冬の気分の落ち込み・憂うつ感。健康フロー。"
+  },
+  "cardResults": [],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-24T08:08:39.666Z"
+}

@@ -5,27 +5,58 @@
   "url": "/ja/posts/pasangpung-symptoms-vaccine.html",
   "keyword": "破傷風",
   "hooks": [
-    "破傷風の症状と初期症状？",
-    "破傷風、知っておきたい6つのポイント"
+    "今すぐできる破傷風6つのポイント",
+    "実は逆効果かも？破傷風"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#健康情報"
   ],
+  "image": "social/x/pasangpung-symptoms-vaccine/card.png",
   "posts": {
     "a": {
-      "text": "破傷風の症状と初期症状？\n\n✅ あごと首の筋肉のこわばり\n✅ 飲み込みにくさ\n✅ 首と肩の痛み\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=a\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=a",
-      "weighted": 142,
+      "body": "今すぐできる破傷風6つのポイント\n\n✅ あごと首の筋肉のこわばり\n✅ 飲み込みにくさ\n✅ 首と肩の痛み\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "今すぐできる破傷風6つのポイント\n\n✅ あごと首の筋肉のこわばり\n✅ 飲み込みにくさ\n✅ 首と肩の痛み\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=reply_a",
+      "weighted": 183,
+      "charCount": 101,
       "ok": true
     },
     "b": {
-      "text": "破傷風、知っておきたい6つのポイント\n\n✅ あごと首の筋肉のこわばり\n✅ 飲み込みにくさ\n✅ 首と肩の痛み\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=b\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=b",
-      "weighted": 153,
+      "body": "実は逆効果かも？破傷風\n\n✅ あごと首の筋肉のこわばり\n✅ 飲み込みにくさ\n✅ 首と肩の痛み\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？破傷風\n\n✅ あごと首の筋肉のこわばり\n✅ 飲み込みにくさ\n✅ 首と肩の痛み\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=reply_b",
+      "weighted": 204,
+      "charCount": 112,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる破傷風6つのポイント\n\n✅ あごと首の筋肉のこわばり\n✅ 飲み込みにくさ\n✅ 首と肩の痛み\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=reply_a",
+      "charCount": 101,
+      "image": "social/x/pasangpung-symptoms-vaccine/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？破傷風\n\n✅ あごと首の筋肉のこわばり\n✅ 飲み込みにくさ\n✅ 首と肩の痛み\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=reply_b",
+      "charCount": 112,
+      "image": "social/x/pasangpung-symptoms-vaccine/card.png"
+    }
+  ],
   "checklist": [
     "あごと首の筋肉のこわばり",
     "飲み込みにくさ",
@@ -44,30 +75,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：あごと首の筋肉のこわばり、飲み込みにくさ、首と肩の痛み、全身の筋けいれん、腹部が硬くこわばる感じ、ひどい場合は呼吸困難。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/pasangpung-symptoms-vaccine/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 388997,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/pasangpung-symptoms-vaccine/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 220794,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:58.734Z"
+  "generatedAt": "2026-11-24T08:08:39.704Z"
 }

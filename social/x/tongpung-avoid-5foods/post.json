@@ -5,27 +5,58 @@
   "url": "/ja/posts/tongpung-avoid-5foods.html",
   "keyword": "痛風によくない食べ物",
   "hooks": [
-    "痛風によくない食べ物5つ？",
-    "痛風によくない食べ物5つ"
+    "今すぐできる痛風によくない食べ物3つのポイント",
+    "痛風によくない食べ物5つ？"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#健康情報"
   ],
+  "image": "social/x/tongpung-avoid-5foods/card.png",
   "posts": {
     "a": {
-      "text": "痛風によくない食べ物5つ？\n\n✅ お酒・ホルモン・青魚\n✅ 水をこまめに飲んで（1日2L前後）尿酸…\n✅ 野菜と低脂肪の乳製品を添えて食事のバラ…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=a\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=a",
-      "weighted": 188,
+      "body": "今すぐできる痛風によくない食べ物3つのポイント\n\n✅ お酒・ホルモン・青魚\n✅ 水をこまめに飲んで（1日2L前後）尿酸…\n✅ 野菜と低脂肪の乳製品を添えて食事のバラ…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "今すぐできる痛風によくない食べ物3つのポイント\n\n✅ お酒・ホルモン・青魚\n✅ 水をこまめに飲んで（1日2L前後）尿酸…\n✅ 野菜と低脂肪の乳製品を添えて食事のバラ…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=reply_a",
+      "weighted": 242,
+      "charCount": 133,
       "ok": true
     },
     "b": {
-      "text": "痛風によくない食べ物5つ\n\n✅ お酒・ホルモン・青魚\n✅ 水をこまめに飲んで（1日2L前後）尿酸…\n✅ 野菜と低脂肪の乳製品を添えて食事のバラ…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=b\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=b",
-      "weighted": 186,
+      "body": "痛風によくない食べ物5つ？\n\n✅ お酒・ホルモン・青魚\n✅ 水をこまめに飲んで（1日2L前後）尿酸…\n✅ 野菜と低脂肪の乳製品を添えて食事のバラ…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "痛風によくない食べ物5つ？\n\n✅ お酒・ホルモン・青魚\n✅ 水をこまめに飲んで（1日2L前後）尿酸…\n✅ 野菜と低脂肪の乳製品を添えて食事のバラ…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=reply_b",
+      "weighted": 252,
+      "charCount": 139,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる痛風によくない食べ物3つのポイント\n\n✅ お酒・ホルモン・青魚\n✅ 水をこまめに飲んで（1日2L前後）尿酸…\n✅ 野菜と低脂肪の乳製品を添えて食事のバラ…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=reply_a",
+      "charCount": 133,
+      "image": "social/x/tongpung-avoid-5foods/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "痛風によくない食べ物5つ？\n\n✅ お酒・ホルモン・青魚\n✅ 水をこまめに飲んで（1日2L前後）尿酸…\n✅ 野菜と低脂肪の乳製品を添えて食事のバラ…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/tongpung-avoid-5foods.html?utm_source=x&utm_medium=social&utm_campaign=tongpung-avoid-5foods&utm_content=reply_b",
+      "charCount": 139,
+      "image": "social/x/tongpung-avoid-5foods/card.png"
+    }
+  ],
   "checklist": [
     "お酒・ホルモン・青魚",
     "水をこまめに飲んで（1日2L前後）尿酸…",
@@ -41,30 +72,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：お酒・ホルモン・青魚、水をこまめに飲んで（1日2L前後）尿酸…、野菜と低脂肪の乳製品を添えて食事のバラ…。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/tongpung-avoid-5foods/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 379069,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/tongpung-avoid-5foods/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 230181,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:53.141Z"
+  "generatedAt": "2026-11-24T08:08:39.688Z"
 }

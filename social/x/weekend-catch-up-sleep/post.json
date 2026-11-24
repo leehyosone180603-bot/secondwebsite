@@ -1,0 +1,85 @@
+{
+  "slug": "weekend-catch-up-sleep",
+  "series": "info",
+  "title": "週末の寝だめは逆効果？睡眠負債の返し方と平日にできる3つの習慣",
+  "url": "/ja/posts/weekend-catch-up-sleep.html",
+  "keyword": "寝だめ",
+  "hooks": [
+    "今すぐできる寝だめ6つのチェック",
+    "実は逆効果かも？寝だめ"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "image": "social/x/weekend-catch-up-sleep/card.png",
+  "posts": {
+    "a": {
+      "body": "今すぐできる寝だめ6つのチェック\n\n✅ 平日と休日で、起床時刻が2時間以上ずれている\n✅ 休日は昼近くまで寝てしまうことが多い\n✅ 日曜の夜は、なかなか寝つけない\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "text": "今すぐできる寝だめ6つのチェック\n\n✅ 平日と休日で、起床時刻が2時間以上ずれている\n✅ 休日は昼近くまで寝てしまうことが多い\n✅ 日曜の夜は、なかなか寝つけない\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/weekend-catch-up-sleep.html?utm_source=x&utm_medium=social&utm_campaign=weekend-catch-up-sleep&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/weekend-catch-up-sleep.html?utm_source=x&utm_medium=social&utm_campaign=weekend-catch-up-sleep&utm_content=reply_a",
+      "weighted": 262,
+      "charCount": 141,
+      "ok": true
+    },
+    "b": {
+      "body": "実は逆効果かも？寝だめ\n\n✅ 平日と休日で、起床時刻が2時間以上ずれ…\n✅ 休日は昼近くまで寝てしまうこと…\n✅ 日曜の夜は、なかなか寝つ…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？寝だめ\n\n✅ 平日と休日で、起床時刻が2時間以上ずれ…\n✅ 休日は昼近くまで寝てしまうこと…\n✅ 日曜の夜は、なかなか寝つ…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/weekend-catch-up-sleep.html?utm_source=x&utm_medium=social&utm_campaign=weekend-catch-up-sleep&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/weekend-catch-up-sleep.html?utm_source=x&utm_medium=social&utm_campaign=weekend-catch-up-sleep&utm_content=reply_b",
+      "weighted": 268,
+      "charCount": 146,
+      "ok": true
+    }
+  },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる寝だめ6つのチェック\n\n✅ 平日と休日で、起床時刻が2時間以上ずれている\n✅ 休日は昼近くまで寝てしまうことが多い\n✅ 日曜の夜は、なかなか寝つけない\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/weekend-catch-up-sleep.html?utm_source=x&utm_medium=social&utm_campaign=weekend-catch-up-sleep&utm_content=reply_a",
+      "charCount": 141,
+      "image": "social/x/weekend-catch-up-sleep/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？寝だめ\n\n✅ 平日と休日で、起床時刻が2時間以上ずれ…\n✅ 休日は昼近くまで寝てしまうこと…\n✅ 日曜の夜は、なかなか寝つ…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/weekend-catch-up-sleep.html?utm_source=x&utm_medium=social&utm_campaign=weekend-catch-up-sleep&utm_content=reply_b",
+      "charCount": 146,
+      "image": "social/x/weekend-catch-up-sleep/card.png"
+    }
+  ],
+  "checklist": [
+    "平日と休日で、起床時刻が2時間以上ずれ…",
+    "休日は昼近くまで寝てしまうことが多い",
+    "日曜の夜は、なかなか寝つけない",
+    "一週間のなかで、月曜の朝が一番つらい",
+    "平日の日中に強い眠気を感じる",
+    "目覚ましがないと、自力ではなかなか起き…"
+  ],
+  "points": [
+    "平日と休日で、起床時刻が2時間以上ずれている",
+    "休日は昼近くまで寝てしまうことが多い",
+    "日曜の夜は、なかなか寝つけない"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：平日と休日で、起床時刻が2時間以上ずれ…、休日は昼近くまで寝てしまうことが多い、日曜の夜は、なかなか寝つけない、一週間のなかで、月曜の朝が一番つらい、平日の日中に強い眠気を感じる、目覚ましがないと、自力ではなかなか起き…。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-24T08:08:39.659Z"
+}

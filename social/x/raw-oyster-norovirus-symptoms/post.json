@@ -5,27 +5,58 @@
   "url": "/ja/posts/raw-oyster-norovirus-symptoms.html",
   "keyword": "牡蠣",
   "hooks": [
-    "牡蠣、知っておきたい5つのチェック",
-    "牡蠣、5つのチェック"
+    "今すぐできる牡蠣5つのチェック",
+    "実は逆効果かも？牡蠣"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#冬の健康"
   ],
+  "image": "social/x/raw-oyster-norovirus-symptoms/card.png",
   "posts": {
     "a": {
-      "text": "牡蠣、知っておきたい5つのチェック\n\n✅ ノロウイルスの潜伏期間はおよそ12〜48時間で\n✅ 牡蠣は中心部85〜90℃で90秒以上の加熱が安全の目安です。\n✅ 消毒は次亜塩素酸ナトリウム。アルコールや酢\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=a\n\n#健康 #冬の健康",
-      "link": "https://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=a",
-      "weighted": 238,
+      "body": "今すぐできる牡蠣5つのチェック\n\n✅ 急な吐き気や、くり返す嘔吐がある\n✅ 水のような下痢と腹痛がある\n✅ 微熱・寒け・体のだるさをともなう\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "text": "今すぐできる牡蠣5つのチェック\n\n✅ 急な吐き気や、くり返す嘔吐がある\n✅ 水のような下痢と腹痛がある\n✅ 微熱・寒け・体のだるさをともなう\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=reply_a",
+      "weighted": 241,
+      "charCount": 130,
       "ok": true
     },
     "b": {
-      "text": "牡蠣、5つのチェック\n\n✅ ノロウイルスの潜伏期間はおよそ12〜48時間で\n✅ 牡蠣は中心部85〜90℃で90秒以上の加熱が安全の目安です。\n✅ 消毒は次亜塩素酸ナトリウム。アルコールや酢\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=b\n\n#健康 #冬の健康",
-      "link": "https://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=b",
-      "weighted": 224,
+      "body": "実は逆効果かも？牡蠣\n\n✅ 急な吐き気や、くり返す嘔吐がある\n✅ 水のような下痢と腹痛がある\n✅ 微熱・寒け・体のだるさをともなう\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "text": "実は逆効果かも？牡蠣\n\n✅ 急な吐き気や、くり返す嘔吐がある\n✅ 水のような下痢と腹痛がある\n✅ 微熱・寒け・体のだるさをともなう\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=reply_b",
+      "weighted": 262,
+      "charCount": 141,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる牡蠣5つのチェック\n\n✅ 急な吐き気や、くり返す嘔吐がある\n✅ 水のような下痢と腹痛がある\n✅ 微熱・寒け・体のだるさをともなう\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=reply_a",
+      "charCount": 130,
+      "image": "social/x/raw-oyster-norovirus-symptoms/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？牡蠣\n\n✅ 急な吐き気や、くり返す嘔吐がある\n✅ 水のような下痢と腹痛がある\n✅ 微熱・寒け・体のだるさをともなう\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=reply_b",
+      "charCount": 141,
+      "image": "social/x/raw-oyster-norovirus-symptoms/card.png"
+    }
+  ],
   "checklist": [
     "急な吐き気や、くり返す嘔吐がある",
     "水のような下痢と腹痛がある",
@@ -34,39 +65,20 @@
     "食べてからおよそ12〜48時間で症状が…"
   ],
   "points": [
-    "ノロウイルスの潜伏期間はおよそ12〜48時間で",
-    "牡蠣は中心部85〜90℃で90秒以上の加熱が安全の目安です。",
-    "消毒は次亜塩素酸ナトリウム。アルコールや酢"
+    "急な吐き気や、くり返す嘔吐がある",
+    "水のような下痢と腹痛がある",
+    "微熱・寒け・体のだるさをともなう"
   ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
     "alt": "セルフチェック：急な吐き気や、くり返す嘔吐がある、水のような下痢と腹痛がある、微熱・寒け・体のだるさをともなう、家族など同じものを食べた人も、食べてからおよそ12〜48時間で症状が…。当てはまる数を確認。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/raw-oyster-norovirus-symptoms/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 415658,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/raw-oyster-norovirus-symptoms/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 241593,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:51.845Z"
+  "generatedAt": "2026-11-24T08:08:39.684Z"
 }

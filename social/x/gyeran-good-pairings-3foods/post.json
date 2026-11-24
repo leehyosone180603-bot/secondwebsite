@@ -5,27 +5,58 @@
   "url": "/ja/posts/gyeran-good-pairings-3foods.html",
   "keyword": "卵と相性のよい食べ合わせ",
   "hooks": [
-    "卵と相性のよい食べ合わせ、3つのポイント",
-    "実は知らない卵と相性のよい食べ合わせのコツ"
+    "今すぐできる卵と相性のよい食べ合わせ3つのポイント",
+    "実は逆効果かも？卵と相性のよい食べ合わせ"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#食事"
   ],
+  "image": "social/x/gyeran-good-pairings-3foods/card.png",
   "posts": {
     "a": {
-      "text": "卵と相性のよい食べ合わせ、3つのポイント\n\n✅ 朝は温かくトマトと卵の炒め物\n✅ 夕食のおかずにニラたっぷりの卵焼き\n✅ 骨が気になるときはチーズをのせた茶碗蒸し\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=a\n\n#健康 #食事",
-      "link": "https://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=a",
-      "weighted": 205,
+      "body": "今すぐできる卵と相性のよい食べ合わせ3つのポイント\n\n✅ 朝は温かくトマトと卵の炒め物\n✅ 夕食のおかずにニラたっぷりの卵焼き\n✅ 骨が気になるときはチーズをのせた茶碗蒸し\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "text": "今すぐできる卵と相性のよい食べ合わせ3つのポイント\n\n✅ 朝は温かくトマトと卵の炒め物\n✅ 夕食のおかずにニラたっぷりの卵焼き\n✅ 骨が気になるときはチーズをのせた茶碗蒸し\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=reply_a",
+      "weighted": 249,
+      "charCount": 134,
       "ok": true
     },
     "b": {
-      "text": "実は知らない卵と相性のよい食べ合わせのコツ\n\n✅ 朝は温かくトマトと卵の炒め物\n✅ 夕食のおかずにニラたっぷりの卵焼き\n✅ 骨が気になるときはチーズをのせた茶碗蒸し\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=b\n\n#健康 #食事",
-      "link": "https://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=b",
-      "weighted": 208,
+      "body": "実は逆効果かも？卵と相性のよい食べ合わせ\n\n✅ 朝は温かくトマトと卵の炒め物\n✅ 夕食のおかずにニラたっぷりの卵焼き\n✅ 骨が気になるときはチーズをのせた茶碗蒸し\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "text": "実は逆効果かも？卵と相性のよい食べ合わせ\n\n✅ 朝は温かくトマトと卵の炒め物\n✅ 夕食のおかずにニラたっぷりの卵焼き\n✅ 骨が気になるときはチーズをのせた茶碗蒸し\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=reply_b",
+      "weighted": 270,
+      "charCount": 145,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる卵と相性のよい食べ合わせ3つのポイント\n\n✅ 朝は温かくトマトと卵の炒め物\n✅ 夕食のおかずにニラたっぷりの卵焼き\n✅ 骨が気になるときはチーズをのせた茶碗蒸し\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=reply_a",
+      "charCount": 134,
+      "image": "social/x/gyeran-good-pairings-3foods/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？卵と相性のよい食べ合わせ\n\n✅ 朝は温かくトマトと卵の炒め物\n✅ 夕食のおかずにニラたっぷりの卵焼き\n✅ 骨が気になるときはチーズをのせた茶碗蒸し\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=reply_b",
+      "charCount": 145,
+      "image": "social/x/gyeran-good-pairings-3foods/card.png"
+    }
+  ],
   "checklist": [
     "朝は温かくトマトと卵の炒め物",
     "夕食のおかずにニラたっぷりの卵焼き",
@@ -41,30 +72,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：朝は温かくトマトと卵の炒め物、夕食のおかずにニラたっぷりの卵焼き、骨が気になるときはチーズをのせた茶碗蒸し。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/gyeran-good-pairings-3foods/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 396965,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/gyeran-good-pairings-3foods/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 241067,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:53.616Z"
+  "generatedAt": "2026-11-24T08:08:39.689Z"
 }

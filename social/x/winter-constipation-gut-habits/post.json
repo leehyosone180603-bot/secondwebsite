@@ -1,0 +1,82 @@
+{
+  "slug": "winter-constipation-gut-habits",
+  "series": "info",
+  "title": "冬に便秘が増える理由と、腸を動かす5つの習慣",
+  "url": "/ja/posts/winter-constipation-gut-habits.html",
+  "keyword": "冬",
+  "hooks": [
+    "実は逆効果かも？冬",
+    "冬、知っておきたい3つのポイント"
+  ],
+  "hookTypes": [
+    "myth",
+    "number"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "image": "social/x/winter-constipation-gut-habits/card.png",
+  "posts": {
+    "a": {
+      "body": "実は逆効果かも？冬\n\n✅ 冬の便通の乱れは水分不足・活動量の低下・冷え\n✅ 腸を動かす習慣は水分・2種類の食物繊維・運動\n✅ 血便・体重減少・貧血・急な便通の変化があるときは自己処…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？冬\n\n✅ 冬の便通の乱れは水分不足・活動量の低下・冷え\n✅ 腸を動かす習慣は水分・2種類の食物繊維・運動\n✅ 血便・体重減少・貧血・急な便通の変化があるときは自己処…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-constipation-gut-habits.html?utm_source=x&utm_medium=social&utm_campaign=winter-constipation-gut-habits&utm_content=reply_a",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-constipation-gut-habits.html?utm_source=x&utm_medium=social&utm_campaign=winter-constipation-gut-habits&utm_content=reply_a",
+      "weighted": 262,
+      "charCount": 141,
+      "ok": true
+    },
+    "b": {
+      "body": "冬、知っておきたい3つのポイント\n\n✅ 冬の便通の乱れは水分不足\n✅ 腸を動かす習慣は水分\n✅ 血便・体重減少・貧血・急な便通の変化があるとき…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "冬、知っておきたい3つのポイント\n\n✅ 冬の便通の乱れは水分不足\n✅ 腸を動かす習慣は水分\n✅ 血便・体重減少・貧血・急な便通の変化があるとき…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-constipation-gut-habits.html?utm_source=x&utm_medium=social&utm_campaign=winter-constipation-gut-habits&utm_content=reply_b",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-constipation-gut-habits.html?utm_source=x&utm_medium=social&utm_campaign=winter-constipation-gut-habits&utm_content=reply_b",
+      "weighted": 254,
+      "charCount": 138,
+      "ok": true
+    }
+  },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "myth",
+      "body": "実は逆効果かも？冬\n\n✅ 冬の便通の乱れは水分不足・活動量の低下・冷え\n✅ 腸を動かす習慣は水分・2種類の食物繊維・運動\n✅ 血便・体重減少・貧血・急な便通の変化があるときは自己処…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-constipation-gut-habits.html?utm_source=x&utm_medium=social&utm_campaign=winter-constipation-gut-habits&utm_content=reply_a",
+      "charCount": 141,
+      "image": "social/x/winter-constipation-gut-habits/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "number",
+      "body": "冬、知っておきたい3つのポイント\n\n✅ 冬の便通の乱れは水分不足\n✅ 腸を動かす習慣は水分\n✅ 血便・体重減少・貧血・急な便通の変化があるとき…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-constipation-gut-habits.html?utm_source=x&utm_medium=social&utm_campaign=winter-constipation-gut-habits&utm_content=reply_b",
+      "charCount": 138,
+      "image": "social/x/winter-constipation-gut-habits/card.png"
+    }
+  ],
+  "checklist": [
+    "冬の便通の乱れは水分不足・活動量の低下",
+    "腸を動かす習慣は水分・2種類の食物繊維",
+    "血便・体重減少・貧血"
+  ],
+  "points": [
+    "冬の便通の乱れは水分不足・活動量の低下・冷え",
+    "腸を動かす習慣は水分・2種類の食物繊維・運動",
+    "血便・体重減少・貧血・急な便通の変化があるときは自己処…"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "この記事のポイント：冬の便通の乱れは水分不足・活動量の低下、腸を動かす習慣は水分・2種類の食物繊維、血便・体重減少・貧血。健康フロー。"
+  },
+  "cardResults": [],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-24T08:08:39.654Z"
+}

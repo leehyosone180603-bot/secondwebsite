@@ -5,27 +5,58 @@
   "url": "/ja/posts/bujong-good-5foods.html",
   "keyword": "むくみによい食べ物",
   "hooks": [
-    "むくみによい食べ物5つ？",
-    "むくみによい食べ物5つ"
+    "今すぐできるむくみによい食べ物3つのポイント",
+    "むくみによい食べ物5つ？"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#食事"
   ],
+  "image": "social/x/bujong-good-5foods/card.png",
   "posts": {
     "a": {
-      "text": "むくみによい食べ物5つ？\n\n✅ 朝はバナナ1本で軽く始める\n✅ 食事の途中にきゅうりを添える\n✅ コーヒー一杯を温かい小豆茶に替えてみる\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=a\n\n#健康 #食事",
-      "link": "https://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=a",
-      "weighted": 178,
+      "body": "今すぐできるむくみによい食べ物3つのポイント\n\n✅ 朝はバナナ1本で軽く始める\n✅ 食事の途中にきゅうりを添える\n✅ コーヒー一杯を温かい小豆茶に替えてみる\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "text": "今すぐできるむくみによい食べ物3つのポイント\n\n✅ 朝はバナナ1本で軽く始める\n✅ 食事の途中にきゅうりを添える\n✅ コーヒー一杯を温かい小豆茶に替えてみる\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=reply_a",
+      "weighted": 232,
+      "charCount": 126,
       "ok": true
     },
     "b": {
-      "text": "むくみによい食べ物5つ\n\n✅ 朝はバナナ1本で軽く始める\n✅ 食事の途中にきゅうりを添える\n✅ コーヒー一杯を温かい小豆茶に替えてみる\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=b\n\n#健康 #食事",
-      "link": "https://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=b",
-      "weighted": 176,
+      "body": "むくみによい食べ物5つ？\n\n✅ 朝はバナナ1本で軽く始める\n✅ 食事の途中にきゅうりを添える\n✅ コーヒー一杯を温かい小豆茶に替えてみる\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "text": "むくみによい食べ物5つ？\n\n✅ 朝はバナナ1本で軽く始める\n✅ 食事の途中にきゅうりを添える\n✅ コーヒー一杯を温かい小豆茶に替えてみる\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=reply_b",
+      "weighted": 242,
+      "charCount": 132,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできるむくみによい食べ物3つのポイント\n\n✅ 朝はバナナ1本で軽く始める\n✅ 食事の途中にきゅうりを添える\n✅ コーヒー一杯を温かい小豆茶に替えてみる\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=reply_a",
+      "charCount": 126,
+      "image": "social/x/bujong-good-5foods/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "むくみによい食べ物5つ？\n\n✅ 朝はバナナ1本で軽く始める\n✅ 食事の途中にきゅうりを添える\n✅ コーヒー一杯を温かい小豆茶に替えてみる\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=reply_b",
+      "charCount": 132,
+      "image": "social/x/bujong-good-5foods/card.png"
+    }
+  ],
   "checklist": [
     "朝はバナナ1本で軽く始める",
     "食事の途中にきゅうりを添える",
@@ -41,30 +72,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：朝はバナナ1本で軽く始める、食事の途中にきゅうりを添える、コーヒー一杯を温かい小豆茶に替えてみる。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/bujong-good-5foods/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 389806,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/bujong-good-5foods/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 233859,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:54.894Z"
+  "generatedAt": "2026-11-24T08:08:39.693Z"
 }

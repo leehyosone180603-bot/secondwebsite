@@ -5,27 +5,58 @@
   "url": "/ja/posts/gohyeolap-causes-symptoms-lowering.html",
   "keyword": "高血圧",
   "hooks": [
-    "高血圧の原因と症状？",
-    "高血圧、知っておきたい6つのポイント"
+    "今すぐできる高血圧6つのポイント",
+    "実は逆効果かも？高血圧"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#健康情報"
   ],
+  "image": "social/x/gohyeolap-causes-symptoms-lowering/card.png",
   "posts": {
     "a": {
-      "text": "高血圧の原因と症状？\n\n✅ 首の後ろがこわばる感じ\n✅ ひどい朝の頭痛\n✅ めまい\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=a\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=a",
-      "weighted": 130,
+      "body": "今すぐできる高血圧6つのポイント\n\n✅ 首の後ろがこわばる感じ\n✅ ひどい朝の頭痛\n✅ めまい\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "今すぐできる高血圧6つのポイント\n\n✅ 首の後ろがこわばる感じ\n✅ ひどい朝の頭痛\n✅ めまい\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=reply_a",
+      "weighted": 175,
+      "charCount": 97,
       "ok": true
     },
     "b": {
-      "text": "高血圧、知っておきたい6つのポイント\n\n✅ 首の後ろがこわばる感じ\n✅ ひどい朝の頭痛\n✅ めまい\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=b\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=b",
-      "weighted": 145,
+      "body": "実は逆効果かも？高血圧\n\n✅ 首の後ろがこわばる感じ\n✅ ひどい朝の頭痛\n✅ めまい\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？高血圧\n\n✅ 首の後ろがこわばる感じ\n✅ ひどい朝の頭痛\n✅ めまい\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=reply_b",
+      "weighted": 196,
+      "charCount": 108,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる高血圧6つのポイント\n\n✅ 首の後ろがこわばる感じ\n✅ ひどい朝の頭痛\n✅ めまい\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=reply_a",
+      "charCount": 97,
+      "image": "social/x/gohyeolap-causes-symptoms-lowering/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？高血圧\n\n✅ 首の後ろがこわばる感じ\n✅ ひどい朝の頭痛\n✅ めまい\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=reply_b",
+      "charCount": 108,
+      "image": "social/x/gohyeolap-causes-symptoms-lowering/card.png"
+    }
+  ],
   "checklist": [
     "首の後ろがこわばる感じ",
     "ひどい朝の頭痛",
@@ -44,30 +75,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：首の後ろがこわばる感じ、ひどい朝の頭痛、めまい、疲れやすさ、顔が赤くなる、動悸。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/gohyeolap-causes-symptoms-lowering/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 363670,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/gohyeolap-causes-symptoms-lowering/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 210729,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:59.596Z"
+  "generatedAt": "2026-11-24T08:08:39.706Z"
 }

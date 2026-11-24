@@ -5,27 +5,58 @@
   "url": "/ja/posts/meong-bruise-causes-remedy.html",
   "keyword": "あざ",
   "hooks": [
-    "あざ、知っておきたい3つのポイント",
-    "あざ、3つのポイント"
+    "今すぐできるあざ3つのポイント",
+    "実は逆効果かも？あざ"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#健康情報"
   ],
+  "image": "social/x/meong-bruise-causes-remedy/card.png",
   "posts": {
     "a": {
-      "text": "あざ、知っておきたい3つのポイント\n\n✅ 運動中の強い圧迫や、重い物を持ったとき…\n✅ 年齢を重ねて皮膚と血管が弱くなったとき\n✅ ビタミンC・ビタミンKが不足していたり\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/meong-bruise-causes-remedy.html?utm_source=x&utm_medium=social&utm_campaign=meong-bruise-causes-remedy&utm_content=a\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/meong-bruise-causes-remedy.html?utm_source=x&utm_medium=social&utm_campaign=meong-bruise-causes-remedy&utm_content=a",
-      "weighted": 214,
+      "body": "今すぐできるあざ3つのポイント\n\n✅ 運動中の強い圧迫や、重い物を持ったとき…\n✅ 年齢を重ねて皮膚と血管が弱くなったとき\n✅ ビタミンC・ビタミンKが不足していたり\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "今すぐできるあざ3つのポイント\n\n✅ 運動中の強い圧迫や、重い物を持ったとき…\n✅ 年齢を重ねて皮膚と血管が弱くなったとき\n✅ ビタミンC・ビタミンKが不足していたり\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/meong-bruise-causes-remedy.html?utm_source=x&utm_medium=social&utm_campaign=meong-bruise-causes-remedy&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/meong-bruise-causes-remedy.html?utm_source=x&utm_medium=social&utm_campaign=meong-bruise-causes-remedy&utm_content=reply_a",
+      "weighted": 244,
+      "charCount": 133,
       "ok": true
     },
     "b": {
-      "text": "あざ、3つのポイント\n\n✅ 運動中の強い圧迫や、重い物を持ったとき…\n✅ 年齢を重ねて皮膚と血管が弱くなったとき\n✅ ビタミンC・ビタミンKが不足していたり\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/meong-bruise-causes-remedy.html?utm_source=x&utm_medium=social&utm_campaign=meong-bruise-causes-remedy&utm_content=b\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/meong-bruise-causes-remedy.html?utm_source=x&utm_medium=social&utm_campaign=meong-bruise-causes-remedy&utm_content=b",
-      "weighted": 200,
+      "body": "実は逆効果かも？あざ\n\n✅ 運動中の強い圧迫や、重い物を持ったとき…\n✅ 年齢を重ねて皮膚と血管が弱くなったとき\n✅ ビタミンC・ビタミンKが不足していたり\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？あざ\n\n✅ 運動中の強い圧迫や、重い物を持ったとき…\n✅ 年齢を重ねて皮膚と血管が弱くなったとき\n✅ ビタミンC・ビタミンKが不足していたり\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/meong-bruise-causes-remedy.html?utm_source=x&utm_medium=social&utm_campaign=meong-bruise-causes-remedy&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/meong-bruise-causes-remedy.html?utm_source=x&utm_medium=social&utm_campaign=meong-bruise-causes-remedy&utm_content=reply_b",
+      "weighted": 265,
+      "charCount": 144,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできるあざ3つのポイント\n\n✅ 運動中の強い圧迫や、重い物を持ったとき…\n✅ 年齢を重ねて皮膚と血管が弱くなったとき\n✅ ビタミンC・ビタミンKが不足していたり\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/meong-bruise-causes-remedy.html?utm_source=x&utm_medium=social&utm_campaign=meong-bruise-causes-remedy&utm_content=reply_a",
+      "charCount": 133,
+      "image": "social/x/meong-bruise-causes-remedy/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？あざ\n\n✅ 運動中の強い圧迫や、重い物を持ったとき…\n✅ 年齢を重ねて皮膚と血管が弱くなったとき\n✅ ビタミンC・ビタミンKが不足していたり\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/meong-bruise-causes-remedy.html?utm_source=x&utm_medium=social&utm_campaign=meong-bruise-causes-remedy&utm_content=reply_b",
+      "charCount": 144,
+      "image": "social/x/meong-bruise-causes-remedy/card.png"
+    }
+  ],
   "checklist": [
     "運動中の強い圧迫や、重い物を持ったとき…",
     "年齢を重ねて皮膚と血管が弱くなったとき",
@@ -41,30 +72,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：運動中の強い圧迫や、重い物を持ったとき…、年齢を重ねて皮膚と血管が弱くなったとき、ビタミンC・ビタミンKが不足していたり。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/meong-bruise-causes-remedy/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 385964,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/meong-bruise-causes-remedy/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 234763,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:56:00.433Z"
+  "generatedAt": "2026-11-24T08:08:39.709Z"
 }

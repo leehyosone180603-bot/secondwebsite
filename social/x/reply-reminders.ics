@@ -1,0 +1,470 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//healthfortune//x-reply-reminders//JP
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bedtime-3min-sleep-routine-a-2026-11-25@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261125T073300
+DTEND;TZID=Asia/Tokyo:20261125T074300
+SUMMARY:【X 첫 답글】bedtime-3min-sleep-routine A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/bedtime-3min-sleep-routine.html?utm_source=x&utm_medium=social&utm_campaign=bedtime-3min-sleep-routine&utm_content=reply_a\n\n【どの投稿か】今すぐできる入眠6つのチェック\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cold-hands-feet-causes-raynaud-a-2026-11-25@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261125T121300
+DTEND;TZID=Asia/Tokyo:20261125T122300
+SUMMARY:【X 첫 답글】cold-hands-feet-causes-raynaud A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=reply_a\n\n【どの投稿か】今すぐできる手足6つのチェック\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:colonoscopy-prep-guide-a-2026-11-25@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261125T153300
+DTEND;TZID=Asia/Tokyo:20261125T154300
+SUMMARY:【X 첫 답글】colonoscopy-prep-guide A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/colonoscopy-prep-guide.html?utm_source=x&utm_medium=social&utm_campaign=colonoscopy-prep-guide&utm_content=reply_a\n\n【どの投稿か】今すぐできる大腸内視鏡3つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:walking-10000-steps-myth-a-2026-11-25@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261125T183300
+DTEND;TZID=Asia/Tokyo:20261125T184300
+SUMMARY:【X 첫 답글】walking-10000-steps-myth A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/walking-10000-steps-myth.html?utm_source=x&utm_medium=social&utm_campaign=walking-10000-steps-myth&utm_content=reply_a\n\n【どの投稿か】1日1万歩で痩せない？歩数より大事な3つのこと\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bujong-good-5foods-a-2026-11-25@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261125T210300
+DTEND;TZID=Asia/Tokyo:20261125T211300
+SUMMARY:【X 첫 답글】bujong-good-5foods A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/bujong-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=bujong-good-5foods&utm_content=reply_a\n\n【どの投稿か】今すぐできるむくみによい食べ物3つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:biripjong-eye-causes-removal-a-2026-11-26@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261126T073300
+DTEND;TZID=Asia/Tokyo:20261126T074300
+SUMMARY:【X 첫 답글】biripjong-eye-causes-removal A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/biripjong-eye-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=biripjong-eye-causes-removal&utm_content=reply_a\n\n【どの投稿か】今すぐできる稗粒腫4つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:flu-vs-cold-symptoms-a-2026-11-26@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261126T121300
+DTEND;TZID=Asia/Tokyo:20261126T122300
+SUMMARY:【X 첫 답글】flu-vs-cold-symptoms A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/flu-vs-cold-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=flu-vs-cold-symptoms&utm_content=reply_a\n\n【どの投稿か】今すぐできるインフル5つのチェック\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:health-checkup-before-ng-a-2026-11-26@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261126T153300
+DTEND;TZID=Asia/Tokyo:20261126T154300
+SUMMARY:【X 첫 답글】health-checkup-before-ng A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/health-checkup-before-ng.html?utm_source=x&utm_medium=social&utm_campaign=health-checkup-before-ng&utm_content=reply_a\n\n【どの投稿か】今すぐできる健康診断3つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gyeran-good-pairings-3foods-a-2026-11-26@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261126T183300
+DTEND;TZID=Asia/Tokyo:20261126T184300
+SUMMARY:【X 첫 답글】gyeran-good-pairings-3foods A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gyeran-good-pairings-3foods.html?utm_source=x&utm_medium=social&utm_campaign=gyeran-good-pairings-3foods&utm_content=reply_a\n\n【どの投稿か】今すぐできる卵と相性のよい食べ合わせ3つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:choeak-breakfast-4foods-a-2026-11-26@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261126T210300
+DTEND;TZID=Asia/Tokyo:20261126T211300
+SUMMARY:【X 첫 답글】choeak-breakfast-4foods A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=reply_a\n\n【どの投稿か】最悪の朝食4つ？\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:heat-shock-winter-bath-a-2026-11-27@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261127T073300
+DTEND;TZID=Asia/Tokyo:20261127T074300
+SUMMARY:【X 첫 답글】heat-shock-winter-bath A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/heat-shock-winter-bath.html?utm_source=x&utm_medium=social&utm_campaign=heat-shock-winter-bath&utm_content=reply_a\n\n【どの投稿か】ヒートショックを防ぐ冬の入浴7つのルール？\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyeolgwan-cleansing-3foods-a-2026-11-27@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261127T121300
+DTEND;TZID=Asia/Tokyo:20261127T122300
+SUMMARY:【X 첫 답글】hyeolgwan-cleansing-3foods A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=reply_a\n\n【どの投稿か】今すぐできる血管によい食べ物4つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gangbakjeung-symptoms-treatment-a-2026-11-27@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261127T153300
+DTEND;TZID=Asia/Tokyo:20261127T154300
+SUMMARY:【X 첫 답글】gangbakjeung-symptoms-treatment A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gangbakjeung-symptoms-treatment.html?utm_source=x&utm_medium=social&utm_campaign=gangbakjeung-symptoms-treatment&utm_content=reply_a\n\n【どの投稿か】今すぐできる強迫症3つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:raw-oyster-norovirus-symptoms-a-2026-11-27@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261127T183300
+DTEND;TZID=Asia/Tokyo:20261127T184300
+SUMMARY:【X 첫 답글】raw-oyster-norovirus-symptoms A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/raw-oyster-norovirus-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=raw-oyster-norovirus-symptoms&utm_content=reply_a\n\n【どの投稿か】今すぐできる牡蠣5つのチェック\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mechurial-benefits-intake-a-2026-11-27@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261127T210300
+DTEND;TZID=Asia/Tokyo:20261127T211300
+SUMMARY:【X 첫 답글】mechurial-benefits-intake A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=reply_a\n\n【どの投稿か】うずらの卵の効能と1日の推奨摂取量？\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:geonmangjeung-chimae-difference-a-2026-11-28@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261128T090300
+DTEND;TZID=Asia/Tokyo:20261128T091300
+SUMMARY:【X 첫 답글】geonmangjeung-chimae-difference A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/geonmangjeung-chimae-difference.html?utm_source=x&utm_medium=social&utm_campaign=geonmangjeung-chimae-difference&utm_content=reply_a\n\n【どの投稿か】今すぐできる物忘れ4つのチェック\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:roasted-sweet-potato-blood-sugar-a-2026-11-28@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261128T121300
+DTEND;TZID=Asia/Tokyo:20261128T122300
+SUMMARY:【X 첫 답글】roasted-sweet-potato-blood-sugar A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/roasted-sweet-potato-blood-sugar.html?utm_source=x&utm_medium=social&utm_campaign=roasted-sweet-potato-blood-sugar&utm_content=reply_a\n\n【どの投稿か】焼き芋の食べ方、血糖値に優しい？\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tangerine-daily-intake-a-2026-11-28@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261128T153300
+DTEND;TZID=Asia/Tokyo:20261128T154300
+SUMMARY:【X 첫 답글】tangerine-daily-intake A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=reply_a\n\n【どの投稿か】みかんの1日の適量は何個？\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gimjang-back-wrist-pain-a-2026-11-28@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261128T183300
+DTEND;TZID=Asia/Tokyo:20261128T184300
+SUMMARY:【X 첫 답글】gimjang-back-wrist-pain A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=reply_a\n\n【どの投稿か】今すぐできるキムジャン3つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:winter-dry-eye-artificial-tears-a-2026-11-28@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261128T210300
+DTEND;TZID=Asia/Tokyo:20261128T211300
+SUMMARY:【X 첫 답글】winter-dry-eye-artificial-tears A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=reply_a\n\n【どの投稿か】今すぐできるドライアイ6つのチェック\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohyeolap-causes-symptoms-lowering-a-2026-11-29@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261129T090300
+DTEND;TZID=Asia/Tokyo:20261129T091300
+SUMMARY:【X 첫 답글】gohyeolap-causes-symptoms-lowering A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gohyeolap-causes-symptoms-lowering.html?utm_source=x&utm_medium=social&utm_campaign=gohyeolap-causes-symptoms-lowering&utm_content=reply_a\n\n【どの投稿か】今すぐできる高血圧6つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:winter-fatigue-autonomic-a-2026-11-29@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261129T121300
+DTEND;TZID=Asia/Tokyo:20261129T122300
+SUMMARY:【X 첫 답글】winter-fatigue-autonomic A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-fatigue-autonomic.html?utm_source=x&utm_medium=social&utm_campaign=winter-fatigue-autonomic&utm_content=reply_a\n\n【どの投稿か】実は逆効果かも？冬\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hidden-anemia-iron-women-a-2026-11-29@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261129T153300
+DTEND;TZID=Asia/Tokyo:20261129T154300
+SUMMARY:【X 첫 답글】hidden-anemia-iron-women A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/hidden-anemia-iron-women.html?utm_source=x&utm_medium=social&utm_campaign=hidden-anemia-iron-women&utm_content=reply_a\n\n【どの投稿か】冬のだるさは「隠れ貧血」かも？\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:winter-indoor-humidity-guide-a-2026-11-29@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261129T183300
+DTEND;TZID=Asia/Tokyo:20261129T184300
+SUMMARY:【X 첫 답글】winter-indoor-humidity-guide A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=reply_a\n\n【どの投稿か】実は逆効果かも？冬\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:humidifier-cleaning-guide-a-2026-11-29@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261129T210300
+DTEND;TZID=Asia/Tokyo:20261129T211300
+SUMMARY:【X 첫 답글】humidifier-cleaning-guide A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/humidifier-cleaning-guide.html?utm_source=x&utm_medium=social&utm_campaign=humidifier-cleaning-guide&utm_content=reply_a\n\n【どの投稿か】今すぐできる加湿器3つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ipdeot-timing-symptoms-a-2026-11-30@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261130T073300
+DTEND;TZID=Asia/Tokyo:20261130T074300
+SUMMARY:【X 첫 답글】ipdeot-timing-symptoms A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/ipdeot-timing-symptoms.html?utm_source=x&utm_medium=social&utm_campaign=ipdeot-timing-symptoms&utm_content=reply_a\n\n【どの投稿か】今すぐできるつわり6つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jangyeom-good-5foods-a-2026-11-30@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261130T121300
+DTEND;TZID=Asia/Tokyo:20261130T122300
+SUMMARY:【X 첫 답글】jangyeom-good-5foods A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/jangyeom-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jangyeom-good-5foods&utm_content=reply_a\n\n【どの投稿か】今すぐできる腸炎によい食べ物6つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jeonripseon-good-5foods-a-2026-11-30@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261130T153300
+DTEND;TZID=Asia/Tokyo:20261130T154300
+SUMMARY:【X 첫 답글】jeonripseon-good-5foods A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=reply_a\n\n【どの投稿か】今すぐできる前立腺によい食べ物3つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jwijeot-causes-removal-a-2026-11-30@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261130T183300
+DTEND;TZID=Asia/Tokyo:20261130T184300
+SUMMARY:【X 첫 답글】jwijeot-causes-removal A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=reply_a\n\n【どの投稿か】今すぐできる首いぼ6つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:meong-bruise-causes-remedy-a-2026-11-30@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261130T210300
+DTEND;TZID=Asia/Tokyo:20261130T211300
+SUMMARY:【X 첫 답글】meong-bruise-causes-remedy A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/meong-bruise-causes-remedy.html?utm_source=x&utm_medium=social&utm_campaign=meong-bruise-causes-remedy&utm_content=reply_a\n\n【どの投稿か】今すぐできるあざ3つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:naengbangbyeong-early-4symptoms-a-2026-12-01@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261201T073300
+DTEND;TZID=Asia/Tokyo:20261201T074300
+SUMMARY:【X 첫 답글】naengbangbyeong-early-4symptoms A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/naengbangbyeong-early-4symptoms.html?utm_source=x&utm_medium=social&utm_campaign=naengbangbyeong-early-4symptoms&utm_content=reply_a\n\n【どの投稿か】今すぐできる冷房病3つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:national-health-checkup-year-end-missed-a-2026-12-01@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261201T121300
+DTEND;TZID=Asia/Tokyo:20261201T122300
+SUMMARY:【X 첫 답글】national-health-checkup-year-end-missed A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/national-health-checkup-year-end-missed.html?utm_source=x&utm_medium=social&utm_campaign=national-health-checkup-year-end-missed&utm_content=reply_a\n\n【どの投稿か】国の健康診断を年末までに受け損ねたら？\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pasangpung-symptoms-vaccine-a-2026-12-01@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261201T153300
+DTEND;TZID=Asia/Tokyo:20261201T154300
+SUMMARY:【X 첫 답글】pasangpung-symptoms-vaccine A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/pasangpung-symptoms-vaccine.html?utm_source=x&utm_medium=social&utm_campaign=pasangpung-symptoms-vaccine&utm_content=reply_a\n\n【どの投稿か】今すぐできる破傷風6つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sonjeorim-numbness-causes-a-2026-12-01@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261201T183300
+DTEND;TZID=Asia/Tokyo:20261201T184300
+SUMMARY:【X 첫 답글】sonjeorim-numbness-causes A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=reply_a\n\n【どの投稿か】今すぐできる手のしびれ6つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sontop-hangnail-care-a-2026-12-01@healthfortune.co.kr
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Asia/Tokyo:20261201T210300
+DTEND;TZID=Asia/Tokyo:20261201T211300
+SUMMARY:【X 첫 답글】sontop-hangnail-care A — 링크 답글 달기
+DESCRIPTION:先ほど予約投稿された投稿に、下記を『最初の返信(初回リプ)』として貼り付けてください。\n\n【初回リプ】\n詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=reply_a\n\n【どの投稿か】今すぐできる爪4つのポイント\n\n☑ 返信後、その返信に付くコメントにも1時間以内に返信する
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X 첫 답글(初回リプ)を貼る時間です
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

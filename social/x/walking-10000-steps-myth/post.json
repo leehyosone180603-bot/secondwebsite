@@ -1,0 +1,85 @@
+{
+  "slug": "walking-10000-steps-myth",
+  "series": "exercise",
+  "title": "1日1万歩で痩せない？歩数より大事な3つのこと",
+  "url": "/ja/posts/walking-10000-steps-myth.html",
+  "keyword": "1万歩",
+  "hooks": [
+    "1日1万歩で痩せない？歩数より大事な3つのこと",
+    "今すぐできる1万歩6つのチェック"
+  ],
+  "hookTypes": [
+    "myth",
+    "number"
+  ],
+  "hashtags": [
+    "#運動",
+    "#健康"
+  ],
+  "image": "social/x/walking-10000-steps-myth/card.png",
+  "posts": {
+    "a": {
+      "body": "1日1万歩で痩せない？歩数より大事な3つのこと\n\n✅ 歩数は多いが、息が弾む場面がほとん…\n✅ 歩いた日ほど、間食やご褒美が増え…\n✅ 1週間のうち歩くのは数日だけで\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#運動 #健康",
+      "text": "1日1万歩で痩せない？歩数より大事な3つのこと\n\n✅ 歩数は多いが、息が弾む場面がほとん…\n✅ 歩いた日ほど、間食やご褒美が増え…\n✅ 1週間のうち歩くのは数日だけで\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#運動 #健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/walking-10000-steps-myth.html?utm_source=x&utm_medium=social&utm_campaign=walking-10000-steps-myth&utm_content=reply_a",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/walking-10000-steps-myth.html?utm_source=x&utm_medium=social&utm_campaign=walking-10000-steps-myth&utm_content=reply_a",
+      "weighted": 258,
+      "charCount": 141,
+      "ok": true
+    },
+    "b": {
+      "body": "今すぐできる1万歩6つのチェック\n\n✅ 歩数は多いが、息が弾む場面がほとん…\n✅ 歩いた日ほど、間食やご褒美が増え…\n✅ 1週間のうち歩くのは数日だけで\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#運動 #健康",
+      "text": "今すぐできる1万歩6つのチェック\n\n✅ 歩数は多いが、息が弾む場面がほとん…\n✅ 歩いた日ほど、間食やご褒美が増え…\n✅ 1週間のうち歩くのは数日だけで\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#運動 #健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/walking-10000-steps-myth.html?utm_source=x&utm_medium=social&utm_campaign=walking-10000-steps-myth&utm_content=reply_b",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/walking-10000-steps-myth.html?utm_source=x&utm_medium=social&utm_campaign=walking-10000-steps-myth&utm_content=reply_b",
+      "weighted": 275,
+      "charCount": 150,
+      "ok": true
+    }
+  },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "myth",
+      "body": "1日1万歩で痩せない？歩数より大事な3つのこと\n\n✅ 歩数は多いが、息が弾む場面がほとん…\n✅ 歩いた日ほど、間食やご褒美が増え…\n✅ 1週間のうち歩くのは数日だけで\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#運動 #健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/walking-10000-steps-myth.html?utm_source=x&utm_medium=social&utm_campaign=walking-10000-steps-myth&utm_content=reply_a",
+      "charCount": 141,
+      "image": "social/x/walking-10000-steps-myth/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "number",
+      "body": "今すぐできる1万歩6つのチェック\n\n✅ 歩数は多いが、息が弾む場面がほとん…\n✅ 歩いた日ほど、間食やご褒美が増え…\n✅ 1週間のうち歩くのは数日だけで\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#運動 #健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/walking-10000-steps-myth.html?utm_source=x&utm_medium=social&utm_campaign=walking-10000-steps-myth&utm_content=reply_b",
+      "charCount": 150,
+      "image": "social/x/walking-10000-steps-myth/card.png"
+    }
+  ],
+  "checklist": [
+    "歩数は多いが、息が弾む場面がほとんどない",
+    "歩いた日ほど、間食やご褒美が増えている",
+    "1週間のうち歩くのは数日だけで",
+    "だらだら歩きが中心で、歩幅が小さい",
+    "座っている時間が1日合計で8時間を大き…",
+    "歩数計やアプリの数字だけを見て満足して…"
+  ],
+  "points": [
+    "歩数は多いが、息が弾む場面がほとんどない",
+    "歩いた日ほど、間食やご褒美が増えている",
+    "1週間のうち歩くのは数日だけで、日によってムラが大きい"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：歩数は多いが、息が弾む場面がほとんどない、歩いた日ほど、間食やご褒美が増えている、1週間のうち歩くのは数日だけで、だらだら歩きが中心で、歩幅が小さい、座っている時間が1日合計で8時間を大き…、歩数計やアプリの数字だけを見て満足して…。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-24T08:08:39.661Z"
+}
