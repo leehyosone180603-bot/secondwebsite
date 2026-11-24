@@ -41,6 +41,8 @@ img { max-width: 100%; display: block; }
 
 /* ── 광고 영역 ── */
 .ad { margin: 0 0 18px; text-align: center; }
+/* 본문 수동 광고(계산기·나이 글 등) 높이 예약 → 광고 로드 시 레이아웃 밀림(CLS) 완화 */
+.ad-container { margin: 22px auto; text-align: center; min-height: 120px; }
 /* 쿠팡 파트너스 배너 (홈 히어로 아래) — 데스크톱 728×90 / 모바일 320×100 전환 */
 .coupang-ad { text-align: center; margin: 18px 0 6px; min-height: 90px; overflow: hidden; }
 .coupang-ad .cpq--mobile { display: none; }
