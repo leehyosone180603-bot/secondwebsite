@@ -240,7 +240,7 @@ async function gen(slug, opts) {
 
 /* queue.csv: 하루 최대 3편·슬롯 분산(평일 07:30/12:15/21:00, 주말 09:00/21:00)·A/B 3일 간격. */
 function ymd(d) { return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2); }
-function slotsOf(dateStr) { const wd = new Date(dateStr + "T00:00:00").getDay(); return (wd === 0 || wd === 6) ? ["09:00", "21:00"] : ["07:30", "12:15", "21:00"]; }
+function slotsOf(dateStr) { const wd = new Date(dateStr + "T00:00:00").getDay(); return (wd === 0 || wd === 6) ? ["09:00", "12:10", "15:30", "18:30", "21:00"] : ["07:30", "12:10", "15:30", "18:30", "21:00"]; }
 function nextFreeSlot(rows, minDateStr) {
   const d = new Date(); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() + 1);
   if (minDateStr) { const m = new Date(minDateStr + "T00:00:00"); if (m > d) d.setTime(m.getTime()); }

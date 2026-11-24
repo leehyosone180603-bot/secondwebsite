@@ -1,7 +1,7 @@
 /* X 게시 큐 재배치 (B-5)
  *   node scripts/x-queue-rebuild.js
- * social/x/<slug>/post.json 전체를 모아 내일부터 하루 최대 3편·슬롯 분산·A/B 3일 간격·같은 시리즈 연속 회피로 queue.csv 재작성.
- * 평일 07:30/12:15/21:00, 주말 09:00/21:00 (하루 최대 3편).
+ * social/x/<slug>/post.json 전체를 모아 내일부터 하루 최대 5편·슬롯 분산·A/B 3일 간격·같은 시리즈 연속 회피로 queue.csv 재작성.
+ * 평일 07:30/12:10/15:30/18:30/21:00, 주말 09:00/12:10/15:30/18:30/21:00 (하루 5편).
  */
 "use strict";
 const fs = require("fs");
@@ -9,8 +9,8 @@ const path = require("path");
 const ROOT = path.resolve(__dirname, "..");
 const SOCIAL = path.join(ROOT, "social", "x");
 
-const SLOTS_WD = ["07:30", "12:15", "21:00"]; // 평일 최대 3편/일
-const SLOTS_WE = ["09:00", "21:00"];          // 주말 최대 2편/일
+const SLOTS_WD = ["07:30", "12:10", "15:30", "18:30", "21:00"]; // 평일 5편/일
+const SLOTS_WE = ["09:00", "12:10", "15:30", "18:30", "21:00"]; // 주말 5편/일
 function ymd(d) { return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2); }
 function slotsFor(d) { const wd = d.getDay(); return (wd === 0 || wd === 6) ? SLOTS_WE : SLOTS_WD; }
 
