@@ -8,6 +8,86 @@
   },
   "items": [
     {
+      "n": 49,
+      "slug": "walking-10000-steps-myth",
+      "titleJa": "1日1万歩で痩せない？歩数より大事な3つのこと",
+      "keyword": "1万歩 痩せない",
+      "category": "exercise",
+      "jaOnly": true,
+      "status": "pending",
+      "basis": "2026-11-24 X 수요조사"
+    },
+    {
+      "n": 50,
+      "slug": "weekend-catch-up-sleep",
+      "titleJa": "週末の寝だめは逆効果？睡眠負債の正しい返し方",
+      "keyword": "寝だめ 睡眠負債",
+      "category": "info",
+      "jaOnly": true,
+      "status": "pending",
+      "basis": "2026-11-24 X 수요조사"
+    },
+    {
+      "n": 51,
+      "slug": "hidden-anemia-iron-women",
+      "titleJa": "冬のだるさは「隠れ貧血」かも？鉄不足のサインと食べ方",
+      "keyword": "隠れ貧血 鉄不足",
+      "category": "info",
+      "jaOnly": true,
+      "status": "pending",
+      "basis": "2026-11-24 X 수요조사"
+    },
+    {
+      "n": 52,
+      "slug": "bedtime-3min-sleep-routine",
+      "titleJa": "寝る前3分でできる入眠ルーティン（筋弛緩法・呼吸）",
+      "keyword": "入眠 ルーティン",
+      "category": "info",
+      "jaOnly": true,
+      "status": "pending",
+      "basis": "2026-11-24 X 수요조사"
+    },
+    {
+      "n": 53,
+      "slug": "winter-constipation-gut-habits",
+      "titleJa": "冬に便秘が増える理由と、腸を動かす5つの習慣",
+      "keyword": "冬 便秘 腸活",
+      "category": "info",
+      "jaOnly": true,
+      "status": "pending",
+      "basis": "2026-11-24 X 수요조사"
+    },
+    {
+      "n": 54,
+      "slug": "colonoscopy-prep-guide",
+      "titleJa": "大腸内視鏡の前日・当日ガイド：下剤2Lを楽に飲むコツ",
+      "keyword": "大腸内視鏡 下剤 コツ",
+      "category": "check",
+      "jaOnly": true,
+      "status": "pending",
+      "basis": "2026-11-24 X 수요조사"
+    },
+    {
+      "n": 55,
+      "slug": "health-checkup-before-ng",
+      "titleJa": "健康診断の前日・当日にやってはいけない7つのこと",
+      "keyword": "健康診断 前日 やってはいけない",
+      "category": "check",
+      "jaOnly": true,
+      "status": "pending",
+      "basis": "2026-11-24 X 수요조사"
+    },
+    {
+      "n": 56,
+      "slug": "winter-fatigue-autonomic",
+      "titleJa": "冬のだるさ・やる気が出ない原因：日照・自律神経・睡眠",
+      "keyword": "冬 だるい 自律神経",
+      "category": "season",
+      "jaOnly": true,
+      "status": "pending",
+      "basis": "2026-11-24 X 수요조사"
+    },
+    {
       "n": 4,
       "slug": "winter-indoor-humidity-guide",
       "titleJa": "冬の部屋の湿度は何％が正解？加湿器なしでできる5つの方法",
