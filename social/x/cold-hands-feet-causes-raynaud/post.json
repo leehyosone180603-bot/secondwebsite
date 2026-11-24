@@ -14,16 +14,18 @@
   ],
   "posts": {
     "a": {
-      "text": "手足、知っておきたい6つのチェック\n\n✅ 手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあり…\n✅ 指先が白→青→赤と色が変わる場合は\n✅ 色の変化を繰り返す、痛みや皮膚の硬さを伴うときは\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=a\n\n#健康 #冬の健康",
+      "text": "手足、知っておきたい6つのチェック\n\n✅ 手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあります\n✅ 指先が白→青→赤と色が変わるなら、レイノー現象の可能性も\n✅ 色の変化を繰り返し、痛みや皮膚の硬さを伴うときは受診の目安\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=a\n\n#健康 #冬の健康",
       "link": "https://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=a",
       "weighted": 240,
-      "ok": true
+      "ok": true,
+      "edited": "complete-sentence-fix-2026-11-24"
     },
     "b": {
-      "text": "手足、6つのチェック\n\n✅ 手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあり…\n✅ 指先が白→青→赤と色が変わる場合は\n✅ 色の変化を繰り返す、痛みや皮膚の硬さを伴うときは\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=b\n\n#健康 #冬の健康",
+      "text": "手足、6つのチェック\n\n✅ 手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあります\n✅ 指先が白→青→赤と色が変わるなら、レイノー現象の可能性も\n✅ 色の変化を繰り返し、痛みや皮膚の硬さを伴うときは受診の目安\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=b\n\n#健康 #冬の健康",
       "link": "https://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=b",
       "weighted": 226,
-      "ok": true
+      "ok": true,
+      "edited": "complete-sentence-fix-2026-11-24"
     }
   },
   "checklist": [
@@ -35,9 +37,9 @@
     "緊張やストレスでも指先の色が変わる"
   ],
   "points": [
-    "手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあり…",
-    "指先が白→青→赤と色が変わる場合は",
-    "色の変化を繰り返す、痛みや皮膚の硬さを伴うときは"
+    "手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあります",
+    "指先が白→青→赤と色が変わるなら、レイノー現象の可能性も",
+    "色の変化を繰り返し、痛みや皮膚の硬さを伴うときは受診の目安"
   ],
   "card": {
     "vertical": "card.png",

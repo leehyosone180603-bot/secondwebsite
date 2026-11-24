@@ -14,16 +14,18 @@
   ],
   "posts": {
     "a": {
-      "text": "最悪の朝食4つ？\n\n✅ 砂糖入りシリアルの代わりに温かい水一杯…\n✅ パンとジャムの代わりにレシチンが豊富な…\n✅ ジュースの代わりに生の果物を少しと無糖…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=a\n\n#健康 #健康情報",
+      "text": "最悪の朝食4つ？\n\n✅ 砂糖入りシリアルの代わりに、温かい水一杯とゆで卵\n✅ パンとジャムの代わりに、レシチンが豊富な豆腐やナッツひとつかみ\n✅ ジュースの代わりに、生の果物を少しと無糖ヨーグルト\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=a\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=a",
       "weighted": 200,
-      "ok": true
+      "ok": true,
+      "edited": "complete-sentence-fix-2026-11-24"
     },
     "b": {
-      "text": "最悪の朝食4つ\n\n✅ 砂糖入りシリアルの代わりに温かい水一杯…\n✅ パンとジャムの代わりにレシチンが豊富な…\n✅ ジュースの代わりに生の果物を少しと無糖…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=b\n\n#健康 #健康情報",
+      "text": "最悪の朝食4つ\n\n✅ 砂糖入りシリアルの代わりに、温かい水一杯とゆで卵\n✅ パンとジャムの代わりに、レシチンが豊富な豆腐やナッツひとつかみ\n✅ ジュースの代わりに、生の果物を少しと無糖ヨーグルト\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=b\n\n#健康 #健康情報",
       "link": "https://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=b",
       "weighted": 198,
-      "ok": true
+      "ok": true,
+      "edited": "complete-sentence-fix-2026-11-24"
     }
   },
   "checklist": [
@@ -32,9 +34,9 @@
     "ジュースの代わりに生の果物を少しと無糖…"
   ],
   "points": [
-    "砂糖入りシリアルの代わりに温かい水一杯…",
-    "パンとジャムの代わりにレシチンが豊富な…",
-    "ジュースの代わりに生の果物を少しと無糖…"
+    "砂糖入りシリアルの代わりに、温かい水一杯とゆで卵",
+    "パンとジャムの代わりに、レシチンが豊富な豆腐やナッツひとつかみ",
+    "ジュースの代わりに、生の果物を少しと無糖ヨーグルト"
   ],
   "card": {
     "vertical": "card.png",
