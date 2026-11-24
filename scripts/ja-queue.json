@@ -61,7 +61,8 @@
       "jaOnly": false,
       "koSource": "gyeran-good-pairings-3foods",
       "std": "厚労省『日本人の食事摂取基準(2025年版)』のコレステロールの扱いを最新版で確認し年度を明記",
-      "status": "pending"
+      "status": "done",
+      "skipped": "슬러그 중복: 동일 slug의 기존 라이브 글(다른 제목)이 있어 덮어쓰기 방지 위해 발행 생략(2026-11-24)"
     },
     {
       "n": 9,
@@ -72,7 +73,8 @@
       "jaOnly": false,
       "koSource": "tongpung-avoid-5foods",
       "std": "日本痛風・尿酸核酸学会ガイドライン。プリン体1日400mg目安",
-      "status": "pending"
+      "status": "done",
+      "skipped": "슬러그 중복: 동일 slug의 기존 라이브 글(다른 제목)이 있어 덮어쓰기 방지 위해 발행 생략(2026-11-24)"
     },
     {
       "n": 27,
@@ -383,7 +385,8 @@
       "jaOnly": false,
       "koSource": "sonjeorim-numbness-causes",
       "std": "手根管症候群·頸椎·末梢神経. すぐ受診すべきサイン 박스 필수",
-      "status": "pending"
+      "status": "done",
+      "skipped": "슬러그 중복: 동일 slug의 기존 라이브 글(다른 제목)이 있어 덮어쓰기 방지 위해 발행 생략(2026-11-24)"
     },
     {
       "n": 11,
@@ -394,7 +397,8 @@
       "jaOnly": false,
       "koSource": "jwijeot-causes-removal",
       "std": "軟性線維腫. 자가처리 위험, 皮膚科",
-      "status": "pending"
+      "status": "done",
+      "skipped": "슬러그 중복: 동일 slug의 기존 라이브 글(다른 제목)이 있어 덮어쓰기 방지 위해 발행 생략(2026-11-24)"
     },
     {
       "n": 12,
@@ -405,7 +409,8 @@
       "jaOnly": false,
       "koSource": "biripjong-eye-causes-removal",
       "std": "자가제거 금지, 皮膚科",
-      "status": "pending"
+      "status": "done",
+      "skipped": "슬러그 중복: 동일 slug의 기존 라이브 글(다른 제목)이 있어 덮어쓰기 방지 위해 발행 생략(2026-11-24)"
     },
     {
       "n": 13,
@@ -416,7 +421,8 @@
       "jaOnly": false,
       "koSource": "meong-bruise-causes-remedy",
       "std": "受診目安(頻発·広範囲·出血傾向). 治す/治る 금지",
-      "status": "pending"
+      "status": "done",
+      "skipped": "슬러그 중복: 동일 slug의 기존 라이브 글(다른 제목)이 있어 덮어쓰기 방지 위해 발행 생략(2026-11-24)"
     },
     {
       "n": 14,
@@ -427,7 +433,8 @@
       "jaOnly": false,
       "koSource": "sontop-hangnail-care",
       "std": "乾燥·영양. ひょう疽(化膿) 受診목표",
-      "status": "pending"
+      "status": "done",
+      "skipped": "슬러그 중복: 동일 slug의 기존 라이브 글(다른 제목)이 있어 덮어쓰기 방지 위해 발행 생략(2026-11-24)"
     },
     {
       "n": 15,
@@ -438,7 +445,8 @@
       "jaOnly": false,
       "koSource": "bujong-good-5foods",
       "std": "カリウム. 腎臓病 제한 주의",
-      "status": "pending"
+      "status": "done",
+      "skipped": "슬러그 중복: 동일 slug의 기존 라이브 글(다른 제목)이 있어 덮어쓰기 방지 위해 발행 생략(2026-11-24)"
     },
     {
       "n": 16,
@@ -449,7 +457,8 @@
       "jaOnly": false,
       "koSource": "gohyeolap-causes-symptoms-lowering",
       "std": "日本高血圧学会 최신 가이드라인 기준치. 診察室血圧·家庭血圧 목표치 구분(WebSearch 확인)",
-      "status": "pending"
+      "status": "done",
+      "skipped": "슬러그 중복: 동일 slug의 기존 라이브 글(다른 제목)이 있어 덮어쓰기 방지 위해 발행 생략(2026-11-24)"
     },
     {
       "n": 17,
@@ -460,7 +469,8 @@
       "jaOnly": false,
       "koSource": "abocado-ripening-benefits",
       "std": "日本食品標準成分表. 脂質 많으니 양 목표",
-      "status": "pending"
+      "status": "done",
+      "skipped": "슬러그 중복: 동일 slug의 기존 라이브 글(다른 제목)이 있어 덮어쓰기 방지 위해 발행 생략(2026-11-24)"
     },
     {
       "n": 18,
@@ -471,7 +481,8 @@
       "jaOnly": false,
       "koSource": "choeak-breakfast-4foods",
       "std": "血糖急上昇, 단백질 조합",
-      "status": "pending"
+      "status": "done",
+      "skipped": "슬러그 중복: 동일 slug의 기존 라이브 글(다른 제목)이 있어 덮어쓰기 방지 위해 발행 생략(2026-11-24)"
     },
     {
       "n": 45,
