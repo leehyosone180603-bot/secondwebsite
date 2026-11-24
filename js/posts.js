@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "civil-defense-age-limit-2026",
+    title: "민방위 나이 몇 살까지? 2026년 1986년생이 마지막, 출생연도별 종료 시점",
+    summary: "민방위 나이는 40세가 되는 해 12월 31일까지입니다. 2026년엔 1986년생이 마지막 해, 출생연도별 종료 시점과 편성 제외 대상, 연차별 교육과 불참 시 조치를 정리했습니다.",
+    category: "calc",
+    date: "2026-11-25",
+    url: "/posts/civil-defense-age-limit-2026.html",
+    image: "/img/civil-defense-age-limit-2026-1.jpg",
+  },
+  {
     id: "winter-morning-blood-pressure-high-reasons",
     title: "겨울 아침 혈압 높은 이유와 정확히 재는 법, 집에서 135/85 넘으면 주의",
     summary: "겨울 아침 혈압이 유독 높게 나오는 이유와 대한고혈압학회가 안내하는 가정혈압 측정 시간·자세, 집에서 잰 혈압의 고혈압 기준 135/85mmHg, 겨울철 관리법을 정리했습니다.",
