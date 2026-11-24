@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "born-2008-alcohol-tobacco-purchase-age-2027",
+    title: "2008년생 술 담배 구매 나이, 2027년 1월 1일부터 생일 상관없이 가능",
+    summary: "2008년생은 2027년 1월 1일부터 생일과 관계없이 술·담배 구매가 가능합니다. 청소년보호법 연 나이 기준, 만 나이와 차이, 판매자 신분증 확인까지 정리했습니다.",
+    category: "calc",
+    date: "2026-11-24",
+    url: "/posts/born-2008-alcohol-tobacco-purchase-age-2027.html",
+    image: "/img/born-2008-alcohol-tobacco-purchase-age-2027-1.jpg",
+  },
+  {
     id: "electric-blanket-low-temperature-burn-symptoms",
     title: "전기장판 저온화상 증상과 응급처치, 자고 일어나 붉은 얼룩 생겼다면",
     summary: "전기장판을 켜고 잔 뒤 피부가 붉게 얼룩졌다면 저온화상일 수 있습니다. 저온화상이 생기는 원리, 증상, 집에서 하는 응급처치, 병원 가야 할 신호와 잠들기 전 예방 체크리스트를 정리했습니다.",
