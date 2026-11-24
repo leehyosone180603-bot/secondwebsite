@@ -5,27 +5,58 @@
   "url": "/ja/posts/abocado-ripening-benefits.html",
   "keyword": "アボカド",
   "hooks": [
-    "アボカドの追熟方法と効能・カロリー・食べ方？",
-    "アボカド、知っておきたい3つのポイント"
+    "今すぐできるアボカド3つのポイント",
+    "実は逆効果かも？アボカド"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#食事"
   ],
+  "image": "social/x/abocado-ripening-benefits/card.png",
   "posts": {
     "a": {
-      "text": "アボカドの追熟方法と効能・カロリー・食べ方？\n\n✅ スーパーフード、アボカドの効能 & カ…\n✅ 失敗しないアボカドの追熟方法\n✅ いろいろ楽しむアボカドの食べ方\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=a\n\n#健康 #食事",
-      "link": "https://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=a",
-      "weighted": 202,
+      "body": "今すぐできるアボカド3つのポイント\n\n✅ スーパーフード、アボカドの効能 & カ…\n✅ 失敗しないアボカドの追熟方法\n✅ いろいろ楽しむアボカドの食べ方\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "text": "今すぐできるアボカド3つのポイント\n\n✅ スーパーフード、アボカドの効能 & カ…\n✅ 失敗しないアボカドの追熟方法\n✅ いろいろ楽しむアボカドの食べ方\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=reply_a",
+      "weighted": 225,
+      "charCount": 124,
       "ok": true
     },
     "b": {
-      "text": "アボカド、知っておきたい3つのポイント\n\n✅ スーパーフード、アボカドの効能 & カ…\n✅ 失敗しないアボカドの追熟方法\n✅ いろいろ楽しむアボカドの食べ方\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=b\n\n#健康 #食事",
-      "link": "https://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=b",
-      "weighted": 195,
+      "body": "実は逆効果かも？アボカド\n\n✅ スーパーフード、アボカドの効能 & カ…\n✅ 失敗しないアボカドの追熟方法\n✅ いろいろ楽しむアボカドの食べ方\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "text": "実は逆効果かも？アボカド\n\n✅ スーパーフード、アボカドの効能 & カ…\n✅ 失敗しないアボカドの追熟方法\n✅ いろいろ楽しむアボカドの食べ方\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=reply_b",
+      "weighted": 246,
+      "charCount": 135,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできるアボカド3つのポイント\n\n✅ スーパーフード、アボカドの効能 & カ…\n✅ 失敗しないアボカドの追熟方法\n✅ いろいろ楽しむアボカドの食べ方\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=reply_a",
+      "charCount": 124,
+      "image": "social/x/abocado-ripening-benefits/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？アボカド\n\n✅ スーパーフード、アボカドの効能 & カ…\n✅ 失敗しないアボカドの追熟方法\n✅ いろいろ楽しむアボカドの食べ方\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/abocado-ripening-benefits.html?utm_source=x&utm_medium=social&utm_campaign=abocado-ripening-benefits&utm_content=reply_b",
+      "charCount": 135,
+      "image": "social/x/abocado-ripening-benefits/card.png"
+    }
+  ],
   "checklist": [
     "スーパーフード、アボカドの効能 & カ…",
     "失敗しないアボカドの追熟方法",
@@ -41,30 +72,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：スーパーフード、アボカドの効能 & カ…、失敗しないアボカドの追熟方法、いろいろ楽しむアボカドの食べ方。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/abocado-ripening-benefits/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 387759,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/abocado-ripening-benefits/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 232470,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:56:00.021Z"
+  "generatedAt": "2026-11-24T05:42:09.175Z"
 }

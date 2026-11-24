@@ -5,27 +5,58 @@
   "url": "/ja/posts/jwijeot-causes-removal.html",
   "keyword": "首いぼ",
   "hooks": [
-    "首いぼ、知っておきたい6つのポイント",
-    "首いぼ、6つのポイント"
+    "今すぐできる首いぼ6つのポイント",
+    "実は逆効果かも？首いぼ"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#健康情報"
   ],
+  "image": "social/x/jwijeot-causes-removal/card.png",
   "posts": {
     "a": {
-      "text": "首いぼ、知っておきたい6つのポイント\n\n✅ 皮膚の摩擦\n✅ 加齢\n✅ 遺伝的な影響\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=a\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=a",
-      "weighted": 129,
+      "body": "今すぐできる首いぼ6つのポイント\n\n✅ 皮膚の摩擦\n✅ 加齢\n✅ 遺伝的な影響\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "今すぐできる首いぼ6つのポイント\n\n✅ 皮膚の摩擦\n✅ 加齢\n✅ 遺伝的な影響\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=reply_a",
+      "weighted": 159,
+      "charCount": 89,
       "ok": true
     },
     "b": {
-      "text": "首いぼ、6つのポイント\n\n✅ 皮膚の摩擦\n✅ 加齢\n✅ 遺伝的な影響\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=b\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=b",
-      "weighted": 115,
+      "body": "実は逆効果かも？首いぼ\n\n✅ 皮膚の摩擦\n✅ 加齢\n✅ 遺伝的な影響\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？首いぼ\n\n✅ 皮膚の摩擦\n✅ 加齢\n✅ 遺伝的な影響\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=reply_b",
+      "weighted": 180,
+      "charCount": 100,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる首いぼ6つのポイント\n\n✅ 皮膚の摩擦\n✅ 加齢\n✅ 遺伝的な影響\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=reply_a",
+      "charCount": 89,
+      "image": "social/x/jwijeot-causes-removal/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？首いぼ\n\n✅ 皮膚の摩擦\n✅ 加齢\n✅ 遺伝的な影響\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/jwijeot-causes-removal.html?utm_source=x&utm_medium=social&utm_campaign=jwijeot-causes-removal&utm_content=reply_b",
+      "charCount": 100,
+      "image": "social/x/jwijeot-causes-removal/card.png"
+    }
+  ],
   "checklist": [
     "皮膚の摩擦",
     "加齢",
@@ -44,30 +75,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：皮膚の摩擦、加齢、遺伝的な影響、肥満、ホルモンの変化／妊娠、糖尿病。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/jwijeot-causes-removal/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 366424,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/jwijeot-causes-removal/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 208784,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:57.046Z"
+  "generatedAt": "2026-11-24T05:42:09.167Z"
 }

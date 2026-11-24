@@ -5,27 +5,58 @@
   "url": "/ja/posts/gimjang-back-wrist-pain.html",
   "keyword": "キムジャン",
   "hooks": [
-    "キムジャン後の腰・手首の痛み？",
-    "キムジャン、知っておきたい3つのポイント"
+    "今すぐできるキムジャン3つのポイント",
+    "実は逆効果かも？キムジャン"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#健康情報"
   ],
+  "image": "social/x/gimjang-back-wrist-pain/card.png",
   "posts": {
     "a": {
-      "text": "キムジャン後の腰・手首の痛み？\n\n✅ 休んでも痛みが1週間以上続くとき\n✅ お尻や脚のほうへしびれや引きつる感じが…\n✅ ふだんからあった腰の痛みが目に見えてひ…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=a\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=a",
-      "weighted": 207,
+      "body": "今すぐできるキムジャン3つのポイント\n\n✅ 休んでも痛みが1週間以上続くとき\n✅ お尻や脚のほうへしびれや引きつる感じが…\n✅ ふだんからあった腰の痛みが目に見えてひ…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "今すぐできるキムジャン3つのポイント\n\n✅ 休んでも痛みが1週間以上続くとき\n✅ お尻や脚のほうへしびれや引きつる感じが…\n✅ ふだんからあった腰の痛みが目に見えてひ…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=reply_a",
+      "weighted": 246,
+      "charCount": 134,
       "ok": true
     },
     "b": {
-      "text": "キムジャン、知っておきたい3つのポイント\n\n✅ 休んでも痛みが1週間以上続くとき\n✅ お尻や脚のほうへしびれや引きつる感じが…\n✅ ふだんからあった腰の痛みが目に見えてひ…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=b\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=b",
-      "weighted": 216,
+      "body": "実は逆効果かも？キムジャン\n\n✅ 休んでも痛みが1週間以上続くとき\n✅ お尻や脚のほうへしびれや引きつる感じが…\n✅ ふだんからあった腰の痛みが目に見えてひ…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？キムジャン\n\n✅ 休んでも痛みが1週間以上続くとき\n✅ お尻や脚のほうへしびれや引きつる感じが…\n✅ ふだんからあった腰の痛みが目に見えてひ…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=reply_b",
+      "weighted": 267,
+      "charCount": 145,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできるキムジャン3つのポイント\n\n✅ 休んでも痛みが1週間以上続くとき\n✅ お尻や脚のほうへしびれや引きつる感じが…\n✅ ふだんからあった腰の痛みが目に見えてひ…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=reply_a",
+      "charCount": 134,
+      "image": "social/x/gimjang-back-wrist-pain/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？キムジャン\n\n✅ 休んでも痛みが1週間以上続くとき\n✅ お尻や脚のほうへしびれや引きつる感じが…\n✅ ふだんからあった腰の痛みが目に見えてひ…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/gimjang-back-wrist-pain.html?utm_source=x&utm_medium=social&utm_campaign=gimjang-back-wrist-pain&utm_content=reply_b",
+      "charCount": 145,
+      "image": "social/x/gimjang-back-wrist-pain/card.png"
+    }
+  ],
   "checklist": [
     "休んでも痛みが1週間以上続くとき",
     "お尻や脚のほうへしびれや引きつる感じが…",
@@ -41,30 +72,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：休んでも痛みが1週間以上続くとき、お尻や脚のほうへしびれや引きつる感じが…、ふだんからあった腰の痛みが目に見えてひ…。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/gimjang-back-wrist-pain/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 391885,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/gimjang-back-wrist-pain/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 239083,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:56:02.241Z"
+  "generatedAt": "2026-11-24T05:42:09.180Z"
 }

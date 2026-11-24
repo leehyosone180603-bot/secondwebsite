@@ -6,26 +6,57 @@
   "keyword": "うずらの卵",
   "hooks": [
     "うずらの卵の効能と1日の推奨摂取量？",
-    "うずらの卵の効能と1日の推奨摂取量"
+    "今すぐできるうずらの卵3つのポイント"
+  ],
+  "hookTypes": [
+    "myth",
+    "number"
   ],
   "hashtags": [
     "#健康",
     "#食事"
   ],
+  "image": "social/x/mechurial-benefits-intake/card.png",
   "posts": {
     "a": {
-      "text": "うずらの卵の効能と1日の推奨摂取量？\n\n✅ 小さな卵に詰まったうずらの卵の効能\n✅ うずらの卵の効能5つ\n✅ うずらの卵の1日の推奨摂取量\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=a\n\n#健康 #食事",
-      "link": "https://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=a",
-      "weighted": 179,
+      "body": "うずらの卵の効能と1日の推奨摂取量？\n\n✅ 小さな卵に詰まったうずらの卵の効能\n✅ うずらの卵の効能5つ\n✅ うずらの卵の1日の推奨摂取量\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "text": "うずらの卵の効能と1日の推奨摂取量？\n\n✅ 小さな卵に詰まったうずらの卵の効能\n✅ うずらの卵の効能5つ\n✅ うずらの卵の1日の推奨摂取量\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=reply_a",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=reply_a",
+      "weighted": 213,
+      "charCount": 117,
       "ok": true
     },
     "b": {
-      "text": "うずらの卵の効能と1日の推奨摂取量\n\n✅ 小さな卵に詰まったうずらの卵の効能\n✅ うずらの卵の効能5つ\n✅ うずらの卵の1日の推奨摂取量\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=b\n\n#健康 #食事",
-      "link": "https://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=b",
-      "weighted": 177,
+      "body": "今すぐできるうずらの卵3つのポイント\n\n✅ 小さな卵に詰まったうずらの卵の効能\n✅ うずらの卵の効能5つ\n✅ うずらの卵の1日の推奨摂取量\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "text": "今すぐできるうずらの卵3つのポイント\n\n✅ 小さな卵に詰まったうずらの卵の効能\n✅ うずらの卵の効能5つ\n✅ うずらの卵の1日の推奨摂取量\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=reply_b",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=reply_b",
+      "weighted": 243,
+      "charCount": 133,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "myth",
+      "body": "うずらの卵の効能と1日の推奨摂取量？\n\n✅ 小さな卵に詰まったうずらの卵の効能\n✅ うずらの卵の効能5つ\n✅ うずらの卵の1日の推奨摂取量\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=reply_a",
+      "charCount": 117,
+      "image": "social/x/mechurial-benefits-intake/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "number",
+      "body": "今すぐできるうずらの卵3つのポイント\n\n✅ 小さな卵に詰まったうずらの卵の効能\n✅ うずらの卵の効能5つ\n✅ うずらの卵の1日の推奨摂取量\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/mechurial-benefits-intake.html?utm_source=x&utm_medium=social&utm_campaign=mechurial-benefits-intake&utm_content=reply_b",
+      "charCount": 133,
+      "image": "social/x/mechurial-benefits-intake/card.png"
+    }
+  ],
   "checklist": [
     "小さな卵に詰まったうずらの卵の効能",
     "うずらの卵の効能5つ",
@@ -41,30 +72,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：小さな卵に詰まったうずらの卵の効能、うずらの卵の効能5つ、うずらの卵の1日の推奨摂取量。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/mechurial-benefits-intake/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 392896,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/mechurial-benefits-intake/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 235710,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:57.897Z"
+  "generatedAt": "2026-11-24T05:42:09.169Z"
 }

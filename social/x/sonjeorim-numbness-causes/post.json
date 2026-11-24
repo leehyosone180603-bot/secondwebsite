@@ -5,27 +5,58 @@
   "url": "/ja/posts/sonjeorim-numbness-causes.html",
   "keyword": "手のしびれ",
   "hooks": [
-    "手のしびれ、知っておきたい6つのポイント",
-    "手のしびれ、6つのポイント"
+    "今すぐできる手のしびれ6つのポイント",
+    "実は逆効果かも？手のしびれ"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#健康情報"
   ],
+  "image": "social/x/sonjeorim-numbness-causes/card.png",
   "posts": {
     "a": {
-      "text": "手のしびれ、知っておきたい6つのポイント\n\n✅ 手根管症候群\n✅ 頸椎椎間板ヘルニア\n✅ 血行障害\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=a\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=a",
-      "weighted": 145,
+      "body": "今すぐできる手のしびれ6つのポイント\n\n✅ 手根管症候群\n✅ 頸椎椎間板ヘルニア\n✅ 血行障害\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "今すぐできる手のしびれ6つのポイント\n\n✅ 手根管症候群\n✅ 頸椎椎間板ヘルニア\n✅ 血行障害\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=reply_a",
+      "weighted": 175,
+      "charCount": 97,
       "ok": true
     },
     "b": {
-      "text": "手のしびれ、6つのポイント\n\n✅ 手根管症候群\n✅ 頸椎椎間板ヘルニア\n✅ 血行障害\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=b\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=b",
-      "weighted": 131,
+      "body": "実は逆効果かも？手のしびれ\n\n✅ 手根管症候群\n✅ 頸椎椎間板ヘルニア\n✅ 血行障害\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？手のしびれ\n\n✅ 手根管症候群\n✅ 頸椎椎間板ヘルニア\n✅ 血行障害\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=reply_b",
+      "weighted": 196,
+      "charCount": 108,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる手のしびれ6つのポイント\n\n✅ 手根管症候群\n✅ 頸椎椎間板ヘルニア\n✅ 血行障害\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=reply_a",
+      "charCount": 97,
+      "image": "social/x/sonjeorim-numbness-causes/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？手のしびれ\n\n✅ 手根管症候群\n✅ 頸椎椎間板ヘルニア\n✅ 血行障害\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/sonjeorim-numbness-causes.html?utm_source=x&utm_medium=social&utm_campaign=sonjeorim-numbness-causes&utm_content=reply_b",
+      "charCount": 108,
+      "image": "social/x/sonjeorim-numbness-causes/card.png"
+    }
+  ],
   "checklist": [
     "手根管症候群",
     "頸椎椎間板ヘルニア",
@@ -44,30 +75,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：手根管症候群、頸椎椎間板ヘルニア、血行障害、関節炎、糖尿病による末梢神経の損傷、ビタミンB群の不足。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/sonjeorim-numbness-causes/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 378104,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/sonjeorim-numbness-causes/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 210533,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:58.333Z"
+  "generatedAt": "2026-11-24T05:42:09.170Z"
 }

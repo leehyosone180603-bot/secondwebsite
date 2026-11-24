@@ -5,27 +5,58 @@
   "url": "/ja/posts/hyeolgwan-cleansing-3foods.html",
   "keyword": "血管によい食べ物",
   "hooks": [
-    "血管によい食べ物、知っておきたい4つのポイント",
-    "血管によい食べ物、4つのポイント"
+    "今すぐできる血管によい食べ物4つのポイント",
+    "実は逆効果かも？血管によい食べ物"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#食事"
   ],
+  "image": "social/x/hyeolgwan-cleansing-3foods/card.png",
   "posts": {
     "a": {
-      "text": "血管によい食べ物、知っておきたい4つのポイント\n\n✅ ① サイリウム — 水に溶かして飲むと…\n✅ ② 紅麹米 — ご飯に少し混ぜると肝臓…\n✅ ③ 玉ねぎ — 毎日食べる食材ですが血…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=a\n\n#健康 #食事",
-      "link": "https://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=a",
-      "weighted": 211,
+      "body": "今すぐできる血管によい食べ物4つのポイント\n\n✅ ① サイリウム — 水に溶かして飲むと…\n✅ ② 紅麹米 — ご飯に少し混ぜると肝臓…\n✅ ③ 玉ねぎ — 毎日食べる食材ですが血…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "text": "今すぐできる血管によい食べ物4つのポイント\n\n✅ ① サイリウム — 水に溶かして飲むと…\n✅ ② 紅麹米 — ご飯に少し混ぜると肝臓…\n✅ ③ 玉ねぎ — 毎日食べる食材ですが血…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=reply_a",
+      "weighted": 241,
+      "charCount": 139,
       "ok": true
     },
     "b": {
-      "text": "血管によい食べ物、4つのポイント\n\n✅ ① サイリウム — 水に溶かして飲むと…\n✅ ② 紅麹米 — ご飯に少し混ぜると肝臓…\n✅ ③ 玉ねぎ — 毎日食べる食材ですが血…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=b\n\n#健康 #食事",
-      "link": "https://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=b",
-      "weighted": 197,
+      "body": "実は逆効果かも？血管によい食べ物\n\n✅ ① サイリウム — 水に溶かして飲むと…\n✅ ② 紅麹米 — ご飯に少し混ぜると肝臓…\n✅ ③ 玉ねぎ — 毎日食べる食材ですが血…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "text": "実は逆効果かも？血管によい食べ物\n\n✅ ① サイリウム — 水に溶かして飲むと…\n✅ ② 紅麹米 — ご飯に少し混ぜると肝臓…\n✅ ③ 玉ねぎ — 毎日食べる食材ですが血…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=reply_b",
+      "weighted": 262,
+      "charCount": 150,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる血管によい食べ物4つのポイント\n\n✅ ① サイリウム — 水に溶かして飲むと…\n✅ ② 紅麹米 — ご飯に少し混ぜると肝臓…\n✅ ③ 玉ねぎ — 毎日食べる食材ですが血…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=reply_a",
+      "charCount": 139,
+      "image": "social/x/hyeolgwan-cleansing-3foods/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？血管によい食べ物\n\n✅ ① サイリウム — 水に溶かして飲むと…\n✅ ② 紅麹米 — ご飯に少し混ぜると肝臓…\n✅ ③ 玉ねぎ — 毎日食べる食材ですが血…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/hyeolgwan-cleansing-3foods.html?utm_source=x&utm_medium=social&utm_campaign=hyeolgwan-cleansing-3foods&utm_content=reply_b",
+      "charCount": 150,
+      "image": "social/x/hyeolgwan-cleansing-3foods/card.png"
+    }
+  ],
   "checklist": [
     "① サイリウム — 水に溶かして飲むと…",
     "② 紅麹米 — ご飯に少し混ぜると肝臓…",
@@ -42,30 +73,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：① サイリウム — 水に溶かして飲むと…、② 紅麹米 — ご飯に少し混ぜると肝臓…、③ 玉ねぎ — 毎日食べる食材ですが血…、食べ物と同じくらい大事だった生活習慣。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/hyeolgwan-cleansing-3foods/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 407439,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/hyeolgwan-cleansing-3foods/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 246977,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:52.686Z"
+  "generatedAt": "2026-11-24T05:42:09.155Z"
 }

@@ -5,29 +5,58 @@
   "url": "/ja/posts/cold-hands-feet-causes-raynaud.html",
   "keyword": "手足",
   "hooks": [
-    "手足、知っておきたい6つのチェック",
-    "手足、6つのチェック"
+    "今すぐできる手足6つのチェック",
+    "実は逆効果かも？手足"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#冬の健康"
   ],
+  "image": "social/x/cold-hands-feet-causes-raynaud/card.png",
   "posts": {
     "a": {
-      "text": "手足、知っておきたい6つのチェック\n\n✅ 手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあります\n✅ 指先が白→青→赤と色が変わるなら、レイノー現象の可能性も\n✅ 色の変化を繰り返し、痛みや皮膚の硬さを伴うときは受診の目安\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=a\n\n#健康 #冬の健康",
-      "link": "https://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=a",
-      "weighted": 240,
-      "ok": true,
-      "edited": "complete-sentence-fix-2026-11-24"
+      "body": "今すぐできる手足6つのチェック\n\n✅ 手足が全体的に冷たく\n✅ 冷たい水や空気に触れると\n✅ 色が変わった部分の境目が比較的はっきりし…\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "text": "今すぐできる手足6つのチェック\n\n✅ 手足が全体的に冷たく\n✅ 冷たい水や空気に触れると\n✅ 色が変わった部分の境目が比較的はっきりし…\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=reply_a",
+      "weighted": 236,
+      "charCount": 128,
+      "ok": true
     },
     "b": {
-      "text": "手足、6つのチェック\n\n✅ 手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあります\n✅ 指先が白→青→赤と色が変わるなら、レイノー現象の可能性も\n✅ 色の変化を繰り返し、痛みや皮膚の硬さを伴うときは受診の目安\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=b\n\n#健康 #冬の健康",
-      "link": "https://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=b",
-      "weighted": 226,
-      "ok": true,
-      "edited": "complete-sentence-fix-2026-11-24"
+      "body": "実は逆効果かも？手足\n\n✅ 手足が全体的に冷たく\n✅ 冷たい水や空気に触れると\n✅ 色が変わった部分の境目が比較的はっきりし…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "text": "実は逆効果かも？手足\n\n✅ 手足が全体的に冷たく\n✅ 冷たい水や空気に触れると\n✅ 色が変わった部分の境目が比較的はっきりし…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=reply_b",
+      "weighted": 257,
+      "charCount": 139,
+      "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる手足6つのチェック\n\n✅ 手足が全体的に冷たく\n✅ 冷たい水や空気に触れると\n✅ 色が変わった部分の境目が比較的はっきりし…\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=reply_a",
+      "charCount": 128,
+      "image": "social/x/cold-hands-feet-causes-raynaud/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？手足\n\n✅ 手足が全体的に冷たく\n✅ 冷たい水や空気に触れると\n✅ 色が変わった部分の境目が比較的はっきりし…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/cold-hands-feet-causes-raynaud.html?utm_source=x&utm_medium=social&utm_campaign=cold-hands-feet-causes-raynaud&utm_content=reply_b",
+      "charCount": 139,
+      "image": "social/x/cold-hands-feet-causes-raynaud/card.png"
+    }
+  ],
   "checklist": [
     "手足が全体的に冷たく",
     "冷たい水や空気に触れると",
@@ -37,39 +66,20 @@
     "緊張やストレスでも指先の色が変わる"
   ],
   "points": [
-    "手足の冷えの多くは、寒さで末梢の血管が縮むことが背景にあります",
-    "指先が白→青→赤と色が変わるなら、レイノー現象の可能性も",
-    "色の変化を繰り返し、痛みや皮膚の硬さを伴うときは受診の目安"
+    "手足が全体的に冷たく、温めると徐々にやわらぐ",
+    "冷たい水や空気に触れると、指先が白っぽく変わる",
+    "色が変わった部分の境目が比較的はっきりしている"
   ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
     "alt": "セルフチェック：手足が全体的に冷たく、冷たい水や空気に触れると、色が変わった部分の境目が比較的はっきり…、白のあと、青紫→赤と色が移り変わる、色の変化とともに、しびれやうずきを感じる、緊張やストレスでも指先の色が変わる。当てはまる数を確認。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/cold-hands-feet-causes-raynaud/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 427697,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/cold-hands-feet-causes-raynaud/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 238611,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:49.617Z"
+  "generatedAt": "2026-11-24T05:42:09.144Z"
 }

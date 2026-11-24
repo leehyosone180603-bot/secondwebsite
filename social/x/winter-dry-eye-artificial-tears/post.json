@@ -5,27 +5,58 @@
   "url": "/ja/posts/winter-dry-eye-artificial-tears.html",
   "keyword": "ドライアイ",
   "hooks": [
-    "冬のドライアイ対策？",
-    "冬のドライアイ対策"
+    "今すぐできるドライアイ6つのチェック",
+    "冬のドライアイ対策？"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#冬の健康"
   ],
+  "image": "social/x/winter-dry-eye-artificial-tears/card.png",
   "posts": {
     "a": {
-      "text": "冬のドライアイ対策？\n\n✅ 冬は暖房・寒暖差・画面の見すぎで\n✅ 目薬は「防腐剤の有無」で選び、1回1滴で十分とされています。\n✅ 点眼してもよくならない、痛み・充血が続くときは眼科へ。\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=a\n\n#健康 #冬の健康",
-      "link": "https://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=a",
-      "weighted": 232,
+      "body": "今すぐできるドライアイ6つのチェック\n\n✅ 目がゴロゴロする、砂が入ったような違和感がある\n✅ 夕方や夜になるほど、目の疲れや充血が強くなる\n✅ 風に当たると、かえって涙が出る\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "text": "今すぐできるドライアイ6つのチェック\n\n✅ 目がゴロゴロする、砂が入ったような違和感がある\n✅ 夕方や夜になるほど、目の疲れや充血が強くなる\n✅ 風に当たると、かえって涙が出る\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=reply_a",
+      "weighted": 277,
+      "charCount": 148,
       "ok": true
     },
     "b": {
-      "text": "冬のドライアイ対策\n\n✅ 冬は暖房・寒暖差・画面の見すぎで\n✅ 目薬は「防腐剤の有無」で選び、1回1滴で十分とされています。\n✅ 点眼してもよくならない、痛み・充血が続くときは眼科へ。\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=b\n\n#健康 #冬の健康",
-      "link": "https://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=b",
-      "weighted": 230,
+      "body": "冬のドライアイ対策？\n\n✅ 目がゴロゴロする、砂が入ったような違和感…\n✅ 夕方や夜になるほど、目の疲れや充血が強…\n✅ 風に当たると\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "text": "冬のドライアイ対策？\n\n✅ 目がゴロゴロする、砂が入ったような違和感…\n✅ 夕方や夜になるほど、目の疲れや充血が強…\n✅ 風に当たると\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=reply_b",
+      "weighted": 264,
+      "charCount": 143,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできるドライアイ6つのチェック\n\n✅ 目がゴロゴロする、砂が入ったような違和感がある\n✅ 夕方や夜になるほど、目の疲れや充血が強くなる\n✅ 風に当たると、かえって涙が出る\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=reply_a",
+      "charCount": 148,
+      "image": "social/x/winter-dry-eye-artificial-tears/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "冬のドライアイ対策？\n\n✅ 目がゴロゴロする、砂が入ったような違和感…\n✅ 夕方や夜になるほど、目の疲れや充血が強…\n✅ 風に当たると\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-dry-eye-artificial-tears.html?utm_source=x&utm_medium=social&utm_campaign=winter-dry-eye-artificial-tears&utm_content=reply_b",
+      "charCount": 143,
+      "image": "social/x/winter-dry-eye-artificial-tears/card.png"
+    }
+  ],
   "checklist": [
     "目がゴロゴロする、砂が入ったような違和…",
     "夕方や夜になるほど、目の疲れや充血が強…",
@@ -35,39 +66,20 @@
     "目がかすむ、見えづらいと感じることがある"
   ],
   "points": [
-    "冬は暖房・寒暖差・画面の見すぎで",
-    "目薬は「防腐剤の有無」で選び、1回1滴で十分とされています。",
-    "点眼してもよくならない、痛み・充血が続くときは眼科へ。"
+    "目がゴロゴロする、砂が入ったような違和感がある",
+    "夕方や夜になるほど、目の疲れや充血が強くなる",
+    "風に当たると、かえって涙が出る"
   ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
     "alt": "セルフチェック：目がゴロゴロする、砂が入ったような違和…、夕方や夜になるほど、目の疲れや充血が強…、風に当たると、かえって涙が出る、画面を見続けると目が重い、目薬をさす回数が増えてきた、目がかすむ、見えづらいと感じることがある。当てはまる数を確認。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/winter-dry-eye-artificial-tears/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 414332,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/winter-dry-eye-artificial-tears/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 233741,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:50.486Z"
+  "generatedAt": "2026-11-24T05:42:09.146Z"
 }

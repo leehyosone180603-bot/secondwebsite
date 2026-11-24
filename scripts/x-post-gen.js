@@ -38,6 +38,16 @@ function clip(s, n) {
   return a.slice(0, n - 1).join("") + "…";
 }
 
+/* ✅ 체크 줄: 문장을 중간에서 자르지 않도록 첫 절(、。／：경계)을 쓰고, 넘치면 clip */
+function phrase(s, max) {
+  s = String(s || "").replace(/\s+/g, " ").trim();
+  if (Array.from(s).length <= max) return s;          // 전체가 짧으면 통째로(완결 유지)
+  const seg = s.split(/[、。／：]/)[0];                 // 길면 첫 절
+  const segLen = Array.from(seg).length;
+  if (segLen >= 8 && segLen <= max) return seg;
+  return clip(s, max);                                 // 그래도 길면 경계 clip
+}
+
 /* ja-posts.js 에서 slug 메타 추출 */
 function jaMeta(slug) {
   const txt = fs.readFileSync(path.join(ROOT, "js", "ja-posts.js"), "utf8");
@@ -135,7 +145,7 @@ function pickTypedHooks(meta, ex, n, kind) {
 /* 게시 본문: ①훅 / ②✅체크 3~4 / ③마무리 + ④질문 / ⑤해시태그. 본문에 링크 없음. */
 function buildPost(hook, checks, slug, variant, tags, closing, question, saveLine) {
   const link = SITE + "/ja/posts/" + slug + ".html?utm_source=x&utm_medium=social&utm_campaign=" + slug + "&utm_content=reply_" + variant;
-  let items = checks.map(p => clip(p, 25)).filter(Boolean).slice(0, 4);
+  let items = checks.map(p => clip(p, 28)).filter(Boolean).slice(0, 4);
   function assemble(arr) {
     const tail = (saveLine ? saveLine + "\n" : "") + closing + "\n" + question;
     return hook + "\n\n" + arr.map(p => "✅ " + p).join("\n") + "\n\n" + tail + "\n\n" + tags.join(" ");
@@ -173,8 +183,9 @@ async function gen(slug, opts) {
     ? ov.hooks.slice(0, 2).map(t => ({ t, type: "custom" }))
     : pickTypedHooks(meta, ex, items.length, kind);
   const tagsFinal = (ov.hashtags && ov.hashtags.length) ? ov.hashtags.slice(0, 2) : tags;
-  let p3src = ov.points && ov.points.length ? ov.points : (ex.points.length >= 3 ? ex.points : (ex.checks.length >= 3 ? ex.checks : items));
-  const points3 = p3src.slice(0, 3).map(s => clip(s, 25));
+  // ✅ 체크 줄 소스: 셀프체크(짧고 완결) 우선 → 포인트 → 항목. 첫 절 기준으로 자연스럽게.
+  let p3src = ov.points && ov.points.length ? ov.points : (ex.checks.length >= 3 ? ex.checks : (ex.points.length >= 3 ? ex.points : items));
+  const points3 = p3src.slice(0, 3).map(s => phrase(s, 28));
   const kicker = ov.kicker || (kind === "check" ? "セルフチェック" : "この記事のポイント");
   const cardHook = ov.cardHook || clip(typed[0].t, 16);
   const subhook = ov.subhook || (kind === "check" ? "あなたはいくつ当てはまる？" : "おさえたい要点はこちら");

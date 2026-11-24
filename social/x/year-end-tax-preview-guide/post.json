@@ -5,27 +5,58 @@
   "url": "/ja/posts/year-end-tax-preview-guide.html",
   "keyword": "年末調整",
   "hooks": [
-    "年末調整、知っておきたい5つのチェック",
-    "年末調整、5つのチェック"
+    "実は逆効果かも？年末調整",
+    "年末調整、知っておきたい5つのチェック"
+  ],
+  "hookTypes": [
+    "myth",
+    "number"
   ],
   "hashtags": [
     "#健康",
     "#健康情報"
   ],
+  "image": "social/x/year-end-tax-preview-guide/card.png",
   "posts": {
     "a": {
-      "text": "年末調整、知っておきたい5つのチェック\n\n✅ 年金貯蓄・IRPの納付: 12月31日までに納付した金額が…\n✅ 家賃の税額控除の要件確認: 無住宅世帯主かどうか、転入届\n✅ 医療費・教育費の領収証: 簡素化資料に反映されないメガネ\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/year-end-tax-preview-guide.html?utm_source=x&utm_medium=social&utm_campaign=year-end-tax-preview-guide&utm_content=a\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/year-end-tax-preview-guide.html?utm_source=x&utm_medium=social&utm_campaign=year-end-tax-preview-guide&utm_content=a",
-      "weighted": 263,
+      "body": "実は逆効果かも？年末調整\n\n✅ 年金貯蓄・IRPの納付: 12月31日までに納付し…\n✅ 家賃の税額控除の要件確認: 無住宅世帯主か…\n✅ 医療費・教育費の領収証: 簡素化資料に反映されない…\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？年末調整\n\n✅ 年金貯蓄・IRPの納付: 12月31日までに納付し…\n✅ 家賃の税額控除の要件確認: 無住宅世帯主か…\n✅ 医療費・教育費の領収証: 簡素化資料に反映されない…\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/year-end-tax-preview-guide.html?utm_source=x&utm_medium=social&utm_campaign=year-end-tax-preview-guide&utm_content=reply_a",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/year-end-tax-preview-guide.html?utm_source=x&utm_medium=social&utm_campaign=year-end-tax-preview-guide&utm_content=reply_a",
+      "weighted": 278,
+      "charCount": 156,
       "ok": true
     },
     "b": {
-      "text": "年末調整、5つのチェック\n\n✅ 年金貯蓄・IRPの納付: 12月31日までに納付した金額が…\n✅ 家賃の税額控除の要件確認: 無住宅世帯主かどうか、転入届\n✅ 医療費・教育費の領収証: 簡素化資料に反映されないメガネ\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/year-end-tax-preview-guide.html?utm_source=x&utm_medium=social&utm_campaign=year-end-tax-preview-guide&utm_content=b\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/year-end-tax-preview-guide.html?utm_source=x&utm_medium=social&utm_campaign=year-end-tax-preview-guide&utm_content=b",
-      "weighted": 249,
+      "body": "年末調整、知っておきたい5つのチェック\n\n✅ 年金貯蓄・IRPの納付: 12月3…\n✅ 家賃の税額控除の要件確認:…\n✅ 医療費・教育費の領収証: 簡素化資…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "text": "年末調整、知っておきたい5つのチェック\n\n✅ 年金貯蓄・IRPの納付: 12月3…\n✅ 家賃の税額控除の要件確認:…\n✅ 医療費・教育費の領収証: 簡素化資…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/year-end-tax-preview-guide.html?utm_source=x&utm_medium=social&utm_campaign=year-end-tax-preview-guide&utm_content=reply_b",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/year-end-tax-preview-guide.html?utm_source=x&utm_medium=social&utm_campaign=year-end-tax-preview-guide&utm_content=reply_b",
+      "weighted": 275,
+      "charCount": 155,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "myth",
+      "body": "実は逆効果かも？年末調整\n\n✅ 年金貯蓄・IRPの納付: 12月31日までに納付し…\n✅ 家賃の税額控除の要件確認: 無住宅世帯主か…\n✅ 医療費・教育費の領収証: 簡素化資料に反映されない…\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/year-end-tax-preview-guide.html?utm_source=x&utm_medium=social&utm_campaign=year-end-tax-preview-guide&utm_content=reply_a",
+      "charCount": 156,
+      "image": "social/x/year-end-tax-preview-guide/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "number",
+      "body": "年末調整、知っておきたい5つのチェック\n\n✅ 年金貯蓄・IRPの納付: 12月3…\n✅ 家賃の税額控除の要件確認:…\n✅ 医療費・教育費の領収証: 簡素化資…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/year-end-tax-preview-guide.html?utm_source=x&utm_medium=social&utm_campaign=year-end-tax-preview-guide&utm_content=reply_b",
+      "charCount": 155,
+      "image": "social/x/year-end-tax-preview-guide/card.png"
+    }
+  ],
   "checklist": [
     "年金貯蓄・IRPの納付: 12月31日…",
     "家賃の税額控除の要件確認: 無住宅世帯…",
@@ -34,39 +65,20 @@
     "扶養家族の重複確認: きょうだい同士で…"
   ],
   "points": [
-    "年金貯蓄・IRPの納付: 12月31日までに納付した金額が…",
-    "家賃の税額控除の要件確認: 無住宅世帯主かどうか、転入届",
-    "医療費・教育費の領収証: 簡素化資料に反映されないメガネ"
+    "年金貯蓄・IRPの納付: 12月31日までに納付した金…",
+    "家賃の税額控除の要件確認: 無住宅世帯主かどうか",
+    "医療費・教育費の領収証: 簡素化資料に反映されないメガ…"
   ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
     "alt": "セルフチェック：年金貯蓄・IRPの納付: 12月31日…、家賃の税額控除の要件確認: 無住宅世帯…、医療費・教育費の領収証: 簡素化資料に…、寄附金: ふるさと愛寄附金、扶養家族の重複確認: きょうだい同士で…。当てはまる数を確認。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/year-end-tax-preview-guide/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 413143,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/year-end-tax-preview-guide/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 239475,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:56:02.702Z"
+  "generatedAt": "2026-11-24T05:42:09.181Z"
 }

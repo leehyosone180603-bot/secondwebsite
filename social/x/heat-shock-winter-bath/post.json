@@ -6,26 +6,57 @@
   "keyword": "ヒートショック",
   "hooks": [
     "ヒートショックを防ぐ冬の入浴7つのルール？",
-    "ヒートショックを防ぐ冬の入浴7つのルール"
+    "今すぐできるヒートショック6つのチェック"
+  ],
+  "hookTypes": [
+    "myth",
+    "number"
   ],
   "hashtags": [
     "#健康",
     "#冬の健康"
   ],
+  "image": "social/x/heat-shock-winter-bath/card.png",
   "posts": {
     "a": {
-      "text": "ヒートショックを防ぐ冬の入浴7つのルール？\n\n✅ ヒートショックは、急な温度差で血圧が大きく上下し\n✅ 脱衣所・浴室を暖め、湯温は41度以下\n✅ とくに60代以上や高血圧のある方は\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/heat-shock-winter-bath.html?utm_source=x&utm_medium=social&utm_campaign=heat-shock-winter-bath&utm_content=a\n\n#健康 #冬の健康",
-      "link": "https://healthfortune.co.kr/ja/posts/heat-shock-winter-bath.html?utm_source=x&utm_medium=social&utm_campaign=heat-shock-winter-bath&utm_content=a",
-      "weighted": 223,
+      "body": "ヒートショックを防ぐ冬の入浴7つのルール？\n\n✅ 脱衣所や浴室に暖房がなく、冬は寒い\n✅ 42度以上の熱いお湯が好きだ\n✅ 10分以上ゆっくりつかることが多い\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "text": "ヒートショックを防ぐ冬の入浴7つのルール？\n\n✅ 脱衣所や浴室に暖房がなく、冬は寒い\n✅ 42度以上の熱いお湯が好きだ\n✅ 10分以上ゆっくりつかることが多い\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/heat-shock-winter-bath.html?utm_source=x&utm_medium=social&utm_campaign=heat-shock-winter-bath&utm_content=reply_a",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/heat-shock-winter-bath.html?utm_source=x&utm_medium=social&utm_campaign=heat-shock-winter-bath&utm_content=reply_a",
+      "weighted": 255,
+      "charCount": 139,
       "ok": true
     },
     "b": {
-      "text": "ヒートショックを防ぐ冬の入浴7つのルール\n\n✅ ヒートショックは、急な温度差で血圧が大きく上下し\n✅ 脱衣所・浴室を暖め、湯温は41度以下\n✅ とくに60代以上や高血圧のある方は\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/heat-shock-winter-bath.html?utm_source=x&utm_medium=social&utm_campaign=heat-shock-winter-bath&utm_content=b\n\n#健康 #冬の健康",
-      "link": "https://healthfortune.co.kr/ja/posts/heat-shock-winter-bath.html?utm_source=x&utm_medium=social&utm_campaign=heat-shock-winter-bath&utm_content=b",
-      "weighted": 221,
+      "body": "今すぐできるヒートショック6つのチェック\n\n✅ 脱衣所や浴室に暖房がなく\n✅ 42度以上の熱いお湯が…\n✅ 10分以上ゆっくりつかること…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "text": "今すぐできるヒートショック6つのチェック\n\n✅ 脱衣所や浴室に暖房がなく\n✅ 42度以上の熱いお湯が…\n✅ 10分以上ゆっくりつかること…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/heat-shock-winter-bath.html?utm_source=x&utm_medium=social&utm_campaign=heat-shock-winter-bath&utm_content=reply_b",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/heat-shock-winter-bath.html?utm_source=x&utm_medium=social&utm_campaign=heat-shock-winter-bath&utm_content=reply_b",
+      "weighted": 263,
+      "charCount": 145,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "myth",
+      "body": "ヒートショックを防ぐ冬の入浴7つのルール？\n\n✅ 脱衣所や浴室に暖房がなく、冬は寒い\n✅ 42度以上の熱いお湯が好きだ\n✅ 10分以上ゆっくりつかることが多い\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/heat-shock-winter-bath.html?utm_source=x&utm_medium=social&utm_campaign=heat-shock-winter-bath&utm_content=reply_a",
+      "charCount": 139,
+      "image": "social/x/heat-shock-winter-bath/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "number",
+      "body": "今すぐできるヒートショック6つのチェック\n\n✅ 脱衣所や浴室に暖房がなく\n✅ 42度以上の熱いお湯が…\n✅ 10分以上ゆっくりつかること…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/heat-shock-winter-bath.html?utm_source=x&utm_medium=social&utm_campaign=heat-shock-winter-bath&utm_content=reply_b",
+      "charCount": 145,
+      "image": "social/x/heat-shock-winter-bath/card.png"
+    }
+  ],
   "checklist": [
     "脱衣所や浴室に暖房がなく、冬は寒い",
     "42度以上の熱いお湯が好きだ",
@@ -35,39 +66,20 @@
     "高血圧や心臓・血管の持病がある"
   ],
   "points": [
-    "ヒートショックは、急な温度差で血圧が大きく上下し",
-    "脱衣所・浴室を暖め、湯温は41度以下",
-    "とくに60代以上や高血圧のある方は"
+    "脱衣所や浴室に暖房がなく、冬は寒い",
+    "42度以上の熱いお湯が好きだ",
+    "10分以上ゆっくりつかることが多い"
   ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
     "alt": "セルフチェック：脱衣所や浴室に暖房がなく、冬は寒い、42度以上の熱いお湯が好きだ、10分以上ゆっくりつかることが多い、お酒を飲んだあとに入浴することがある、一人で入浴し、家族に声をかけない、高血圧や心臓・血管の持病がある。当てはまる数を確認。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/heat-shock-winter-bath/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 429934,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/heat-shock-winter-bath/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 246542,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:49.205Z"
+  "generatedAt": "2026-11-24T05:42:09.142Z"
 }

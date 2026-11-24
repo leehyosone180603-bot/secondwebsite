@@ -6,26 +6,57 @@
   "keyword": "みかん",
   "hooks": [
     "みかんの1日の適量は何個？",
-    "みかん、知っておきたい4つのポイント"
+    "今すぐできるみかん4つのポイント"
+  ],
+  "hookTypes": [
+    "myth",
+    "number"
   ],
   "hashtags": [
     "#健康",
     "#食事"
   ],
+  "image": "social/x/tangerine-daily-intake/card.png",
   "posts": {
     "a": {
-      "text": "みかんの1日の適量は何個？\n\n✅ 箱を受け取ったらすぐ開け\n✅ 底に新聞紙やキッチンペーパーを敷き\n✅ 涼しく風通しのよい場所に置き\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=a\n\n#健康 #食事",
-      "link": "https://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=a",
-      "weighted": 175,
+      "body": "みかんの1日の適量は何個？\n\n✅ 箱を受け取ったらすぐ開け\n✅ 底に新聞紙やキッチンペーパーを敷き\n✅ 涼しく風通しのよい場所に置き\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "text": "みかんの1日の適量は何個？\n\n✅ 箱を受け取ったらすぐ開け\n✅ 底に新聞紙やキッチンペーパーを敷き\n✅ 涼しく風通しのよい場所に置き\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=reply_a",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=reply_a",
+      "weighted": 209,
+      "charCount": 114,
       "ok": true
     },
     "b": {
-      "text": "みかん、知っておきたい4つのポイント\n\n✅ 箱を受け取ったらすぐ開け\n✅ 底に新聞紙やキッチンペーパーを敷き\n✅ 涼しく風通しのよい場所に置き\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=b\n\n#健康 #食事",
-      "link": "https://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=b",
-      "weighted": 185,
+      "body": "今すぐできるみかん4つのポイント\n\n✅ 箱を受け取ったらすぐ開け\n✅ 底に新聞紙やキッチンペーパーを敷き\n✅ 涼しく風通しのよい場所に置き\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "text": "今すぐできるみかん4つのポイント\n\n✅ 箱を受け取ったらすぐ開け\n✅ 底に新聞紙やキッチンペーパーを敷き\n✅ 涼しく風通しのよい場所に置き\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=reply_b",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=reply_b",
+      "weighted": 245,
+      "charCount": 133,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "myth",
+      "body": "みかんの1日の適量は何個？\n\n✅ 箱を受け取ったらすぐ開け\n✅ 底に新聞紙やキッチンペーパーを敷き\n✅ 涼しく風通しのよい場所に置き\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=reply_a",
+      "charCount": 114,
+      "image": "social/x/tangerine-daily-intake/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "number",
+      "body": "今すぐできるみかん4つのポイント\n\n✅ 箱を受け取ったらすぐ開け\n✅ 底に新聞紙やキッチンペーパーを敷き\n✅ 涼しく風通しのよい場所に置き\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #食事",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/tangerine-daily-intake.html?utm_source=x&utm_medium=social&utm_campaign=tangerine-daily-intake&utm_content=reply_b",
+      "charCount": 133,
+      "image": "social/x/tangerine-daily-intake/card.png"
+    }
+  ],
   "checklist": [
     "箱を受け取ったらすぐ開け",
     "底に新聞紙やキッチンペーパーを敷き",
@@ -42,30 +73,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：箱を受け取ったらすぐ開け、底に新聞紙やキッチンペーパーを敷き、涼しく風通しのよい場所に置き、数日に一度は箱をひっくり返すか。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/tangerine-daily-intake/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 401295,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/tangerine-daily-intake/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 245812,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:56:01.336Z"
+  "generatedAt": "2026-11-24T05:42:09.178Z"
 }

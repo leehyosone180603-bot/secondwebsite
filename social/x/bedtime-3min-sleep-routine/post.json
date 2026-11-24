@@ -1,0 +1,85 @@
+{
+  "slug": "bedtime-3min-sleep-routine",
+  "series": "info",
+  "title": "寝る前3分でできる入眠ルーティン（筋弛緩法・呼吸）",
+  "url": "/ja/posts/bedtime-3min-sleep-routine.html",
+  "keyword": "入眠",
+  "hooks": [
+    "今すぐできる入眠6つのチェック",
+    "実は逆効果かも？入眠"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "image": "social/x/bedtime-3min-sleep-routine/card.png",
+  "posts": {
+    "a": {
+      "body": "今すぐできる入眠6つのチェック\n\n✅ 寝床の中でスマートフォンやタブレットを見…\n✅ 夕方以降にコーヒー・コーラ\n✅ 寝つきをよくするつもりでお酒\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "text": "今すぐできる入眠6つのチェック\n\n✅ 寝床の中でスマートフォンやタブレットを見…\n✅ 夕方以降にコーヒー・コーラ\n✅ 寝つきをよくするつもりでお酒\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/bedtime-3min-sleep-routine.html?utm_source=x&utm_medium=social&utm_campaign=bedtime-3min-sleep-routine&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/bedtime-3min-sleep-routine.html?utm_source=x&utm_medium=social&utm_campaign=bedtime-3min-sleep-routine&utm_content=reply_a",
+      "weighted": 246,
+      "charCount": 133,
+      "ok": true
+    },
+    "b": {
+      "body": "実は逆効果かも？入眠\n\n✅ 寝床の中でスマートフォンやタブレットを見…\n✅ 夕方以降にコーヒー・コーラ\n✅ 寝つきをよくするつもりでお酒\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？入眠\n\n✅ 寝床の中でスマートフォンやタブレットを見…\n✅ 夕方以降にコーヒー・コーラ\n✅ 寝つきをよくするつもりでお酒\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/bedtime-3min-sleep-routine.html?utm_source=x&utm_medium=social&utm_campaign=bedtime-3min-sleep-routine&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/bedtime-3min-sleep-routine.html?utm_source=x&utm_medium=social&utm_campaign=bedtime-3min-sleep-routine&utm_content=reply_b",
+      "weighted": 267,
+      "charCount": 144,
+      "ok": true
+    }
+  },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる入眠6つのチェック\n\n✅ 寝床の中でスマートフォンやタブレットを見…\n✅ 夕方以降にコーヒー・コーラ\n✅ 寝つきをよくするつもりでお酒\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/bedtime-3min-sleep-routine.html?utm_source=x&utm_medium=social&utm_campaign=bedtime-3min-sleep-routine&utm_content=reply_a",
+      "charCount": 133,
+      "image": "social/x/bedtime-3min-sleep-routine/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？入眠\n\n✅ 寝床の中でスマートフォンやタブレットを見…\n✅ 夕方以降にコーヒー・コーラ\n✅ 寝つきをよくするつもりでお酒\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/bedtime-3min-sleep-routine.html?utm_source=x&utm_medium=social&utm_campaign=bedtime-3min-sleep-routine&utm_content=reply_b",
+      "charCount": 144,
+      "image": "social/x/bedtime-3min-sleep-routine/card.png"
+    }
+  ],
+  "checklist": [
+    "寝床の中でスマートフォンやタブレットを…",
+    "夕方以降にコーヒー・コーラ",
+    "寝つきをよくするつもりでお酒",
+    "寝る直前に激しい運動や",
+    "眠れないのに「早く寝なきゃ」と焦って",
+    "寝室が明るい、または音が気になる環境の…"
+  ],
+  "points": [
+    "寝床の中でスマートフォンやタブレットを見ている",
+    "夕方以降にコーヒー・コーラ・エナジードリンクなどカフェ…",
+    "寝つきをよくするつもりでお酒（寝酒）を飲んでいる"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：寝床の中でスマートフォンやタブレットを…、夕方以降にコーヒー・コーラ、寝つきをよくするつもりでお酒、寝る直前に激しい運動や、眠れないのに「早く寝なきゃ」と焦って、寝室が明るい、または音が気になる環境の…。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-24T05:42:09.137Z"
+}

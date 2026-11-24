@@ -6,67 +6,77 @@
   "keyword": "最悪の朝食",
   "hooks": [
     "最悪の朝食4つ？",
-    "最悪の朝食4つ"
+    "最悪の朝食、知っておきたい3つのポイント"
+  ],
+  "hookTypes": [
+    "myth",
+    "number"
   ],
   "hashtags": [
     "#健康",
     "#健康情報"
   ],
+  "image": "social/x/choeak-breakfast-4foods/card.png",
   "posts": {
     "a": {
-      "text": "最悪の朝食4つ？\n\n✅ 砂糖入りシリアルの代わりに、温かい水一杯とゆで卵\n✅ パンとジャムの代わりに、レシチンが豊富な豆腐やナッツひとつかみ\n✅ ジュースの代わりに、生の果物を少しと無糖ヨーグルト\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=a\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=a",
-      "weighted": 200,
-      "ok": true,
-      "edited": "complete-sentence-fix-2026-11-24"
+      "body": "最悪の朝食4つ？\n\n✅ 砂糖入りシリアルの代わりに温かい水一杯…\n✅ パンとジャムの代わりにレシチンが豊富な…\n✅ ジュースの代わりに生の果物を少しと無糖…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "最悪の朝食4つ？\n\n✅ 砂糖入りシリアルの代わりに温かい水一杯…\n✅ パンとジャムの代わりにレシチンが豊富な…\n✅ ジュースの代わりに生の果物を少しと無糖…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=reply_a",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=reply_a",
+      "weighted": 234,
+      "charCount": 128,
+      "ok": true
     },
     "b": {
-      "text": "最悪の朝食4つ\n\n✅ 砂糖入りシリアルの代わりに、温かい水一杯とゆで卵\n✅ パンとジャムの代わりに、レシチンが豊富な豆腐やナッツひとつかみ\n✅ ジュースの代わりに、生の果物を少しと無糖ヨーグルト\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=b\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=b",
-      "weighted": 198,
-      "ok": true,
-      "edited": "complete-sentence-fix-2026-11-24"
+      "body": "最悪の朝食、知っておきたい3つのポイント\n\n✅ 砂糖入りシリアルの代わりに温かい水…\n✅ パンとジャムの代わりにレシチンが豊…\n✅ ジュースの代わりに生の果物を少しと…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "最悪の朝食、知っておきたい3つのポイント\n\n✅ 砂糖入りシリアルの代わりに温かい水…\n✅ パンとジャムの代わりにレシチンが豊…\n✅ ジュースの代わりに生の果物を少しと…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=reply_b",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=reply_b",
+      "weighted": 276,
+      "charCount": 150,
+      "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "myth",
+      "body": "最悪の朝食4つ？\n\n✅ 砂糖入りシリアルの代わりに温かい水一杯…\n✅ パンとジャムの代わりにレシチンが豊富な…\n✅ ジュースの代わりに生の果物を少しと無糖…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=reply_a",
+      "charCount": 128,
+      "image": "social/x/choeak-breakfast-4foods/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "number",
+      "body": "最悪の朝食、知っておきたい3つのポイント\n\n✅ 砂糖入りシリアルの代わりに温かい水…\n✅ パンとジャムの代わりにレシチンが豊…\n✅ ジュースの代わりに生の果物を少しと…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/choeak-breakfast-4foods.html?utm_source=x&utm_medium=social&utm_campaign=choeak-breakfast-4foods&utm_content=reply_b",
+      "charCount": 150,
+      "image": "social/x/choeak-breakfast-4foods/card.png"
+    }
+  ],
   "checklist": [
     "砂糖入りシリアルの代わりに温かい水一杯…",
     "パンとジャムの代わりにレシチンが豊富な…",
     "ジュースの代わりに生の果物を少しと無糖…"
   ],
   "points": [
-    "砂糖入りシリアルの代わりに、温かい水一杯とゆで卵",
-    "パンとジャムの代わりに、レシチンが豊富な豆腐やナッツひとつかみ",
-    "ジュースの代わりに、生の果物を少しと無糖ヨーグルト"
+    "砂糖入りシリアルの代わりに温かい水一杯…",
+    "パンとジャムの代わりにレシチンが豊富な…",
+    "ジュースの代わりに生の果物を少しと無糖…"
   ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
     "alt": "この記事のポイント：砂糖入りシリアルの代わりに温かい水一杯…、パンとジャムの代わりにレシチンが豊富な…、ジュースの代わりに生の果物を少しと無糖…。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/choeak-breakfast-4foods/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 376159,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/choeak-breakfast-4foods/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 226083,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:55.800Z"
+  "generatedAt": "2026-11-24T05:42:09.163Z"
 }

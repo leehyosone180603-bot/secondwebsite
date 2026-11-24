@@ -1,0 +1,82 @@
+{
+  "slug": "health-checkup-before-ng",
+  "series": "check",
+  "title": "健康診断の前日・当日にやってはいけない7つのこと｜朝食・飲酒・運動の正解",
+  "url": "/ja/posts/health-checkup-before-ng.html",
+  "keyword": "健康診断",
+  "hooks": [
+    "今すぐできる健康診断3つのポイント",
+    "健康診断の前日・当日にやってはいけない7つのこと？"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
+  ],
+  "hashtags": [
+    "#セルフチェック",
+    "#健康"
+  ],
+  "image": "social/x/health-checkup-before-ng/card.png",
+  "posts": {
+    "a": {
+      "body": "今すぐできる健康診断3つのポイント\n\n✅ 健診前の注意は検査項目で異なり\n✅ 夜遅い食事・飲酒・慣れない運動・午前健診の朝食\n✅ 守れなかったときや迷ったときは自己判断せず\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#セルフチェック #健康",
+      "text": "今すぐできる健康診断3つのポイント\n\n✅ 健診前の注意は検査項目で異なり\n✅ 夜遅い食事・飲酒・慣れない運動・午前健診の朝食\n✅ 守れなかったときや迷ったときは自己判断せず\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#セルフチェック #健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/health-checkup-before-ng.html?utm_source=x&utm_medium=social&utm_campaign=health-checkup-before-ng&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/health-checkup-before-ng.html?utm_source=x&utm_medium=social&utm_campaign=health-checkup-before-ng&utm_content=reply_a",
+      "weighted": 259,
+      "charCount": 139,
+      "ok": true
+    },
+    "b": {
+      "body": "健康診断の前日・当日にやってはいけない7つのこと？\n\n✅ 健診前の注意は検査項目で…\n✅ 夜遅い食事・飲酒・慣れない運動\n✅ 守れなかったときや迷ったときは自己判…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#セルフチェック #健康",
+      "text": "健康診断の前日・当日にやってはいけない7つのこと？\n\n✅ 健診前の注意は検査項目で…\n✅ 夜遅い食事・飲酒・慣れない運動\n✅ 守れなかったときや迷ったときは自己判…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#セルフチェック #健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/health-checkup-before-ng.html?utm_source=x&utm_medium=social&utm_campaign=health-checkup-before-ng&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/health-checkup-before-ng.html?utm_source=x&utm_medium=social&utm_campaign=health-checkup-before-ng&utm_content=reply_b",
+      "weighted": 279,
+      "charCount": 151,
+      "ok": true
+    }
+  },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる健康診断3つのポイント\n\n✅ 健診前の注意は検査項目で異なり\n✅ 夜遅い食事・飲酒・慣れない運動・午前健診の朝食\n✅ 守れなかったときや迷ったときは自己判断せず\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#セルフチェック #健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/health-checkup-before-ng.html?utm_source=x&utm_medium=social&utm_campaign=health-checkup-before-ng&utm_content=reply_a",
+      "charCount": 139,
+      "image": "social/x/health-checkup-before-ng/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "健康診断の前日・当日にやってはいけない7つのこと？\n\n✅ 健診前の注意は検査項目で…\n✅ 夜遅い食事・飲酒・慣れない運動\n✅ 守れなかったときや迷ったときは自己判…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#セルフチェック #健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/health-checkup-before-ng.html?utm_source=x&utm_medium=social&utm_campaign=health-checkup-before-ng&utm_content=reply_b",
+      "charCount": 151,
+      "image": "social/x/health-checkup-before-ng/card.png"
+    }
+  ],
+  "checklist": [
+    "健診前の注意は検査項目で異なり",
+    "夜遅い食事・飲酒・慣れない運動",
+    "守れなかったときや迷ったときは自己判断…"
+  ],
+  "points": [
+    "健診前の注意は検査項目で異なり",
+    "夜遅い食事・飲酒・慣れない運動・午前健診の朝食",
+    "守れなかったときや迷ったときは自己判断せず"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "この記事のポイント：健診前の注意は検査項目で異なり、夜遅い食事・飲酒・慣れない運動、守れなかったときや迷ったときは自己判断…。健康フロー。"
+  },
+  "cardResults": [],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-24T05:42:09.133Z"
+}

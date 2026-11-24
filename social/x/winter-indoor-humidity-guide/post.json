@@ -5,27 +5,58 @@
   "url": "/ja/posts/winter-indoor-humidity-guide.html",
   "keyword": "冬",
   "hooks": [
-    "冬、知っておきたい6つのチェック",
-    "冬、6つのチェック"
+    "実は逆効果かも？冬",
+    "冬、知っておきたい6つのチェック"
+  ],
+  "hookTypes": [
+    "myth",
+    "number"
   ],
   "hashtags": [
     "#健康",
     "#冬の健康"
   ],
+  "image": "social/x/winter-indoor-humidity-guide/card.png",
   "posts": {
     "a": {
-      "text": "冬、知っておきたい6つのチェック\n\n✅ 冬の室内は、湿度40〜60％・室温20℃前後が目安とされて…\n✅ 洗濯物の部屋干しや濡れタオルなど\n✅ 60％を超える状態が続くと、カビやダニが増えやすくなります。\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=a\n\n#健康 #冬の健康",
-      "link": "https://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=a",
-      "weighted": 241,
+      "body": "実は逆効果かも？冬\n\n✅ 朝起きると、のどや鼻が乾いて痛い\n✅ 日中も目がしょぼしょぼする\n✅ 肌がかゆい、粉をふく\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "text": "実は逆効果かも？冬\n\n✅ 朝起きると、のどや鼻が乾いて痛い\n✅ 日中も目がしょぼしょぼする\n✅ 肌がかゆい、粉をふく\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=reply_a",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=reply_a",
+      "weighted": 218,
+      "charCount": 118,
       "ok": true
     },
     "b": {
-      "text": "冬、6つのチェック\n\n✅ 冬の室内は、湿度40〜60％・室温20℃前後が目安とされて…\n✅ 洗濯物の部屋干しや濡れタオルなど\n✅ 60％を超える状態が続くと、カビやダニが増えやすくなります。\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=b\n\n#健康 #冬の健康",
-      "link": "https://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=b",
-      "weighted": 227,
+      "body": "冬、知っておきたい6つのチェック\n\n✅ 朝起きると、のどや鼻が乾いて痛い\n✅ 日中も目がしょぼしょぼする\n✅ 肌がかゆい、粉をふく\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "text": "冬、知っておきたい6つのチェック\n\n✅ 朝起きると、のどや鼻が乾いて痛い\n✅ 日中も目がしょぼしょぼする\n✅ 肌がかゆい、粉をふく\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=reply_b",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=reply_b",
+      "weighted": 261,
+      "charCount": 141,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "myth",
+      "body": "実は逆効果かも？冬\n\n✅ 朝起きると、のどや鼻が乾いて痛い\n✅ 日中も目がしょぼしょぼする\n✅ 肌がかゆい、粉をふく\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=reply_a",
+      "charCount": 118,
+      "image": "social/x/winter-indoor-humidity-guide/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "number",
+      "body": "冬、知っておきたい6つのチェック\n\n✅ 朝起きると、のどや鼻が乾いて痛い\n✅ 日中も目がしょぼしょぼする\n✅ 肌がかゆい、粉をふく\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #冬の健康",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-indoor-humidity-guide.html?utm_source=x&utm_medium=social&utm_campaign=winter-indoor-humidity-guide&utm_content=reply_b",
+      "charCount": 141,
+      "image": "social/x/winter-indoor-humidity-guide/card.png"
+    }
+  ],
   "checklist": [
     "朝起きると、のどや鼻が乾いて痛い",
     "日中も目がしょぼしょぼする",
@@ -35,39 +66,20 @@
     "湿度計がない、または40％を下回っている"
   ],
   "points": [
-    "冬の室内は、湿度40〜60％・室温20℃前後が目安とされて…",
-    "洗濯物の部屋干しや濡れタオルなど",
-    "60％を超える状態が続くと、カビやダニが増えやすくなります。"
+    "朝起きると、のどや鼻が乾いて痛い",
+    "日中も目がしょぼしょぼする",
+    "肌がかゆい、粉をふく"
   ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
     "alt": "セルフチェック：朝起きると、のどや鼻が乾いて痛い、日中も目がしょぼしょぼする、肌がかゆい、粉をふく、唇がすぐ荒れる、静電気がよく起きる、湿度計がない、または40％を下回っている。当てはまる数を確認。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/winter-indoor-humidity-guide/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 403272,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/winter-indoor-humidity-guide/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 225639,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:50.921Z"
+  "generatedAt": "2026-11-24T05:42:09.147Z"
 }

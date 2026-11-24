@@ -5,27 +5,58 @@
   "url": "/ja/posts/jeonripseon-good-5foods.html",
   "keyword": "前立腺によい食べ物",
   "hooks": [
-    "前立腺によい食べ物、知っておきたい3つのポイント",
-    "前立腺によい食べ物、3つのポイント"
+    "今すぐできる前立腺によい食べ物3つのポイント",
+    "実は逆効果かも？前立腺によい食べ物"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#健康情報"
   ],
+  "image": "social/x/jeonripseon-good-5foods/card.png",
   "posts": {
     "a": {
-      "text": "前立腺によい食べ物、知っておきたい3つのポイント\n\n✅ 朝の食卓に加熱したトマト\n✅ 肉中心の食事から魚と野菜の比重を少しず…\n✅ 長く座ったままの習慣を減らし\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=a\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=a",
-      "weighted": 206,
+      "body": "今すぐできる前立腺によい食べ物3つのポイント\n\n✅ 朝の食卓に加熱したトマト\n✅ 肉中心の食事から魚と野菜の比重を少しず…\n✅ 長く座ったままの習慣を減らし\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "今すぐできる前立腺によい食べ物3つのポイント\n\n✅ 朝の食卓に加熱したトマト\n✅ 肉中心の食事から魚と野菜の比重を少しず…\n✅ 長く座ったままの習慣を減らし\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=reply_a",
+      "weighted": 236,
+      "charCount": 128,
       "ok": true
     },
     "b": {
-      "text": "前立腺によい食べ物、3つのポイント\n\n✅ 朝の食卓に加熱したトマト\n✅ 肉中心の食事から魚と野菜の比重を少しず…\n✅ 長く座ったままの習慣を減らし\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=b\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=b",
-      "weighted": 192,
+      "body": "実は逆効果かも？前立腺によい食べ物\n\n✅ 朝の食卓に加熱したトマト\n✅ 肉中心の食事から魚と野菜の比重を少しず…\n✅ 長く座ったままの習慣を減らし\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？前立腺によい食べ物\n\n✅ 朝の食卓に加熱したトマト\n✅ 肉中心の食事から魚と野菜の比重を少しず…\n✅ 長く座ったままの習慣を減らし\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=reply_b",
+      "weighted": 257,
+      "charCount": 139,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる前立腺によい食べ物3つのポイント\n\n✅ 朝の食卓に加熱したトマト\n✅ 肉中心の食事から魚と野菜の比重を少しず…\n✅ 長く座ったままの習慣を減らし\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=reply_a",
+      "charCount": 128,
+      "image": "social/x/jeonripseon-good-5foods/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？前立腺によい食べ物\n\n✅ 朝の食卓に加熱したトマト\n✅ 肉中心の食事から魚と野菜の比重を少しず…\n✅ 長く座ったままの習慣を減らし\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/jeonripseon-good-5foods.html?utm_source=x&utm_medium=social&utm_campaign=jeonripseon-good-5foods&utm_content=reply_b",
+      "charCount": 139,
+      "image": "social/x/jeonripseon-good-5foods/card.png"
+    }
+  ],
   "checklist": [
     "朝の食卓に加熱したトマト",
     "肉中心の食事から魚と野菜の比重を少しず…",
@@ -41,30 +72,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：朝の食卓に加熱したトマト、肉中心の食事から魚と野菜の比重を少しず…、長く座ったままの習慣を減らし。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/jeonripseon-good-5foods/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 369937,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/jeonripseon-good-5foods/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 222598,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:54.444Z"
+  "generatedAt": "2026-11-24T05:42:09.160Z"
 }

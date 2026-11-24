@@ -5,27 +5,58 @@
   "url": "/ja/posts/year-end-party-hangover-food.html",
   "keyword": "二日酔い",
   "hooks": [
-    "忘年会の二日酔いに良い食べ物？",
-    "二日酔い、知っておきたい5つのチェック"
+    "今すぐできる二日酔い5つのチェック",
+    "実は逆効果かも？二日酔い"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#健康情報"
   ],
+  "image": "social/x/year-end-party-hangover-food/card.png",
   "posts": {
     "a": {
-      "text": "忘年会の二日酔いに良い食べ物？\n\n✅ 食べ物だけで二日酔いを消すのは難しく、水分\n✅ 澄んだスープ・常温の水・イオン飲料・おかゆなど\n✅ 迎え酒・脂っこいラーメン・濃いコーヒーの飲みすぎ\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=a\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=a",
-      "weighted": 234,
+      "body": "今すぐできる二日酔い5つのチェック\n\n✅ 頭が重い、ずきずきする\n✅ 胃がむかむかして食欲がない\n✅ のどが渇く、体がだるい\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "text": "今すぐできる二日酔い5つのチェック\n\n✅ 頭が重い、ずきずきする\n✅ 胃がむかむかして食欲がない\n✅ のどが渇く、体がだるい\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=reply_a",
+      "weighted": 225,
+      "charCount": 122,
       "ok": true
     },
     "b": {
-      "text": "二日酔い、知っておきたい5つのチェック\n\n✅ 食べ物だけで二日酔いを消すのは難しく、水分\n✅ 澄んだスープ・常温の水・イオン飲料・おかゆなど\n✅ 迎え酒・脂っこいラーメン・濃いコーヒーの飲みすぎ\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=b\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=b",
-      "weighted": 241,
+      "body": "実は逆効果かも？二日酔い\n\n✅ 頭が重い、ずきずきする\n✅ 胃がむかむかして食欲がない\n✅ のどが渇く、体がだるい\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？二日酔い\n\n✅ 頭が重い、ずきずきする\n✅ 胃がむかむかして食欲がない\n✅ のどが渇く、体がだるい\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=reply_b",
+      "weighted": 246,
+      "charCount": 133,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる二日酔い5つのチェック\n\n✅ 頭が重い、ずきずきする\n✅ 胃がむかむかして食欲がない\n✅ のどが渇く、体がだるい\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=reply_a",
+      "charCount": 122,
+      "image": "social/x/year-end-party-hangover-food/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？二日酔い\n\n✅ 頭が重い、ずきずきする\n✅ 胃がむかむかして食欲がない\n✅ のどが渇く、体がだるい\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/year-end-party-hangover-food.html?utm_source=x&utm_medium=social&utm_campaign=year-end-party-hangover-food&utm_content=reply_b",
+      "charCount": 133,
+      "image": "social/x/year-end-party-hangover-food/card.png"
+    }
+  ],
   "checklist": [
     "頭が重い、ずきずきする",
     "胃がむかむかして食欲がない",
@@ -34,39 +65,20 @@
     "前夜のことをあまり覚えていない"
   ],
   "points": [
-    "食べ物だけで二日酔いを消すのは難しく、水分",
-    "澄んだスープ・常温の水・イオン飲料・おかゆなど",
-    "迎え酒・脂っこいラーメン・濃いコーヒーの飲みすぎ"
+    "頭が重い、ずきずきする",
+    "胃がむかむかして食欲がない",
+    "のどが渇く、体がだるい"
   ],
   "card": {
     "vertical": "card.png",
     "og": "card_og.png",
     "alt": "セルフチェック：頭が重い、ずきずきする、胃がむかむかして食欲がない、のどが渇く、体がだるい、顔がむくんでいる、前夜のことをあまり覚えていない。当てはまる数を確認。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/year-end-party-hangover-food/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 393006,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/year-end-party-hangover-food/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 224568,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:50.066Z"
+  "generatedAt": "2026-11-24T05:42:09.145Z"
 }

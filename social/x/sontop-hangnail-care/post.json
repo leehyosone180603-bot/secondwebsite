@@ -5,27 +5,58 @@
   "url": "/ja/posts/sontop-hangnail-care.html",
   "keyword": "爪",
   "hooks": [
-    "爪のささくれができる原因と予防・ケア方法？",
-    "爪、知っておきたい4つのポイント"
+    "今すぐできる爪4つのポイント",
+    "実は逆効果かも？爪"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
   ],
   "hashtags": [
     "#健康",
     "#健康情報"
   ],
+  "image": "social/x/sontop-hangnail-care/card.png",
   "posts": {
     "a": {
-      "text": "爪のささくれができる原因と予防・ケア方法？\n\n✅ 手で引っ張らず 爪切りで皮膚の近くから…\n✅ 手を洗ったあとは ハンドクリーム で必…\n✅ 爪が長いと周りの皮膚を刺激するので 短…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=a\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=a",
-      "weighted": 223,
+      "body": "今すぐできる爪4つのポイント\n\n✅ 手で引っ張らず 爪切りで皮膚の近くから…\n✅ 手を洗ったあとは ハンドクリーム で必…\n✅ 爪が長いと周りの皮膚を刺激するので 短…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "今すぐできる爪4つのポイント\n\n✅ 手で引っ張らず 爪切りで皮膚の近くから…\n✅ 手を洗ったあとは ハンドクリーム で必…\n✅ 爪が長いと周りの皮膚を刺激するので 短…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=reply_a",
+      "weighted": 242,
+      "charCount": 134,
       "ok": true
     },
     "b": {
-      "text": "爪、知っておきたい4つのポイント\n\n✅ 手で引っ張らず 爪切りで皮膚の近くから…\n✅ 手を洗ったあとは ハンドクリーム で必…\n✅ 爪が長いと周りの皮膚を刺激するので 短…\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=b\n\n#健康 #健康情報",
-      "link": "https://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=b",
-      "weighted": 212,
+      "body": "実は逆効果かも？爪\n\n✅ 手で引っ張らず 爪切りで皮膚の近くから…\n✅ 手を洗ったあとは ハンドクリーム で必…\n✅ 爪が長いと周りの皮膚を刺激するので 短…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？爪\n\n✅ 手で引っ張らず 爪切りで皮膚の近くから…\n✅ 手を洗ったあとは ハンドクリーム で必…\n✅ 爪が長いと周りの皮膚を刺激するので 短…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=reply_b",
+      "weighted": 263,
+      "charCount": 145,
       "ok": true
     }
   },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる爪4つのポイント\n\n✅ 手で引っ張らず 爪切りで皮膚の近くから…\n✅ 手を洗ったあとは ハンドクリーム で必…\n✅ 爪が長いと周りの皮膚を刺激するので 短…\n\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=reply_a",
+      "charCount": 134,
+      "image": "social/x/sontop-hangnail-care/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？爪\n\n✅ 手で引っ張らず 爪切りで皮膚の近くから…\n✅ 手を洗ったあとは ハンドクリーム で必…\n✅ 爪が長いと周りの皮膚を刺激するので 短…\n\nあとで見返せるように保存推奨📌\n今日からできるものを一つ選んでみてください。\nあなたはどれから試しますか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/sontop-hangnail-care.html?utm_source=x&utm_medium=social&utm_campaign=sontop-hangnail-care&utm_content=reply_b",
+      "charCount": 145,
+      "image": "social/x/sontop-hangnail-care/card.png"
+    }
+  ],
   "checklist": [
     "手で引っ張らず 爪切りで皮膚の近くから…",
     "手を洗ったあとは ハンドクリーム で必…",
@@ -42,30 +73,11 @@
     "og": "card_og.png",
     "alt": "この記事のポイント：手で引っ張らず 爪切りで皮膚の近くから…、手を洗ったあとは ハンドクリーム で必…、爪が長いと周りの皮膚を刺激するので 短…、寝る前に キューティクルオイル を時々…。健康フロー。"
   },
-  "cardResults": [
-    {
-      "file": "card.png",
-      "path": "/home/user/secondwebsite/social/x/sontop-hangnail-care/card.png",
-      "w": 1080,
-      "h": 1350,
-      "overflow": false,
-      "bytes": 406918,
-      "over1mb": false
-    },
-    {
-      "file": "card_og.png",
-      "path": "/home/user/secondwebsite/social/x/sontop-hangnail-care/card_og.png",
-      "w": 1200,
-      "h": 675,
-      "overflow": false,
-      "bytes": 249956,
-      "over1mb": false
-    }
-  ],
+  "cardResults": [],
   "forbidden": {
     "a": [],
     "b": [],
     "hooks": []
   },
-  "generatedAt": "2026-11-23T05:55:57.457Z"
+  "generatedAt": "2026-11-24T05:42:09.168Z"
 }
