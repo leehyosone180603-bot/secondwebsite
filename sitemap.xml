@@ -352,6 +352,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://healthfortune.co.kr/posts/winter-itchy-dry-skin-causes.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://healthfortune.co.kr/posts/winter-vitamin-d-deficiency-symptoms.html</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -929,6 +935,12 @@
   <url>
     <loc>https://healthfortune.co.kr/ja/posts/korea-health-guide.html</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/ja/posts/winter-itchy-dry-skin-causes.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>

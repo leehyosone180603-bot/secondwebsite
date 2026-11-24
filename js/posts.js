@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "winter-itchy-dry-skin-causes",
+    title: "겨울 피부 가려움 원인과 줄이는 법, 샤워 후 3분 보습이 핵심",
+    summary: "겨울만 되면 정강이가 하얗게 일고 밤에 가려운 이유는? 피부건조증 원인과 신호, 미지근한 샤워·3분 보습·실내 습도 관리법, 병원에 가야 할 증상까지 정리했습니다.",
+    category: "info",
+    date: "2026-11-24",
+    url: "/posts/winter-itchy-dry-skin-causes.html",
+    image: "/img/winter-itchy-dry-skin-causes-1.jpg",
+  },
+  {
     id: "winter-vitamin-d-deficiency-symptoms",
     title: "겨울 비타민D 부족 증상, 피곤함의 원인일까? 햇빛·음식·영양제로 채우는 법",
     summary: "겨울철 피로·근력 저하가 비타민D 부족 때문일까? 부족 신호, 혈액 검사 기준, 점심 산책·음식·영양제 보충법과 상한섭취량 4,000IU, IU·㎍ 환산까지 정리했습니다.",

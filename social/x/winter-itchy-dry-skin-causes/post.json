@@ -1,0 +1,71 @@
+{
+  "slug": "winter-itchy-dry-skin-causes",
+  "series": "info",
+  "title": "冬の肌のかゆみの原因と減らし方、シャワー後3分の保湿がカギ",
+  "url": "/ja/posts/winter-itchy-dry-skin-causes.html",
+  "keyword": "冬",
+  "hooks": [
+    "冬の肌のかゆみの原因と減らし方？",
+    "冬、知っておきたい4つのポイント"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "posts": {
+    "a": {
+      "text": "冬の肌のかゆみの原因と減らし方？\n\n✅ シャワー直後や就寝時にかゆみが強くなる\n✅ 肌がつっぱり、白い粉のような角質が出る\n✅ かいた部分が赤くなったり\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/winter-itchy-dry-skin-causes.html?utm_source=x&utm_medium=social&utm_campaign=winter-itchy-dry-skin-causes&utm_content=a\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-itchy-dry-skin-causes.html?utm_source=x&utm_medium=social&utm_campaign=winter-itchy-dry-skin-causes&utm_content=a",
+      "weighted": 200,
+      "ok": true
+    },
+    "b": {
+      "text": "冬、知っておきたい4つのポイント\n\n✅ シャワー直後や就寝時にかゆみが強くなる\n✅ 肌がつっぱり、白い粉のような角質が出る\n✅ かいた部分が赤くなったり\n\n▼詳しくはこちら\nhttps://healthfortune.co.kr/ja/posts/winter-itchy-dry-skin-causes.html?utm_source=x&utm_medium=social&utm_campaign=winter-itchy-dry-skin-causes&utm_content=b\n\n#健康 #健康情報",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-itchy-dry-skin-causes.html?utm_source=x&utm_medium=social&utm_campaign=winter-itchy-dry-skin-causes&utm_content=b",
+      "weighted": 199,
+      "ok": true
+    }
+  },
+  "checklist": [
+    "シャワー直後や就寝時にかゆみが強くなる",
+    "肌がつっぱり、白い粉のような角質が出る",
+    "かいた部分が赤くなったり",
+    "服を脱ぐときに静電気とともにチクチクする"
+  ],
+  "points": [
+    "シャワー直後や就寝時にかゆみが強くなる",
+    "肌がつっぱり、白い粉のような角質が出る",
+    "かいた部分が赤くなったり"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "この記事のポイント：シャワー直後や就寝時にかゆみが強くなる、肌がつっぱり、白い粉のような角質が出る、かいた部分が赤くなったり、服を脱ぐときに静電気とともにチクチクする。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/winter-itchy-dry-skin-causes/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 407747,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/winter-itchy-dry-skin-causes/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 251925,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-24T03:11:56.924Z"
+}
