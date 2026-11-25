@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "youth-age-criteria-by-policy-2026",
+    title: "청년 나이 기준 몇 살까지? 2026년 정책별 19~34세·39세 차이 정리",
+    summary: "청년 나이 기준은 청년기본법상 19~34세지만 고용·주거·지자체 사업마다 다릅니다. 2026년 청년월세 출생연도, 청년미래적금 병역 차감, 지자체 39·45세 기준까지 비교했습니다.",
+    category: "calc",
+    date: "2026-11-25",
+    url: "/posts/youth-age-criteria-by-policy-2026.html",
+    image: "/img/youth-age-criteria-by-policy-2026-1.jpg",
+  },
+  {
     id: "late-flu-vaccine-december-effect-2026",
     title: "독감 예방접종 늦게 맞아도 될까? 12월 접종 효과와 무료 대상·기간 정리",
     summary: "독감 예방접종 늦게 맞아도 효과가 있을까요? 항체 형성 2주, 겨울·봄 유행 시기, 2026-2027절기 무료 대상(6개월~14세·임신부·65세 이상)과 2027년 4월 30일까지 접종 기간을 정리했습니다.",
