@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "driver-license-age-requirements-2026",
+    title: "운전면허 취득 나이, 고3은 언제부터? 1종·2종·원동기 기준과 생일 계산법",
+    summary: "운전면허 취득 나이는 학년이 아닌 만 나이 기준입니다. 원동기 만 16세, 1종·2종 보통 만 18세, 대형·특수 만 19세+경력 1년. 2008년생 고3 응시 시점과 면허 취득 6단계, 기간 제한을 정리했습니다.",
+    category: "calc",
+    date: "2026-11-25",
+    url: "/posts/driver-license-age-requirements-2026.html",
+    image: "/img/driver-license-age-requirements-2026-1.jpg",
+  },
+  {
     id: "civil-defense-age-limit-2026",
     title: "민방위 나이 몇 살까지? 2026년 1986년생이 마지막, 출생연도별 종료 시점",
     summary: "민방위 나이는 40세가 되는 해 12월 31일까지입니다. 2026년엔 1986년생이 마지막 해, 출생연도별 종료 시점과 편성 제외 대상, 연차별 교육과 불참 시 조치를 정리했습니다.",
