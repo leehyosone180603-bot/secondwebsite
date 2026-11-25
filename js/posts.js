@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "winter-ventilation-how-often-how-long",
+    title: "겨울철 환기 방법, 하루 몇 번 몇 분? 맞통풍·요리 후·미세먼지 나쁜 날 정리",
+    summary: "겨울철 환기 방법을 정리했습니다. 하루 2~3회 5~30분 짧고 강하게, 맞통풍 요령, 요리 후·미세먼지 나쁜 날 환기법과 공기청정기만으로 부족한 이유까지 알려드립니다.",
+    category: "info",
+    date: "2026-11-25",
+    url: "/posts/winter-ventilation-how-often-how-long.html",
+    image: "/img/winter-ventilation-how-often-how-long-1.jpg",
+  },
+  {
     id: "youth-age-criteria-by-policy-2026",
     title: "청년 나이 기준 몇 살까지? 2026년 정책별 19~34세·39세 차이 정리",
     summary: "청년 나이 기준은 청년기본법상 19~34세지만 고용·주거·지자체 사업마다 다릅니다. 2026년 청년월세 출생연도, 청년미래적금 병역 차감, 지자체 39·45세 기준까지 비교했습니다.",

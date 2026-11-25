@@ -1,0 +1,101 @@
+{
+  "slug": "winter-ventilation-how-often-how-long",
+  "series": "info",
+  "title": "冬の換気のしかた｜1日何回・何分？対角換気・調理後・PM2.5の悪い日まで",
+  "url": "/ja/posts/winter-ventilation-how-often-how-long.html",
+  "keyword": "冬",
+  "hooks": [
+    "実は逆効果かも？冬",
+    "冬、知っておきたい3つのチェック"
+  ],
+  "hookTypes": [
+    "myth",
+    "number"
+  ],
+  "hashtags": [
+    "#健康",
+    "#健康情報"
+  ],
+  "image": "social/x/winter-ventilation-how-often-how-long/card.png",
+  "posts": {
+    "a": {
+      "body": "実は逆効果かも？冬\n\n✅ 換気のあいだは、赤ちゃんや高齢の方を別の部屋に移すか上…\n✅ 風邪・インフルエンザの方がいる家は\n✅ ガスコンロ・ストーブを使う家は\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "text": "実は逆効果かも？冬\n\n✅ 換気のあいだは、赤ちゃんや高齢の方を別の部屋に移すか上…\n✅ 風邪・インフルエンザの方がいる家は\n✅ ガスコンロ・ストーブを使う家は\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-ventilation-how-often-how-long.html?utm_source=x&utm_medium=social&utm_campaign=winter-ventilation-how-often-how-long&utm_content=reply_a",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-ventilation-how-often-how-long.html?utm_source=x&utm_medium=social&utm_campaign=winter-ventilation-how-often-how-long&utm_content=reply_a",
+      "weighted": 259,
+      "charCount": 139,
+      "ok": true
+    },
+    "b": {
+      "body": "冬、知っておきたい3つのチェック\n\n✅ 換気のあいだは、赤ちゃんや高齢の方を別の部屋に…\n✅ 風邪・インフルエンザの方…\n✅ ガスコンロ・ストーブを…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "text": "冬、知っておきたい3つのチェック\n\n✅ 換気のあいだは、赤ちゃんや高齢の方を別の部屋に…\n✅ 風邪・インフルエンザの方…\n✅ ガスコンロ・ストーブを…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-ventilation-how-often-how-long.html?utm_source=x&utm_medium=social&utm_campaign=winter-ventilation-how-often-how-long&utm_content=reply_b",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/winter-ventilation-how-often-how-long.html?utm_source=x&utm_medium=social&utm_campaign=winter-ventilation-how-often-how-long&utm_content=reply_b",
+      "weighted": 278,
+      "charCount": 151,
+      "ok": true
+    }
+  },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "myth",
+      "body": "実は逆効果かも？冬\n\n✅ 換気のあいだは、赤ちゃんや高齢の方を別の部屋に移すか上…\n✅ 風邪・インフルエンザの方がいる家は\n✅ ガスコンロ・ストーブを使う家は\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-ventilation-how-often-how-long.html?utm_source=x&utm_medium=social&utm_campaign=winter-ventilation-how-often-how-long&utm_content=reply_a",
+      "charCount": 139,
+      "image": "social/x/winter-ventilation-how-often-how-long/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "number",
+      "body": "冬、知っておきたい3つのチェック\n\n✅ 換気のあいだは、赤ちゃんや高齢の方を別の部屋に…\n✅ 風邪・インフルエンザの方…\n✅ ガスコンロ・ストーブを…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#健康 #健康情報",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/winter-ventilation-how-often-how-long.html?utm_source=x&utm_medium=social&utm_campaign=winter-ventilation-how-often-how-long&utm_content=reply_b",
+      "charCount": 151,
+      "image": "social/x/winter-ventilation-how-often-how-long/card.png"
+    }
+  ],
+  "checklist": [
+    "換気のあいだは、赤ちゃんや高齢の方を別…",
+    "風邪・インフルエンザの方がいる家は",
+    "ガスコンロ・ストーブを使う家は"
+  ],
+  "points": [
+    "換気のあいだは、赤ちゃんや高齢の方を別の部屋に移すか上…",
+    "風邪・インフルエンザの方がいる家は",
+    "ガスコンロ・ストーブを使う家は"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：換気のあいだは、赤ちゃんや高齢の方を別…、風邪・インフルエンザの方がいる家は、ガスコンロ・ストーブを使う家は。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/winter-ventilation-how-often-how-long/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 372157,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/winter-ventilation-how-often-how-long/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 223557,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-25T14:09:58.976Z"
+}
