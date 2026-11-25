@@ -1,0 +1,104 @@
+{
+  "slug": "kbeauty-skincare-order",
+  "series": "kbeauty",
+  "title": "韓国式スキンケアの順番｜基本の5ステップと冬の保湿のコツ",
+  "url": "/ja/posts/kbeauty-skincare-order.html",
+  "keyword": "韓国式スキンケア",
+  "hooks": [
+    "今すぐできる韓国式スキンケア6つのチェック",
+    "実は逆効果かも？韓国式スキンケア"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
+  ],
+  "hashtags": [
+    "#韓国コスメ",
+    "#インナーケア"
+  ],
+  "image": "social/x/kbeauty-skincare-order/card.png",
+  "posts": {
+    "a": {
+      "body": "今すぐできる韓国式スキンケア6つのチェック\n\n✅ [ ] 洗顔後、化粧水をつけるまでに数…\n✅ [ ] クリームを塗ってから化粧水…\n✅ [ ] 化粧水をコットンでさっと一度ふ…\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "text": "今すぐできる韓国式スキンケア6つのチェック\n\n✅ [ ] 洗顔後、化粧水をつけるまでに数…\n✅ [ ] クリームを塗ってから化粧水…\n✅ [ ] 化粧水をコットンでさっと一度ふ…\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-skincare-order.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-skincare-order&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/kbeauty-skincare-order.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-skincare-order&utm_content=reply_a",
+      "weighted": 274,
+      "charCount": 154,
+      "ok": true
+    },
+    "b": {
+      "body": "実は逆効果かも？韓国式スキンケア\n\n✅ [ ] 洗顔後、化粧水をつける…\n✅ [ ] クリームを塗ってか…\n✅ [ ] 化粧水をコットンでさっ…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "text": "実は逆効果かも？韓国式スキンケア\n\n✅ [ ] 洗顔後、化粧水をつける…\n✅ [ ] クリームを塗ってか…\n✅ [ ] 化粧水をコットンでさっ…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-skincare-order.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-skincare-order&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/kbeauty-skincare-order.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-skincare-order&utm_content=reply_b",
+      "weighted": 271,
+      "charCount": 153,
+      "ok": true
+    }
+  },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる韓国式スキンケア6つのチェック\n\n✅ [ ] 洗顔後、化粧水をつけるまでに数…\n✅ [ ] クリームを塗ってから化粧水…\n✅ [ ] 化粧水をコットンでさっと一度ふ…\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-skincare-order.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-skincare-order&utm_content=reply_a",
+      "charCount": 154,
+      "image": "social/x/kbeauty-skincare-order/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？韓国式スキンケア\n\n✅ [ ] 洗顔後、化粧水をつける…\n✅ [ ] クリームを塗ってか…\n✅ [ ] 化粧水をコットンでさっ…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-skincare-order.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-skincare-order&utm_content=reply_b",
+      "charCount": 153,
+      "image": "social/x/kbeauty-skincare-order/card.png"
+    }
+  ],
+  "checklist": [
+    "[ ] 洗顔後、化粧水をつけるまでに数…",
+    "[ ] クリームを塗ってから化粧水をつ…",
+    "[ ] 化粧水をコットンでさっと一度ふ…",
+    "[ ] 乳液やクリームを省略する日が多い",
+    "[ ] 朝も夜もまったく同じアイテム",
+    "[ ] 肌がつっぱるのに"
+  ],
+  "points": [
+    "[ ] 洗顔後、化粧水をつけるまでに数分あいてしまうこ…",
+    "[ ] クリームを塗ってから化粧水をつけることがある",
+    "[ ] 化粧水をコットンでさっと一度ふくだけで終わって…"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：[ ] 洗顔後、化粧水をつけるまでに数…、[ ] クリームを塗ってから化粧水をつ…、[ ] 化粧水をコットンでさっと一度ふ…、[ ] 乳液やクリームを省略する日が多い、[ ] 朝も夜もまったく同じアイテム、[ ] 肌がつっぱるのに。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/kbeauty-skincare-order/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 408568,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/kbeauty-skincare-order/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 239411,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-25T01:31:38.574Z"
+}

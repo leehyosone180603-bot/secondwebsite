@@ -14,7 +14,7 @@
       "keyword": "1万歩 痩せない",
       "category": "exercise",
       "jaOnly": true,
-      "status": "pending",
+      "status": "done",
       "basis": "2026-11-24 X 수요조사"
     },
     {
@@ -24,7 +24,7 @@
       "keyword": "寝だめ 睡眠負債",
       "category": "info",
       "jaOnly": true,
-      "status": "pending",
+      "status": "done",
       "basis": "2026-11-24 X 수요조사"
     },
     {
@@ -34,7 +34,7 @@
       "keyword": "隠れ貧血 鉄不足",
       "category": "info",
       "jaOnly": true,
-      "status": "pending",
+      "status": "done",
       "basis": "2026-11-24 X 수요조사"
     },
     {
@@ -44,7 +44,7 @@
       "keyword": "入眠 ルーティン",
       "category": "info",
       "jaOnly": true,
-      "status": "pending",
+      "status": "done",
       "basis": "2026-11-24 X 수요조사"
     },
     {
@@ -54,7 +54,7 @@
       "keyword": "冬 便秘 腸活",
       "category": "info",
       "jaOnly": true,
-      "status": "pending",
+      "status": "done",
       "basis": "2026-11-24 X 수요조사"
     },
     {
@@ -64,7 +64,7 @@
       "keyword": "大腸内視鏡 下剤 コツ",
       "category": "check",
       "jaOnly": true,
-      "status": "pending",
+      "status": "done",
       "basis": "2026-11-24 X 수요조사"
     },
     {
@@ -74,7 +74,7 @@
       "keyword": "健康診断 前日 やってはいけない",
       "category": "check",
       "jaOnly": true,
-      "status": "pending",
+      "status": "done",
       "basis": "2026-11-24 X 수요조사"
     },
     {
@@ -84,7 +84,7 @@
       "keyword": "冬 だるい 自律神経",
       "category": "season",
       "jaOnly": true,
-      "status": "pending",
+      "status": "done",
       "basis": "2026-11-24 X 수요조사"
     },
     {
@@ -166,7 +166,7 @@
       "koSource": null,
       "img": "korean woman healthy skin / skincare routine / clear skin face",
       "std": "생활습관·식사 중심. 56항목 효능표현. 肌タイプ別. 식재료 표",
-      "status": "pending"
+      "status": "done"
     },
     {
       "n": 28,
@@ -178,7 +178,7 @@
       "koSource": null,
       "img": "skincare bottles / woman applying lotion / cosmetics table",
       "std": "順番·保湿 중심. うるおいを与える 등 56항목. 브랜드 금지",
-      "status": "pending"
+      "status": "done"
     },
     {
       "n": 29,

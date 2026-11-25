@@ -1,6 +1,8 @@
 /* 일본어 건강 미러 글 레지스트리 (factory-publish-ja.js 가 자동 갱신) */
 (function (root) {
   var JA_POSTS = [
+    { id: "kbeauty-skincare-order", title: "韓国式スキンケアの順番｜基本の5ステップと冬の保湿のコツ", summary: "韓国式スキンケアの順番を基本の5ステップでやさしく解説。水っぽいものから油っぽいものへという考え方や、冬の保湿のコツ、肌タイプ別の量の目安までまとめました。", category: "kbeauty", date: "2026-11-25", url: "/ja/posts/kbeauty-skincare-order.html", image: "/img/kbeauty-skincare-order-1.jpg" },
+    { id: "kbeauty-korean-skin-habits", title: "韓国人の肌はなぜきれい？毎日の生活習慣7つ", summary: "韓国人の肌がきれいな理由を、体質ではなく毎日の生活習慣から解説します。水分・睡眠・食事・日ざし対策など、今日から無理なく続けられる7つの習慣と肌タイプ別のコツを紹介します。", category: "kbeauty", date: "2026-11-25", url: "/ja/posts/kbeauty-korean-skin-habits.html", image: "/img/kbeauty-korean-skin-habits-1.jpg" },
     { id: "winter-morning-blood-pressure-high-reasons", title: "冬の朝に血圧が高い理由｜家庭血圧の測り方と135/85の基準", summary: "冬の朝に血圧が高く出る理由と、大韓高血圧学会が案内する家庭血圧の測定時間・姿勢、家で測った血圧の高血圧基準135/85mmHg、冬の管理法をまとめました。", category: "info", date: "2026-11-25", url: "/ja/posts/winter-morning-blood-pressure-high-reasons.html", image: "/img/winter-morning-blood-pressure-high-reasons-1.jpg" },
     { id: "electric-blanket-low-temperature-burn-symptoms", title: "電気毛布の低温やけど症状｜赤いまだら・水ぶくれの応急手当と受診の目安", summary: "電気毛布をつけて寝た翌朝に肌が赤くまだらになったら低温やけどかもしれません。起こる仕組み・症状・家庭での応急手当・受診の目安と、寝る前の予防チェックをまとめました。", category: "info", date: "2026-11-24", url: "/ja/posts/electric-blanket-low-temperature-burn-symptoms.html", image: "/img/electric-blanket-low-temperature-burn-symptoms-1.jpg" },
     { id: "winter-fatigue-autonomic", title: "冬のだるさ・やる気が出ない原因：日照・自律神経・睡眠", summary: "冬になるとだるい、やる気が出ない——その背景にある日照時間の減少・体内時計・自律神経・睡眠のつながりを整理し、朝の光や生活リズムの整え方、受診を考えたいサインを紹介します。", category: "season", date: "2026-11-24", url: "/ja/posts/winter-fatigue-autonomic.html", image: "/img/winter-fatigue-autonomic-1.jpg" },
