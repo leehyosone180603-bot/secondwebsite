@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "reserve-forces-age-limit-years-2026",
+    title: "예비군 나이 몇 살까지? 전역 후 8년 계산법과 2026년 연차별 훈련 정리",
+    summary: "예비군은 나이가 아니라 전역 후 8년이 되는 해 12월 31일까지입니다. 전역 연도로 해제 시점 계산하는 법, 1~8년차 훈련 종류, 2026년 훈련비 인상과 민방위 전환까지 정리했습니다.",
+    category: "calc",
+    date: "2026-11-26",
+    url: "/posts/reserve-forces-age-limit-years-2026.html",
+    image: "/img/reserve-forces-age-limit-years-2026-1.jpg",
+  },
+  {
     id: "winter-ventilation-how-often-how-long",
     title: "겨울철 환기 방법, 하루 몇 번 몇 분? 맞통풍·요리 후·미세먼지 나쁜 날 정리",
     summary: "겨울철 환기 방법을 정리했습니다. 하루 2~3회 5~30분 짧고 강하게, 맞통풍 요령, 요리 후·미세먼지 나쁜 날 환기법과 공기청정기만으로 부족한 이유까지 알려드립니다.",
