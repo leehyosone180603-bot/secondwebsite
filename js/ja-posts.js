@@ -1,6 +1,7 @@
 /* 일본어 건강 미러 글 레지스트리 (factory-publish-ja.js 가 자동 갱신) */
 (function (root) {
   var JA_POSTS = [
+    { id: "late-flu-vaccine-december-effect-2026", title: "インフルエンザの予防接種、遅く受けても大丈夫？12月接種の効果と無料対象・期間", summary: "インフルエンザの予防接種を12月に受けても効果はあるのか、2026-2027シーズンの無料接種の対象・期間、受け方、子どもの2回接種までを韓国の基準でまとめました。", category: "info", date: "2026-11-25", url: "/ja/posts/late-flu-vaccine-december-effect-2026.html", image: "/img/late-flu-vaccine-december-effect-2026-1.jpg" },
     { id: "kbeauty-skincare-order", title: "韓国式スキンケアの順番｜基本の5ステップと冬の保湿のコツ", summary: "韓国式スキンケアの順番を基本の5ステップでやさしく解説。水っぽいものから油っぽいものへという考え方や、冬の保湿のコツ、肌タイプ別の量の目安までまとめました。", category: "kbeauty", date: "2026-11-25", url: "/ja/posts/kbeauty-skincare-order.html", image: "/img/kbeauty-skincare-order-1.jpg" },
     { id: "kbeauty-korean-skin-habits", title: "韓国人の肌はなぜきれい？毎日の生活習慣7つ", summary: "韓国人の肌がきれいな理由を、体質ではなく毎日の生活習慣から解説します。水分・睡眠・食事・日ざし対策など、今日から無理なく続けられる7つの習慣と肌タイプ別のコツを紹介します。", category: "kbeauty", date: "2026-11-25", url: "/ja/posts/kbeauty-korean-skin-habits.html", image: "/img/kbeauty-korean-skin-habits-1.jpg" },
     { id: "winter-morning-blood-pressure-high-reasons", title: "冬の朝に血圧が高い理由｜家庭血圧の測り方と135/85の基準", summary: "冬の朝に血圧が高く出る理由と、大韓高血圧学会が案内する家庭血圧の測定時間・姿勢、家で測った血圧の高血圧基準135/85mmHg、冬の管理法をまとめました。", category: "info", date: "2026-11-25", url: "/ja/posts/winter-morning-blood-pressure-high-reasons.html", image: "/img/winter-morning-blood-pressure-high-reasons-1.jpg" },

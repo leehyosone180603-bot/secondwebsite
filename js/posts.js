@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "late-flu-vaccine-december-effect-2026",
+    title: "독감 예방접종 늦게 맞아도 될까? 12월 접종 효과와 무료 대상·기간 정리",
+    summary: "독감 예방접종 늦게 맞아도 효과가 있을까요? 항체 형성 2주, 겨울·봄 유행 시기, 2026-2027절기 무료 대상(6개월~14세·임신부·65세 이상)과 2027년 4월 30일까지 접종 기간을 정리했습니다.",
+    category: "info",
+    date: "2026-11-25",
+    url: "/posts/late-flu-vaccine-december-effect-2026.html",
+    image: "/img/late-flu-vaccine-december-effect-2026-1.jpg",
+  },
+  {
     id: "driver-license-age-requirements-2026",
     title: "운전면허 취득 나이, 고3은 언제부터? 1종·2종·원동기 기준과 생일 계산법",
     summary: "운전면허 취득 나이는 학년이 아닌 만 나이 기준입니다. 원동기 만 16세, 1종·2종 보통 만 18세, 대형·특수 만 19세+경력 1년. 2008년생 고3 응시 시점과 면허 취득 6단계, 기간 제한을 정리했습니다.",
