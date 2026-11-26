@@ -23,12 +23,25 @@
     };
   }
 
-  // incomeMonthly: 소득월액(연소득÷12), propertyPoints: 재산 부과점수, R: rates — 지역가입자
-  function regionalHealth(incomeMonthly, propertyPoints, R) {
+  // 재산세 과세표준 합계(원) → 재산등급·부과점수 (별표4, 기본공제 차감 후 등급표 적용)
+  function propertyScore(taxBase, R) {
+    var reg = R.insurance.health.regional;
+    var tbl = reg.propertyScoreTable;
+    var amtManwon = (Math.max(0, taxBase || 0) - reg.propertyDeduction.value) / 10000; // 재산금액(만원) = 과표 − 공제
+    if (amtManwon <= 0) return { grade: 0, score: 0, amtManwon: Math.max(0, amtManwon) };
+    for (var i = 0; i < tbl.length; i++) {
+      if (tbl[i].upTo === null || amtManwon <= tbl[i].upTo) return { grade: i + 1, score: tbl[i].score, amtManwon: amtManwon };
+    }
+    return { grade: tbl.length, score: tbl[tbl.length - 1].score, amtManwon: amtManwon };
+  }
+
+  // incomeMonthly: 소득월액(연소득÷12), propertyTaxBase: 재산세 과세표준 합계(원), R: rates — 지역가입자
+  function regionalHealth(incomeMonthly, propertyTaxBase, R) {
     var reg = R.insurance.health.regional, ltc = R.insurance.longTermCare;
-    var income = Math.max(0, incomeMonthly || 0), pts = Math.max(0, propertyPoints || 0);
+    var income = Math.max(0, incomeMonthly || 0);
+    var ps = propertyScore(propertyTaxBase, R);
     var incomePremium = won10(income * reg.incomeRate.value / 100);
-    var propertyPremium = won10(pts * reg.propertyPointValue.value);
+    var propertyPremium = won10(ps.score * reg.propertyPointValue.value);
     var healthRaw = incomePremium + propertyPremium;
     var health = Math.max(healthRaw, reg.minPremium.value); // 월 최저보험료 하한
     if (reg.maxPremium) health = Math.min(health, reg.maxPremium.value); // 월 상한
@@ -36,12 +49,13 @@
     var ltcPremium = won10(health * ltc.ofHealthPremium.value / 100); // 건보료 대비 환산
     return {
       incomePremium: incomePremium, propertyPremium: propertyPremium,
+      propGrade: ps.grade, propScore: ps.score,
       health: health, appliedMin: appliedMin, ltc: ltcPremium,
       total: health + ltcPremium, yearTotal: (health + ltcPremium) * 12
     };
   }
 
-  var LOGIC = { clamp: clamp, won10: won10, healthInsurance: healthInsurance, regionalHealth: regionalHealth };
+  var LOGIC = { clamp: clamp, won10: won10, healthInsurance: healthInsurance, regionalHealth: regionalHealth, propertyScore: propertyScore };
   if (typeof module !== "undefined" && module.exports) module.exports = LOGIC;
   if (typeof document === "undefined") return;
 
@@ -81,23 +95,26 @@
     var err = document.getElementById("errorMsg");
     var reg = R.insurance.health.regional;
     var annual = TK.num("annualIncome");
-    var pts = TK.num("propPoints");
-    if ((isNaN(annual) || annual <= 0) && (isNaN(pts) || pts <= 0)) {
-      err.textContent = "연 소득 또는 재산 부과점수를 입력하세요."; return;
+    var taxBase = TK.num("propTaxBase");
+    if ((isNaN(annual) || annual <= 0) && (isNaN(taxBase) || taxBase <= 0)) {
+      err.textContent = "연 소득 또는 재산세 과세표준을 입력하세요."; return;
     }
     var incomeMonthly = (isNaN(annual) ? 0 : annual) / 12;
-    var r = LOGIC.regionalHealth(incomeMonthly, isNaN(pts) ? 0 : pts, R);
+    var r = LOGIC.regionalHealth(incomeMonthly, isNaN(taxBase) ? 0 : taxBase, R);
+    var propHint = r.propScore > 0
+      ? '재산 ' + r.propGrade + '등급 · ' + f(r.propScore) + '점 × ' + reg.propertyPointValue.value + '원'
+      : (isNaN(taxBase) || taxBase <= 0 ? '재산 미입력' : '과세표준이 공제(1억원) 이하 → 재산점수 0');
     document.getElementById("hiResult").innerHTML =
       '<div class="result-hero"><div class="big"><span>' + f(r.total) + '</span><small>원</small></div><p class="result-sub">지역가입자 월 보험료 (건강 + 장기요양, ' + R.year + '년 기준)</p></div>' +
       '<table class="calc-table"><tbody>' +
       '<tr><th>소득보험료 <span class="hint">(소득월액 ' + f(Math.round(incomeMonthly)) + '원 × ' + reg.incomeRate.value + '%)</span></th><td>' + f(r.incomePremium) + ' 원</td></tr>' +
-      '<tr><th>재산보험료 <span class="hint">(재산점수 × ' + reg.propertyPointValue.value + '원)</span></th><td>' + f(r.propertyPremium) + ' 원</td></tr>' +
+      '<tr><th>재산보험료 <span class="hint">(' + propHint + ')</span></th><td>' + f(r.propertyPremium) + ' 원</td></tr>' +
       '<tr><th>건강보험료' + (r.appliedMin ? ' <span class="hint">(최저보험료 적용)</span>' : '') + '</th><td>' + f(r.health) + ' 원</td></tr>' +
       '<tr><th>장기요양보험료 <span class="hint">(건보료 × ' + R.insurance.longTermCare.ofHealthPremium.value + '%)</span></th><td>' + f(r.ltc) + ' 원</td></tr>' +
       '<tr><th>월 합계</th><td><strong>' + f(r.total) + ' 원</strong></td></tr>' +
       '<tr><th>연간 합계</th><td>' + f(r.yearTotal) + ' 원</td></tr>' +
       '</tbody></table>' +
-      '<p class="footer-notice" style="margin:8px 0 0">⚠️ 지역가입자 추정치입니다. <strong>자동차 부과는 폐지(2024.2월분~)</strong>되었고, 재산 과세표준→부과점수 환산은 공단 재산등급표가 필요해 <strong>재산 부과점수를 직접 입력</strong>받습니다(공단 고지서·홈페이지 「보험료 모의계산」에서 확인). 점수당 금액·최저보험료는 공단 공식 기준으로 달라질 수 있어 정확한 금액은 국민건강보험공단으로 확인하세요.</p>';
+      '<p class="footer-notice" style="margin:8px 0 0">⚠️ 지역가입자 추정치입니다. 재산보험료는 <strong>국민건강보험법 시행령 별표4 재산등급표(60등급)</strong>에 따라 재산세 과세표준 합계에서 <strong>기본공제 1억원</strong>을 뺀 금액으로 등급·점수를 매겨 점수당 ' + reg.propertyPointValue.value + '원을 곱한 값입니다. <strong>자동차 부과는 폐지(2024.2월분~)</strong>. 전월세 보증금 평가액·추가공제(시행령 제42조의2)는 미반영이라 실제 고지와 다를 수 있으니 정확한 금액은 국민건강보험공단으로 확인하세요.</p>';
     TK.showResult();
   }
 

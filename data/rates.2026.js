@@ -56,7 +56,23 @@
           propertyDeduction: v(100000000, "원", INS, { note: "재산 기본공제: 재산세 과세표준 합계에서 1억원 공제(2024.2~)" }),
           minPremium: v(20160, "원/월", INS, { note: "지역가입자 월 최저보험료 2026(고시 제2025-222호, 2025년 19,780→20,160, +380)" }),
           maxPremium: v(4591740, "원/월", INS, { note: "소득월액·지역보험료 월 상한 2026(고시 제2025-222호)" }),
-          note: "2024 개편: 자동차 부과 폐지(2024.2월분~). 재산 과표→점수 환산은 공단 재산등급표(60등급) 필요 — 본 계산기는 재산 부과점수를 직접 입력받음."
+          /* 재산등급별 점수: 국민건강보험법 시행령 [별표4] 제3호(2022.8.31 개정, 2024.5.7 유지).
+             upTo = 재산금액(만원) 상한(이하), score = 점수. 재산금액 = 재산세 과세표준 합산 − 기본공제. 60등급=상한 null(778,124만원 초과). */
+          propertyScoreTable: [
+            { upTo: 450, score: 22 }, { upTo: 900, score: 44 }, { upTo: 1350, score: 66 }, { upTo: 1800, score: 97 }, { upTo: 2250, score: 122 },
+            { upTo: 2700, score: 146 }, { upTo: 3150, score: 171 }, { upTo: 3600, score: 195 }, { upTo: 4050, score: 219 }, { upTo: 4500, score: 244 },
+            { upTo: 5020, score: 268 }, { upTo: 5590, score: 294 }, { upTo: 6220, score: 320 }, { upTo: 6930, score: 344 }, { upTo: 7710, score: 365 },
+            { upTo: 8590, score: 386 }, { upTo: 9570, score: 412 }, { upTo: 10700, score: 439 }, { upTo: 11900, score: 465 }, { upTo: 13300, score: 490 },
+            { upTo: 14800, score: 516 }, { upTo: 16400, score: 535 }, { upTo: 18300, score: 559 }, { upTo: 20400, score: 586 }, { upTo: 22700, score: 611 },
+            { upTo: 25300, score: 637 }, { upTo: 28100, score: 659 }, { upTo: 31300, score: 681 }, { upTo: 34900, score: 706 }, { upTo: 38800, score: 731 },
+            { upTo: 43200, score: 757 }, { upTo: 48100, score: 785 }, { upTo: 53600, score: 812 }, { upTo: 59700, score: 841 }, { upTo: 66500, score: 881 },
+            { upTo: 74000, score: 921 }, { upTo: 82400, score: 961 }, { upTo: 91800, score: 1001 }, { upTo: 103000, score: 1041 }, { upTo: 114000, score: 1091 },
+            { upTo: 127000, score: 1141 }, { upTo: 142000, score: 1191 }, { upTo: 158000, score: 1241 }, { upTo: 176000, score: 1291 }, { upTo: 196000, score: 1341 },
+            { upTo: 218000, score: 1391 }, { upTo: 242000, score: 1451 }, { upTo: 270000, score: 1511 }, { upTo: 300000, score: 1571 }, { upTo: 330000, score: 1641 },
+            { upTo: 363000, score: 1711 }, { upTo: 399300, score: 1781 }, { upTo: 439230, score: 1851 }, { upTo: 483153, score: 1921 }, { upTo: 531468, score: 1991 },
+            { upTo: 584615, score: 2061 }, { upTo: 643077, score: 2131 }, { upTo: 707385, score: 2201 }, { upTo: 778124, score: 2271 }, { upTo: null, score: 2341 }
+          ],
+          note: "2024 개편: 자동차 부과 폐지(2024.2월분~), 재산 기본공제 1억원. 재산보험료 = 재산등급별 점수(별표4) × 점수당 금액. 전월세 평가액·추가공제(시행령 제42조의2)는 미반영."
         }
       },
       longTermCare: {

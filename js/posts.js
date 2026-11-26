@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "dependent-disqualification-local-subscriber",
+    title: "피부양자 탈락 기준 2026, 왜 갑자기 지역가입자가 됐을까",
+    summary: "연소득 2,000만원·재산 과세표준 5억4천만원 등 2026년 피부양자 자격 기준과 탈락 사유 5가지를 금액으로 정리했습니다. 공적연금 월 얼마부터 탈락인지, 공시가격과 과세표준의 차이까지.",
+    category: "calc",
+    date: "2026-11-26",
+    url: "/posts/dependent-disqualification-local-subscriber.html",
+    image: "/img/dependent-disqualification-local-subscriber-1.jpg",
+  },
+  {
     id: "property-tax-increase-reasons-2026",
     title: "2026년 재산세 왜 올랐을까? 과세표준상한제·공정시장가액비율 쉽게 이해하기",
     summary: "공시가격은 조금 올랐는데 재산세는 더 많이 나온 이유를 과세표준상한제(상한율 5%)와 공정시장가액비율(일반 60%·1세대 1주택 43~45%), 1주택 특례세율, 누진세율까지 2026년 기준으로 쉽게 풀었습니다.",
@@ -58,15 +67,6 @@ const POSTS = [
     date: "2026-11-26",
     url: "/posts/retirement-health-insurance-voluntary-continuation.html",
     image: "/img/retirement-health-insurance-voluntary-continuation-1.jpg",
-  },
-  {
-    id: "dependent-disqualification-local-subscriber",
-    title: "피부양자 탈락 기준 2026, 왜 갑자기 지역가입자가 됐을까",
-    summary: "연소득 2,000만원·재산 과세표준 5억4천만원 등 2026년 피부양자 자격 기준과 탈락 사유 5가지를 금액으로 정리했습니다. 공적연금 월 얼마부터 탈락인지, 공시가격과 과세표준의 차이까지.",
-    category: "calc",
-    date: "2026-11-26",
-    url: "/posts/dependent-disqualification-local-subscriber.html",
-    image: "/img/dependent-disqualification-local-subscriber-1.jpg",
   },
   {
     id: "health-insurance-sudden-increase-reasons",

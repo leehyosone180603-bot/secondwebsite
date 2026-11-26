@@ -470,30 +470,44 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("보수월액 하한 적용(10만 입력 → hBase=하한값)", () => {
     const r = HI.healthInsurance(100000, R); assert.strictEqual(r.hBase, R.insurance.health.base.min.value);
   });
-  /* 지역가입자 */
-  test("지역: 소득월액 200만·재산점수 300 → 소득 143,800·재산 63,450·건강 207,250·장기 27,230·합 234,480", () => {
-    const r = HI.regionalHealth(2000000, 300, R);
+  /* 지역가입자 — 재산 과세표준 자동환산(별표4 60등급) */
+  test("재산점수: 과표 3억 → 공제 1억 후 2억(20,000만원) → 24등급 586점", () => {
+    const p = HI.propertyScore(300000000, R);
+    assert.strictEqual(p.grade, 24); assert.strictEqual(p.score, 586);
+  });
+  test("재산점수: 과표 ≤ 1억 → 재산점수 0(공제 이하)", () => {
+    assert.strictEqual(HI.propertyScore(100000000, R).score, 0);
+    assert.strictEqual(HI.propertyScore(50000000, R).score, 0);
+  });
+  test("재산점수: 과표 약 4억(공제 후 30,000만원) → 28등급 681점", () => {
+    const p = HI.propertyScore(400000000, R);
+    assert.strictEqual(p.grade, 28); assert.strictEqual(p.score, 681);
+  });
+  test("재산점수: 초고액(공제 후 778,124만원 초과) → 60등급 2,341점", () => {
+    const p = HI.propertyScore(8000000000000, R);
+    assert.strictEqual(p.grade, 60); assert.strictEqual(p.score, 2341);
+  });
+  test("재산점수: 1등급 경계(공제 후 450만원 이하) → 22점", () => {
+    assert.strictEqual(HI.propertyScore(100000000 + 4500000, R).score, 22); // 공제 후 450만원
+    assert.strictEqual(HI.propertyScore(100000000 + 4500001, R).score, 44); // 450만 초과 → 2등급
+  });
+  test("지역: 소득월액 200만·과표 3억 → 소득 143,800·재산(586점) 123,930·건강 267,730·장기 35,170·합 302,900", () => {
+    const r = HI.regionalHealth(2000000, 300000000, R);
     assert.strictEqual(r.incomePremium, 143800);
-    assert.strictEqual(r.propertyPremium, 63450);
-    assert.strictEqual(r.health, 207250);
-    assert.strictEqual(r.ltc, 27230);
-    assert.strictEqual(r.total, 234480);
+    assert.strictEqual(r.propScore, 586);
+    assert.strictEqual(r.propertyPremium, 123930);
+    assert.strictEqual(r.health, 267730);
+    assert.strictEqual(r.ltc, 35170);
+    assert.strictEqual(r.total, 302900);
   });
   test("지역: 연간 합계 = 월 × 12", () => {
-    const r = HI.regionalHealth(2000000, 300, R); assert.strictEqual(r.yearTotal, r.total * 12);
+    const r = HI.regionalHealth(2000000, 300000000, R); assert.strictEqual(r.yearTotal, r.total * 12);
   });
-  test("지역: 최저보험료 적용(소득월액 10만·재산 0 → 건강 20,160·appliedMin)", () => {
+  test("지역: 최저보험료 적용(소득월액 10만·과표 0 → 건강 20,160·appliedMin)", () => {
     const r = HI.regionalHealth(100000, 0, R);
-    assert.strictEqual(r.health, R.insurance.health.regional.minPremium.value);
     assert.strictEqual(r.health, 20160);
     assert.strictEqual(r.appliedMin, true);
     assert.strictEqual(r.total, 20160 + 2640);
-  });
-  test("지역: 재산점수만 입력(소득 0·점수 100 → 재산 21,150·최저 미적용)", () => {
-    const r = HI.regionalHealth(0, 100, R);
-    assert.strictEqual(r.propertyPremium, 21150);
-    assert.strictEqual(r.health, 21150);
-    assert.strictEqual(r.appliedMin, false);
   });
 })();
 
