@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "teen-part-time-job-age-requirements-2026",
+    title: "청소년 알바 가능 나이, 중3도 될까? 겨울방학 출생연도별 기준과 필요 서류",
+    summary: "청소년 알바 가능 나이는 만 15세 이상이 기본이며 중학생은 취직인허증이 필요합니다. 2026 겨울방학 출생연도별 가능 여부, 동의서·가족관계증명서, 하루 7시간 한도, 고용금지 업소와 2027 최저시급 10,700원까지 정리했습니다.",
+    category: "calc",
+    date: "2026-11-26",
+    url: "/posts/teen-part-time-job-age-requirements-2026.html",
+    image: "/img/teen-part-time-job-age-requirements-2026-1.jpg",
+  },
+  {
     id: "reserve-forces-age-limit-years-2026",
     title: "예비군 나이 몇 살까지? 전역 후 8년 계산법과 2026년 연차별 훈련 정리",
     summary: "예비군은 나이가 아니라 전역 후 8년이 되는 해 12월 31일까지입니다. 전역 연도로 해제 시점 계산하는 법, 1~8년차 훈련 종류, 2026년 훈련비 인상과 민방위 전환까지 정리했습니다.",
