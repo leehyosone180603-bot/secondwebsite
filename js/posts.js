@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "national-health-checkup-2027-odd-birth-year-by-age",
+    title: "2027 건강검진 대상 출생연도, 홀수년생 나이별 추가 검사와 달라지는 점",
+    summary: "2027 건강검진 대상은 홀수년생입니다. 1971년생 C형간염, 1987년생 생애전환기, 54·60·66세 여성 골밀도 등 출생연도별 추가 검사와 2027년 흉부 X선 50세 이상 변경, 나이별 암검진 기준을 정리했습니다.",
+    category: "calc",
+    date: "2026-11-26",
+    url: "/posts/national-health-checkup-2027-odd-birth-year-by-age.html",
+    image: "/img/national-health-checkup-2027-odd-birth-year-by-age-1.jpg",
+  },
+  {
     id: "property-tax-increase-reasons-2026",
     title: "2026년 재산세 왜 올랐을까? 과세표준상한제·공정시장가액비율 쉽게 이해하기",
     summary: "공시가격은 조금 올랐는데 재산세는 더 많이 나온 이유를 과세표준상한제(상한율 5%)와 공정시장가액비율(일반 60%·1세대 1주택 43~45%), 1주택 특례세율, 누진세율까지 2026년 기준으로 쉽게 풀었습니다.",
