@@ -447,5 +447,30 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   });
 })();
 
+/* ── health-insurance (건강보험료) ── */
+(function () {
+  const HI = require(path.join(ROOT, "tools-src", "health-insurance.client.js"));
+  const R = require(path.join(ROOT, "data", "rates.2026.js"));
+  console.log("health-insurance");
+  test("보수월액 300만 → 건강 근로자 107,850·장기 14,170·근로자합 122,020·합계 244,040", () => {
+    const r = HI.healthInsurance(3000000, R);
+    assert.strictEqual(r.health.worker, 107850);
+    assert.strictEqual(r.ltc.worker, 14170);
+    assert.strictEqual(r.worker, 122020);
+    assert.strictEqual(r.total, 244040);
+  });
+  test("근로자=사업주 부담(건강·장기 각 절반)", () => {
+    const r = HI.healthInsurance(3000000, R);
+    assert.strictEqual(r.health.worker, r.health.employer);
+    assert.strictEqual(r.worker, r.employer);
+  });
+  test("연간 근로자 부담 = 월 × 12", () => {
+    const r = HI.healthInsurance(3000000, R); assert.strictEqual(r.yearWorker, r.worker * 12);
+  });
+  test("보수월액 하한 적용(10만 입력 → hBase=하한값)", () => {
+    const r = HI.healthInsurance(100000, R); assert.strictEqual(r.hBase, R.insurance.health.base.min.value);
+  });
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);
