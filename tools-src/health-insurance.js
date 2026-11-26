@@ -40,7 +40,9 @@ module.exports = {
     { h: "함께 쓰면 좋은 계산기", p: '<a href="/4insure/">4대보험 계산기</a>(국민연금·건강·장기요양·고용·산재) · <a href="/salary/">연봉 실수령액 계산기</a> · <a href="/freelancer/">프리랜서 3.3% 계산기</a>' },
     { h: "지역가입자 재산보험료와 재산세", p: '지역가입자 재산보험료는 재산세 과세표준을 기준으로 매겨, 공시가격이 오르면 보험료도 오를 수 있습니다. 내 재산세 과표가 궁금하면 <a href="/property-tax/">재산세 계산기</a>로 먼저 확인해 보세요. 자동차 부과는 2024.2월분부터 폐지됐습니다.' },
     { h: "건강보험료가 갑자기 올랐다면", p: '직장가입자는 전년 보수총액 정산으로 4월경 추가납부가 생기거나, 피부양자에서 지역가입자로 바뀌면 부담이 커질 수 있습니다. 자세한 원인은 <a href="/posts/health-insurance-sudden-increase-reasons.html">건강보험료가 갑자기 늘어난 이유 5가지</a>를, 올해 바뀐 요율·상한은 <a href="/posts/health-insurance-premium-increase-2026.html">2026 건강보험료 총정리</a>를 보세요.' },
-    { h: "은퇴·피부양자라면 꼭 확인", p: '피부양자 탈락이 걱정된다면 <a href="/posts/dependent-disqualification-local-subscriber.html">피부양자 탈락 기준 2026</a>, 은퇴 후 보험료를 줄이려면 <a href="/posts/retirement-health-insurance-voluntary-continuation.html">임의계속 vs 지역가입자</a>를 참고하세요.' }
+    { h: "은퇴·피부양자라면 꼭 확인", p: '피부양자 탈락이 걱정된다면 <a href="/posts/dependent-disqualification-local-subscriber.html">피부양자 탈락 기준 2026</a>, 은퇴 후 보험료를 줄이려면 <a href="/posts/retirement-health-insurance-voluntary-continuation.html">임의계속 vs 지역가입자</a>를 참고하세요.' },
+    { h: "계산 방법 자세히", p: '<a href="/posts/workplace-health-insurance-calculation.html">직장가입자 계산법(보수월액·소득월액)</a> · <a href="/posts/regional-health-insurance-calculation.html">지역가입자 계산법(소득·재산 점수)</a> · <a href="/posts/health-insurance-rate-longterm-care-2026.html">2026 요율·장기요양 총정리</a>' },
+    { h: "환급·조정도 챙기기", p: '소득이 줄었다면 <a href="/posts/health-insurance-adjustment-refund.html">보험료 조정·환급 신청</a>, 4월 추가납부가 궁금하면 <a href="/posts/health-insurance-year-end-settlement.html">건강보험료 연말정산</a>, 병원비는 <a href="/posts/health-insurance-out-of-pocket-maximum.html">본인부담상한제</a>로 돌려받을 수 있습니다.' }
   ],
   faqs: [
     { q: "건강보험료는 누가 얼마나 내나요?", a: "직장가입자는 보수월액의 건강보험료율(2026년 7.19%)을 근로자와 사업주가 절반씩 부담합니다. 장기요양보험료도 같은 방식으로 나눠 냅니다." },
