@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "hypothermia-early-symptoms-first-aid",
+    title: "저체온증 초기 증상, 떨림·어눌한 말투가 신호? 119 기준과 응급처치",
+    summary: "저체온증 초기 증상(떨림·어눌한 말투·비틀거림)과 떨림이 멈출 때의 위험 신호, 119 신고 기준, 젖은 옷 제거·몸통 보온 등 응급처치와 피해야 할 행동을 질병관리청 한랭질환 통계와 함께 정리했습니다.",
+    category: "info",
+    date: "2026-11-26",
+    url: "/posts/hypothermia-early-symptoms-first-aid.html",
+    image: "/img/hypothermia-early-symptoms-first-aid-1.jpg",
+  },
+  {
     id: "national-health-checkup-2027-odd-birth-year-by-age",
     title: "2027 건강검진 대상 출생연도, 홀수년생 나이별 추가 검사와 달라지는 점",
     summary: "2027 건강검진 대상은 홀수년생입니다. 1971년생 C형간염, 1987년생 생애전환기, 54·60·66세 여성 골밀도 등 출생연도별 추가 검사와 2027년 흉부 X선 50세 이상 변경, 나이별 암검진 기준을 정리했습니다.",
