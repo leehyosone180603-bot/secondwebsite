@@ -1,6 +1,8 @@
 /* 일본어 건강 미러 글 레지스트리 (factory-publish-ja.js 가 자동 갱신) */
 (function (root) {
   var JA_POSTS = [
+    { id: "kbeauty-niacinamide", title: "ナイアシンアミドとは？期待される働きと濃度・併用の注意点", summary: "ナイアシンアミド(ビタミンB3)とはどんな化粧品成分か、別名や化粧品での位置づけ、濃度と使い方の目安、ビタミンCなどとの併用の注意点までを、事実にもとづいてやさしく解説します。", category: "kbeauty", date: "2026-11-26", url: "/ja/posts/kbeauty-niacinamide.html", image: "/img/kbeauty-niacinamide-1.jpg" },
+    { id: "kbeauty-cica-centella", title: "シカ(ツボクサ)とは？肌への働きと敏感肌が気をつけたいこと", summary: "韓国コスメでおなじみのシカ(ツボクサ)とは何かを、呼び名の違いや化粧品での位置づけから整理。語られる肌への働き、敏感肌が気をつけたい点、肌タイプ別の取り入れ方までやさしく解説します。", category: "kbeauty", date: "2026-11-26", url: "/ja/posts/kbeauty-cica-centella.html", image: "/img/kbeauty-cica-centella-1.jpg" },
     { id: "winter-ventilation-how-often-how-long", title: "冬の換気のしかた｜1日何回・何分？対角換気・調理後・PM2.5の悪い日まで", summary: "冬の換気は「長く」より「短く強く」が基本。1日2〜3回・1回5〜30分の目安、対角換気のコツ、調理後やPM2.5の悪い日の換気、赤ちゃん・高齢者がいる家の注意点までまとめました。", category: "info", date: "2026-11-25", url: "/ja/posts/winter-ventilation-how-often-how-long.html", image: "/img/winter-ventilation-how-often-how-long-1.jpg" },
     { id: "late-flu-vaccine-december-effect-2026", title: "インフルエンザの予防接種、遅く受けても大丈夫？12月接種の効果と無料対象・期間", summary: "インフルエンザの予防接種を12月に受けても効果はあるのか、2026-2027シーズンの無料接種の対象・期間、受け方、子どもの2回接種までを韓国の基準でまとめました。", category: "info", date: "2026-11-25", url: "/ja/posts/late-flu-vaccine-december-effect-2026.html", image: "/img/late-flu-vaccine-december-effect-2026-1.jpg" },
     { id: "kbeauty-skincare-order", title: "韓国式スキンケアの順番｜基本の5ステップと冬の保湿のコツ", summary: "韓国式スキンケアの順番を基本の5ステップでやさしく解説。水っぽいものから油っぽいものへという考え方や、冬の保湿のコツ、肌タイプ別の量の目安までまとめました。", category: "kbeauty", date: "2026-11-25", url: "/ja/posts/kbeauty-skincare-order.html", image: "/img/kbeauty-skincare-order-1.jpg" },

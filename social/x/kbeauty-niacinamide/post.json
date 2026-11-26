@@ -1,0 +1,103 @@
+{
+  "slug": "kbeauty-niacinamide",
+  "series": "kbeauty",
+  "title": "ナイアシンアミドとは？期待される働きと濃度・併用の注意点",
+  "url": "/ja/posts/kbeauty-niacinamide.html",
+  "keyword": "ナイアシンアミド",
+  "hooks": [
+    "今すぐできるナイアシンアミド5つのチェック",
+    "実は逆効果かも？ナイアシンアミド"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
+  ],
+  "hashtags": [
+    "#韓国コスメ",
+    "#インナーケア"
+  ],
+  "image": "social/x/kbeauty-niacinamide/card.png",
+  "posts": {
+    "a": {
+      "body": "今すぐできるナイアシンアミド5つのチェック\n\n✅ これまでにビタミンB群由来の…\n✅ 現在、ピーリング系の成分や\n✅ 乾燥や赤みなど、肌が敏感に傾いているタイミングでは…\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "text": "今すぐできるナイアシンアミド5つのチェック\n\n✅ これまでにビタミンB群由来の…\n✅ 現在、ピーリング系の成分や\n✅ 乾燥や赤みなど、肌が敏感に傾いているタイミングでは…\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-niacinamide.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-niacinamide&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/kbeauty-niacinamide.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-niacinamide&utm_content=reply_a",
+      "weighted": 278,
+      "charCount": 150,
+      "ok": true
+    },
+    "b": {
+      "body": "実は逆効果かも？ナイアシンアミド\n\n✅ これまでにビタミンB群…\n✅ 現在、ピーリング系の成…\n✅ 乾燥や赤みなど、肌が敏感に傾いているタ…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "text": "実は逆効果かも？ナイアシンアミド\n\n✅ これまでにビタミンB群…\n✅ 現在、ピーリング系の成…\n✅ 乾燥や赤みなど、肌が敏感に傾いているタ…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-niacinamide.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-niacinamide&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/kbeauty-niacinamide.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-niacinamide&utm_content=reply_b",
+      "weighted": 278,
+      "charCount": 151,
+      "ok": true
+    }
+  },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできるナイアシンアミド5つのチェック\n\n✅ これまでにビタミンB群由来の…\n✅ 現在、ピーリング系の成分や\n✅ 乾燥や赤みなど、肌が敏感に傾いているタイミングでは…\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-niacinamide.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-niacinamide&utm_content=reply_a",
+      "charCount": 150,
+      "image": "social/x/kbeauty-niacinamide/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？ナイアシンアミド\n\n✅ これまでにビタミンB群…\n✅ 現在、ピーリング系の成…\n✅ 乾燥や赤みなど、肌が敏感に傾いているタ…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-niacinamide.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-niacinamide&utm_content=reply_b",
+      "charCount": 151,
+      "image": "social/x/kbeauty-niacinamide/card.png"
+    }
+  ],
+  "checklist": [
+    "これまでにビタミンB群由来の成分で",
+    "現在、ピーリング系の成分や",
+    "乾燥や赤みなど、肌が敏感に傾いているタ…",
+    "新しいアイテムを顔全体に使う前に",
+    "皮膚科などで治療を受けている場合"
+  ],
+  "points": [
+    "これまでにビタミンB群由来の成分で",
+    "現在、ピーリング系の成分や、刺激を感じやすいアイテムを…",
+    "乾燥や赤みなど、肌が敏感に傾いているタイミングではないか"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：これまでにビタミンB群由来の成分で、現在、ピーリング系の成分や、乾燥や赤みなど、肌が敏感に傾いているタ…、新しいアイテムを顔全体に使う前に、皮膚科などで治療を受けている場合。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/kbeauty-niacinamide/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 414658,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/kbeauty-niacinamide/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 239736,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-26T01:29:26.037Z"
+}
