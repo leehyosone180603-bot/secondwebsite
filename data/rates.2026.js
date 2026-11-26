@@ -91,6 +91,51 @@
     /* ── 지방소득세 ── */
     localIncomeTaxRate: v(10, "%", LAW("지방세법/제103조의13"), { note: "원천징수 소득세의 10% 특별징수" }),
 
+    /* ── 주택 재산세 (지방세법 §110·§111·§111의2, 시행령) ── */
+    propertyTaxHousing: {
+      source: LAW("지방세법"), year: YEAR, lastChecked: LC, todo: false,
+      note: "주택 재산세. 과세표준 = 공시가격 × 공정시장가액비율. 세율은 과표 누진(본세). 지방교육세·도시지역분·지역자원시설세는 별도.",
+      fairMarketRatio: { general: 60, oneHouseUpTo3: 43, oneHouseUpTo6: 44, oneHouseOver6: 45, note: "%. 1세대1주택: 공시 3억↓43·3~6억 44·6억↑45 / 그 외 60" },
+      standardRates: [ // 일반세율(§111) 과표 기준
+        { upTo: 60000000,  rate: 0.1,  deduction: 0 },
+        { upTo: 150000000, rate: 0.15, deduction: 30000 },
+        { upTo: 300000000, rate: 0.25, deduction: 180000 },
+        { upTo: null,      rate: 0.4,  deduction: 630000 }
+      ],
+      specialRates: [ // 1세대1주택 특례세율(§111의2, 공시 9억 이하) 과표 기준
+        { upTo: 60000000,  rate: 0.05, deduction: 0 },
+        { upTo: 150000000, rate: 0.1,  deduction: 30000 },
+        { upTo: 300000000, rate: 0.2,  deduction: 180000 },
+        { upTo: null,      rate: 0.35, deduction: 630000 }
+      ],
+      specialPriceCeiling: 900000000, // 특례세율은 공시가격 9억 이하만
+      localEduTaxRate: 20,  // 지방교육세 = 재산세 본세 × 20%
+      cityAreaRate: 0.14    // 도시지역분(선택) = 과세표준 × 0.14%
+    },
+
+    /* ── 종합부동산세(주택) (종합부동산세법 §8·§9, 시행령) ── */
+    comprehensiveTax: {
+      source: LAW("종합부동산세법"), year: YEAR, lastChecked: LC, todo: false,
+      note: "주택분 종부세. 과세표준 = (공시가격 합계 − 공제액) × 공정시장가액비율. 세액공제는 1세대1주택만. 재산세 중복분 공제는 미반영(추정).",
+      deductionGeneral: 900000000,   // 9억
+      deductionOneHouse: 1200000000, // 12억(1세대1주택)
+      fairMarketRatio: 60,           // % (2026 주택분)
+      rates2OrLess: [ // 2주택 이하 일반세율(§9) 과표 기준
+        { upTo: 300000000,  rate: 0.5, deduction: 0 },
+        { upTo: 600000000,  rate: 0.7, deduction: 600000 },
+        { upTo: 1200000000, rate: 1.0, deduction: 2400000 },
+        { upTo: 2500000000, rate: 1.3, deduction: 6000000 },
+        { upTo: 5000000000, rate: 1.5, deduction: 11000000 },
+        { upTo: 9400000000, rate: 2.0, deduction: 36000000 },
+        { upTo: null,       rate: 2.7, deduction: 101800000 }
+      ],
+      elderlyCredit: [ { age: 70, rate: 40 }, { age: 65, rate: 30 }, { age: 60, rate: 20 } ], // 고령자 세액공제 %
+      longHoldCredit: [ { years: 15, rate: 50 }, { years: 10, rate: 40 }, { years: 5, rate: 20 } ], // 장기보유 세액공제 %
+      creditCap: 80,              // 고령+장기 합산 최대 80%
+      ruralTaxRate: 20,           // 농어촌특별세 = 종부세액 × 20%
+      installmentThreshold: 2500000 // 분납 기준(본세 250만원 초과)
+    },
+
     /* ── 비과세 식대 ── */
     mealAllowanceNonTaxable: v(200000, "원/월", LAW("소득세법/제12조"), { 근거: "소득세법 §12 3호 러목", note: "식사 현물 미제공자에 한함" }),
 

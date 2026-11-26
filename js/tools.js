@@ -101,7 +101,11 @@
     { id: "dsr", slug: "dsr", name: "DSR 계산기", category: "realestate", kind: "calculator", emoji: "🏦",
       desc: "연소득과 대출로 총부채원리금상환비율(DSR)을 계산합니다.", related: ["jeonse-loan", "salary"], public: true },
     { id: "jeonse-loan", slug: "jeonse-loan", name: "전세자금대출 이자 계산기", category: "realestate", kind: "calculator", emoji: "🏠",
-      desc: "전세보증금·금리로 월 이자와 총이자를 계산합니다.", related: ["dsr", "lotto-prize"], public: true },
+      desc: "전세보증금·금리로 월 이자와 총이자를 계산합니다.", related: ["dsr", "property-tax"], public: true },
+    { id: "property-tax", slug: "property-tax", name: "재산세 계산기", category: "realestate", kind: "calculator", emoji: "🏠",
+      desc: "공시가격과 1세대 1주택 여부로 주택 재산세 과세표준·본세·지방교육세를 계산합니다.", related: ["jongbuse", "jeonse-loan", "pyeong"], public: true, isNew: true },
+    { id: "jongbuse", slug: "jongbuse", name: "종합부동산세 계산기", category: "realestate", kind: "calculator", emoji: "🏢",
+      desc: "공시가격 합계·1세대 1주택·나이·보유기간으로 종부세 과세표준·세율·세액공제·농특세를 계산합니다.", related: ["property-tax", "dsr", "gift-tax"], public: true, isNew: true },
 
     /* ── 도구 모음 ── */
     { id: "scientific", slug: "scientific", name: "공학용 계산기", category: "toolbox", kind: "tool", emoji: "🧮",

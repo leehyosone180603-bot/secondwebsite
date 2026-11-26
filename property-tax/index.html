@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>재산세 계산기 - 공시가격·공정시장가액비율·세율 | 건강흐름</title>
+  <meta name="description" content="주택 공시가격과 1세대 1주택 여부로 재산세 과세표준(공정시장가액비율 60%·1주택 43~45%)과 본세, 지방교육세까지 2026년 기준으로 계산합니다.">
+  <meta name="keywords" content="재산세 계산기, 재산세 과세표준, 공정시장가액비율, 1세대 1주택 특례세율, 주택 재산세, 재산세율">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="재산세 계산기">
+  <meta property="og:description" content="주택 공시가격과 1세대 1주택 여부로 재산세 과세표준(공정시장가액비율 60%·1주택 43~45%)과 본세, 지방교육세까지 2026년 기준으로 계산합니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://healthfortune.co.kr/property-tax/">
+  <meta property="og:site_name" content="건강흐름">
+  <link rel="canonical" href="https://healthfortune.co.kr/property-tax/">
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "재산세 계산기",
+    "url": "https://healthfortune.co.kr/property-tax/",
+    "description": "주택 공시가격과 1세대 1주택 여부로 재산세 과세표준(공정시장가액비율 60%·1주택 43~45%)과 본세, 지방교육세까지 2026년 기준으로 계산합니다.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "ko",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
+    }
+  }</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"재산세는 언제 내나요?","acceptedAnswer":{"@type":"Answer","text":"주택 재산세는 7월과 9월에 절반씩 나눠 냅니다. 과세 기준일은 매년 6월 1일 현재 소유자입니다."}},{"@type":"Question","name":"1세대 1주택 특례는 어떻게 적용되나요?","acceptedAnswer":{"@type":"Answer","text":"공시가격 9억 원 이하 1세대 1주택은 구간별로 0.05%포인트 낮은 특례세율이, 공정시장가액비율도 43~45%로 더 낮게 적용됩니다. 보통 요건을 갖추면 자동 적용됩니다."}},{"@type":"Question","name":"계산 결과가 고지서와 다른 이유는?","acceptedAnswer":{"@type":"Answer","text":"과세표준상한제, 세부담상한, 도시지역분·지역자원시설세 반영 여부, 공시가격 차이 등으로 달라질 수 있습니다. 정확한 금액은 위택스와 관할 지자체 고지서로 확인하세요."}},{"@type":"Question","name":"재산세와 종합부동산세는 같이 내나요?","acceptedAnswer":{"@type":"Answer","text":"재산세는 모든 주택 보유자가 7·9월에, 종부세는 공시가격이 기준을 넘는 일부가 12월에 추가로 냅니다. 둘을 묶어 보유세라고 합니다."}}]}</script>
+
+  <!-- Google AdSense 게시자 ID: ca-pub-7143828779500885 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7143828779500885"
+     crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/style.css?v=14">
+  <link rel="stylesheet" href="/tool-kit.css?v=1">
+</head>
+<body data-tool="property-tax">
+  <nav class="back-nav"><a href="/tools.html">← <span data-i18n="tools">생활 도구</span></a></nav>
+
+  <header class="site-header">
+    <h1>🏠 재산세 계산기</h1>
+    <p class="subtitle">공시가격으로 주택 재산세 바로 계산</p>
+    <div class="lang-switch" id="tk-langswitch" aria-label="언어 선택"></div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb" id="tk-breadcrumb" aria-label="위치"></nav>
+  </div>
+
+  <div class="ad-container" aria-label="광고">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7143828779500885" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <main class="container">
+    <div class="tool-layout">
+      <div class="tool-main">
+        <section class="card controls">
+          <div class="intro"><p>주택 <strong>공시가격</strong>에 공정시장가액비율을 곱해 과세표준을 구하고, 재산세 세율(1세대 1주택은 특례세율)을 적용해 본세와 지방교육세를 계산합니다. 재산세가 어떻게 정해지는지는 <a href="/posts/property-tax-increase-reasons-2026.html">재산세가 오르는 이유</a>에서, 종부세와의 차이는 <a href="/posts/property-tax-vs-comprehensive-real-estate-tax-2026.html">보유세 비교 글</a>에서 확인하세요.</p></div>
+          <div class="field"><label for="price">주택 공시가격 <span class="hint">(부동산 공시가격 알리미 기준)</span></label><div class="input-unit"><input type="text" id="price" data-num data-share inputmode="numeric" placeholder="예: 550,000,000"><span class="unit">원</span></div></div><div class="field"><label><input type="checkbox" id="oneHouse" data-share> 1세대 1주택자입니다 <span class="hint">(공정시장가액비율 43~45% + 9억 이하 특례세율)</span></label></div><div class="field"><label><input type="checkbox" id="city" data-share> 도시지역분 포함 <span class="hint">(과세표준 × 0.14%, 대부분의 도시 지역)</span></label></div>
+          <p class="error" id="errorMsg" role="alert"></p>
+          <button id="calcBtn" class="btn-primary" type="button" data-i18n="calc">계산하기</button>
+        </section>
+
+        <section class="card results" id="tk-result-card" hidden>
+          <div id="tk-result"><div id="ptResult"></div></div>
+          <div class="result-actions">
+            <button class="btn-sm" data-tk="copy" data-copy-target="#tk-result"><span data-i18n="copy">결과 복사</span></button>
+            <button class="btn-sm" data-tk="share"><span data-i18n="shareLink">공유 링크</span></button>
+            <button class="btn-sm" data-tk="reset"><span data-i18n="reset">초기화</span></button>
+          </div>
+          <p class="footer-notice" style="margin:10px 0 0" data-i18n="disclaimer">참고용 추정치이며 실제 금액과 다를 수 있습니다.</p>
+        </section>
+
+        <div class="share-bar" id="tk-sharebar"></div>
+        <div class="rating" id="tk-rating"></div>
+
+    <section class="card info">
+      <h2 data-i18n="method">계산 방법</h2>
+      <p>주택 재산세는 다음 순서로 계산합니다.</p><ul><li><strong>과세표준</strong> = 공시가격 × 공정시장가액비율</li><li><strong>재산세 본세</strong> = 과세표준 × 세율 − 누진공제</li><li><strong>지방교육세</strong> = 재산세 본세 × 20%</li></ul><p>공정시장가액비율(2026년 주택분)은 일반 60%, 1세대 1주택은 공시가격 3억 이하 43%·3~6억 44%·6억 초과 45%입니다.</p><table class="calc-table"><thead><tr><th>과세표준</th><th>일반세율</th><th>1주택 특례세율(공시 9억↓)</th></tr></thead><tbody><tr><td>6천만 이하</td><td>0.1%</td><td>0.05%</td></tr><tr><td>1.5억 이하</td><td>0.15%</td><td>0.1%</td></tr><tr><td>3억 이하</td><td>0.25%</td><td>0.2%</td></tr><tr><td>3억 초과</td><td>0.4%</td><td>0.35%</td></tr></tbody></table>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="learnMore">더 알아보기</h2>
+      <div class="learn-cards"><div class="learn-card"><h4>함께 보면 좋은 글</h4><p><a href="/posts/property-tax-increase-reasons-2026.html">2026년 재산세 왜 올랐나 — 과세표준상한제·공정시장가액비율</a> · <a href="/posts/property-tax-vs-comprehensive-real-estate-tax-2026.html">재산세·종합부동산세·보유세 차이 완전정리</a></p></div><div class="learn-card"><h4>과세표준상한제는 별도</h4><p>공시가격이 급등해도 주택 과세표준이 한 해에 크게 뛰지 않도록 상한율 5%의 과세표준상한제가 적용됩니다. 이 계산기는 올해 공시가격 기준 기본 계산이라, 상한제가 적용되면 실제 세액이 더 낮을 수 있습니다.</p></div><div class="learn-card"><h4>종부세는 따로 확인</h4><p>공시가격이 커 종부세 대상이라면 <a href="/jongbuse/">종합부동산세 계산기</a>로 함께 확인하세요. 재산세와 종부세는 별개로 과세됩니다.</p></div></div>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="faq">자주 묻는 질문</h2>
+      <h3>Q. 재산세는 언제 내나요?</h3>
+      <p>주택 재산세는 7월과 9월에 절반씩 나눠 냅니다. 과세 기준일은 매년 6월 1일 현재 소유자입니다.</p>
+      <h3>Q. 1세대 1주택 특례는 어떻게 적용되나요?</h3>
+      <p>공시가격 9억 원 이하 1세대 1주택은 구간별로 0.05%포인트 낮은 특례세율이, 공정시장가액비율도 43~45%로 더 낮게 적용됩니다. 보통 요건을 갖추면 자동 적용됩니다.</p>
+      <h3>Q. 계산 결과가 고지서와 다른 이유는?</h3>
+      <p>과세표준상한제, 세부담상한, 도시지역분·지역자원시설세 반영 여부, 공시가격 차이 등으로 달라질 수 있습니다. 정확한 금액은 위택스와 관할 지자체 고지서로 확인하세요.</p>
+      <h3>Q. 재산세와 종합부동산세는 같이 내나요?</h3>
+      <p>재산세는 모든 주택 보유자가 7·9월에, 종부세는 공시가격이 기준을 넘는 일부가 12월에 추가로 냅니다. 둘을 묶어 보유세라고 합니다.</p>
+    </section>
+    <section class="card info">
+      <h2 data-i18n="sources">자료 출처</h2>
+      <ul class="sources-list"><li><a href="https://www.law.go.kr/법령/지방세법" target="_blank" rel="noopener">국가법령정보센터 — 지방세법 제110조·제111조·제111조의2 ↗</a></li><li><a href="https://www.wetax.go.kr" target="_blank" rel="noopener">위택스(Wetax) — 지방세 안내 ↗</a></li><li><a href="https://www.realtyprice.kr" target="_blank" rel="noopener">부동산 공시가격 알리미 ↗</a></li></ul>
+    </section>
+        <section class="card info">
+          <h2 data-i18n="related">관련 도구</h2>
+          <div id="tk-related"></div>
+        </section>
+      </div>
+
+      <aside class="tool-side">
+        <div class="widget"><h3>🔥 <span data-i18n="popular">인기 페이지</span></h3><ul id="tk-popular"></ul></div>
+        <div class="widget"><h3>🆕 <span data-i18n="newTools">신규 출시</span></h3><ul id="tk-new"></ul></div>
+        <div class="widget"><h3>🕘 <span data-i18n="recent">최근 본 페이지</span></h3><ul id="tk-recent"></ul></div>
+        <div class="widget deal"><h3>🏷️ <span data-i18n="deal">할인 정보</span></h3><ul id="tk-deal"><li class="empty" data-i18n="none">아직 없습니다.</li></ul><p class="aff-note" data-i18n="dealNote">※ 일부 링크는 제휴(광고) 링크일 수 있습니다.</p></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="footer-logo">🏠</span><span class="footer-brandname">건강흐름</span></div>
+    <nav class="footer-links"><a href="/">홈</a> · <a href="/tools.html">생활 도구</a> · <a href="/about.html">운영자 소개</a> · <a href="/contact.html">문의하기</a> · <a href="/privacy.html">개인정보처리방침</a> · <a href="/terms.html">이용약관</a> · <a href="mailto:leelin12@naver.com">이메일</a></nav>
+    <div class="footer-biz">상호명 굿윌스토어 · 사업자등록번호 631-03-03874 · 대표 이효선 · 주소 부산 사하구 오작로 34<br>연락처 010-2934-1351 · 제휴문의 <a href="mailto:leelin12@naver.com">leelin12@naver.com</a></div>
+    <p class="footer-notice">건강흐름의 모든 콘텐츠는 저작권법의 보호를 받으며, 무단 전재·복사·배포를 금합니다.</p>
+    <p class="footer-copy">© <span id="year"></span> 건강흐름 (healthfortune.co.kr)</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/tools.js"></script>
+  <script src="/data/rates.2026.js"></script>
+  <script src="/data/rates.2027.js"></script>
+  <script src="/data/rates.js"></script>
+  <script src="/js/tool-kit.js"></script>
+  <script src="/property-tax/property-tax.js?v=1"></script>
+</body>
+</html>

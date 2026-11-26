@@ -398,5 +398,54 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("유효성: 2진수에 2는 무효, GG(16진) 무효", () => { assert.strictEqual(X.isValid("12", 2), false); assert.strictEqual(X.convertAll("GG", 16), null); });
 })();
 
+/* ── property-tax (재산세) ── */
+(function () {
+  const PT = require(path.join(ROOT, "tools-src", "property-tax.client.js"));
+  const R = require(path.join(ROOT, "data", "rates.2026.js"));
+  console.log("property-tax");
+  test("공정가액비율: 일반 60", () => assert.strictEqual(PT.fairRatio(550000000, false, R), 60));
+  test("공정가액비율: 1주택 3억↓ 43", () => assert.strictEqual(PT.fairRatio(300000000, true, R), 43));
+  test("공정가액비율: 1주택 3~6억 44", () => assert.strictEqual(PT.fairRatio(550000000, true, R), 44));
+  test("공정가액비율: 1주택 6억↑ 45", () => assert.strictEqual(PT.fairRatio(600000001, true, R), 45));
+  test("공시 5.5억 일반 → 과표 3.3억·본세 690,000·교육세 138,000·합계 828,000", () => {
+    const r = PT.propertyTax(550000000, false, false, R);
+    assert.strictEqual(r.base, 330000000); assert.strictEqual(r.main, 690000);
+    assert.strictEqual(r.edu, 138000); assert.strictEqual(r.total, 828000);
+  });
+  test("공시 5.5억 1주택 → 과표 2.42억·본세 304,000·합계 364,800", () => {
+    const r = PT.propertyTax(550000000, true, false, R);
+    assert.strictEqual(r.ratio, 44); assert.strictEqual(r.base, 242000000);
+    assert.strictEqual(r.main, 304000); assert.strictEqual(r.total, 364800);
+  });
+})();
+
+/* ── jongbuse (종합부동산세) ── */
+(function () {
+  const JB = require(path.join(ROOT, "tools-src", "jongbuse.client.js"));
+  const R = require(path.join(ROOT, "data", "rates.2026.js"));
+  console.log("jongbuse");
+  test("공시 15억 1주택 → 과표 1.8억·산출 900,000·농특세 180,000·합계 1,080,000", () => {
+    const r = JB.jongbuse(1500000000, true, 0, 0, R);
+    assert.strictEqual(r.base, 180000000); assert.strictEqual(r.calcTax, 900000);
+    assert.strictEqual(r.afterCredit, 900000); assert.strictEqual(r.rural, 180000); assert.strictEqual(r.total, 1080000);
+  });
+  test("공시 20억 1주택 65세·10년보유 → 산출 2,760,000·공제 70%·종부세 828,000·합계 993,600", () => {
+    const r = JB.jongbuse(2000000000, true, 65, 10, R);
+    assert.strictEqual(r.calcTax, 2760000); assert.strictEqual(r.credit, 70);
+    assert.strictEqual(r.afterCredit, 828000); assert.strictEqual(r.total, 993600);
+  });
+  test("세액공제 합산 80% 상한(70세40+15년50=90→80)", () => {
+    const r = JB.jongbuse(2000000000, true, 75, 20, R); assert.strictEqual(r.credit, 80);
+  });
+  test("공시 10억 일반 → 과표 6천만·산출 300,000·합계 360,000", () => {
+    const r = JB.jongbuse(1000000000, false, 0, 0, R);
+    assert.strictEqual(r.base, 60000000); assert.strictEqual(r.calcTax, 300000); assert.strictEqual(r.total, 360000);
+  });
+  test("공시 11억 1주택 → 공제 12억 이하라 과표 0·종부세 0", () => {
+    const r = JB.jongbuse(1100000000, true, 0, 0, R);
+    assert.strictEqual(r.base, 0); assert.strictEqual(r.total, 0);
+  });
+})();
+
 console.log("\n결과: " + pass + " 통과, " + fail + " 실패");
 process.exit(fail ? 1 : 0);

@@ -42,6 +42,33 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "property-tax-increase-reasons-2026",
+    title: "2026년 재산세 왜 올랐을까? 과세표준상한제·공정시장가액비율 쉽게 이해하기",
+    summary: "공시가격은 조금 올랐는데 재산세는 더 많이 나온 이유를 과세표준상한제(상한율 5%)와 공정시장가액비율(일반 60%·1세대 1주택 43~45%), 1주택 특례세율, 누진세율까지 2026년 기준으로 쉽게 풀었습니다.",
+    category: "calc",
+    date: "2026-11-26",
+    url: "/posts/property-tax-increase-reasons-2026.html",
+    image: "/img/property-tax-increase-reasons-2026-1.jpg",
+  },
+  {
+    id: "comprehensive-real-estate-tax-notice-payment-2026",
+    title: "2026 종합부동산세 고지서, 납부 전 체크 6가지와 분납·납부유예 신청법",
+    summary: "2026년 종합부동산세 고지서를 받았다면 납부 전 확인할 6가지와 분납(250만원 초과)·납부유예 신청법, 세액공제 적용 여부, 납부기한(12월 15일)과 홈택스 납부 방법을 정리했습니다.",
+    category: "calc",
+    date: "2026-11-26",
+    url: "/posts/comprehensive-real-estate-tax-notice-payment-2026.html",
+    image: "/img/comprehensive-real-estate-tax-notice-payment-2026-1.jpg",
+  },
+  {
+    id: "property-tax-vs-comprehensive-real-estate-tax-2026",
+    title: "재산세·종합부동산세·보유세 차이, 2026년 고지서 기준 완전정리",
+    summary: "7·9월에 재산세를 냈는데 11월에 또 세금 고지서가 오는 이유는? 재산세와 종합부동산세(종부세), 보유세의 차이를 과세주체·시기·공제·이중과세 조정까지 2026년 기준으로 한눈에 정리했습니다.",
+    category: "calc",
+    date: "2026-11-26",
+    url: "/posts/property-tax-vs-comprehensive-real-estate-tax-2026.html",
+    image: "/img/property-tax-vs-comprehensive-real-estate-tax-2026-1.jpg",
+  },
+  {
     id: "kimjang-kimchi-storage-temperature",
     title: "김장김치 보관 온도 몇 도? 김치냉장고 모드와 오래 맛있게 두는 법",
     summary: "김장김치 보관 온도는 영하 1℃ 안팎이 기준입니다. 김치냉장고 저장·숙성 모드 선택, 적숙기, 통 채우는 요령, 골마지·곰팡이 구별법까지 정리했습니다.",
