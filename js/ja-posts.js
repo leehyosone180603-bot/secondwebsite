@@ -1,6 +1,7 @@
 /* 일본어 건강 미러 글 레지스트리 (factory-publish-ja.js 가 자동 갱신) */
 (function (root) {
   var JA_POSTS = [
+    { id: "kimjang-kimchi-storage-temperature", title: "キムジャン(越冬)キムチの保存温度は何度？キムチ冷蔵庫のモードと長くおいしく保つコツ", summary: "キムジャン(越冬)キムチの保存温度の目安(マイナス1℃前後)、キムチ冷蔵庫の保存・熟成モードの選び方、食べごろの見分け、長く保つ詰め方や白い膜が出たときの判断までまとめました。", category: "info", date: "2026-11-26", url: "/ja/posts/kimjang-kimchi-storage-temperature.html", image: "/img/kimjang-kimchi-storage-temperature-1.jpg" },
     { id: "kbeauty-niacinamide", title: "ナイアシンアミドとは？期待される働きと濃度・併用の注意点", summary: "ナイアシンアミド(ビタミンB3)とはどんな化粧品成分か、別名や化粧品での位置づけ、濃度と使い方の目安、ビタミンCなどとの併用の注意点までを、事実にもとづいてやさしく解説します。", category: "kbeauty", date: "2026-11-26", url: "/ja/posts/kbeauty-niacinamide.html", image: "/img/kbeauty-niacinamide-1.jpg" },
     { id: "kbeauty-cica-centella", title: "シカ(ツボクサ)とは？肌への働きと敏感肌が気をつけたいこと", summary: "韓国コスメでおなじみのシカ(ツボクサ)とは何かを、呼び名の違いや化粧品での位置づけから整理。語られる肌への働き、敏感肌が気をつけたい点、肌タイプ別の取り入れ方までやさしく解説します。", category: "kbeauty", date: "2026-11-26", url: "/ja/posts/kbeauty-cica-centella.html", image: "/img/kbeauty-cica-centella-1.jpg" },
     { id: "winter-ventilation-how-often-how-long", title: "冬の換気のしかた｜1日何回・何分？対角換気・調理後・PM2.5の悪い日まで", summary: "冬の換気は「長く」より「短く強く」が基本。1日2〜3回・1回5〜30分の目安、対角換気のコツ、調理後やPM2.5の悪い日の換気、赤ちゃん・高齢者がいる家の注意点までまとめました。", category: "info", date: "2026-11-25", url: "/ja/posts/winter-ventilation-how-often-how-long.html", image: "/img/winter-ventilation-how-often-how-long-1.jpg" },

@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "kimjang-kimchi-storage-temperature",
+    title: "김장김치 보관 온도 몇 도? 김치냉장고 모드와 오래 맛있게 두는 법",
+    summary: "김장김치 보관 온도는 영하 1℃ 안팎이 기준입니다. 김치냉장고 저장·숙성 모드 선택, 적숙기, 통 채우는 요령, 골마지·곰팡이 구별법까지 정리했습니다.",
+    category: "info",
+    date: "2026-11-26",
+    url: "/posts/kimjang-kimchi-storage-temperature.html",
+    image: "/img/kimjang-kimchi-storage-temperature-1.jpg",
+  },
+  {
     id: "teen-part-time-job-age-requirements-2026",
     title: "청소년 알바 가능 나이, 중3도 될까? 겨울방학 출생연도별 기준과 필요 서류",
     summary: "청소년 알바 가능 나이는 만 15세 이상이 기본이며 중학생은 취직인허증이 필요합니다. 2026 겨울방학 출생연도별 가능 여부, 동의서·가족관계증명서, 하루 7시간 한도, 고용금지 업소와 2027 최저시급 10,700원까지 정리했습니다.",
