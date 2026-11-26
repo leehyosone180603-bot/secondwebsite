@@ -482,11 +482,12 @@ function approx(a, b, eps) { assert.ok(Math.abs(a - b) <= (eps || 1e-9), a + " �
   test("지역: 연간 합계 = 월 × 12", () => {
     const r = HI.regionalHealth(2000000, 300, R); assert.strictEqual(r.yearTotal, r.total * 12);
   });
-  test("지역: 최저보험료 적용(소득월액 10만·재산 0 → 건강 19,780·appliedMin)", () => {
+  test("지역: 최저보험료 적용(소득월액 10만·재산 0 → 건강 20,160·appliedMin)", () => {
     const r = HI.regionalHealth(100000, 0, R);
     assert.strictEqual(r.health, R.insurance.health.regional.minPremium.value);
+    assert.strictEqual(r.health, 20160);
     assert.strictEqual(r.appliedMin, true);
-    assert.strictEqual(r.total, 19780 + 2590);
+    assert.strictEqual(r.total, 20160 + 2640);
   });
   test("지역: 재산점수만 입력(소득 0·점수 100 → 재산 21,150·최저 미적용)", () => {
     const r = HI.regionalHealth(0, 100, R);

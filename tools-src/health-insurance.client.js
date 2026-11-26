@@ -31,7 +31,8 @@
     var propertyPremium = won10(pts * reg.propertyPointValue.value);
     var healthRaw = incomePremium + propertyPremium;
     var health = Math.max(healthRaw, reg.minPremium.value); // 월 최저보험료 하한
-    var appliedMin = health !== healthRaw;
+    if (reg.maxPremium) health = Math.min(health, reg.maxPremium.value); // 월 상한
+    var appliedMin = healthRaw < reg.minPremium.value;
     var ltcPremium = won10(health * ltc.ofHealthPremium.value / 100); // 건보료 대비 환산
     return {
       incomePremium: incomePremium, propertyPremium: propertyPremium,
