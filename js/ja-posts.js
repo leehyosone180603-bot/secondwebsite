@@ -1,6 +1,8 @@
 /* 일본어 건강 미러 글 레지스트리 (factory-publish-ja.js 가 자동 갱신) */
 (function (root) {
   var JA_POSTS = [
+    { id: "kbeauty-beauty-tea", title: "韓国の美容茶｜はと麦茶(ユルム茶)・黒豆茶の飲み方と注意点", summary: "韓国で親しまれる美容茶（はと麦茶ユルム茶・黒豆茶・とうもろこしひげ茶など）の特徴と飲み方、カフェインや妊娠中の注意点をやさしく整理。ノンカフェインの選び方や体質別の目安も日本の基準にそって紹介します。", category: "kbeauty", date: "2026-11-27", url: "/ja/posts/kbeauty-beauty-tea.html", image: "/img/kbeauty-beauty-tea-1.jpg" },
+    { id: "kbeauty-inner-care-foods", title: "韓国で話題の「インナーケア」とは？肌のために食べたい食材5つ", summary: "韓国の美容文化で広がる「インナーケア」をやさしく解説。たんぱく質・ビタミンC・E・βカロテン・発酵食品など肌のために意識したい食材5グループを、多く含む食品と食べ方の注意点とともに日本の基準で整理しました。", category: "kbeauty", date: "2026-11-27", url: "/ja/posts/kbeauty-inner-care-foods.html", image: "/img/kbeauty-inner-care-foods-1.jpg" },
     { id: "hypothermia-early-symptoms-first-aid", title: "低体温症の初期症状、震え・ろれつの回らなさはサイン？119番の基準と応急処置", summary: "低体温症の初期症状（震え・ろれつが回らない・ふらつき）、震えが止まったときの危険サイン、119番の基準、濡れた服を脱がせ体幹を温める応急処置とやってはいけない行動を、韓国・疾病管理庁の寒冷疾患統計とともにまとめました。", category: "info", date: "2026-11-26", url: "/ja/posts/hypothermia-early-symptoms-first-aid.html", image: "/img/hypothermia-early-symptoms-first-aid-1.jpg" },
     { id: "kimjang-kimchi-storage-temperature", title: "キムジャン(越冬)キムチの保存温度は何度？キムチ冷蔵庫のモードと長くおいしく保つコツ", summary: "キムジャン(越冬)キムチの保存温度の目安(マイナス1℃前後)、キムチ冷蔵庫の保存・熟成モードの選び方、食べごろの見分け、長く保つ詰め方や白い膜が出たときの判断までまとめました。", category: "info", date: "2026-11-26", url: "/ja/posts/kimjang-kimchi-storage-temperature.html", image: "/img/kimjang-kimchi-storage-temperature-1.jpg" },
     { id: "kbeauty-niacinamide", title: "ナイアシンアミドとは？期待される働きと濃度・併用の注意点", summary: "ナイアシンアミド(ビタミンB3)とはどんな化粧品成分か、別名や化粧品での位置づけ、濃度と使い方の目安、ビタミンCなどとの併用の注意点までを、事実にもとづいてやさしく解説します。", category: "kbeauty", date: "2026-11-26", url: "/ja/posts/kbeauty-niacinamide.html", image: "/img/kbeauty-niacinamide-1.jpg" },

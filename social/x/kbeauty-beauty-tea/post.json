@@ -1,0 +1,103 @@
+{
+  "slug": "kbeauty-beauty-tea",
+  "series": "kbeauty",
+  "title": "韓国の美容茶｜はと麦茶(ユルム茶)・黒豆茶の飲み方と注意点",
+  "url": "/ja/posts/kbeauty-beauty-tea.html",
+  "keyword": "韓国",
+  "hooks": [
+    "今すぐできる韓国5つのチェック",
+    "実は逆効果かも？韓国"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
+  ],
+  "hashtags": [
+    "#韓国コスメ",
+    "#インナーケア"
+  ],
+  "image": "social/x/kbeauty-beauty-tea/card.png",
+  "posts": {
+    "a": {
+      "body": "今すぐできる韓国5つのチェック\n\n✅ 毎日、甘いジュースや加糖コーヒーをよ…\n✅ 水をあまり飲まず、水分が足りていない気…\n✅ 夕方以降もカフェイン飲料を飲んでいて\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "text": "今すぐできる韓国5つのチェック\n\n✅ 毎日、甘いジュースや加糖コーヒーをよ…\n✅ 水をあまり飲まず、水分が足りていない気…\n✅ 夕方以降もカフェイン飲料を飲んでいて\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-beauty-tea.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-beauty-tea&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/kbeauty-beauty-tea.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-beauty-tea&utm_content=reply_a",
+      "weighted": 273,
+      "charCount": 147,
+      "ok": true
+    },
+    "b": {
+      "body": "実は逆効果かも？韓国\n\n✅ 毎日、甘いジュースや加糖コー…\n✅ 水をあまり飲まず\n✅ 夕方以降もカフェイン飲料を…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "text": "実は逆効果かも？韓国\n\n✅ 毎日、甘いジュースや加糖コー…\n✅ 水をあまり飲まず\n✅ 夕方以降もカフェイン飲料を…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-beauty-tea.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-beauty-tea&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/kbeauty-beauty-tea.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-beauty-tea&utm_content=reply_b",
+      "weighted": 254,
+      "charCount": 138,
+      "ok": true
+    }
+  },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる韓国5つのチェック\n\n✅ 毎日、甘いジュースや加糖コーヒーをよ…\n✅ 水をあまり飲まず、水分が足りていない気…\n✅ 夕方以降もカフェイン飲料を飲んでいて\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-beauty-tea.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-beauty-tea&utm_content=reply_a",
+      "charCount": 147,
+      "image": "social/x/kbeauty-beauty-tea/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？韓国\n\n✅ 毎日、甘いジュースや加糖コー…\n✅ 水をあまり飲まず\n✅ 夕方以降もカフェイン飲料を…\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-beauty-tea.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-beauty-tea&utm_content=reply_b",
+      "charCount": 138,
+      "image": "social/x/kbeauty-beauty-tea/card.png"
+    }
+  ],
+  "checklist": [
+    "毎日、甘いジュースや加糖コーヒーをよく…",
+    "水をあまり飲まず、水分が足りていない気…",
+    "夕方以降もカフェイン飲料を飲んでいて",
+    "冷たい飲み物ばかりで体が冷えやすい",
+    "食事の脂っこさが気になり"
+  ],
+  "points": [
+    "毎日、甘いジュースや加糖コーヒーをよく飲む",
+    "水をあまり飲まず、水分が足りていない気がする",
+    "夕方以降もカフェイン飲料を飲んでいて、寝つきが気になる"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：毎日、甘いジュースや加糖コーヒーをよく…、水をあまり飲まず、水分が足りていない気…、夕方以降もカフェイン飲料を飲んでいて、冷たい飲み物ばかりで体が冷えやすい、食事の脂っこさが気になり。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/kbeauty-beauty-tea/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 408536,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/kbeauty-beauty-tea/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 238972,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-27T01:30:02.972Z"
+}
