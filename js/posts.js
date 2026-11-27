@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "basic-pension-age-1962-born-2027-application",
+    title: "기초연금 나이 몇 살부터? 2027년 1962년생 신청 시기와 출생월별 계산법",
+    summary: "기초연금 나이 기준(만 65세)과 2027년 첫 대상인 1962년생의 출생월별 신청 가능일, 2026년 선정기준액(단독 247만·부부 395만 2천 원), 2027년 차등지급 정부안과 신청 서류를 정리했습니다.",
+    category: "calc",
+    date: "2026-11-27",
+    url: "/posts/basic-pension-age-1962-born-2027-application.html",
+    image: "/img/basic-pension-age-1962-born-2027-application-1.jpg",
+  },
+  {
     id: "hypothermia-early-symptoms-first-aid",
     title: "저체온증 초기 증상, 떨림·어눌한 말투가 신호? 119 기준과 응급처치",
     summary: "저체온증 초기 증상(떨림·어눌한 말투·비틀거림)과 떨림이 멈출 때의 위험 신호, 119 신고 기준, 젖은 옷 제거·몸통 보온 등 응급처치와 피해야 할 행동을 질병관리청 한랭질환 통계와 함께 정리했습니다.",
