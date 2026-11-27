@@ -1,6 +1,7 @@
 /* 일본어 건강 미러 글 레지스트리 (factory-publish-ja.js 가 자동 갱신) */
 (function (root) {
   var JA_POSTS = [
+    { id: "winter-heart-attack-warning-signs", title: "冬の心筋梗塞の前兆症状、消化不良のような胸の圧迫感も疑うべき？ ゴールデンタイム2時間の対処法", summary: "冬の心筋梗塞の前兆症状（胸痛・冷や汗・呼吸困難）と、女性・高齢者の非典型的なサイン、ゴールデンタイム2時間以内にすべきこと、疾病管理庁の予防生活習慣をまとめました。", category: "info", date: "2026-11-27", url: "/ja/posts/winter-heart-attack-warning-signs.html", image: "/img/winter-heart-attack-warning-signs-1.jpg" },
     { id: "water-meter-freeze-prevention-guide", title: "水道メーターの凍結を防ぐ方法｜寒波前の保温と水を少し流すコツ", summary: "水道メーターの凍結を防ぐメーターボックスの保温方法、氷点下10度以下の寒波時に水を少し流すコツ、凍ってしまったときの溶かし方と連絡先、交換費用の負担の考え方を、韓国・ソウル市の情報をもとに整理しました。", category: "info", date: "2026-11-27", url: "/ja/posts/water-meter-freeze-prevention-guide.html", image: "/img/water-meter-freeze-prevention-guide-1.jpg" },
     { id: "kbeauty-beauty-tea", title: "韓国の美容茶｜はと麦茶(ユルム茶)・黒豆茶の飲み方と注意点", summary: "韓国で親しまれる美容茶（はと麦茶ユルム茶・黒豆茶・とうもろこしひげ茶など）の特徴と飲み方、カフェインや妊娠中の注意点をやさしく整理。ノンカフェインの選び方や体質別の目安も日本の基準にそって紹介します。", category: "kbeauty", date: "2026-11-27", url: "/ja/posts/kbeauty-beauty-tea.html", image: "/img/kbeauty-beauty-tea-1.jpg" },
     { id: "kbeauty-inner-care-foods", title: "韓国で話題の「インナーケア」とは？肌のために食べたい食材5つ", summary: "韓国の美容文化で広がる「インナーケア」をやさしく解説。たんぱく質・ビタミンC・E・βカロテン・発酵食品など肌のために意識したい食材5グループを、多く含む食品と食べ方の注意点とともに日本の基準で整理しました。", category: "kbeauty", date: "2026-11-27", url: "/ja/posts/kbeauty-inner-care-foods.html", image: "/img/kbeauty-inner-care-foods-1.jpg" },

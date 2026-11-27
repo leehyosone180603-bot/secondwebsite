@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "winter-heart-attack-warning-signs",
+    title: "겨울철 심근경색 전조증상, 체한 것 같은 가슴 답답함도 의심해야 할까? 골든타임 2시간 대처법",
+    summary: "겨울철 심근경색 전조증상(가슴 통증·식은땀·호흡곤란)과 여성·고령자의 비전형 신호, 골든타임 2시간 안에 할 일, 질병관리청 예방 생활수칙을 정리했습니다.",
+    category: "info",
+    date: "2026-11-27",
+    url: "/posts/winter-heart-attack-warning-signs.html",
+    image: "/img/winter-heart-attack-warning-signs-1.jpg",
+  },
+  {
     id: "daycare-class-age-chart-2027-by-birth-year",
     title: "2027 어린이집 반 나이표, 몇 년생이 몇 세반? 1·2월생 예외와 유치원 연령까지",
     summary: "2027학년도 어린이집 반 나이를 출생연도로 정리했습니다. 2026년생 0세반부터 2021년생 5세반까지, 1·2월생 상위반 신청, 유치원 3~5세반과 3세 무상교육 확대안까지 확인하세요.",

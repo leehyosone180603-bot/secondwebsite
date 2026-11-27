@@ -367,6 +367,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://healthfortune.co.kr/posts/winter-heart-attack-warning-signs.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://healthfortune.co.kr/posts/daycare-class-age-chart-2027-by-birth-year.html</loc>
     <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -1136,6 +1142,12 @@
   <url>
     <loc>https://healthfortune.co.kr/ja/posts/korea-health-guide.html</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/ja/posts/winter-heart-attack-warning-signs.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
