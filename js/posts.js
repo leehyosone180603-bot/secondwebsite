@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "daycare-class-age-chart-2027-by-birth-year",
+    title: "2027 어린이집 반 나이표, 몇 년생이 몇 세반? 1·2월생 예외와 유치원 연령까지",
+    summary: "2027학년도 어린이집 반 나이를 출생연도로 정리했습니다. 2026년생 0세반부터 2021년생 5세반까지, 1·2월생 상위반 신청, 유치원 3~5세반과 3세 무상교육 확대안까지 확인하세요.",
+    category: "calc",
+    date: "2026-11-27",
+    url: "/posts/daycare-class-age-chart-2027-by-birth-year.html",
+    image: "/img/daycare-class-age-chart-2027-by-birth-year-1.jpg",
+  },
+  {
     id: "water-meter-freeze-prevention-guide",
     title: "수도계량기 동파 예방법, 한파 전 보온재와 물 흘려두기 기준 정리",
     summary: "수도계량기 동파 예방을 위한 계량기함 보온법, 영하 10도 이하 한파 때 수돗물 흘려두는 요령, 동파 예보 4단계 의미, 얼었을 때 녹이는 법과 신고처, 교체 비용 부담 기준을 정리했습니다.",
