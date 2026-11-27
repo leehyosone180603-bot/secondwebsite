@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "water-meter-freeze-prevention-guide",
+    title: "수도계량기 동파 예방법, 한파 전 보온재와 물 흘려두기 기준 정리",
+    summary: "수도계량기 동파 예방을 위한 계량기함 보온법, 영하 10도 이하 한파 때 수돗물 흘려두는 요령, 동파 예보 4단계 의미, 얼었을 때 녹이는 법과 신고처, 교체 비용 부담 기준을 정리했습니다.",
+    category: "info",
+    date: "2026-11-27",
+    url: "/posts/water-meter-freeze-prevention-guide.html",
+    image: "/img/water-meter-freeze-prevention-guide-1.jpg",
+  },
+  {
     id: "basic-pension-age-1962-born-2027-application",
     title: "기초연금 나이 몇 살부터? 2027년 1962년생 신청 시기와 출생월별 계산법",
     summary: "기초연금 나이 기준(만 65세)과 2027년 첫 대상인 1962년생의 출생월별 신청 가능일, 2026년 선정기준액(단독 247만·부부 395만 2천 원), 2027년 차등지급 정부안과 신청 서류를 정리했습니다.",

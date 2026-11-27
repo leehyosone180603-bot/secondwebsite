@@ -1,6 +1,7 @@
 /* 일본어 건강 미러 글 레지스트리 (factory-publish-ja.js 가 자동 갱신) */
 (function (root) {
   var JA_POSTS = [
+    { id: "water-meter-freeze-prevention-guide", title: "水道メーターの凍結を防ぐ方法｜寒波前の保温と水を少し流すコツ", summary: "水道メーターの凍結を防ぐメーターボックスの保温方法、氷点下10度以下の寒波時に水を少し流すコツ、凍ってしまったときの溶かし方と連絡先、交換費用の負担の考え方を、韓国・ソウル市の情報をもとに整理しました。", category: "info", date: "2026-11-27", url: "/ja/posts/water-meter-freeze-prevention-guide.html", image: "/img/water-meter-freeze-prevention-guide-1.jpg" },
     { id: "kbeauty-beauty-tea", title: "韓国の美容茶｜はと麦茶(ユルム茶)・黒豆茶の飲み方と注意点", summary: "韓国で親しまれる美容茶（はと麦茶ユルム茶・黒豆茶・とうもろこしひげ茶など）の特徴と飲み方、カフェインや妊娠中の注意点をやさしく整理。ノンカフェインの選び方や体質別の目安も日本の基準にそって紹介します。", category: "kbeauty", date: "2026-11-27", url: "/ja/posts/kbeauty-beauty-tea.html", image: "/img/kbeauty-beauty-tea-1.jpg" },
     { id: "kbeauty-inner-care-foods", title: "韓国で話題の「インナーケア」とは？肌のために食べたい食材5つ", summary: "韓国の美容文化で広がる「インナーケア」をやさしく解説。たんぱく質・ビタミンC・E・βカロテン・発酵食品など肌のために意識したい食材5グループを、多く含む食品と食べ方の注意点とともに日本の基準で整理しました。", category: "kbeauty", date: "2026-11-27", url: "/ja/posts/kbeauty-inner-care-foods.html", image: "/img/kbeauty-inner-care-foods-1.jpg" },
     { id: "hypothermia-early-symptoms-first-aid", title: "低体温症の初期症状、震え・ろれつの回らなさはサイン？119番の基準と応急処置", summary: "低体温症の初期症状（震え・ろれつが回らない・ふらつき）、震えが止まったときの危険サイン、119番の基準、濡れた服を脱がせ体幹を温める応急処置とやってはいけない行動を、韓国・疾病管理庁の寒冷疾患統計とともにまとめました。", category: "info", date: "2026-11-26", url: "/ja/posts/hypothermia-early-symptoms-first-aid.html", image: "/img/hypothermia-early-symptoms-first-aid-1.jpg" },

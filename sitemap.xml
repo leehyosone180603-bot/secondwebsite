@@ -367,6 +367,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://healthfortune.co.kr/posts/water-meter-freeze-prevention-guide.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://healthfortune.co.kr/posts/basic-pension-age-1962-born-2027-application.html</loc>
     <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -1124,6 +1130,12 @@
   <url>
     <loc>https://healthfortune.co.kr/ja/posts/korea-health-guide.html</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://healthfortune.co.kr/ja/posts/water-meter-freeze-prevention-guide.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
