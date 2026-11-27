@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "resident-id-card-first-issue-age-17-guide",
+    title: "주민등록증 발급 나이 만 17세, 생일 다음 달부터 1년 안에 신청하세요 (2010년생 시기·준비물)",
+    summary: "주민등록증 발급 나이는 만 17세, 생일이 지난 다음 달 1일부터 1년 안에 무료로 신청합니다. 2009·2010년생 신청 시기 예시, 사진 규격·학생증 준비물, 과태료, 모바일 주민등록증까지 정리했습니다.",
+    category: "calc",
+    date: "2026-11-27",
+    url: "/posts/resident-id-card-first-issue-age-17-guide.html",
+    image: "/img/resident-id-card-first-issue-age-17-guide-1.jpg",
+  },
+  {
     id: "winter-heart-attack-warning-signs",
     title: "겨울철 심근경색 전조증상, 체한 것 같은 가슴 답답함도 의심해야 할까? 골든타임 2시간 대처법",
     summary: "겨울철 심근경색 전조증상(가슴 통증·식은땀·호흡곤란)과 여성·고령자의 비전형 신호, 골든타임 2시간 안에 할 일, 질병관리청 예방 생활수칙을 정리했습니다.",
