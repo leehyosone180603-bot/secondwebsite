@@ -1,6 +1,7 @@
 /* 일본어 건강 미러 글 레지스트리 (factory-publish-ja.js 가 자동 갱신) */
 (function (root) {
   var JA_POSTS = [
+    { id: "winter-depression-seasonal-affective-disorder-symptoms", title: "冬うつの症状、眠りが増えて甘いものが欲しくなったら？ 季節性うつの自己チェックと日光の浴び方", summary: "冬になると眠りが増え炭水化物が欲しくなるなら、季節性うつかもしれません。一般的なうつとの違い、自己チェックのポイント、朝の日光・光療法と受診すべきサインをまとめました。", category: "info", date: "2026-11-28", url: "/ja/posts/winter-depression-seasonal-affective-disorder-symptoms.html", image: "/img/winter-depression-seasonal-affective-disorder-symptoms-1.jpg" },
     { id: "winter-heart-attack-warning-signs", title: "冬の心筋梗塞の前兆症状、消化不良のような胸の圧迫感も疑うべき？ ゴールデンタイム2時間の対処法", summary: "冬の心筋梗塞の前兆症状（胸痛・冷や汗・呼吸困難）と、女性・高齢者の非典型的なサイン、ゴールデンタイム2時間以内にすべきこと、疾病管理庁の予防生活習慣をまとめました。", category: "info", date: "2026-11-27", url: "/ja/posts/winter-heart-attack-warning-signs.html", image: "/img/winter-heart-attack-warning-signs-1.jpg" },
     { id: "water-meter-freeze-prevention-guide", title: "水道メーターの凍結を防ぐ方法｜寒波前の保温と水を少し流すコツ", summary: "水道メーターの凍結を防ぐメーターボックスの保温方法、氷点下10度以下の寒波時に水を少し流すコツ、凍ってしまったときの溶かし方と連絡先、交換費用の負担の考え方を、韓国・ソウル市の情報をもとに整理しました。", category: "info", date: "2026-11-27", url: "/ja/posts/water-meter-freeze-prevention-guide.html", image: "/img/water-meter-freeze-prevention-guide-1.jpg" },
     { id: "kbeauty-beauty-tea", title: "韓国の美容茶｜はと麦茶(ユルム茶)・黒豆茶の飲み方と注意点", summary: "韓国で親しまれる美容茶（はと麦茶ユルム茶・黒豆茶・とうもろこしひげ茶など）の特徴と飲み方、カフェインや妊娠中の注意点をやさしく整理。ノンカフェインの選び方や体質別の目安も日本の基準にそって紹介します。", category: "kbeauty", date: "2026-11-27", url: "/ja/posts/kbeauty-beauty-tea.html", image: "/img/kbeauty-beauty-tea-1.jpg" },

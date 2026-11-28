@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "winter-depression-seasonal-affective-disorder-symptoms",
+    title: "겨울 우울증 증상, 잠이 늘고 단 게 당긴다면? 계절성 우울증 자가 체크와 햇빛 쬐는 법",
+    summary: "겨울만 되면 잠이 늘고 탄수화물이 당긴다면 계절성 우울증일 수 있습니다. 일반 우울증과의 차이, 자가 체크 포인트, 아침 햇빛·광치료와 병원 가야 할 신호를 정리했습니다.",
+    category: "info",
+    date: "2026-11-28",
+    url: "/posts/winter-depression-seasonal-affective-disorder-symptoms.html",
+    image: "/img/winter-depression-seasonal-affective-disorder-symptoms-1.jpg",
+  },
+  {
     id: "resident-id-card-first-issue-age-17-guide",
     title: "주민등록증 발급 나이 만 17세, 생일 다음 달부터 1년 안에 신청하세요 (2010년생 시기·준비물)",
     summary: "주민등록증 발급 나이는 만 17세, 생일이 지난 다음 달 1일부터 1년 안에 무료로 신청합니다. 2009·2010년생 신청 시기 예시, 사진 규격·학생증 준비물, 과태료, 모바일 주민등록증까지 정리했습니다.",
