@@ -42,6 +42,15 @@ const NAV_ORDER = ["food", "info", "calc", "life", "ent", "exercise", "diet", "d
  */
 const POSTS = [
   {
+    id: "retirement-age-60-extension-65-by-birth-year-2026",
+    title: "정년 나이 몇 살? 2026년 만 60세 기준과 65세 정년연장 몇 년생부터 논의되나",
+    summary: "법정 정년 나이는 만 60세 이상. 출생연도별 정년 도달 시기, 실제 퇴직일 정하는 법, 국민연금 공백, 2026년 11월 기준 65세 정년연장 논의 일정을 정리했습니다.",
+    category: "calc",
+    date: "2026-11-28",
+    url: "/posts/retirement-age-60-extension-65-by-birth-year-2026.html",
+    image: "/img/retirement-age-60-extension-65-by-birth-year-2026-1.jpg",
+  },
+  {
     id: "winter-depression-seasonal-affective-disorder-symptoms",
     title: "겨울 우울증 증상, 잠이 늘고 단 게 당긴다면? 계절성 우울증 자가 체크와 햇빛 쬐는 법",
     summary: "겨울만 되면 잠이 늘고 탄수화물이 당긴다면 계절성 우울증일 수 있습니다. 일반 우울증과의 차이, 자가 체크 포인트, 아침 햇빛·광치료와 병원 가야 할 신호를 정리했습니다.",
