@@ -1,0 +1,104 @@
+{
+  "slug": "kbeauty-beauty-sleep",
+  "series": "kbeauty",
+  "title": "肌のための睡眠｜韓国で言う「美容睡眠」と夜の習慣",
+  "url": "/ja/posts/kbeauty-beauty-sleep.html",
+  "keyword": "肌",
+  "hooks": [
+    "今すぐできる肌6つのチェック",
+    "実は逆効果かも？肌"
+  ],
+  "hookTypes": [
+    "number",
+    "myth"
+  ],
+  "hashtags": [
+    "#韓国コスメ",
+    "#インナーケア"
+  ],
+  "image": "social/x/kbeauty-beauty-sleep/card.png",
+  "posts": {
+    "a": {
+      "body": "今すぐできる肌6つのチェック\n\n✅ 朝、目覚めても「休めた感じ」が乏しい\n✅ 寝つくまでに30分以上かかる日が多い\n✅ 夜中に何度も目が覚める\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "text": "今すぐできる肌6つのチェック\n\n✅ 朝、目覚めても「休めた感じ」が乏しい\n✅ 寝つくまでに30分以上かかる日が多い\n✅ 夜中に何度も目が覚める\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-beauty-sleep.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-beauty-sleep&utm_content=reply_a",
+      "hookType": "number",
+      "link": "https://healthfortune.co.kr/ja/posts/kbeauty-beauty-sleep.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-beauty-sleep&utm_content=reply_a",
+      "weighted": 251,
+      "charCount": 136,
+      "ok": true
+    },
+    "b": {
+      "body": "実は逆効果かも？肌\n\n✅ 朝、目覚めても「休めた感じ」が乏しい\n✅ 寝つくまでに30分以上かかる日が多い\n✅ 夜中に何度も目が覚める\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "text": "実は逆効果かも？肌\n\n✅ 朝、目覚めても「休めた感じ」が乏しい\n✅ 寝つくまでに30分以上かかる日が多い\n✅ 夜中に何度も目が覚める\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-beauty-sleep.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-beauty-sleep&utm_content=reply_b",
+      "hookType": "myth",
+      "link": "https://healthfortune.co.kr/ja/posts/kbeauty-beauty-sleep.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-beauty-sleep&utm_content=reply_b",
+      "weighted": 272,
+      "charCount": 147,
+      "ok": true
+    }
+  },
+  "variants": [
+    {
+      "variant": "a",
+      "hookType": "number",
+      "body": "今すぐできる肌6つのチェック\n\n✅ 朝、目覚めても「休めた感じ」が乏しい\n✅ 寝つくまでに30分以上かかる日が多い\n✅ 夜中に何度も目が覚める\n\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-beauty-sleep.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-beauty-sleep&utm_content=reply_a",
+      "charCount": 136,
+      "image": "social/x/kbeauty-beauty-sleep/card.png"
+    },
+    {
+      "variant": "b",
+      "hookType": "myth",
+      "body": "実は逆効果かも？肌\n\n✅ 朝、目覚めても「休めた感じ」が乏しい\n✅ 寝つくまでに30分以上かかる日が多い\n✅ 夜中に何度も目が覚める\n\nあとで見返せるように保存推奨📌\n気になるサインが続くときは、無理せず医師にご相談ください。\nあなたはいくつ当てはまりましたか？\n\n#韓国コスメ #インナーケア",
+      "firstReply": "詳しい原因と対処法はこちら👇\nhttps://healthfortune.co.kr/ja/posts/kbeauty-beauty-sleep.html?utm_source=x&utm_medium=social&utm_campaign=kbeauty-beauty-sleep&utm_content=reply_b",
+      "charCount": 147,
+      "image": "social/x/kbeauty-beauty-sleep/card.png"
+    }
+  ],
+  "checklist": [
+    "朝、目覚めても「休めた感じ」が乏しい",
+    "寝つくまでに30分以上かかる日が多い",
+    "夜中に何度も目が覚める",
+    "休日に平日より2時間以上長く寝てしまう",
+    "日中に強い眠気で生活に支障が出る",
+    "就寝直前までスマホの画面を見ている"
+  ],
+  "points": [
+    "朝、目覚めても「休めた感じ」が乏しい",
+    "寝つくまでに30分以上かかる日が多い",
+    "夜中に何度も目が覚める"
+  ],
+  "card": {
+    "vertical": "card.png",
+    "og": "card_og.png",
+    "alt": "セルフチェック：朝、目覚めても「休めた感じ」が乏しい、寝つくまでに30分以上かかる日が多い、夜中に何度も目が覚める、休日に平日より2時間以上長く寝てしまう、日中に強い眠気で生活に支障が出る、就寝直前までスマホの画面を見ている。当てはまる数を確認。健康フロー。"
+  },
+  "cardResults": [
+    {
+      "file": "card.png",
+      "path": "/home/user/secondwebsite/social/x/kbeauty-beauty-sleep/card.png",
+      "w": 1080,
+      "h": 1350,
+      "overflow": false,
+      "bytes": 411766,
+      "over1mb": false
+    },
+    {
+      "file": "card_og.png",
+      "path": "/home/user/secondwebsite/social/x/kbeauty-beauty-sleep/card_og.png",
+      "w": 1200,
+      "h": 675,
+      "overflow": false,
+      "bytes": 233933,
+      "over1mb": false
+    }
+  ],
+  "forbidden": {
+    "a": [],
+    "b": [],
+    "hooks": []
+  },
+  "generatedAt": "2026-11-28T01:32:13.312Z"
+}
